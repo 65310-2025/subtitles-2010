@@ -1,0 +1,8101 @@
+1
+0-1:59:59,500 --> 00:00:03,020
+
+2
+00:00:03,020 --> 00:00:04,570
+PROFESSOR: All right.
+
+3
+00:00:04,570 --> 00:00:07,710
+Today I think is the
+last lecture at least
+
+4
+00:00:07,710 --> 00:00:10,780
+for the while about
+origami, and I'm
+
+5
+00:00:10,780 --> 00:00:13,757
+going to talk about
+where I got started
+
+6
+00:00:13,757 --> 00:00:15,215
+thinking about
+organic mathematics.
+
+7
+00:00:15,215 --> 00:00:20,520
+
+8
+00:00:20,520 --> 00:00:27,770
+The folding cup
+problem, and this
+
+9
+00:00:27,770 --> 00:00:30,550
+is sort of motivated
+by a magic trick.
+
+10
+00:00:30,550 --> 00:00:33,540
+The idea is you take
+a piece of paper.
+
+11
+00:00:33,540 --> 00:00:34,950
+You fold it flat.
+
+12
+00:00:34,950 --> 00:00:39,540
+
+13
+00:00:39,540 --> 00:00:41,420
+You make one complete
+straight cut.
+
+14
+00:00:41,420 --> 00:00:49,050
+
+15
+00:00:49,050 --> 00:00:50,025
+You cut along a line.
+
+16
+00:00:50,025 --> 00:00:53,790
+
+17
+00:00:53,790 --> 00:00:59,580
+And you unfold the
+pieces, and the question
+
+18
+00:00:59,580 --> 00:01:02,950
+is what shapes can you
+get by that process.
+
+19
+00:01:02,950 --> 00:01:05,940
+So this is like a magic trick.
+
+20
+00:01:05,940 --> 00:01:09,360
+I showed you making a
+swan which I have here
+
+21
+00:01:09,360 --> 00:01:11,900
+just for-- to jog your memory.
+
+22
+00:01:11,900 --> 00:01:16,590
+You have a rectangle paper, and
+you can see the swan on there
+
+23
+00:01:16,590 --> 00:01:18,270
+and you can see a
+bunch of creases.
+
+24
+00:01:18,270 --> 00:01:22,960
+You fold along all the
+creases, not the swan lines,
+
+25
+00:01:22,960 --> 00:01:26,120
+and you end up with all
+the edges of the swan lying
+
+26
+00:01:26,120 --> 00:01:27,610
+right along that line.
+
+27
+00:01:27,610 --> 00:01:35,960
+You cut along the line,
+and you get your swan,
+
+28
+00:01:35,960 --> 00:01:38,270
+as we did before.
+
+29
+00:01:38,270 --> 00:01:40,585
+And you also get the anti-swan.
+
+30
+00:01:40,585 --> 00:01:42,589
+The other piece-- I didn't
+show that last time.
+
+31
+00:01:42,589 --> 00:01:44,130
+But it's really--
+it's not like we're
+
+32
+00:01:44,130 --> 00:01:46,255
+making we're not allowed
+to make any extra creases.
+
+33
+00:01:46,255 --> 00:01:48,920
+We really want the swan.
+
+34
+00:01:48,920 --> 00:01:52,850
+So we cut along exactly
+the edges of the swan
+
+35
+00:01:52,850 --> 00:01:54,265
+by lining them up onto a line.
+
+36
+00:01:54,265 --> 00:01:56,390
+So really, you could think
+of this as a magic trick
+
+37
+00:01:56,390 --> 00:01:58,160
+in cutting, but you
+can also think of it
+
+38
+00:01:58,160 --> 00:01:59,590
+as an origami
+problem, which is I
+
+39
+00:01:59,590 --> 00:02:01,690
+want to line up all
+these edges by folding.
+
+40
+00:02:01,690 --> 00:02:02,640
+How do I do it?
+
+41
+00:02:02,640 --> 00:02:06,940
+And that way it connects to a
+lot origami design problems.
+
+42
+00:02:06,940 --> 00:02:10,860
+This problem has an old history.
+
+43
+00:02:10,860 --> 00:02:12,630
+It goes back to 1721.
+
+44
+00:02:12,630 --> 00:02:14,500
+This is the oldest
+reference we know.
+
+45
+00:02:14,500 --> 00:02:20,620
+This is a Japanese puzzle
+book, Wakoku Chiyekurabe
+
+46
+00:02:20,620 --> 00:02:22,100
+by Kan Chu Sen.
+
+47
+00:02:22,100 --> 00:02:24,010
+And I think this is
+kind of like-- it's
+
+48
+00:02:24,010 --> 00:02:27,130
+called "Mathematical
+Contests" is the translation.
+
+49
+00:02:27,130 --> 00:02:31,150
+And it's sort of
+like the old version
+
+50
+00:02:31,150 --> 00:02:36,020
+of like these big
+problem solving sessions
+
+51
+00:02:36,020 --> 00:02:39,530
+that kids do these days
+to get better at math,
+
+52
+00:02:39,530 --> 00:02:42,970
+and one of the pages
+poses this problem.
+
+53
+00:02:42,970 --> 00:02:44,960
+I have this Japanese
+emblem shape.
+
+54
+00:02:44,960 --> 00:02:47,020
+Can I make it from
+a piece of paper
+
+55
+00:02:47,020 --> 00:02:50,877
+by folding in one straight
+cut, and the answer is yes.
+
+56
+00:02:50,877 --> 00:02:52,710
+And this is a solution
+if you cheat and look
+
+57
+00:02:52,710 --> 00:02:54,690
+in the back of the book.
+
+58
+00:02:54,690 --> 00:02:57,530
+So I'll let you read
+that for minute.
+
+59
+00:02:57,530 --> 00:02:59,180
+[LAUGHS]
+
+60
+00:02:59,180 --> 00:03:01,620
+You're making folds
+along lines that end up
+
+61
+00:03:01,620 --> 00:03:04,870
+lining up other
+parts of the shape
+
+62
+00:03:04,870 --> 00:03:07,270
+so that in the end everything
+lies along the line,
+
+63
+00:03:07,270 --> 00:03:09,810
+then you cut along the line.
+
+64
+00:03:09,810 --> 00:03:12,420
+We learned about
+this a bit later
+
+65
+00:03:12,420 --> 00:03:15,780
+than the-- we learned about
+this problem from Martin Gardner
+
+66
+00:03:15,780 --> 00:03:19,910
+originally, and he knew
+about the magic world.
+
+67
+00:03:19,910 --> 00:03:21,930
+So Houdini, before he
+was an escape artist,
+
+68
+00:03:21,930 --> 00:03:26,270
+he was a general magician, and
+in 1922, he wrote or probably
+
+69
+00:03:26,270 --> 00:03:30,150
+had ghost written this book,
+"Houdini's Paper Magic".
+
+70
+00:03:30,150 --> 00:03:35,080
+And one of the pages is about
+folding, and it says here,
+
+71
+00:03:35,080 --> 00:03:37,230
+you can take a square
+paper, fold it flat,
+
+72
+00:03:37,230 --> 00:03:40,560
+make one straight cut, and get
+a regular five-pointed star.
+
+73
+00:03:40,560 --> 00:03:44,100
+And that was pretty cool,
+and then other magicians
+
+74
+00:03:44,100 --> 00:03:46,789
+picked it up, in particular
+this guy Gerald Lowe, who
+
+75
+00:03:46,789 --> 00:03:48,080
+wrote this book "Paper Capers".
+
+76
+00:03:48,080 --> 00:03:50,180
+It's more like a
+very small book.
+
+77
+00:03:50,180 --> 00:03:51,250
+Magic book.
+
+78
+00:03:51,250 --> 00:03:53,470
+And he could make all
+sorts of different things
+
+79
+00:03:53,470 --> 00:03:55,830
+and he would incorporate
+them into magic tricks.
+
+80
+00:03:55,830 --> 00:03:58,160
+And he was primarily
+using simple folds.
+
+81
+00:03:58,160 --> 00:04:00,410
+He would just fold along
+one line at a time,
+
+82
+00:04:00,410 --> 00:04:04,110
+and make one
+straight cut, and go
+
+83
+00:04:04,110 --> 00:04:06,000
+to make all these cool patterns.
+
+84
+00:04:06,000 --> 00:04:11,580
+Like here, I have one
+of his examples redone.
+
+85
+00:04:11,580 --> 00:04:15,600
+I start from a rectangle,
+I fold, I fold, I fold,
+
+86
+00:04:15,600 --> 00:04:17,380
+I fold-- these are
+all simple folds.
+
+87
+00:04:17,380 --> 00:04:23,900
+I take my scissors, and I make
+one complete straight cut.
+
+88
+00:04:23,900 --> 00:04:28,150
+And usually when I perform
+this trick, I say look!
+
+89
+00:04:28,150 --> 00:04:31,550
+I made an isosceles triangle.
+
+90
+00:04:31,550 --> 00:04:32,820
+Wow!
+
+91
+00:04:32,820 --> 00:04:34,720
+I made five isosceles triangles.
+
+92
+00:04:34,720 --> 00:04:36,130
+Amazing!
+
+93
+00:04:36,130 --> 00:04:38,720
+And then I made
+everything, except the five
+
+94
+00:04:38,720 --> 00:04:39,930
+isosceles triangles.
+
+95
+00:04:39,930 --> 00:04:42,977
+So you saw that coming.
+
+96
+00:04:42,977 --> 00:04:45,060
+And you could make an
+arrangement of five of these
+
+97
+00:04:45,060 --> 00:04:45,670
+if you want.
+
+98
+00:04:45,670 --> 00:04:47,310
+All that sort of
+very symmetric stuff
+
+99
+00:04:47,310 --> 00:04:49,170
+is easy to do by simple folds.
+
+100
+00:04:49,170 --> 00:04:51,410
+I'll talk more about
+simple folds later,
+
+101
+00:04:51,410 --> 00:04:55,140
+but we were really curious
+about the general challenge.
+
+102
+00:04:55,140 --> 00:04:58,760
+So this is the-- you can
+download this from my web page
+
+103
+00:04:58,760 --> 00:04:59,900
+if you want to make one.
+
+104
+00:04:59,900 --> 00:05:04,610
+It's pretty-- it's a fun trick.
+
+105
+00:05:04,610 --> 00:05:05,110
+Good.
+
+106
+00:05:05,110 --> 00:05:07,920
+So I have some more
+interesting examples.
+
+107
+00:05:07,920 --> 00:05:10,880
+See here I have a
+rectangle folded,
+
+108
+00:05:10,880 --> 00:05:13,660
+and I make one
+complete straight cut.
+
+109
+00:05:13,660 --> 00:05:23,500
+
+110
+00:05:23,500 --> 00:05:27,747
+And this one has actually
+a line of symmetry,
+
+111
+00:05:27,747 --> 00:05:29,205
+so I fold in half
+at the beginning.
+
+112
+00:05:29,205 --> 00:05:31,830
+
+113
+00:05:31,830 --> 00:05:34,431
+So I get an angel fish.
+
+114
+00:05:34,431 --> 00:05:34,930
+Ooh!
+
+115
+00:05:34,930 --> 00:05:38,417
+
+116
+00:05:38,417 --> 00:05:39,750
+All right, you're not impressed.
+
+117
+00:05:39,750 --> 00:05:41,380
+Keep going.
+
+118
+00:05:41,380 --> 00:05:42,500
+Here's another one.
+
+119
+00:05:42,500 --> 00:05:43,640
+One straight cut.
+
+120
+00:05:43,640 --> 00:05:46,050
+We could go all day here.
+
+121
+00:05:46,050 --> 00:05:47,550
+I mean, the point
+of today's lecture
+
+122
+00:05:47,550 --> 00:05:50,320
+is to see how this is done.
+
+123
+00:05:50,320 --> 00:05:51,649
+In general.
+
+124
+00:05:51,649 --> 00:05:52,690
+Here we have a butterfly.
+
+125
+00:05:52,690 --> 00:05:56,780
+
+126
+00:05:56,780 --> 00:05:57,290
+All right.
+
+127
+00:05:57,290 --> 00:05:59,370
+You guys are tough
+to impress here.
+
+128
+00:05:59,370 --> 00:06:00,590
+Here we go.
+
+129
+00:06:00,590 --> 00:06:03,140
+This one is deemed thematic.
+
+130
+00:06:03,140 --> 00:06:06,900
+It's almost October, so
+it's sort of appropriate.
+
+131
+00:06:06,900 --> 00:06:09,060
+We'll one straight cut.
+
+132
+00:06:09,060 --> 00:06:10,930
+Haven't done this
+one for quite awhile.
+
+133
+00:06:10,930 --> 00:06:16,520
+Get tons of pieces, and if I'm
+lucky-- open it up the right
+
+134
+00:06:16,520 --> 00:06:18,573
+way around.
+
+135
+00:06:18,573 --> 00:06:19,198
+Jack-o-lantern.
+
+136
+00:06:19,198 --> 00:06:23,500
+
+137
+00:06:23,500 --> 00:06:25,720
+Wow, it's amazing!
+
+138
+00:06:25,720 --> 00:06:27,080
+How is it possible?
+
+139
+00:06:27,080 --> 00:06:29,290
+Obviously you can make
+many shapes all at once.
+
+140
+00:06:29,290 --> 00:06:30,620
+That's the general idea here.
+
+141
+00:06:30,620 --> 00:06:33,110
+I'll admit, I cheated
+here because I wanted kids
+
+142
+00:06:33,110 --> 00:06:34,540
+to be able to fold this.
+
+143
+00:06:34,540 --> 00:06:38,175
+The outer octagon
+was cut initially.
+
+144
+00:06:38,175 --> 00:06:40,056
+Yeah, so it's not
+from a rectangle.
+
+145
+00:06:40,056 --> 00:06:41,680
+Just to make it easier
+to fold, but you
+
+146
+00:06:41,680 --> 00:06:43,360
+could do it all at once.
+
+147
+00:06:43,360 --> 00:06:47,120
+And now, the big demo.
+
+148
+00:06:47,120 --> 00:06:48,650
+In fact, it's so
+big I think I might
+
+149
+00:06:48,650 --> 00:06:51,578
+want to use the exacto knife.
+
+150
+00:06:51,578 --> 00:06:55,408
+Uh, we'll try with scissors.
+
+151
+00:06:55,408 --> 00:06:59,040
+Got a lot of layers.
+
+152
+00:06:59,040 --> 00:07:01,030
+Oh, yeah.
+
+153
+00:07:01,030 --> 00:07:03,362
+This is why I usually
+bring my own scissors.
+
+154
+00:07:03,362 --> 00:07:04,570
+Just checking the other side.
+
+155
+00:07:04,570 --> 00:07:08,430
+
+156
+00:07:08,430 --> 00:07:09,720
+They're better scissors.
+
+157
+00:07:09,720 --> 00:07:12,120
+That's what's special
+about my scissors.
+
+158
+00:07:12,120 --> 00:07:14,330
+All right, time for
+the exacto knife.
+
+159
+00:07:14,330 --> 00:07:16,080
+Make sure I'm only
+cutting on the boundary
+
+160
+00:07:16,080 --> 00:07:17,210
+between red and white.
+
+161
+00:07:17,210 --> 00:07:22,242
+
+162
+00:07:22,242 --> 00:07:23,200
+Yeah, my lecture notes.
+
+163
+00:07:23,200 --> 00:07:24,116
+Yeah, who needs those?
+
+164
+00:07:24,116 --> 00:07:28,775
+
+165
+00:07:28,775 --> 00:07:29,275
+It's flat.
+
+166
+00:07:29,275 --> 00:07:33,792
+
+167
+00:07:33,792 --> 00:07:34,910
+A little more cutting.
+
+168
+00:07:34,910 --> 00:07:39,092
+
+169
+00:07:39,092 --> 00:07:41,300
+I believe all the pieces in
+this case are rectangles.
+
+170
+00:07:41,300 --> 00:07:44,120
+
+171
+00:07:44,120 --> 00:07:46,240
+Exciting.
+
+172
+00:07:46,240 --> 00:07:49,464
+All right, straight cut, right?
+
+173
+00:07:49,464 --> 00:07:51,395
+I don't remember which
+way this one opens.
+
+174
+00:07:51,395 --> 00:07:54,825
+
+175
+00:07:54,825 --> 00:07:59,560
+This should be the MIT logo.
+
+176
+00:07:59,560 --> 00:08:01,400
+This one I encourage
+you to try at home.
+
+177
+00:08:01,400 --> 00:08:04,449
+It's pretty crazy.
+
+178
+00:08:04,449 --> 00:08:05,740
+It's definitely a hard folding.
+
+179
+00:08:05,740 --> 00:08:08,630
+
+180
+00:08:08,630 --> 00:08:10,410
+I'm getting used to it now.
+
+181
+00:08:10,410 --> 00:08:13,210
+All right, so you could
+make anything is the point.
+
+182
+00:08:13,210 --> 00:08:16,581
+Some are a little more difficult
+because they have more layers
+
+183
+00:08:16,581 --> 00:08:17,080
+and so on.
+
+184
+00:08:17,080 --> 00:08:19,915
+If I made it out of thinner
+paper like some of the math
+
+185
+00:08:19,915 --> 00:08:22,640
+magicians do, it is super easy.
+
+186
+00:08:22,640 --> 00:08:23,960
+Onion skin paper or something.
+
+187
+00:08:23,960 --> 00:08:27,150
+I think I have some pictures
+of the piece patterns
+
+188
+00:08:27,150 --> 00:08:33,000
+if you want to see
+what these look like.
+
+189
+00:08:33,000 --> 00:08:34,760
+And these are all
+available for download.
+
+190
+00:08:34,760 --> 00:08:38,140
+You want to impress
+your friends, go for it.
+
+191
+00:08:38,140 --> 00:08:44,414
+
+192
+00:08:44,414 --> 00:08:46,330
+They all use slightly
+different color codings,
+
+193
+00:08:46,330 --> 00:08:47,496
+but it's mountain or valley.
+
+194
+00:08:47,496 --> 00:08:49,920
+
+195
+00:08:49,920 --> 00:08:53,000
+And so we want to see
+how to make these.
+
+196
+00:08:53,000 --> 00:08:58,830
+
+197
+00:08:58,830 --> 00:09:00,890
+So let me state
+the theorem first.
+
+198
+00:09:00,890 --> 00:09:07,340
+We have our good friend,
+the universality result,
+
+199
+00:09:07,340 --> 00:09:19,870
+which is any set of line
+segments on your piece of paper
+
+200
+00:09:19,870 --> 00:09:26,780
+can be-- I'll phrase it as can
+be aligned by flat folding.
+
+201
+00:09:26,780 --> 00:09:29,940
+
+202
+00:09:29,940 --> 00:09:33,210
+A line means when you
+make the flat folding,
+
+203
+00:09:33,210 --> 00:09:35,110
+all the segments come
+onto a common line.
+
+204
+00:09:35,110 --> 00:09:38,580
+Nothing else comes to that
+line, and therefore you
+
+205
+00:09:38,580 --> 00:09:42,290
+cut a long line, you get
+exactly those line segments.
+
+206
+00:09:42,290 --> 00:09:47,080
+And there are two methods
+for solving this problem.
+
+207
+00:09:47,080 --> 00:09:56,460
+The first one is what I call
+straight skeleton method,
+
+208
+00:09:56,460 --> 00:10:00,250
+and second one I'll call
+the disk packing method.
+
+209
+00:10:00,250 --> 00:10:03,060
+
+210
+00:10:03,060 --> 00:10:04,490
+By slightly different authors.
+
+211
+00:10:04,490 --> 00:10:08,200
+This one was me, my dad, and
+my advisor, Anna [INAUDIBLE].
+
+212
+00:10:08,200 --> 00:10:14,050
+This one was Marshall Burn,
+me, David Epstein, Barry Hayes.
+
+213
+00:10:14,050 --> 00:10:15,860
+This one's slightly
+after this one.
+
+214
+00:10:15,860 --> 00:10:18,970
+This is sort of my first
+computational origami paper.
+
+215
+00:10:18,970 --> 00:10:22,750
+And they're quite different.
+
+216
+00:10:22,750 --> 00:10:25,680
+I mean at a high level,
+this one's practical.
+
+217
+00:10:25,680 --> 00:10:28,705
+This one is theoretically
+good, but impractical.
+
+218
+00:10:28,705 --> 00:10:30,080
+This one's actually
+theoretically
+
+219
+00:10:30,080 --> 00:10:33,200
+bad in a few situations
+which we will get to,
+
+220
+00:10:33,200 --> 00:10:35,430
+but it works very
+well almost always.
+
+221
+00:10:35,430 --> 00:10:38,010
+In a formal sense
+of almost always.
+
+222
+00:10:38,010 --> 00:10:42,240
+This one always works, but
+it's a challenge to fold.
+
+223
+00:10:42,240 --> 00:10:43,740
+All of the examples
+I showed you are
+
+224
+00:10:43,740 --> 00:10:45,364
+made with the straight
+skeleton method.
+
+225
+00:10:45,364 --> 00:10:47,640
+
+226
+00:10:47,640 --> 00:10:49,860
+So that's the idea.
+
+227
+00:10:49,860 --> 00:10:52,750
+That's where we're going
+to talk about both of them.
+
+228
+00:10:52,750 --> 00:10:58,530
+And first, I have a warm
+up-- three warm ups.
+
+229
+00:10:58,530 --> 00:11:00,850
+Suppose you had a
+square paper and you
+
+230
+00:11:00,850 --> 00:11:02,636
+wanted to make a single cut.
+
+231
+00:11:02,636 --> 00:11:05,680
+What folding do I do?
+
+232
+00:11:05,680 --> 00:11:06,735
+Nothing!
+
+233
+00:11:06,735 --> 00:11:08,470
+Yeah, that was easy.
+
+234
+00:11:08,470 --> 00:11:12,732
+Let's say I have two
+lines I want to make.
+
+235
+00:11:12,732 --> 00:11:13,440
+What should I do?
+
+236
+00:11:13,440 --> 00:11:15,960
+
+237
+00:11:15,960 --> 00:11:17,870
+Fold between them.
+
+238
+00:11:17,870 --> 00:11:21,770
+Fold the lines onto each other,
+which is angular bisector.
+
+239
+00:11:21,770 --> 00:11:28,530
+If I extend the lines, and
+I bisect the angle there,
+
+240
+00:11:28,530 --> 00:11:30,680
+then I will fold one
+line to the other.
+
+241
+00:11:30,680 --> 00:11:33,650
+I brought one just to
+be totally obvious.
+
+242
+00:11:33,650 --> 00:11:36,170
+You have two lines
+fold along the angular
+
+243
+00:11:36,170 --> 00:11:37,740
+bisector of their extensions.
+
+244
+00:11:37,740 --> 00:11:39,550
+It lines up the lines,
+and nothing else.
+
+245
+00:11:39,550 --> 00:11:42,870
+
+246
+00:11:42,870 --> 00:11:45,005
+OK, a little more exciting.
+
+247
+00:11:45,005 --> 00:11:49,180
+
+248
+00:11:49,180 --> 00:11:52,900
+What if I had a triangle?
+
+249
+00:11:52,900 --> 00:11:57,090
+How would you line up the edges
+the triangle and nothing else?
+
+250
+00:11:57,090 --> 00:11:58,175
+Rabbit ear.
+
+251
+00:11:58,175 --> 00:11:58,674
+Yes.
+
+252
+00:11:58,674 --> 00:12:01,330
+
+253
+00:12:01,330 --> 00:12:04,800
+Rabbit ear is you fold
+along the three angular
+
+254
+00:12:04,800 --> 00:12:06,350
+bisectors of the triangle.
+
+255
+00:12:06,350 --> 00:12:09,730
+This is something we talked
+about in the tree method.
+
+256
+00:12:09,730 --> 00:12:11,260
+This is one of the
+sort of gadgets
+
+257
+00:12:11,260 --> 00:12:14,810
+we use in one of-- where
+these were active paths.
+
+258
+00:12:14,810 --> 00:12:17,826
+And we fold along those
+angular bisectors.
+
+259
+00:12:17,826 --> 00:12:19,200
+Angular bisectors
+intuitively are
+
+260
+00:12:19,200 --> 00:12:22,359
+very good because locally
+they line up edges.
+
+261
+00:12:22,359 --> 00:12:23,900
+So if I fold along
+all three of them,
+
+262
+00:12:23,900 --> 00:12:26,640
+and you may know that they
+always meet at a point,
+
+263
+00:12:26,640 --> 00:12:28,325
+then I kind of line
+up all those edges.
+
+264
+00:12:28,325 --> 00:12:29,950
+If I just fold along
+those three edges,
+
+265
+00:12:29,950 --> 00:12:31,100
+it won't be flat foldable.
+
+266
+00:12:31,100 --> 00:12:33,590
+It's like this floppy thing.
+
+267
+00:12:33,590 --> 00:12:36,350
+And so I've added in
+these perpendicular--
+
+268
+00:12:36,350 --> 00:12:41,550
+the purple lines--
+to give me my hinges
+
+269
+00:12:41,550 --> 00:12:43,130
+so I can manipulate these arms.
+
+270
+00:12:43,130 --> 00:12:44,580
+You don't have to
+use all of them.
+
+271
+00:12:44,580 --> 00:12:47,890
+Then you flatten it,
+and now along this line
+
+272
+00:12:47,890 --> 00:12:49,450
+are all the black guys.
+
+273
+00:12:49,450 --> 00:12:52,160
+All the black lines.
+
+274
+00:12:52,160 --> 00:12:54,160
+We've got a bunch
+of flat foldings.
+
+275
+00:12:54,160 --> 00:12:58,800
+All right, so a general idea,
+and in the straight skeleton
+
+276
+00:12:58,800 --> 00:13:02,400
+method, what we are going
+to use are angular bisectors
+
+277
+00:13:02,400 --> 00:13:03,570
+and perpendicular folds.
+
+278
+00:13:03,570 --> 00:13:06,840
+Perpendicular folds are also
+good because locally folds
+
+279
+00:13:06,840 --> 00:13:08,610
+are a reflection
+if you fold flat.
+
+280
+00:13:08,610 --> 00:13:11,790
+So this line will fold
+on top of this line.
+
+281
+00:13:11,790 --> 00:13:12,916
+So perpendiculars are good.
+
+282
+00:13:12,916 --> 00:13:14,040
+Angular bisectors are good.
+
+283
+00:13:14,040 --> 00:13:17,190
+If you fold along all of them,
+you should line everything up.
+
+284
+00:13:17,190 --> 00:13:22,230
+That's the intuition,
+and the question
+
+285
+00:13:22,230 --> 00:13:24,900
+is how do I fold a long
+enough angular bisectors
+
+286
+00:13:24,900 --> 00:13:28,590
+and perpendiculars so that
+it actually folds flat.
+
+287
+00:13:28,590 --> 00:13:31,105
+And that is the straight
+skeleton, or one way
+
+288
+00:13:31,105 --> 00:13:32,605
+to do that is the
+straight skeleton.
+
+289
+00:13:32,605 --> 00:13:43,520
+
+290
+00:13:43,520 --> 00:13:47,410
+And this actually was
+invented a few years earlier.
+
+291
+00:13:47,410 --> 00:13:51,890
+95, 96 by a couple of Austrians.
+
+292
+00:13:51,890 --> 00:13:54,290
+That was in [INAUDIBLE]
+and actually four people.
+
+293
+00:13:54,290 --> 00:13:59,450
+
+294
+00:13:59,450 --> 00:14:01,030
+So let me write
+down a definition,
+
+295
+00:14:01,030 --> 00:14:06,540
+and then we will-- I'll
+show you what it means.
+
+296
+00:14:06,540 --> 00:14:09,310
+We've seen a thing
+like this very briefly
+
+297
+00:14:09,310 --> 00:14:11,490
+in the universal
+molecule, but this
+
+298
+00:14:11,490 --> 00:14:13,445
+is going to be more
+general in some sense.
+
+299
+00:14:13,445 --> 00:14:31,160
+
+300
+00:14:31,160 --> 00:14:34,950
+And actually, why don't
+I put up an image of one
+
+301
+00:14:34,950 --> 00:14:37,930
+while we're defining it.
+
+302
+00:14:37,930 --> 00:15:19,264
+
+303
+00:15:19,264 --> 00:15:22,499
+All right, so it is trajectory
+of the vertices of the desired
+
+304
+00:15:22,499 --> 00:15:23,790
+cut pattern-- that's our input.
+
+305
+00:15:23,790 --> 00:15:27,730
+The graph of edges
+we want to cut out.
+
+306
+00:15:27,730 --> 00:15:29,800
+As we simultaneously
+shrink each region.
+
+307
+00:15:29,800 --> 00:15:32,990
+That's every face
+outlined by those cuts.
+
+308
+00:15:32,990 --> 00:15:35,840
+Keeping edges parallel and a
+uniform perpendicular distance
+
+309
+00:15:35,840 --> 00:15:38,260
+from the original edges.
+
+310
+00:15:38,260 --> 00:15:45,400
+So, a bit of a mouthful, but
+let me draw some pictures.
+
+311
+00:15:45,400 --> 00:15:48,110
+Well, let's maybe
+start with a triangle.
+
+312
+00:15:48,110 --> 00:15:50,830
+So the idea with
+a triangle is you
+
+313
+00:15:50,830 --> 00:15:53,710
+shrink-- this is really the
+wrong order to do things.
+
+314
+00:15:53,710 --> 00:15:56,137
+
+315
+00:15:56,137 --> 00:15:58,470
+I want to shrink-- there's
+two regions for the triangle.
+
+316
+00:15:58,470 --> 00:16:00,000
+There's the inside
+and the outside.
+
+317
+00:16:00,000 --> 00:16:04,260
+If I shrink the inside, I
+get these parallel lines.
+
+318
+00:16:04,260 --> 00:16:06,920
+All-- I want all of these
+distances to be equal.
+
+319
+00:16:06,920 --> 00:16:09,400
+Those are the
+perpendicular distances.
+
+320
+00:16:09,400 --> 00:16:12,410
+I keep shrinking,
+and at some point
+
+321
+00:16:12,410 --> 00:16:14,780
+I can't shrink anymore
+because I get a single point.
+
+322
+00:16:14,780 --> 00:16:16,450
+The in-center of the triangle.
+
+323
+00:16:16,450 --> 00:16:18,990
+If I watch where did the
+vertices go during that time,
+
+324
+00:16:18,990 --> 00:16:20,950
+it's along angular bisectors.
+
+325
+00:16:20,950 --> 00:16:24,106
+Hey, our good friends,
+angular bisectors.
+
+326
+00:16:24,106 --> 00:16:25,730
+Now I do the same
+thing on the outside.
+
+327
+00:16:25,730 --> 00:16:29,920
+Shrinking the outside region
+is like expanding the triangle.
+
+328
+00:16:29,920 --> 00:16:34,620
+As I expand the triangle, the
+outside gets smaller area.
+
+329
+00:16:34,620 --> 00:16:36,890
+So actually, it's
+just the same thing.
+
+330
+00:16:36,890 --> 00:16:39,670
+I get concentric
+triangles, and I just
+
+331
+00:16:39,670 --> 00:16:41,930
+keep going along the
+angular bisectors.
+
+332
+00:16:41,930 --> 00:16:42,780
+So that's it.
+
+333
+00:16:42,780 --> 00:16:44,960
+It's not going to give us
+the perpendicular fold.
+
+334
+00:16:44,960 --> 00:16:46,970
+It's just the angular
+bisector parts.
+
+335
+00:16:46,970 --> 00:16:48,685
+Still see a triangle
+in there somewhere.
+
+336
+00:16:48,685 --> 00:16:51,230
+
+337
+00:16:51,230 --> 00:16:53,070
+OK, that's a really
+simple example,
+
+338
+00:16:53,070 --> 00:16:54,780
+and the only event
+that happened is
+
+339
+00:16:54,780 --> 00:16:57,140
+that the polygon disappeared.
+
+340
+00:16:57,140 --> 00:17:03,450
+When that happens, you stop
+with that particular polygon.
+
+341
+00:17:03,450 --> 00:17:07,691
+In general, there are three
+things that can happen.
+
+342
+00:17:07,691 --> 00:17:08,565
+We call these events.
+
+343
+00:17:08,565 --> 00:17:11,650
+
+344
+00:17:11,650 --> 00:17:12,400
+Three interesting.
+
+345
+00:17:12,400 --> 00:17:14,089
+Things.
+
+346
+00:17:14,089 --> 00:17:16,645
+One is that an edge disappears.
+
+347
+00:17:16,645 --> 00:17:21,050
+
+348
+00:17:21,050 --> 00:17:24,380
+So for example, locally, if
+I have a picture like this
+
+349
+00:17:24,380 --> 00:17:32,000
+and I shrink, and I shrink,
+and I shrink, at some point--
+
+350
+00:17:32,000 --> 00:17:36,230
+what's happening is these
+angular bisectors are meeting,
+
+351
+00:17:36,230 --> 00:17:39,910
+and now I lost-- this edge
+shrinks to zero length.
+
+352
+00:17:39,910 --> 00:17:41,310
+So just forget about the edge.
+
+353
+00:17:41,310 --> 00:17:42,435
+Pretend it was never there.
+
+354
+00:17:42,435 --> 00:17:45,290
+Just keeps shrinking now
+what is these two edges.
+
+355
+00:17:45,290 --> 00:17:50,400
+And I shrink, and I
+shrink, and I shrink.
+
+356
+00:17:50,400 --> 00:17:53,050
+What happens is, in some
+sense, these vertices
+
+357
+00:17:53,050 --> 00:17:56,140
+merge-- these edges
+merge, and now I
+
+358
+00:17:56,140 --> 00:17:59,900
+have one guy going
+straight up there.
+
+359
+00:17:59,900 --> 00:18:01,210
+And what is that edge doing?
+
+360
+00:18:01,210 --> 00:18:03,780
+It's not an angular
+bisector of this or this,
+
+361
+00:18:03,780 --> 00:18:07,325
+but it's an angular bisector
+of the extension of these two
+
+362
+00:18:07,325 --> 00:18:07,825
+lines.
+
+363
+00:18:07,825 --> 00:18:11,120
+
+364
+00:18:11,120 --> 00:18:15,450
+Because if you look at this--
+one of these two edges--
+
+365
+00:18:15,450 --> 00:18:17,120
+they are parallel
+to the two original.
+
+366
+00:18:17,120 --> 00:18:19,430
+So if you bisect those
+parallel offsets,
+
+367
+00:18:19,430 --> 00:18:22,310
+it's the same thing as
+bisecting the original edges
+
+368
+00:18:22,310 --> 00:18:23,990
+and extension.
+
+369
+00:18:23,990 --> 00:18:27,150
+So this looks good because
+these two folds will line up
+
+370
+00:18:27,150 --> 00:18:30,285
+those two edges, or this fold
+will line up these two edge.
+
+371
+00:18:30,285 --> 00:18:31,910
+This fold will line
+up those two edges.
+
+372
+00:18:31,910 --> 00:18:33,914
+This fold will line
+up these two edges.
+
+373
+00:18:33,914 --> 00:18:35,580
+And we're doing kind
+of extra alignment,
+
+374
+00:18:35,580 --> 00:18:37,570
+but everything looks kosher.
+
+375
+00:18:37,570 --> 00:18:40,330
+
+376
+00:18:40,330 --> 00:18:43,080
+Good.
+
+377
+00:18:43,080 --> 00:18:45,740
+So when an edge disappears,
+you just forget about it.
+
+378
+00:18:45,740 --> 00:18:50,150
+
+379
+00:18:50,150 --> 00:18:52,980
+All right, forget-- it's
+probably "forgedaboutit"--
+
+380
+00:18:52,980 --> 00:18:55,592
+something like that.
+
+381
+00:18:55,592 --> 00:18:57,400
+All right.
+
+382
+00:18:57,400 --> 00:19:01,325
+Then we have-- a
+region can disappear.
+
+383
+00:19:01,325 --> 00:19:05,350
+
+384
+00:19:05,350 --> 00:19:08,470
+That's what happened
+with the triangle.
+
+385
+00:19:08,470 --> 00:19:10,980
+And then again, you
+forget about it.
+
+386
+00:19:10,980 --> 00:19:14,807
+
+387
+00:19:14,807 --> 00:19:15,890
+There may be many regions.
+
+388
+00:19:15,890 --> 00:19:17,765
+You have to keep shrinking
+the other regions,
+
+389
+00:19:17,765 --> 00:19:20,810
+but when one
+disappears, you're done.
+
+390
+00:19:20,810 --> 00:19:24,835
+Third thing that can happen
+is that a region splits.
+
+391
+00:19:24,835 --> 00:19:29,450
+
+392
+00:19:29,450 --> 00:19:32,090
+So let's look at an
+interesting polygon.
+
+393
+00:19:32,090 --> 00:19:35,750
+
+394
+00:19:35,750 --> 00:19:42,080
+This one-- the straight edges.
+
+395
+00:19:42,080 --> 00:19:47,630
+And when I shrink this
+guy-- see, what's happening
+
+396
+00:19:47,630 --> 00:19:55,940
+is this edge is approaching
+that vertex, and at some point
+
+397
+00:19:55,940 --> 00:19:56,565
+they will meet.
+
+398
+00:19:56,565 --> 00:20:00,170
+
+399
+00:20:00,170 --> 00:20:03,620
+And what we're left with are
+two triangles in this case.
+
+400
+00:20:03,620 --> 00:20:05,560
+And generally split
+into two parts,
+
+401
+00:20:05,560 --> 00:20:07,880
+you just keep
+shrinking the parts.
+
+402
+00:20:07,880 --> 00:20:11,210
+So it's not really like
+you're stopping at any point.
+
+403
+00:20:11,210 --> 00:20:12,964
+Just the same thing
+over and over.
+
+404
+00:20:12,964 --> 00:20:14,880
+But if you're implementing
+this on a computer,
+
+405
+00:20:14,880 --> 00:20:16,546
+you really have to
+realize that happens.
+
+406
+00:20:16,546 --> 00:20:18,490
+Otherwise you'd shrink
+them beyond each other
+
+407
+00:20:18,490 --> 00:20:21,502
+and it would be self
+intersecting and ugly.
+
+408
+00:20:21,502 --> 00:20:22,960
+But you do the
+obvious thing, which
+
+409
+00:20:22,960 --> 00:20:25,490
+is you cut where they split.
+
+410
+00:20:25,490 --> 00:20:27,910
+And what will happen in this
+case with straight skeleton
+
+411
+00:20:27,910 --> 00:20:30,410
+is you keep going along
+an angular bisector
+
+412
+00:20:30,410 --> 00:20:32,380
+until that little
+triangle stops.
+
+413
+00:20:32,380 --> 00:20:39,930
+
+414
+00:20:39,930 --> 00:20:42,934
+One more edge here.
+
+415
+00:20:42,934 --> 00:20:45,100
+So that's what the straight
+skeleton will look like.
+
+416
+00:20:45,100 --> 00:20:48,060
+This edge is an angular bisector
+of this one and this one.
+
+417
+00:20:48,060 --> 00:20:50,680
+This edge is an angular bisector
+of this one and this one.
+
+418
+00:20:50,680 --> 00:20:53,590
+In general, if you
+look at an edge,
+
+419
+00:20:53,590 --> 00:20:56,890
+and you see what
+original edge can I
+
+420
+00:20:56,890 --> 00:21:00,100
+reach without crossing
+another skeleton edge,
+
+421
+00:21:00,100 --> 00:21:01,520
+those are the two
+that you bisect.
+
+422
+00:21:01,520 --> 00:21:02,710
+So it's really easy to see.
+
+423
+00:21:02,710 --> 00:21:03,720
+Look at this guy.
+
+424
+00:21:03,720 --> 00:21:05,927
+The only two I can reach
+are this one and this one.
+
+425
+00:21:05,927 --> 00:21:07,760
+I look at this one, the
+only two I can reach
+
+426
+00:21:07,760 --> 00:21:08,843
+are that one and that one.
+
+427
+00:21:08,843 --> 00:21:10,980
+So it's an angular
+bisector of those two.
+
+428
+00:21:10,980 --> 00:21:13,585
+In fact, in general, if you
+finish the outside here too,
+
+429
+00:21:13,585 --> 00:21:16,250
+it's the same deal.
+
+430
+00:21:16,250 --> 00:21:19,240
+And then-- yeah,
+all right, enough.
+
+431
+00:21:19,240 --> 00:21:21,240
+Here's a bigger example.
+
+432
+00:21:21,240 --> 00:21:24,680
+Little turtle drawn
+on a triangular grid,
+
+433
+00:21:24,680 --> 00:21:26,450
+and you can see there's
+angular bisectors.
+
+434
+00:21:26,450 --> 00:21:28,000
+This is a straight skeleton.
+
+435
+00:21:28,000 --> 00:21:30,150
+This guy, for example,
+bisects this horizontal edge
+
+436
+00:21:30,150 --> 00:21:32,500
+and this horizontal edge has a
+little bit of a boundary case
+
+437
+00:21:32,500 --> 00:21:35,041
+we have to think about, but this
+is the right interpretation.
+
+438
+00:21:35,041 --> 00:21:37,240
+
+439
+00:21:37,240 --> 00:21:41,270
+It's like an angle of 180,
+so you bisect it to 90.
+
+440
+00:21:41,270 --> 00:21:42,624
+Other fun features.
+
+441
+00:21:42,624 --> 00:21:44,040
+Here we get a
+little bit of action
+
+442
+00:21:44,040 --> 00:21:45,670
+on the outside of the polygon.
+
+443
+00:21:45,670 --> 00:21:47,610
+So far, we haven't seen that.
+
+444
+00:21:47,610 --> 00:21:50,390
+So, like these guys
+meet, and there
+
+445
+00:21:50,390 --> 00:21:56,180
+is some bigger-- there's a
+bigger turtle here somewhere.
+
+446
+00:21:56,180 --> 00:21:58,130
+It's hard to draw.
+
+447
+00:21:58,130 --> 00:22:01,280
+Anyway, what's
+happening is this edge
+
+448
+00:22:01,280 --> 00:22:05,580
+is shrinking to zero while this
+one is offsetting down this way
+
+449
+00:22:05,580 --> 00:22:07,180
+and this is offsetting
+down this way.
+
+450
+00:22:07,180 --> 00:22:09,320
+So the new turtle ends
+up being like that.
+
+451
+00:22:09,320 --> 00:22:11,670
+
+452
+00:22:11,670 --> 00:22:12,170
+And so on.
+
+453
+00:22:12,170 --> 00:22:16,280
+
+454
+00:22:16,280 --> 00:22:18,360
+You're shrinking every face.
+
+455
+00:22:18,360 --> 00:22:20,860
+So in general, you have a
+whole bunch of polygons.
+
+456
+00:22:20,860 --> 00:22:24,340
+Or in general we're
+allowing crazy things
+
+457
+00:22:24,340 --> 00:22:28,590
+like this as this pattern
+of cuts I want to make.
+
+458
+00:22:28,590 --> 00:22:31,470
+Maybe you want to cut your
+square into five pieces.
+
+459
+00:22:31,470 --> 00:22:34,820
+I'm going to shrink each of
+them separately, or in parallel.
+
+460
+00:22:34,820 --> 00:22:37,014
+It doesn't actually matter.
+
+461
+00:22:37,014 --> 00:22:38,430
+So in this case
+there's just going
+
+462
+00:22:38,430 --> 00:22:40,910
+to be five angular bisectors.
+
+463
+00:22:40,910 --> 00:22:43,590
+In general, there are several
+regions you shrink all of them.
+
+464
+00:22:43,590 --> 00:22:45,390
+A lot of the time we
+think about polygons,
+
+465
+00:22:45,390 --> 00:22:47,360
+and then there's two
+regions to shrink.
+
+466
+00:22:47,360 --> 00:22:49,922
+And it looks like you're
+expanding the turtle to go out,
+
+467
+00:22:49,922 --> 00:22:51,880
+but really you're shrinking
+the outside region.
+
+468
+00:22:51,880 --> 00:22:53,824
+It just happens to be--
+there's one infinite
+
+469
+00:22:53,824 --> 00:22:54,990
+region that one looks weird.
+
+470
+00:22:54,990 --> 00:22:58,750
+
+471
+00:22:58,750 --> 00:23:01,630
+A couple other special
+cases, because I
+
+472
+00:23:01,630 --> 00:23:04,880
+want to do any graph
+and not just polygons.
+
+473
+00:23:04,880 --> 00:23:08,490
+You could have something
+that just terminates.
+
+474
+00:23:08,490 --> 00:23:12,050
+So a degree one vertex only
+has one [? edge ?] into it.
+
+475
+00:23:12,050 --> 00:23:13,440
+In this case, it's
+not quite well
+
+476
+00:23:13,440 --> 00:23:15,930
+defined what to do
+because you offset this
+
+477
+00:23:15,930 --> 00:23:18,840
+and you offset this,
+but what happens here?
+
+478
+00:23:18,840 --> 00:23:20,470
+And there it's
+sort of arbitrary.
+
+479
+00:23:20,470 --> 00:23:22,636
+You can do whatever you
+want, but the simplest thing
+
+480
+00:23:22,636 --> 00:23:25,420
+you can do is to make
+a-- imagine that there's
+
+481
+00:23:25,420 --> 00:23:28,240
+a little vertical segment here
+that happens to be length zero,
+
+482
+00:23:28,240 --> 00:23:34,180
+and it expands into the
+edge of a rectangle.
+
+483
+00:23:34,180 --> 00:23:40,410
+So you end up with these
+245 degree angular bisectors
+
+484
+00:23:40,410 --> 00:23:44,260
+between this vertical edge
+and the horizontal one.
+
+485
+00:23:44,260 --> 00:23:46,500
+But you have some
+flexibility there.
+
+486
+00:23:46,500 --> 00:23:48,280
+You can design it how you want.
+
+487
+00:23:48,280 --> 00:23:50,440
+The other case you can
+have is a degree 0 vertex.
+
+488
+00:23:50,440 --> 00:23:53,312
+There are no edges here.
+
+489
+00:23:53,312 --> 00:23:55,270
+This is a little funny
+in the way I defined it.
+
+490
+00:23:55,270 --> 00:23:57,530
+I just said I wanted
+to align line segments.
+
+491
+00:23:57,530 --> 00:24:00,550
+You could also align points
+if you really feel like it,
+
+492
+00:24:00,550 --> 00:24:02,640
+and that would be
+represented by a dot that
+
+493
+00:24:02,640 --> 00:24:04,130
+has no cuts next to it.
+
+494
+00:24:04,130 --> 00:24:07,060
+If you want to cut
+out just this point--
+
+495
+00:24:07,060 --> 00:24:08,380
+I need to make it something.
+
+496
+00:24:08,380 --> 00:24:10,760
+You could think of it as a
+tiny triangle for consistency
+
+497
+00:24:10,760 --> 00:24:11,730
+with this picture.
+
+498
+00:24:11,730 --> 00:24:13,480
+We think of it as
+a little square.
+
+499
+00:24:13,480 --> 00:24:16,490
+And so, when you
+expand it, or when
+
+500
+00:24:16,490 --> 00:24:20,370
+you shrink the outside region,
+you get four 45 degrees folds.
+
+501
+00:24:20,370 --> 00:24:25,090
+This is actually how
+[? Eichholtz ?] et al defined
+
+502
+00:24:25,090 --> 00:24:29,900
+it back in '96, and
+it's a fine definition.
+
+503
+00:24:29,900 --> 00:24:33,280
+But you have flexibility
+here in your design process.
+
+504
+00:24:33,280 --> 00:24:34,994
+They'll all work.
+
+505
+00:24:34,994 --> 00:24:37,410
+And this would let you take a
+whole bunch of points, align
+
+506
+00:24:37,410 --> 00:24:40,371
+them onto a common line, and
+nothing else is on that line.
+
+507
+00:24:40,371 --> 00:24:42,370
+Because these folds are
+going to push everything
+
+508
+00:24:42,370 --> 00:24:47,410
+that's surrounding the
+point away from the line.
+
+509
+00:24:47,410 --> 00:24:48,770
+All right.
+
+510
+00:24:48,770 --> 00:24:50,320
+Some fun facts.
+
+511
+00:24:50,320 --> 00:24:51,910
+Straight skeleton
+is nice and small.
+
+512
+00:24:51,910 --> 00:24:56,240
+If you have n original
+points and line segments
+
+513
+00:24:56,240 --> 00:24:59,270
+in your desired cut pattern,
+the straight skeleton
+
+514
+00:24:59,270 --> 00:25:03,200
+has a linear n number of
+line segments-- linear number
+
+515
+00:25:03,200 --> 00:25:04,070
+of creases.
+
+516
+00:25:04,070 --> 00:25:04,700
+So order n.
+
+517
+00:25:04,700 --> 00:25:11,480
+
+518
+00:25:11,480 --> 00:25:14,600
+Other fun facts-- there is
+a one-to-one correspondence
+
+519
+00:25:14,600 --> 00:25:19,600
+between the edges you
+want to cut along,
+
+520
+00:25:19,600 --> 00:25:22,880
+like let me pick
+one over here maybe.
+
+521
+00:25:22,880 --> 00:25:25,380
+Like this-- this is an
+edge I want to cut along,
+
+522
+00:25:25,380 --> 00:25:27,680
+and regions of the
+straight skeleton.
+
+523
+00:25:27,680 --> 00:25:28,700
+So here's a region.
+
+524
+00:25:28,700 --> 00:25:30,800
+A face of the straight skeleton.
+
+525
+00:25:30,800 --> 00:25:31,430
+This guy.
+
+526
+00:25:31,430 --> 00:25:34,370
+There's exactly one cut
+edge inside of that.
+
+527
+00:25:34,370 --> 00:25:35,560
+That's always the case.
+
+528
+00:25:35,560 --> 00:25:36,977
+You look everywhere here.
+
+529
+00:25:36,977 --> 00:25:38,810
+Every region of the
+straight skeleton-- it's
+
+530
+00:25:38,810 --> 00:25:40,980
+more obvious if I color
+them different colors.
+
+531
+00:25:40,980 --> 00:25:43,220
+There's one cut edge inside.
+
+532
+00:25:43,220 --> 00:25:48,090
+And all of those guys that
+surround that cut edge
+
+533
+00:25:48,090 --> 00:25:51,552
+bisect that edge
+and another one.
+
+534
+00:25:51,552 --> 00:25:53,510
+And the other one is the
+one on the other side.
+
+535
+00:25:53,510 --> 00:25:55,843
+In general, you take one of
+the straight skeleton edges.
+
+536
+00:25:55,843 --> 00:25:56,709
+There are two sides.
+
+537
+00:25:56,709 --> 00:25:58,500
+There's two faces of
+the straight skeleton.
+
+538
+00:25:58,500 --> 00:26:00,320
+This one's crazy and non convex.
+
+539
+00:26:00,320 --> 00:26:03,480
+This one's just a little
+infinite triangle down here,
+
+540
+00:26:03,480 --> 00:26:05,942
+and that edge bisects
+those two cut edges.
+
+541
+00:26:05,942 --> 00:26:07,900
+So it's very easy to walk
+around the structure.
+
+542
+00:26:07,900 --> 00:26:09,910
+See what it bisects.
+
+543
+00:26:09,910 --> 00:26:11,450
+lots of things get bisected.
+
+544
+00:26:11,450 --> 00:26:15,860
+But, it's not flat
+foldable, so we're not done.
+
+545
+00:26:15,860 --> 00:26:20,160
+And that's where we
+need the perpendiculars.
+
+546
+00:26:20,160 --> 00:26:20,660
+So--
+
+547
+00:26:20,660 --> 00:26:39,080
+
+548
+00:26:39,080 --> 00:26:41,050
+I'll write down the
+definition, and maybe
+
+549
+00:26:41,050 --> 00:26:43,490
+show the picture
+we're going for.
+
+550
+00:26:43,490 --> 00:27:43,496
+
+551
+00:27:43,496 --> 00:27:44,870
+There's a lot of
+structures here.
+
+552
+00:27:44,870 --> 00:27:46,480
+There is what I
+call the cut graph--
+
+553
+00:27:46,480 --> 00:27:47,847
+the things we're trying to make.
+
+554
+00:27:47,847 --> 00:27:49,305
+Then there's the
+straight skeleton.
+
+555
+00:27:49,305 --> 00:27:51,789
+You should think of it as
+a graph drawn on a paper.
+
+556
+00:27:51,789 --> 00:27:53,330
+It has vertices of
+straight skeleton,
+
+557
+00:27:53,330 --> 00:27:55,112
+which is called
+skeleton vertices.
+
+558
+00:27:55,112 --> 00:27:56,570
+Regions of straight
+skeleton, which
+
+559
+00:27:56,570 --> 00:27:57,824
+is called skeleton regions.
+
+560
+00:27:57,824 --> 00:27:59,490
+Edges of the cut
+graph, which are called
+
+561
+00:27:59,490 --> 00:28:00,899
+cut edges, and so on.
+
+562
+00:28:00,899 --> 00:28:02,440
+We're going to add
+a new graph, which
+
+563
+00:28:02,440 --> 00:28:04,440
+is the perpendicular graph.
+
+564
+00:28:04,440 --> 00:28:07,150
+Which you can think
+of as hinges from tree
+
+565
+00:28:07,150 --> 00:28:09,880
+method of origami design.
+
+566
+00:28:09,880 --> 00:28:12,960
+So what is this--
+what does it mean?
+
+567
+00:28:12,960 --> 00:28:15,040
+We started a straight
+skeleton vertex.
+
+568
+00:28:15,040 --> 00:28:18,050
+Usually there are three
+skeleton edges coming together.
+
+569
+00:28:18,050 --> 00:28:20,560
+Vertex-- sometimes they're
+more like this guy.
+
+570
+00:28:20,560 --> 00:28:21,600
+Four.
+
+571
+00:28:21,600 --> 00:28:25,030
+And if there's three
+edges coming together,
+
+572
+00:28:25,030 --> 00:28:26,590
+there are three
+skeleton regions.
+
+573
+00:28:26,590 --> 00:28:29,000
+For each one-- each
+of those regions--
+
+574
+00:28:29,000 --> 00:28:31,220
+has one cut edge
+in it, so we try
+
+575
+00:28:31,220 --> 00:28:35,860
+to walk perpendicular
+and toward that cut edge.
+
+576
+00:28:35,860 --> 00:28:37,190
+So here I walk perpendicular.
+
+577
+00:28:37,190 --> 00:28:38,630
+I meet at right angles here.
+
+578
+00:28:38,630 --> 00:28:40,900
+I just go off to infinity.
+
+579
+00:28:40,900 --> 00:28:45,830
+Here I walk perpendicular to
+this cut edge, and that's cool,
+
+580
+00:28:45,830 --> 00:28:49,490
+but then I leave
+the skeleton region.
+
+581
+00:28:49,490 --> 00:28:51,730
+At that point I enter
+a new skeleton region,
+
+582
+00:28:51,730 --> 00:28:54,610
+which is this one,
+this non-convex thing.
+
+583
+00:28:54,610 --> 00:28:57,580
+It contains one et edge, and
+when I-- where was I here?
+
+584
+00:28:57,580 --> 00:28:58,500
+I entered.
+
+585
+00:28:58,500 --> 00:29:01,310
+Now I want to move
+perpendicular to that cut edge,
+
+586
+00:29:01,310 --> 00:29:04,199
+so that when I cross it, I
+cross it perpendicularly.
+
+587
+00:29:04,199 --> 00:29:05,240
+Now I enter a new region.
+
+588
+00:29:05,240 --> 00:29:07,440
+It contains this cut edge.
+
+589
+00:29:07,440 --> 00:29:11,910
+I move perpendicular to it,
+and I don't actually cross it,
+
+590
+00:29:11,910 --> 00:29:13,135
+but I enter a new region.
+
+591
+00:29:13,135 --> 00:29:14,760
+Now I'm in the region
+of this cut edge,
+
+592
+00:29:14,760 --> 00:29:16,380
+so I move perpendicular to that.
+
+593
+00:29:16,380 --> 00:29:18,600
+And wow, I hit another
+skeleton vertex.
+
+594
+00:29:18,600 --> 00:29:20,050
+I stop.
+
+595
+00:29:20,050 --> 00:29:22,380
+OK this example is because
+it's on a triangular grid,
+
+596
+00:29:22,380 --> 00:29:24,170
+there's lots of
+degeneracies like that.
+
+597
+00:29:24,170 --> 00:29:26,220
+Usually you'd eventually
+go off to infinity,
+
+598
+00:29:26,220 --> 00:29:28,530
+or come around to meet yourself.
+
+599
+00:29:28,530 --> 00:29:30,940
+Here I happen to hit
+a different vertex.
+
+600
+00:29:30,940 --> 00:29:33,750
+You do that all the vertices.
+
+601
+00:29:33,750 --> 00:29:35,040
+All the skeleton vertices.
+
+602
+00:29:35,040 --> 00:29:39,250
+Now there's some weird
+ones like this one.
+
+603
+00:29:39,250 --> 00:29:42,920
+Notice there are no purple
+lines coming out from here,
+
+604
+00:29:42,920 --> 00:29:44,490
+and that's because
+every region you
+
+605
+00:29:44,490 --> 00:29:47,410
+try to enter you
+immediately leave.
+
+606
+00:29:47,410 --> 00:29:49,630
+So if I tried-- there's
+four regions here.
+
+607
+00:29:49,630 --> 00:29:50,720
+Try each one of them.
+
+608
+00:29:50,720 --> 00:29:53,300
+Like this region
+has this cut edge.
+
+609
+00:29:53,300 --> 00:29:54,900
+If I try to go
+perpendicular to it,
+
+610
+00:29:54,900 --> 00:29:57,760
+I'd enter a different region,
+so I can actually go at all.
+
+611
+00:29:57,760 --> 00:30:00,470
+Like I move and then
+I instantly stop.
+
+612
+00:30:00,470 --> 00:30:04,630
+So you could think of there
+being like a zero radius
+
+613
+00:30:04,630 --> 00:30:05,374
+thing there.
+
+614
+00:30:05,374 --> 00:30:06,790
+That's sort of the
+degenerate case
+
+615
+00:30:06,790 --> 00:30:09,900
+of a river being a disc
+Is it being a circle.
+
+616
+00:30:09,900 --> 00:30:11,340
+Same thing going on.
+
+617
+00:30:11,340 --> 00:30:12,820
+All of-- in general
+when you have
+
+618
+00:30:12,820 --> 00:30:15,054
+reflex vertices and their
+regular bisectors meeting,
+
+619
+00:30:15,054 --> 00:30:16,720
+you're going to lose
+some perpendiculars
+
+620
+00:30:16,720 --> 00:30:19,500
+because you can't enter them.
+
+621
+00:30:19,500 --> 00:30:22,384
+Here's another one where I
+just have one perpendicular
+
+622
+00:30:22,384 --> 00:30:23,050
+edge coming out.
+
+623
+00:30:23,050 --> 00:30:25,875
+This one I can
+reach, but if I tried
+
+624
+00:30:25,875 --> 00:30:27,500
+to be perpendicular
+to either of these,
+
+625
+00:30:27,500 --> 00:30:30,820
+I enter the wrong region.
+
+626
+00:30:30,820 --> 00:30:33,340
+That's the perpendicular
+folds, and that's pretty much
+
+627
+00:30:33,340 --> 00:30:34,160
+the crease pattern.
+
+628
+00:30:34,160 --> 00:30:35,785
+There are technically
+a few other folds
+
+629
+00:30:35,785 --> 00:30:37,660
+you have to deal
+with, but that is--
+
+630
+00:30:37,660 --> 00:30:40,050
+if you want to make
+something right now,
+
+631
+00:30:40,050 --> 00:30:44,250
+just apply those two algorithms
+and you get your shape.
+
+632
+00:30:44,250 --> 00:30:45,760
+Just fold along
+that crease pattern.
+
+633
+00:30:45,760 --> 00:30:51,910
+It will be flat
+foldable almost always.
+
+634
+00:30:51,910 --> 00:30:53,930
+Why is it flat foldable?
+
+635
+00:30:53,930 --> 00:30:57,310
+So one thing we can check is
+local flat foldability at least
+
+636
+00:30:57,310 --> 00:31:02,360
+satisfies Kawasaki's condition
+because at a typical vertex
+
+637
+00:31:02,360 --> 00:31:06,680
+you're going to have three
+skeleton edges coming together.
+
+638
+00:31:06,680 --> 00:31:08,220
+And so there are
+three faces here.
+
+639
+00:31:08,220 --> 00:31:14,110
+Each of them has a cut edge
+somewhere-- probably draw
+
+640
+00:31:14,110 --> 00:31:16,490
+this reasonably well-- and
+should have the property
+
+641
+00:31:16,490 --> 00:31:21,750
+that when I extend these--
+didn't draw that so well.
+
+642
+00:31:21,750 --> 00:31:26,100
+And I extend these-- these
+are angular bisectors.
+
+643
+00:31:26,100 --> 00:31:30,760
+We know the skeleton edges will
+angularly bisect two cut edges.
+
+644
+00:31:30,760 --> 00:31:33,610
+The two cut edges that
+are defined by these guys.
+
+645
+00:31:33,610 --> 00:31:38,890
+So I should get an angular
+bisector here, and those meet.
+
+646
+00:31:38,890 --> 00:31:41,912
+An angular bisector here.
+
+647
+00:31:41,912 --> 00:31:43,620
+And then I also have
+perpendicular folds.
+
+648
+00:31:43,620 --> 00:31:48,090
+So they may not actually meet
+this guy, but if they did,
+
+649
+00:31:48,090 --> 00:31:50,811
+they certainly
+meet the extension.
+
+650
+00:31:50,811 --> 00:31:53,290
+Hey, that's our good
+friend, the rabbit ear.
+
+651
+00:31:53,290 --> 00:31:55,130
+Just regular triangle fold.
+
+652
+00:31:55,130 --> 00:32:03,010
+And in particular, you can see
+that these angles are equal.
+
+653
+00:32:03,010 --> 00:32:06,380
+I call this three prime.
+
+654
+00:32:06,380 --> 00:32:10,471
+It's like 180 minus
+that, I think.
+
+655
+00:32:10,471 --> 00:32:12,430
+If I'm not mistaken.
+
+656
+00:32:12,430 --> 00:32:14,832
+And this is one prime.
+
+657
+00:32:14,832 --> 00:32:17,500
+Not the best notation.
+
+658
+00:32:17,500 --> 00:32:20,980
+And these are two
+prime and two prime.
+
+659
+00:32:20,980 --> 00:32:23,544
+And so I've got these
+nice angle pairings.
+
+660
+00:32:23,544 --> 00:32:25,960
+That means if I add the odd
+angles, I get the even angles.
+
+661
+00:32:25,960 --> 00:32:26,620
+Same thing.
+
+662
+00:32:26,620 --> 00:32:29,780
+So I definitely have
+Kawasaki's theorem everywhere.
+
+663
+00:32:29,780 --> 00:32:31,280
+You could check--
+it works even when
+
+664
+00:32:31,280 --> 00:32:34,780
+you have these degenerate
+situations where
+
+665
+00:32:34,780 --> 00:32:37,707
+more than three skeleton
+edges come together.
+
+666
+00:32:37,707 --> 00:32:38,540
+For the same reason.
+
+667
+00:32:38,540 --> 00:32:39,552
+You still get pairing.
+
+668
+00:32:39,552 --> 00:32:40,760
+Just more than three of them.
+
+669
+00:32:40,760 --> 00:32:43,270
+
+670
+00:32:43,270 --> 00:32:45,240
+All right.
+
+671
+00:32:45,240 --> 00:32:47,500
+But some exciting
+things can happen.
+
+672
+00:32:47,500 --> 00:32:50,160
+So I'm going to look
+at proving foldability,
+
+673
+00:32:50,160 --> 00:32:52,210
+but one exciting
+thing that can happen
+
+674
+00:32:52,210 --> 00:32:56,070
+is you get a lot of
+perpendicular folds at a very
+
+675
+00:32:56,070 --> 00:32:59,340
+few original cut lines.
+
+676
+00:32:59,340 --> 00:33:01,570
+So here I'm trying to make
+this weird pinwheel shape.
+
+677
+00:33:01,570 --> 00:33:04,410
+I want to cut out the bold
+lines of the cut line.
+
+678
+00:33:04,410 --> 00:33:06,360
+So I want to cut
+out this square,
+
+679
+00:33:06,360 --> 00:33:09,434
+and then these four squares
+arranged in a pinwheel pattern
+
+680
+00:33:09,434 --> 00:33:10,100
+around that one.
+
+681
+00:33:10,100 --> 00:33:11,110
+Why you'd want to do that?
+
+682
+00:33:11,110 --> 00:33:13,068
+I don't know, but we're
+mathematicians so we're
+
+683
+00:33:13,068 --> 00:33:15,210
+going to consider all the cases.
+
+684
+00:33:15,210 --> 00:33:18,480
+So the straight skeleton
+is the thin black lines,
+
+685
+00:33:18,480 --> 00:33:19,500
+and that's linear size.
+
+686
+00:33:19,500 --> 00:33:22,870
+That's nice, but
+the perpendiculars--
+
+687
+00:33:22,870 --> 00:33:24,650
+if this piece of
+paper's infinite,
+
+688
+00:33:24,650 --> 00:33:26,871
+the number of
+perpendiculars is infinite.
+
+689
+00:33:26,871 --> 00:33:28,370
+If you have a finite
+piece of paper,
+
+690
+00:33:28,370 --> 00:33:30,970
+which is what you
+usually buy in the store,
+
+691
+00:33:30,970 --> 00:33:33,090
+then it's a finite
+number of creases.
+
+692
+00:33:33,090 --> 00:33:35,590
+So in any finite region, this
+is a finite number of creases,
+
+693
+00:33:35,590 --> 00:33:37,750
+but it's a lot of them.
+
+694
+00:33:37,750 --> 00:33:38,780
+So that's one sad thing.
+
+695
+00:33:38,780 --> 00:33:40,490
+You can't bound the
+number of creases
+
+696
+00:33:40,490 --> 00:33:43,150
+as a function of the
+number of cut lines.
+
+697
+00:33:43,150 --> 00:33:44,780
+But I think that's
+actually necessary.
+
+698
+00:33:44,780 --> 00:33:46,960
+I don't think it's possible
+to solve this problem
+
+699
+00:33:46,960 --> 00:33:48,460
+while bounding the
+number of creases
+
+700
+00:33:48,460 --> 00:33:50,140
+in terms of the
+number of cut lines.
+
+701
+00:33:50,140 --> 00:33:53,150
+That's one of the open
+problems getting down
+
+702
+00:33:53,150 --> 00:33:56,410
+on one of these pictures.
+
+703
+00:33:56,410 --> 00:33:59,995
+One of these slide--
+lecture notes.
+
+704
+00:33:59,995 --> 00:34:02,452
+There's something else
+even more annoying, though.
+
+705
+00:34:02,452 --> 00:34:05,800
+It happens even in a
+finite piece of paper,
+
+706
+00:34:05,800 --> 00:34:09,179
+and it's even more obscure
+why you'd want to make this.
+
+707
+00:34:09,179 --> 00:34:13,100
+But the bold blue
+lines are the cuts,
+
+708
+00:34:13,100 --> 00:34:16,320
+and then the thin black lines
+are the straight skeleton.
+
+709
+00:34:16,320 --> 00:34:17,820
+You could tell this
+spans many years
+
+710
+00:34:17,820 --> 00:34:20,690
+because I keep changing
+notational style,
+
+711
+00:34:20,690 --> 00:34:23,580
+and this is from the textbook.
+
+712
+00:34:23,580 --> 00:34:26,230
+And then you get these
+perpendicular folds.
+
+713
+00:34:26,230 --> 00:34:28,480
+So I haven't drawn all
+of them but these dash
+
+714
+00:34:28,480 --> 00:34:30,909
+lines, the light blue.
+
+715
+00:34:30,909 --> 00:34:35,850
+And this example is set up so
+that-- let me get this right.
+
+716
+00:34:35,850 --> 00:34:41,370
+This width is an
+irrational multiple
+
+717
+00:34:41,370 --> 00:34:44,090
+of this width or this width.
+
+718
+00:34:44,090 --> 00:34:45,770
+One of those.
+
+719
+00:34:45,770 --> 00:34:50,130
+Things are irrational, so
+they're not very nice numbers.
+
+720
+00:34:50,130 --> 00:34:52,630
+And what I need to do
+to finish this picture
+
+721
+00:34:52,630 --> 00:34:54,805
+is these guys go-- they
+enter a new skeleton region.
+
+722
+00:34:54,805 --> 00:34:56,680
+They're actually going
+to keep going straight
+
+723
+00:34:56,680 --> 00:34:58,638
+because there's two cut
+lines that are parallel
+
+724
+00:34:58,638 --> 00:34:59,310
+to each other.
+
+725
+00:34:59,310 --> 00:35:01,726
+It's going to go up there, and
+it's going to cycle around.
+
+726
+00:35:01,726 --> 00:35:03,810
+Let me do one round.
+
+727
+00:35:03,810 --> 00:35:05,220
+Who did I move?
+
+728
+00:35:05,220 --> 00:35:06,710
+This guy.
+
+729
+00:35:06,710 --> 00:35:08,520
+So this guy I just
+extended down.
+
+730
+00:35:08,520 --> 00:35:11,570
+He's going to turn around,
+make 180 degree turn,
+
+731
+00:35:11,570 --> 00:35:13,360
+and you can check each of these.
+
+732
+00:35:13,360 --> 00:35:16,240
+Your setups do 180 degree
+turn around this axis,
+
+733
+00:35:16,240 --> 00:35:19,770
+around this axis on the bottom,
+and on the top around this axis
+
+734
+00:35:19,770 --> 00:35:20,880
+and around this axis.
+
+735
+00:35:20,880 --> 00:35:23,050
+Depending wherever you
+enter, it's like a racetrack.
+
+736
+00:35:23,050 --> 00:35:24,690
+Keep going around and around.
+
+737
+00:35:24,690 --> 00:35:27,960
+And if you follow that one
+guy a little bit farther,
+
+738
+00:35:27,960 --> 00:35:29,180
+it looks like that.
+
+739
+00:35:29,180 --> 00:35:31,960
+And a little bit farther,
+and it looks like that.
+
+740
+00:35:31,960 --> 00:35:34,220
+It never finishes.
+
+741
+00:35:34,220 --> 00:35:37,680
+So in fact you completely
+filled this region with creases.
+
+742
+00:35:37,680 --> 00:35:39,789
+It's like a dense
+region of creases.
+
+743
+00:35:39,789 --> 00:35:41,205
+Now this would be
+a bitch to fold.
+
+744
+00:35:41,205 --> 00:35:44,410
+
+745
+00:35:44,410 --> 00:35:46,110
+I don't recommend you try it.
+
+746
+00:35:46,110 --> 00:35:49,400
+And this is really a situation
+where this algorithm fails.
+
+747
+00:35:49,400 --> 00:35:53,020
+The good news is if I move
+any of these vertices--
+
+748
+00:35:53,020 --> 00:35:56,750
+the cut vertices the tiniest
+amount-- this will disappear.
+
+749
+00:35:56,750 --> 00:36:00,020
+I really had to be very careful
+and get lots of degeneracy
+
+750
+00:36:00,020 --> 00:36:01,110
+for this to happen.
+
+751
+00:36:01,110 --> 00:36:03,772
+
+752
+00:36:03,772 --> 00:36:05,480
+We don't actually know
+how to prove that.
+
+753
+00:36:05,480 --> 00:36:10,330
+It's conjecture that if you take
+any cuts-- any graph of cuts
+
+754
+00:36:10,330 --> 00:36:13,030
+you want to make, and
+you perturb the vertices
+
+755
+00:36:13,030 --> 00:36:16,820
+in a tiny epsilon disc then
+the resulting thing will not
+
+756
+00:36:16,820 --> 00:36:18,570
+have this density behavior.
+
+757
+00:36:18,570 --> 00:36:22,190
+I'm totally sure it's true,
+but we don't have the proof.
+
+758
+00:36:22,190 --> 00:36:23,460
+So that's life.
+
+759
+00:36:23,460 --> 00:36:27,920
+This is why I said skeleton
+method works almost always.
+
+760
+00:36:27,920 --> 00:36:30,670
+There are these
+annoying situations
+
+761
+00:36:30,670 --> 00:36:33,590
+where it doesn't really
+give your crease pattern.
+
+762
+00:36:33,590 --> 00:36:35,630
+So if you feel like
+unless you somehow
+
+763
+00:36:35,630 --> 00:36:38,672
+think this is legitimate to
+make infinitely many creases.
+
+764
+00:36:38,672 --> 00:36:39,380
+I don't think so.
+
+765
+00:36:39,380 --> 00:36:43,620
+
+766
+00:36:43,620 --> 00:36:48,280
+All right, let me tell
+you a few more things
+
+767
+00:36:48,280 --> 00:36:50,770
+to make this practical for you.
+
+768
+00:36:50,770 --> 00:36:52,210
+You want to-- what
+you really want
+
+769
+00:36:52,210 --> 00:36:53,610
+is a mountain valley assignment.
+
+770
+00:36:53,610 --> 00:36:56,360
+Before I showed you lots of
+perpendicular and skeleton
+
+771
+00:36:56,360 --> 00:37:00,320
+edges, and basically
+the way it works
+
+772
+00:37:00,320 --> 00:37:05,880
+is if you look at any
+skeleton edge like this one,
+
+773
+00:37:05,880 --> 00:37:08,850
+it's bisecting in this
+case a convex angle.
+
+774
+00:37:08,850 --> 00:37:10,550
+So I make it a mountain.
+
+775
+00:37:10,550 --> 00:37:13,260
+Here, red is mountain,
+blue is valley.
+
+776
+00:37:13,260 --> 00:37:15,180
+Dot dashes mountain,
+dash is valley.
+
+777
+00:37:15,180 --> 00:37:16,530
+That is the standard.
+
+778
+00:37:16,530 --> 00:37:19,090
+Whenever I'm bisecting
+a reflex angle,
+
+779
+00:37:19,090 --> 00:37:23,850
+then I make the
+skeleton edge a valley.
+
+780
+00:37:23,850 --> 00:37:26,810
+And that's basically true.
+
+781
+00:37:26,810 --> 00:37:29,280
+Convex angles, mountains,
+reflex angles, valleys.
+
+782
+00:37:29,280 --> 00:37:30,910
+That's for the straight
+skeleton edges.
+
+783
+00:37:30,910 --> 00:37:31,410
+Yeah.
+
+784
+00:37:31,410 --> 00:37:37,240
+
+785
+00:37:37,240 --> 00:37:41,560
+Like this fold, or this one?
+
+786
+00:37:41,560 --> 00:37:42,679
+Oh, this guy.
+
+787
+00:37:42,679 --> 00:37:44,470
+All right, this is a
+bit of a special case.
+
+788
+00:37:44,470 --> 00:37:47,850
+Here I'm really bisecting
+an angle of zero.
+
+789
+00:37:47,850 --> 00:37:49,850
+To extend these guys out,
+they need an infinite,
+
+790
+00:37:49,850 --> 00:37:52,016
+and they form a zero angle
+because they're parallel.
+
+791
+00:37:52,016 --> 00:37:56,480
+And I call zero a convex angle,
+but I just defined it that way,
+
+792
+00:37:56,480 --> 00:37:58,350
+and so this is a mountain.
+
+793
+00:37:58,350 --> 00:38:04,670
+Whereas this guy bisecting
+is barely convex.
+
+794
+00:38:04,670 --> 00:38:07,640
+Is that really a mountain?
+
+795
+00:38:07,640 --> 00:38:09,290
+No, that's a typo.
+
+796
+00:38:09,290 --> 00:38:09,960
+Good.
+
+797
+00:38:09,960 --> 00:38:11,890
+This one should be a valley.
+
+798
+00:38:11,890 --> 00:38:14,440
+Pretty sure.
+
+799
+00:38:14,440 --> 00:38:20,110
+Yeah, should be a valley-- wow,
+this is a weird crease pattern.
+
+800
+00:38:20,110 --> 00:38:21,750
+That's not a straight
+skeleton there.
+
+801
+00:38:21,750 --> 00:38:24,850
+Never mind this picture-- I
+knew there was always a bug.
+
+802
+00:38:24,850 --> 00:38:28,633
+I think there's a typo
+in the book as we say.
+
+803
+00:38:28,633 --> 00:38:34,799
+
+804
+00:38:34,799 --> 00:38:36,840
+How did I make the initial
+pattern of the turtle?
+
+805
+00:38:36,840 --> 00:38:39,640
+I just drew something
+that looked like a turtle.
+
+806
+00:38:39,640 --> 00:38:41,494
+Anything.
+
+807
+00:38:41,494 --> 00:38:42,910
+I happened to draw
+this on a grid,
+
+808
+00:38:42,910 --> 00:38:44,201
+but there's no reason I had to.
+
+809
+00:38:44,201 --> 00:39:00,340
+
+810
+00:39:00,340 --> 00:39:01,420
+I designed them.
+
+811
+00:39:01,420 --> 00:39:06,150
+So in this example, I designed
+the ratios to be really nasty.
+
+812
+00:39:06,150 --> 00:39:08,580
+Like root 2 over 10
+ratio or something.
+
+813
+00:39:08,580 --> 00:39:12,114
+
+814
+00:39:12,114 --> 00:39:14,530
+The whole thing will-- if I
+perturb these vertices at all,
+
+815
+00:39:14,530 --> 00:39:15,910
+the whole thing will fall apart.
+
+816
+00:39:15,910 --> 00:39:17,550
+I won't get these
+180 degree turns.
+
+817
+00:39:17,550 --> 00:39:19,830
+Things will end up
+going off to infinity.
+
+818
+00:39:19,830 --> 00:39:22,990
+The hard part here is
+actually-- rational ratios
+
+819
+00:39:22,990 --> 00:39:24,210
+are quite common.
+
+820
+00:39:24,210 --> 00:39:26,440
+What's uncommon
+in this picture is
+
+821
+00:39:26,440 --> 00:39:29,480
+that this thing is closed
+up, and you never escape.
+
+822
+00:39:29,480 --> 00:39:31,880
+Almost always, there'll
+be a little gap
+
+823
+00:39:31,880 --> 00:39:33,620
+and you'll eventually
+reach the gap
+
+824
+00:39:33,620 --> 00:39:34,970
+and then go off to infinity.
+
+825
+00:39:34,970 --> 00:39:37,160
+So that's what happens
+in a typical case.
+
+826
+00:39:37,160 --> 00:39:42,069
+
+827
+00:39:42,069 --> 00:39:44,610
+So if you drew a picture on the
+grid this would never happen.
+
+828
+00:39:44,610 --> 00:39:46,070
+That you can prove.
+
+829
+00:39:46,070 --> 00:39:48,170
+Yeah.
+
+830
+00:39:48,170 --> 00:39:49,864
+Square grid.
+
+831
+00:39:49,864 --> 00:39:51,280
+Probably also the
+triangular grid.
+
+832
+00:39:51,280 --> 00:39:53,071
+You need to be a little
+careful because you
+
+833
+00:39:53,071 --> 00:39:55,350
+want all these constructions
+to stay on the grid,
+
+834
+00:39:55,350 --> 00:39:57,810
+but I think something
+like that is true.
+
+835
+00:39:57,810 --> 00:40:04,279
+OK, let's move on to how we
+construct a folded state.
+
+836
+00:40:04,279 --> 00:40:06,570
+When this algorithm works,
+when it gives a valid crease
+
+837
+00:40:06,570 --> 00:40:10,060
+pattern, you know it's
+locally flat foldable
+
+838
+00:40:10,060 --> 00:40:11,700
+because it satisfies
+Kawasaki, but how
+
+839
+00:40:11,700 --> 00:40:13,730
+do we actually know that
+it globally folds flat?
+
+840
+00:40:13,730 --> 00:40:15,271
+To do that, you have
+to describe what
+
+841
+00:40:15,271 --> 00:40:17,180
+it looks like after it's folded.
+
+842
+00:40:17,180 --> 00:40:22,640
+And the idea here is to look at
+what we call corridors but are
+
+843
+00:40:22,640 --> 00:40:26,530
+essentially discrete versions
+of rivers from tree theory.
+
+844
+00:40:26,530 --> 00:40:29,600
+So you have these
+constant width strips
+
+845
+00:40:29,600 --> 00:40:33,240
+that turn at skeleton
+edges, and they
+
+846
+00:40:33,240 --> 00:40:35,530
+could go off to
+infinity on both sides.
+
+847
+00:40:35,530 --> 00:40:38,350
+In general they could loop
+around and meet themselves
+
+848
+00:40:38,350 --> 00:40:43,910
+again, but in this case they
+actually all go to infinity.
+
+849
+00:40:43,910 --> 00:40:46,280
+And if you look at
+one of those strips--
+
+850
+00:40:46,280 --> 00:40:50,760
+you could actually just cut
+this out of your textbook.
+
+851
+00:40:50,760 --> 00:40:54,790
+Just slice it up and look
+at how that's folding.
+
+852
+00:40:54,790 --> 00:40:58,612
+Well, it meets a skeleton
+edge, and then maybe it
+
+853
+00:40:58,612 --> 00:40:59,320
+meets a cut edge.
+
+854
+00:40:59,320 --> 00:41:00,620
+Usually you don't fold those.
+
+855
+00:41:00,620 --> 00:41:02,119
+Then it meets another
+skeleton edge.
+
+856
+00:41:02,119 --> 00:41:04,000
+It just meets edges
+one at a time.
+
+857
+00:41:04,000 --> 00:41:06,420
+It's never
+complicated because we
+
+858
+00:41:06,420 --> 00:41:08,320
+divided along all these
+perpendicular folds.
+
+859
+00:41:08,320 --> 00:41:12,210
+You really only meet
+one edge at a time.
+
+860
+00:41:12,210 --> 00:41:14,460
+Which is good.
+
+861
+00:41:14,460 --> 00:41:18,790
+In fact, if you look at
+one of these skeleton edges
+
+862
+00:41:18,790 --> 00:41:21,660
+it's creased along,
+normally you think
+
+863
+00:41:21,660 --> 00:41:26,060
+of that as an angular bisector
+of these two cut edges,
+
+864
+00:41:26,060 --> 00:41:28,520
+but you can also think of
+it as an angular bisector
+
+865
+00:41:28,520 --> 00:41:31,010
+of these two
+perpendicular folds.
+
+866
+00:41:31,010 --> 00:41:34,150
+Because if you bisect
+these two things,
+
+867
+00:41:34,150 --> 00:41:37,250
+you also bisect two things
+that are perpendicular to them.
+
+868
+00:41:37,250 --> 00:41:40,330
+It's like two wrongs
+make a right somehow.
+
+869
+00:41:40,330 --> 00:41:43,630
+So this guy bisects
+those two creases.
+
+870
+00:41:43,630 --> 00:41:45,500
+So if you fold along
+here-- actually
+
+871
+00:41:45,500 --> 00:41:47,415
+you align these creases.
+
+872
+00:41:47,415 --> 00:41:49,540
+It's a duality-- you are
+aligning the perpendicular
+
+873
+00:41:49,540 --> 00:41:50,340
+folds.
+
+874
+00:41:50,340 --> 00:41:53,080
+That fold along here, you line
+up this fold with that one,
+
+875
+00:41:53,080 --> 00:41:54,250
+this fold with that one.
+
+876
+00:41:54,250 --> 00:41:56,790
+I fold here, I lined up
+this fold with that one.
+
+877
+00:41:56,790 --> 00:42:00,297
+There's like a zero
+length fold that's there.
+
+878
+00:42:00,297 --> 00:42:01,630
+You fold along all these things.
+
+879
+00:42:01,630 --> 00:42:04,710
+You line up this with
+itself, and so on.
+
+880
+00:42:04,710 --> 00:42:06,040
+So you follow along this thing.
+
+881
+00:42:06,040 --> 00:42:12,760
+This corridor folds down
+to basically a rectangle.
+
+882
+00:42:12,760 --> 00:42:14,980
+It's got some rough edges
+in the top and the bottom,
+
+883
+00:42:14,980 --> 00:42:20,460
+but it lies in the strip in 3D,
+and I have a picture of that.
+
+884
+00:42:20,460 --> 00:42:26,170
+So I took the one over
+here-- this blue corridor--
+
+885
+00:42:26,170 --> 00:42:29,290
+and if you fold it up,
+it looks like this.
+
+886
+00:42:29,290 --> 00:42:31,590
+OK, now in particular, you
+can check at this point.
+
+887
+00:42:31,590 --> 00:42:32,980
+It's pretty easy
+to check because
+
+888
+00:42:32,980 --> 00:42:36,840
+of all this bisectorness--
+Bisector goodness--
+
+889
+00:42:36,840 --> 00:42:40,260
+that you bring into
+alignment all the cut edges.
+
+890
+00:42:40,260 --> 00:42:43,600
+So for example, this guy,
+because it bisects that cut
+
+891
+00:42:43,600 --> 00:42:46,140
+edge and that cut edge, it
+brings them into alignment.
+
+892
+00:42:46,140 --> 00:42:48,098
+And you can see that
+somewhere in this picture.
+
+893
+00:42:48,098 --> 00:42:50,700
+I think it's these two guys.
+
+894
+00:42:50,700 --> 00:42:52,690
+It can be a little
+more complicated.
+
+895
+00:42:52,690 --> 00:42:55,840
+Like over here I
+have a cut edge,
+
+896
+00:42:55,840 --> 00:42:58,420
+then I have a bisector, and
+then a bisector, and then
+
+897
+00:42:58,420 --> 00:43:00,730
+a bisector, and then
+another cut edge.
+
+898
+00:43:00,730 --> 00:43:04,420
+But if you think about it right,
+it's-- I don't happen to meet
+
+899
+00:43:04,420 --> 00:43:07,542
+these cut edges, but I'm
+effectively bringing this
+
+900
+00:43:07,542 --> 00:43:10,000
+into alignment with this, and
+then this into alignment with
+
+901
+00:43:10,000 --> 00:43:11,874
+this, and then this into
+alignment with that.
+
+902
+00:43:11,874 --> 00:43:14,770
+So in the end, I
+line this with that,
+
+903
+00:43:14,770 --> 00:43:20,410
+and that's what's happening
+up here on the left.
+
+904
+00:43:20,410 --> 00:43:22,330
+Where I don't quite
+come all the way down,
+
+905
+00:43:22,330 --> 00:43:24,110
+but I still end up
+lining everything up.
+
+906
+00:43:24,110 --> 00:43:26,390
+So this is the solution to
+the fold-and-cut problem
+
+907
+00:43:26,390 --> 00:43:29,162
+as long as it actually faults.
+
+908
+00:43:29,162 --> 00:43:30,870
+And to show that
+actually folds, you just
+
+909
+00:43:30,870 --> 00:43:35,056
+need to show that these
+corridors-- I forget,
+
+910
+00:43:35,056 --> 00:43:36,430
+I think we call
+these accordions.
+
+911
+00:43:36,430 --> 00:43:37,500
+It's been a long time.
+
+912
+00:43:37,500 --> 00:43:41,730
+Since '98 I wrote this paper
+
+913
+00:43:41,730 --> 00:43:43,560
+You take these
+accordions and you just
+
+914
+00:43:43,560 --> 00:43:45,750
+want to see how
+they fit together.
+
+915
+00:43:45,750 --> 00:43:47,670
+And low and behold,
+they fit together
+
+916
+00:43:47,670 --> 00:43:51,120
+in a tree in this picture.
+
+917
+00:43:51,120 --> 00:43:54,250
+It gets more complicated
+in another picture, which
+
+918
+00:43:54,250 --> 00:43:56,810
+I will show you in a moment.
+
+919
+00:43:56,810 --> 00:44:00,480
+But in this situation where
+every quarter goes off
+
+920
+00:44:00,480 --> 00:44:05,110
+to infinity on both sides,
+you get a nice tree structure.
+
+921
+00:44:05,110 --> 00:44:08,370
+And as long as you could
+fold this tree flat,
+
+922
+00:44:08,370 --> 00:44:11,850
+then you can fold
+this thing flat.
+
+923
+00:44:11,850 --> 00:44:14,750
+Because each of these
+edges of the tree
+
+924
+00:44:14,750 --> 00:44:16,460
+is this very simple
+accordion structure
+
+925
+00:44:16,460 --> 00:44:20,002
+which trivially falls flat.
+
+926
+00:44:20,002 --> 00:44:21,585
+The other thing you
+have to check here
+
+927
+00:44:21,585 --> 00:44:23,335
+is you actually alternate
+mountain valley.
+
+928
+00:44:23,335 --> 00:44:24,960
+That's a little more
+subtle, especially
+
+929
+00:44:24,960 --> 00:44:27,290
+when I don't draw the
+mountain valley assignment.
+
+930
+00:44:27,290 --> 00:44:29,880
+But it turns out you always
+alternate between mountain
+
+931
+00:44:29,880 --> 00:44:32,070
+and valley in this
+picture, which is great.
+
+932
+00:44:32,070 --> 00:44:34,350
+That's the thing we
+know always folds flats.
+
+933
+00:44:34,350 --> 00:44:36,220
+It's like a 1D folding.
+
+934
+00:44:36,220 --> 00:44:37,750
+So these are super easy to fold.
+
+935
+00:44:37,750 --> 00:44:40,190
+You can fold each of them if
+you cut along all the dash
+
+936
+00:44:40,190 --> 00:44:42,440
+lines You can fold
+each separately.
+
+937
+00:44:42,440 --> 00:44:43,990
+Then you need to
+join them together
+
+938
+00:44:43,990 --> 00:44:47,260
+where the edges here-- just like
+in tree theory-- the edges here
+
+939
+00:44:47,260 --> 00:44:49,680
+correspond to these rivers.
+
+940
+00:44:49,680 --> 00:44:52,320
+And now you need to
+somehow attach them here.
+
+941
+00:44:52,320 --> 00:44:56,860
+Check that where you attach
+them, there's no crossings.
+
+942
+00:44:56,860 --> 00:44:59,640
+I'm not going to describe,
+but it's pretty easy.
+
+943
+00:44:59,640 --> 00:45:01,710
+Plain area essentially
+of that diagram,
+
+944
+00:45:01,710 --> 00:45:04,160
+and then you need to
+fold this tree flat.
+
+945
+00:45:04,160 --> 00:45:06,660
+Folding a tree flat
+is actually kind
+
+946
+00:45:06,660 --> 00:45:08,300
+of a segue into
+next lecture, which
+
+947
+00:45:08,300 --> 00:45:11,220
+will be about folding linkages.
+
+948
+00:45:11,220 --> 00:45:12,800
+In this case, it's really easy.
+
+949
+00:45:12,800 --> 00:45:15,860
+You just pick up some root,
+like the letter "A" over there,
+
+950
+00:45:15,860 --> 00:45:17,520
+and you hang the tree.
+
+951
+00:45:17,520 --> 00:45:18,955
+Pull up.
+
+952
+00:45:18,955 --> 00:45:21,330
+Technically this is like a
+[? depth ?] [? first ?] search
+
+953
+00:45:21,330 --> 00:45:22,420
+of the tree.
+
+954
+00:45:22,420 --> 00:45:24,880
+So you just walk
+down-- aways walk down
+
+955
+00:45:24,880 --> 00:45:26,760
+until you're finished,
+then you go back up.
+
+956
+00:45:26,760 --> 00:45:28,220
+Walk down some more branches.
+
+957
+00:45:28,220 --> 00:45:32,400
+You end up drawing everything
+downward away from A.
+
+958
+00:45:32,400 --> 00:45:33,700
+And it will be a flat folding.
+
+959
+00:45:33,700 --> 00:45:35,690
+There won't be any
+crossings here.
+
+960
+00:45:35,690 --> 00:45:37,462
+And then this is a
+1D representation
+
+961
+00:45:37,462 --> 00:45:38,920
+of what's really
+going on, which is
+
+962
+00:45:38,920 --> 00:45:43,840
+that above each of these
+edges is really an accordion,
+
+963
+00:45:43,840 --> 00:45:45,650
+and you need to adjoin
+them together there.
+
+964
+00:45:45,650 --> 00:45:47,560
+So we'll basically do
+this modular folding
+
+965
+00:45:47,560 --> 00:45:49,270
+where you fold each
+accordion separately,
+
+966
+00:45:49,270 --> 00:45:50,960
+put them together
+according to this.
+
+967
+00:45:50,960 --> 00:45:52,080
+Boom, you get your flat folding.
+
+968
+00:45:52,080 --> 00:45:54,454
+From this picture, you could
+read out the mountain valley
+
+969
+00:45:54,454 --> 00:45:56,521
+assignments before the
+perpendicular folds.
+
+970
+00:45:56,521 --> 00:45:58,020
+This looks like a
+valley, this looks
+
+971
+00:45:58,020 --> 00:46:00,500
+like a valley-- this looks
+like a perpendicular fold
+
+972
+00:46:00,500 --> 00:46:03,310
+I didn't use because
+there's no crease there.
+
+973
+00:46:03,310 --> 00:46:05,410
+That's flat.
+
+974
+00:46:05,410 --> 00:46:10,380
+Whereas a mountain-- mountain's
+probably at the top at A.
+
+975
+00:46:10,380 --> 00:46:15,637
+What really happens-- if
+you want to know-- really
+
+976
+00:46:15,637 --> 00:46:18,220
+what we're deciding is whether
+this starts mountain or valley,
+
+977
+00:46:18,220 --> 00:46:20,890
+and then it will actually
+alternate back and forth
+
+978
+00:46:20,890 --> 00:46:23,272
+as you move along
+the perpendicular.
+
+979
+00:46:23,272 --> 00:46:27,260
+So that's basically how you
+construct a folded state.
+
+980
+00:46:27,260 --> 00:46:30,960
+In this situation of
+so-called linear corridors.
+
+981
+00:46:30,960 --> 00:46:34,900
+Now there are a bunch of
+things I haven't mentioned,
+
+982
+00:46:34,900 --> 00:46:37,250
+but I think-- I don't
+want to talk about them
+
+983
+00:46:37,250 --> 00:46:39,490
+too much so I get out
+to the other topics.
+
+984
+00:46:39,490 --> 00:47:07,090
+
+985
+00:47:07,090 --> 00:47:11,720
+So, what I just talked
+about is something called
+
+986
+00:47:11,720 --> 00:47:13,910
+a linear corridor
+case, which is really
+
+987
+00:47:13,910 --> 00:47:18,940
+where it's most beautiful--
+this construction
+
+988
+00:47:18,940 --> 00:47:22,945
+of a folded state-- and
+linear corridor intuitively
+
+989
+00:47:22,945 --> 00:47:23,950
+is something like this.
+
+990
+00:47:23,950 --> 00:47:26,310
+It goes off to
+infinite on both sides.
+
+991
+00:47:26,310 --> 00:47:27,870
+Has constant width all the way.
+
+992
+00:47:27,870 --> 00:47:29,160
+Of course, it's really
+a discrete thing.
+
+993
+00:47:29,160 --> 00:47:29,951
+Not a smooth thing.
+
+994
+00:47:29,951 --> 00:47:33,560
+
+995
+00:47:33,560 --> 00:47:40,190
+Let me say
+conjecture-- if you're
+
+996
+00:47:40,190 --> 00:47:45,790
+cut graph has that
+maximum degree
+
+997
+00:47:45,790 --> 00:47:51,310
+2-- it means at most two
+edges at every vertex.
+
+998
+00:47:51,310 --> 00:47:52,727
+This is a very common scenario.
+
+999
+00:47:52,727 --> 00:47:54,310
+This is if you want
+to make a polygon,
+
+1000
+00:47:54,310 --> 00:47:55,689
+every vertex has degree 2.
+
+1001
+00:47:55,689 --> 00:47:57,230
+If you want to make
+several polygons,
+
+1002
+00:47:57,230 --> 00:47:58,760
+every vertex has degree 2.
+
+1003
+00:47:58,760 --> 00:48:02,450
+I'll even let you have vertices
+of degree 1 or 0 for free,
+
+1004
+00:48:02,450 --> 00:48:05,290
+but mainly we're thinking
+about degree 2 everywhere.
+
+1005
+00:48:05,290 --> 00:48:08,120
+
+1006
+00:48:08,120 --> 00:48:19,815
+Then, we almost always
+have a linear corridor.
+
+1007
+00:48:19,815 --> 00:48:23,829
+
+1008
+00:48:23,829 --> 00:48:25,620
+So this is why the
+situation's interesting,
+
+1009
+00:48:25,620 --> 00:48:27,703
+although unfortunately
+this is still a conjecture.
+
+1010
+00:48:27,703 --> 00:48:29,650
+I'm sure this is
+true, but proving it--
+
+1011
+00:48:29,650 --> 00:48:33,000
+I don't quite know
+the right techniques.
+
+1012
+00:48:33,000 --> 00:48:37,320
+So in this typical situation,
+you take any picture you want.
+
+1013
+00:48:37,320 --> 00:48:40,750
+You slightly perturb very
+vertex randomly, say,
+
+1014
+00:48:40,750 --> 00:48:44,010
+then with probability
+1-- 100% probability--
+
+1015
+00:48:44,010 --> 00:48:45,895
+you will get only
+linear corridors.
+
+1016
+00:48:45,895 --> 00:48:49,010
+
+1017
+00:48:49,010 --> 00:48:51,560
+And that's the situation
+where it turns into a tree.
+
+1018
+00:48:51,560 --> 00:48:55,250
+It's easy to fold life is good.
+
+1019
+00:48:55,250 --> 00:48:58,735
+The annoying case is
+circular corridor case.
+
+1020
+00:48:58,735 --> 00:49:05,060
+
+1021
+00:49:05,060 --> 00:49:06,560
+This takes a lot
+more work to prove,
+
+1022
+00:49:06,560 --> 00:49:08,655
+and I'm not going to
+talk about it much.
+
+1023
+00:49:08,655 --> 00:49:15,050
+A circular corridor
+looks like this.
+
+1024
+00:49:15,050 --> 00:49:17,620
+Here we have these
+in with rivers also.
+
+1025
+00:49:17,620 --> 00:49:19,090
+So you just loop around.
+
+1026
+00:49:19,090 --> 00:49:23,237
+Still constant width everywhere,
+but you meet yourself.
+
+1027
+00:49:23,237 --> 00:49:24,445
+You don't go out to infinity.
+
+1028
+00:49:24,445 --> 00:49:27,230
+
+1029
+00:49:27,230 --> 00:49:28,510
+It's harder.
+
+1030
+00:49:28,510 --> 00:49:30,060
+Why is it harder?
+
+1031
+00:49:30,060 --> 00:49:36,680
+Well in particular, if you
+look at how one corridor folds,
+
+1032
+00:49:36,680 --> 00:49:38,860
+it's no longer-- it's
+like the same situation we
+
+1033
+00:49:38,860 --> 00:49:41,470
+had in like lectures
+two and three
+
+1034
+00:49:41,470 --> 00:49:45,060
+where we had on the one hand
+a 1D folding was really easy.
+
+1035
+00:49:45,060 --> 00:49:46,710
+But then when you
+made it circular--
+
+1036
+00:49:46,710 --> 00:49:48,960
+you're just folding a circle
+instead of folding a line
+
+1037
+00:49:48,960 --> 00:49:51,260
+segment-- now you had
+this wrap around issue.
+
+1038
+00:49:51,260 --> 00:49:53,810
+So, like, these guys
+would have to line up.
+
+1039
+00:49:53,810 --> 00:49:55,910
+It turns out they will
+line up because everything
+
+1040
+00:49:55,910 --> 00:49:57,309
+is bisecting and whatnot.
+
+1041
+00:49:57,309 --> 00:49:58,850
+These edges will
+line up, but now you
+
+1042
+00:49:58,850 --> 00:50:00,440
+have to join them together.
+
+1043
+00:50:00,440 --> 00:50:03,660
+And if this part went all the
+way down here and came back up,
+
+1044
+00:50:03,660 --> 00:50:06,420
+then you'd get an intersection.
+
+1045
+00:50:06,420 --> 00:50:12,340
+And it turns out, in general,
+I get a choice of who's first
+
+1046
+00:50:12,340 --> 00:50:12,984
+and who's last.
+
+1047
+00:50:12,984 --> 00:50:14,400
+I have a circular
+order of things,
+
+1048
+00:50:14,400 --> 00:50:17,350
+and I get to choose where
+I break that circular order
+
+1049
+00:50:17,350 --> 00:50:19,040
+and make it a linear order.
+
+1050
+00:50:19,040 --> 00:50:20,500
+Where I do the wrap around.
+
+1051
+00:50:20,500 --> 00:50:22,360
+There's some
+circular corridors--
+
+1052
+00:50:22,360 --> 00:50:27,090
+you can't even break
+them and make it work.
+
+1053
+00:50:27,090 --> 00:50:29,700
+Kind of depressing.
+
+1054
+00:50:29,700 --> 00:50:32,179
+So this is definitely harder
+and that sometimes it's
+
+1055
+00:50:32,179 --> 00:50:32,720
+not possible.
+
+1056
+00:50:32,720 --> 00:50:36,180
+
+1057
+00:50:36,180 --> 00:50:39,950
+But we can save a
+little bit, which
+
+1058
+00:50:39,950 --> 00:50:43,300
+is-- I don't have
+an example handy.
+
+1059
+00:50:43,300 --> 00:50:44,440
+I wish I did.
+
+1060
+00:50:44,440 --> 00:50:46,030
+I'll have to reconstruct it.
+
+1061
+00:50:46,030 --> 00:50:47,030
+This is so long ago.
+
+1062
+00:50:47,030 --> 00:50:50,310
+
+1063
+00:50:50,310 --> 00:50:52,510
+Here's a way to make
+it definitely work.
+
+1064
+00:50:52,510 --> 00:50:53,935
+Fold all the cut edges.
+
+1065
+00:50:53,935 --> 00:50:56,800
+
+1066
+00:50:56,800 --> 00:50:58,530
+So far in the pictures
+I've been drawing,
+
+1067
+00:50:58,530 --> 00:51:00,410
+I didn't fold
+along the cut edges
+
+1068
+00:51:00,410 --> 00:51:03,492
+because I really wanted to
+separate the green region here
+
+1069
+00:51:03,492 --> 00:51:04,450
+from the yellow region.
+
+1070
+00:51:04,450 --> 00:51:07,507
+If I folded this up-- this
+is quite a complicated one
+
+1071
+00:51:07,507 --> 00:51:11,820
+to fold-- you get the cut lines
+somewhere like over there,
+
+1072
+00:51:11,820 --> 00:51:14,410
+and then the green stuff will
+be always above the cut line
+
+1073
+00:51:14,410 --> 00:51:16,650
+and the yellow stuff will
+be below the cut line.
+
+1074
+00:51:16,650 --> 00:51:18,270
+In general, this is
+called a side assignment.
+
+1075
+00:51:18,270 --> 00:51:19,660
+You have a bunch of
+regions you decide
+
+1076
+00:51:19,660 --> 00:51:21,368
+which ones you want
+to be above and which
+
+1077
+00:51:21,368 --> 00:51:22,690
+ones you want to be below.
+
+1078
+00:51:22,690 --> 00:51:24,560
+And usually, you have
+polygons, and you
+
+1079
+00:51:24,560 --> 00:51:28,030
+say the interiors are above
+and the exteriors are below.
+
+1080
+00:51:28,030 --> 00:51:31,270
+But in general, you could
+ask for anything you want.
+
+1081
+00:51:31,270 --> 00:51:33,782
+You could say maybe I want
+both of these to be above.
+
+1082
+00:51:33,782 --> 00:51:35,240
+If you make both
+of them above, you
+
+1083
+00:51:35,240 --> 00:51:38,814
+have to valley fold along
+all of the cut lines.
+
+1084
+00:51:38,814 --> 00:51:40,980
+So if you do that-- you say
+I want all regions to be
+
+1085
+00:51:40,980 --> 00:51:43,490
+above the cut line-- you
+can still line them up.
+
+1086
+00:51:43,490 --> 00:51:46,510
+You end up folding along all
+the cut edges with valleys.
+
+1087
+00:51:46,510 --> 00:51:50,466
+And then wrap around
+is super easy.
+
+1088
+00:51:50,466 --> 00:51:52,590
+We take this thing, and in
+fact, everyone's folding
+
+1089
+00:51:52,590 --> 00:51:54,020
+along the black lines.
+
+1090
+00:51:54,020 --> 00:51:57,050
+So really everybody
+comes down to the floor,
+
+1091
+00:51:57,050 --> 00:51:59,590
+and then the wrap around is
+just underneath the floor
+
+1092
+00:51:59,590 --> 00:52:02,110
+and life is good.
+
+1093
+00:52:02,110 --> 00:52:04,376
+So that's one way to
+deal with this case,
+
+1094
+00:52:04,376 --> 00:52:05,750
+and you have to
+prove that works.
+
+1095
+00:52:05,750 --> 00:52:06,458
+It's complicated.
+
+1096
+00:52:06,458 --> 00:52:08,690
+
+1097
+00:52:08,690 --> 00:52:12,770
+I would rather go
+onto other topics.
+
+1098
+00:52:12,770 --> 00:52:16,540
+I do think this would
+make a fun project.
+
+1099
+00:52:16,540 --> 00:52:19,700
+It's not easy to make
+these crease patterns.
+
+1100
+00:52:19,700 --> 00:52:21,550
+Currently we draw
+them always by hand,
+
+1101
+00:52:21,550 --> 00:52:23,070
+meaning with the fancy
+drawing program that
+
+1102
+00:52:23,070 --> 00:52:24,486
+knows how to do
+angular bisectors.
+
+1103
+00:52:24,486 --> 00:52:26,970
+
+1104
+00:52:26,970 --> 00:52:30,090
+And it's an art to
+move around the points
+
+1105
+00:52:30,090 --> 00:52:32,430
+so that you get
+lots of alignments.
+
+1106
+00:52:32,430 --> 00:52:35,366
+Like when you get four straight
+skeleton edges coming together,
+
+1107
+00:52:35,366 --> 00:52:36,740
+that means you
+get fewer creases.
+
+1108
+00:52:36,740 --> 00:52:39,350
+That's a good thing whenever
+you can make that happen.
+
+1109
+00:52:39,350 --> 00:52:42,130
+So when you could give
+me software to help
+
+1110
+00:52:42,130 --> 00:52:44,040
+do that, I would love you.
+
+1111
+00:52:44,040 --> 00:52:47,480
+
+1112
+00:52:47,480 --> 00:52:50,699
+So let's move on.
+
+1113
+00:52:50,699 --> 00:52:52,740
+Any questions about the
+straight skeleton method?
+
+1114
+00:52:52,740 --> 00:52:55,360
+Now I'm going to switch
+over to disk packing.
+
+1115
+00:52:55,360 --> 00:52:58,258
+
+1116
+00:52:58,258 --> 00:53:00,680
+All right.
+
+1117
+00:53:00,680 --> 00:53:03,980
+Same problem, but
+now I'll give you
+
+1118
+00:53:03,980 --> 00:53:09,800
+a method that always
+works in theory.
+
+1119
+00:53:09,800 --> 00:53:13,940
+Just difficult in practice.
+
+1120
+00:53:13,940 --> 00:53:18,560
+
+1121
+00:53:18,560 --> 00:53:23,210
+I think this is good
+chalk because it's yellow.
+
+1122
+00:53:23,210 --> 00:53:24,910
+Generally, if it's
+yellow on the outside
+
+1123
+00:53:24,910 --> 00:53:27,820
+it is railroad chalk,
+which is the good stuff.
+
+1124
+00:53:27,820 --> 00:53:31,540
+But, what the problem
+is-- we have bad erasers.
+
+1125
+00:53:31,540 --> 00:53:32,804
+It's persistence of vision.
+
+1126
+00:53:32,804 --> 00:53:34,720
+You just get to remember
+what I used to write.
+
+1127
+00:53:34,720 --> 00:53:50,501
+
+1128
+00:53:50,501 --> 00:53:52,250
+I don't want to write
+down the algorithms.
+
+1129
+00:53:52,250 --> 00:53:54,540
+It's complicated.
+
+1130
+00:53:54,540 --> 00:53:58,740
+I want to give you a visual
+overview of the main steps.
+
+1131
+00:53:58,740 --> 00:54:02,410
+I guess there's nice
+figures do that for us.
+
+1132
+00:54:02,410 --> 00:54:06,480
+So we start with a
+very complicated shape
+
+1133
+00:54:06,480 --> 00:54:09,240
+we want to make, like
+this quadrilateral.
+
+1134
+00:54:09,240 --> 00:54:13,010
+And you can see disk
+packing is involved.
+
+1135
+00:54:13,010 --> 00:54:16,160
+The very first thing we do-- and
+I'll tell you why in a moment--
+
+1136
+00:54:16,160 --> 00:54:18,792
+is thicken the graph
+you want to build.
+
+1137
+00:54:18,792 --> 00:54:20,250
+So maybe it's a
+polygon, maybe it's
+
+1138
+00:54:20,250 --> 00:54:22,375
+a graph-- I'll think about
+the polygon case for now
+
+1139
+00:54:22,375 --> 00:54:25,110
+because it's easier, then I'll
+come back to the general case.
+
+1140
+00:54:25,110 --> 00:54:28,449
+I thicken it by tiny epsilon.
+
+1141
+00:54:28,449 --> 00:54:29,740
+Just offset in both directions.
+
+1142
+00:54:29,740 --> 00:54:31,900
+Just like as if you're starting
+the straight skeleton method,
+
+1143
+00:54:31,900 --> 00:54:33,590
+but then you stop after epsilon.
+
+1144
+00:54:33,590 --> 00:54:38,380
+No events happen
+in epsilon time.
+
+1145
+00:54:38,380 --> 00:54:44,750
+OK, then I have this picture--
+the purple stuff, pink stuff,
+
+1146
+00:54:44,750 --> 00:54:45,250
+whatever.
+
+1147
+00:54:45,250 --> 00:54:46,460
+Magenta.
+
+1148
+00:54:46,460 --> 00:54:47,660
+50% magenta.
+
+1149
+00:54:47,660 --> 00:54:50,890
+I happen to know I
+drew this figure.
+
+1150
+00:54:50,890 --> 00:54:54,960
+Now I'm going to take
+some 50% cyan disks
+
+1151
+00:54:54,960 --> 00:54:56,870
+and pack them to
+fill this region.
+
+1152
+00:54:56,870 --> 00:54:59,430
+Now what I want-- there's
+three properties I want.
+
+1153
+00:54:59,430 --> 00:55:01,430
+One is that every
+vertex, but you
+
+1154
+00:55:01,430 --> 00:55:03,180
+have to think about
+each region separately
+
+1155
+00:55:03,180 --> 00:55:04,790
+which is a little bit confusing.
+
+1156
+00:55:04,790 --> 00:55:05,620
+Let's think about the outside.
+
+1157
+00:55:05,620 --> 00:55:06,600
+It's a little easier.
+
+1158
+00:55:06,600 --> 00:55:08,180
+Bigger.
+
+1159
+00:55:08,180 --> 00:55:11,680
+Every vertex of this
+graph on the outside
+
+1160
+00:55:11,680 --> 00:55:13,540
+should be the center of a disk.
+
+1161
+00:55:13,540 --> 00:55:15,600
+There's a disk center here.
+
+1162
+00:55:15,600 --> 00:55:17,020
+There's a disk center here.
+
+1163
+00:55:17,020 --> 00:55:19,430
+there's a disk center here,
+and a disk center there.
+
+1164
+00:55:19,430 --> 00:55:23,180
+On the inside it's also true,
+they're just different disks.
+
+1165
+00:55:23,180 --> 00:55:25,870
+Then also I want the
+edges of the graph
+
+1166
+00:55:25,870 --> 00:55:29,355
+to be covered by
+a radii of disks.
+
+1167
+00:55:29,355 --> 00:55:31,450
+And so here's a
+radius of one disk.
+
+1168
+00:55:31,450 --> 00:55:33,300
+Here's a diameter of a disc.
+
+1169
+00:55:33,300 --> 00:55:36,320
+Here's a radius of a disk
+that covers the edge.
+
+1170
+00:55:36,320 --> 00:55:38,890
+So in other words, I
+want to fill-- along
+
+1171
+00:55:38,890 --> 00:55:41,320
+the edge I want to
+have a bunch of centers
+
+1172
+00:55:41,320 --> 00:55:44,180
+so that I completely
+cover that edge with blue.
+
+1173
+00:55:44,180 --> 00:55:45,820
+You'll see why later.
+
+1174
+00:55:45,820 --> 00:55:46,320
+Question?
+
+1175
+00:55:46,320 --> 00:55:51,460
+
+1176
+00:55:51,460 --> 00:55:54,130
+The disks have to
+be non-overlapping.
+
+1177
+00:55:54,130 --> 00:55:57,209
+These properties are actually
+quite challenging to achieve.
+
+1178
+00:55:57,209 --> 00:55:59,000
+Your question is why
+do we use small disks.
+
+1179
+00:55:59,000 --> 00:56:02,860
+
+1180
+00:56:02,860 --> 00:56:05,180
+Disk, because if I
+had a big disk here,
+
+1181
+00:56:05,180 --> 00:56:06,550
+it would intersect this disk.
+
+1182
+00:56:06,550 --> 00:56:09,490
+
+1183
+00:56:09,490 --> 00:56:11,290
+Now I didn't have to
+make that disk so big,
+
+1184
+00:56:11,290 --> 00:56:12,748
+but if I made that
+one smaller, I'd
+
+1185
+00:56:12,748 --> 00:56:15,849
+have to have more disks here.
+
+1186
+00:56:15,849 --> 00:56:17,390
+Or here there's also
+two small disks.
+
+1187
+00:56:17,390 --> 00:56:22,920
+That one I probably could have
+gotten away with a bigger disk.
+
+1188
+00:56:22,920 --> 00:56:25,904
+Oh, no, but then on the
+inside you have a problem.
+
+1189
+00:56:25,904 --> 00:56:27,570
+So these guys actually
+have to match up.
+
+1190
+00:56:27,570 --> 00:56:28,750
+That's another constraint.
+
+1191
+00:56:28,750 --> 00:56:30,230
+And the inside and the
+outside have to match up.
+
+1192
+00:56:30,230 --> 00:56:31,810
+Here there's a slight
+change in radii
+
+1193
+00:56:31,810 --> 00:56:33,060
+to compensate for the epsilon.
+
+1194
+00:56:33,060 --> 00:56:35,310
+Along the edges they're
+exactly the same.
+
+1195
+00:56:35,310 --> 00:56:37,350
+So if I made this
+one a big disk,
+
+1196
+00:56:37,350 --> 00:56:38,530
+it would overlap this one.
+
+1197
+00:56:38,530 --> 00:56:40,840
+So I could make that one
+smaller, but then-- other
+
+1198
+00:56:40,840 --> 00:56:42,279
+problems.
+
+1199
+00:56:42,279 --> 00:56:43,820
+So you have to
+simultaneously balance
+
+1200
+00:56:43,820 --> 00:56:47,770
+all these constraints,
+which is a bit exciting.
+
+1201
+00:56:47,770 --> 00:56:48,360
+What else?
+
+1202
+00:56:48,360 --> 00:56:49,800
+The discs don't overlap.
+
+1203
+00:56:49,800 --> 00:56:52,740
+And the last property is that
+the gaps between the disks
+
+1204
+00:56:52,740 --> 00:56:56,470
+have always three or four sides.
+
+1205
+00:56:56,470 --> 00:56:57,510
+Why?
+
+1206
+00:56:57,510 --> 00:56:59,470
+Because I want it to.
+
+1207
+00:56:59,470 --> 00:57:01,270
+It will make life easier.
+
+1208
+00:57:01,270 --> 00:57:03,230
+You could try to
+deal with more sides,
+
+1209
+00:57:03,230 --> 00:57:07,870
+but three and four is nice.
+
+1210
+00:57:07,870 --> 00:57:10,030
+Yeah, I'll get to that.
+
+1211
+00:57:10,030 --> 00:57:11,740
+Why do we care about
+number of sides?
+
+1212
+00:57:11,740 --> 00:57:14,320
+Because I'm going
+to draw a graph.
+
+1213
+00:57:14,320 --> 00:57:16,530
+I'm going to subdivide
+my original graph here
+
+1214
+00:57:16,530 --> 00:57:20,710
+with these red lines to
+say whenever disks kiss,
+
+1215
+00:57:20,710 --> 00:57:23,315
+I will draw-- connect the
+centers of those disks.
+
+1216
+00:57:23,315 --> 00:57:26,160
+
+1217
+00:57:26,160 --> 00:57:31,037
+And because these gaps always
+have three or four sides--
+
+1218
+00:57:31,037 --> 00:57:32,120
+it's not the best example.
+
+1219
+00:57:32,120 --> 00:57:33,730
+Here's like three sides.
+
+1220
+00:57:33,730 --> 00:57:36,490
+The red lines I draw
+will outline a triangle.
+
+1221
+00:57:36,490 --> 00:57:39,300
+Whenever I have three sides,
+whenever I have four sides,
+
+1222
+00:57:39,300 --> 00:57:41,020
+I'll have a quadrilateral.
+
+1223
+00:57:41,020 --> 00:57:43,540
+So I've subdivided my
+regions into triangles
+
+1224
+00:57:43,540 --> 00:57:45,320
+and quadrilaterals.
+
+1225
+00:57:45,320 --> 00:57:47,800
+OK, you have to believe
+that this is possible.
+
+1226
+00:57:47,800 --> 00:57:50,200
+I can sketch an
+algorithm for you,
+
+1227
+00:57:50,200 --> 00:57:54,445
+which is you draw a tiny
+disk at each of the corners,
+
+1228
+00:57:54,445 --> 00:57:56,570
+and then you draw lots of
+tiny this along the edges
+
+1229
+00:57:56,570 --> 00:57:58,350
+to fill the edges.
+
+1230
+00:57:58,350 --> 00:57:59,900
+And that will
+satisfy everything.
+
+1231
+00:57:59,900 --> 00:58:01,170
+I mean the disks will
+be non-overlapping
+
+1232
+00:58:01,170 --> 00:58:02,295
+because they're super tiny.
+
+1233
+00:58:02,295 --> 00:58:04,890
+They won't get near any other
+disks from some other side.
+
+1234
+00:58:04,890 --> 00:58:07,150
+And what other good things?
+
+1235
+00:58:07,150 --> 00:58:09,080
+Oh, but the regions
+will be ginormous.
+
+1236
+00:58:09,080 --> 00:58:10,580
+They won't have
+three or four sides.
+
+1237
+00:58:10,580 --> 00:58:13,500
+They'll have 100 sides, a
+million sides-- who knows.
+
+1238
+00:58:13,500 --> 00:58:17,960
+Well, whenever you have
+some crazy region outlined
+
+1239
+00:58:17,960 --> 00:58:20,330
+by disks-- might not be convex.
+
+1240
+00:58:20,330 --> 00:58:24,776
+Whatever-- just draw the
+biggest disk you can in there.
+
+1241
+00:58:24,776 --> 00:58:27,390
+I'll get it to turn
+into a disk eventually.
+
+1242
+00:58:27,390 --> 00:58:30,020
+That does not intersect
+anybody, but if it's
+
+1243
+00:58:30,020 --> 00:58:31,700
+the biggest possible,
+it will actually
+
+1244
+00:58:31,700 --> 00:58:34,010
+touch at least three sides.
+
+1245
+00:58:34,010 --> 00:58:36,380
+If you degenerate,
+it might touch four.
+
+1246
+00:58:36,380 --> 00:58:39,110
+But in general, it will
+touch three sides, which
+
+1247
+00:58:39,110 --> 00:58:41,652
+will subdivide that
+region into three pieces,
+
+1248
+00:58:41,652 --> 00:58:43,860
+and you can show that those
+pieces are all little bit
+
+1249
+00:58:43,860 --> 00:58:46,980
+smaller than what you had before
+in terms of number of sides.
+
+1250
+00:58:46,980 --> 00:58:49,010
+Except when you start
+with a quadrilateral.
+
+1251
+00:58:49,010 --> 00:58:50,520
+When there's four
+sides, you'll get
+
+1252
+00:58:50,520 --> 00:58:51,700
+quadrilaterals and triangle.
+
+1253
+00:58:51,700 --> 00:58:53,430
+So you can't go
+below three and four.
+
+1254
+00:58:53,430 --> 00:58:55,138
+It'd be great if we
+could always get down
+
+1255
+00:58:55,138 --> 00:58:57,031
+to three sides in
+every region, but we
+
+1256
+00:58:57,031 --> 00:58:58,280
+can get down to three or four.
+
+1257
+00:58:58,280 --> 00:59:00,260
+Anything bigger than three
+or four you can show.
+
+1258
+00:59:00,260 --> 00:59:01,718
+This will make it
+strictly smaller.
+
+1259
+00:59:01,718 --> 00:59:02,920
+So that is an algorithm.
+
+1260
+00:59:02,920 --> 00:59:05,660
+It's not super efficient, but
+it will find a disk packing
+
+1261
+00:59:05,660 --> 00:59:07,010
+with all these properties.
+
+1262
+00:59:07,010 --> 00:59:08,414
+Then we do the subdivision.
+
+1263
+00:59:08,414 --> 00:59:10,080
+Now what do you think
+we're going to do?
+
+1264
+00:59:10,080 --> 00:59:12,720
+What do we do with
+the triangles?
+
+1265
+00:59:12,720 --> 00:59:14,440
+Rabbit ear.
+
+1266
+00:59:14,440 --> 00:59:17,260
+That's the key phrase for today.
+
+1267
+00:59:17,260 --> 00:59:20,190
+So remember our good friend,
+the rabbit ear, and then
+
+1268
+00:59:20,190 --> 00:59:22,380
+there was the universal
+molecule-- Lang's
+
+1269
+00:59:22,380 --> 00:59:24,260
+universal molecule
+for the quadrilateral.
+
+1270
+00:59:24,260 --> 00:59:26,830
+We're going to use that
+for the quadrilaterals.
+
+1271
+00:59:26,830 --> 00:59:29,890
+And it turns out there's
+some nice properties here,
+
+1272
+00:59:29,890 --> 00:59:34,300
+which is the perpendicular
+folds of the rabbit ear
+
+1273
+00:59:34,300 --> 00:59:37,030
+will always hit right at the
+kissing point between the two
+
+1274
+00:59:37,030 --> 00:59:38,130
+disks.
+
+1275
+00:59:38,130 --> 00:59:40,425
+And same thing in here.
+
+1276
+00:59:40,425 --> 00:59:41,550
+We've got these four disks.
+
+1277
+00:59:41,550 --> 00:59:45,110
+We've got this quadrilateral
+region in between.
+
+1278
+00:59:45,110 --> 00:59:50,490
+and the perpendicular folds that
+come out of these two points.
+
+1279
+00:59:50,490 --> 00:59:52,340
+You may not remember
+exactly what's
+
+1280
+00:59:52,340 --> 00:59:54,940
+happening here as we shrink.
+
+1281
+00:59:54,940 --> 00:59:59,420
+And then in the tree method,
+this became an active path.
+
+1282
+00:59:59,420 --> 01:00:01,340
+There's no notion of
+active paths here,
+
+1283
+01:00:01,340 --> 01:00:04,010
+but we just make that so.
+
+1284
+01:00:04,010 --> 01:00:08,080
+That these perpendicular folds
+will end up hitting kissing
+
+1285
+01:00:08,080 --> 01:00:12,260
+disks, and we'll end up actually
+with the four arm starfish.
+
+1286
+01:00:12,260 --> 01:00:17,590
+In terms of the tree you get and
+the articulatable flaps here,
+
+1287
+01:00:17,590 --> 01:00:20,130
+these guys will all
+meet at a point.
+
+1288
+01:00:20,130 --> 01:00:22,970
+That's just the way this
+works with disk packing.
+
+1289
+01:00:22,970 --> 01:00:25,660
+And you can think of
+there being disks here
+
+1290
+01:00:25,660 --> 01:00:28,570
+and you're actually applying
+the tree method to that flap
+
+1291
+01:00:28,570 --> 01:00:32,930
+pattern, and that's probably the
+easiest way to think about it.
+
+1292
+01:00:32,930 --> 01:00:36,580
+But what's good for us--
+do I have a picture?
+
+1293
+01:00:36,580 --> 01:00:37,240
+Not yet.
+
+1294
+01:00:37,240 --> 01:00:39,390
+But the point is, I have
+perpendiculars coming out
+
+1295
+01:00:39,390 --> 01:00:39,942
+of here.
+
+1296
+01:00:39,942 --> 01:00:41,650
+I have perpendiculars
+coming out of here.
+
+1297
+01:00:41,650 --> 01:00:46,210
+They will meet because these
+disks kiss at the same point
+
+1298
+01:00:46,210 --> 01:00:48,220
+up from both sides.
+
+1299
+01:00:48,220 --> 01:00:49,280
+Perpendiculars meet.
+
+1300
+01:00:49,280 --> 01:00:49,850
+That's good.
+
+1301
+01:00:49,850 --> 01:00:51,391
+That means I don't
+get perpendiculars
+
+1302
+01:00:51,391 --> 01:00:52,824
+bouncing all over the place.
+
+1303
+01:00:52,824 --> 01:00:54,990
+So all this work is to make
+sure that perpendiculars
+
+1304
+01:00:54,990 --> 01:00:56,145
+are well behaved.
+
+1305
+01:00:56,145 --> 01:01:00,040
+It's a lot of work to
+do it, but it does it.
+
+1306
+01:01:00,040 --> 01:01:04,200
+Now when you fold this
+thing, what we end up doing
+
+1307
+01:01:04,200 --> 01:01:08,270
+is lining up-- remember there
+was two copies of my polygon.
+
+1308
+01:01:08,270 --> 01:01:10,660
+There's the inner copy
+and the outer copy.
+
+1309
+01:01:10,660 --> 01:01:17,460
+I end up lining up
+all of these guys--
+
+1310
+01:01:17,460 --> 01:01:18,890
+I'm got to go back
+to the picture.
+
+1311
+01:01:18,890 --> 01:01:20,370
+I'm sorry.
+
+1312
+01:01:20,370 --> 01:01:23,940
+So we have this inner copy,
+and what these molecules end up
+
+1313
+01:01:23,940 --> 01:01:26,040
+doing is lining up all
+the edges of this quad,
+
+1314
+01:01:26,040 --> 01:01:28,700
+all the edges of this quad,
+all the edges of this triangle.
+
+1315
+01:01:28,700 --> 01:01:30,360
+All those edges
+on the inside will
+
+1316
+01:01:30,360 --> 01:01:32,520
+become lined up on one edge.
+
+1317
+01:01:32,520 --> 01:01:34,140
+All the lines on
+the outside become
+
+1318
+01:01:34,140 --> 01:01:36,480
+lined up on another line.
+
+1319
+01:01:36,480 --> 01:01:39,340
+Turns out it will be
+parallel to that line.
+
+1320
+01:01:39,340 --> 01:01:41,777
+But what we really wanted
+to line up were these edges,
+
+1321
+01:01:41,777 --> 01:01:44,360
+and you can see why we had to
+do the outside of the beginning,
+
+1322
+01:01:44,360 --> 01:01:47,530
+because otherwise we'd get
+tons of extra junk on our line.
+
+1323
+01:01:47,530 --> 01:01:50,360
+We only want these
+edges on our line.
+
+1324
+01:01:50,360 --> 01:01:52,830
+So we did the offset
+so that all this stuff
+
+1325
+01:01:52,830 --> 01:01:54,450
+will come to one line.
+
+1326
+01:01:54,450 --> 01:01:57,370
+All this stuff on the outside
+will come to another line.
+
+1327
+01:01:57,370 --> 01:02:00,910
+And then we get this picture.
+
+1328
+01:02:00,910 --> 01:02:03,140
+So this is one
+line at the bottom.
+
+1329
+01:02:03,140 --> 01:02:04,140
+Another line at the top.
+
+1330
+01:02:04,140 --> 01:02:08,770
+We really wanted to line up
+stuff-- the blue stuff there.
+
+1331
+01:02:08,770 --> 01:02:10,450
+And there's still
+some junk on our line.
+
+1332
+01:02:10,450 --> 01:02:14,010
+These cyan triangles
+represent things
+
+1333
+01:02:14,010 --> 01:02:17,154
+that come from down
+here, but we really
+
+1334
+01:02:17,154 --> 01:02:18,570
+don't want them
+to cross our line.
+
+1335
+01:02:18,570 --> 01:02:19,890
+They just happened to.
+
+1336
+01:02:19,890 --> 01:02:22,150
+So we have to sync
+them repeatedly.
+
+1337
+01:02:22,150 --> 01:02:25,230
+Do lots of folds to make them
+underneath that epsilon line.
+
+1338
+01:02:25,230 --> 01:02:27,540
+Then we can cut along
+our line, and we're done.
+
+1339
+01:02:27,540 --> 01:02:28,040
+Easy.
+
+1340
+01:02:28,040 --> 01:02:33,120
+
+1341
+01:02:33,120 --> 01:02:37,380
+To prove that this works,
+we'll view a little sketch.
+
+1342
+01:02:37,380 --> 01:02:40,170
+This is kind of fun,
+and it's one piece
+
+1343
+01:02:40,170 --> 01:02:42,520
+of what we're in the process
+of doing for tree maker.
+
+1344
+01:02:42,520 --> 01:02:44,603
+This is sort of like a
+special case of tree maker.
+
+1345
+01:02:44,603 --> 01:02:46,760
+You just have very
+simple molecules
+
+1346
+01:02:46,760 --> 01:02:49,010
+and a relatively simple way
+in which they're combined.
+
+1347
+01:02:49,010 --> 01:02:54,880
+
+1348
+01:02:54,880 --> 01:02:56,870
+Here I've done a
+simpler example.
+
+1349
+01:02:56,870 --> 01:03:01,390
+I want to make a square, and I
+end up decomposing in this case
+
+1350
+01:03:01,390 --> 01:03:04,169
+into nine molecules-- nine
+quadrilateral molecules.
+
+1351
+01:03:04,169 --> 01:03:05,960
+A very simple disk
+packing which I have not
+
+1352
+01:03:05,960 --> 01:03:07,670
+shown the disk packing here.
+
+1353
+01:03:07,670 --> 01:03:11,080
+The idea is I'm going to
+make some cuts in my paper
+
+1354
+01:03:11,080 --> 01:03:13,145
+to make my problem easier.
+
+1355
+01:03:13,145 --> 01:03:15,520
+I'm going to have to pay for
+that, because later I really
+
+1356
+01:03:15,520 --> 01:03:16,600
+want those edges joined.
+
+1357
+01:03:16,600 --> 01:03:18,141
+I'll have to glue
+them back together.
+
+1358
+01:03:18,141 --> 01:03:23,790
+But to make it easier think
+about, I cut those four edges.
+
+1359
+01:03:23,790 --> 01:03:26,670
+So that the way in which
+my molecules are connected
+
+1360
+01:03:26,670 --> 01:03:29,251
+to each other is a tree,
+because I like trees.
+
+1361
+01:03:29,251 --> 01:03:30,500
+They're easier to think about.
+
+1362
+01:03:30,500 --> 01:03:31,990
+Easier to do induction over.
+
+1363
+01:03:31,990 --> 01:03:35,080
+So that's the blue line
+connecting the centers
+
+1364
+01:03:35,080 --> 01:03:35,960
+in a tree.
+
+1365
+01:03:35,960 --> 01:03:40,940
+The other remaining edges in
+the grid have been cut away.
+
+1366
+01:03:40,940 --> 01:03:44,190
+Now the idea is--
+it's kind of like what
+
+1367
+01:03:44,190 --> 01:03:46,690
+I was drawing for the
+linear corridor case.
+
+1368
+01:03:46,690 --> 01:03:50,520
+You have a tree, you pick
+up the tree from some node,
+
+1369
+01:03:50,520 --> 01:03:52,210
+and just hang it down.
+
+1370
+01:03:52,210 --> 01:03:56,370
+And in this case, we hang
+it from this molecule.
+
+1371
+01:03:56,370 --> 01:03:59,260
+The red edges are
+mountain, so three of these
+
+1372
+01:03:59,260 --> 01:04:00,440
+are going to be valley.
+
+1373
+01:04:00,440 --> 01:04:01,560
+One mountain.
+
+1374
+01:04:01,560 --> 01:04:04,386
+The idea is this thing reaches
+around the next guy, which
+
+1375
+01:04:04,386 --> 01:04:06,260
+reaches is around the
+next guy, which reaches
+
+1376
+01:04:06,260 --> 01:04:08,430
+around the next guy,
+and there's actually--
+
+1377
+01:04:08,430 --> 01:04:10,826
+there's two valleys
+here-- two little pockets.
+
+1378
+01:04:10,826 --> 01:04:12,450
+Each of-- this guy
+goes in that pocket,
+
+1379
+01:04:12,450 --> 01:04:15,690
+this guy goes in that pocket,
+and recursively, it just works.
+
+1380
+01:04:15,690 --> 01:04:19,595
+I think I have a picture of
+what's actually happening here.
+
+1381
+01:04:19,595 --> 01:04:22,240
+Yeah, is it's hard
+to really draw,
+
+1382
+01:04:22,240 --> 01:04:25,490
+but each of these
+forearm starfish
+
+1383
+01:04:25,490 --> 01:04:28,470
+has one mountain
+and three valleys,
+
+1384
+01:04:28,470 --> 01:04:32,570
+and you just nestle inside
+your parent in the tree.
+
+1385
+01:04:32,570 --> 01:04:35,320
+And this is really easy to show
+that there's no crossings here
+
+1386
+01:04:35,320 --> 01:04:37,810
+because just joined
+to your parent,
+
+1387
+01:04:37,810 --> 01:04:40,320
+and it's a nice
+nesting structure.
+
+1388
+01:04:40,320 --> 01:04:43,770
+It's just in the same way
+that trees can be folded flat.
+
+1389
+01:04:43,770 --> 01:04:48,410
+You can fold all
+these molecules flat
+
+1390
+01:04:48,410 --> 01:04:50,460
+and join them
+together in a tree.
+
+1391
+01:04:50,460 --> 01:04:52,090
+But we didn't
+really have a tree.
+
+1392
+01:04:52,090 --> 01:04:54,340
+We had all those extra cuts
+that we have to re-suture.
+
+1393
+01:04:54,340 --> 01:04:56,880
+
+1394
+01:04:56,880 --> 01:04:58,869
+So we have this picture,
+and now we really
+
+1395
+01:04:58,869 --> 01:05:01,410
+have to join up these edges and
+think about what the mountain
+
+1396
+01:05:01,410 --> 01:05:03,020
+valley assignment is there.
+
+1397
+01:05:03,020 --> 01:05:05,320
+And it works.
+
+1398
+01:05:05,320 --> 01:05:08,166
+
+1399
+01:05:08,166 --> 01:05:12,640
+This green thing
+is the boundary,
+
+1400
+01:05:12,640 --> 01:05:14,800
+and then I have
+connected the dots.
+
+1401
+01:05:14,800 --> 01:05:17,330
+Each of these dots corresponds
+to one green edge here.
+
+1402
+01:05:17,330 --> 01:05:21,770
+I forget whether it's this
+edge or that one, I think.
+
+1403
+01:05:21,770 --> 01:05:24,700
+It's just a single edge.
+
+1404
+01:05:24,700 --> 01:05:34,430
+And so, for example, these
+two are-- these two joins,
+
+1405
+01:05:34,430 --> 01:05:38,100
+and then the joins above
+that nestle around it.
+
+1406
+01:05:38,100 --> 01:05:40,450
+And then the other
+branch at the top are
+
+1407
+01:05:40,450 --> 01:05:43,964
+joins, and in the leftmost
+cut are these two joins.
+
+1408
+01:05:43,964 --> 01:05:45,630
+You have to make these
+joins, and really
+
+1409
+01:05:45,630 --> 01:05:47,210
+all you need to
+check is that these
+
+1410
+01:05:47,210 --> 01:05:50,150
+joins form a non-crossing
+picture like they do here.
+
+1411
+01:05:50,150 --> 01:05:52,700
+And that's almost obvious
+because this is a planer
+
+1412
+01:05:52,700 --> 01:05:56,160
+diagram and we're cutting
+along a planer tree,
+
+1413
+01:05:56,160 --> 01:05:58,830
+and so this is again a depth
+first search kind of thing.
+
+1414
+01:05:58,830 --> 01:06:03,010
+So there's one tree we
+call the dual tree here
+
+1415
+01:06:03,010 --> 01:06:05,340
+that works because it's
+a tree, and then there's
+
+1416
+01:06:05,340 --> 01:06:07,930
+the cuts you make which are
+different trees-- primal tree
+
+1417
+01:06:07,930 --> 01:06:11,910
+if you want-- and that also
+works because of planarity.
+
+1418
+01:06:11,910 --> 01:06:12,990
+And it all works.
+
+1419
+01:06:12,990 --> 01:06:17,185
+That's the hand wavy version,
+and you can read the textbook
+
+1420
+01:06:17,185 --> 01:06:19,830
+if you want more details.
+
+1421
+01:06:19,830 --> 01:06:20,930
+Oh, gosh.
+
+1422
+01:06:20,930 --> 01:06:24,220
+If you want to solve more
+general graphs, you can do it.
+
+1423
+01:06:24,220 --> 01:06:27,860
+In general, you have to
+offset all of those cut lines,
+
+1424
+01:06:27,860 --> 01:06:33,740
+and you get all these things--
+along the pink lines here you
+
+1425
+01:06:33,740 --> 01:06:35,940
+line things up,
+but you really want
+
+1426
+01:06:35,940 --> 01:06:39,950
+to line up these blue
+lines-- purple lines.
+
+1427
+01:06:39,950 --> 01:06:42,360
+And so you have to do more
+syncing to get it to work.
+
+1428
+01:06:42,360 --> 01:06:44,151
+Now I have all the
+things I want to line up
+
+1429
+01:06:44,151 --> 01:06:45,350
+on this line and this line.
+
+1430
+01:06:45,350 --> 01:06:47,308
+I fold in the middle,
+and now they're lined up.
+
+1431
+01:06:47,308 --> 01:06:51,570
+
+1432
+01:06:51,570 --> 01:06:53,922
+That fold in the middle--
+yeah, that will work.
+
+1433
+01:06:53,922 --> 01:06:55,030
+Good.
+
+1434
+01:06:55,030 --> 01:06:56,280
+Might have to do more syncing.
+
+1435
+01:06:56,280 --> 01:06:59,680
+
+1436
+01:06:59,680 --> 01:07:01,620
+Whew.
+
+1437
+01:07:01,620 --> 01:07:03,250
+Questions about
+disk-packing method?
+
+1438
+01:07:03,250 --> 01:07:05,457
+This is a bit of
+a whirlwind tour,
+
+1439
+01:07:05,457 --> 01:07:07,040
+but I wanted to get
+through it quickly
+
+1440
+01:07:07,040 --> 01:07:08,840
+to tell you about a new result.
+
+1441
+01:07:08,840 --> 01:07:11,170
+Just got accepted
+to a conference
+
+1442
+01:07:11,170 --> 01:07:15,990
+to appear in October.
+
+1443
+01:07:15,990 --> 01:07:16,550
+Pretty soon.
+
+1444
+01:07:16,550 --> 01:07:22,280
+
+1445
+01:07:22,280 --> 01:07:24,780
+And it's a project that started
+in this class in the problem
+
+1446
+01:07:24,780 --> 01:07:29,590
+session three years ago,
+and we just solved it.
+
+1447
+01:07:29,590 --> 01:07:32,810
+Took awhile.
+
+1448
+01:07:32,810 --> 01:07:34,670
+Took another
+co-author to chime in.
+
+1449
+01:07:34,670 --> 01:07:39,230
+
+1450
+01:07:39,230 --> 01:07:42,220
+And it goes back to the
+early history of fold and cut
+
+1451
+01:07:42,220 --> 01:07:44,140
+which is simple folds.
+
+1452
+01:07:44,140 --> 01:07:45,900
+All the magicians were
+using simple folds.
+
+1453
+01:07:45,900 --> 01:07:48,170
+What can you make
+with simple folds?
+
+1454
+01:07:48,170 --> 01:07:51,140
+Now you've been wowed and dowed
+that you could make anything
+
+1455
+01:07:51,140 --> 01:07:54,530
+with arbitrary folds, but simple
+folds you cannot make anything.
+
+1456
+01:07:54,530 --> 01:07:59,810
+Because the first told
+you make, say, this one,
+
+1457
+01:07:59,810 --> 01:08:02,285
+has to be a line of
+symmetry of your diagram.
+
+1458
+01:08:02,285 --> 01:08:05,344
+
+1459
+01:08:05,344 --> 01:08:08,545
+Got to stop making my life hard.
+
+1460
+01:08:08,545 --> 01:08:10,670
+If you can fold something,
+you can never unfold it.
+
+1461
+01:08:10,670 --> 01:08:13,540
+That's the usual
+simple fold model.
+
+1462
+01:08:13,540 --> 01:08:15,410
+This has to line
+up-- the cuts you
+
+1463
+01:08:15,410 --> 01:08:17,202
+want to line up over
+here, that are exactly
+
+1464
+01:08:17,202 --> 01:08:18,743
+be the cuts you want
+to line up here.
+
+1465
+01:08:18,743 --> 01:08:20,450
+So you can only make
+symmetric diagrams.
+
+1466
+01:08:20,450 --> 01:08:24,490
+The first fold has to be a
+line of reflectional symmetry.
+
+1467
+01:08:24,490 --> 01:08:27,390
+But is that the only
+property you need?
+
+1468
+01:08:27,390 --> 01:08:28,010
+No.
+
+1469
+01:08:28,010 --> 01:08:31,520
+Kind of have to have symmetry
+for while until you're done.
+
+1470
+01:08:31,520 --> 01:08:33,120
+How do you formalize that?
+
+1471
+01:08:33,120 --> 01:08:35,590
+Well, we came up
+with an algorithm
+
+1472
+01:08:35,590 --> 01:08:39,840
+that in polynomial time,
+an efficient algorithm
+
+1473
+01:08:39,840 --> 01:08:46,590
+will tell you whether a
+given polygon can be made.
+
+1474
+01:08:46,590 --> 01:08:51,140
+Like this polygon looks good.
+
+1475
+01:08:51,140 --> 01:08:55,930
+I think-- yeah, I
+think this can be made.
+
+1476
+01:08:55,930 --> 01:09:00,240
+So I think I would fold
+along and do a bisector here,
+
+1477
+01:09:00,240 --> 01:09:01,890
+and then this
+basically disappears.
+
+1478
+01:09:01,890 --> 01:09:03,170
+Folding over.
+
+1479
+01:09:03,170 --> 01:09:05,210
+Then I would fold along
+and get a bisector here,
+
+1480
+01:09:05,210 --> 01:09:07,640
+and then this
+disappears into that,
+
+1481
+01:09:07,640 --> 01:09:14,550
+and then maybe I can fold here.
+
+1482
+01:09:14,550 --> 01:09:16,080
+Does that work?
+
+1483
+01:09:16,080 --> 01:09:16,622
+Barely.
+
+1484
+01:09:16,622 --> 01:09:19,080
+I mean I've got to make sure
+that this blank paper does not
+
+1485
+01:09:19,080 --> 01:09:22,270
+come onto that.
+
+1486
+01:09:22,270 --> 01:09:24,430
+But if that's a
+problem, I can probably
+
+1487
+01:09:24,430 --> 01:09:28,450
+make-- I could make a
+fold here, for example.
+
+1488
+01:09:28,450 --> 01:09:29,580
+Shrinks that up.
+
+1489
+01:09:29,580 --> 01:09:31,630
+There's lots of
+things you can do.
+
+1490
+01:09:31,630 --> 01:09:34,029
+This is a borderline case
+whether it's yes or no.
+
+1491
+01:09:34,029 --> 01:09:36,220
+I will give you an
+algorithm that does it.
+
+1492
+01:09:36,220 --> 01:09:38,910
+
+1493
+01:09:38,910 --> 01:09:41,409
+For polygons with margin.
+
+1494
+01:09:41,409 --> 01:09:44,120
+
+1495
+01:09:44,120 --> 01:09:46,500
+Bit of a technical condition.
+
+1496
+01:09:46,500 --> 01:09:48,580
+Something that is
+pretty typical.
+
+1497
+01:09:48,580 --> 01:09:51,700
+What I mean is the thing
+you're trying to cut out
+
+1498
+01:09:51,700 --> 01:09:53,990
+does not meet the
+boundary of the paper.
+
+1499
+01:09:53,990 --> 01:09:55,180
+There's no margin here.
+
+1500
+01:09:55,180 --> 01:09:56,740
+It'd be hard to print out.
+
+1501
+01:09:56,740 --> 01:09:58,660
+So I really want
+something that has margin.
+
+1502
+01:09:58,660 --> 01:10:00,287
+That's a typical
+case we care about.
+
+1503
+01:10:00,287 --> 01:10:02,120
+We actually need this
+for the proof to work.
+
+1504
+01:10:02,120 --> 01:10:03,870
+We also need that
+it's a single polygon.
+
+1505
+01:10:03,870 --> 01:10:08,660
+
+1506
+01:10:08,660 --> 01:10:11,260
+It does not work
+with general graphs.
+
+1507
+01:10:11,260 --> 01:10:12,089
+This algorithm.
+
+1508
+01:10:12,089 --> 01:10:13,880
+Because more complicated
+things can happen.
+
+1509
+01:10:13,880 --> 01:10:14,900
+It might be [INAUDIBLE].
+
+1510
+01:10:14,900 --> 01:10:18,790
+for all we know,
+the general case.
+
+1511
+01:10:18,790 --> 01:10:24,950
+So here's the algorithm that
+I'll give you in number form.
+
+1512
+01:10:24,950 --> 01:10:28,230
+First thing you do is
+guess the first fold.
+
+1513
+01:10:28,230 --> 01:10:31,380
+This is a powerful
+idea that even
+
+1514
+01:10:31,380 --> 01:10:33,960
+most algorithmisists
+don't necessarily know.
+
+1515
+01:10:33,960 --> 01:10:36,894
+The idea is what could
+the first fold be?
+
+1516
+01:10:36,894 --> 01:10:38,560
+Has to be a line of
+reflection symmetry.
+
+1517
+01:10:38,560 --> 01:10:40,770
+Turns out there's a linear
+number [INAUDIBLE] most.
+
+1518
+01:10:40,770 --> 01:10:42,810
+You can find them
+in linear time.
+
+1519
+01:10:42,810 --> 01:10:44,620
+All these good algorithms
+for finding them.
+
+1520
+01:10:44,620 --> 01:10:46,890
+But which fold do I make first?
+
+1521
+01:10:46,890 --> 01:10:48,470
+The answer is I don't care.
+
+1522
+01:10:48,470 --> 01:10:50,690
+Let's just try them
+all one at a time.
+
+1523
+01:10:50,690 --> 01:10:52,010
+This is what I call guessing.
+
+1524
+01:10:52,010 --> 01:10:54,490
+Just imagine from now on
+that we made the right guess,
+
+1525
+01:10:54,490 --> 01:10:56,750
+but if you end up failing
+later on this algorithm,
+
+1526
+01:10:56,750 --> 01:10:58,520
+just go back here
+try the next one.
+
+1527
+01:10:58,520 --> 01:11:00,437
+There's only N of them to try.
+
+1528
+01:11:00,437 --> 01:11:02,270
+So you're going to
+multiply the running time
+
+1529
+01:11:02,270 --> 01:11:06,309
+of the rest of the algorithm
+by N, and if this is N to N
+
+1530
+01:11:06,309 --> 01:11:08,350
+squared-- which I think
+the rest of the algorithm
+
+1531
+01:11:08,350 --> 01:11:10,510
+is N squared-- the whole
+algorithm will be N cubed
+
+1532
+01:11:10,510 --> 01:11:12,135
+because you just run
+this over and over
+
+1533
+01:11:12,135 --> 01:11:13,394
+for each possible first fold.
+
+1534
+01:11:13,394 --> 01:11:15,560
+We don't have a great theory
+to find the first fold.
+
+1535
+01:11:15,560 --> 01:11:17,770
+Just try them all.
+
+1536
+01:11:17,770 --> 01:11:19,660
+That's step one.
+
+1537
+01:11:19,660 --> 01:11:25,210
+Step two-- that's the only
+guess we're going to make.
+
+1538
+01:11:25,210 --> 01:11:28,340
+Fold down to convex hull.
+
+1539
+01:11:28,340 --> 01:11:31,890
+This is a central idea.
+
+1540
+01:11:31,890 --> 01:11:35,990
+So we have this polygon
+we want to make.
+
+1541
+01:11:35,990 --> 01:11:37,549
+There's all this
+extra blank paper.
+
+1542
+01:11:37,549 --> 01:11:38,840
+I don't like extra blank paper.
+
+1543
+01:11:38,840 --> 01:11:39,940
+Just get rid of it.
+
+1544
+01:11:39,940 --> 01:11:42,730
+Make lots of folds to fold
+the blank paper onto itself
+
+1545
+01:11:42,730 --> 01:11:46,220
+until it gets so tiny it just
+goes slightly around the convex
+
+1546
+01:11:46,220 --> 01:11:47,320
+hull.
+
+1547
+01:11:47,320 --> 01:11:49,440
+Convex hull is the
+smallest convex polygon
+
+1548
+01:11:49,440 --> 01:11:51,214
+that contains your shape.
+
+1549
+01:11:51,214 --> 01:11:52,130
+So it'll be like that.
+
+1550
+01:11:52,130 --> 01:11:55,130
+It'll reduce the
+paper down to that.
+
+1551
+01:11:55,130 --> 01:11:57,380
+And I do this a lot.
+
+1552
+01:11:57,380 --> 01:11:58,322
+I might as well.
+
+1553
+01:11:58,322 --> 01:12:00,780
+It makes the problem easier
+because I have less blank space
+
+1554
+01:12:00,780 --> 01:12:01,240
+to worry about.
+
+1555
+01:12:01,240 --> 01:12:03,239
+Blank space is a problem
+because if I [? fold ?]
+
+1556
+01:12:03,239 --> 01:12:05,620
+blank space onto
+a cut, it's bad.
+
+1557
+01:12:05,620 --> 01:12:06,380
+It's not allowed.
+
+1558
+01:12:06,380 --> 01:12:08,980
+
+1559
+01:12:08,980 --> 01:12:15,880
+So the next thing we do is make
+the best possible safe fold.
+
+1560
+01:12:15,880 --> 01:12:19,320
+
+1561
+01:12:19,320 --> 01:12:22,776
+I need to define
+that, but a safe fold
+
+1562
+01:12:22,776 --> 01:12:24,400
+is just the folds
+we're trying to make,
+
+1563
+01:12:24,400 --> 01:12:27,130
+which is locally they
+are lines of symmetry.
+
+1564
+01:12:27,130 --> 01:12:30,660
+So like this one was a good
+fold after I made this fold.
+
+1565
+01:12:30,660 --> 01:12:33,510
+So this is-- all the
+right stuff here is gone.
+
+1566
+01:12:33,510 --> 01:12:36,080
+It's a good fold because
+it folds this on to this,
+
+1567
+01:12:36,080 --> 01:12:38,460
+and it folds blank space
+onto this blank space.
+
+1568
+01:12:38,460 --> 01:12:42,140
+So anything that comes into-- on
+top of each other is identical.
+
+1569
+01:12:42,140 --> 01:12:45,280
+That's a safe fold.
+
+1570
+01:12:45,280 --> 01:12:49,640
+And repeat.
+
+1571
+01:12:49,640 --> 01:12:52,220
+That's the algorithm.
+
+1572
+01:12:52,220 --> 01:12:53,420
+How does that work?
+
+1573
+01:12:53,420 --> 01:12:58,250
+
+1574
+01:12:58,250 --> 01:13:00,012
+Why does this work?
+
+1575
+01:13:00,012 --> 01:13:01,720
+So it's the obvious
+algorithm, basically.
+
+1576
+01:13:01,720 --> 01:13:04,580
+It says make safe folds
+until you're done.
+
+1577
+01:13:04,580 --> 01:13:07,620
+If you finish, then you're done.
+
+1578
+01:13:07,620 --> 01:13:08,970
+And then the answer's yes.
+
+1579
+01:13:08,970 --> 01:13:11,220
+If you don't finish-- which
+is a little hard to check
+
+1580
+01:13:11,220 --> 01:13:13,980
+because you can always
+make microscopic folds--
+
+1581
+01:13:13,980 --> 01:13:16,100
+but you take the
+limit and-- if it's
+
+1582
+01:13:16,100 --> 01:13:18,460
+possible to do this
+in polynomial time--
+
+1583
+01:13:18,460 --> 01:13:19,630
+you find that out.
+
+1584
+01:13:19,630 --> 01:13:23,250
+Turns out I can't finish
+by making safe folds.
+
+1585
+01:13:23,250 --> 01:13:24,840
+Then you can show
+that actually there
+
+1586
+01:13:24,840 --> 01:13:28,920
+was no way to make that
+pattern by simple folds.
+
+1587
+01:13:28,920 --> 01:13:32,290
+So let me give you an
+idea of why that's true.
+
+1588
+01:13:32,290 --> 01:13:35,710
+
+1589
+01:13:35,710 --> 01:13:39,430
+After I make a single
+fold-- the first fold--
+
+1590
+01:13:39,430 --> 01:13:41,490
+my picture looks like this.
+
+1591
+01:13:41,490 --> 01:13:43,775
+It's no longer a polygon.
+
+1592
+01:13:43,775 --> 01:13:45,200
+It's like half a polygon.
+
+1593
+01:13:45,200 --> 01:13:47,704
+It ends at the
+boundary of the paper.
+
+1594
+01:13:47,704 --> 01:13:49,620
+It begins and ends with
+the boundary of paper,
+
+1595
+01:13:49,620 --> 01:13:51,203
+and you have some
+chain in the middle.
+
+1596
+01:13:51,203 --> 01:13:52,330
+We call this a passage.
+
+1597
+01:13:52,330 --> 01:13:54,370
+It's like a path
+you wander along.
+
+1598
+01:13:54,370 --> 01:13:56,930
+And I want to somehow bring
+all those edges into alignment.
+
+1599
+01:13:56,930 --> 01:13:59,470
+
+1600
+01:13:59,470 --> 01:14:01,300
+Here I'm already
+using it as a polygon.
+
+1601
+01:14:01,300 --> 01:14:03,508
+If it weren't a polygon,
+there might be more than one
+
+1602
+01:14:03,508 --> 01:14:04,780
+of these.
+
+1603
+01:14:04,780 --> 01:14:06,050
+Now I want to make a fold.
+
+1604
+01:14:06,050 --> 01:14:08,710
+For example, this fold is
+safe because it folds this
+
+1605
+01:14:08,710 --> 01:14:11,240
+on to this, and it folds
+blank space onto blank space
+
+1606
+01:14:11,240 --> 01:14:12,490
+if I do it right.
+
+1607
+01:14:12,490 --> 01:14:17,640
+
+1608
+01:14:17,640 --> 01:14:18,890
+And keep doing that.
+
+1609
+01:14:18,890 --> 01:14:21,720
+Now when I make a fold
+like this, what happens
+
+1610
+01:14:21,720 --> 01:14:25,310
+is I can think of this region
+that I folded-- the smaller
+
+1611
+01:14:25,310 --> 01:14:27,740
+side-- as disappearing.
+
+1612
+01:14:27,740 --> 01:14:30,440
+It just got absorbed
+into the paper here.
+
+1613
+01:14:30,440 --> 01:14:33,350
+So the graph that I was
+trying to line up got smaller.
+
+1614
+01:14:33,350 --> 01:14:35,070
+That's clearly a good thing.
+
+1615
+01:14:35,070 --> 01:14:36,520
+Makes my problem easier.
+
+1616
+01:14:36,520 --> 01:14:39,710
+The piece of paper I was
+folding also got smaller.
+
+1617
+01:14:39,710 --> 01:14:41,800
+That's a good thing.
+
+1618
+01:14:41,800 --> 01:14:45,110
+But that's not always true.
+
+1619
+01:14:45,110 --> 01:14:48,245
+Suppose you had a piece
+of paper like this,
+
+1620
+01:14:48,245 --> 01:14:50,520
+which could happen
+after a bunch folding,
+
+1621
+01:14:50,520 --> 01:14:52,770
+and then you fold
+along a line like that
+
+1622
+01:14:52,770 --> 01:14:54,380
+because, for
+example, your passage
+
+1623
+01:14:54,380 --> 01:14:56,200
+looks like that or something.
+
+1624
+01:14:56,200 --> 01:14:59,410
+When I make the fold--
+this has to go off.
+
+1625
+01:14:59,410 --> 01:15:04,380
+When I make the fold I
+get this crazy thing.
+
+1626
+01:15:04,380 --> 01:15:06,100
+Not drawn to scale.
+
+1627
+01:15:06,100 --> 01:15:08,880
+And this polygon does not
+fit inside this polygon.
+
+1628
+01:15:08,880 --> 01:15:11,410
+So my paper got
+bigger in some places.
+
+1629
+01:15:11,410 --> 01:15:13,610
+And that's a worry, because
+now I have the stuff--
+
+1630
+01:15:13,610 --> 01:15:15,460
+maybe it happens
+to be blank space.
+
+1631
+01:15:15,460 --> 01:15:17,740
+Maybe there's other
+junk that got out here.
+
+1632
+01:15:17,740 --> 01:15:19,527
+And now have to worry
+about collisions
+
+1633
+01:15:19,527 --> 01:15:20,860
+with this bigger piece of paper.
+
+1634
+01:15:20,860 --> 01:15:23,460
+And this is always
+our sticking point,
+
+1635
+01:15:23,460 --> 01:15:28,050
+but there's some
+magic you can do.
+
+1636
+01:15:28,050 --> 01:15:29,910
+In fact, the picture
+cannot look like this.
+
+1637
+01:15:29,910 --> 01:15:32,610
+
+1638
+01:15:32,610 --> 01:15:36,320
+Because, look, you've got
+some portion of your passage
+
+1639
+01:15:36,320 --> 01:15:37,574
+to the left of the crease.
+
+1640
+01:15:37,574 --> 01:15:39,740
+You've got some portion of
+the passage to the right.
+
+1641
+01:15:39,740 --> 01:15:41,960
+One of them has to be shorter.
+
+1642
+01:15:41,960 --> 01:15:44,480
+Plus, this is a
+line of symmetry.
+
+1643
+01:15:44,480 --> 01:15:49,180
+So wherever I have a portion
+of my passage over here,
+
+1644
+01:15:49,180 --> 01:15:51,160
+I will have a portion
+of my passage over here
+
+1645
+01:15:51,160 --> 01:15:52,380
+until I run out of length.
+
+1646
+01:15:52,380 --> 01:15:53,920
+One of them is shorter.
+
+1647
+01:15:53,920 --> 01:15:56,860
+So the shorter one like this
+one gets totally absorbed
+
+1648
+01:15:56,860 --> 01:15:58,170
+by the larger one.
+
+1649
+01:15:58,170 --> 01:16:00,910
+So the shorter side
+always disappears.
+
+1650
+01:16:00,910 --> 01:16:04,120
+So in this picture, I have
+the long side of my passage,
+
+1651
+01:16:04,120 --> 01:16:06,710
+and it's really a
+subset of the original.
+
+1652
+01:16:06,710 --> 01:16:09,830
+If I reduce this
+to the convex hull,
+
+1653
+01:16:09,830 --> 01:16:13,960
+like this, this
+stuff disappears.
+
+1654
+01:16:13,960 --> 01:16:17,930
+And in general, if you do
+this fold down to convex hull,
+
+1655
+01:16:17,930 --> 01:16:21,240
+this repeat goes
+back to step two.
+
+1656
+01:16:21,240 --> 01:16:22,740
+If you fold down
+to the convex hull,
+
+1657
+01:16:22,740 --> 01:16:25,073
+you can show that not only
+does your passage-- the thing
+
+1658
+01:16:25,073 --> 01:16:27,650
+you want to cut out-- get
+smaller, but you piece of paper
+
+1659
+01:16:27,650 --> 01:16:29,560
+also gets smaller.
+
+1660
+01:16:29,560 --> 01:16:30,110
+Guaranteed.
+
+1661
+01:16:30,110 --> 01:16:33,210
+And once you know the paper get
+smaller and your things you're
+
+1662
+01:16:33,210 --> 01:16:37,240
+trying to align get smaller, you
+know that every move is safe.
+
+1663
+01:16:37,240 --> 01:16:40,330
+So you never get stuck by
+following this algorithm.
+
+1664
+01:16:40,330 --> 01:16:42,940
+This works for
+polygons with margin,
+
+1665
+01:16:42,940 --> 01:16:45,260
+but not in any other situation
+as far as we can tell.
+
+1666
+01:16:45,260 --> 01:16:48,126
+
+1667
+01:16:48,126 --> 01:16:48,625
+Cool.
+
+1668
+01:16:48,625 --> 01:16:51,926
+
+1669
+01:16:51,926 --> 01:16:53,550
+The last thing I
+wanted to leave you on
+
+1670
+01:16:53,550 --> 01:16:59,940
+is going out a little way
+from regular 2D flat sheets
+
+1671
+01:16:59,940 --> 01:17:01,030
+of paper.
+
+1672
+01:17:01,030 --> 01:17:04,420
+You can generalize
+and go up a dimension
+
+1673
+01:17:04,420 --> 01:17:08,500
+to folding polyhedra surface.
+
+1674
+01:17:08,500 --> 01:17:10,130
+Here, a surface of a polyhedron.
+
+1675
+01:17:10,130 --> 01:17:11,213
+You've probably done this.
+
+1676
+01:17:11,213 --> 01:17:15,230
+You take a cereal box and
+you can collapse it flat.
+
+1677
+01:17:15,230 --> 01:17:16,680
+Is that always possible?
+
+1678
+01:17:16,680 --> 01:17:20,710
+It's called the flattening
+problem, and the answer is yes.
+
+1679
+01:17:20,710 --> 01:17:22,890
+And you can think of it
+as a fold and cut problem,
+
+1680
+01:17:22,890 --> 01:17:24,389
+because of the fold
+and cut problem,
+
+1681
+01:17:24,389 --> 01:17:26,570
+you have some polygon
+like this diamond.
+
+1682
+01:17:26,570 --> 01:17:28,670
+You make some
+collection of folds
+
+1683
+01:17:28,670 --> 01:17:31,906
+that brings the boundary
+of the diamond to align.
+
+1684
+01:17:31,906 --> 01:17:33,530
+So if you forget
+about what's happening
+
+1685
+01:17:33,530 --> 01:17:34,720
+on the inside of
+the paper-- you just
+
+1686
+01:17:34,720 --> 01:17:36,750
+look at the boundary
+of the paper-- you're
+
+1687
+01:17:36,750 --> 01:17:40,910
+folding that one-dimensional
+boundary so that it collapses
+
+1688
+01:17:40,910 --> 01:17:43,090
+down to a single line.
+
+1689
+01:17:43,090 --> 01:17:46,340
+What I want to do is
+this up a dimension.
+
+1690
+01:17:46,340 --> 01:17:51,010
+I take a 3D cube of
+paper-- solid cube.
+
+1691
+01:17:51,010 --> 01:17:55,270
+I have embedded within
+it some polygons
+
+1692
+01:17:55,270 --> 01:17:59,720
+that I want to bring
+to a common plane.
+
+1693
+01:17:59,720 --> 01:18:04,190
+And I want to fold the solid
+cube through four dimensions,
+
+1694
+01:18:04,190 --> 01:18:07,020
+but flat so it ends up
+back in three dimensions.
+
+1695
+01:18:07,020 --> 01:18:10,780
+I get a different 3D solid,
+but with multiple layers
+
+1696
+01:18:10,780 --> 01:18:12,530
+right on top of each
+other-- little bit
+
+1697
+01:18:12,530 --> 01:18:14,227
+a fourth dimension
+hanging out there.
+
+1698
+01:18:14,227 --> 01:18:15,810
+But if I just look
+at what's happening
+
+1699
+01:18:15,810 --> 01:18:17,292
+to the boundary
+of my polyhedron--
+
+1700
+01:18:17,292 --> 01:18:19,500
+say I start with a dodecahedron
+or something embedded
+
+1701
+01:18:19,500 --> 01:18:22,170
+in there-- and I want
+to fold this thing
+
+1702
+01:18:22,170 --> 01:18:23,930
+so all the sides
+of the dodecahedron
+
+1703
+01:18:23,930 --> 01:18:25,480
+come to a common plane.
+
+1704
+01:18:25,480 --> 01:18:27,710
+That is the 3D
+folding cup problem.
+
+1705
+01:18:27,710 --> 01:18:29,480
+It remains unsolved.
+
+1706
+01:18:29,480 --> 01:18:32,890
+I suspect it's possible to solve
+even with straight skeletons
+
+1707
+01:18:32,890 --> 01:18:35,120
+and perpendiculars,
+but it's really hard
+
+1708
+01:18:35,120 --> 01:18:36,600
+to draw the pictures.
+
+1709
+01:18:36,600 --> 01:18:39,820
+So we have not resolved
+that one way or the other.
+
+1710
+01:18:39,820 --> 01:18:41,430
+But the boundary
+problem-- forget
+
+1711
+01:18:41,430 --> 01:18:43,370
+about what's happening to
+the interior and the exterior
+
+1712
+01:18:43,370 --> 01:18:44,220
+of the dodecahedron.
+
+1713
+01:18:44,220 --> 01:18:46,386
+If you just look at the
+surface of the dodecahedron,
+
+1714
+01:18:46,386 --> 01:18:49,130
+that you can fold
+in 3D-- we think--
+
+1715
+01:18:49,130 --> 01:18:53,000
+and you can show
+and burn in haze
+
+1716
+01:18:53,000 --> 01:18:55,830
+from the complexity proof
+a couple lectures ago,
+
+1717
+01:18:55,830 --> 01:18:59,960
+and also on this disk-packing
+method with our co-authors.
+
+1718
+01:18:59,960 --> 01:19:02,850
+They prove just two
+years ago that if you
+
+1719
+01:19:02,850 --> 01:19:08,220
+have any orientable manifold,
+which is things like polyhedron
+
+1720
+01:19:08,220 --> 01:19:12,815
+but no Mobius strips, no Klein
+bundles, and other ugly things.
+
+1721
+01:19:12,815 --> 01:19:14,440
+They have to be
+manifold, so you're not
+
+1722
+01:19:14,440 --> 01:19:20,260
+allowed to join three triangles
+together along a single edge.
+
+1723
+01:19:20,260 --> 01:19:22,510
+That would be forbidden.
+
+1724
+01:19:22,510 --> 01:19:24,470
+So it's locally flat.
+
+1725
+01:19:24,470 --> 01:19:27,370
+In such a case, you
+can flatten the thing.
+
+1726
+01:19:27,370 --> 01:19:32,030
+And the proof is very similar to
+the disk-packing method of fold
+
+1727
+01:19:32,030 --> 01:19:34,070
+and cut, and in the
+textbook we talk
+
+1728
+01:19:34,070 --> 01:19:36,222
+about how do you apply
+that to do something
+
+1729
+01:19:36,222 --> 01:19:37,305
+that's just like a sphere.
+
+1730
+01:19:37,305 --> 01:19:38,740
+A regular polyhedron.
+
+1731
+01:19:38,740 --> 01:19:40,990
+That's pretty easy to do
+with the disk-packing method.
+
+1732
+01:19:40,990 --> 01:19:42,489
+They generalize it
+to the case where
+
+1733
+01:19:42,489 --> 01:19:48,545
+you have polyhedral doughnuts
+and all sorts of fun things.
+
+1734
+01:19:48,545 --> 01:19:50,170
+But there's tons of
+open problems here.
+
+1735
+01:19:50,170 --> 01:19:51,628
+So we know how to
+flatten surfaces,
+
+1736
+01:19:51,628 --> 01:19:54,690
+and that's useful for things
+like folding airbags flat.
+
+1737
+01:19:54,690 --> 01:19:58,160
+But can you fold
+the 3D solid flat?
+
+1738
+01:19:58,160 --> 01:20:02,030
+You can think of--
+we have here 1D edges
+
+1739
+01:20:02,030 --> 01:20:06,390
+which we are collapsing
+to a 1D line.
+
+1740
+01:20:06,390 --> 01:20:09,400
+There is also zero
+dimensional points here,
+
+1741
+01:20:09,400 --> 01:20:12,110
+which we don't bring
+to a single point.
+
+1742
+01:20:12,110 --> 01:20:14,590
+It'd be nice if you could--
+the generalized fold and cup
+
+1743
+01:20:14,590 --> 01:20:16,930
+problem is you take a
+D dimensional thing,
+
+1744
+01:20:16,930 --> 01:20:19,680
+and you have all of
+these-- there's 0, 1, 2,
+
+1745
+01:20:19,680 --> 01:20:22,220
+3-- up to D dimensional
+parts to it--
+
+1746
+01:20:22,220 --> 01:20:23,840
+or D minus
+one-dimensional parts.
+
+1747
+01:20:23,840 --> 01:20:26,100
+You want to bring each of
+them down into alignment
+
+1748
+01:20:26,100 --> 01:20:29,050
+so that all the vertices
+come to common point,
+
+1749
+01:20:29,050 --> 01:20:31,202
+all the edges come
+to a common line,
+
+1750
+01:20:31,202 --> 01:20:33,410
+all the two-dimensional
+faces come to a common plane,
+
+1751
+01:20:33,410 --> 01:20:36,320
+and so on up the
+dimension hierarchy.
+
+1752
+01:20:36,320 --> 01:20:37,830
+That is the ultimate
+open problem.
+
+1753
+01:20:37,830 --> 01:20:42,390
+I think we end the book with
+it, and it's totally unsolved.
+
+1754
+01:20:42,390 --> 01:20:42,990
+Any questions?
+
+1755
+01:20:42,990 --> 01:20:45,756
+
+1756
+01:20:45,756 --> 01:20:47,130
+That's folding
+and cutting paper,
+
+1757
+01:20:47,130 --> 01:20:49,500
+and next time we'll
+start linkages.
+

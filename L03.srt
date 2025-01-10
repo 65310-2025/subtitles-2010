@@ -1,0 +1,7575 @@
+1
+0-1:59:59,500 --> 00:00:02,350
+
+2
+00:00:02,350 --> 00:00:06,350
+PROFESSOR: Today, we are
+talking about the local behavior
+
+3
+00:00:06,350 --> 00:00:08,470
+of a crease pattern.
+
+4
+00:00:08,470 --> 00:00:12,740
+So you take some crease
+pattern for some flat folding--
+
+5
+00:00:12,740 --> 00:00:14,919
+we're thinking about
+flat foldability.
+
+6
+00:00:14,919 --> 00:00:16,210
+This is a foldability question.
+
+7
+00:00:16,210 --> 00:00:17,793
+I give you a crease
+pattern like this.
+
+8
+00:00:17,793 --> 00:00:21,850
+I want to know, does it fold
+flat, like this one does.
+
+9
+00:00:21,850 --> 00:00:25,160
+And we're studying
+what happens locally
+
+10
+00:00:25,160 --> 00:00:27,720
+right around a single vertex.
+
+11
+00:00:27,720 --> 00:00:30,370
+So I didn't mention
+graph terminology.
+
+12
+00:00:30,370 --> 00:00:32,009
+It's probably useful
+to mention that.
+
+13
+00:00:32,009 --> 00:00:35,080
+These corners-- where all the
+edges come together-- those
+
+14
+00:00:35,080 --> 00:00:35,770
+are vertices.
+
+15
+00:00:35,770 --> 00:00:38,540
+These triangles-- or in
+general, some regions
+
+16
+00:00:38,540 --> 00:00:40,755
+divided by the
+creases-- we call faces.
+
+17
+00:00:40,755 --> 00:00:43,560
+
+18
+00:00:43,560 --> 00:00:47,600
+If we just sort of imagine
+cutting a little disk
+
+19
+00:00:47,600 --> 00:00:50,270
+around that vertex and
+seeing how it behaves,
+
+20
+00:00:50,270 --> 00:00:54,400
+we get a nice circular piece of
+paper with some crease pattern.
+
+21
+00:00:54,400 --> 00:00:57,500
+And we want to understand when
+those things fold flat and when
+
+22
+00:00:57,500 --> 00:00:58,000
+they don't.
+
+23
+00:00:58,000 --> 00:01:00,210
+Sometimes they do,
+sometimes they don't.
+
+24
+00:01:00,210 --> 00:01:05,200
+This is kind of like a one
+dimensional folding problem.
+
+25
+00:01:05,200 --> 00:01:08,780
+So let me write some
+stuff about that.
+
+26
+00:01:08,780 --> 00:01:15,630
+
+27
+00:01:15,630 --> 00:01:19,270
+So we get what we call single
+vertex crease patterns.
+
+28
+00:01:19,270 --> 00:01:30,360
+
+29
+00:01:30,360 --> 00:01:34,200
+So something like--
+this is the example
+
+30
+00:01:34,200 --> 00:01:37,160
+I have made-- just
+something like that.
+
+31
+00:01:37,160 --> 00:01:38,390
+That should be flat foldable.
+
+32
+00:01:38,390 --> 00:01:41,090
+
+33
+00:01:41,090 --> 00:01:47,770
+So we think of having
+a disk of paper.
+
+34
+00:01:47,770 --> 00:01:50,044
+It doesn't really
+matter, but it's
+
+35
+00:01:50,044 --> 00:01:51,460
+going to be easier
+to reason about
+
+36
+00:01:51,460 --> 00:01:53,290
+and think about a disk of paper.
+
+37
+00:01:53,290 --> 00:01:56,440
+Really, we just mean some small
+region around that vertex.
+
+38
+00:01:56,440 --> 00:01:59,300
+There's obviously one vertex
+in the crease pattern.
+
+39
+00:01:59,300 --> 00:02:04,916
+Let's say we have n creases
+emanating from one vertex.
+
+40
+00:02:04,916 --> 00:02:16,010
+
+41
+00:02:16,010 --> 00:02:18,110
+This pattern is
+going to be defined
+
+42
+00:02:18,110 --> 00:02:21,140
+by some sequence of angles.
+
+43
+00:02:21,140 --> 00:02:38,060
+
+44
+00:02:38,060 --> 00:02:41,390
+In general, theta
+1 up to theta n.
+
+45
+00:02:41,390 --> 00:02:45,560
+If there are n creases, there
+will be n angles between them,
+
+46
+00:02:45,560 --> 00:02:48,290
+say in clockwise order.
+
+47
+00:02:48,290 --> 00:02:52,500
+And let's see.
+
+48
+00:02:52,500 --> 00:02:59,830
+When we fold this thing
+flat-- like in this picture--
+
+49
+00:02:59,830 --> 00:03:02,260
+we take this disk.
+
+50
+00:03:02,260 --> 00:03:05,830
+We fold it along all
+of those creases.
+
+51
+00:03:05,830 --> 00:03:07,360
+What I'd like to
+focus on is what
+
+52
+00:03:07,360 --> 00:03:10,090
+happens to the
+boundary of the paper.
+
+53
+00:03:10,090 --> 00:03:11,370
+So there's this outer circle.
+
+54
+00:03:11,370 --> 00:03:13,220
+The boundary is a circle.
+
+55
+00:03:13,220 --> 00:03:15,340
+And locally, if you look
+at one of these creases,
+
+56
+00:03:15,340 --> 00:03:19,450
+it's like folding the
+circle in half onto itself.
+
+57
+00:03:19,450 --> 00:03:22,400
+And when you make all of these
+creases, if you're successful,
+
+58
+00:03:22,400 --> 00:03:27,216
+you end up folding the circle
+onto a portion of the circle.
+
+59
+00:03:27,216 --> 00:03:28,840
+So if you look at
+this boundary-- which
+
+60
+00:03:28,840 --> 00:03:31,180
+is a little hard to see.
+
+61
+00:03:31,180 --> 00:03:32,460
+Why don't I trace it?
+
+62
+00:03:32,460 --> 00:03:35,480
+It's going to do
+something like this.
+
+63
+00:03:35,480 --> 00:03:42,900
+
+64
+00:03:42,900 --> 00:03:47,220
+So this is what the 3D
+thing looks like blown up
+
+65
+00:03:47,220 --> 00:03:50,351
+a little bit-- and I changed
+the angles a little bit.
+
+66
+00:03:50,351 --> 00:03:52,350
+But this is what a flat
+folding would look like.
+
+67
+00:03:52,350 --> 00:03:54,330
+And I'm really just
+focusing on how
+
+68
+00:03:54,330 --> 00:03:59,770
+the circle maps
+around this circle.
+
+69
+00:03:59,770 --> 00:04:08,326
+So a flat folding of a disk also
+folds a circle onto a circle.
+
+70
+00:04:08,326 --> 00:04:14,130
+So we have a flat folding on one
+of these single vertex crease
+
+71
+00:04:14,130 --> 00:04:27,750
+patterns, we get a folding
+of a circle onto a circle.
+
+72
+00:04:27,750 --> 00:04:31,590
+This is nice, because
+circles are one dimensional.
+
+73
+00:04:31,590 --> 00:04:34,210
+And last class, we talked about
+folding one dimensional line
+
+74
+00:04:34,210 --> 00:04:34,710
+segments.
+
+75
+00:04:34,710 --> 00:04:37,150
+A circle is just a little
+bit more complicated.
+
+76
+00:04:37,150 --> 00:04:39,240
+It's different topology.
+
+77
+00:04:39,240 --> 00:04:41,560
+But we can use a lot
+of the same mindset,
+
+78
+00:04:41,560 --> 00:04:45,680
+at least, as we did for folding
+line segments onto the line.
+
+79
+00:04:45,680 --> 00:04:50,440
+In particular, you can see,
+yeah, this is kind of circular.
+
+80
+00:04:50,440 --> 00:04:53,360
+But you could also imagine
+unrolling it a little bit
+
+81
+00:04:53,360 --> 00:04:55,140
+and making it straight.
+
+82
+00:04:55,140 --> 00:04:57,590
+Something like this.
+
+83
+00:04:57,590 --> 00:04:59,810
+So that it lies on
+a straight line,
+
+84
+00:04:59,810 --> 00:05:02,660
+if you just unroll that circle.
+
+85
+00:05:02,660 --> 00:05:06,370
+So you also get a folding
+of a circle in some sense
+
+86
+00:05:06,370 --> 00:05:11,205
+onto a line by unrolling.
+
+87
+00:05:11,205 --> 00:05:14,220
+
+88
+00:05:14,220 --> 00:05:17,880
+Now, at this point, I want to
+mention a slight issue here.
+
+89
+00:05:17,880 --> 00:05:20,460
+
+90
+00:05:20,460 --> 00:05:25,090
+I mean for this
+unrolling to work--
+
+91
+00:05:25,090 --> 00:05:29,000
+if you're taking a circle
+like this-- in particular,
+
+92
+00:05:29,000 --> 00:05:31,850
+you must make at least one
+fold for this to be possible.
+
+93
+00:05:31,850 --> 00:05:34,580
+Because right now, if I
+haven't folded anything,
+
+94
+00:05:34,580 --> 00:05:36,570
+I just have a big circle,
+I can't unroll circle
+
+95
+00:05:36,570 --> 00:05:37,500
+onto a line.
+
+96
+00:05:37,500 --> 00:05:39,150
+I haven't collapsed it.
+
+97
+00:05:39,150 --> 00:05:41,470
+Yet here, I've made
+it small enough
+
+98
+00:05:41,470 --> 00:05:44,010
+that it only occupies a
+portion of the entire circle.
+
+99
+00:05:44,010 --> 00:05:45,460
+And so I can unroll it.
+
+100
+00:05:45,460 --> 00:05:48,640
+So this is true, as long as
+I make at least one fold.
+
+101
+00:05:48,640 --> 00:05:52,060
+
+102
+00:05:52,060 --> 00:05:52,910
+OK.
+
+103
+00:05:52,910 --> 00:05:55,340
+Technically, I need to
+assume another thing, which
+
+104
+00:05:55,340 --> 00:05:59,420
+is that this thing came
+from a flat piece of paper.
+
+105
+00:05:59,420 --> 00:06:01,140
+I said there were these angles.
+
+106
+00:06:01,140 --> 00:06:06,290
+And what I intended to mean is
+that the sum of those angles
+
+107
+00:06:06,290 --> 00:06:12,690
+is 360 degrees, as it is
+in a flat piece of paper.
+
+108
+00:06:12,690 --> 00:06:15,840
+But I'm not always going
+to require this assumption.
+
+109
+00:06:15,840 --> 00:06:17,440
+It's what we care
+about for thinking
+
+110
+00:06:17,440 --> 00:06:20,056
+about a crease pattern
+of a flat piece of paper
+
+111
+00:06:20,056 --> 00:06:21,180
+and we look at each vertex.
+
+112
+00:06:21,180 --> 00:06:23,460
+This will be true.
+
+113
+00:06:23,460 --> 00:06:27,290
+But when we reason about these
+single vertex crease patterns,
+
+114
+00:06:27,290 --> 00:06:31,390
+it's really useful to think
+about, sort of in the middle,
+
+115
+00:06:31,390 --> 00:06:32,630
+this could get smaller.
+
+116
+00:06:32,630 --> 00:06:35,160
+So for example, you have
+a pattern like this.
+
+117
+00:06:35,160 --> 00:06:38,380
+Let's say I just take these
+two creases on the bottom
+
+118
+00:06:38,380 --> 00:06:39,950
+and I fold a crimp.
+
+119
+00:06:39,950 --> 00:06:43,080
+Because I know a cramp is
+kind of a good thing to do.
+
+120
+00:06:43,080 --> 00:06:46,040
+So now I have what's
+called a cone of paper.
+
+121
+00:06:46,040 --> 00:06:48,554
+The sum of the angles--
+there's two angles here,
+
+122
+00:06:48,554 --> 00:06:49,470
+this one and this one.
+
+123
+00:06:49,470 --> 00:06:55,420
+Each one looks like
+270-- no, not 270, 135?
+
+124
+00:06:55,420 --> 00:06:57,030
+In total, it's 270.
+
+125
+00:06:57,030 --> 00:06:59,120
+So the total angle there
+is now less than 360.
+
+126
+00:06:59,120 --> 00:07:03,160
+This is what we
+call a convex cone.
+
+127
+00:07:03,160 --> 00:07:09,140
+So if you relax this
+constraint to allow less than
+
+128
+00:07:09,140 --> 00:07:13,270
+or equal to 360, then
+we get a convex cone.
+
+129
+00:07:13,270 --> 00:07:16,230
+
+130
+00:07:16,230 --> 00:07:18,840
+And today, I only want to talk
+about flat paper and convex
+
+131
+00:07:18,840 --> 00:07:19,340
+cones.
+
+132
+00:07:19,340 --> 00:07:21,490
+We need this for the
+induction, essentially--
+
+133
+00:07:21,490 --> 00:07:24,090
+for proving things
+about the flat case.
+
+134
+00:07:24,090 --> 00:07:27,240
+In the textbook-- if you look
+at this chapter on single vertex
+
+135
+00:07:27,240 --> 00:07:30,000
+crease patterns-- we
+also prove or study
+
+136
+00:07:30,000 --> 00:07:32,670
+the case where the sum of the
+angles is greater than 360,
+
+137
+00:07:32,670 --> 00:07:34,800
+which you could never
+make from flat paper.
+
+138
+00:07:34,800 --> 00:07:36,180
+But hey, it's fun
+to think about.
+
+139
+00:07:36,180 --> 00:07:38,240
+It's a natural generalization.
+
+140
+00:07:38,240 --> 00:07:40,500
+And all the things
+that we do here,
+
+141
+00:07:40,500 --> 00:07:42,221
+you can generalize
+to that situation.
+
+142
+00:07:42,221 --> 00:07:43,470
+It's just a little bit harder.
+
+143
+00:07:43,470 --> 00:07:51,280
+
+144
+00:07:51,280 --> 00:07:56,920
+So what does it take to
+fold a circle onto a line?
+
+145
+00:07:56,920 --> 00:07:58,890
+In this situation
+of a convex cone,
+
+146
+00:07:58,890 --> 00:08:01,954
+where we make at least
+one fold, our folding
+
+147
+00:08:01,954 --> 00:08:03,870
+is going to lie along a
+portion of the circle.
+
+148
+00:08:03,870 --> 00:08:05,890
+We can unroll it
+a little bit, get
+
+149
+00:08:05,890 --> 00:08:07,770
+something lying on
+a straight line.
+
+150
+00:08:07,770 --> 00:08:10,430
+
+151
+00:08:10,430 --> 00:08:15,980
+It's kind of like folding a line
+segment onto a straight line,
+
+152
+00:08:15,980 --> 00:08:20,700
+if it was flat folding of one
+dimensional pieces of paper.
+
+153
+00:08:20,700 --> 00:08:27,720
+
+154
+00:08:27,720 --> 00:08:30,100
+But there's a lot
+of differences.
+
+155
+00:08:30,100 --> 00:08:32,179
+I mean, they are similar.
+
+156
+00:08:32,179 --> 00:08:33,970
+But a lot of the things
+we proved last time
+
+157
+00:08:33,970 --> 00:08:36,000
+do not hold in the
+case of circular paper.
+
+158
+00:08:36,000 --> 00:08:39,900
+So I have a bunch of them here.
+
+159
+00:08:39,900 --> 00:08:42,570
+So one problem-- you
+may recall before,
+
+160
+00:08:42,570 --> 00:08:45,150
+if we had a line segment and
+we put an arbitrary crease
+
+161
+00:08:45,150 --> 00:08:48,600
+pattern, then we could just
+assign a mountain valley
+
+162
+00:08:48,600 --> 00:08:50,590
+assignment, alternating
+mountain valley.
+
+163
+00:08:50,590 --> 00:08:53,850
+And that would always
+fold flat, no collisions.
+
+164
+00:08:53,850 --> 00:08:54,350
+OK.
+
+165
+00:08:54,350 --> 00:08:57,980
+In this world of having a
+circular piece of paper,
+
+166
+00:08:57,980 --> 00:09:00,170
+that's no longer true.
+
+167
+00:09:00,170 --> 00:09:04,070
+For example, if you have
+this kind of crease pattern
+
+168
+00:09:04,070 --> 00:09:06,570
+on a circle or in
+the disk, it would
+
+169
+00:09:06,570 --> 00:09:09,380
+look like this,
+those two creases.
+
+170
+00:09:09,380 --> 00:09:10,940
+You can't fold that thing flat.
+
+171
+00:09:10,940 --> 00:09:12,740
+It's not going to work.
+
+172
+00:09:12,740 --> 00:09:15,800
+We'll see exactly what
+you need to forbid
+
+173
+00:09:15,800 --> 00:09:18,390
+for that to make sense.
+
+174
+00:09:18,390 --> 00:09:25,000
+Another example is
+something like this.
+
+175
+00:09:25,000 --> 00:09:31,220
+
+176
+00:09:31,220 --> 00:09:34,820
+I mean, if I tried to draw this
+in the line, what's happening
+
+177
+00:09:34,820 --> 00:09:38,050
+is I have a short segment and
+then I have a long segment.
+
+178
+00:09:38,050 --> 00:09:40,300
+So the problem is
+those ends don't meet.
+
+179
+00:09:40,300 --> 00:09:42,720
+But even when the ends
+meet-- like in this picture,
+
+180
+00:09:42,720 --> 00:09:45,160
+imagine these are
+vertically aligned--
+
+181
+00:09:45,160 --> 00:09:48,060
+if I do this alternating
+mountain valley pattern--
+
+182
+00:09:48,060 --> 00:09:51,510
+mountain valley assignment--
+I can't join these ends
+
+183
+00:09:51,510 --> 00:09:55,050
+and make a circle, because that
+would collide with everything.
+
+184
+00:09:55,050 --> 00:09:58,720
+So this thing actually
+does have a flat folding
+
+185
+00:09:58,720 --> 00:10:00,180
+starting from a circle.
+
+186
+00:10:00,180 --> 00:10:02,910
+And I'm not going to try
+to un-map it to a circle.
+
+187
+00:10:02,910 --> 00:10:04,670
+It does fold, but not like that.
+
+188
+00:10:04,670 --> 00:10:07,670
+
+189
+00:10:07,670 --> 00:10:11,120
+Not with that alternating
+mountain valley pattern.
+
+190
+00:10:11,120 --> 00:10:12,940
+There are other annoying things.
+
+191
+00:10:12,940 --> 00:10:19,160
+Let me tell you one
+more on the proof side.
+
+192
+00:10:19,160 --> 00:10:25,650
+Last time, we had
+a lemma that said,
+
+193
+00:10:25,650 --> 00:10:27,340
+if your crease
+pattern is mingling--
+
+194
+00:10:27,340 --> 00:10:29,860
+which still is a
+meaningful notion here--
+
+195
+00:10:29,860 --> 00:10:33,836
+then you have a crimp, or
+an end fold in that case.
+
+196
+00:10:33,836 --> 00:10:35,710
+Here, of course, we
+don't have any end folds.
+
+197
+00:10:35,710 --> 00:10:37,909
+Here, we also do not
+get this implication.
+
+198
+00:10:37,909 --> 00:10:39,950
+Mingling does not imply
+the existence of a crimp.
+
+199
+00:10:39,950 --> 00:10:44,520
+And where the proof breaks
+down is if you have-- so
+
+200
+00:10:44,520 --> 00:10:48,220
+if you remember, our
+parentheses from last time--
+
+201
+00:10:48,220 --> 00:10:49,770
+we had this kind of pattern.
+
+202
+00:10:49,770 --> 00:10:55,920
+And we said, well, you
+keep going and either
+
+203
+00:10:55,920 --> 00:10:58,130
+on the left side, you have
+a beginning open paren
+
+204
+00:10:58,130 --> 00:11:01,906
+or on the right side you have
+a closing round parenthesis.
+
+205
+00:11:01,906 --> 00:11:03,530
+In either case, you've
+got an end fold.
+
+206
+00:11:03,530 --> 00:11:05,590
+Now, this can actually
+happen in a circle.
+
+207
+00:11:05,590 --> 00:11:07,449
+And so you have
+nothing you can do.
+
+208
+00:11:07,449 --> 00:11:08,740
+So you could have this pattern.
+
+209
+00:11:08,740 --> 00:11:11,220
+There would be no crimp.
+
+210
+00:11:11,220 --> 00:11:14,200
+And probably, in that case,
+you would not be flat foldable,
+
+211
+00:11:14,200 --> 00:11:17,080
+but in particular,
+this implication fails.
+
+212
+00:11:17,080 --> 00:11:18,864
+So we have to do more work.
+
+213
+00:11:18,864 --> 00:11:20,780
+But we're going to get
+the same kind of result
+
+214
+00:11:20,780 --> 00:11:22,860
+that, in linear
+time, we can tell
+
+215
+00:11:22,860 --> 00:11:24,520
+whether one of these
+things folds flat.
+
+216
+00:11:24,520 --> 00:11:27,719
+
+217
+00:11:27,719 --> 00:11:31,990
+So that's good news.
+
+218
+00:11:31,990 --> 00:11:37,390
+So last time, telling whether
+a crease pattern folded flat
+
+219
+00:11:37,390 --> 00:11:37,960
+was trivial.
+
+220
+00:11:37,960 --> 00:11:39,610
+The answer was always yes.
+
+221
+00:11:39,610 --> 00:11:40,994
+And now, it's not so trivial.
+
+222
+00:11:40,994 --> 00:11:42,410
+So let's start
+with characterizing
+
+223
+00:11:42,410 --> 00:11:44,100
+crease patterns that fold flat.
+
+224
+00:11:44,100 --> 00:11:46,930
+Then we will go to mountain
+valley patterns that fold flat.
+
+225
+00:11:46,930 --> 00:12:16,266
+
+226
+00:12:16,266 --> 00:12:17,890
+It'd be great if I
+could just say that,
+
+227
+00:12:17,890 --> 00:12:19,765
+but I mean here, of
+course, single vertex.
+
+228
+00:12:19,765 --> 00:12:25,540
+
+229
+00:12:25,540 --> 00:12:28,680
+So I give you one of
+these sequence of angles.
+
+230
+00:12:28,680 --> 00:12:31,550
+Let's say it sums
+to 360 or less.
+
+231
+00:12:31,550 --> 00:12:35,120
+When is it going to
+be flat foldable?
+
+232
+00:12:35,120 --> 00:12:36,370
+And the answer is very simple.
+
+233
+00:12:36,370 --> 00:12:39,120
+
+234
+00:12:39,120 --> 00:12:40,040
+Let me write it down.
+
+235
+00:12:40,040 --> 00:12:53,470
+
+236
+00:12:53,470 --> 00:12:56,640
+This thing is going to be
+flat foldable if and only
+
+237
+00:12:56,640 --> 00:13:07,924
+if the sum of the odd
+angles is equal to the sum
+
+238
+00:13:07,924 --> 00:13:08,715
+of the even angles.
+
+239
+00:13:08,715 --> 00:13:15,630
+
+240
+00:13:15,630 --> 00:13:20,060
+And, yeah, I'm implicitly
+assuming and requiring
+
+241
+00:13:20,060 --> 00:13:21,790
+here that n is even.
+
+242
+00:13:21,790 --> 00:13:23,440
+That's something we'll prove.
+
+243
+00:13:23,440 --> 00:13:27,260
+So n is actually even and
+minus 1 is going be odd.
+
+244
+00:13:27,260 --> 00:13:29,030
+And if you happen
+to have started
+
+245
+00:13:29,030 --> 00:13:33,220
+with a flat piece of paper--
+for the sum of all these things
+
+246
+00:13:33,220 --> 00:13:36,420
+is 360-- then of course, if
+you have them evenly divided,
+
+247
+00:13:36,420 --> 00:13:40,450
+this sum will be 180 degrees.
+
+248
+00:13:40,450 --> 00:13:44,280
+But if you started with the
+convex cone, it'll be smaller.
+
+249
+00:13:44,280 --> 00:13:47,870
+
+250
+00:13:47,870 --> 00:13:50,210
+For this reason, a lot of
+people-- or some people
+
+251
+00:13:50,210 --> 00:13:53,350
+call this the 180 degree
+property, or the pie property--
+
+252
+00:13:53,350 --> 00:13:57,240
+if you like to think in
+radians instead of degrees.
+
+253
+00:13:57,240 --> 00:14:00,280
+And we can do a
+little example here.
+
+254
+00:14:00,280 --> 00:14:07,980
+This guy-- this crease pattern--
+has a 90 degree angle here.
+
+255
+00:14:07,980 --> 00:14:10,370
+And it has a 90 degree
+angle down here.
+
+256
+00:14:10,370 --> 00:14:12,290
+So the sum of those two is 180.
+
+257
+00:14:12,290 --> 00:14:15,710
+Those are alternating angles,
+different parity classes.
+
+258
+00:14:15,710 --> 00:14:17,440
+This is 45.
+
+259
+00:14:17,440 --> 00:14:21,240
+This is the complement, 135.
+
+260
+00:14:21,240 --> 00:14:24,120
+And those also sum
+to 180, of course.
+
+261
+00:14:24,120 --> 00:14:25,580
+One does only if the other does.
+
+262
+00:14:25,580 --> 00:14:27,260
+So it's flat foldable.
+
+263
+00:14:27,260 --> 00:14:27,960
+We're golden.
+
+264
+00:14:27,960 --> 00:14:32,640
+Something like this
+is bad, because I
+
+265
+00:14:32,640 --> 00:14:33,780
+mean it's an even number.
+
+266
+00:14:33,780 --> 00:14:38,740
+But the odd angles do not equal
+the sum of the even angles.
+
+267
+00:14:38,740 --> 00:14:40,779
+One's clearly bigger.
+
+268
+00:14:40,779 --> 00:14:42,070
+And this is a general property.
+
+269
+00:14:42,070 --> 00:14:44,500
+This is also called
+Kawasaki's theorem
+
+270
+00:14:44,500 --> 00:14:47,720
+or Kawasaki-Justin's theorem.
+
+271
+00:14:47,720 --> 00:14:50,420
+They proved it in 1989.
+
+272
+00:14:50,420 --> 00:14:52,100
+This is pretty
+much the beginning
+
+273
+00:14:52,100 --> 00:14:55,550
+of origami mathematics.
+
+274
+00:14:55,550 --> 00:14:57,724
+So let's prove it.
+
+275
+00:14:57,724 --> 00:14:58,890
+There's two things to prove.
+
+276
+00:14:58,890 --> 00:15:01,890
+One is that any flat
+foldable crease pattern
+
+277
+00:15:01,890 --> 00:15:03,987
+has this property,
+which is pretty easy.
+
+278
+00:15:03,987 --> 00:15:05,820
+And the other, which
+is a little bit harder,
+
+279
+00:15:05,820 --> 00:15:06,880
+is that if you
+have this property,
+
+280
+00:15:06,880 --> 00:15:08,260
+you really are flat foldable.
+
+281
+00:15:08,260 --> 00:15:09,635
+That's the full
+characterization.
+
+282
+00:15:09,635 --> 00:15:13,590
+
+283
+00:15:13,590 --> 00:15:16,740
+So let's start with
+the easy direction.
+
+284
+00:15:16,740 --> 00:15:19,430
+If you're flat foldable,
+you must have that sum.
+
+285
+00:15:19,430 --> 00:15:22,370
+
+286
+00:15:22,370 --> 00:15:24,600
+OK.
+
+287
+00:15:24,600 --> 00:15:28,921
+So it's all about thinking
+what happens at a crease.
+
+288
+00:15:28,921 --> 00:15:30,420
+So we're thinking
+about the boundary
+
+289
+00:15:30,420 --> 00:15:31,378
+of this piece of paper.
+
+290
+00:15:31,378 --> 00:15:33,090
+We're thinking about the circle.
+
+291
+00:15:33,090 --> 00:15:39,760
+And what's happening on
+the circle as you travel,
+
+292
+00:15:39,760 --> 00:15:42,370
+say counterclockwise
+for some amount
+
+293
+00:15:42,370 --> 00:15:44,950
+of time, that would
+be first angle.
+
+294
+00:15:44,950 --> 00:15:45,826
+Then you make a fold.
+
+295
+00:15:45,826 --> 00:15:47,200
+It's either a
+mountain or valley.
+
+296
+00:15:47,200 --> 00:15:48,640
+At this point, we don't care.
+
+297
+00:15:48,640 --> 00:15:51,750
+Either way, you turn around--
+maybe you turn around this way,
+
+298
+00:15:51,750 --> 00:15:53,410
+or you turn around this way.
+
+299
+00:15:53,410 --> 00:15:56,640
+But in terms as your
+travel along a circle--
+
+300
+00:15:56,640 --> 00:15:58,670
+so we went theta 1
+counterclockwise.
+
+301
+00:15:58,670 --> 00:16:01,610
+Now we're going to
+go theta 2 clockwise;
+
+302
+00:16:01,610 --> 00:16:04,960
+then we're going to go theta
+3 counterclockwise, and so on.
+
+303
+00:16:04,960 --> 00:16:07,430
+We keep alternating
+back and forth.
+
+304
+00:16:07,430 --> 00:16:09,790
+It's much easier to
+think drawn a line.
+
+305
+00:16:09,790 --> 00:16:12,260
+So we go to the right, theta 1.
+
+306
+00:16:12,260 --> 00:16:15,630
+Then we go to the left, theta 2.
+
+307
+00:16:15,630 --> 00:16:20,540
+Then we go to the
+right, theta 3.
+
+308
+00:16:20,540 --> 00:16:22,500
+And I don't know about
+the layering here.
+
+309
+00:16:22,500 --> 00:16:24,919
+I'm just drawing it in
+terms of horizontal travel.
+
+310
+00:16:24,919 --> 00:16:26,210
+The y-coordinate means nothing.
+
+311
+00:16:26,210 --> 00:16:29,770
+
+312
+00:16:29,770 --> 00:16:33,550
+In order for this thing
+to be a flat folding--
+
+313
+00:16:33,550 --> 00:16:36,810
+to be a valid folding
+of a circle of paper--
+
+314
+00:16:36,810 --> 00:16:40,650
+these guys have to have
+the same x-coordinate.
+
+315
+00:16:40,650 --> 00:16:42,900
+So I don't know-- I mean,
+the y-coordinates, they also
+
+316
+00:16:42,900 --> 00:16:43,780
+have to work out.
+
+317
+00:16:43,780 --> 00:16:45,738
+But we're not thinking
+about the y-coordinates.
+
+318
+00:16:45,738 --> 00:16:47,685
+We're just thinking
+about x travel.
+
+319
+00:16:47,685 --> 00:16:49,060
+We've got to get
+back to where we
+
+320
+00:16:49,060 --> 00:16:51,270
+started if we're
+folding a circle.
+
+321
+00:16:51,270 --> 00:16:52,670
+That's it.
+
+322
+00:16:52,670 --> 00:16:56,670
+So how much total travel
+do we do, in a sign sense?
+
+323
+00:16:56,670 --> 00:16:57,990
+How much do we go right?
+
+324
+00:16:57,990 --> 00:16:59,780
+Well, we go theta
+1 to the right.
+
+325
+00:16:59,780 --> 00:17:01,510
+Then we go theta 2
+to the left, which
+
+326
+00:17:01,510 --> 00:17:04,530
+is like going negative
+theta 2 to the right.
+
+327
+00:17:04,530 --> 00:17:07,099
+And then we go through
+theta 3 to the right.
+
+328
+00:17:07,099 --> 00:17:09,970
+Then we go negative
+theta 4 to the right.
+
+329
+00:17:09,970 --> 00:17:14,619
+And you add up this alternating
+summation that must equal 0.
+
+330
+00:17:14,619 --> 00:17:17,460
+
+331
+00:17:17,460 --> 00:17:23,119
+The other thing that I should
+say is that n has to be even.
+
+332
+00:17:23,119 --> 00:17:26,450
+This is maybe obvious
+at this point.
+
+333
+00:17:26,450 --> 00:17:28,340
+But we're supposed to alternate.
+
+334
+00:17:28,340 --> 00:17:31,840
+Every time we hit a crease,
+we have to change direction.
+
+335
+00:17:31,840 --> 00:17:35,890
+And so in the end, it's
+important that after theta 4,
+
+336
+00:17:35,890 --> 00:17:38,730
+we change direction
+to visit theta 1.
+
+337
+00:17:38,730 --> 00:17:42,990
+If they were aligned-- like
+if theta 4 went over here
+
+338
+00:17:42,990 --> 00:17:47,620
+and then theta 5 went
+like that, and there
+
+339
+00:17:47,620 --> 00:17:49,732
+was an odd number of
+creases, this would be bad.
+
+340
+00:17:49,732 --> 00:17:51,940
+Even though they're lined
+up, there's no crease here.
+
+341
+00:17:51,940 --> 00:17:54,919
+You just went straight
+from theta 5 theta 1.
+
+342
+00:17:54,919 --> 00:17:56,960
+You're supposed to change
+direction every crease.
+
+343
+00:17:56,960 --> 00:18:02,050
+So also, n is even to
+alternate directions.
+
+344
+00:18:02,050 --> 00:18:09,150
+
+345
+00:18:09,150 --> 00:18:09,994
+Question?
+
+346
+00:18:09,994 --> 00:18:10,845
+AUDIENCE: Oh, no.
+
+347
+00:18:10,845 --> 00:18:11,386
+You already--
+
+348
+00:18:11,386 --> 00:18:14,170
+PROFESSOR: All right, good.
+
+349
+00:18:14,170 --> 00:18:15,070
+Clear?
+
+350
+00:18:15,070 --> 00:18:18,230
+This is pretty easy, once you
+realize the angles correspond
+
+351
+00:18:18,230 --> 00:18:20,320
+to x-coordinates in
+this linear space.
+
+352
+00:18:20,320 --> 00:18:25,970
+
+353
+00:18:25,970 --> 00:18:28,350
+So why is this enough?
+
+354
+00:18:28,350 --> 00:18:30,180
+In order to show
+that this property is
+
+355
+00:18:30,180 --> 00:18:33,110
+enough for flat
+foldability, we need
+
+356
+00:18:33,110 --> 00:18:35,922
+to actually worry about the
+stacking order of these edges.
+
+357
+00:18:35,922 --> 00:18:37,630
+We need to worry about
+the y-coordinates.
+
+358
+00:18:37,630 --> 00:18:39,809
+We need to make sure that
+they can avoid collision
+
+359
+00:18:39,809 --> 00:18:41,350
+with some mountain
+valley assignment.
+
+360
+00:18:41,350 --> 00:18:43,115
+The good news is we're free
+to use whatever mountains
+
+361
+00:18:43,115 --> 00:18:44,030
+and valleys we want.
+
+362
+00:18:44,030 --> 00:18:45,530
+We can stack things
+however we want.
+
+363
+00:18:45,530 --> 00:18:47,970
+We just need to find
+some valid state.
+
+364
+00:18:47,970 --> 00:18:50,170
+And our intuition, from
+the one dimensional case,
+
+365
+00:18:50,170 --> 00:18:53,290
+was we should try alternating
+mountains and valleys.
+
+366
+00:18:53,290 --> 00:18:54,540
+That seemed like a good thing.
+
+367
+00:18:54,540 --> 00:18:58,070
+It avoided collisions for
+an open piece of paper--
+
+368
+00:18:58,070 --> 00:18:59,720
+for a line segment.
+
+369
+00:18:59,720 --> 00:19:01,630
+Of course, we know
+that's not enough.
+
+370
+00:19:01,630 --> 00:19:06,200
+Here-- somewhere--
+I drew this example.
+
+371
+00:19:06,200 --> 00:19:08,940
+So it's alternating
+in the middle,
+
+372
+00:19:08,940 --> 00:19:11,810
+and then that last
+crease is a problem.
+
+373
+00:19:11,810 --> 00:19:13,060
+But that's all we need to fix.
+
+374
+00:19:13,060 --> 00:19:16,720
+It turns out it's not so hard.
+
+375
+00:19:16,720 --> 00:19:19,960
+So we have a nice circle.
+
+376
+00:19:19,960 --> 00:19:22,884
+What I'd like to do
+is cut that circle.
+
+377
+00:19:22,884 --> 00:19:24,800
+So here, I sort of cut
+it and thought about it
+
+378
+00:19:24,800 --> 00:19:27,240
+as a line segment and
+then I wanted to rejoin.
+
+379
+00:19:27,240 --> 00:19:27,740
+OK.
+
+380
+00:19:27,740 --> 00:19:29,880
+I'm going to be careful
+about where I cut it.
+
+381
+00:19:29,880 --> 00:19:48,784
+
+382
+00:19:48,784 --> 00:19:51,701
+OK, I want to cut at an
+extreme left or extreme right.
+
+383
+00:19:51,701 --> 00:19:52,450
+It doesn't matter.
+
+384
+00:19:52,450 --> 00:19:55,300
+We can see here the cut
+ended up being in the middle.
+
+385
+00:19:55,300 --> 00:19:56,820
+That's bad.
+
+386
+00:19:56,820 --> 00:19:57,810
+So how do I fix it?
+
+387
+00:19:57,810 --> 00:20:01,030
+
+388
+00:20:01,030 --> 00:20:02,400
+What does extreme mean?
+
+389
+00:20:02,400 --> 00:20:03,900
+How do I tell--
+given a circle, it's
+
+390
+00:20:03,900 --> 00:20:05,566
+a little hard to say
+what extreme means,
+
+391
+00:20:05,566 --> 00:20:07,260
+because it's circular.
+
+392
+00:20:07,260 --> 00:20:08,680
+But if I take a
+picture like this,
+
+393
+00:20:08,680 --> 00:20:10,638
+I've already drawn it
+with nice x-coordinates--
+
+394
+00:20:10,638 --> 00:20:12,830
+I don't know about the
+y-coordinates yet-- I say,
+
+395
+00:20:12,830 --> 00:20:13,470
+oh that's bad.
+
+396
+00:20:13,470 --> 00:20:16,400
+My cut point ended
+up being non-extreme.
+
+397
+00:20:16,400 --> 00:20:17,940
+Well, this is extreme.
+
+398
+00:20:17,940 --> 00:20:21,340
+So cut here instead.
+
+399
+00:20:21,340 --> 00:20:24,310
+So what that means is
+redraw this picture
+
+400
+00:20:24,310 --> 00:20:26,320
+with this being the cut point.
+
+401
+00:20:26,320 --> 00:20:28,990
+So maybe, this is the beginning.
+
+402
+00:20:28,990 --> 00:20:32,970
+So we go like that again
+and now we wrap around.
+
+403
+00:20:32,970 --> 00:20:35,130
+So now we have this segment.
+
+404
+00:20:35,130 --> 00:20:37,870
+And now we have this segment.
+
+405
+00:20:37,870 --> 00:20:39,930
+And lo and behold,
+it remained extreme.
+
+406
+00:20:39,930 --> 00:20:40,960
+And this is always true.
+
+407
+00:20:40,960 --> 00:20:43,560
+You can do this sort
+of cut and rejoin
+
+408
+00:20:43,560 --> 00:20:45,892
+the ends that were
+messed up before.
+
+409
+00:20:45,892 --> 00:20:47,475
+And you'll preserve
+the x-coordinates.
+
+410
+00:20:47,475 --> 00:20:49,000
+The x-coordinates
+aren't changing
+
+411
+00:20:49,000 --> 00:20:50,840
+when you do this kind
+of transformation.
+
+412
+00:20:50,840 --> 00:20:53,530
+So there's a clear leftmost
+and there's a clear rightmost.
+
+413
+00:20:53,530 --> 00:20:55,630
+You pick either one,
+you cut there instead.
+
+414
+00:20:55,630 --> 00:20:57,710
+And now we have
+this nice property
+
+415
+00:20:57,710 --> 00:21:00,830
+that it's easy to join
+the ends, because it's
+
+416
+00:21:00,830 --> 00:21:01,970
+as far left as you can go.
+
+417
+00:21:01,970 --> 00:21:03,640
+There can't be anything
+that penetrates,
+
+418
+00:21:03,640 --> 00:21:05,330
+because that would
+be farther left.
+
+419
+00:21:05,330 --> 00:21:08,320
+
+420
+00:21:08,320 --> 00:21:11,970
+Let me write down some
+words corresponding to that.
+
+421
+00:21:11,970 --> 00:21:15,270
+So once we cut at
+this extreme crease,
+
+422
+00:21:15,270 --> 00:21:21,810
+you can fold this
+1D segment just
+
+423
+00:21:21,810 --> 00:21:23,020
+like we used to be able to.
+
+424
+00:21:23,020 --> 00:21:26,580
+
+425
+00:21:26,580 --> 00:21:31,050
+So we can fold it flat
+using the accordion fold,
+
+426
+00:21:31,050 --> 00:21:34,550
+alternating mountain and valley.
+
+427
+00:21:34,550 --> 00:21:36,230
+We know that works.
+
+428
+00:21:36,230 --> 00:21:40,930
+And then all we need to show
+is that the two ends can join.
+
+429
+00:21:40,930 --> 00:21:44,010
+
+430
+00:21:44,010 --> 00:21:54,319
+Those ends are the two
+copies of the cut crease
+
+431
+00:21:54,319 --> 00:21:55,610
+that we did in this first step.
+
+432
+00:21:55,610 --> 00:21:59,690
+
+433
+00:21:59,690 --> 00:22:01,750
+We need two things.
+
+434
+00:22:01,750 --> 00:22:05,170
+One is that they are
+aligned and that's
+
+435
+00:22:05,170 --> 00:22:09,810
+where we need this condition--
+that the sum of the odd angles
+
+436
+00:22:09,810 --> 00:22:12,480
+equals the sum of even angles,
+which is the same as saying
+
+437
+00:22:12,480 --> 00:22:14,850
+the alternating sum
+is equal to zero.
+
+438
+00:22:14,850 --> 00:22:16,770
+That tells us that
+whatever we do,
+
+439
+00:22:16,770 --> 00:22:20,150
+the x-coordinates are
+lined up at the end.
+
+440
+00:22:20,150 --> 00:22:24,210
+So they are aligned by the
+assumption that we made here.
+
+441
+00:22:24,210 --> 00:22:30,720
+And you can join
+without crossing.
+
+442
+00:22:30,720 --> 00:22:34,230
+
+443
+00:22:34,230 --> 00:22:36,740
+So this is a statement
+about y-coordinates.
+
+444
+00:22:36,740 --> 00:22:40,030
+And we know it's OK, because
+it's at the left extreme.
+
+445
+00:22:40,030 --> 00:22:42,792
+So by this choice
+of the proper cut,
+
+446
+00:22:42,792 --> 00:22:45,250
+there could be other things
+that come right to the boundary
+
+447
+00:22:45,250 --> 00:22:47,070
+here, but that's considered OK.
+
+448
+00:22:47,070 --> 00:22:49,900
+That's not crossing,
+that just touching.
+
+449
+00:22:49,900 --> 00:22:52,366
+Nothing can go farther
+left because it
+
+450
+00:22:52,366 --> 00:22:53,240
+was the left extreme.
+
+451
+00:22:53,240 --> 00:22:56,004
+
+452
+00:22:56,004 --> 00:22:57,170
+That's the end of the proof.
+
+453
+00:22:57,170 --> 00:23:00,520
+Any questions about that?
+
+454
+00:23:00,520 --> 00:23:04,560
+That's Kawasaki's
+theorem-- Kawasaki-Justin.
+
+455
+00:23:04,560 --> 00:23:09,350
+I would mention just for fun--
+this is sort of classic--
+
+456
+00:23:09,350 --> 00:23:14,910
+if you allow one of
+these-- a non-convex cone,
+
+457
+00:23:14,910 --> 00:23:17,750
+where you have more than
+360 degrees of material--
+
+458
+00:23:17,750 --> 00:23:20,050
+this statement is not true.
+
+459
+00:23:20,050 --> 00:23:23,697
+And there's one other
+situation which can happen,
+
+460
+00:23:23,697 --> 00:23:26,030
+which is that the alternating
+sum of angles is not zero,
+
+461
+00:23:26,030 --> 00:23:29,930
+but it's plus or minus
+360 degrees, which is fun.
+
+462
+00:23:29,930 --> 00:23:32,050
+And you can see examples
+of that in the book.
+
+463
+00:23:32,050 --> 00:23:36,430
+
+464
+00:23:36,430 --> 00:23:37,170
+All right.
+
+465
+00:23:37,170 --> 00:23:38,760
+So obviously, if
+you want to tell
+
+466
+00:23:38,760 --> 00:23:42,161
+whether a crease pattern-- or a
+single vertex is flat foldable,
+
+467
+00:23:42,161 --> 00:23:43,910
+you just compute this
+thing in linear time
+
+468
+00:23:43,910 --> 00:23:47,720
+and you know yes or no.
+
+469
+00:23:47,720 --> 00:23:50,790
+So crease patterns
+are pretty easy-- just
+
+470
+00:23:50,790 --> 00:23:53,340
+have one extra condition.
+
+471
+00:23:53,340 --> 00:23:55,080
+What about mountain
+valley assignments?
+
+472
+00:23:55,080 --> 00:23:57,600
+Last time, we looked at
+mountain valley assignments
+
+473
+00:23:57,600 --> 00:24:00,714
+and we showed that crimps
+and end folds were always
+
+474
+00:24:00,714 --> 00:24:02,880
+enough to fold any mountain
+valley assignment that's
+
+475
+00:24:02,880 --> 00:24:05,260
+out there.
+
+476
+00:24:05,260 --> 00:24:07,502
+That will continue
+to be true here,
+
+477
+00:24:07,502 --> 00:24:08,960
+except now we don't
+have end folds.
+
+478
+00:24:08,960 --> 00:24:12,641
+Now, it's crimps all the way.
+
+479
+00:24:12,641 --> 00:24:13,390
+What does it mean?
+
+480
+00:24:13,390 --> 00:24:16,250
+
+481
+00:24:16,250 --> 00:24:25,225
+So that is the flat foldable
+mountain valley patterns.
+
+482
+00:24:25,225 --> 00:24:33,767
+
+483
+00:24:33,767 --> 00:24:35,600
+We're going to prove
+that crimps are enough,
+
+484
+00:24:35,600 --> 00:24:37,224
+but before we get
+there, I need a bunch
+
+485
+00:24:37,224 --> 00:24:43,070
+of sort of warm up facts about
+valid mountain valley patterns.
+
+486
+00:24:43,070 --> 00:24:49,030
+The first thing is just
+counting mountains and valleys.
+
+487
+00:24:49,030 --> 00:24:52,150
+So even if you play with a
+simple example like this one,
+
+488
+00:24:52,150 --> 00:24:55,920
+you see it as three
+mountains and one valley
+
+489
+00:24:55,920 --> 00:24:58,290
+or three valleys
+and one mountain.
+
+490
+00:24:58,290 --> 00:25:02,025
+In fact, if you have
+a degree 4 vertex,
+
+491
+00:25:02,025 --> 00:25:04,280
+with four creases
+emanating from that point,
+
+492
+00:25:04,280 --> 00:25:06,330
+those are your only choices.
+
+493
+00:25:06,330 --> 00:25:09,270
+You could try, for example,
+making it all valleys,
+
+494
+00:25:09,270 --> 00:25:13,850
+and it-- I mean,
+you can't do it.
+
+495
+00:25:13,850 --> 00:25:15,610
+It's hard to demonstrate.
+
+496
+00:25:15,610 --> 00:25:18,700
+You could try making it two
+mountains and two valleys.
+
+497
+00:25:18,700 --> 00:25:20,830
+Maybe I try to do
+mountain mountain here
+
+498
+00:25:20,830 --> 00:25:23,440
+and then somehow this is going
+to be valley valley there.
+
+499
+00:25:23,440 --> 00:25:26,240
+It's no good.
+
+500
+00:25:26,240 --> 00:25:33,120
+But what's happening here is
+that the number of mountains
+
+501
+00:25:33,120 --> 00:25:38,955
+and the number valleys
+must differ by exactly two.
+
+502
+00:25:38,955 --> 00:25:41,420
+It doesn't matter who's bigger.
+
+503
+00:25:41,420 --> 00:25:43,940
+So the difference could be
+plus 2 or minus 2, because you
+
+504
+00:25:43,940 --> 00:25:47,380
+can always flip over and negate
+that difference, swapping
+
+505
+00:25:47,380 --> 00:25:49,400
+mountains for valleys.
+
+506
+00:25:49,400 --> 00:25:51,450
+But they always have to
+differ by exactly two.
+
+507
+00:25:51,450 --> 00:25:54,090
+
+508
+00:25:54,090 --> 00:25:56,010
+Why is that?
+
+509
+00:25:56,010 --> 00:26:01,080
+Well, this is--
+yeah, we're again
+
+510
+00:26:01,080 --> 00:26:03,490
+going to think of a
+picture like this.
+
+511
+00:26:03,490 --> 00:26:06,640
+We have horizontal travel
+according to the theta i's.
+
+512
+00:26:06,640 --> 00:26:09,790
+We're also going to think
+about the vertical picture.
+
+513
+00:26:09,790 --> 00:26:12,400
+If this thing is flat
+foldable-- so I'm assuming,
+
+514
+00:26:12,400 --> 00:26:16,450
+it's flat foldable--
+then this must happen.
+
+515
+00:26:16,450 --> 00:26:19,350
+This is called Maekawa's
+theorem, by the way.
+
+516
+00:26:19,350 --> 00:26:29,240
+It was proved by Jun Maekawa
+in 1986-- a little earlier.
+
+517
+00:26:29,240 --> 00:26:34,060
+Also proved by Jacques
+Justin around the same time--
+
+518
+00:26:34,060 --> 00:26:36,980
+back before we were good at
+internet and communication
+
+519
+00:26:36,980 --> 00:26:38,910
+and whatnot.
+
+520
+00:26:38,910 --> 00:26:42,150
+And there were little pockets
+of mathematical origamists
+
+521
+00:26:42,150 --> 00:26:44,660
+and they found each
+other basically
+
+522
+00:26:44,660 --> 00:26:51,230
+in '89, when there was the-- '89
+was the first origami science
+
+523
+00:26:51,230 --> 00:26:53,215
+math and education
+conference-- started
+
+524
+00:26:53,215 --> 00:26:55,510
+bringing these people together.
+
+525
+00:26:55,510 --> 00:26:56,770
+The last one was this summer.
+
+526
+00:26:56,770 --> 00:26:59,200
+
+527
+00:26:59,200 --> 00:26:59,700
+Right.
+
+528
+00:26:59,700 --> 00:27:00,670
+So why is this true?
+
+529
+00:27:00,670 --> 00:27:06,319
+
+530
+00:27:06,319 --> 00:27:06,860
+I don't know.
+
+531
+00:27:06,860 --> 00:27:09,230
+A flat folding looks
+like something.
+
+532
+00:27:09,230 --> 00:27:11,480
+It has no crossings.
+
+533
+00:27:11,480 --> 00:27:15,520
+It has-- the horizontal
+travel, we understand.
+
+534
+00:27:15,520 --> 00:27:17,310
+It ends up back
+where it started.
+
+535
+00:27:17,310 --> 00:27:21,100
+There's also some notion of
+layers and vertical travel,
+
+536
+00:27:21,100 --> 00:27:22,951
+which is a little
+tricky to think about.
+
+537
+00:27:22,951 --> 00:27:24,950
+But the one thing that's
+easy to think about-- I
+
+538
+00:27:24,950 --> 00:27:26,740
+mean, this forms
+essentially a polygon.
+
+539
+00:27:26,740 --> 00:27:28,580
+It's like a really
+squashed polygon.
+
+540
+00:27:28,580 --> 00:27:32,440
+And these vertical segments are
+actually really just points.
+
+541
+00:27:32,440 --> 00:27:34,690
+OK, imagine.
+
+542
+00:27:34,690 --> 00:27:36,750
+That's just where
+you turn around.
+
+543
+00:27:36,750 --> 00:27:40,920
+So it's like a polygon,
+just stretched or squashed
+
+544
+00:27:40,920 --> 00:27:42,540
+down onto a line.
+
+545
+00:27:42,540 --> 00:27:45,970
+And we know some
+things about polygons.
+
+546
+00:27:45,970 --> 00:27:47,490
+OK, as an end
+vertex polygon-- you
+
+547
+00:27:47,490 --> 00:27:49,570
+know that the sum of
+the interior angles
+
+548
+00:27:49,570 --> 00:27:51,164
+is-- whatever it is.
+
+549
+00:27:51,164 --> 00:27:52,830
+I always get confused
+with that formula.
+
+550
+00:27:52,830 --> 00:27:54,246
+So I don't like
+to think about it.
+
+551
+00:27:54,246 --> 00:27:56,270
+But one thing we-- an
+easier way to think
+
+552
+00:27:56,270 --> 00:27:59,310
+about that same statement
+is just think about how much
+
+553
+00:27:59,310 --> 00:28:01,050
+turning the polygon does.
+
+554
+00:28:01,050 --> 00:28:03,980
+So you start here, you
+turn right 180 degrees,
+
+555
+00:28:03,980 --> 00:28:08,220
+you turn left 180 degrees,
+you turn left 180, right 180,
+
+556
+00:28:08,220 --> 00:28:10,130
+right 180, right 180.
+
+557
+00:28:10,130 --> 00:28:11,920
+How much is it in total?
+
+558
+00:28:11,920 --> 00:28:14,070
+Oh gosh, do I have to add?
+
+559
+00:28:14,070 --> 00:28:15,050
+No.
+
+560
+00:28:15,050 --> 00:28:15,750
+It's so simple.
+
+561
+00:28:15,750 --> 00:28:16,580
+It's 360.
+
+562
+00:28:16,580 --> 00:28:17,080
+Right?
+
+563
+00:28:17,080 --> 00:28:19,090
+Just, if you think about
+if you're going around
+
+564
+00:28:19,090 --> 00:28:23,280
+in a circle, any polygon-- not
+just flat-- but anything in two
+
+565
+00:28:23,280 --> 00:28:26,950
+dimensions, the total amount
+of turning you do is 360.
+
+566
+00:28:26,950 --> 00:28:30,460
+Or if you count backwards,
+it's negative 360.
+
+567
+00:28:30,460 --> 00:28:32,820
+So this is the key--
+something you should all
+
+568
+00:28:32,820 --> 00:28:34,620
+know about polygons.
+
+569
+00:28:34,620 --> 00:28:37,240
+If you look at sum of the turn
+angles-- how much turning you
+
+570
+00:28:37,240 --> 00:28:39,220
+do at each vertex--
+that will always
+
+571
+00:28:39,220 --> 00:28:42,385
+be plus or minus
+360 in any polygon.
+
+572
+00:28:42,385 --> 00:28:46,890
+
+573
+00:28:46,890 --> 00:28:49,380
+This is equivalent to the sum
+of the interior angles being,
+
+574
+00:28:49,380 --> 00:28:52,320
+whatever, pi times n minus
+2, which I don't remember.
+
+575
+00:28:52,320 --> 00:28:56,160
+But this is much
+easier to remember.
+
+576
+00:28:56,160 --> 00:29:00,480
+And it's useful, because we
+can map mountains and valleys
+
+577
+00:29:00,480 --> 00:29:01,540
+to left and right turns.
+
+578
+00:29:01,540 --> 00:29:04,010
+As I said, every time
+this is a valley,
+
+579
+00:29:04,010 --> 00:29:08,250
+it was a left turn by 180.
+
+580
+00:29:08,250 --> 00:29:11,405
+Every time it was a mountain,
+it was a right turn by 180.
+
+581
+00:29:11,405 --> 00:29:32,290
+So valleys, mountains,
+right turns--
+
+582
+00:29:32,290 --> 00:29:34,369
+so I'm going to think
+of that as negative 180.
+
+583
+00:29:34,369 --> 00:29:36,910
+Now, of course technically, it
+could be the other way around.
+
+584
+00:29:36,910 --> 00:29:38,868
+It could be this is
+negative, this is positive.
+
+585
+00:29:38,868 --> 00:29:41,240
+But I already have a
+plus and minus here.
+
+586
+00:29:41,240 --> 00:29:43,840
+So it's symmetric.
+
+587
+00:29:43,840 --> 00:29:45,880
+So if we sum up the
+turn angles-- which
+
+588
+00:29:45,880 --> 00:29:48,580
+we know is supposed to
+be plus or minus 360--
+
+589
+00:29:48,580 --> 00:29:56,860
+the sum of the turn angles
+is going to be-- we're
+
+590
+00:29:56,860 --> 00:30:02,590
+going to have 180 for
+each valley, so 180
+
+591
+00:30:02,590 --> 00:30:05,550
+times the number of valleys.
+
+592
+00:30:05,550 --> 00:30:08,870
+And we're going to have
+negative 180 for each mountain.
+
+593
+00:30:08,870 --> 00:30:15,360
+
+594
+00:30:15,360 --> 00:30:17,420
+And so the 180's factor out.
+
+595
+00:30:17,420 --> 00:30:30,240
+
+596
+00:30:30,240 --> 00:30:35,580
+And this thing is supposed to
+equal 360-- plus or minus 360.
+
+597
+00:30:35,580 --> 00:30:36,382
+How could that be?
+
+598
+00:30:36,382 --> 00:30:38,590
+Well, the number of valleys
+minus number of mountains
+
+599
+00:30:38,590 --> 00:30:41,310
+should be either 2-- for
+plus 360-- or negative 2--
+
+600
+00:30:41,310 --> 00:30:43,395
+for minus 360.
+
+601
+00:30:43,395 --> 00:30:44,520
+So that proves the theorem.
+
+602
+00:30:44,520 --> 00:30:48,750
+
+603
+00:30:48,750 --> 00:30:51,170
+And that's why, in a degree
+4 vertex, one of them
+
+604
+00:30:51,170 --> 00:30:54,360
+has to be 3, the
+other one has to be 1.
+
+605
+00:30:54,360 --> 00:30:57,405
+There's no other option,
+because the total number is 4.
+
+606
+00:30:57,405 --> 00:30:59,030
+It's the only way to
+get the difference
+
+607
+00:30:59,030 --> 00:31:01,760
+to be plus or minus 2.
+
+608
+00:31:01,760 --> 00:31:04,390
+So that's kind of nice.
+
+609
+00:31:04,390 --> 00:31:05,947
+But it's not enough,
+unfortunately.
+
+610
+00:31:05,947 --> 00:31:07,780
+If I gave you a mountain
+valley pattern that
+
+611
+00:31:07,780 --> 00:31:10,090
+satisfies this
+condition, it still
+
+612
+00:31:10,090 --> 00:31:13,620
+might not be flat foldable.
+
+613
+00:31:13,620 --> 00:31:14,880
+That's maybe no surprise.
+
+614
+00:31:14,880 --> 00:31:17,330
+It's not like we had
+such a simple test
+
+615
+00:31:17,330 --> 00:31:20,170
+for the one dimensional
+case, which should be easier.
+
+616
+00:31:20,170 --> 00:31:21,440
+We had to give an algorithm.
+
+617
+00:31:21,440 --> 00:31:23,420
+We said repeatedly
+crimp and end fold.
+
+618
+00:31:23,420 --> 00:31:25,410
+If you get stuck,
+the answer is no.
+
+619
+00:31:25,410 --> 00:31:27,395
+If you don't get stuck,
+you folded it great.
+
+620
+00:31:27,395 --> 00:31:42,780
+
+621
+00:31:42,780 --> 00:31:44,905
+I love this eraser--
+increases entropy.
+
+622
+00:31:44,905 --> 00:31:50,610
+
+623
+00:31:50,610 --> 00:31:54,540
+Let me tell you one case
+that is easy to think about.
+
+624
+00:31:54,540 --> 00:31:55,840
+Because it's nice.
+
+625
+00:31:55,840 --> 00:31:58,640
+It reduces directly to
+the one dimensional case.
+
+626
+00:31:58,640 --> 00:32:00,560
+And that's what I
+call the generic case.
+
+627
+00:32:00,560 --> 00:32:05,880
+
+628
+00:32:05,880 --> 00:32:08,510
+Generic is this very convenient
+term we use in mathematics.
+
+629
+00:32:08,510 --> 00:32:11,950
+It's actually really
+tricky to define.
+
+630
+00:32:11,950 --> 00:32:14,760
+So I'd like to not
+define it, if I can.
+
+631
+00:32:14,760 --> 00:32:15,990
+But maybe I should.
+
+632
+00:32:15,990 --> 00:32:21,820
+
+633
+00:32:21,820 --> 00:32:23,910
+The simple version, which
+is not quite enough,
+
+634
+00:32:23,910 --> 00:32:26,420
+is to say that all of the
+angles in the crease pattern
+
+635
+00:32:26,420 --> 00:32:28,491
+are different.
+
+636
+00:32:28,491 --> 00:32:30,490
+OK, here, for example,
+two of them are the same.
+
+637
+00:32:30,490 --> 00:32:31,420
+There's two 90 degree angles.
+
+638
+00:32:31,420 --> 00:32:32,490
+This is not generic.
+
+639
+00:32:32,490 --> 00:32:34,530
+It's just easier to draw.
+
+640
+00:32:34,530 --> 00:32:36,270
+But in general, I
+mean, you imagine,
+
+641
+00:32:36,270 --> 00:32:38,610
+you just draw some random thing.
+
+642
+00:32:38,610 --> 00:32:40,580
+None of those lengths
+are going to be the same.
+
+643
+00:32:40,580 --> 00:32:42,420
+Yeah, the alternating
+sum is zero.
+
+644
+00:32:42,420 --> 00:32:44,790
+But that's it.
+
+645
+00:32:44,790 --> 00:32:46,290
+And that's what I--
+the generic case
+
+646
+00:32:46,290 --> 00:32:50,370
+is that is the only thing that
+holds true about these angles.
+
+647
+00:32:50,370 --> 00:32:52,170
+You can take the
+alternating sum.
+
+648
+00:32:52,170 --> 00:32:53,490
+That equals zero.
+
+649
+00:32:53,490 --> 00:32:56,180
+If you take some alternating sum
+of some subset of the angles,
+
+650
+00:32:56,180 --> 00:32:57,690
+that will not equal zero.
+
+651
+00:32:57,690 --> 00:33:00,260
+If you take a random example,
+this is going to be true.
+
+652
+00:33:00,260 --> 00:33:02,200
+OK, just bear with me.
+
+653
+00:33:02,200 --> 00:33:06,260
+Suppose never any two
+angles are the same.
+
+654
+00:33:06,260 --> 00:33:10,730
+Then look at the
+globally smallest crease,
+
+655
+00:33:10,730 --> 00:33:12,730
+so globally smallest theta.
+
+656
+00:33:12,730 --> 00:33:17,880
+
+657
+00:33:17,880 --> 00:33:19,500
+Say it's theta i.
+
+658
+00:33:19,500 --> 00:33:27,461
+So the picture is theta i,
+theta i minus 1, theta i plus 1.
+
+659
+00:33:27,461 --> 00:33:28,960
+And what do we know
+if it's globally
+
+660
+00:33:28,960 --> 00:33:31,580
+smallest and none of
+the values are equal?
+
+661
+00:33:31,580 --> 00:33:37,535
+Then we know that
+these two are bigger.
+
+662
+00:33:37,535 --> 00:33:39,750
+No big surprise.
+
+663
+00:33:39,750 --> 00:33:44,280
+Think about what happens if
+this is small, these are bigger,
+
+664
+00:33:44,280 --> 00:33:48,390
+and you try to make these both
+valleys or both mountains,
+
+665
+00:33:48,390 --> 00:33:49,700
+that's, of course, bad.
+
+666
+00:33:49,700 --> 00:33:54,360
+This is one of the
+situations we had
+
+667
+00:33:54,360 --> 00:33:55,880
+in the one dimensional case.
+
+668
+00:33:55,880 --> 00:33:57,430
+I mean, really,
+this is a circle,
+
+669
+00:33:57,430 --> 00:34:00,140
+but I can think just locally
+about what's happening here.
+
+670
+00:34:00,140 --> 00:34:03,490
+So in this situation, one
+of these must be a mountain
+
+671
+00:34:03,490 --> 00:34:05,390
+and the other must be a valley.
+
+672
+00:34:05,390 --> 00:34:07,860
+I don't know which
+order they are,
+
+673
+00:34:07,860 --> 00:34:09,540
+but I know they're different.
+
+674
+00:34:09,540 --> 00:34:15,170
+And then I know I can
+apply one of these crimps.
+
+675
+00:34:15,170 --> 00:34:18,830
+Incidentally, the word crimp,
+Jason Koo was asking about,
+
+676
+00:34:18,830 --> 00:34:21,620
+like, why do you call
+it crimp and not pleat?
+
+677
+00:34:21,620 --> 00:34:23,139
+Probably, I should
+call it pleat.
+
+678
+00:34:23,139 --> 00:34:25,440
+But it's crimp in my mind.
+
+679
+00:34:25,440 --> 00:34:27,480
+It's been crimp in
+my mind since 1998
+
+680
+00:34:27,480 --> 00:34:29,250
+when we wrote the 1D paper.
+
+681
+00:34:29,250 --> 00:34:32,980
+It was before I knew the word
+pleat, so that's my excuse.
+
+682
+00:34:32,980 --> 00:34:35,210
+So pleat or crimp,
+take your pick.
+
+683
+00:34:35,210 --> 00:34:37,003
+Crimp is usually
+many pleats together.
+
+684
+00:34:37,003 --> 00:34:37,669
+That's crimping.
+
+685
+00:34:37,669 --> 00:34:40,690
+
+686
+00:34:40,690 --> 00:34:41,370
+Cool.
+
+687
+00:34:41,370 --> 00:34:43,590
+So crimps, we kind of like.
+
+688
+00:34:43,590 --> 00:34:44,854
+Why do we like crimps?
+
+689
+00:34:44,854 --> 00:34:48,320
+
+690
+00:34:48,320 --> 00:34:51,050
+We proved, in the one
+dimensional case last time,
+
+691
+00:34:51,050 --> 00:34:53,820
+that if you make a crimp
+and your original thing
+
+692
+00:34:53,820 --> 00:34:57,190
+was flat foldable, the new
+thing will be flat foldable.
+
+693
+00:34:57,190 --> 00:34:59,179
+Good news is, that
+is still true.
+
+694
+00:34:59,179 --> 00:35:00,970
+I told you, all these
+things were no longer
+
+695
+00:35:00,970 --> 00:35:02,340
+true in the circular case.
+
+696
+00:35:02,340 --> 00:35:06,000
+It's still true in
+the circular case.
+
+697
+00:35:06,000 --> 00:35:07,000
+Should I tell you--
+
+698
+00:35:07,000 --> 00:35:09,680
+Let me just remind you-- the
+same proof works-- remind you
+
+699
+00:35:09,680 --> 00:35:11,120
+what the proof looked like.
+
+700
+00:35:11,120 --> 00:35:16,400
+We had a crimp, and we're
+hoping to fold that first.
+
+701
+00:35:16,400 --> 00:35:18,660
+We know at some point,
+these creases get folded.
+
+702
+00:35:18,660 --> 00:35:20,490
+But there may be
+other junk in here,
+
+703
+00:35:20,490 --> 00:35:22,610
+or maybe other junk in here.
+
+704
+00:35:22,610 --> 00:35:24,450
+We'd like to get
+rid of that junk.
+
+705
+00:35:24,450 --> 00:35:26,510
+And so what we did
+is move this junk up
+
+706
+00:35:26,510 --> 00:35:27,860
+to here, which was always safe.
+
+707
+00:35:27,860 --> 00:35:29,900
+We moved this junk down to here.
+
+708
+00:35:29,900 --> 00:35:35,098
+And that was still a folded
+state-- a flat folded state.
+
+709
+00:35:35,098 --> 00:35:38,480
+OK, remember all this stuff.
+
+710
+00:35:38,480 --> 00:35:40,690
+Therefore, we could have
+folded the crimp first.
+
+711
+00:35:40,690 --> 00:35:43,510
+And then we have a flat folding
+in this situation, where
+
+712
+00:35:43,510 --> 00:35:47,720
+this paper is effectively
+glued together, which means,
+
+713
+00:35:47,720 --> 00:35:49,980
+it was safe to fold this
+crimp and glue these
+
+714
+00:35:49,980 --> 00:35:52,329
+together and never
+touch them again.
+
+715
+00:35:52,329 --> 00:35:54,120
+So that is still true
+in the circular case.
+
+716
+00:35:54,120 --> 00:35:57,240
+That proof didn't really assume
+anything about the paper.
+
+717
+00:35:57,240 --> 00:35:58,790
+Would even work for
+like tree shaped
+
+718
+00:35:58,790 --> 00:36:02,170
+paper or something weird.
+
+719
+00:36:02,170 --> 00:36:06,110
+So if we can find a crimp, which
+we can in the generic case,
+
+720
+00:36:06,110 --> 00:36:08,190
+then you just make a crimp,
+make a crimp, repeat.
+
+721
+00:36:08,190 --> 00:36:10,550
+If you ever get stuck, you know
+that the original thing was not
+
+722
+00:36:10,550 --> 00:36:13,175
+flat foldable, because the thing
+you have is not flat foldable.
+
+723
+00:36:13,175 --> 00:36:15,310
+
+724
+00:36:15,310 --> 00:36:15,880
+Why?
+
+725
+00:36:15,880 --> 00:36:18,120
+If there's no cramp
+in the generic case,
+
+726
+00:36:18,120 --> 00:36:21,240
+that means you have two valleys
+around the smallest angle,
+
+727
+00:36:21,240 --> 00:36:22,450
+and that's clearly bad.
+
+728
+00:36:22,450 --> 00:36:25,520
+
+729
+00:36:25,520 --> 00:36:28,110
+So-- I'm not writing
+a lot of details here.
+
+730
+00:36:28,110 --> 00:36:30,540
+Is that clear?
+
+731
+00:36:30,540 --> 00:36:32,450
+If I have an angle
+that's surrounded
+
+732
+00:36:32,450 --> 00:36:34,411
+by strictly larger
+angles, I know
+
+733
+00:36:34,411 --> 00:36:36,160
+there must be one
+mountain and one valley.
+
+734
+00:36:36,160 --> 00:36:39,100
+Then I can safely make
+a crimp and repeat.
+
+735
+00:36:39,100 --> 00:36:43,000
+The trouble comes in when
+these angles are equal.
+
+736
+00:36:43,000 --> 00:36:44,664
+We never had to
+think about angles
+
+737
+00:36:44,664 --> 00:36:46,330
+being equal in the
+one dimensional case.
+
+738
+00:36:46,330 --> 00:36:48,590
+It didn't matter much.
+
+739
+00:36:48,590 --> 00:36:51,900
+We just said, oh, you know,
+it's safe to make a crimp,
+
+740
+00:36:51,900 --> 00:36:54,990
+as long as this was greater
+than or equal to this
+
+741
+00:36:54,990 --> 00:36:57,240
+and this was greater
+than or equal to this.
+
+742
+00:36:57,240 --> 00:36:59,492
+That is still true; it's
+safe to make a crimp.
+
+743
+00:36:59,492 --> 00:37:01,200
+But how do we know
+that there is a crimp?
+
+744
+00:37:01,200 --> 00:37:05,220
+How do we know that there's a
+mountain followed by valley?
+
+745
+00:37:05,220 --> 00:37:05,920
+We don't.
+
+746
+00:37:05,920 --> 00:37:10,900
+I mean, if they're equal,
+this would be all right.
+
+747
+00:37:10,900 --> 00:37:14,080
+That's two valleys is valid if
+these three angles are equal.
+
+748
+00:37:14,080 --> 00:37:16,644
+But I claim still somewhere
+there's got to be a crimp.
+
+749
+00:37:16,644 --> 00:37:19,060
+There's no longer a notion of
+the globally smallest angle,
+
+750
+00:37:19,060 --> 00:37:20,880
+because some of them are equal.
+
+751
+00:37:20,880 --> 00:37:24,270
+We've got to find that
+crimp, but it's out there.
+
+752
+00:37:24,270 --> 00:37:26,615
+So we just need to
+prove that it exists.
+
+753
+00:37:26,615 --> 00:37:57,460
+
+754
+00:37:57,460 --> 00:38:02,170
+So to do that, we're going
+to generalize this theorem--
+
+755
+00:38:02,170 --> 00:38:04,940
+Meakawa-Justin-- that number
+of mountains minus number
+
+756
+00:38:04,940 --> 00:38:06,230
+of valleys is plus or minus 2.
+
+757
+00:38:06,230 --> 00:38:08,430
+That's true, and
+it's a statement
+
+758
+00:38:08,430 --> 00:38:13,210
+about the sum of all the
+angles-- all of the creases.
+
+759
+00:38:13,210 --> 00:38:15,955
+What I'd like is something
+a little bit more localized.
+
+760
+00:38:15,955 --> 00:38:17,580
+And in particular,
+we're going to think
+
+761
+00:38:17,580 --> 00:38:21,782
+about when I have a whole
+bunch of angles that are equal,
+
+762
+00:38:21,782 --> 00:38:23,990
+how many mountains and
+valleys can there be in there.
+
+763
+00:38:23,990 --> 00:38:26,980
+
+764
+00:38:26,980 --> 00:38:29,940
+So it's what I
+call local counts.
+
+765
+00:38:29,940 --> 00:38:34,670
+
+766
+00:38:34,670 --> 00:38:37,270
+So while everything I said
+so far is pretty classic,
+
+767
+00:38:37,270 --> 00:38:41,060
+this result was proved
+in 2001 by Tom Hall,
+
+768
+00:38:41,060 --> 00:38:45,410
+so much more recent,
+over a decade later.
+
+769
+00:38:45,410 --> 00:38:48,080
+
+770
+00:38:48,080 --> 00:38:51,640
+So let's think about
+k equal angles.
+
+771
+00:38:51,640 --> 00:38:58,140
+
+772
+00:38:58,140 --> 00:39:00,900
+And I want that to be a maximal
+sequence of equal angles,
+
+773
+00:39:00,900 --> 00:39:05,060
+so the ones right after and
+right before are different.
+
+774
+00:39:05,060 --> 00:39:07,050
+And furthermore,
+I'm going to assume
+
+775
+00:39:07,050 --> 00:39:20,020
+that they're bigger--
+strictly larger angles.
+
+776
+00:39:20,020 --> 00:39:22,820
+
+777
+00:39:22,820 --> 00:39:28,210
+OK, so something like that.
+
+778
+00:39:28,210 --> 00:39:30,730
+A bunch of equal
+angles-- k of them--
+
+779
+00:39:30,730 --> 00:39:33,460
+bigger angles on either side.
+
+780
+00:39:33,460 --> 00:39:36,160
+This almost always exists.
+
+781
+00:39:36,160 --> 00:39:38,390
+I should mention-- so I'm
+going to say something
+
+782
+00:39:38,390 --> 00:39:39,430
+about this situation.
+
+783
+00:39:39,430 --> 00:39:42,320
+But this situation should exist,
+because I take the smallest
+
+784
+00:39:42,320 --> 00:39:45,130
+angle out there and then
+I see how many friends
+
+785
+00:39:45,130 --> 00:39:46,770
+it has that are all equal.
+
+786
+00:39:46,770 --> 00:39:49,570
+If it's the smallest angle--
+or it's one of the smallest
+
+787
+00:39:49,570 --> 00:39:52,400
+angles-- then the
+ones surrounding
+
+788
+00:39:52,400 --> 00:39:57,290
+it are going to be bigger--
+unless all the angles are
+
+789
+00:39:57,290 --> 00:39:57,966
+equal.
+
+790
+00:39:57,966 --> 00:40:00,090
+So there's one case, which
+we'll worry about later.
+
+791
+00:40:00,090 --> 00:40:01,190
+It's very easy.
+
+792
+00:40:01,190 --> 00:40:03,697
+All the angles are equal.
+
+793
+00:40:03,697 --> 00:40:05,780
+In fact, I could tell you
+how to worry about that.
+
+794
+00:40:05,780 --> 00:40:10,779
+If all the angles are
+equal, then everything
+
+795
+00:40:10,779 --> 00:40:13,320
+is crimpable as long as we can
+find a switch between mountain
+
+796
+00:40:13,320 --> 00:40:15,642
+and valley-- somewhere.
+
+797
+00:40:15,642 --> 00:40:17,600
+And because the number
+of mountains and valleys
+
+798
+00:40:17,600 --> 00:40:21,160
+is plus or minus 2, there's
+got to be-- so they're almost
+
+799
+00:40:21,160 --> 00:40:25,460
+in equal balance-- there's
+got to be a valley.
+
+800
+00:40:25,460 --> 00:40:27,484
+It can't be all valleys,
+can't be all mountains.
+
+801
+00:40:27,484 --> 00:40:28,900
+So somewhere,
+there's a transition
+
+802
+00:40:28,900 --> 00:40:30,680
+between mountain and valley.
+
+803
+00:40:30,680 --> 00:40:33,990
+So you get a crimp out of that.
+
+804
+00:40:33,990 --> 00:40:36,610
+But otherwise, if they're
+not all equal-- let's
+
+805
+00:40:36,610 --> 00:40:42,730
+think about k equal angles
+surrounded by two larger guys.
+
+806
+00:40:42,730 --> 00:40:44,821
+Forgot how technical this is.
+
+807
+00:40:44,821 --> 00:40:45,320
+All right.
+
+808
+00:40:45,320 --> 00:40:52,270
+Then I want to look at
+the number of mountains
+
+809
+00:40:52,270 --> 00:40:57,520
+and the number valleys among
+these k plus one creases,
+
+810
+00:40:57,520 --> 00:40:58,940
+so within that range.
+
+811
+00:40:58,940 --> 00:41:03,630
+
+812
+00:41:03,630 --> 00:41:06,960
+It's going to be 0, if k is odd.
+
+813
+00:41:06,960 --> 00:41:09,660
+
+814
+00:41:09,660 --> 00:41:12,710
+And it's going to be plus
+or minus 1, if k is even.
+
+815
+00:41:12,710 --> 00:41:16,640
+
+816
+00:41:16,640 --> 00:41:18,230
+It's not plus or minus 2.
+
+817
+00:41:18,230 --> 00:41:21,630
+Intuitively, plus or minus 2 is
+when you go all the way around.
+
+818
+00:41:21,630 --> 00:41:24,080
+Here, we're just
+looking at a segment--
+
+819
+00:41:24,080 --> 00:41:26,760
+a portion of the entire circle.
+
+820
+00:41:26,760 --> 00:41:30,230
+Remember, this is actually
+a circle somewhere.
+
+821
+00:41:30,230 --> 00:41:34,690
+And this corresponds
+to, in the odd case,
+
+822
+00:41:34,690 --> 00:41:37,780
+you're going to be going in
+the same direction afterwards.
+
+823
+00:41:37,780 --> 00:41:39,400
+In the even case,
+you're going to have
+
+824
+00:41:39,400 --> 00:41:41,370
+turned around but
+not a full circle.
+
+825
+00:41:41,370 --> 00:41:43,390
+So it's going to
+be plus or minus 1.
+
+826
+00:41:43,390 --> 00:41:46,240
+There's a lot of
+ways to prove this.
+
+827
+00:41:46,240 --> 00:41:50,270
+One way is to think
+about convex cones.
+
+828
+00:41:50,270 --> 00:42:00,070
+So if k is even, and you
+fold this thing-- let's see,
+
+829
+00:42:00,070 --> 00:42:05,909
+one, two, three, four,
+five, six-- equal angles.
+
+830
+00:42:05,909 --> 00:42:07,450
+And then there's
+the two longer guys.
+
+831
+00:42:07,450 --> 00:42:09,460
+They may not be the
+same length, but that's
+
+832
+00:42:09,460 --> 00:42:13,160
+what you get in the even case.
+
+833
+00:42:13,160 --> 00:42:17,614
+So what I'd like to do is
+just, in order to just reduce
+
+834
+00:42:17,614 --> 00:42:19,780
+to things that we've already
+thought about-- I mean,
+
+835
+00:42:19,780 --> 00:42:21,520
+you could talk about
+turn angles again,
+
+836
+00:42:21,520 --> 00:42:24,540
+or you could just say, hey,
+I know Maekawa's theorem.
+
+837
+00:42:24,540 --> 00:42:27,600
+So as long as I could make
+this into a circle, which
+
+838
+00:42:27,600 --> 00:42:31,440
+I can do by adding
+that stuff, now I
+
+839
+00:42:31,440 --> 00:42:34,120
+have a nice circular--
+it's a flat folded state.
+
+840
+00:42:34,120 --> 00:42:37,480
+There's no crossings
+here, presumably
+
+841
+00:42:37,480 --> 00:42:38,710
+because this did something.
+
+842
+00:42:38,710 --> 00:42:40,501
+I don't actually know
+that it's zigzagging.
+
+843
+00:42:40,501 --> 00:42:41,640
+It might do other stuff.
+
+844
+00:42:41,640 --> 00:42:44,695
+But it's not going to
+cross what I just added.
+
+845
+00:42:44,695 --> 00:42:46,820
+So the number of mountains
+minus number of valleys,
+
+846
+00:42:46,820 --> 00:42:50,780
+in total here, must
+be plus or minus 2.
+
+847
+00:42:50,780 --> 00:42:54,660
+I only added one
+crease-- this one.
+
+848
+00:42:54,660 --> 00:42:57,230
+So that's going to make
+it either plus or minus 1
+
+849
+00:42:57,230 --> 00:42:58,802
+or plus or minus 3.
+
+850
+00:42:58,802 --> 00:43:00,260
+If you think about
+it a little bit,
+
+851
+00:43:00,260 --> 00:43:01,750
+it has to be plus or minus 1.
+
+852
+00:43:01,750 --> 00:43:03,624
+And hopefully, that's
+what I wrote here, yes.
+
+853
+00:43:03,624 --> 00:43:06,260
+
+854
+00:43:06,260 --> 00:43:10,050
+Because I mean, really, we're
+thinking about turn angles
+
+855
+00:43:10,050 --> 00:43:11,080
+again, I'm afraid.
+
+856
+00:43:11,080 --> 00:43:12,830
+Can't totally reduce it.
+
+857
+00:43:12,830 --> 00:43:15,266
+We just turned around here.
+
+858
+00:43:15,266 --> 00:43:17,140
+And we were about to
+finish the circle, which
+
+859
+00:43:17,140 --> 00:43:18,460
+would make it plus or minus 2.
+
+860
+00:43:18,460 --> 00:43:23,010
+Before we finish the circle,
+it's plus or minus 1.
+
+861
+00:43:23,010 --> 00:43:23,660
+k is odd.
+
+862
+00:43:23,660 --> 00:43:28,100
+
+863
+00:43:28,100 --> 00:43:30,580
+Again, this might go
+like that, whatever.
+
+864
+00:43:30,580 --> 00:43:32,720
+But, because it's an
+odd number, these guys
+
+865
+00:43:32,720 --> 00:43:35,530
+are going in the same direction.
+
+866
+00:43:35,530 --> 00:43:38,620
+And so the total turn
+angle here must be 0.
+
+867
+00:43:38,620 --> 00:43:43,740
+And one way to see that is to
+extend it into a full polygon.
+
+868
+00:43:43,740 --> 00:43:47,750
+You know that it's plus or
+minus 2 for this whole thing.
+
+869
+00:43:47,750 --> 00:43:51,600
+And I added two guys
+in the same direction.
+
+870
+00:43:51,600 --> 00:43:54,320
+If I remove them, it's going
+to go down to plus or minus 0.
+
+871
+00:43:54,320 --> 00:43:59,429
+
+872
+00:43:59,429 --> 00:44:00,470
+That was a bit hand wavy.
+
+873
+00:44:00,470 --> 00:44:01,645
+But do you buy that?
+
+874
+00:44:01,645 --> 00:44:05,323
+
+875
+00:44:05,323 --> 00:44:08,197
+AUDIENCE: [INAUDIBLE]
+plus or minus 0?
+
+876
+00:44:08,197 --> 00:44:10,992
+PROFESSOR: Plus or
+minus 0 is 0, yeah.
+
+877
+00:44:10,992 --> 00:44:12,700
+You went from 2 down
+to zero, because you
+
+878
+00:44:12,700 --> 00:44:14,120
+remove two identical guys.
+
+879
+00:44:14,120 --> 00:44:18,230
+
+880
+00:44:18,230 --> 00:44:22,290
+So let me tie this all
+together, because there's
+
+881
+00:44:22,290 --> 00:44:23,755
+so many little cases.
+
+882
+00:44:23,755 --> 00:44:34,130
+
+883
+00:44:34,130 --> 00:44:37,280
+So I want to know what
+mountain valley patterns are
+
+884
+00:44:37,280 --> 00:44:48,505
+flat foldable, single
+vertex, m/v patterns.
+
+885
+00:44:48,505 --> 00:44:56,130
+
+886
+00:44:56,130 --> 00:45:04,210
+I claim there is a crimp.
+
+887
+00:45:04,210 --> 00:45:06,390
+If it's flat foldable,
+there has to be a crimp
+
+888
+00:45:06,390 --> 00:45:07,900
+that you can find to do.
+
+889
+00:45:07,900 --> 00:45:13,830
+Remember, a crimp
+was where this length
+
+890
+00:45:13,830 --> 00:45:17,740
+was less than or equal to
+this length and less than
+
+891
+00:45:17,740 --> 00:45:19,750
+or equal to this length.
+
+892
+00:45:19,750 --> 00:45:20,870
+And one of these was m.
+
+893
+00:45:20,870 --> 00:45:23,300
+One of them was v. That was
+the definition of a crimp.
+
+894
+00:45:23,300 --> 00:45:25,590
+I claim such a
+thing always exists.
+
+895
+00:45:25,590 --> 00:45:29,730
+The proof is two parts.
+
+896
+00:45:29,730 --> 00:45:38,810
+If all the angles are equal,
+we know that these conditions
+
+897
+00:45:38,810 --> 00:45:42,580
+are always satisfied,
+because everything is equal.
+
+898
+00:45:42,580 --> 00:45:44,680
+So we just need to
+find an m followed by v
+
+899
+00:45:44,680 --> 00:45:46,510
+or a v followed by an m.
+
+900
+00:45:46,510 --> 00:45:52,231
+And by Maekawa's theorem, we
+know it's not all m's or all
+
+901
+00:45:52,231 --> 00:45:52,730
+v's.
+
+902
+00:45:52,730 --> 00:45:55,941
+So somewhere, there has to be
+a transition from m to v's.
+
+903
+00:45:55,941 --> 00:46:03,650
+
+904
+00:46:03,650 --> 00:46:09,080
+So just use that lemma
+theorem or the count property.
+
+905
+00:46:09,080 --> 00:46:12,390
+Otherwise, if they're
+not all equal,
+
+906
+00:46:12,390 --> 00:46:15,750
+then I can apply this
+local counts result,
+
+907
+00:46:15,750 --> 00:46:19,560
+take the smallest angle-- take
+one instance of the smallest
+
+908
+00:46:19,560 --> 00:46:20,060
+angle.
+
+909
+00:46:20,060 --> 00:46:21,270
+There could be many of them.
+
+910
+00:46:21,270 --> 00:46:25,040
+Find all of its neighboring
+friends that are equal.
+
+911
+00:46:25,040 --> 00:46:27,120
+Then I know that the next
+angles before and after
+
+912
+00:46:27,120 --> 00:46:29,270
+have to be strictly bigger.
+
+913
+00:46:29,270 --> 00:46:33,270
+Then I know that the number of
+mountains and valleys in here--
+
+914
+00:46:33,270 --> 00:46:34,830
+if I look at the
+difference and it's
+
+915
+00:46:34,830 --> 00:46:37,262
+0, that means the
+number of mountains
+
+916
+00:46:37,262 --> 00:46:38,470
+equals the number of valleys.
+
+917
+00:46:38,470 --> 00:46:40,169
+Therefore, there's
+at least one of each.
+
+918
+00:46:40,169 --> 00:46:42,210
+And therefore, there's a
+transition from mountain
+
+919
+00:46:42,210 --> 00:46:43,750
+to valley in there.
+
+920
+00:46:43,750 --> 00:46:45,890
+Because the transition
+from mountain to valley--
+
+921
+00:46:45,890 --> 00:46:48,520
+like right here,
+that's a valid crimp.
+
+922
+00:46:48,520 --> 00:46:51,660
+This guy's bigger;
+this guy's equal.
+
+923
+00:46:51,660 --> 00:46:53,530
+This would also be
+a fine transition,
+
+924
+00:46:53,530 --> 00:46:54,614
+because everybody's equal.
+
+925
+00:46:54,614 --> 00:46:56,154
+This would also be
+a fine transition.
+
+926
+00:46:56,154 --> 00:46:58,390
+Any transition from
+mountain to valley in here,
+
+927
+00:46:58,390 --> 00:47:00,160
+I've got a crimp.
+
+928
+00:47:00,160 --> 00:47:03,980
+The even case is a little-- I
+got to think a little bit more.
+
+929
+00:47:03,980 --> 00:47:07,110
+k is even.
+
+930
+00:47:07,110 --> 00:47:11,640
+k plus 1, which is the number
+of creases here, is odd.
+
+931
+00:47:11,640 --> 00:47:13,810
+And the difference between
+mountains and valleys
+
+932
+00:47:13,810 --> 00:47:16,407
+among those k plus one
+creases is plus or minus 1.
+
+933
+00:47:16,407 --> 00:47:17,490
+Think about it for second.
+
+934
+00:47:17,490 --> 00:47:20,031
+That means there's, again, at
+least one mountain and at least
+
+935
+00:47:20,031 --> 00:47:22,440
+one valley.
+
+936
+00:47:22,440 --> 00:47:25,590
+Because k, to be even,
+has to be at least 2.
+
+937
+00:47:25,590 --> 00:47:27,407
+We've got to have at
+least three things.
+
+938
+00:47:27,407 --> 00:47:29,490
+So there's going to be at
+least one of one and two
+
+939
+00:47:29,490 --> 00:47:30,986
+of the other, in fact.
+
+940
+00:47:30,986 --> 00:47:33,610
+And I just need one mountain and
+one valley somewhere in there.
+
+941
+00:47:33,610 --> 00:47:35,390
+And then I know there has to
+be a transition from mountain
+
+942
+00:47:35,390 --> 00:47:35,970
+to valley.
+
+943
+00:47:35,970 --> 00:47:38,690
+
+944
+00:47:38,690 --> 00:47:41,640
+Otherwise, use local counts.
+
+945
+00:47:41,640 --> 00:47:45,390
+
+946
+00:47:45,390 --> 00:47:55,700
+And in either case, we
+get either a mountain
+
+947
+00:47:55,700 --> 00:48:02,960
+to valley transition or a
+valley to mountain transition.
+
+948
+00:48:02,960 --> 00:48:06,860
+And I get it in such a way
+that these inequalities
+
+949
+00:48:06,860 --> 00:48:08,439
+on the lengths hold.
+
+950
+00:48:08,439 --> 00:48:09,980
+So in other words,
+that it's a crimp.
+
+951
+00:48:09,980 --> 00:48:15,090
+
+952
+00:48:15,090 --> 00:48:18,020
+Therefore, any flat foldable,
+single vertex, mountain valley
+
+953
+00:48:18,020 --> 00:48:19,820
+pattern has a crimp.
+
+954
+00:48:19,820 --> 00:48:21,090
+Make it.
+
+955
+00:48:21,090 --> 00:48:24,800
+And as I was arguing
+here, just like last time,
+
+956
+00:48:24,800 --> 00:48:27,250
+that crimp will still--
+after you do the crimp,
+
+957
+00:48:27,250 --> 00:48:29,620
+you'll still be flat
+foldable, so repeat.
+
+958
+00:48:29,620 --> 00:48:33,600
+Cook until done is
+how I like to put it.
+
+959
+00:48:33,600 --> 00:48:34,100
+Question.
+
+960
+00:48:34,100 --> 00:48:36,683
+AUDIENCE: What about the trivial
+case of just folding a circle
+
+961
+00:48:36,683 --> 00:48:37,327
+in half?
+
+962
+00:48:37,327 --> 00:48:39,430
+PROFESSOR: The trivial case
+of folding a circle in half.
+
+963
+00:48:39,430 --> 00:48:39,930
+All right.
+
+964
+00:48:39,930 --> 00:48:40,950
+That's a good question.
+
+965
+00:48:40,950 --> 00:48:42,116
+It's kind of a technicality.
+
+966
+00:48:42,116 --> 00:48:45,150
+
+967
+00:48:45,150 --> 00:48:47,809
+One version would be to
+say, that's zero vertices.
+
+968
+00:48:47,809 --> 00:48:48,600
+That doesn't count.
+
+969
+00:48:48,600 --> 00:48:50,260
+And we're thinking
+about one vertex.
+
+970
+00:48:50,260 --> 00:48:51,634
+And as soon as
+you think about it
+
+971
+00:48:51,634 --> 00:48:54,230
+as one vertex, which is
+fine, then you actually
+
+972
+00:48:54,230 --> 00:48:58,010
+have two creases there.
+
+973
+00:48:58,010 --> 00:48:59,070
+So it's two creases.
+
+974
+00:48:59,070 --> 00:49:01,552
+And hopefully, this works.
+
+975
+00:49:01,552 --> 00:49:02,760
+Oh, I see what you're saying.
+
+976
+00:49:02,760 --> 00:49:04,390
+It's not a crimp.
+
+977
+00:49:04,390 --> 00:49:05,240
+That's a good point.
+
+978
+00:49:05,240 --> 00:49:07,934
+AUDIENCE: But then
+it's flat foldable.
+
+979
+00:49:07,934 --> 00:49:10,350
+PROFESSOR: It is flat foldable,
+and yet, there's no crimp.
+
+980
+00:49:10,350 --> 00:49:12,561
+Damn it.
+
+981
+00:49:12,561 --> 00:49:13,060
+All right.
+
+982
+00:49:13,060 --> 00:49:13,560
+Sorry?
+
+983
+00:49:13,560 --> 00:49:16,580
+AUDIENCE: But it follows
+Maekawa's, right?
+
+984
+00:49:16,580 --> 00:49:17,760
+PROFESSOR: Yeah.
+
+985
+00:49:17,760 --> 00:49:20,762
+So I made a slight mistake here.
+
+986
+00:49:20,762 --> 00:49:22,220
+I said if all the
+angles are equal,
+
+987
+00:49:22,220 --> 00:49:24,260
+then Maekawa says there's
+at least one of each.
+
+988
+00:49:24,260 --> 00:49:26,730
+That's not true when n equals 2.
+
+989
+00:49:26,730 --> 00:49:29,950
+Then there's two of one
+and zero of the other.
+
+990
+00:49:29,950 --> 00:49:35,560
+As long as you have more than
+two creases, then this is true.
+
+991
+00:49:35,560 --> 00:49:36,365
+That's enough.
+
+992
+00:49:36,365 --> 00:49:38,240
+So you have to handle
+this as a special case.
+
+993
+00:49:38,240 --> 00:49:39,865
+AUDIENCE: At the end
+of your algorithm,
+
+994
+00:49:39,865 --> 00:49:42,896
+you're always left
+with two of the same--
+
+995
+00:49:42,896 --> 00:49:44,732
+PROFESSOR: That's true.
+
+996
+00:49:44,732 --> 00:49:46,890
+This is an important
+special case to remember,
+
+997
+00:49:46,890 --> 00:49:49,710
+because this will be
+the final picture.
+
+998
+00:49:49,710 --> 00:49:54,382
+After you do a sequence of
+crimps, this is the good case.
+
+999
+00:49:54,382 --> 00:49:55,840
+If your thing is
+flat foldable, you
+
+1000
+00:49:55,840 --> 00:49:56,935
+will always end up with that.
+
+1001
+00:49:56,935 --> 00:49:58,700
+AUDIENCE: That's a
+case where everything
+
+1002
+00:49:58,700 --> 00:50:02,405
+is the same, smallest.
+
+1003
+00:50:02,405 --> 00:50:06,030
+PROFESSOR: It's another example
+where all the angles are equal.
+
+1004
+00:50:06,030 --> 00:50:08,630
+So that's why this
+is the situation.
+
+1005
+00:50:08,630 --> 00:50:13,570
+It's either Maekawa and
+you get a cramp here,
+
+1006
+00:50:13,570 --> 00:50:16,000
+because n is greater than 2.
+
+1007
+00:50:16,000 --> 00:50:20,090
+And here, I should say,
+if n is greater than 2,
+
+1008
+00:50:20,090 --> 00:50:21,240
+then this is true.
+
+1009
+00:50:21,240 --> 00:50:23,984
+Of course the n equals 2
+case, it looks like that.
+
+1010
+00:50:23,984 --> 00:50:26,150
+And it had better be both
+valleys or both mountains.
+
+1011
+00:50:26,150 --> 00:50:27,620
+Otherwise, it's not going
+to be flat foldable.
+
+1012
+00:50:27,620 --> 00:50:28,470
+I forgot about that.
+
+1013
+00:50:28,470 --> 00:50:29,700
+I should add it in the notes.
+
+1014
+00:50:29,700 --> 00:50:30,815
+But it's in the textbook, right.
+
+1015
+00:50:30,815 --> 00:50:32,464
+AUDIENCE: At the end
+of the algorithm,
+
+1016
+00:50:32,464 --> 00:50:33,755
+it's not going to be a circle.
+
+1017
+00:50:33,755 --> 00:50:34,754
+It's going to be a cone.
+
+1018
+00:50:34,754 --> 00:50:35,800
+PROFESSOR: That's true.
+
+1019
+00:50:35,800 --> 00:50:38,150
+It won't actually
+look like this.
+
+1020
+00:50:38,150 --> 00:50:40,830
+At the end of the algorithm,
+it's going to be a cone.
+
+1021
+00:50:40,830 --> 00:50:45,090
+The two angles will be equal,
+because of Kawasaki's theorem.
+
+1022
+00:50:45,090 --> 00:50:48,200
+And they should still be both
+mountains or both valleys.
+
+1023
+00:50:48,200 --> 00:50:50,670
+But it's going to be--
+we can see it right here.
+
+1024
+00:50:50,670 --> 00:50:54,022
+So I apply my crimp,
+and now I have a cone,
+
+1025
+00:50:54,022 --> 00:50:54,980
+and there's two angles.
+
+1026
+00:50:54,980 --> 00:50:58,350
+There's one here, which
+has been fused together.
+
+1027
+00:50:58,350 --> 00:51:01,170
+And there's one here,
+which is the original.
+
+1028
+00:51:01,170 --> 00:51:02,450
+They're equal.
+
+1029
+00:51:02,450 --> 00:51:05,030
+And it's two mountains
+or two valleys,
+
+1030
+00:51:05,030 --> 00:51:06,790
+if I turned it upside down.
+
+1031
+00:51:06,790 --> 00:51:08,380
+And then it finishes.
+
+1032
+00:51:08,380 --> 00:51:11,050
+So that's the algorithm
+in action-- two steps.
+
+1033
+00:51:11,050 --> 00:51:12,646
+First you find this crimp here.
+
+1034
+00:51:12,646 --> 00:51:14,520
+This is actually the
+globally smallest angle.
+
+1035
+00:51:14,520 --> 00:51:15,895
+It's surrounded
+by bigger angles.
+
+1036
+00:51:15,895 --> 00:51:17,180
+So it's really easy.
+
+1037
+00:51:17,180 --> 00:51:20,860
+Then I have a cone with
+two equal angles, which
+
+1038
+00:51:20,860 --> 00:51:22,630
+is what has to
+happen at the end.
+
+1039
+00:51:22,630 --> 00:51:26,741
+And then I'm done.
+
+1040
+00:51:26,741 --> 00:51:27,240
+Good?
+
+1041
+00:51:27,240 --> 00:51:30,670
+AUDIENCE: Is that the
+only way to do it?
+
+1042
+00:51:30,670 --> 00:51:33,930
+PROFESSOR: This is
+what always happens.
+
+1043
+00:51:33,930 --> 00:51:37,330
+Oh, is this the only way
+to flat fold these things?
+
+1044
+00:51:37,330 --> 00:51:38,050
+No.
+
+1045
+00:51:38,050 --> 00:51:41,790
+There are other--
+yes, one of the two.
+
+1046
+00:51:41,790 --> 00:51:52,560
+
+1047
+00:51:52,560 --> 00:51:56,120
+I think it depends
+what you're counting.
+
+1048
+00:51:56,120 --> 00:51:58,930
+If you're counting mountain
+valley assignments-- I mean,
+
+1049
+00:51:58,930 --> 00:52:01,600
+if you just want to know,
+can every mountain valley
+
+1050
+00:52:01,600 --> 00:52:03,312
+assignment be
+folded by crimping.
+
+1051
+00:52:03,312 --> 00:52:04,270
+Then the answer is yes.
+
+1052
+00:52:04,270 --> 00:52:05,390
+That's what we proved.
+
+1053
+00:52:05,390 --> 00:52:08,194
+But if you want to get
+every possible folded state,
+
+1054
+00:52:08,194 --> 00:52:09,610
+crimps are not
+going to be enough.
+
+1055
+00:52:09,610 --> 00:52:12,630
+The reason they're not enough is
+because we're using this thing.
+
+1056
+00:52:12,630 --> 00:52:15,070
+So, hey, here's some
+hypothetical folded state.
+
+1057
+00:52:15,070 --> 00:52:17,390
+We can rip it out and make
+the crimp has been done.
+
+1058
+00:52:17,390 --> 00:52:19,200
+But then there's a
+folded state you're not
+
+1059
+00:52:19,200 --> 00:52:21,470
+able to reach by crimping.
+
+1060
+00:52:21,470 --> 00:52:24,427
+We need to work that into an
+actual example, where crimping
+
+1061
+00:52:24,427 --> 00:52:26,260
+forbids you from reaching
+some folded state.
+
+1062
+00:52:26,260 --> 00:52:28,368
+But I'm pretty sure one
+exists because of this.
+
+1063
+00:52:28,368 --> 00:52:30,118
+AUDIENCE: Could that
+be more like spirals?
+
+1064
+00:52:30,118 --> 00:52:32,390
+PROFESSOR: Yeah, maybe some
+kind of spiraling thing.
+
+1065
+00:52:32,390 --> 00:52:34,602
+AUDIENCE: Well, layering
+takes into account--
+
+1066
+00:52:34,602 --> 00:52:35,310
+PROFESSOR: Right.
+
+1067
+00:52:35,310 --> 00:52:37,990
+What we're missing here is
+getting all the possible layer
+
+1068
+00:52:37,990 --> 00:52:39,520
+stacking orders.
+
+1069
+00:52:39,520 --> 00:52:42,790
+So we're just trying to match
+a mountain valley assignment.
+
+1070
+00:52:42,790 --> 00:52:44,860
+We're not going to match
+a target layer ordering,
+
+1071
+00:52:44,860 --> 00:52:47,860
+because we simplified
+the layer orders in order
+
+1072
+00:52:47,860 --> 00:52:50,290
+to make crimps possible.
+
+1073
+00:52:50,290 --> 00:52:55,480
+So crimps won't get you
+some of the folded states.
+
+1074
+00:52:55,480 --> 00:53:04,230
+But one thing you can
+play with over here--
+
+1075
+00:53:04,230 --> 00:53:07,900
+that has been played
+with by Tom Hall--
+
+1076
+00:53:07,900 --> 00:53:14,940
+is if I give you
+a crease pattern,
+
+1077
+00:53:14,940 --> 00:53:18,340
+how many flat foldable
+mountain valley
+
+1078
+00:53:18,340 --> 00:53:19,939
+assignments does it have?
+
+1079
+00:53:19,939 --> 00:53:22,230
+OK, we have this nice linear
+time algorithm to tell you
+
+1080
+00:53:22,230 --> 00:53:23,950
+whether a particular
+one is doable.
+
+1081
+00:53:23,950 --> 00:53:25,750
+How many are there?
+
+1082
+00:53:25,750 --> 00:53:29,960
+And there is-- if
+you work through all
+
+1083
+00:53:29,960 --> 00:53:32,640
+of the things I've shown you
+in a little bit more detail,
+
+1084
+00:53:32,640 --> 00:53:35,555
+you can recover-- this
+was finding a crimp.
+
+1085
+00:53:35,555 --> 00:53:36,930
+But you can actually
+look at what
+
+1086
+00:53:36,930 --> 00:53:39,080
+are all the crimps
+that are possible
+
+1087
+00:53:39,080 --> 00:53:42,840
+and actually count how
+many different ways
+
+1088
+00:53:42,840 --> 00:53:43,920
+there are to fold.
+
+1089
+00:53:43,920 --> 00:53:45,046
+How many crimps you can do.
+
+1090
+00:53:45,046 --> 00:53:47,045
+And then given those
+crimps, how many crimps you
+
+1091
+00:53:47,045 --> 00:53:47,840
+can go after that.
+
+1092
+00:53:47,840 --> 00:53:50,550
+And in the same linear
+time kind of algorithm,
+
+1093
+00:53:50,550 --> 00:53:52,970
+you can figure out how many
+different mountain valley
+
+1094
+00:53:52,970 --> 00:53:54,910
+patterns are flat foldable.
+
+1095
+00:53:54,910 --> 00:53:56,620
+That takes a little
+bit more care.
+
+1096
+00:53:56,620 --> 00:53:58,335
+I will tell you the extremes.
+
+1097
+00:53:58,335 --> 00:54:02,360
+
+1098
+00:54:02,360 --> 00:54:07,800
+How small could the number of
+flat foldable mountain valley
+
+1099
+00:54:07,800 --> 00:54:12,060
+assignments be for a
+given crease pattern?
+
+1100
+00:54:12,060 --> 00:54:13,726
+Well, do you have
+any guesses when?
+
+1101
+00:54:13,726 --> 00:54:16,505
+When do I have the least
+choice of where to make crimps?
+
+1102
+00:54:16,505 --> 00:54:23,640
+
+1103
+00:54:23,640 --> 00:54:24,180
+Yeah.
+
+1104
+00:54:24,180 --> 00:54:26,164
+AUDIENCE: We have three angles.
+
+1105
+00:54:26,164 --> 00:54:28,090
+PROFESSOR: For general n.
+
+1106
+00:54:28,090 --> 00:54:29,180
+Sorry.
+
+1107
+00:54:29,180 --> 00:54:31,635
+But, yeah, three angles
+or, I guess, two angles.
+
+1108
+00:54:31,635 --> 00:54:34,480
+We really can't do any--
+I don't have any choice.
+
+1109
+00:54:34,480 --> 00:54:37,850
+But for general n,
+how should I disperse
+
+1110
+00:54:37,850 --> 00:54:40,130
+the theta i's in
+order to make there
+
+1111
+00:54:40,130 --> 00:54:42,370
+be very few possible crimps?
+
+1112
+00:54:42,370 --> 00:54:44,290
+AUDIENCE: When there are
+only two transitions.
+
+1113
+00:54:44,290 --> 00:54:46,206
+PROFESSOR: When there
+are only two transitions
+
+1114
+00:54:46,206 --> 00:54:47,590
+between mountains and valleys.
+
+1115
+00:54:47,590 --> 00:54:48,881
+All the mountains are together.
+
+1116
+00:54:48,881 --> 00:54:50,627
+All the valleys are together.
+
+1117
+00:54:50,627 --> 00:54:52,960
+That's right, if I was asking
+a question about mountains
+
+1118
+00:54:52,960 --> 00:54:53,490
+and valleys.
+
+1119
+00:54:53,490 --> 00:54:55,640
+But I was asking a
+question about theta i's.
+
+1120
+00:54:55,640 --> 00:54:59,010
+So I want to count how many
+mountain valley patterns there
+
+1121
+00:54:59,010 --> 00:55:02,490
+are-- mountain valley
+assignments that
+
+1122
+00:55:02,490 --> 00:55:09,953
+are flat foldable for
+a given crease pattern.
+
+1123
+00:55:09,953 --> 00:55:11,917
+AUDIENCE: So if you
+have a bunch of angles,
+
+1124
+00:55:11,917 --> 00:55:14,372
+consecutive theta
+i's are increasing?
+
+1125
+00:55:14,372 --> 00:55:16,800
+PROFESSOR: All the angles
+are consecutive increasing.
+
+1126
+00:55:16,800 --> 00:55:18,270
+Yeah, that pretty much works.
+
+1127
+00:55:18,270 --> 00:55:20,910
+In fact, what I need
+is the generic case,
+
+1128
+00:55:20,910 --> 00:55:24,450
+where all angles are
+different and they never
+
+1129
+00:55:24,450 --> 00:55:28,340
+become equal by folding,
+which is what generic means.
+
+1130
+00:55:28,340 --> 00:55:30,630
+So then there was only
+really one crimp I could do,
+
+1131
+00:55:30,630 --> 00:55:34,470
+which is the globally
+smallest angle.
+
+1132
+00:55:34,470 --> 00:55:36,090
+So actually, I still
+have two choices.
+
+1133
+00:55:36,090 --> 00:55:39,010
+I could do mountain then
+valley or valley then mountain.
+
+1134
+00:55:39,010 --> 00:55:41,600
+But I only have two
+choices for that crimp.
+
+1135
+00:55:41,600 --> 00:55:43,600
+Then I will have two
+choices for the next crimp,
+
+1136
+00:55:43,600 --> 00:55:45,060
+two choices for the next crimp.
+
+1137
+00:55:45,060 --> 00:55:51,420
+In general, I get 2 to the
+n possible mountain valley
+
+1138
+00:55:51,420 --> 00:55:53,410
+assignments for
+the generic case.
+
+1139
+00:55:53,410 --> 00:55:59,000
+
+1140
+00:55:59,000 --> 00:56:02,070
+OK, what about,
+what's the opposite,
+
+1141
+00:56:02,070 --> 00:56:03,970
+where I get as much
+choice as possible?
+
+1142
+00:56:03,970 --> 00:56:08,570
+AUDIENCE: Isn't 2 to the n every
+mountain valley assignment?
+
+1143
+00:56:08,570 --> 00:56:13,901
+PROFESSOR: Yes, 2 to the
+n-- no-- 2 to the n over 2.
+
+1144
+00:56:13,901 --> 00:56:14,400
+Thank you.
+
+1145
+00:56:14,400 --> 00:56:14,899
+Right.
+
+1146
+00:56:14,899 --> 00:56:17,460
+There are 2 to the n conceivable
+mountain valley assignments.
+
+1147
+00:56:17,460 --> 00:56:18,940
+It can't be that big.
+
+1148
+00:56:18,940 --> 00:56:21,160
+Every time I do a crimp, I
+eat two creases, not one.
+
+1149
+00:56:21,160 --> 00:56:22,950
+That's what I forgot.
+
+1150
+00:56:22,950 --> 00:56:24,590
+Good.
+
+1151
+00:56:24,590 --> 00:56:26,060
+It's still pretty big though.
+
+1152
+00:56:26,060 --> 00:56:28,540
+It's like square root of
+all the possible things you
+
+1153
+00:56:28,540 --> 00:56:31,720
+could imagine are
+indeed feasible.
+
+1154
+00:56:31,720 --> 00:56:34,080
+What, from 2 to the n
+to 2 to the n over 2.
+
+1155
+00:56:34,080 --> 00:56:37,078
+When would I get the
+most choice in crimping?
+
+1156
+00:56:37,078 --> 00:56:38,477
+AUDIENCE: All angles are equal.
+
+1157
+00:56:38,477 --> 00:56:39,810
+PROFESSOR: All angles are equal.
+
+1158
+00:56:39,810 --> 00:56:41,570
+That's the opposite extreme.
+
+1159
+00:56:41,570 --> 00:56:43,770
+And in this case--
+a little messier.
+
+1160
+00:56:43,770 --> 00:57:04,800
+
+1161
+00:57:04,800 --> 00:57:07,640
+When all the angles are
+equal, the only property
+
+1162
+00:57:07,640 --> 00:57:09,800
+you need-- and you can
+see that from the proof--
+
+1163
+00:57:09,800 --> 00:57:11,280
+the only property you
+need is that the number
+
+1164
+00:57:11,280 --> 00:57:12,696
+mountains minus
+the number valleys
+
+1165
+00:57:12,696 --> 00:57:16,930
+is plus or minus
+2, and n is even.
+
+1166
+00:57:16,930 --> 00:57:20,780
+As long as you have
+that, we showed here,
+
+1167
+00:57:20,780 --> 00:57:22,322
+you're going to
+have-- on alternation
+
+1168
+00:57:22,322 --> 00:57:24,655
+from mountain valley-- that's
+a valid crimp, because all
+
+1169
+00:57:24,655 --> 00:57:25,550
+the angles are equal.
+
+1170
+00:57:25,550 --> 00:57:26,840
+And you keep going.
+
+1171
+00:57:26,840 --> 00:57:31,390
+So it's just, how do you
+disperse that many-- how
+
+1172
+00:57:31,390 --> 00:57:36,460
+do I disperse n over
+2 minus 1 mountains
+
+1173
+00:57:36,460 --> 00:57:38,940
+among n different positions.
+
+1174
+00:57:38,940 --> 00:57:40,240
+That's what this represents.
+
+1175
+00:57:40,240 --> 00:57:42,920
+And positions, how do I pick
+n over 2 minus 1 of them
+
+1176
+00:57:42,920 --> 00:57:44,040
+to be mountains.
+
+1177
+00:57:44,040 --> 00:57:47,390
+Or it could be n over 2
+minus 1 of them are valleys.
+
+1178
+00:57:47,390 --> 00:57:48,930
+And that's this factor of 2.
+
+1179
+00:57:48,930 --> 00:57:50,930
+So it could have more
+mountains or more valleys.
+
+1180
+00:57:50,930 --> 00:57:53,520
+And then you somehow
+place those among those.
+
+1181
+00:57:53,520 --> 00:57:55,930
+And if you don't
+know this notation,
+
+1182
+00:57:55,930 --> 00:57:57,820
+that's just what it means.
+
+1183
+00:57:57,820 --> 00:58:01,670
+If you want to know
+using other notation,
+
+1184
+00:58:01,670 --> 00:58:05,960
+it's like this, n over
+2 minus 1 factorial,
+
+1185
+00:58:05,960 --> 00:58:08,250
+over 2 plus 1 factorial.
+
+1186
+00:58:08,250 --> 00:58:13,660
+If you don't know factorials,
+I'll tell you about them later.
+
+1187
+00:58:13,660 --> 00:58:15,410
+Cool.
+
+1188
+00:58:15,410 --> 00:58:17,980
+So that's kind of the end of
+the single vertex situation.
+
+1189
+00:58:17,980 --> 00:58:21,520
+
+1190
+00:58:21,520 --> 00:58:24,257
+Yeah, I think I'll mention one
+interesting open question here,
+
+1191
+00:58:24,257 --> 00:58:26,340
+which I would love to
+explore maybe in our problem
+
+1192
+00:58:26,340 --> 00:58:31,480
+session-- which looks like it'll
+be Mondays at 5:00, I think.
+
+1193
+00:58:31,480 --> 00:58:34,398
+
+1194
+00:58:34,398 --> 00:58:36,940
+This is one vertex, and we
+went through all this work
+
+1195
+00:58:36,940 --> 00:58:38,500
+to solve a single
+vertex situation.
+
+1196
+00:58:38,500 --> 00:58:40,930
+And it's interesting,
+as we'll see,
+
+1197
+00:58:40,930 --> 00:58:44,960
+to think about locally
+how each vertex behaves.
+
+1198
+00:58:44,960 --> 00:58:47,320
+But you would think, if
+you have a crease pattern
+
+1199
+00:58:47,320 --> 00:58:50,780
+with two vertices, it
+shouldn't be that much harder.
+
+1200
+00:58:50,780 --> 00:58:52,280
+So here we have linear time.
+
+1201
+00:58:52,280 --> 00:58:54,870
+How quickly can you tell
+whether a two vertex crease
+
+1202
+00:58:54,870 --> 00:58:56,420
+pattern is flat foldable?
+
+1203
+00:58:56,420 --> 00:58:59,260
+As far as I know, no one
+has looked at that problem.
+
+1204
+00:58:59,260 --> 00:59:01,890
+Surely, we can do
+it in quadratic time
+
+1205
+00:59:01,890 --> 00:59:04,060
+but maybe even
+linear time, I think.
+
+1206
+00:59:04,060 --> 00:59:07,800
+It can't be that hard, I think.
+
+1207
+00:59:07,800 --> 00:59:10,530
+In general, if I have a
+small number of vertices--
+
+1208
+00:59:10,530 --> 00:59:15,920
+say k vertices-- much
+smaller than n creases,
+
+1209
+00:59:15,920 --> 00:59:18,300
+is there-- for the
+algorithms people-- is there
+
+1210
+00:59:18,300 --> 00:59:20,860
+fixed parameter
+tractable algorithm in k?
+
+1211
+00:59:20,860 --> 00:59:23,350
+Or can I get something--
+even getting something like n
+
+1212
+00:59:23,350 --> 00:59:27,090
+to some function of
+k, would be progress.
+
+1213
+00:59:27,090 --> 00:59:28,690
+I think this should be doable.
+
+1214
+00:59:28,690 --> 00:59:30,700
+But ideally, we
+get a running time
+
+1215
+00:59:30,700 --> 00:59:35,300
+that's exponential
+in k and linear in n.
+
+1216
+00:59:35,300 --> 00:59:37,720
+That would be my hope.
+
+1217
+00:59:37,720 --> 00:59:39,460
+Why do I say it has
+to be exponential?
+
+1218
+00:59:39,460 --> 00:59:40,960
+Because in general,
+if I give you
+
+1219
+00:59:40,960 --> 00:59:43,460
+a crease pattern with n
+vertices-- lots of vertices--
+
+1220
+00:59:43,460 --> 00:59:45,280
+this problem is
+NP-complete, which
+
+1221
+00:59:45,280 --> 00:59:47,910
+is-- there's not going
+to be a polynomial time
+
+1222
+00:59:47,910 --> 00:59:48,960
+algorithm for it.
+
+1223
+00:59:48,960 --> 00:59:50,410
+Nothing good.
+
+1224
+00:59:50,410 --> 00:59:53,110
+We will prove that
+next Wednesday.
+
+1225
+00:59:53,110 --> 00:59:56,140
+So I'll hold off on
+that a little bit.
+
+1226
+00:59:56,140 --> 00:59:58,430
+But for two vertices,
+how hard could it be?
+
+1227
+00:59:58,430 --> 01:00:01,040
+
+1228
+01:00:01,040 --> 01:00:01,610
+All right.
+
+1229
+01:00:01,610 --> 01:00:23,360
+
+1230
+01:00:23,360 --> 01:00:25,110
+I want to talk about
+one related topic.
+
+1231
+01:00:25,110 --> 01:00:27,560
+And then we will go
+to origami design
+
+1232
+01:00:27,560 --> 01:00:30,460
+and do a little bit
+on the tree method.
+
+1233
+01:00:30,460 --> 01:00:33,140
+But before we get
+there, I want to talk
+
+1234
+01:00:33,140 --> 01:00:41,300
+about local foldability,
+which is a cool topic.
+
+1235
+01:00:41,300 --> 01:00:43,020
+People tend to forget about it.
+
+1236
+01:00:43,020 --> 01:00:43,730
+I really like it.
+
+1237
+01:00:43,730 --> 01:00:46,094
+I think it would make
+a cool project also.
+
+1238
+01:00:46,094 --> 01:00:47,010
+It's a nice algorithm.
+
+1239
+01:00:47,010 --> 01:00:50,250
+It goes back to Bern
+and Hayes, 1996.
+
+1240
+01:00:50,250 --> 01:00:52,180
+So it's also right
+at the beginning
+
+1241
+01:00:52,180 --> 01:00:55,360
+of origami mathematics.
+
+1242
+01:00:55,360 --> 01:00:57,350
+And it's this idea,
+all right, I give you
+
+1243
+01:00:57,350 --> 01:01:00,910
+a crease pattern now
+arbitrarily many vertices.
+
+1244
+01:01:00,910 --> 01:01:03,410
+And if I ask you,
+does it fold flat?
+
+1245
+01:01:03,410 --> 01:01:06,910
+That's NP-complete--
+intractable-- same paper.
+
+1246
+01:01:06,910 --> 01:01:09,230
+But what if I ask you just
+to give me a mountain valley
+
+1247
+01:01:09,230 --> 01:01:12,940
+assignment that might fold flat?
+
+1248
+01:01:12,940 --> 01:01:15,210
+Well, that's also NP-complete.
+
+1249
+01:01:15,210 --> 01:01:18,150
+But if you actually
+want it to fold flat,
+
+1250
+01:01:18,150 --> 01:01:19,610
+this is really the same problem.
+
+1251
+01:01:19,610 --> 01:01:22,980
+But if I ask you, give me a
+mountain valley assignment,
+
+1252
+01:01:22,980 --> 01:01:24,900
+so that if I checked
+every vertex according
+
+1253
+01:01:24,900 --> 01:01:28,582
+to this algorithm, at least
+every vertex folds flat.
+
+1254
+01:01:28,582 --> 01:01:31,501
+That would seem nice.
+
+1255
+01:01:31,501 --> 01:01:34,000
+Definitely, I have to find a
+mountain valley assignment that
+
+1256
+01:01:34,000 --> 01:01:36,190
+satisfies these
+conditions, that as I
+
+1257
+01:01:36,190 --> 01:01:39,320
+do successive crimps,
+every vertex-- if I cut out
+
+1258
+01:01:39,320 --> 01:01:41,070
+the vertex separately,
+it would fold flat.
+
+1259
+01:01:41,070 --> 01:01:43,360
+This is the notion
+of local foldability.
+
+1260
+01:01:43,360 --> 01:01:45,870
+And there's a linear
+time algorithm
+
+1261
+01:01:45,870 --> 01:01:49,310
+to give you a mountain valley
+assignment that ought to work,
+
+1262
+01:01:49,310 --> 01:01:50,810
+in that at each vertex it works.
+
+1263
+01:01:50,810 --> 01:01:53,250
+It still may not work globally
+for some other reason.
+
+1264
+01:01:53,250 --> 01:01:55,860
+
+1265
+01:01:55,860 --> 01:01:58,777
+But it's pretty good.
+
+1266
+01:01:58,777 --> 01:02:00,860
+I think this would be,
+actually, pretty practical.
+
+1267
+01:02:00,860 --> 01:02:04,940
+I think in a lot of real
+world origami settings--
+
+1268
+01:02:04,940 --> 01:02:09,160
+when you're doing
+flat folding anyway--
+
+1269
+01:02:09,160 --> 01:02:12,930
+locally foldable is going to be
+enough to be globally foldable.
+
+1270
+01:02:12,930 --> 01:02:14,217
+That's a guess.
+
+1271
+01:02:14,217 --> 01:02:15,300
+I don't know if it's true.
+
+1272
+01:02:15,300 --> 01:02:22,020
+
+1273
+01:02:22,020 --> 01:02:27,790
+Consistent mountain
+valley assignment,
+
+1274
+01:02:27,790 --> 01:02:44,010
+if there is one, so that each
+vertex locally folds flat.
+
+1275
+01:02:44,010 --> 01:03:04,970
+
+1276
+01:03:04,970 --> 01:03:10,730
+Let me try to concoct a
+small example that's relevant
+
+1277
+01:03:10,730 --> 01:03:21,110
+here-- got to think.
+
+1278
+01:03:21,110 --> 01:03:31,390
+
+1279
+01:03:31,390 --> 01:03:32,390
+Yes, I think that works.
+
+1280
+01:03:32,390 --> 01:03:34,857
+All right, here we go.
+
+1281
+01:03:34,857 --> 01:03:36,190
+I think this is in the textbook.
+
+1282
+01:03:36,190 --> 01:03:40,640
+I remember drawing it
+in the past three years
+
+1283
+01:03:40,640 --> 01:03:43,090
+ago or whatever.
+
+1284
+01:03:43,090 --> 01:03:46,458
+So here's a crease pattern
+on a square or whatever.
+
+1285
+01:03:46,458 --> 01:03:47,916
+AUDIENCE: The top
+one should have--
+
+1286
+01:03:47,916 --> 01:03:50,940
+PROFESSOR: Yes, it
+should have this.
+
+1287
+01:03:50,940 --> 01:03:53,220
+Thank you.
+
+1288
+01:03:53,220 --> 01:03:55,370
+So this satisfies
+Kawasaki's theorem--
+
+1289
+01:03:55,370 --> 01:03:58,850
+that was the hard part--
+because these angles sum to 180.
+
+1290
+01:03:58,850 --> 01:04:01,000
+And it's symmetric all around.
+
+1291
+01:04:01,000 --> 01:04:04,580
+OK, these angles
+are the smallest.
+
+1292
+01:04:04,580 --> 01:04:06,960
+They are 60 degrees.
+
+1293
+01:04:06,960 --> 01:04:09,046
+This is an equilateral triangle.
+
+1294
+01:04:09,046 --> 01:04:10,920
+So we have this-- not
+quite the generic case,
+
+1295
+01:04:10,920 --> 01:04:12,680
+but we have the
+smallest angle is
+
+1296
+01:04:12,680 --> 01:04:15,757
+surrounded by two larger angles.
+
+1297
+01:04:15,757 --> 01:04:17,340
+Therefore, one of
+these is a mountain;
+
+1298
+01:04:17,340 --> 01:04:18,980
+the other is a valley.
+
+1299
+01:04:18,980 --> 01:04:21,800
+That means that
+these two creases
+
+1300
+01:04:21,800 --> 01:04:23,580
+have to have different
+assignments-- I'm
+
+1301
+01:04:23,580 --> 01:04:24,914
+going to write a not equal sign.
+
+1302
+01:04:24,914 --> 01:04:27,163
+One of these is a mountain,
+and the other is a valley.
+
+1303
+01:04:27,163 --> 01:04:28,300
+They can't be the same.
+
+1304
+01:04:28,300 --> 01:04:30,670
+Also, these two
+cannot be the same.
+
+1305
+01:04:30,670 --> 01:04:32,910
+Also, these two
+cannot be the same.
+
+1306
+01:04:32,910 --> 01:04:34,840
+That's not possible.
+
+1307
+01:04:34,840 --> 01:04:37,140
+Because I've got three,
+it has to alternate.
+
+1308
+01:04:37,140 --> 01:04:39,070
+You can alternate three times.
+
+1309
+01:04:39,070 --> 01:04:42,040
+You can only alternative
+at even number of times.
+
+1310
+01:04:42,040 --> 01:04:43,460
+Two of these are mountains.
+
+1311
+01:04:43,460 --> 01:04:44,190
+One is valley.
+
+1312
+01:04:44,190 --> 01:04:45,950
+And then you've got a problem.
+
+1313
+01:04:45,950 --> 01:04:48,140
+OK, so this thing is
+not flat foldable.
+
+1314
+01:04:48,140 --> 01:04:49,724
+And this algorithm
+will tell you that.
+
+1315
+01:04:49,724 --> 01:04:51,306
+Because it will say,
+hey, I can't even
+
+1316
+01:04:51,306 --> 01:04:52,900
+find a mountain
+valley assignment
+
+1317
+01:04:52,900 --> 01:04:56,920
+that could possibly
+fold each vertex flat.
+
+1318
+01:04:56,920 --> 01:05:01,600
+So this is a nice algorithm.
+
+1319
+01:05:01,600 --> 01:05:06,200
+At least, it will detect
+annoying situations like that.
+
+1320
+01:05:06,200 --> 01:05:10,820
+So in order to solve
+this, we're going to use--
+
+1321
+01:05:10,820 --> 01:05:13,310
+and I'm just going to sketch
+how this algorithm works--
+
+1322
+01:05:13,310 --> 01:05:15,990
+we're going to use this
+characterization and this idea
+
+1323
+01:05:15,990 --> 01:05:18,540
+that we can really find all
+possible mountain valley
+
+1324
+01:05:18,540 --> 01:05:22,134
+assignments just by trying all
+the possible crimp sequences.
+
+1325
+01:05:22,134 --> 01:05:23,550
+Now, there are
+exponentially many.
+
+1326
+01:05:23,550 --> 01:05:25,770
+So it's not like I'm actually
+going to try them all.
+
+1327
+01:05:25,770 --> 01:05:29,545
+But I need to explore that
+space of candidate crimps
+
+1328
+01:05:29,545 --> 01:05:30,420
+and see what happens.
+
+1329
+01:05:30,420 --> 01:05:36,350
+
+1330
+01:05:36,350 --> 01:05:42,800
+So the idea is kind of crazy.
+
+1331
+01:05:42,800 --> 01:05:44,790
+The beginning of
+the algorithm is
+
+1332
+01:05:44,790 --> 01:05:48,070
+fold each vertex flat-- somehow.
+
+1333
+01:05:48,070 --> 01:05:49,650
+I don't care how.
+
+1334
+01:05:49,650 --> 01:05:51,020
+Just pick a crimp, do it.
+
+1335
+01:05:51,020 --> 01:05:53,900
+Pick a crimp, do it--
+separately for each vertex.
+
+1336
+01:05:53,900 --> 01:05:55,940
+They're not going
+to be compatible.
+
+1337
+01:05:55,940 --> 01:05:58,770
+And don't look at the mountain
+valley assignment you get.
+
+1338
+01:05:58,770 --> 01:06:01,960
+But look at the crimping
+sequence you get.
+
+1339
+01:06:01,960 --> 01:06:06,380
+So here, let's do
+a little example--
+
+1340
+01:06:06,380 --> 01:06:08,150
+a non-trivial example.
+
+1341
+01:06:08,150 --> 01:06:11,760
+So here, we have the peace sign,
+and these two angles are equal.
+
+1342
+01:06:11,760 --> 01:06:12,690
+They're smallest.
+
+1343
+01:06:12,690 --> 01:06:14,942
+I could crimp this
+angle first, or I
+
+1344
+01:06:14,942 --> 01:06:16,150
+could crimp this angle first.
+
+1345
+01:06:16,150 --> 01:06:17,427
+I have a choice.
+
+1346
+01:06:17,427 --> 01:06:18,510
+So I'll draw both of them.
+
+1347
+01:06:18,510 --> 01:06:22,580
+
+1348
+01:06:22,580 --> 01:06:26,840
+If I crimp this angle
+first, I know these guys
+
+1349
+01:06:26,840 --> 01:06:29,310
+are paired up in the sense
+that they must be not equal--
+
+1350
+01:06:29,310 --> 01:06:31,230
+one's mountain and one's valley.
+
+1351
+01:06:31,230 --> 01:06:34,160
+After I do that crimp-- just
+like in the real example
+
+1352
+01:06:34,160 --> 01:06:37,620
+I had-- this angle
+will equal that angle.
+
+1353
+01:06:37,620 --> 01:06:41,660
+And these two guys must
+have equal assignments.
+
+1354
+01:06:41,660 --> 01:06:43,980
+They must be both
+mountain or both valley.
+
+1355
+01:06:43,980 --> 01:06:46,910
+In this situation,
+these two guys
+
+1356
+01:06:46,910 --> 01:06:50,600
+are not equal, if I
+crimp this pair first.
+
+1357
+01:06:50,600 --> 01:06:52,535
+And these two guys must
+be equal-- equal now
+
+1358
+01:06:52,535 --> 01:06:56,000
+in the sense of being
+mountain or valley.
+
+1359
+01:06:56,000 --> 01:06:59,670
+OK, so there are still
+exponentially many
+
+1360
+01:06:59,670 --> 01:07:01,140
+possibilities in how to do this.
+
+1361
+01:07:01,140 --> 01:07:04,500
+But just pick one-- pick one
+of these ways of pairing up.
+
+1362
+01:07:04,500 --> 01:07:07,040
+You're going to pair up
+each of the n creases
+
+1363
+01:07:07,040 --> 01:07:09,330
+into n over 2 pairs.
+
+1364
+01:07:09,330 --> 01:07:14,050
+And they're going to have some
+not equal and equal signs.
+
+1365
+01:07:14,050 --> 01:07:16,350
+So now, if you imagine
+the general picture,
+
+1366
+01:07:16,350 --> 01:07:20,130
+like here, for example, I
+might get-- in this pattern,
+
+1367
+01:07:20,130 --> 01:07:22,210
+I would be forced
+to get not equals
+
+1368
+01:07:22,210 --> 01:07:24,660
+and these guys paired up.
+
+1369
+01:07:24,660 --> 01:07:28,075
+And in general, I want to
+look at these kinds of cycles.
+
+1370
+01:07:28,075 --> 01:07:30,950
+
+1371
+01:07:30,950 --> 01:07:36,650
+If I come into a vertex--
+here's a vertex--
+
+1372
+01:07:36,650 --> 01:07:38,470
+it's paired up with somebody.
+
+1373
+01:07:38,470 --> 01:07:41,400
+So if I come in here,
+I can go out somewhere.
+
+1374
+01:07:41,400 --> 01:07:44,760
+And I come to this vertex,
+it's paired with somebody.
+
+1375
+01:07:44,760 --> 01:07:47,880
+So I'm going to just-- I
+can keep wandering around.
+
+1376
+01:07:47,880 --> 01:07:51,315
+And in general, there will
+be a bunch of these paths
+
+1377
+01:07:51,315 --> 01:07:53,150
+that you can follow.
+
+1378
+01:07:53,150 --> 01:07:54,150
+What could the paths do?
+
+1379
+01:07:54,150 --> 01:07:57,850
+They either close up on
+themselves-- maybe things
+
+1380
+01:07:57,850 --> 01:08:03,160
+are paired up in such a way
+that you make a return trip.
+
+1381
+01:08:03,160 --> 01:08:05,380
+Or it could be some other path.
+
+1382
+01:08:05,380 --> 01:08:07,805
+Let me draw a dotted path.
+
+1383
+01:08:07,805 --> 01:08:09,745
+It could come in
+here, and maybe it
+
+1384
+01:08:09,745 --> 01:08:11,680
+gets paired up with this guy.
+
+1385
+01:08:11,680 --> 01:08:13,110
+Maybe it goes off to infinity.
+
+1386
+01:08:13,110 --> 01:08:14,767
+It reaches the
+boundary of the paper.
+
+1387
+01:08:14,767 --> 01:08:16,100
+Those are the two possibilities.
+
+1388
+01:08:16,100 --> 01:08:18,750
+You get paths, which
+go off to the edge--
+
+1389
+01:08:18,750 --> 01:08:20,370
+off to infinity on either end.
+
+1390
+01:08:20,370 --> 01:08:22,490
+Or you could get cycles.
+
+1391
+01:08:22,490 --> 01:08:24,500
+The cycles are the problem.
+
+1392
+01:08:24,500 --> 01:08:28,979
+Because whenever I have a cycle,
+I have a parity constraint.
+
+1393
+01:08:28,979 --> 01:08:32,479
+For example, when
+they're all not equals,
+
+1394
+01:08:32,479 --> 01:08:35,510
+the length of the
+cycle must be even.
+
+1395
+01:08:35,510 --> 01:08:40,200
+If there were-- what's
+the general statement?
+
+1396
+01:08:40,200 --> 01:08:42,344
+It's like the
+parity of the cycle,
+
+1397
+01:08:42,344 --> 01:08:43,760
+which is whether
+it's even or odd,
+
+1398
+01:08:43,760 --> 01:08:48,219
+should be equal to the parity of
+the number of not equal signs.
+
+1399
+01:08:48,219 --> 01:08:51,840
+
+1400
+01:08:51,840 --> 01:08:54,084
+Something like that.
+
+1401
+01:08:54,084 --> 01:08:55,000
+I've got a sheet here.
+
+1402
+01:08:55,000 --> 01:09:02,744
+
+1403
+01:09:02,744 --> 01:09:05,310
+Great, I just said
+"parity problems."
+
+1404
+01:09:05,310 --> 01:09:06,370
+It's something like that.
+
+1405
+01:09:06,370 --> 01:09:08,470
+It's either the
+parity of the cycle
+
+1406
+01:09:08,470 --> 01:09:10,490
+should equal the parity
+of the number of equals
+
+1407
+01:09:10,490 --> 01:09:12,590
+or the parity of the
+number of not equals.
+
+1408
+01:09:12,590 --> 01:09:14,850
+I think, number of equals.
+
+1409
+01:09:14,850 --> 01:09:17,760
+Anyway, one of the two.
+
+1410
+01:09:17,760 --> 01:09:18,819
+And you can just check.
+
+1411
+01:09:18,819 --> 01:09:19,735
+I mean, you're forced.
+
+1412
+01:09:19,735 --> 01:09:21,750
+If I say, OK, let's
+make this mountain,
+
+1413
+01:09:21,750 --> 01:09:23,569
+then this is either
+equals or not equals.
+
+1414
+01:09:23,569 --> 01:09:25,140
+It'll tell me whether this
+is mountain or valley.
+
+1415
+01:09:25,140 --> 01:09:26,270
+Just walk around the cycle.
+
+1416
+01:09:26,270 --> 01:09:28,399
+Either you get a
+contradiction or you don't.
+
+1417
+01:09:28,399 --> 01:09:32,020
+If you get a contradiction,
+we have a problem.
+
+1418
+01:09:32,020 --> 01:09:34,580
+How could we possibly
+fix the problem?
+
+1419
+01:09:34,580 --> 01:09:40,895
+Well, when we made-- you
+look at each of these cramps.
+
+1420
+01:09:40,895 --> 01:09:43,270
+I mean, in fact, you could
+look at each of these vertices
+
+1421
+01:09:43,270 --> 01:09:43,760
+separately.
+
+1422
+01:09:43,760 --> 01:09:46,010
+But you think about one of
+these crimps and say, well,
+
+1423
+01:09:46,010 --> 01:09:47,569
+could I have done
+it another way?
+
+1424
+01:09:47,569 --> 01:09:51,412
+Sometimes, there are crimps
+that have other equal choices.
+
+1425
+01:09:51,412 --> 01:09:53,120
+Maybe, there are a
+bunch of equal angles.
+
+1426
+01:09:53,120 --> 01:09:56,260
+And I could have done
+a different pairing.
+
+1427
+01:09:56,260 --> 01:09:58,570
+What happens when I try
+a different pairing?
+
+1428
+01:09:58,570 --> 01:10:02,790
+Well, instead of this
+being in one cycle
+
+1429
+01:10:02,790 --> 01:10:06,730
+and, let's say, this
+being in another cycle,
+
+1430
+01:10:06,730 --> 01:10:09,010
+if I pair these guys
+up instead, I'll
+
+1431
+01:10:09,010 --> 01:10:12,650
+end up merging those two
+cycles into one bigger thing.
+
+1432
+01:10:12,650 --> 01:10:15,120
+It could be a path or a cycle.
+
+1433
+01:10:15,120 --> 01:10:19,350
+And the algorithm says, just
+keep doing those cycle merges.
+
+1434
+01:10:19,350 --> 01:10:23,320
+And if you get stuck, your
+thing is not locally foldable.
+
+1435
+01:10:23,320 --> 01:10:25,330
+That's the hard part to prove.
+
+1436
+01:10:25,330 --> 01:10:28,836
+Otherwise, you will find
+one of these patterns
+
+1437
+01:10:28,836 --> 01:10:30,960
+that you can actually
+resolve mountains and valleys
+
+1438
+01:10:30,960 --> 01:10:32,640
+all the way through.
+
+1439
+01:10:32,640 --> 01:10:50,830
+So let's say, so start with some
+folding-- say local folding,
+
+1440
+01:10:50,830 --> 01:10:51,880
+whatever.
+
+1441
+01:10:51,880 --> 01:10:58,365
+I'm going to say with some
+pairing of creases at vertices.
+
+1442
+01:10:58,365 --> 01:11:05,960
+
+1443
+01:11:05,960 --> 01:11:28,885
+And merge two paths or
+cycles whenever possible.
+
+1444
+01:11:28,885 --> 01:11:32,500
+
+1445
+01:11:32,500 --> 01:11:37,260
+And when I say merge,
+I mean whenever
+
+1446
+01:11:37,260 --> 01:11:40,610
+you have-- what are the possible
+things you could possibly
+
+1447
+01:11:40,610 --> 01:11:43,220
+merge-- when you have at some
+point during the algorithm
+
+1448
+01:11:43,220 --> 01:11:46,140
+a bunch of equal angles, you
+have a choice which of these
+
+1449
+01:11:46,140 --> 01:11:46,680
+you crimp.
+
+1450
+01:11:46,680 --> 01:11:49,820
+Obviously, the mountain valley
+assignment is not fixed.
+
+1451
+01:11:49,820 --> 01:11:52,950
+You can crimp any of them.
+
+1452
+01:11:52,950 --> 01:11:55,420
+You picked one of
+them, and it's sort
+
+1453
+01:11:55,420 --> 01:11:57,710
+of merging whatever this
+thing is attached to,
+
+1454
+01:11:57,710 --> 01:12:00,880
+to whatever this
+thing is attached to.
+
+1455
+01:12:00,880 --> 01:12:05,160
+If there's something else that's
+disconnected from that thing,
+
+1456
+01:12:05,160 --> 01:12:08,590
+I want you to instead
+merge two of them that
+
+1457
+01:12:08,590 --> 01:12:10,860
+combines two different
+connected components-- two
+
+1458
+01:12:10,860 --> 01:12:12,380
+paths or cycles.
+
+1459
+01:12:12,380 --> 01:12:14,450
+Merging means I decrease
+the total number
+
+1460
+01:12:14,450 --> 01:12:15,280
+of paths or cycles.
+
+1461
+01:12:15,280 --> 01:12:16,720
+I combine two into one.
+
+1462
+01:12:16,720 --> 01:12:18,810
+Whenever that's possible, do it.
+
+1463
+01:12:18,810 --> 01:12:21,080
+You can prove that
+if you have parity
+
+1464
+01:12:21,080 --> 01:12:23,284
+problem in the
+merge thing, you had
+
+1465
+01:12:23,284 --> 01:12:24,950
+to have had a parity
+problem originally.
+
+1466
+01:12:24,950 --> 01:12:28,760
+And merging can only
+fix parity problems.
+
+1467
+01:12:28,760 --> 01:12:31,440
+That's the claim, and that's
+what I will not prove.
+
+1468
+01:12:31,440 --> 01:12:33,970
+Once you know that-- and it
+doesn't matter in what order
+
+1469
+01:12:33,970 --> 01:12:37,360
+or how you choose to merge-- you
+just merge as much as possible.
+
+1470
+01:12:37,360 --> 01:12:41,729
+And either the resulting
+thing is OK or not.
+
+1471
+01:12:41,729 --> 01:12:43,770
+And accordingly, you will
+tell whether this thing
+
+1472
+01:12:43,770 --> 01:12:46,150
+is locally foldable.
+
+1473
+01:12:46,150 --> 01:12:48,200
+Sorry, I want to move
+on to other things.
+
+1474
+01:12:48,200 --> 01:12:50,840
+But I think this would be a fun
+thing to actually implement.
+
+1475
+01:12:50,840 --> 01:12:52,810
+It's an easy algorithm.
+
+1476
+01:12:52,810 --> 01:13:00,500
+And it's, I think, a pretty good
+test it for problems like this
+
+1477
+01:13:00,500 --> 01:13:01,790
+that prevent flat foldability.
+
+1478
+01:13:01,790 --> 01:13:13,010
+
+1479
+01:13:13,010 --> 01:13:17,120
+So let's move on from
+foldability to origami design.
+
+1480
+01:13:17,120 --> 01:13:21,190
+
+1481
+01:13:21,190 --> 01:13:23,095
+So a bit of a big transition.
+
+1482
+01:13:23,095 --> 01:13:26,380
+And we're going to talk
+about origami design
+
+1483
+01:13:26,380 --> 01:13:34,420
+a lot more next class also
+but just start it off today.
+
+1484
+01:13:34,420 --> 01:13:37,960
+And the particular
+algorithm for origami design
+
+1485
+01:13:37,960 --> 01:13:41,350
+I want to talk about is
+called the tree method.
+
+1486
+01:13:41,350 --> 01:13:44,100
+This is probably
+the oldest algorithm
+
+1487
+01:13:44,100 --> 01:13:47,440
+for origami design,
+in that people
+
+1488
+01:13:47,440 --> 01:13:51,200
+have been thinking about it and
+developing it for many years
+
+1489
+01:13:51,200 --> 01:13:53,640
+through this period called
+the Bug Wars, when people were
+
+1490
+01:13:53,640 --> 01:13:56,380
+trying to design more and
+more complicated insects.
+
+1491
+01:13:56,380 --> 01:13:59,640
+It's like, well, I can make
+an insect with six legs.
+
+1492
+01:13:59,640 --> 01:14:03,110
+Oh yeah, well I can make
+a spider with eight legs.
+
+1493
+01:14:03,110 --> 01:14:07,160
+Oh yeah, well I can make
+an insect-- a beetle that
+
+1494
+01:14:07,160 --> 01:14:10,100
+has wings and horns and there's
+thorns on the horns-- you know,
+
+1495
+01:14:10,100 --> 01:14:12,280
+all these crazy things.
+
+1496
+01:14:12,280 --> 01:14:13,780
+During that time,
+there were a lot
+
+1497
+01:14:13,780 --> 01:14:15,154
+of people thinking
+about how do I
+
+1498
+01:14:15,154 --> 01:14:19,450
+make more and more
+complicated-- especially, more
+
+1499
+01:14:19,450 --> 01:14:23,490
+limbs in my creatures
+and very precise
+
+1500
+01:14:23,490 --> 01:14:25,450
+arrangements of those
+limbs, let's say.
+
+1501
+01:14:25,450 --> 01:14:28,190
+And that is what the tree
+method deals with and was really
+
+1502
+01:14:28,190 --> 01:14:34,920
+formalized by Robert Lang,
+who published a paper in '96,
+
+1503
+01:14:34,920 --> 01:14:39,310
+describing it as a sort
+of complete algorithm.
+
+1504
+01:14:39,310 --> 01:14:42,440
+And it's still
+not known for sure
+
+1505
+01:14:42,440 --> 01:14:43,980
+that that algorithm
+always works.
+
+1506
+01:14:43,980 --> 01:14:46,430
+But that's what
+we've been working
+
+1507
+01:14:46,430 --> 01:14:51,760
+on-- me and Marty and Rob Lang--
+for the last four years or so.
+
+1508
+01:14:51,760 --> 01:14:54,100
+And soon, we will
+publish that thing
+
+1509
+01:14:54,100 --> 01:14:56,145
+and prove that this
+thing always works.
+
+1510
+01:14:56,145 --> 01:14:58,520
+But I'm going to describe the
+algorithm without the proof
+
+1511
+01:14:58,520 --> 01:14:59,670
+that it works.
+
+1512
+01:14:59,670 --> 01:15:05,362
+And what it does--
+I'll tell you its goal
+
+1513
+01:15:05,362 --> 01:15:06,695
+from a mathematical perspective.
+
+1514
+01:15:06,695 --> 01:15:17,760
+
+1515
+01:15:17,760 --> 01:15:20,072
+So it's interested in
+practical origami design.
+
+1516
+01:15:20,072 --> 01:15:22,280
+So we're going to start from
+a square piece of paper.
+
+1517
+01:15:22,280 --> 01:15:24,120
+It would also work
+for triangular pieces
+
+1518
+01:15:24,120 --> 01:15:27,200
+of paper or anything convex.
+
+1519
+01:15:27,200 --> 01:15:30,624
+But squares are what
+people usually care about.
+
+1520
+01:15:30,624 --> 01:15:32,290
+Sometimes it's used
+for rectangles also.
+
+1521
+01:15:32,290 --> 01:16:06,010
+
+1522
+01:16:06,010 --> 01:16:09,750
+The idea is I give to
+you a stick figure.
+
+1523
+01:16:09,750 --> 01:16:12,610
+
+1524
+01:16:12,610 --> 01:16:14,250
+So that's formally,
+it's a tree--
+
+1525
+01:16:14,250 --> 01:16:16,590
+a graph without any cycles.
+
+1526
+01:16:16,590 --> 01:16:20,910
+It's a metric tree, meaning
+that I put lengths on the edges.
+
+1527
+01:16:20,910 --> 01:16:23,180
+I know this length-- this
+edge length-- is maybe
+
+1528
+01:16:23,180 --> 01:16:24,420
+twice as long as this one.
+
+1529
+01:16:24,420 --> 01:16:27,880
+So I really draw it with
+edge lengths in mind.
+
+1530
+01:16:27,880 --> 01:16:32,100
+Then what I want
+you to do is find
+
+1531
+01:16:32,100 --> 01:16:38,320
+some folding of a
+piece of paper--
+
+1532
+01:16:38,320 --> 01:16:41,450
+I should really be looking
+at what I'm trying to match.
+
+1533
+01:16:41,450 --> 01:17:05,640
+So here, here, this
+goes down, such
+
+1534
+01:17:05,640 --> 01:17:08,790
+that I want to find some folding
+of a square paper-- in fact,
+
+1535
+01:17:08,790 --> 01:17:12,420
+the smallest square
+possible, so that when
+
+1536
+01:17:12,420 --> 01:17:18,600
+I project-- like
+this-- vertically,
+
+1537
+01:17:18,600 --> 01:17:25,770
+the projection of that folding
+is exactly that metric tree.
+
+1538
+01:17:25,770 --> 01:17:28,440
+And this is called a
+uniaxial-- this thing is
+
+1539
+01:17:28,440 --> 01:17:30,380
+called a uniaxial base.
+
+1540
+01:17:30,380 --> 01:17:33,200
+Let me tell you a little bit
+why it's called a uniaxial base.
+
+1541
+01:17:33,200 --> 01:17:36,780
+
+1542
+01:17:36,780 --> 01:17:39,720
+We're thinking about what
+are called origami bases.
+
+1543
+01:17:39,720 --> 01:17:43,070
+These there like the
+beginning of origami models.
+
+1544
+01:17:43,070 --> 01:17:45,790
+And most classic
+origami models--
+
+1545
+01:17:45,790 --> 01:17:51,480
+like more than 60 years ago--
+start from one of these bases.
+
+1546
+01:17:51,480 --> 01:17:58,280
+You've got waterbomb base on
+the top left, preliminary base,
+
+1547
+01:17:58,280 --> 01:18:05,057
+fish base, bird base
+windmill base, and frog base.
+
+1548
+01:18:05,057 --> 01:18:06,140
+I can't remember them all.
+
+1549
+01:18:06,140 --> 01:18:07,750
+I have a little example here.
+
+1550
+01:18:07,750 --> 01:18:10,250
+This is the waterbomb base.
+
+1551
+01:18:10,250 --> 01:18:14,310
+So it's just very
+simple crease pattern.
+
+1552
+01:18:14,310 --> 01:18:17,200
+And why this is useful
+is, it gives you
+
+1553
+01:18:17,200 --> 01:18:19,870
+sort of four flaps of
+paper to work with.
+
+1554
+01:18:19,870 --> 01:18:23,140
+Maybe you make one
+of them the head
+
+1555
+01:18:23,140 --> 01:18:26,090
+and the other two wings
+and the back one a tail,
+
+1556
+01:18:26,090 --> 01:18:27,430
+if you're making a crane.
+
+1557
+01:18:27,430 --> 01:18:29,380
+If doesn't actually
+start not from this space
+
+1558
+01:18:29,380 --> 01:18:32,110
+but from the other one.
+
+1559
+01:18:32,110 --> 01:18:33,490
+But the same idea.
+
+1560
+01:18:33,490 --> 01:18:35,490
+If you're folding a
+crane, one of these
+
+1561
+01:18:35,490 --> 01:18:38,360
+would be the head, the
+other tail, and two wings.
+
+1562
+01:18:38,360 --> 01:18:41,370
+This is great if you're
+making a four flap animal.
+
+1563
+01:18:41,370 --> 01:18:43,520
+And if you think
+about its projection--
+
+1564
+01:18:43,520 --> 01:18:49,020
+and it's easier to think
+about in this other picture--
+
+1565
+01:18:49,020 --> 01:18:54,210
+the projection of this
+thing is a four limbed star.
+
+1566
+01:18:54,210 --> 01:18:55,990
+You can see it's a plus sign.
+
+1567
+01:18:55,990 --> 01:18:57,796
+All of them are the same length.
+
+1568
+01:18:57,796 --> 01:18:59,170
+And so this is
+actually something
+
+1569
+01:18:59,170 --> 01:19:01,110
+you can get out of
+the tree method.
+
+1570
+01:19:01,110 --> 01:19:03,920
+You just give that
+as your input.
+
+1571
+01:19:03,920 --> 01:19:07,370
+You will get this 3D thing
+and this crease pattern
+
+1572
+01:19:07,370 --> 01:19:13,560
+as your origami-- as the output.
+
+1573
+01:19:13,560 --> 01:19:16,650
+Let me show you the
+program in action.
+
+1574
+01:19:16,650 --> 01:19:18,350
+So Robert Lang
+implemented this thing.
+
+1575
+01:19:18,350 --> 01:19:19,610
+It's called tree maker.
+
+1576
+01:19:19,610 --> 01:19:22,525
+It's freely available, open
+source, all that good stuff.
+
+1577
+01:19:22,525 --> 01:19:28,040
+
+1578
+01:19:28,040 --> 01:19:31,470
+And I'm not an expert at
+using it, so bear with me.
+
+1579
+01:19:31,470 --> 01:19:39,470
+But if we wanted to say,
+I would like that star.
+
+1580
+01:19:39,470 --> 01:19:42,800
+OK, now, I drew it obviously
+not with all the lengths equal,
+
+1581
+01:19:42,800 --> 01:19:44,590
+but it's ignoring the
+lengths that I drew.
+
+1582
+01:19:44,590 --> 01:19:46,090
+And they're actually
+specified here.
+
+1583
+01:19:46,090 --> 01:19:48,060
+So all the lengths here
+are supposed to be 1.
+
+1584
+01:19:48,060 --> 01:19:51,000
+And then I say, OK, optimize.
+
+1585
+01:19:51,000 --> 01:19:53,160
+And then make a crease pattern.
+
+1586
+01:19:53,160 --> 01:19:55,135
+And then show me
+the crease pattern.
+
+1587
+01:19:55,135 --> 01:19:57,560
+And there it is, exactly
+the crease pattern
+
+1588
+01:19:57,560 --> 01:20:00,202
+I made, although actually I can
+see from the mountain valley
+
+1589
+01:20:00,202 --> 01:20:01,910
+assignment-- because
+this is not really--
+
+1590
+01:20:01,910 --> 01:20:03,950
+this is not flat origami.
+
+1591
+01:20:03,950 --> 01:20:05,740
+It made it this way.
+
+1592
+01:20:05,740 --> 01:20:06,340
+So it's flat.
+
+1593
+01:20:06,340 --> 01:20:09,120
+Of course, the projection is
+the same-- still four limbs.
+
+1594
+01:20:09,120 --> 01:20:12,060
+
+1595
+01:20:12,060 --> 01:20:16,830
+And so it's dashes for valleys
+and solid lines for mountains.
+
+1596
+01:20:16,830 --> 01:20:19,040
+But you can make
+anything you want.
+
+1597
+01:20:19,040 --> 01:20:24,630
+So let's say we want to
+make-- I don't know-- a lizard
+
+1598
+01:20:24,630 --> 01:20:25,850
+or something.
+
+1599
+01:20:25,850 --> 01:20:28,800
+So the blue lines are the tree.
+
+1600
+01:20:28,800 --> 01:20:37,320
+
+1601
+01:20:37,320 --> 01:20:38,670
+So here's-- can I do this?
+
+1602
+01:20:38,670 --> 01:20:40,470
+Yes, there we go.
+
+1603
+01:20:40,470 --> 01:20:45,880
+So here, I have a forearm,
+a head, a foreleg,
+
+1604
+01:20:45,880 --> 01:20:50,990
+another forearm, a body segment,
+tail, and two hind legs.
+
+1605
+01:20:50,990 --> 01:20:53,320
+Maybe I want to make that.
+
+1606
+01:20:53,320 --> 01:20:58,130
+So I say optimize and then
+make a crease pattern, and then
+
+1607
+01:20:58,130 --> 01:20:58,840
+boom.
+
+1608
+01:20:58,840 --> 01:21:01,500
+You fold that, and it will
+have exactly that projection.
+
+1609
+01:21:01,500 --> 01:21:04,250
+And assuming it did a
+reasonable job at computation,
+
+1610
+01:21:04,250 --> 01:21:06,536
+this will be the best
+way to fold this thing.
+
+1611
+01:21:06,536 --> 01:21:07,910
+And it's the
+smallest square that
+
+1612
+01:21:07,910 --> 01:21:10,170
+matches exactly that shape.
+
+1613
+01:21:10,170 --> 01:21:14,800
+You get the best scale
+factor between the size
+
+1614
+01:21:14,800 --> 01:21:17,070
+of your piece of paper
+and the target shape.
+
+1615
+01:21:17,070 --> 01:21:19,290
+But actually, doing
+that optimization--
+
+1616
+01:21:19,290 --> 01:21:20,944
+the first step I
+did-- is NP-complete.
+
+1617
+01:21:20,944 --> 01:21:22,485
+So it's not going
+to do it perfectly,
+
+1618
+01:21:22,485 --> 01:21:25,220
+and we'll prove that Wednesday.
+
+1619
+01:21:25,220 --> 01:21:27,020
+But the heuristics
+are pretty good.
+
+1620
+01:21:27,020 --> 01:21:28,256
+AUDIENCE: It finds a local.
+
+1621
+01:21:28,256 --> 01:21:30,190
+PROFESSOR: It finds
+a local minimum,
+
+1622
+01:21:30,190 --> 01:21:32,210
+and often it finds
+a pretty good one.
+
+1623
+01:21:32,210 --> 01:21:35,500
+And sometimes you can coax it
+to find better ones, but, yeah.
+
+1624
+01:21:35,500 --> 01:21:37,520
+It's not perfect, but
+hey, it's NP-complete.
+
+1625
+01:21:37,520 --> 01:21:39,080
+So you can't do it.
+
+1626
+01:21:39,080 --> 01:21:42,860
+This actually shows you what it
+would look like in x-ray view.
+
+1627
+01:21:42,860 --> 01:21:46,140
+
+1628
+01:21:46,140 --> 01:21:49,600
+And then you can say,
+oh, that was nice,
+
+1629
+01:21:49,600 --> 01:21:55,480
+but let's-- where is
+my-- yeah, that was good.
+
+1630
+01:21:55,480 --> 01:21:58,350
+But maybe I really
+wanted the head segment
+
+1631
+01:21:58,350 --> 01:22:03,160
+to be shorter length of 0.5.
+
+1632
+01:22:03,160 --> 01:22:07,410
+And then I wanted the
+tail to be really long.
+
+1633
+01:22:07,410 --> 01:22:11,740
+And then you can optimize that
+and find a crease pattern.
+
+1634
+01:22:11,740 --> 01:22:12,670
+And it'll complain.
+
+1635
+01:22:12,670 --> 01:22:14,310
+Because it's having trouble.
+
+1636
+01:22:14,310 --> 01:22:14,810
+Oh, dear.
+
+1637
+01:22:14,810 --> 01:22:17,650
+
+1638
+01:22:17,650 --> 01:22:18,360
+Demo effect.
+
+1639
+01:22:18,360 --> 01:22:21,040
+I should have tried
+this example before.
+
+1640
+01:22:21,040 --> 01:22:23,435
+It's not-- oh, gosh.
+
+1641
+01:22:23,435 --> 01:22:25,020
+It's one of these annoying ones.
+
+1642
+01:22:25,020 --> 01:22:42,210
+I should say-- I should add
+some feature like maybe a strain
+
+1643
+01:22:42,210 --> 01:22:47,680
+split something, add a
+little bit, maybe do that
+
+1644
+01:22:47,680 --> 01:22:53,650
+and-- there we go.
+
+1645
+01:22:53,650 --> 01:22:56,550
+I cheated, and I'll explain
+how I cheated last time.
+
+1646
+01:22:56,550 --> 01:22:59,880
+But if sometimes the
+particular method
+
+1647
+01:22:59,880 --> 01:23:04,590
+fails but you can fix it by
+adding in another tiny limb
+
+1648
+01:23:04,590 --> 01:23:07,450
+off the edge somewhere--
+and of course, you
+
+1649
+01:23:07,450 --> 01:23:10,010
+can then get rid of that at
+the end when you're folding,
+
+1650
+01:23:10,010 --> 01:23:11,800
+it only makes the
+problem slightly harder.
+
+1651
+01:23:11,800 --> 01:23:13,550
+And it'll still find a folding.
+
+1652
+01:23:13,550 --> 01:23:15,250
+But we'll talk about
+that next time.
+
+1653
+01:23:15,250 --> 01:23:20,820
+And I'm way out of time,
+so we will stop there.
+

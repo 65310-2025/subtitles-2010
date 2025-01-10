@@ -1,0 +1,6840 @@
+1
+0-1:59:57,500 --> 00:00:03,386
+
+2
+00:00:03,386 --> 00:00:04,760
+PROFESSOR: So for
+today's lecture
+
+3
+00:00:04,760 --> 00:00:06,810
+we have Jason Ku
+guest lecturing.
+
+4
+00:00:06,810 --> 00:00:09,290
+And he's the president of
+OrigaMIT, which you should all
+
+5
+00:00:09,290 --> 00:00:13,860
+check out Sunday afternoons,
+origami club at MIT.
+
+6
+00:00:13,860 --> 00:00:15,972
+He's an origami designer
+and a grad student
+
+7
+00:00:15,972 --> 00:00:17,430
+in mechanical
+engineering, and he's
+
+8
+00:00:17,430 --> 00:00:20,670
+going to talk about the more
+artistic perspective on how
+
+9
+00:00:20,670 --> 00:00:22,410
+origami design
+works, in particular
+
+10
+00:00:22,410 --> 00:00:26,440
+in the representational and tree
+method of origami design world.
+
+11
+00:00:26,440 --> 00:00:29,188
+So take it away, Jason.
+
+12
+00:00:29,188 --> 00:00:29,729
+JASON KU: Hi.
+
+13
+00:00:29,729 --> 00:00:32,590
+I'm Jason.
+
+14
+00:00:32,590 --> 00:00:35,090
+Erik gave a bit of
+an introduction.
+
+15
+00:00:35,090 --> 00:00:37,890
+I've been folding
+origami instance maybe
+
+16
+00:00:37,890 --> 00:00:40,080
+I was five years old,
+and I've been designing
+
+17
+00:00:40,080 --> 00:00:44,680
+origami for maybe
+the past 10 years.
+
+18
+00:00:44,680 --> 00:00:48,100
+I'm a PhD student in
+mechanical engineering,
+
+19
+00:00:48,100 --> 00:00:51,240
+working in folding things
+on the micro and nano scale.
+
+20
+00:00:51,240 --> 00:00:55,840
+So that's how this is
+applying to my research.
+
+21
+00:00:55,840 --> 00:00:59,960
+I'm here to talk a little
+bit about origami art
+
+22
+00:00:59,960 --> 00:01:05,470
+and how the concepts we've
+been talking about in class
+
+23
+00:01:05,470 --> 00:01:12,640
+apply to origami in actually
+designing and folding
+
+24
+00:01:12,640 --> 00:01:15,120
+artwork out of paper.
+
+25
+00:01:15,120 --> 00:01:16,670
+These are all the
+websites that I'm
+
+26
+00:01:16,670 --> 00:01:19,670
+going to be pulling
+pictures from.
+
+27
+00:01:19,670 --> 00:01:22,940
+So if we can't
+use these pictures
+
+28
+00:01:22,940 --> 00:01:27,960
+in future versions
+of this lecture,
+
+29
+00:01:27,960 --> 00:01:32,330
+then you can still
+see some of the media.
+
+30
+00:01:32,330 --> 00:01:37,850
+I want first make the analogy
+of origami art to music.
+
+31
+00:01:37,850 --> 00:01:40,730
+Many, many people
+make this analogy,
+
+32
+00:01:40,730 --> 00:01:44,070
+and it's actually
+very apt analogy.
+
+33
+00:01:44,070 --> 00:01:49,290
+In music you have
+composers, you have
+
+34
+00:01:49,290 --> 00:01:58,950
+people who produce a work of
+music, design the structure,
+
+35
+00:01:58,950 --> 00:02:03,350
+design what the main
+aspects of the piece
+
+36
+00:02:03,350 --> 00:02:05,639
+are, in terms of a
+structural sense,
+
+37
+00:02:05,639 --> 00:02:08,220
+but aren't necessarily
+performers themselves.
+
+38
+00:02:08,220 --> 00:02:11,880
+Now in origami, the
+performer and the composer
+
+39
+00:02:11,880 --> 00:02:13,130
+are usually one and the same.
+
+40
+00:02:13,130 --> 00:02:18,610
+But hopefully in the future,
+that won't always be the case.
+
+41
+00:02:18,610 --> 00:02:23,475
+In music the composer
+usually makes
+
+42
+00:02:23,475 --> 00:02:27,280
+a piece for multiple instruments
+or multiple voices or things
+
+43
+00:02:27,280 --> 00:02:31,527
+like that, so most the time
+can't do all that performance.
+
+44
+00:02:31,527 --> 00:02:33,860
+And some people are more
+gifted in the performance side.
+
+45
+00:02:33,860 --> 00:02:37,480
+Some people are more gifted
+in the composition side.
+
+46
+00:02:37,480 --> 00:02:41,870
+And I think it's a
+fairly apt analogy.
+
+47
+00:02:41,870 --> 00:02:44,060
+There's tons of
+mathematics in music.
+
+48
+00:02:44,060 --> 00:02:46,850
+There's tons of
+mathematics in origami.
+
+49
+00:02:46,850 --> 00:02:51,390
+But there's also this level
+of artistic complexity, which
+
+50
+00:02:51,390 --> 00:02:54,140
+we'll see later in this lecture.
+
+51
+00:02:54,140 --> 00:02:57,210
+I'm going to concentrate mostly
+on representational origami.
+
+52
+00:02:57,210 --> 00:03:00,560
+Representational
+origami is traditionally
+
+53
+00:03:00,560 --> 00:03:04,020
+representing living
+things in our world,
+
+54
+00:03:04,020 --> 00:03:08,890
+but it's pretty much, you
+see something not necessarily
+
+55
+00:03:08,890 --> 00:03:10,710
+living, but you see
+something and you
+
+56
+00:03:10,710 --> 00:03:14,080
+want to make that form
+for the form's sake,
+
+57
+00:03:14,080 --> 00:03:15,790
+to represent that form.
+
+58
+00:03:15,790 --> 00:03:19,250
+And this is different
+than, say, patterning
+
+59
+00:03:19,250 --> 00:03:24,660
+to create artistic patterns
+on a sheet of paper,
+
+60
+00:03:24,660 --> 00:03:28,410
+tessellating, making
+geometric polyhedra,
+
+61
+00:03:28,410 --> 00:03:35,560
+or making more abstract art
+that doesn't necessarily
+
+62
+00:03:35,560 --> 00:03:39,080
+have a relation to
+a real world object.
+
+63
+00:03:39,080 --> 00:03:41,900
+So I'm going to start with a
+little bit about origami art.
+
+64
+00:03:41,900 --> 00:03:43,880
+We've heard this.
+
+65
+00:03:43,880 --> 00:03:49,606
+Erik mentioned this particular
+individual, Akira Yoshizawa.
+
+66
+00:03:49,606 --> 00:03:55,310
+He is widely understood to be
+the father of modern origami.
+
+67
+00:03:55,310 --> 00:03:56,840
+He was born in 1911.
+
+68
+00:03:56,840 --> 00:03:59,520
+He was around for
+a very long time.
+
+69
+00:03:59,520 --> 00:04:02,080
+Unfortunately,
+passed away in 2005.
+
+70
+00:04:02,080 --> 00:04:06,100
+I was lucky enough to get
+to meet Akira Yoshizawa when
+
+71
+00:04:06,100 --> 00:04:08,640
+he attended a convention
+in North Carolina
+
+72
+00:04:08,640 --> 00:04:12,750
+when I was maybe around 10.
+
+73
+00:04:12,750 --> 00:04:19,820
+He was very powerful
+and influential
+
+74
+00:04:19,820 --> 00:04:23,970
+in the world of origami, because
+he was one of the first people
+
+75
+00:04:23,970 --> 00:04:30,630
+to start creating new models,
+be able to look at an object
+
+76
+00:04:30,630 --> 00:04:35,390
+and create that object
+just from folding.
+
+77
+00:04:35,390 --> 00:04:37,800
+He was one of the first
+people to actually try
+
+78
+00:04:37,800 --> 00:04:40,950
+to make a large
+number of new models,
+
+79
+00:04:40,950 --> 00:04:44,580
+as opposed to the
+past many centuries
+
+80
+00:04:44,580 --> 00:04:50,940
+when only a few traditional
+models were known or pursued.
+
+81
+00:04:50,940 --> 00:04:55,610
+This is a picture of
+Yoshizawa right here.
+
+82
+00:04:55,610 --> 00:04:58,760
+He's fairly happy
+in this picture.
+
+83
+00:04:58,760 --> 00:05:03,300
+But he's holding the logo
+of the US organization
+
+84
+00:05:03,300 --> 00:05:07,270
+in origami, OrigamiUSA,
+which is this sailboat.
+
+85
+00:05:07,270 --> 00:05:11,970
+But as you can see, different
+than the traditional origami
+
+86
+00:05:11,970 --> 00:05:16,290
+crane or the frog or
+things like that, you
+
+87
+00:05:16,290 --> 00:05:20,820
+see a lot of curves in his
+work, a lot of shaping.
+
+88
+00:05:20,820 --> 00:05:24,910
+He uses a technique called
+wet-folding, in which he
+
+89
+00:05:24,910 --> 00:05:27,270
+weakens the paper
+to some degree,
+
+90
+00:05:27,270 --> 00:05:31,210
+weakens the paper fibers
+by applying water, shaping
+
+91
+00:05:31,210 --> 00:05:35,670
+the paper, and letting it dry
+so that it holds that form.
+
+92
+00:05:35,670 --> 00:05:41,630
+And you can see in this
+sparrow-- this is particularly
+
+93
+00:05:41,630 --> 00:05:44,780
+one of my favorite
+works by Yoshizawa--
+
+94
+00:05:44,780 --> 00:05:49,370
+it really has the essence
+of this little bird,
+
+95
+00:05:49,370 --> 00:05:52,690
+but is actually very
+simple and elegant.
+
+96
+00:05:52,690 --> 00:05:55,180
+Origami design isn't
+all about making
+
+97
+00:05:55,180 --> 00:05:57,130
+the most complex
+thing in the world.
+
+98
+00:05:57,130 --> 00:06:02,250
+It's really trying to
+represent a subject elegantly.
+
+99
+00:06:02,250 --> 00:06:06,430
+And I think this model does
+a very good job with that.
+
+100
+00:06:06,430 --> 00:06:12,160
+But you can see here, very
+clean surfaces, not a lot
+
+101
+00:06:12,160 --> 00:06:14,660
+of extra creases
+that you can see.
+
+102
+00:06:14,660 --> 00:06:19,950
+Traditionally, wet-folding
+uses thicker paper
+
+103
+00:06:19,950 --> 00:06:21,325
+and is slightly
+more substantial.
+
+104
+00:06:21,325 --> 00:06:25,480
+
+105
+00:06:25,480 --> 00:06:28,600
+So here are some
+of his other works.
+
+106
+00:06:28,600 --> 00:06:31,520
+And I want to start
+out with Yoshizawa
+
+107
+00:06:31,520 --> 00:06:37,270
+because he was represented
+as the father and the master,
+
+108
+00:06:37,270 --> 00:06:41,970
+and many, many of the
+origami designers,
+
+109
+00:06:41,970 --> 00:06:44,580
+if not all of the origami
+designers that I'm
+
+110
+00:06:44,580 --> 00:06:47,080
+going to continue to
+talk about were heavily
+
+111
+00:06:47,080 --> 00:06:50,130
+influenced by Yoshizawa.
+
+112
+00:06:50,130 --> 00:06:53,420
+So I'm going to first talk
+about the traditional style.
+
+113
+00:06:53,420 --> 00:06:58,190
+And I'm going to compare it
+to, say, the crane or the frog.
+
+114
+00:06:58,190 --> 00:07:01,970
+These types of models are
+characterized by straight,
+
+115
+00:07:01,970 --> 00:07:07,110
+well-defined, polygons
+in the final form,
+
+116
+00:07:07,110 --> 00:07:10,040
+typically folded flat.
+
+117
+00:07:10,040 --> 00:07:14,000
+Little shaping is
+traditionally needed
+
+118
+00:07:14,000 --> 00:07:19,610
+to go from the base of the
+model to the final form.
+
+119
+00:07:19,610 --> 00:07:22,730
+
+120
+00:07:22,730 --> 00:07:26,540
+It's very geometric,
+these models,
+
+121
+00:07:26,540 --> 00:07:31,100
+characterized by very
+straight, precise creases.
+
+122
+00:07:31,100 --> 00:07:35,720
+So here is, I think,
+a very good example
+
+123
+00:07:35,720 --> 00:07:38,720
+of this traditional style.
+
+124
+00:07:38,720 --> 00:07:40,700
+While there are
+some curves here,
+
+125
+00:07:40,700 --> 00:07:44,940
+everything is very
+well-defined, maybe
+
+126
+00:07:44,940 --> 00:07:46,760
+just a slight shaping here.
+
+127
+00:07:46,760 --> 00:07:49,570
+But even that is
+fairly well-defined.
+
+128
+00:07:49,570 --> 00:07:57,320
+But you can see Komatsu, Hideo
+Komatsu, a Japanese folder,
+
+129
+00:07:57,320 --> 00:08:03,950
+uses really clean, large
+polygons of open paper
+
+130
+00:08:03,950 --> 00:08:07,150
+without creases on them
+to represent polygons
+
+131
+00:08:07,150 --> 00:08:09,190
+on the model.
+
+132
+00:08:09,190 --> 00:08:10,560
+The folded form.
+
+133
+00:08:10,560 --> 00:08:15,280
+His design process isn't
+really using tree theory.
+
+134
+00:08:15,280 --> 00:08:18,960
+I mean, all origami design
+is subjected to the condition
+
+135
+00:08:18,960 --> 00:08:24,970
+that no two points on
+the unfolded square
+
+136
+00:08:24,970 --> 00:08:28,900
+can increase in distance
+in the folded form.
+
+137
+00:08:28,900 --> 00:08:34,539
+That's a property called
+developability of the paper.
+
+138
+00:08:34,539 --> 00:08:38,460
+The paper's not going
+to stretch, basically.
+
+139
+00:08:38,460 --> 00:08:42,210
+So all origami design is
+subject to that condition,
+
+140
+00:08:42,210 --> 00:08:45,300
+but you don't have to deal with
+necessarily these things called
+
+141
+00:08:45,300 --> 00:08:46,550
+uniaxial bases.
+
+142
+00:08:46,550 --> 00:08:51,050
+Pretty much all of these
+models are non-uniaxial.
+
+143
+00:08:51,050 --> 00:08:54,010
+His design process is
+kind of a trial and error
+
+144
+00:08:54,010 --> 00:09:01,260
+process of folding along
+different 22.5 degree grids.
+
+145
+00:09:01,260 --> 00:09:10,300
+22.5 degrees is, I
+guess, 1/8 of pi.
+
+146
+00:09:10,300 --> 00:09:14,080
+1/16 of 360 degrees.
+
+147
+00:09:14,080 --> 00:09:19,660
+And it's a particularly nice
+and useful discretization
+
+148
+00:09:19,660 --> 00:09:23,400
+of angles in origami design.
+
+149
+00:09:23,400 --> 00:09:27,780
+All the traditional bases are
+based on this 22.5 degree grid
+
+150
+00:09:27,780 --> 00:09:29,270
+system.
+
+151
+00:09:29,270 --> 00:09:31,050
+And there's a certain
+elegance of that.
+
+152
+00:09:31,050 --> 00:09:34,530
+Actually I think, the mouse
+is based on a 30 degree grid
+
+153
+00:09:34,530 --> 00:09:39,900
+system, but is kind
+of an exception,
+
+154
+00:09:39,900 --> 00:09:41,810
+but follows the same principles.
+
+155
+00:09:41,810 --> 00:09:46,660
+He keeps folding
+a piece of paper
+
+156
+00:09:46,660 --> 00:09:52,300
+and tries to get these
+geometric shapes that really
+
+157
+00:09:52,300 --> 00:09:56,080
+are able to by themselves
+capture the model.
+
+158
+00:09:56,080 --> 00:10:02,210
+And I'm going to use some
+of that design technique
+
+159
+00:10:02,210 --> 00:10:05,190
+later in a design example.
+
+160
+00:10:05,190 --> 00:10:07,120
+He has a small but
+very distinguished
+
+161
+00:10:07,120 --> 00:10:15,870
+repertoire because his process
+is less algorithmic-- I mean,
+
+162
+00:10:15,870 --> 00:10:22,600
+he has algorithms, I'm sure,
+that are difficult to describe,
+
+163
+00:10:22,600 --> 00:10:27,020
+but his process is
+actually very artistic.
+
+164
+00:10:27,020 --> 00:10:29,340
+And while it's
+very exact, I think
+
+165
+00:10:29,340 --> 00:10:36,030
+it's one of the most elegant
+examples of origami design.
+
+166
+00:10:36,030 --> 00:10:39,430
+Here's another example
+of the traditional style.
+
+167
+00:10:39,430 --> 00:10:43,790
+As you can see, there's slightly
+more curves and things in it,
+
+168
+00:10:43,790 --> 00:10:49,140
+but it's fairly
+well characterized
+
+169
+00:10:49,140 --> 00:10:53,420
+by these straight creases.
+
+170
+00:10:53,420 --> 00:10:58,070
+Heavier paper for wet-folding.
+
+171
+00:10:58,070 --> 00:11:00,870
+This model on the left
+here is box pleated.
+
+172
+00:11:00,870 --> 00:11:06,060
+So as opposed to the
+22.5 degrees structure,
+
+173
+00:11:06,060 --> 00:11:09,890
+box pleating is characterized
+by only multiples of 45 degrees.
+
+174
+00:11:09,890 --> 00:11:12,660
+So pi over 4.
+
+175
+00:11:12,660 --> 00:11:16,570
+
+176
+00:11:16,570 --> 00:11:22,200
+And so you see the
+grid here, this model
+
+177
+00:11:22,200 --> 00:11:25,360
+is based on a fairly
+large grid, so you
+
+178
+00:11:25,360 --> 00:11:27,010
+can get the detail
+that it needs.
+
+179
+00:11:27,010 --> 00:11:29,520
+
+180
+00:11:29,520 --> 00:11:32,730
+These are not
+uniaxial bases, again,
+
+181
+00:11:32,730 --> 00:11:35,580
+but they're still limited
+by this stretch ability
+
+182
+00:11:35,580 --> 00:11:38,330
+constraint.
+
+183
+00:11:38,330 --> 00:11:43,120
+And those were
+styles that stemmed
+
+184
+00:11:43,120 --> 00:11:47,790
+from the traditional
+crisp folding of say
+
+185
+00:11:47,790 --> 00:11:51,660
+the crane and the crab
+and the frog and all
+
+186
+00:11:51,660 --> 00:11:53,140
+these traditional designs.
+
+187
+00:11:53,140 --> 00:11:55,860
+The non-traditional
+style is more
+
+188
+00:11:55,860 --> 00:12:00,724
+an extension of Yoshizawa's work
+and shaping and curved folding
+
+189
+00:12:00,724 --> 00:12:01,890
+and things like wet-folding.
+
+190
+00:12:01,890 --> 00:12:05,600
+
+191
+00:12:05,600 --> 00:12:08,020
+There is much shape
+that needs to be
+
+192
+00:12:08,020 --> 00:12:11,470
+done to create the
+essence of the model.
+
+193
+00:12:11,470 --> 00:12:15,190
+
+194
+00:12:15,190 --> 00:12:20,640
+The model is encapsulated by
+not necessarily the structure
+
+195
+00:12:20,640 --> 00:12:26,100
+as much, but of the final
+shaping, the undefined shaping
+
+196
+00:12:26,100 --> 00:12:28,790
+that you kind of
+put into the model.
+
+197
+00:12:28,790 --> 00:12:32,660
+Here's an example
+of an English folder
+
+198
+00:12:32,660 --> 00:12:35,730
+named David Brill, who
+is an investment banker,
+
+199
+00:12:35,730 --> 00:12:38,200
+if my memory serves me.
+
+200
+00:12:38,200 --> 00:12:40,570
+He now lives on a golf course.
+
+201
+00:12:40,570 --> 00:12:46,350
+And I think he's retired now,
+but he likes to fold paper.
+
+202
+00:12:46,350 --> 00:12:51,860
+But you can see
+here, a good example
+
+203
+00:12:51,860 --> 00:12:55,210
+of this style, thick paper.
+
+204
+00:12:55,210 --> 00:13:01,030
+
+205
+00:13:01,030 --> 00:13:03,660
+The character of
+the model is really
+
+206
+00:13:03,660 --> 00:13:09,760
+defined by these curved
+tension folds, which
+
+207
+00:13:09,760 --> 00:13:15,270
+is slightly different than at
+least the traditional style.
+
+208
+00:13:15,270 --> 00:13:20,350
+And oftentimes, it's
+very, very difficult
+
+209
+00:13:20,350 --> 00:13:24,840
+to replicate to any of
+these types of models,
+
+210
+00:13:24,840 --> 00:13:31,290
+because it has so much to do
+with subjectivity as opposed
+
+211
+00:13:31,290 --> 00:13:34,860
+to objectivity, as in
+the traditional style.
+
+212
+00:13:34,860 --> 00:13:37,590
+Here's another good
+example, Michael LaFosse.
+
+213
+00:13:37,590 --> 00:13:45,010
+He's a paper folder who actually
+resides here in Massachusetts.
+
+214
+00:13:45,010 --> 00:13:47,800
+He's in Haverhill,
+"Have-er-ill,"
+
+215
+00:13:47,800 --> 00:13:50,400
+something like
+that, Massachusetts.
+
+216
+00:13:50,400 --> 00:13:54,810
+He is unique in origami
+designers in the fact
+
+217
+00:13:54,810 --> 00:13:59,440
+that he is also an
+avid paper maker.
+
+218
+00:13:59,440 --> 00:14:02,480
+So he actually makes a lot
+of the media which he folds.
+
+219
+00:14:02,480 --> 00:14:05,590
+And that gives this
+intimate relationship
+
+220
+00:14:05,590 --> 00:14:07,980
+between the life
+cycle of the paper.
+
+221
+00:14:07,980 --> 00:14:13,280
+
+222
+00:14:13,280 --> 00:14:17,830
+He's able to make
+specialty paper that's
+
+223
+00:14:17,830 --> 00:14:20,730
+really necessary to make some
+of the most complex works
+
+224
+00:14:20,730 --> 00:14:21,290
+out there.
+
+225
+00:14:21,290 --> 00:14:25,400
+
+226
+00:14:25,400 --> 00:14:27,030
+He's gone to culinary school.
+
+227
+00:14:27,030 --> 00:14:29,010
+He was a chef for a while.
+
+228
+00:14:29,010 --> 00:14:33,210
+And he was also a marine
+biologist for a while.
+
+229
+00:14:33,210 --> 00:14:36,470
+So these origami
+artists have come
+
+230
+00:14:36,470 --> 00:14:40,800
+from many different
+walks of life.
+
+231
+00:14:40,800 --> 00:14:47,290
+This next folder, Eric
+Joisel, he's a Frenchman,
+
+232
+00:14:47,290 --> 00:14:48,140
+lives in Paris.
+
+233
+00:14:48,140 --> 00:14:50,280
+He was a former clay sculptor.
+
+234
+00:14:50,280 --> 00:14:54,000
+And actually, I think you can
+really see that in his work,
+
+235
+00:14:54,000 --> 00:15:02,970
+the kind of solidness
+and really cohesiveness
+
+236
+00:15:02,970 --> 00:15:05,640
+of his composition.
+
+237
+00:15:05,640 --> 00:15:11,990
+All the detail and
+texturing are very well
+
+238
+00:15:11,990 --> 00:15:15,747
+thought out in terms of the
+subject as a complete piece.
+
+239
+00:15:15,747 --> 00:15:17,080
+Heavily influenced by Yoshizawa.
+
+240
+00:15:17,080 --> 00:15:20,331
+
+241
+00:15:20,331 --> 00:15:25,100
+A lot of this use of texture,
+incorporating texture
+
+242
+00:15:25,100 --> 00:15:30,770
+into his models, he was a
+big pioneer in that area.
+
+243
+00:15:30,770 --> 00:15:33,360
+
+244
+00:15:33,360 --> 00:15:37,570
+This texturing is fairly
+obviously non-uniaxial.
+
+245
+00:15:37,570 --> 00:15:40,140
+He doesn't go
+through a tree method
+
+246
+00:15:40,140 --> 00:15:42,670
+and represent each
+one of these points
+
+247
+00:15:42,670 --> 00:15:44,180
+as a stick in a stick figure.
+
+248
+00:15:44,180 --> 00:15:47,140
+
+249
+00:15:47,140 --> 00:15:50,450
+These flaps don't
+lie along an axis.
+
+250
+00:15:50,450 --> 00:15:53,380
+They don't hinge
+perpendicular to that axis.
+
+251
+00:15:53,380 --> 00:16:00,090
+Yet he's able to create
+these amazing forms in paper.
+
+252
+00:16:00,090 --> 00:16:02,440
+He has stopped
+doing clay sculpture
+
+253
+00:16:02,440 --> 00:16:05,580
+and does origami full time now.
+
+254
+00:16:05,580 --> 00:16:11,030
+He's very well known for his
+depiction of the human form.
+
+255
+00:16:11,030 --> 00:16:15,190
+This is taken from a
+collection of masks.
+
+256
+00:16:15,190 --> 00:16:17,480
+He's done numerous,
+numerous masks
+
+257
+00:16:17,480 --> 00:16:19,600
+that are really very expressive.
+
+258
+00:16:19,600 --> 00:16:24,340
+He was one of the first people
+to really, for me at least,
+
+259
+00:16:24,340 --> 00:16:32,990
+evoke emotion and convey
+emotion in his work.
+
+260
+00:16:32,990 --> 00:16:38,080
+But you can see here, the
+structural crease pattern
+
+261
+00:16:38,080 --> 00:16:41,840
+for this face is actually
+very, very simple.
+
+262
+00:16:41,840 --> 00:16:44,920
+It's kind of represented
+by a few pleats.
+
+263
+00:16:44,920 --> 00:16:50,120
+But the amount of work used to
+transform that very simple form
+
+264
+00:16:50,120 --> 00:16:55,290
+into this very expressive,
+curved work of art
+
+265
+00:16:55,290 --> 00:16:56,700
+is kind of astonishing.
+
+266
+00:16:56,700 --> 00:16:59,630
+
+267
+00:16:59,630 --> 00:17:03,710
+Here's a more recent work
+of the entire human form.
+
+268
+00:17:03,710 --> 00:17:13,630
+You see how this is starting
+to come as some sort of blend
+
+269
+00:17:13,630 --> 00:17:16,869
+between the traditional
+and nontraditional forms.
+
+270
+00:17:16,869 --> 00:17:19,609
+It lies somewhere
+along the spectrum.
+
+271
+00:17:19,609 --> 00:17:22,420
+But it's a very
+complex model, so it
+
+272
+00:17:22,420 --> 00:17:26,740
+had needs to have this
+structural complexity.
+
+273
+00:17:26,740 --> 00:17:30,340
+But at the same time, he
+shapes it to an extent
+
+274
+00:17:30,340 --> 00:17:32,460
+that very few people can do.
+
+275
+00:17:32,460 --> 00:17:37,600
+
+276
+00:17:37,600 --> 00:17:40,670
+I'm paraphrasing a
+quote of his, but he's
+
+277
+00:17:40,670 --> 00:17:45,050
+of the opinion that
+if you can reproduce
+
+278
+00:17:45,050 --> 00:17:50,060
+exactly a piece of origami
+then it's not really art,
+
+279
+00:17:50,060 --> 00:17:55,690
+because you're not putting
+anything more into the model,
+
+280
+00:17:55,690 --> 00:17:58,550
+if it doesn't have something
+unique and original
+
+281
+00:17:58,550 --> 00:18:03,830
+and something that can't
+be reproduced in the model.
+
+282
+00:18:03,830 --> 00:18:09,790
+Here's two fantastic subjects
+in terms of art, to me.
+
+283
+00:18:09,790 --> 00:18:15,870
+Very Escher-like and
+it's self-referencing.
+
+284
+00:18:15,870 --> 00:18:18,920
+This is called
+the Self-made Man.
+
+285
+00:18:18,920 --> 00:18:21,460
+And I forget the
+title of this work,
+
+286
+00:18:21,460 --> 00:18:24,550
+but he's basically
+emerging from the paper.
+
+287
+00:18:24,550 --> 00:18:28,740
+You see that his arm and leg
+are not actually finished.
+
+288
+00:18:28,740 --> 00:18:30,410
+I think this is called
+Birth, actually.
+
+289
+00:18:30,410 --> 00:18:33,180
+
+290
+00:18:33,180 --> 00:18:39,140
+But really, using paper to
+express an artistic idea,
+
+291
+00:18:39,140 --> 00:18:43,220
+very few people get to
+that stage of competency
+
+292
+00:18:43,220 --> 00:18:48,270
+with the technical and
+being able to infuse
+
+293
+00:18:48,270 --> 00:18:49,750
+that emotion into the subject.
+
+294
+00:18:49,750 --> 00:18:56,570
+So Eric Joisel is a pioneer
+in that realm of origami art.
+
+295
+00:18:56,570 --> 00:19:01,390
+Here are three
+very, very complex--
+
+296
+00:19:01,390 --> 00:19:03,240
+These are very recent
+works, probably
+
+297
+00:19:03,240 --> 00:19:06,340
+within the last year or two.
+
+298
+00:19:06,340 --> 00:19:12,700
+Lots of use of texturing
+to make the armor here.
+
+299
+00:19:12,700 --> 00:19:15,090
+Lots of planning,
+tree theory included.
+
+300
+00:19:15,090 --> 00:19:16,810
+These are mostly
+box pleated models,
+
+301
+00:19:16,810 --> 00:19:20,010
+but you can't really
+tell from here because
+
+302
+00:19:20,010 --> 00:19:27,260
+of his impeccable
+ability to shape a model.
+
+303
+00:19:27,260 --> 00:19:31,000
+I'm going to remind you
+guys that everything
+
+304
+00:19:31,000 --> 00:19:33,730
+I'm showing to you is a
+representational work.
+
+305
+00:19:33,730 --> 00:19:36,750
+Each one of these is made
+from a single uncut square.
+
+306
+00:19:36,750 --> 00:19:39,640
+
+307
+00:19:39,640 --> 00:19:41,880
+Pretty much, I
+believe everything
+
+308
+00:19:41,880 --> 00:19:45,007
+I'm going to show you
+today has that property.
+
+309
+00:19:45,007 --> 00:19:47,492
+AUDIENCE: When people fold
+these, do they fold them
+
+310
+00:19:47,492 --> 00:19:49,480
+by hand or do they
+need special tools?
+
+311
+00:19:49,480 --> 00:19:51,965
+To me, this looks like
+it would be completely
+
+312
+00:19:51,965 --> 00:19:53,456
+impossible to just
+fold it by hand.
+
+313
+00:19:53,456 --> 00:19:58,821
+
+314
+00:19:58,821 --> 00:20:00,820
+JASON KU: These are
+actually fairly large works.
+
+315
+00:20:00,820 --> 00:20:04,050
+Each one stands maybe
+about that tall.
+
+316
+00:20:04,050 --> 00:20:07,120
+So the paper's very
+large to begin.
+
+317
+00:20:07,120 --> 00:20:09,640
+But yeah, I believe
+he just uses his hands
+
+318
+00:20:09,640 --> 00:20:11,790
+and this wet-folding
+technique to allow
+
+319
+00:20:11,790 --> 00:20:13,590
+things to be held in place.
+
+320
+00:20:13,590 --> 00:20:18,640
+I mean, many people, including
+Eric Joisel, use clips
+
+321
+00:20:18,640 --> 00:20:21,590
+and braces and things like that
+to hold certain things in place
+
+322
+00:20:21,590 --> 00:20:24,490
+while he's working on
+other areas of the model,
+
+323
+00:20:24,490 --> 00:20:25,810
+but it's pretty much by hand.
+
+324
+00:20:25,810 --> 00:20:28,840
+Some people use tweezers
+or things like that.
+
+325
+00:20:28,840 --> 00:20:30,570
+But most of it is by hand.
+
+326
+00:20:30,570 --> 00:20:33,930
+AUDIENCE: Does he add color
+or shade or those things?
+
+327
+00:20:33,930 --> 00:20:35,750
+JASON KU: Sometimes.
+
+328
+00:20:35,750 --> 00:20:39,660
+For example, that mask I
+think was speckled with paint
+
+329
+00:20:39,660 --> 00:20:43,590
+after, before or after.
+
+330
+00:20:43,590 --> 00:20:46,390
+
+331
+00:20:46,390 --> 00:20:52,640
+There are different opinions
+on this idea of origami purity.
+
+332
+00:20:52,640 --> 00:20:55,350
+
+333
+00:20:55,350 --> 00:20:57,990
+I like Robert Lang's
+definition of origami,
+
+334
+00:20:57,990 --> 00:21:08,540
+that it's any work
+whose primary structure
+
+335
+00:21:08,540 --> 00:21:11,050
+is defined by folding.
+
+336
+00:21:11,050 --> 00:21:15,040
+And that's a very broad
+definition of origami.
+
+337
+00:21:15,040 --> 00:21:17,320
+But I think it
+works really well.
+
+338
+00:21:17,320 --> 00:21:23,900
+So if the subject matter is
+still heavily characterized
+
+339
+00:21:23,900 --> 00:21:27,320
+by the folding and
+not some other thing
+
+340
+00:21:27,320 --> 00:21:29,600
+that you do to
+the model, I think
+
+341
+00:21:29,600 --> 00:21:31,900
+most people are OK with
+that, as long as you're not
+
+342
+00:21:31,900 --> 00:21:35,150
+trying to pass it off
+as something it's not.
+
+343
+00:21:35,150 --> 00:21:37,860
+
+344
+00:21:37,860 --> 00:21:41,950
+There are many origami designers
+to do multi-sheet things
+
+345
+00:21:41,950 --> 00:21:49,510
+and do very complex works and
+very beautiful pieces of art.
+
+346
+00:21:49,510 --> 00:21:53,250
+I think Joseph Wu is a
+great example of this,
+
+347
+00:21:53,250 --> 00:21:56,020
+who I don't have
+pictures of his work.
+
+348
+00:21:56,020 --> 00:22:00,770
+But he doesn't try to pass them
+off a single sheet origami.
+
+349
+00:22:00,770 --> 00:22:02,180
+He is a very skilled designer.
+
+350
+00:22:02,180 --> 00:22:03,880
+He could do it with
+a single sheet,
+
+351
+00:22:03,880 --> 00:22:05,880
+but he finds that the
+solution is more elegant
+
+352
+00:22:05,880 --> 00:22:08,297
+using multiple sheets.
+
+353
+00:22:08,297 --> 00:22:09,130
+Any other questions?
+
+354
+00:22:09,130 --> 00:22:11,770
+
+355
+00:22:11,770 --> 00:22:15,920
+Just one more picture of
+some of Joisel's work.
+
+356
+00:22:15,920 --> 00:22:21,610
+He actually made an entire
+orchestra of these little guys.
+
+357
+00:22:21,610 --> 00:22:22,630
+This is two sheets.
+
+358
+00:22:22,630 --> 00:22:24,800
+The saxophone is
+a different sheet.
+
+359
+00:22:24,800 --> 00:22:28,755
+But again, he's not
+trying to pass them off
+
+360
+00:22:28,755 --> 00:22:37,940
+as being the same sheet here,
+whereas in here, the weapons
+
+361
+00:22:37,940 --> 00:22:43,250
+actually are from the
+same sheet of paper.
+
+362
+00:22:43,250 --> 00:22:47,370
+And these multi-subject
+pieces, each one of these, it's
+
+363
+00:22:47,370 --> 00:22:49,230
+not all three of them
+together as one sheet.
+
+364
+00:22:49,230 --> 00:22:52,240
+Just to clarify.
+
+365
+00:22:52,240 --> 00:22:56,380
+But these multi-subject,
+trying to represents
+
+366
+00:22:56,380 --> 00:22:59,410
+clothes, and weapons,
+and the human,
+
+367
+00:22:59,410 --> 00:23:03,200
+and all these types of things,
+is becoming more and more a way
+
+368
+00:23:03,200 --> 00:23:06,390
+to a push the limits
+of origami design.
+
+369
+00:23:06,390 --> 00:23:11,000
+So again, trying to breathe life
+into the paper is really what
+
+370
+00:23:11,000 --> 00:23:16,330
+Yoshizawa's mantra was,
+and so is Eric Joisel's.
+
+371
+00:23:16,330 --> 00:23:16,830
+All right.
+
+372
+00:23:16,830 --> 00:23:25,280
+So I'm going to move on to this
+independent concept of really
+
+373
+00:23:25,280 --> 00:23:28,490
+the ability that
+we have right now
+
+374
+00:23:28,490 --> 00:23:33,050
+to pretty much-- We have the
+algorithms to make anything
+
+375
+00:23:33,050 --> 00:23:36,330
+we want and really
+trying to capture
+
+376
+00:23:36,330 --> 00:23:41,075
+that is this idea that I
+call this modern realism.
+
+377
+00:23:41,075 --> 00:23:44,960
+
+378
+00:23:44,960 --> 00:23:52,290
+The style, like
+Eric Joisel's work,
+
+379
+00:23:52,290 --> 00:23:54,200
+kind of follow
+along the spectrum
+
+380
+00:23:54,200 --> 00:24:01,120
+of this rigid structure
+and this free-form shaping,
+
+381
+00:24:01,120 --> 00:24:07,090
+but really try to capture
+this realism of the subject.
+
+382
+00:24:07,090 --> 00:24:11,540
+So I think Robert Lang is
+one of the foremost origami
+
+383
+00:24:11,540 --> 00:24:13,190
+designers in this kind of area.
+
+384
+00:24:13,190 --> 00:24:18,500
+He's a guy from
+California who is
+
+385
+00:24:18,500 --> 00:24:20,550
+a pioneer of algorithmic
+origami design.
+
+386
+00:24:20,550 --> 00:24:23,040
+You've heard his name
+a number of times.
+
+387
+00:24:23,040 --> 00:24:26,600
+
+388
+00:24:26,600 --> 00:24:31,100
+He has kind of
+codified tree theory,
+
+389
+00:24:31,100 --> 00:24:34,540
+if not one of the
+pioneers of establishing
+
+390
+00:24:34,540 --> 00:24:36,450
+that research himself.
+
+391
+00:24:36,450 --> 00:24:40,030
+He wrote the program TreeMaker
+that you guys are all probably
+
+392
+00:24:40,030 --> 00:24:42,630
+using to do your homework.
+
+393
+00:24:42,630 --> 00:24:50,020
+He was at Caltech Ph.D., and
+was a laser physicist for NASA.
+
+394
+00:24:50,020 --> 00:24:54,550
+And he decided maybe
+less than 10 years ago
+
+395
+00:24:54,550 --> 00:24:58,240
+to quit and do
+origami full time.
+
+396
+00:24:58,240 --> 00:24:59,400
+So that's what he does now.
+
+397
+00:24:59,400 --> 00:25:01,930
+
+398
+00:25:01,930 --> 00:25:03,780
+So here's a number of his works.
+
+399
+00:25:03,780 --> 00:25:08,020
+Very complex, very exact.
+
+400
+00:25:08,020 --> 00:25:14,220
+For example, he
+was a huge pioneer
+
+401
+00:25:14,220 --> 00:25:16,480
+of what we call the Bug Wars.
+
+402
+00:25:16,480 --> 00:25:20,990
+When we had these
+tools at our disposal
+
+403
+00:25:20,990 --> 00:25:25,840
+to make very complex
+trees, we can
+
+404
+00:25:25,840 --> 00:25:28,580
+represent very, very
+complex subjects.
+
+405
+00:25:28,580 --> 00:25:31,400
+And that led to this Bug
+Wars of trying to one-up
+
+406
+00:25:31,400 --> 00:25:36,870
+each other on how many legs you
+could make or things like that.
+
+407
+00:25:36,870 --> 00:25:39,130
+So here's a centipede,
+for example,
+
+408
+00:25:39,130 --> 00:25:42,110
+with lots and lots of legs.
+
+409
+00:25:42,110 --> 00:25:47,050
+And the exactness to which
+we can specify the tree
+
+410
+00:25:47,050 --> 00:25:48,050
+is phenomenal.
+
+411
+00:25:48,050 --> 00:25:53,180
+For example, the
+scorpion here is a design
+
+412
+00:25:53,180 --> 00:25:56,950
+that Robert Lang
+has approached--
+
+413
+00:25:56,950 --> 00:26:00,040
+a subject he's approached--
+many, many, many times.
+
+414
+00:26:00,040 --> 00:26:03,410
+This is a design that
+I particularly like.
+
+415
+00:26:03,410 --> 00:26:09,830
+It's very clean in its folded
+and its structural forms.
+
+416
+00:26:09,830 --> 00:26:13,950
+But he actually used
+TreeMaker and designed
+
+417
+00:26:13,950 --> 00:26:16,580
+each of these pairs
+of legs to actually
+
+418
+00:26:16,580 --> 00:26:20,850
+be increasing in
+length as they go back.
+
+419
+00:26:20,850 --> 00:26:25,370
+So really being very
+exact with the proportions
+
+420
+00:26:25,370 --> 00:26:28,290
+of the model, the
+proportions in the tree.
+
+421
+00:26:28,290 --> 00:26:30,230
+And tree theory
+really allows you
+
+422
+00:26:30,230 --> 00:26:31,780
+to do that, to capture that.
+
+423
+00:26:31,780 --> 00:26:34,020
+Here's a slide for the
+mathematicians in here.
+
+424
+00:26:34,020 --> 00:26:36,100
+This is not one
+square sheet of paper.
+
+425
+00:26:36,100 --> 00:26:39,570
+This is probably the only
+model here that isn't.
+
+426
+00:26:39,570 --> 00:26:50,690
+But it's what we call modular
+origami, making a single unit
+
+427
+00:26:50,690 --> 00:26:54,370
+and sticking them all together
+in a very complex and elegant
+
+428
+00:26:54,370 --> 00:26:54,880
+way.
+
+429
+00:26:54,880 --> 00:26:58,150
+Here's a representation of
+some of the tessellation work
+
+430
+00:26:58,150 --> 00:27:01,400
+that Robert Lang
+has been working on.
+
+431
+00:27:01,400 --> 00:27:05,950
+
+432
+00:27:05,950 --> 00:27:10,300
+This is a vase form.
+
+433
+00:27:10,300 --> 00:27:13,710
+And all these, or at
+least these three,
+
+434
+00:27:13,710 --> 00:27:18,380
+were very much characterized
+by using mathematics
+
+435
+00:27:18,380 --> 00:27:20,570
+to find these forms.
+
+436
+00:27:20,570 --> 00:27:23,700
+And while they're very
+heavily rooted in mathematics.
+
+437
+00:27:23,700 --> 00:27:26,880
+Mathematics, as I'm sure
+all of us can appreciate,
+
+438
+00:27:26,880 --> 00:27:30,340
+is an elegant subject
+in and of itself.
+
+439
+00:27:30,340 --> 00:27:32,420
+There are elegant
+solutions to problems.
+
+440
+00:27:32,420 --> 00:27:35,590
+And in origami it's
+particularly nice,
+
+441
+00:27:35,590 --> 00:27:38,900
+because these elegant
+solutions often
+
+442
+00:27:38,900 --> 00:27:42,340
+are very elegant and
+pleasing to the eye, as well.
+
+443
+00:27:42,340 --> 00:27:45,130
+So this is also a Klein bottle.
+
+444
+00:27:45,130 --> 00:27:47,190
+It's kind of a joke.
+
+445
+00:27:47,190 --> 00:27:51,110
+But it topologically does
+intersect and things like that.
+
+446
+00:27:51,110 --> 00:27:55,000
+So in an interesting work.
+
+447
+00:27:55,000 --> 00:27:58,810
+I want to move on to a
+guy named Brian Chan, who
+
+448
+00:27:58,810 --> 00:28:00,770
+is an alumni of MIT.
+
+449
+00:28:00,770 --> 00:28:06,060
+He got his bachelor's, his
+master's, and his Ph.D. at MIT.
+
+450
+00:28:06,060 --> 00:28:10,920
+He defended his Ph.D.
+in 2009, but he's still
+
+451
+00:28:10,920 --> 00:28:13,010
+around Cambridge.
+
+452
+00:28:13,010 --> 00:28:19,730
+He is a big pioneer of pushing
+the limits of complex folding.
+
+453
+00:28:19,730 --> 00:28:24,110
+He's picked up origami
+design very quickly.
+
+454
+00:28:24,110 --> 00:28:26,540
+And so it is possible to do.
+
+455
+00:28:26,540 --> 00:28:28,770
+So I encourage all
+of you to try it.
+
+456
+00:28:28,770 --> 00:28:33,910
+Here is an example of a very,
+very complex centipede that he
+
+457
+00:28:33,910 --> 00:28:37,385
+designed kind of in
+response to Robert Lang's.
+
+458
+00:28:37,385 --> 00:28:40,460
+
+459
+00:28:40,460 --> 00:28:51,140
+There's a huge history
+of really trying
+
+460
+00:28:51,140 --> 00:28:53,260
+to one-up each other in origami.
+
+461
+00:28:53,260 --> 00:28:57,590
+And it really helps
+spur the creativity.
+
+462
+00:28:57,590 --> 00:29:03,470
+And playful competition is
+very useful to any subject.
+
+463
+00:29:03,470 --> 00:29:06,200
+These multi-subject
+things, like this
+
+464
+00:29:06,200 --> 00:29:11,010
+rose, the stem and
+the petals itself,
+
+465
+00:29:11,010 --> 00:29:13,110
+all from one square
+sheet of paper.
+
+466
+00:29:13,110 --> 00:29:14,890
+He uses color change.
+
+467
+00:29:14,890 --> 00:29:17,550
+One side of the paper is red;
+one side of the paper is green.
+
+468
+00:29:17,550 --> 00:29:22,256
+
+469
+00:29:22,256 --> 00:29:24,380
+There have been tons of
+people that design just the
+
+470
+00:29:24,380 --> 00:29:28,610
+rose part of the rose, and then
+they make an additional stem
+
+471
+00:29:28,610 --> 00:29:29,860
+and stick it on.
+
+472
+00:29:29,860 --> 00:29:32,780
+This is the first
+one-piece model of that.
+
+473
+00:29:32,780 --> 00:29:36,640
+And was somewhat
+influential in that respect.
+
+474
+00:29:36,640 --> 00:29:41,700
+Here's a very complex,
+textured character
+
+475
+00:29:41,700 --> 00:29:43,290
+from an anime TV show.
+
+476
+00:29:43,290 --> 00:29:44,620
+I forget which one it's called.
+
+477
+00:29:44,620 --> 00:29:45,600
+AUDIENCE: Rozen Maiden.
+
+478
+00:29:45,600 --> 00:29:47,250
+JASON KU: Rozen
+Maiden Thank you.
+
+479
+00:29:47,250 --> 00:29:48,240
+That is correct.
+
+480
+00:29:48,240 --> 00:29:51,910
+But you really can see his
+use of color change here.
+
+481
+00:29:51,910 --> 00:30:00,480
+Again, being able to make
+this cross in the fabric here.
+
+482
+00:30:00,480 --> 00:30:07,950
+The zigzags of lace, and
+this texturing of the dress,
+
+483
+00:30:07,950 --> 00:30:13,060
+very, very complex, in its form.
+
+484
+00:30:13,060 --> 00:30:17,350
+But these are all
+actually uniaxial bases,
+
+485
+00:30:17,350 --> 00:30:20,330
+all come from this
+idea of tree theory,
+
+486
+00:30:20,330 --> 00:30:24,020
+being able to map
+things on your subject
+
+487
+00:30:24,020 --> 00:30:26,830
+to the sheet of paper
+in an algorithmic way.
+
+488
+00:30:26,830 --> 00:30:33,900
+Here's a very complex, another
+anime work, a Neko Bus.
+
+489
+00:30:33,900 --> 00:30:36,980
+Neko is, I believe,
+Japanese for cat.
+
+490
+00:30:36,980 --> 00:30:39,470
+And it's very, very complex.
+
+491
+00:30:39,470 --> 00:30:41,500
+Again, similar to the centipede.
+
+492
+00:30:41,500 --> 00:30:43,430
+Lots and lots of points.
+
+493
+00:30:43,430 --> 00:30:46,280
+But this tree is actually
+kind of represented
+
+494
+00:30:46,280 --> 00:30:48,760
+by-- There's a head
+region and there's
+
+495
+00:30:48,760 --> 00:30:53,130
+many points sticking
+out on both sides.
+
+496
+00:30:53,130 --> 00:30:57,030
+And then this flap kind of
+comes over and attaches up here,
+
+497
+00:30:57,030 --> 00:31:00,140
+and you've got the tail.
+
+498
+00:31:00,140 --> 00:31:05,170
+Here's another example
+of a multi-subject model.
+
+499
+00:31:05,170 --> 00:31:07,030
+Every year there's
+a design challenge
+
+500
+00:31:07,030 --> 00:31:09,110
+in New York for origami.
+
+501
+00:31:09,110 --> 00:31:12,700
+And this was the
+sailing ship category.
+
+502
+00:31:12,700 --> 00:31:15,240
+And he kind of went
+another direction with it.
+
+503
+00:31:15,240 --> 00:31:16,810
+He did make a sailing
+ship, but this
+
+504
+00:31:16,810 --> 00:31:22,040
+is a kraken attacking the ship.
+
+505
+00:31:22,040 --> 00:31:24,660
+He's got a little person
+in one of his tentacles.
+
+506
+00:31:24,660 --> 00:31:27,200
+Part of the ship
+and the ship itself,
+
+507
+00:31:27,200 --> 00:31:31,450
+and it's all one square sheet
+of paper without cutting.
+
+508
+00:31:31,450 --> 00:31:36,890
+And if that wasn't enough,
+then the MIT seal, as well.
+
+509
+00:31:36,890 --> 00:31:38,640
+One square sheet of
+paper without cutting.
+
+510
+00:31:38,640 --> 00:31:44,460
+The mens and manus,
+so the mind and hand.
+
+511
+00:31:44,460 --> 00:31:51,330
+And I believe this isn't
+traditionally a crane,
+
+512
+00:31:51,330 --> 00:31:52,570
+but yeah.
+
+513
+00:31:52,570 --> 00:31:55,020
+The last person I
+want to touch on
+
+514
+00:31:55,020 --> 00:31:58,220
+is a guy named
+Satoshi Kamiya, who's
+
+515
+00:31:58,220 --> 00:32:04,890
+represented as probably
+the foremost pioneer
+
+516
+00:32:04,890 --> 00:32:06,630
+of super-complex origami.
+
+517
+00:32:06,630 --> 00:32:09,120
+He is a little further
+on the spectrum
+
+518
+00:32:09,120 --> 00:32:12,310
+on the traditional
+style than many
+
+519
+00:32:12,310 --> 00:32:16,590
+of these other
+super-complex folders,
+
+520
+00:32:16,590 --> 00:32:21,490
+characterized by kind of
+very exact, straight creases,
+
+521
+00:32:21,490 --> 00:32:28,170
+this texturing for example, a
+unique balance between making
+
+522
+00:32:28,170 --> 00:32:34,540
+a very cleanly folded--
+The Japanese traditionally
+
+523
+00:32:34,540 --> 00:32:39,580
+make very clean subjects in
+terms of exactness and form.
+
+524
+00:32:39,580 --> 00:32:42,300
+Here's a little more
+shaping in the wet-folding.
+
+525
+00:32:42,300 --> 00:32:45,960
+But again, this is one
+of my favorite works
+
+526
+00:32:45,960 --> 00:32:49,200
+of his, another Lord
+of the Rings character.
+
+527
+00:32:49,200 --> 00:32:52,360
+
+528
+00:32:52,360 --> 00:32:55,410
+What's neat about this
+sea turtle actually,
+
+529
+00:32:55,410 --> 00:32:58,810
+the diagrams for it
+were just published.
+
+530
+00:32:58,810 --> 00:33:04,450
+I first all this work in
+2001 or something like that.
+
+531
+00:33:04,450 --> 00:33:08,580
+But it has these plates
+on the back, this texture,
+
+532
+00:33:08,580 --> 00:33:11,610
+but it also has plates on
+the front of the model.
+
+533
+00:33:11,610 --> 00:33:13,470
+So you can actually
+pick it up, and it
+
+534
+00:33:13,470 --> 00:33:17,720
+looks very, very convincing.
+
+535
+00:33:17,720 --> 00:33:19,780
+Here are some more
+models by him.
+
+536
+00:33:19,780 --> 00:33:22,700
+Again, you can see a lot
+of this texturing here
+
+537
+00:33:22,700 --> 00:33:27,800
+in this wasp, very
+clean folding.
+
+538
+00:33:27,800 --> 00:33:32,430
+A dog, multi-headed
+dog, a caribou
+
+539
+00:33:32,430 --> 00:33:36,820
+with very complicated antler
+patterns, and this dragon.
+
+540
+00:33:36,820 --> 00:33:40,500
+And again, you see the
+crisp, clean folding,
+
+541
+00:33:40,500 --> 00:33:44,300
+but at the same time very
+well-planned and well-designed
+
+542
+00:33:44,300 --> 00:33:47,830
+3D structure to be
+shaped afterwards.
+
+543
+00:33:47,830 --> 00:33:50,390
+Here's another work that
+I particularly enjoy.
+
+544
+00:33:50,390 --> 00:33:53,460
+
+545
+00:33:53,460 --> 00:33:59,930
+Really lending this texturing
+he applies throughout the model,
+
+546
+00:33:59,930 --> 00:34:04,230
+and it's a very
+cohesive subject,
+
+547
+00:34:04,230 --> 00:34:05,370
+from an artistic sense.
+
+548
+00:34:05,370 --> 00:34:08,300
+It's very complete.
+
+549
+00:34:08,300 --> 00:34:10,340
+There's the same level
+of detail everywhere
+
+550
+00:34:10,340 --> 00:34:13,360
+on the model, which
+is very useful.
+
+551
+00:34:13,360 --> 00:34:15,800
+And I'm going to kind of
+end this artistic side
+
+552
+00:34:15,800 --> 00:34:19,670
+with a model which
+is widely regarded
+
+553
+00:34:19,670 --> 00:34:24,370
+as the most complex
+single work in origami.
+
+554
+00:34:24,370 --> 00:34:29,080
+This took Kamiya over the
+course of a year to fold.
+
+555
+00:34:29,080 --> 00:34:31,510
+There's thousands of
+scales on this guy.
+
+556
+00:34:31,510 --> 00:34:34,760
+And again, it's one square
+sheet of paper without cutting.
+
+557
+00:34:34,760 --> 00:34:39,201
+You see that it's
+a very long model.
+
+558
+00:34:39,201 --> 00:34:40,659
+You'd think that
+this subject would
+
+559
+00:34:40,659 --> 00:34:43,639
+be much better represented
+by a long rectangle
+
+560
+00:34:43,639 --> 00:34:45,050
+or something like that.
+
+561
+00:34:45,050 --> 00:34:48,250
+But actually it's
+very symmetric.
+
+562
+00:34:48,250 --> 00:34:53,389
+This crease pattern,
+which we'll look at later,
+
+563
+00:34:53,389 --> 00:34:56,300
+actually has an
+asymmetric crease pattern
+
+564
+00:34:56,300 --> 00:35:00,520
+and is quite ingenious
+in how he decides
+
+565
+00:35:00,520 --> 00:35:04,320
+to accomplish this
+form and structure.
+
+566
+00:35:04,320 --> 00:35:07,720
+If you're interested in learning
+more about the origami art
+
+567
+00:35:07,720 --> 00:35:12,660
+side of things, there's this
+phenomenal document documentary
+
+568
+00:35:12,660 --> 00:35:15,850
+which you can and
+purchase online.
+
+569
+00:35:15,850 --> 00:35:20,520
+Or I've believe OrigaMIT
+has a copy of this,
+
+570
+00:35:20,520 --> 00:35:23,820
+and we'll probably be
+screening it some time
+
+571
+00:35:23,820 --> 00:35:25,430
+this semester or next.
+
+572
+00:35:25,430 --> 00:35:28,600
+It's called Between the Folds.
+
+573
+00:35:28,600 --> 00:35:35,660
+And it features, among others,
+both Erik and Marty Demaine,
+
+574
+00:35:35,660 --> 00:35:38,020
+Robert Lang, and many more.
+
+575
+00:35:38,020 --> 00:35:42,360
+And there's a picture
+of Stata from the film.
+
+576
+00:35:42,360 --> 00:35:46,205
+Now we're going to move on a
+little bit to origami design.
+
+577
+00:35:46,205 --> 00:35:50,460
+
+578
+00:35:50,460 --> 00:35:52,640
+We've learned what
+the algorithms are
+
+579
+00:35:52,640 --> 00:35:56,530
+behind a lot of origami
+design, but now we're
+
+580
+00:35:56,530 --> 00:36:02,160
+going to see how that applies
+more directly to creating
+
+581
+00:36:02,160 --> 00:36:03,710
+a representational work of art.
+
+582
+00:36:03,710 --> 00:36:06,220
+If you're really
+serious about wanting
+
+583
+00:36:06,220 --> 00:36:10,840
+to get into origami design, this
+book, Origami Design Secrets
+
+584
+00:36:10,840 --> 00:36:13,540
+by Robert Lang, is really
+the first major book
+
+585
+00:36:13,540 --> 00:36:16,870
+on the methods of
+origami design.
+
+586
+00:36:16,870 --> 00:36:21,060
+Most origami books are
+traditionally about diagrams,
+
+587
+00:36:21,060 --> 00:36:23,050
+trying to fold specific models.
+
+588
+00:36:23,050 --> 00:36:25,380
+This is the first
+book really to lay out
+
+589
+00:36:25,380 --> 00:36:28,140
+some of the ground rules
+of how you create models.
+
+590
+00:36:28,140 --> 00:36:32,070
+And it goes through a number of
+the things we've talked about.
+
+591
+00:36:32,070 --> 00:36:37,550
+So just to review a little bit
+about tree theory, the idea,
+
+592
+00:36:37,550 --> 00:36:42,650
+the process is you start with
+a subject, like this picture
+
+593
+00:36:42,650 --> 00:36:47,480
+I took at a Japanese
+museum of a little crab.
+
+594
+00:36:47,480 --> 00:36:50,270
+You kind of draw a
+little stick figure
+
+595
+00:36:50,270 --> 00:36:55,110
+of what that crab might look
+like in a one-dimensional form,
+
+596
+00:36:55,110 --> 00:36:57,050
+characterized just
+by the lengths
+
+597
+00:36:57,050 --> 00:37:00,000
+of these flaps and
+the connectedness.
+
+598
+00:37:00,000 --> 00:37:03,880
+You go from here to here
+to an origami base, which
+
+599
+00:37:03,880 --> 00:37:06,880
+has all of those flaps
+of the right length
+
+600
+00:37:06,880 --> 00:37:09,377
+and connected in the right way.
+
+601
+00:37:09,377 --> 00:37:11,210
+And then you shape it
+into an origami model.
+
+602
+00:37:11,210 --> 00:37:18,610
+Now this method, this step here
+might seem hard to you guys.
+
+603
+00:37:18,610 --> 00:37:26,420
+With a little experience,
+it's actually very reasonable
+
+604
+00:37:26,420 --> 00:37:30,030
+to assume that someone
+fairly well versed
+
+605
+00:37:30,030 --> 00:37:31,520
+in the vocabulary
+of origami will
+
+606
+00:37:31,520 --> 00:37:34,070
+be able to accomplish that step.
+
+607
+00:37:34,070 --> 00:37:38,220
+This step, again, this kind
+of child's play, somewhat.
+
+608
+00:37:38,220 --> 00:37:42,350
+It's actually not,
+to do it really well,
+
+609
+00:37:42,350 --> 00:37:44,100
+to represent this model
+as a stick figure,
+
+610
+00:37:44,100 --> 00:37:49,730
+and we'll see that when we
+try to go through an example.
+
+611
+00:37:49,730 --> 00:37:52,450
+This step is the one where
+algorithms and mathematics
+
+612
+00:37:52,450 --> 00:37:56,530
+really help to do a
+lot of the work for us,
+
+613
+00:37:56,530 --> 00:38:02,050
+and essentially is kind of the
+easy part from our perspective,
+
+614
+00:38:02,050 --> 00:38:05,180
+because it's kind of
+methodical and there's
+
+615
+00:38:05,180 --> 00:38:06,860
+algorithms involved
+to help us out.
+
+616
+00:38:06,860 --> 00:38:10,750
+
+617
+00:38:10,750 --> 00:38:16,090
+The most artistic
+and free things
+
+618
+00:38:16,090 --> 00:38:19,040
+we can do with
+origami design are
+
+619
+00:38:19,040 --> 00:38:21,820
+kind of this step in the
+shaping and this step
+
+620
+00:38:21,820 --> 00:38:23,700
+in defining the proportions.
+
+621
+00:38:23,700 --> 00:38:29,490
+In this step really you define
+what the abstraction you
+
+622
+00:38:29,490 --> 00:38:31,430
+choose to characterize
+in your model.
+
+623
+00:38:31,430 --> 00:38:35,950
+Like here, we are
+choosing to represent
+
+624
+00:38:35,950 --> 00:38:38,090
+all four legs on either side.
+
+625
+00:38:38,090 --> 00:38:39,900
+You don't have too.
+
+626
+00:38:39,900 --> 00:38:48,260
+But we also decided to model
+the eyes and the claws as is.
+
+627
+00:38:48,260 --> 00:38:52,130
+But an underbelly to a crab.
+
+628
+00:38:52,130 --> 00:38:55,320
+We could have modeled
+that with the texture.
+
+629
+00:38:55,320 --> 00:39:00,720
+We could have modeled the
+little mouth parts of the crab.
+
+630
+00:39:00,720 --> 00:39:03,430
+There are many things we
+could choose to model on here
+
+631
+00:39:03,430 --> 00:39:06,090
+that we don't choose to.
+
+632
+00:39:06,090 --> 00:39:08,320
+So this is one level
+of abstraction.
+
+633
+00:39:08,320 --> 00:39:11,230
+
+634
+00:39:11,230 --> 00:39:13,650
+And this comes with
+a lot of choice.
+
+635
+00:39:13,650 --> 00:39:17,540
+Here, there's lots of algorithms
+and math to help us out.
+
+636
+00:39:17,540 --> 00:39:19,380
+But as we'll see,
+there is actually
+
+637
+00:39:19,380 --> 00:39:21,700
+a lot of choice going
+from here to here
+
+638
+00:39:21,700 --> 00:39:24,970
+as well, artistic choice,
+and from here to here, again,
+
+639
+00:39:24,970 --> 00:39:34,800
+probably the most blatant
+way that an artist can
+
+640
+00:39:34,800 --> 00:39:38,240
+put his style in essence
+into an origami work.
+
+641
+00:39:38,240 --> 00:39:41,670
+
+642
+00:39:41,670 --> 00:39:45,087
+AUDIENCE: What is
+the extra fringe?
+
+643
+00:39:45,087 --> 00:39:45,920
+JASON KU: Which one?
+
+644
+00:39:45,920 --> 00:39:46,480
+This?
+
+645
+00:39:46,480 --> 00:39:48,810
+AUDIENCE: Diagonal from the top.
+
+646
+00:39:48,810 --> 00:39:49,904
+AUDIENCE: On the left.
+
+647
+00:39:49,904 --> 00:39:50,820
+JASON KU: On the left.
+
+648
+00:39:50,820 --> 00:39:51,931
+Oh, this?
+
+649
+00:39:51,931 --> 00:39:52,430
+OK.
+
+650
+00:39:52,430 --> 00:39:58,760
+So I modeled here
+the body of this crab
+
+651
+00:39:58,760 --> 00:40:00,400
+as a flap coming from here.
+
+652
+00:40:00,400 --> 00:40:04,870
+I kind of wanted a flap
+to cover the rest of this.
+
+653
+00:40:04,870 --> 00:40:08,760
+And so that's why I've added
+this leg of the tree there.
+
+654
+00:40:08,760 --> 00:40:14,200
+
+655
+00:40:14,200 --> 00:40:19,120
+While branch edges-- this
+is a branch edge, it doesn't
+
+656
+00:40:19,120 --> 00:40:24,630
+terminate-- will provide
+paper in that region,
+
+657
+00:40:24,630 --> 00:40:28,690
+as we'll see later,
+branch edges of the tree,
+
+658
+00:40:28,690 --> 00:40:32,560
+rivers in the space
+allocation, really
+
+659
+00:40:32,560 --> 00:40:36,470
+don't lend themselves to
+being shaped very easily.
+
+660
+00:40:36,470 --> 00:40:39,900
+And so if I isolate
+that body segment
+
+661
+00:40:39,900 --> 00:40:42,510
+as a leaf edge
+for itself, then I
+
+662
+00:40:42,510 --> 00:40:47,200
+can actually do
+control a little more
+
+663
+00:40:47,200 --> 00:40:50,020
+about how I'm able to shape it.
+
+664
+00:40:50,020 --> 00:40:51,390
+Good question.
+
+665
+00:40:51,390 --> 00:40:53,290
+So we're going to
+review a little bit
+
+666
+00:40:53,290 --> 00:40:55,040
+about uniaxial bases.
+
+667
+00:40:55,040 --> 00:41:01,020
+This these are the definitions
+that Erik Demaine posed
+
+668
+00:41:01,020 --> 00:41:06,580
+in the algorithm, I
+think in lecture four.
+
+669
+00:41:06,580 --> 00:41:10,250
+Again, you have
+this uniaxial base.
+
+670
+00:41:10,250 --> 00:41:15,680
+It has these
+characteristics that it's
+
+671
+00:41:15,680 --> 00:41:22,730
+in the positive space above
+the z equals zero plane.
+
+672
+00:41:22,730 --> 00:41:26,170
+And that's kind of
+represented here.
+
+673
+00:41:26,170 --> 00:41:32,800
+The intersection with that
+plane is the projection.
+
+674
+00:41:32,800 --> 00:41:36,710
+So if you shine
+the light above it,
+
+675
+00:41:36,710 --> 00:41:39,530
+it would cast a shadow of
+a stick figure out, which
+
+676
+00:41:39,530 --> 00:41:41,110
+is exactly kind of what we want.
+
+677
+00:41:41,110 --> 00:41:45,340
+We want to make an origami
+base that associates itself
+
+678
+00:41:45,340 --> 00:41:47,500
+with a stick figure.
+
+679
+00:41:47,500 --> 00:41:51,420
+And then we partition
+the faces into flaps.
+
+680
+00:41:51,420 --> 00:41:52,795
+So there's all
+these definitions.
+
+681
+00:41:52,795 --> 00:41:56,840
+
+682
+00:41:56,840 --> 00:42:00,320
+I think to put these in
+kind of layman's terms
+
+683
+00:42:00,320 --> 00:42:03,790
+from an origami designer's
+point of view, what
+
+684
+00:42:03,790 --> 00:42:07,380
+do these really mean?
+
+685
+00:42:07,380 --> 00:42:10,760
+Really, the important
+characteristics that we want
+
+686
+00:42:10,760 --> 00:42:15,450
+are that the flaps lie along
+or straddle a single line.
+
+687
+00:42:15,450 --> 00:42:18,980
+Because if they do that, then
+we could just fold it in half
+
+688
+00:42:18,980 --> 00:42:21,010
+and it will have that
+property of everything
+
+689
+00:42:21,010 --> 00:42:27,190
+being above an axis and
+everything lying along an axis,
+
+690
+00:42:27,190 --> 00:42:31,120
+and that the flaps hinge
+perpendicular to that axis.
+
+691
+00:42:31,120 --> 00:42:34,660
+The reason why we need the
+flaps to hinge perpendicular
+
+692
+00:42:34,660 --> 00:42:37,790
+to the axis is if they don't
+hinge perpendicular to the axis
+
+693
+00:42:37,790 --> 00:42:48,040
+then you will not be able
+to create a projection
+
+694
+00:42:48,040 --> 00:42:51,410
+to the plane that is a
+one-dimensional stick figure.
+
+695
+00:42:51,410 --> 00:42:54,380
+If these hinges are
+tilted then that line
+
+696
+00:42:54,380 --> 00:42:57,040
+will project to a line instead
+of a point, like we'd want.
+
+697
+00:42:57,040 --> 00:43:02,290
+We'd want it to project to
+a single node on the tree.
+
+698
+00:43:02,290 --> 00:43:06,000
+In any of these
+uniaxial bases, think
+
+699
+00:43:06,000 --> 00:43:09,710
+about the base being thinned
+in the limiting case, that we
+
+700
+00:43:09,710 --> 00:43:17,650
+can create folds parallel to
+this axis and thin this model
+
+701
+00:43:17,650 --> 00:43:20,330
+until it's right along the axis.
+
+702
+00:43:20,330 --> 00:43:22,860
+And then in that
+limiting case it
+
+703
+00:43:22,860 --> 00:43:25,300
+is a stick figure, essentially.
+
+704
+00:43:25,300 --> 00:43:29,920
+And once it is a stick figure,
+layering and orientation
+
+705
+00:43:29,920 --> 00:43:31,610
+of the flaps really
+don't matter,
+
+706
+00:43:31,610 --> 00:43:35,960
+because it is the stick figure.
+
+707
+00:43:35,960 --> 00:43:39,170
+So this is kind of an
+informal definition,
+
+708
+00:43:39,170 --> 00:43:43,330
+but we'll use these
+later in the lecture.
+
+709
+00:43:43,330 --> 00:43:44,680
+So what is a flap?
+
+710
+00:43:44,680 --> 00:43:51,710
+We kind of made this argument
+a couple lectures ago.
+
+711
+00:43:51,710 --> 00:43:54,920
+
+712
+00:43:54,920 --> 00:43:58,050
+So we want to model a flap, so
+that we can kind of stick it
+
+713
+00:43:58,050 --> 00:43:58,727
+together.
+
+714
+00:43:58,727 --> 00:44:00,310
+And this is kind of
+an intuitive sense
+
+715
+00:44:00,310 --> 00:44:04,900
+of we take a sheet of paper,
+we thin it a little bit,
+
+716
+00:44:04,900 --> 00:44:10,010
+we hinge it perpendicular
+to some axis.
+
+717
+00:44:10,010 --> 00:44:13,620
+And when we do and
+we unfold the paper,
+
+718
+00:44:13,620 --> 00:44:15,620
+we see that it
+takes up this kind
+
+719
+00:44:15,620 --> 00:44:17,475
+of quarter octagon of paper.
+
+720
+00:44:17,475 --> 00:44:21,500
+
+721
+00:44:21,500 --> 00:44:28,200
+Now, if we continue
+to thin this,
+
+722
+00:44:28,200 --> 00:44:30,180
+if we make it
+really, really thin,
+
+723
+00:44:30,180 --> 00:44:34,660
+you see how deep the boundary,
+this fold that we make,
+
+724
+00:44:34,660 --> 00:44:39,460
+will little closer and
+closer approximate a circle.
+
+725
+00:44:39,460 --> 00:44:41,100
+Everyone see that?
+
+726
+00:44:41,100 --> 00:44:42,800
+It's kind of like an umbrella.
+
+727
+00:44:42,800 --> 00:44:44,450
+I like this analogy
+with an umbrella.
+
+728
+00:44:44,450 --> 00:44:46,835
+That you have a
+single point that's
+
+729
+00:44:46,835 --> 00:44:48,210
+the center the
+umbrella, and when
+
+730
+00:44:48,210 --> 00:44:53,480
+you close the umbrella,
+all of the umbrella
+
+731
+00:44:53,480 --> 00:44:56,680
+kind of maps to a single line.
+
+732
+00:44:56,680 --> 00:45:03,950
+And so it's neat to
+see on the paper.
+
+733
+00:45:03,950 --> 00:45:05,840
+It's kind of what
+you could think
+
+734
+00:45:05,840 --> 00:45:09,650
+of as a projection to this tree.
+
+735
+00:45:09,650 --> 00:45:17,190
+Lines on the unfolded
+square, these lines
+
+736
+00:45:17,190 --> 00:45:20,300
+at the edges of the circle,
+map to a single point
+
+737
+00:45:20,300 --> 00:45:27,900
+on this flap, or infinitely thin
+flap, or essentially the tree.
+
+738
+00:45:27,900 --> 00:45:35,650
+This is kind of a
+leaf edge of our tree.
+
+739
+00:45:35,650 --> 00:45:40,670
+And so everything along this
+line maps to a single point,
+
+740
+00:45:40,670 --> 00:45:42,330
+is compressed onto
+a single point.
+
+741
+00:45:42,330 --> 00:45:47,780
+You can do that with any
+point going up this flap.
+
+742
+00:45:47,780 --> 00:45:51,120
+We can actually pick
+off a point here,
+
+743
+00:45:51,120 --> 00:45:57,340
+and we see a line of constant
+elevation with respect
+
+744
+00:45:57,340 --> 00:45:59,510
+to this flap.
+
+745
+00:45:59,510 --> 00:46:05,040
+And so now we've created
+a very, very simple tree.
+
+746
+00:46:05,040 --> 00:46:11,210
+Instead of one leaf
+edge extending off
+
+747
+00:46:11,210 --> 00:46:15,900
+of the rest of the model, we
+have a branch edge, and then
+
+748
+00:46:15,900 --> 00:46:17,380
+a leaf edge.
+
+749
+00:46:17,380 --> 00:46:25,230
+And this branch edge is
+corresponding to this strip
+
+750
+00:46:25,230 --> 00:46:27,160
+of paper here of constant width.
+
+751
+00:46:27,160 --> 00:46:29,160
+That's what we call a river.
+
+752
+00:46:29,160 --> 00:46:33,040
+And we see that a circle is
+just a limiting case of a river.
+
+753
+00:46:33,040 --> 00:46:37,740
+Rivers separates two parts of
+the model off from each other
+
+754
+00:46:37,740 --> 00:46:38,980
+by a constant distance.
+
+755
+00:46:38,980 --> 00:46:42,060
+That's what that constant
+thickness strip of paper means.
+
+756
+00:46:42,060 --> 00:46:45,250
+And the circle is really
+just a limiting case
+
+757
+00:46:45,250 --> 00:46:52,125
+off that river that separates
+only a single point away
+
+758
+00:46:52,125 --> 00:46:53,250
+from the rest of the model.
+
+759
+00:46:53,250 --> 00:46:57,620
+
+760
+00:46:57,620 --> 00:46:59,120
+That's all I want
+to say about that.
+
+761
+00:46:59,120 --> 00:47:07,290
+And we can actually
+tile these rivers
+
+762
+00:47:07,290 --> 00:47:09,860
+onto a plane to create
+arbitrary trees.
+
+763
+00:47:09,860 --> 00:47:13,476
+So here's an example
+of the correspondence.
+
+764
+00:47:13,476 --> 00:47:16,050
+
+765
+00:47:16,050 --> 00:47:20,380
+I call these
+circle/river packings.
+
+766
+00:47:20,380 --> 00:47:23,480
+That's the common term
+in origami design.
+
+767
+00:47:23,480 --> 00:47:24,860
+This is a circle/river packing.
+
+768
+00:47:24,860 --> 00:47:28,460
+It's kind of a space allocation.
+
+769
+00:47:28,460 --> 00:47:31,420
+It's an idealization.
+
+770
+00:47:31,420 --> 00:47:33,110
+The model we make
+is actually not
+
+771
+00:47:33,110 --> 00:47:35,590
+going to be infinitely thin.
+
+772
+00:47:35,590 --> 00:47:41,602
+So each flap is going to take up
+more space than these circles.
+
+773
+00:47:41,602 --> 00:47:42,810
+But it's a good idealization.
+
+774
+00:47:42,810 --> 00:47:46,850
+
+775
+00:47:46,850 --> 00:47:50,980
+This circle/river packing
+or this space allocation
+
+776
+00:47:50,980 --> 00:47:53,640
+actually maps
+uniquely to as a tree.
+
+777
+00:47:53,640 --> 00:47:58,690
+So if we go through
+it, this point,
+
+778
+00:47:58,690 --> 00:48:04,550
+this circle here might map
+to this line on the tree.
+
+779
+00:48:04,550 --> 00:48:09,340
+It can actually also map to this
+line, this edge or this edge,
+
+780
+00:48:09,340 --> 00:48:11,360
+as well.
+
+781
+00:48:11,360 --> 00:48:15,755
+Because I don't really care
+how these flaps are oriented.
+
+782
+00:48:15,755 --> 00:48:18,340
+
+783
+00:48:18,340 --> 00:48:20,840
+The tree is just
+supposed to preserve
+
+784
+00:48:20,840 --> 00:48:22,230
+length and connectedness.
+
+785
+00:48:22,230 --> 00:48:25,500
+It doesn't really have to do
+with where they're mapped.
+
+786
+00:48:25,500 --> 00:48:28,840
+And so we'll see some
+examples of that later.
+
+787
+00:48:28,840 --> 00:48:34,920
+But we can kind of
+go through this tree
+
+788
+00:48:34,920 --> 00:48:40,400
+and see all the
+different aspects of it,
+
+789
+00:48:40,400 --> 00:48:44,940
+how the edges correspond
+to circles and rivers
+
+790
+00:48:44,940 --> 00:48:46,220
+on the packing.
+
+791
+00:48:46,220 --> 00:48:48,390
+And we're going to do a
+little bit of practice
+
+792
+00:48:48,390 --> 00:48:53,950
+for that, because I think
+that was one of the day
+
+793
+00:48:53,950 --> 00:48:56,890
+hardest parts for me starting
+out in origami design,
+
+794
+00:48:56,890 --> 00:49:01,100
+was being able to be comfortable
+with going from a tree
+
+795
+00:49:01,100 --> 00:49:04,950
+to a space allocation, from
+a space allocation to a tree.
+
+796
+00:49:04,950 --> 00:49:08,990
+Getting that concept in my
+head was kind of difficult.
+
+797
+00:49:08,990 --> 00:49:11,820
+So how about we
+practice a little bit.
+
+798
+00:49:11,820 --> 00:49:16,450
+We have this space allocation
+of maybe two circles, a river,
+
+799
+00:49:16,450 --> 00:49:20,390
+and three more circles.
+
+800
+00:49:20,390 --> 00:49:26,050
+I'll just give you a second to
+see which one of these trees
+
+801
+00:49:26,050 --> 00:49:31,690
+is represented by
+this space allocation.
+
+802
+00:49:31,690 --> 00:49:35,600
+Or should I say
+how many of these.
+
+803
+00:49:35,600 --> 00:49:39,670
+Because some of these
+trees might be equivalent.
+
+804
+00:49:39,670 --> 00:49:43,920
+So we're going to start with
+the upper right one here.
+
+805
+00:49:43,920 --> 00:49:48,590
+
+806
+00:49:48,590 --> 00:49:52,110
+Does it correspond to
+this space allocation?
+
+807
+00:49:52,110 --> 00:49:52,740
+Yes or no?
+
+808
+00:49:52,740 --> 00:49:53,470
+No.
+
+809
+00:49:53,470 --> 00:49:54,724
+Why?
+
+810
+00:49:54,724 --> 00:49:55,656
+AUDIENCE: [INAUDIBLE]
+
+811
+00:49:55,656 --> 00:49:56,280
+JASON KU: Yeah.
+
+812
+00:49:56,280 --> 00:49:57,820
+So the topology's kind of wrong.
+
+813
+00:49:57,820 --> 00:50:00,750
+You've got three equal
+length flaps up here,
+
+814
+00:50:00,750 --> 00:50:01,820
+which is what we want.
+
+815
+00:50:01,820 --> 00:50:04,920
+We want three equal
+length flaps separated off
+
+816
+00:50:04,920 --> 00:50:09,930
+from the rest of the model by
+a river of the same length.
+
+817
+00:50:09,930 --> 00:50:11,060
+That makes sense.
+
+818
+00:50:11,060 --> 00:50:16,360
+But instead of separating
+off two flaps, two leaf
+
+819
+00:50:16,360 --> 00:50:19,430
+edges of maybe
+twice the length, it
+
+820
+00:50:19,430 --> 00:50:24,010
+separates three of the same
+length, which doesn't quite
+
+821
+00:50:24,010 --> 00:50:24,540
+work out.
+
+822
+00:50:24,540 --> 00:50:27,200
+So the distances and
+the connectivity's
+
+823
+00:50:27,200 --> 00:50:30,330
+kind of off here, just
+terms of the numbers.
+
+824
+00:50:30,330 --> 00:50:31,815
+So this one's wrong.
+
+825
+00:50:31,815 --> 00:50:34,360
+How about this one?
+
+826
+00:50:34,360 --> 00:50:34,860
+Yes.
+
+827
+00:50:34,860 --> 00:50:35,440
+Right?
+
+828
+00:50:35,440 --> 00:50:38,500
+It has the right topology.
+
+829
+00:50:38,500 --> 00:50:40,310
+This one?
+
+830
+00:50:40,310 --> 00:50:42,100
+No, again.
+
+831
+00:50:42,100 --> 00:50:44,160
+The wrong typology.
+
+832
+00:50:44,160 --> 00:50:50,010
+There is, again, three separated
+from two by a branch edge.
+
+833
+00:50:50,010 --> 00:50:54,600
+But it doesn't have
+the right lengths
+
+834
+00:50:54,600 --> 00:50:56,300
+associated with this
+space allocation.
+
+835
+00:50:56,300 --> 00:50:58,210
+And how about this one?
+
+836
+00:50:58,210 --> 00:50:58,710
+Yes.
+
+837
+00:50:58,710 --> 00:51:00,530
+Right?
+
+838
+00:51:00,530 --> 00:51:04,730
+I've transformed this
+tree from here to here.
+
+839
+00:51:04,730 --> 00:51:09,200
+I just moved them around
+with respect to each other.
+
+840
+00:51:09,200 --> 00:51:13,700
+They're equivalent, in terms
+of how we choose our tree.
+
+841
+00:51:13,700 --> 00:51:17,690
+And this will be important
+when we actually use TreeMaker.
+
+842
+00:51:17,690 --> 00:51:20,830
+
+843
+00:51:20,830 --> 00:51:25,720
+Because it doesn't matter how
+we orient things in our tree,
+
+844
+00:51:25,720 --> 00:51:31,070
+we can manipulate where we
+put our circles on the paper
+
+845
+00:51:31,070 --> 00:51:32,650
+to get the same tree.
+
+846
+00:51:32,650 --> 00:51:36,140
+The mapping from here
+to a tree is unique.
+
+847
+00:51:36,140 --> 00:51:38,520
+Mapping from a tree
+to a space allocation
+
+848
+00:51:38,520 --> 00:51:42,895
+is not, which leads to
+interesting design choices
+
+849
+00:51:42,895 --> 00:51:47,280
+that you can make in
+designing an origami model.
+
+850
+00:51:47,280 --> 00:51:49,940
+Yeah, those two.
+
+851
+00:51:49,940 --> 00:51:51,130
+One more time.
+
+852
+00:51:51,130 --> 00:51:53,630
+We'll go through this
+one a little quicker.
+
+853
+00:51:53,630 --> 00:51:56,960
+I'll give you maybe
+five seconds or so.
+
+854
+00:51:56,960 --> 00:52:00,340
+
+855
+00:52:00,340 --> 00:52:04,050
+So we're going to start with
+this one, the first one.
+
+856
+00:52:04,050 --> 00:52:07,880
+Does that map to this
+space allocation?
+
+857
+00:52:07,880 --> 00:52:09,890
+AUDIENCE: [INAUDIBLE]
+
+858
+00:52:09,890 --> 00:52:11,540
+JASON KU: Yes, it does.
+
+859
+00:52:11,540 --> 00:52:18,550
+We have two equal length set off
+from the same length to equal,
+
+860
+00:52:18,550 --> 00:52:20,080
+and then one twice as big.
+
+861
+00:52:20,080 --> 00:52:26,280
+And see how I've actually
+added a redundant node here.
+
+862
+00:52:26,280 --> 00:52:31,720
+I've split this leaf edge into
+a branch edge and a leaf edge.
+
+863
+00:52:31,720 --> 00:52:34,870
+That's kind of a redundant
+node that I don't really need.
+
+864
+00:52:34,870 --> 00:52:37,710
+It doesn't really change
+the topology of this at all.
+
+865
+00:52:37,710 --> 00:52:41,750
+It would just map to
+a line right here.
+
+866
+00:52:41,750 --> 00:52:42,860
+Everyone see that?
+
+867
+00:52:42,860 --> 00:52:44,830
+How about this one?
+
+868
+00:52:44,830 --> 00:52:45,330
+No.
+
+869
+00:52:45,330 --> 00:52:46,080
+Right?
+
+870
+00:52:46,080 --> 00:52:48,970
+For a number of reasons
+that I won't go into.
+
+871
+00:52:48,970 --> 00:52:51,410
+How about this one?
+
+872
+00:52:51,410 --> 00:52:51,910
+No.
+
+873
+00:52:51,910 --> 00:52:55,930
+Again, the distances and
+the topology are wrong.
+
+874
+00:52:55,930 --> 00:52:57,470
+This one?
+
+875
+00:52:57,470 --> 00:52:59,000
+No.
+
+876
+00:52:59,000 --> 00:53:02,610
+This is actually one of the
+trees from the slide before.
+
+877
+00:53:02,610 --> 00:53:04,030
+And this one?
+
+878
+00:53:04,030 --> 00:53:05,160
+Yes.
+
+879
+00:53:05,160 --> 00:53:08,370
+This is actually just a
+manipulation of that tree.
+
+880
+00:53:08,370 --> 00:53:09,670
+So yay!
+
+881
+00:53:09,670 --> 00:53:11,290
+We're awesome.
+
+882
+00:53:11,290 --> 00:53:14,170
+Now, going the other way
+is not necessarily unique.
+
+883
+00:53:14,170 --> 00:53:17,090
+
+884
+00:53:17,090 --> 00:53:19,500
+So there would be
+multiple answers here.
+
+885
+00:53:19,500 --> 00:53:22,730
+
+886
+00:53:22,730 --> 00:53:29,170
+Is this a correct
+representation of this tree?
+
+887
+00:53:29,170 --> 00:53:31,144
+Yes or no?
+
+888
+00:53:31,144 --> 00:53:31,940
+AUDIENCE: No.
+
+889
+00:53:31,940 --> 00:53:33,815
+JASON KU: It has the
+correct topology, right?
+
+890
+00:53:33,815 --> 00:53:37,080
+It has three equal length
+flaps separated off by a river
+
+891
+00:53:37,080 --> 00:53:38,340
+from three equal length flaps.
+
+892
+00:53:38,340 --> 00:53:39,381
+That's what we have here.
+
+893
+00:53:39,381 --> 00:53:44,500
+But this river is actually twice
+as long as any of these flaps.
+
+894
+00:53:44,500 --> 00:53:47,310
+So this is actually
+a little bit shorter
+
+895
+00:53:47,310 --> 00:53:49,800
+than the length of
+any of these flaps,
+
+896
+00:53:49,800 --> 00:53:52,650
+not really working for us there.
+
+897
+00:53:52,650 --> 00:53:54,920
+How about this one?
+
+898
+00:53:54,920 --> 00:53:56,960
+No, for pretty much
+the same reason.
+
+899
+00:53:56,960 --> 00:54:00,760
+It actually has a very
+similar, if not identical, tree
+
+900
+00:54:00,760 --> 00:54:03,330
+to this one.
+
+901
+00:54:03,330 --> 00:54:05,270
+How about this one?
+
+902
+00:54:05,270 --> 00:54:08,730
+No, topological problems there.
+
+903
+00:54:08,730 --> 00:54:10,280
+This one?
+
+904
+00:54:10,280 --> 00:54:11,040
+Yes.
+
+905
+00:54:11,040 --> 00:54:14,240
+So it's got three equal
+length flaps separated off
+
+906
+00:54:14,240 --> 00:54:18,350
+by a large 2x river, I guess.
+
+907
+00:54:18,350 --> 00:54:18,960
+And this one?
+
+908
+00:54:18,960 --> 00:54:21,550
+
+909
+00:54:21,550 --> 00:54:23,710
+No, for the same reason here.
+
+910
+00:54:23,710 --> 00:54:27,580
+And here we can actually
+see three different packings
+
+911
+00:54:27,580 --> 00:54:34,520
+of a very similar,
+if not same, tree.
+
+912
+00:54:34,520 --> 00:54:37,270
+And this goes to
+show you that there
+
+913
+00:54:37,270 --> 00:54:39,380
+could be many
+different ways we could
+
+914
+00:54:39,380 --> 00:54:43,270
+put these disks on a sheet of
+paper that could either improve
+
+915
+00:54:43,270 --> 00:54:45,990
+efficiency or be more useful.
+
+916
+00:54:45,990 --> 00:54:50,450
+For example, this packing
+has a central flap.
+
+917
+00:54:50,450 --> 00:54:53,320
+We may or may not want
+that central flap.
+
+918
+00:54:53,320 --> 00:54:57,800
+You can see that a central
+flap will use more paper
+
+919
+00:54:57,800 --> 00:55:02,520
+than a flap at the corner
+or the edge of the paper,
+
+920
+00:55:02,520 --> 00:55:06,560
+because it has 360
+degrees of paper
+
+921
+00:55:06,560 --> 00:55:09,420
+that you have to fold
+as opposed to 180
+
+922
+00:55:09,420 --> 00:55:13,930
+or even just 90
+degrees of paper.
+
+923
+00:55:13,930 --> 00:55:15,930
+So typically in
+origami design, if you
+
+924
+00:55:15,930 --> 00:55:19,610
+have a flap you need a little
+bit of bulk in, a little more
+
+925
+00:55:19,610 --> 00:55:21,510
+paper, you might
+want to consider
+
+926
+00:55:21,510 --> 00:55:23,460
+making that a central flap.
+
+927
+00:55:23,460 --> 00:55:27,390
+If you want to make a very thin,
+maybe an antenna or something,
+
+928
+00:55:27,390 --> 00:55:30,010
+a corner flap might
+be a better choice.
+
+929
+00:55:30,010 --> 00:55:32,660
+
+930
+00:55:32,660 --> 00:55:35,180
+So correct, in that sense.
+
+931
+00:55:35,180 --> 00:55:38,390
+Now again, I want
+to stress the fact
+
+932
+00:55:38,390 --> 00:55:40,130
+that this is an idealization.
+
+933
+00:55:40,130 --> 00:55:41,360
+These are circles.
+
+934
+00:55:41,360 --> 00:55:48,576
+They don't really account for
+all the paper in the square.
+
+935
+00:55:48,576 --> 00:55:51,460
+This paper between the
+circles and the rivers
+
+936
+00:55:51,460 --> 00:55:53,260
+is not really used.
+
+937
+00:55:53,260 --> 00:55:58,530
+Pretty much everything in
+this no man's land here
+
+938
+00:55:58,530 --> 00:56:04,440
+actually maps to a single
+point in the tree right.
+
+939
+00:56:04,440 --> 00:56:08,710
+This is a bad example, so
+I'll use this correspondence.
+
+940
+00:56:08,710 --> 00:56:11,440
+This kind of looks like a
+bikini or something like that.
+
+941
+00:56:11,440 --> 00:56:14,460
+That's neither here nor there.
+
+942
+00:56:14,460 --> 00:56:20,790
+But this space all maps to
+one of these branch nodes.
+
+943
+00:56:20,790 --> 00:56:22,140
+Everyone see that?
+
+944
+00:56:22,140 --> 00:56:29,180
+Because in the situation where
+we thin this model infinitely,
+
+945
+00:56:29,180 --> 00:56:31,730
+this is kind of extra
+space that we kind of just
+
+946
+00:56:31,730 --> 00:56:33,590
+don't even deal with.
+
+947
+00:56:33,590 --> 00:56:36,520
+In reality, that
+extra space will
+
+948
+00:56:36,520 --> 00:56:40,950
+have to go into either
+the rivers or the circles
+
+949
+00:56:40,950 --> 00:56:42,060
+in the packing.
+
+950
+00:56:42,060 --> 00:56:47,730
+So the reason why uniaxial
+bases are nice in this model
+
+951
+00:56:47,730 --> 00:56:54,220
+is because since all they hinge
+creases of the model, basically
+
+952
+00:56:54,220 --> 00:56:56,760
+the boundary of the
+flap with the model,
+
+953
+00:56:56,760 --> 00:57:08,030
+hinge 90 degrees to some
+axis, then its projection maps
+
+954
+00:57:08,030 --> 00:57:09,280
+to a single point.
+
+955
+00:57:09,280 --> 00:57:13,340
+So if we cut off all the
+flaps along the hinge creases,
+
+956
+00:57:13,340 --> 00:57:17,195
+we should actually get
+a very similar mapping
+
+957
+00:57:17,195 --> 00:57:18,070
+to what we have here.
+
+958
+00:57:18,070 --> 00:57:23,870
+And here's an example of
+a fairly complex model.
+
+959
+00:57:23,870 --> 00:57:27,290
+But you can see, I've
+just highlighted the locus
+
+960
+00:57:27,290 --> 00:57:30,870
+of possible hinge
+creases on this model.
+
+961
+00:57:30,870 --> 00:57:32,820
+There's a unique way to do this.
+
+962
+00:57:32,820 --> 00:57:33,910
+I won't go into it.
+
+963
+00:57:33,910 --> 00:57:38,280
+But there is a unique way
+to add these hinge creases.
+
+964
+00:57:38,280 --> 00:57:42,530
+But as you can see, the
+idea is very similar.
+
+965
+00:57:42,530 --> 00:57:46,360
+But instead of having these
+curves of constant width,
+
+966
+00:57:46,360 --> 00:57:50,050
+you have these discrete angular
+curves of constant width.
+
+967
+00:57:50,050 --> 00:57:54,830
+So for example here, you have
+a river of constant width
+
+968
+00:57:54,830 --> 00:57:58,580
+that changes directions
+at a discrete corner,
+
+969
+00:57:58,580 --> 00:58:01,210
+but it's still a strip
+of constant width.
+
+970
+00:58:01,210 --> 00:58:02,750
+Everyone see that?
+
+971
+00:58:02,750 --> 00:58:06,739
+So maybe we could
+go ahead and see--
+
+972
+00:58:06,739 --> 00:58:08,530
+If we had this crease
+pattern and we didn't
+
+973
+00:58:08,530 --> 00:58:10,730
+know what the model
+was, we could actually
+
+974
+00:58:10,730 --> 00:58:14,930
+pick off the tree and figure
+out what this model is.
+
+975
+00:58:14,930 --> 00:58:21,160
+So maybe we start with
+these two points down here.
+
+976
+00:58:21,160 --> 00:58:23,470
+They're all points separated
+off the rest of the model
+
+977
+00:58:23,470 --> 00:58:25,100
+by a certain distance.
+
+978
+00:58:25,100 --> 00:58:33,130
+And that distance here, all
+these lines that are connected
+
+979
+00:58:33,130 --> 00:58:37,350
+must be at the same location,
+the same node on the tree,
+
+980
+00:58:37,350 --> 00:58:40,610
+because all those hinge creases
+must map to a single point.
+
+981
+00:58:40,610 --> 00:58:45,820
+So these two flaps
+connect with each other
+
+982
+00:58:45,820 --> 00:58:49,310
+because they share this
+set of hinge creases.
+
+983
+00:58:49,310 --> 00:58:51,500
+And so that's that
+point right there.
+
+984
+00:58:51,500 --> 00:58:56,790
+I'm going to ignore these two
+flaps at the bottom for now.
+
+985
+00:58:56,790 --> 00:58:59,480
+We have this big long river.
+
+986
+00:58:59,480 --> 00:59:02,640
+I'm just going to deal
+with the big points first.
+
+987
+00:59:02,640 --> 00:59:05,190
+And that connects to
+two more big points.
+
+988
+00:59:05,190 --> 00:59:07,760
+
+989
+00:59:07,760 --> 00:59:08,850
+Everyone see that?
+
+990
+00:59:08,850 --> 00:59:10,580
+I don't want to go too fast.
+
+991
+00:59:10,580 --> 00:59:13,290
+And actually, you can do that.
+
+992
+00:59:13,290 --> 00:59:16,760
+You can just keep doing that,
+and methodically picking off
+
+993
+00:59:16,760 --> 00:59:19,620
+distances on this hinge
+crease representation,
+
+994
+00:59:19,620 --> 00:59:23,730
+this is discrete
+space allocation
+
+995
+00:59:23,730 --> 00:59:26,365
+and fill in the whole tree.
+
+996
+00:59:26,365 --> 00:59:29,090
+
+997
+00:59:29,090 --> 00:59:33,460
+Anyone can think of
+what this might be?
+
+998
+00:59:33,460 --> 00:59:39,410
+Maybe a four-legged animal with
+antlers, like maybe a moose.
+
+999
+00:59:39,410 --> 00:59:42,520
+So this is a model
+I designed, I think,
+
+1000
+00:59:42,520 --> 00:59:45,232
+my freshman year
+as an undergrad.
+
+1001
+00:59:45,232 --> 00:59:46,732
+AUDIENCE: What
+happens when you have
+
+1002
+00:59:46,732 --> 00:59:48,430
+the squares inside the squares?
+
+1003
+00:59:48,430 --> 00:59:56,045
+
+1004
+00:59:56,045 --> 00:59:57,670
+JASON KU: That's an
+excellent question.
+
+1005
+00:59:57,670 --> 00:59:59,820
+First, I want to answer
+one other question
+
+1006
+00:59:59,820 --> 01:00:01,160
+before I get to that one.
+
+1007
+01:00:01,160 --> 01:00:10,110
+Here, these polygons,
+these squares,
+
+1008
+01:00:10,110 --> 01:00:13,980
+you could think of maybe
+putting a circle in them.
+
+1009
+01:00:13,980 --> 01:00:18,940
+And the square is taking up
+more paper than the circle,
+
+1010
+01:00:18,940 --> 01:00:21,990
+and so the flap
+that this represents
+
+1011
+01:00:21,990 --> 01:00:25,700
+would be the largest circle
+that would be fully contained
+
+1012
+01:00:25,700 --> 01:00:27,380
+in that square.
+
+1013
+01:00:27,380 --> 01:00:29,180
+And that would be the
+length of that flap.
+
+1014
+01:00:29,180 --> 01:00:32,610
+What does it mean to have
+instead of this point separated
+
+1015
+01:00:32,610 --> 01:00:35,500
+off from the rest of the model
+have a line separated off
+
+1016
+01:00:35,500 --> 01:00:38,170
+from the rest of the model?
+
+1017
+01:00:38,170 --> 01:00:43,940
+Can anyone guess
+why would you want
+
+1018
+01:00:43,940 --> 01:00:47,210
+that as an origami designer?
+
+1019
+01:00:47,210 --> 01:00:49,230
+Well, you might
+want that property
+
+1020
+01:00:49,230 --> 01:00:53,710
+if you want not just
+a point separated
+
+1021
+01:00:53,710 --> 01:00:55,570
+off from the rest of
+the model, but a line.
+
+1022
+01:00:55,570 --> 01:00:57,300
+You might want thickness.
+
+1023
+01:00:57,300 --> 01:00:59,910
+It's a qualification
+of thickness
+
+1024
+01:00:59,910 --> 01:01:04,980
+of that flap at the extreme
+distance away from the model.
+
+1025
+01:01:04,980 --> 01:01:07,890
+
+1026
+01:01:07,890 --> 01:01:11,010
+And I don't have
+this example with me.
+
+1027
+01:01:11,010 --> 01:01:14,160
+I talked about it yesterday
+at the OrigaMIT lecture.
+
+1028
+01:01:14,160 --> 01:01:17,860
+But let's say you wanted
+to model a butterfly wing.
+
+1029
+01:01:17,860 --> 01:01:22,920
+It's not well
+characterized by a stick.
+
+1030
+01:01:22,920 --> 01:01:25,930
+Its thickness is
+kind of important.
+
+1031
+01:01:25,930 --> 01:01:29,030
+So how I designed
+a butterfly wing
+
+1032
+01:01:29,030 --> 01:01:31,730
+is I separated a line
+off from the rest
+
+1033
+01:01:31,730 --> 01:01:36,400
+of the model, something
+similar to this,
+
+1034
+01:01:36,400 --> 01:01:39,100
+so that I would have enough
+paper to kind of spread out
+
+1035
+01:01:39,100 --> 01:01:42,240
+that idealized single point.
+
+1036
+01:01:42,240 --> 01:01:47,380
+I could spread the end of that
+point to have some thickness
+
+1037
+01:01:47,380 --> 01:01:51,490
+and to make a full
+butterfly wing.
+
+1038
+01:01:51,490 --> 01:01:53,580
+And what you're
+saying is what does it
+
+1039
+01:01:53,580 --> 01:01:57,670
+mean to have these points,
+these single leaf edges,
+
+1040
+01:01:57,670 --> 01:02:00,220
+separated off kind of
+surrounded by river?
+
+1041
+01:02:00,220 --> 01:02:02,830
+
+1042
+01:02:02,830 --> 01:02:03,960
+You see what that means?
+
+1043
+01:02:03,960 --> 01:02:05,740
+Yep, this is just a river.
+
+1044
+01:02:05,740 --> 01:02:10,010
+Rivers, again, don't have to
+go all the way across a model.
+
+1045
+01:02:10,010 --> 01:02:11,680
+They can also connect.
+
+1046
+01:02:11,680 --> 01:02:14,360
+You're separating
+these two points off
+
+1047
+01:02:14,360 --> 01:02:18,130
+from the rest of the model by
+a certain constant distance.
+
+1048
+01:02:18,130 --> 01:02:19,470
+So excellent question.
+
+1049
+01:02:19,470 --> 01:02:24,530
+
+1050
+01:02:24,530 --> 01:02:30,080
+And as I promised before, I
+want to take look a little bit
+
+1051
+01:02:30,080 --> 01:02:33,880
+about the structure
+of this model.
+
+1052
+01:02:33,880 --> 01:02:36,350
+It looks very symmetric, right?
+
+1053
+01:02:36,350 --> 01:02:39,460
+And you'd think that maybe
+it would be well represented
+
+1054
+01:02:39,460 --> 01:02:43,090
+by a rectangle of paper
+instead of a square.
+
+1055
+01:02:43,090 --> 01:02:45,510
+How do you fit
+this into a square
+
+1056
+01:02:45,510 --> 01:02:46,835
+by still having this detail?
+
+1057
+01:02:46,835 --> 01:02:50,430
+
+1058
+01:02:50,430 --> 01:02:52,430
+How do you think this
+texture was made?
+
+1059
+01:02:52,430 --> 01:02:55,490
+
+1060
+01:02:55,490 --> 01:02:55,990
+Anybody?
+
+1061
+01:02:55,990 --> 01:02:59,560
+
+1062
+01:02:59,560 --> 01:03:03,924
+It's kind of just pleating
+the paper back and forth.
+
+1063
+01:03:03,924 --> 01:03:06,740
+If you've ever taken
+a sheet of paper
+
+1064
+01:03:06,740 --> 01:03:10,580
+and pleated it to
+form a texture,
+
+1065
+01:03:10,580 --> 01:03:12,050
+kind of a
+one-dimensional problem,
+
+1066
+01:03:12,050 --> 01:03:13,630
+but you're pleating it.
+
+1067
+01:03:13,630 --> 01:03:15,305
+But after you pleat
+it, it's smaller.
+
+1068
+01:03:15,305 --> 01:03:19,750
+
+1069
+01:03:19,750 --> 01:03:22,456
+If we take a look at the
+crease pattern here--
+
+1070
+01:03:22,456 --> 01:03:23,830
+This is actually
+a crease pattern
+
+1071
+01:03:23,830 --> 01:03:28,410
+to an earlier version
+of this model.
+
+1072
+01:03:28,410 --> 01:03:30,500
+This is slightly
+less detailed, if you
+
+1073
+01:03:30,500 --> 01:03:34,360
+can imagine, than
+this model right here.
+
+1074
+01:03:34,360 --> 01:03:38,120
+
+1075
+01:03:38,120 --> 01:03:40,270
+What do you think this is?
+
+1076
+01:03:40,270 --> 01:03:43,060
+Maybe the scales, right?
+
+1077
+01:03:43,060 --> 01:03:45,570
+This is the head region.
+
+1078
+01:03:45,570 --> 01:03:50,040
+We can actually do
+a rough version,
+
+1079
+01:03:50,040 --> 01:03:52,870
+perform a rough version of
+this kind of hinge crease
+
+1080
+01:03:52,870 --> 01:03:56,000
+representation, and get
+an idea for the structure
+
+1081
+01:03:56,000 --> 01:03:57,770
+of this model.
+
+1082
+01:03:57,770 --> 01:04:02,210
+So here, we see the tail.
+
+1083
+01:04:02,210 --> 01:04:03,530
+I'll talk about this later.
+
+1084
+01:04:03,530 --> 01:04:06,472
+We have the two back
+feet separated off
+
+1085
+01:04:06,472 --> 01:04:08,180
+from the rest of the
+model by a distance.
+
+1086
+01:04:08,180 --> 01:04:10,540
+That's this distance here.
+
+1087
+01:04:10,540 --> 01:04:13,070
+Two more feet.
+
+1088
+01:04:13,070 --> 01:04:15,600
+This is kind of the neck region.
+
+1089
+01:04:15,600 --> 01:04:17,900
+And here's the head.
+
+1090
+01:04:17,900 --> 01:04:18,400
+OK.
+
+1091
+01:04:18,400 --> 01:04:20,080
+So this looks kind of weird.
+
+1092
+01:04:20,080 --> 01:04:24,170
+I haven't really been specific
+about the details here.
+
+1093
+01:04:24,170 --> 01:04:26,530
+But what does that pleating do?
+
+1094
+01:04:26,530 --> 01:04:29,730
+Well, it shrinks the
+useful area of the paper,
+
+1095
+01:04:29,730 --> 01:04:31,200
+because I pleated it.
+
+1096
+01:04:31,200 --> 01:04:33,980
+So that's why here the
+length of this flap
+
+1097
+01:04:33,980 --> 01:04:36,160
+is this distance here.
+
+1098
+01:04:36,160 --> 01:04:37,480
+That's the length of the tail.
+
+1099
+01:04:37,480 --> 01:04:40,290
+
+1100
+01:04:40,290 --> 01:04:43,760
+But when I make pleats,
+this thing shrinks.
+
+1101
+01:04:43,760 --> 01:04:46,670
+And it actually shrinks
+to this distance.
+
+1102
+01:04:46,670 --> 01:04:51,840
+This whole thing is cut in half.
+
+1103
+01:04:51,840 --> 01:04:55,580
+So we make these
+pleats, it shrinks,
+
+1104
+01:04:55,580 --> 01:04:59,330
+and then it can lie
+along this segment.
+
+1105
+01:04:59,330 --> 01:05:06,680
+Then this area here
+also shrinks by half.
+
+1106
+01:05:06,680 --> 01:05:08,520
+So the length is here.
+
+1107
+01:05:08,520 --> 01:05:13,770
+And it is able to cover
+this aspect, this part
+
+1108
+01:05:13,770 --> 01:05:17,110
+of this middle
+river with texture.
+
+1109
+01:05:17,110 --> 01:05:21,084
+
+1110
+01:05:21,084 --> 01:05:23,000
+Please ask questions,
+because this is complex.
+
+1111
+01:05:23,000 --> 01:05:25,208
+AUDIENCE: [? What's the ?]
+distance between the front
+
+1112
+01:05:25,208 --> 01:05:25,947
+and back legs?
+
+1113
+01:05:25,947 --> 01:05:26,530
+JASON KU: Yes.
+
+1114
+01:05:26,530 --> 01:05:29,209
+So this is the distance between
+the front and back legs.
+
+1115
+01:05:29,209 --> 01:05:30,750
+But we have to cover
+it with texture.
+
+1116
+01:05:30,750 --> 01:05:32,310
+There's no texture here.
+
+1117
+01:05:32,310 --> 01:05:36,480
+So what we do is create
+this extra flap here
+
+1118
+01:05:36,480 --> 01:05:43,940
+where the back legs are with
+a length of half of this,
+
+1119
+01:05:43,940 --> 01:05:46,340
+and cover it with texture.
+
+1120
+01:05:46,340 --> 01:05:48,350
+So that's what he's done here.
+
+1121
+01:05:48,350 --> 01:05:52,260
+And so the same goes for here.
+
+1122
+01:05:52,260 --> 01:05:56,650
+It's not quite half down
+here, but this covers up
+
+1123
+01:05:56,650 --> 01:05:58,376
+the rest of that section.
+
+1124
+01:05:58,376 --> 01:05:59,750
+And there's actually
+some overlap
+
+1125
+01:05:59,750 --> 01:06:02,110
+so that they can mesh correctly.
+
+1126
+01:06:02,110 --> 01:06:06,520
+Then here, we have enough paper
+to provide texture to the neck
+
+1127
+01:06:06,520 --> 01:06:08,260
+region, and then
+there's the head.
+
+1128
+01:06:08,260 --> 01:06:12,380
+It's kind of an ingenious way
+of actually the top and bottom,
+
+1129
+01:06:12,380 --> 01:06:15,280
+this top texture and
+this bottom texture,
+
+1130
+01:06:15,280 --> 01:06:19,260
+folding up onto this line
+segment which represents
+
+1131
+01:06:19,260 --> 01:06:23,600
+the length of the
+dragon, and still
+
+1132
+01:06:23,600 --> 01:06:28,250
+having space for
+these toes and feet.
+
+1133
+01:06:28,250 --> 01:06:33,350
+It's an ingenious way
+to distribute the paper,
+
+1134
+01:06:33,350 --> 01:06:34,430
+in this case.
+
+1135
+01:06:34,430 --> 01:06:36,590
+Here we can understand
+another reason
+
+1136
+01:06:36,590 --> 01:06:39,440
+why we might want to
+separate a line off
+
+1137
+01:06:39,440 --> 01:06:43,070
+from the rest of the model,
+because then that line has
+
+1138
+01:06:43,070 --> 01:06:45,250
+some thickness, you have
+a certain amount of space
+
+1139
+01:06:45,250 --> 01:06:47,230
+out there, and you
+can actually then
+
+1140
+01:06:47,230 --> 01:06:51,010
+create more points
+from that line being
+
+1141
+01:06:51,010 --> 01:06:53,020
+out at a certain distance.
+
+1142
+01:06:53,020 --> 01:06:56,720
+We can create a number of little
+points, which are then toes.
+
+1143
+01:06:56,720 --> 01:07:00,310
+
+1144
+01:07:00,310 --> 01:07:04,100
+So I thought that
+was pretty cool.
+
+1145
+01:07:04,100 --> 01:07:06,800
+One of my favorite
+examples of structure.
+
+1146
+01:07:06,800 --> 01:07:07,770
+AUDIENCE: [INAUDIBLE]
+
+1147
+01:07:07,770 --> 01:07:11,170
+
+1148
+01:07:11,170 --> 01:07:12,950
+JASON KU: These were
+all drawn by hand
+
+1149
+01:07:12,950 --> 01:07:15,835
+using a program very similar
+to Adobe Illustrator.
+
+1150
+01:07:15,835 --> 01:07:18,380
+
+1151
+01:07:18,380 --> 01:07:21,990
+So yeah, it's very tedious, and
+lots of copying and pasting.
+
+1152
+01:07:21,990 --> 01:07:26,390
+But you should see the
+more complicated version
+
+1153
+01:07:26,390 --> 01:07:28,570
+of this pattern.
+
+1154
+01:07:28,570 --> 01:07:32,790
+Because as you can see
+on this model here,
+
+1155
+01:07:32,790 --> 01:07:38,220
+there are actually scales
+on the feet part itself.
+
+1156
+01:07:38,220 --> 01:07:45,490
+These claws actually are longer
+in proportion to everything
+
+1157
+01:07:45,490 --> 01:07:46,950
+else in the model.
+
+1158
+01:07:46,950 --> 01:07:48,690
+So we actually add
+some more things.
+
+1159
+01:07:48,690 --> 01:07:51,880
+There's also a
+strip of paper here
+
+1160
+01:07:51,880 --> 01:07:53,230
+that has spines on the back.
+
+1161
+01:07:53,230 --> 01:07:57,290
+This crease pattern doesn't
+represent those things.
+
+1162
+01:07:57,290 --> 01:08:00,869
+So this is a simplified
+version, if you will.
+
+1163
+01:08:00,869 --> 01:08:02,952
+AUDIENCE: What was the
+starting size of the paper?
+
+1164
+01:08:02,952 --> 01:08:06,290
+AUDIENCE: Yeah, how big is it?
+
+1165
+01:08:06,290 --> 01:08:08,530
+JASON KU: It's actually
+an amazingly efficient use
+
+1166
+01:08:08,530 --> 01:08:10,270
+of paper.
+
+1167
+01:08:10,270 --> 01:08:13,100
+The length of the
+dragon is pretty much
+
+1168
+01:08:13,100 --> 01:08:16,710
+this length right
+here, which is actually
+
+1169
+01:08:16,710 --> 01:08:19,150
+quite impressive for the
+amount of detail there is.
+
+1170
+01:08:19,150 --> 01:08:22,319
+
+1171
+01:08:22,319 --> 01:08:23,790
+The shrinkage
+factor is something
+
+1172
+01:08:23,790 --> 01:08:26,010
+like to the length
+of the squared
+
+1173
+01:08:26,010 --> 01:08:28,954
+to the length of the
+dragon is not even a half.
+
+1174
+01:08:28,954 --> 01:08:33,410
+
+1175
+01:08:33,410 --> 01:08:36,490
+The overall structure of this
+model is actually quite simple.
+
+1176
+01:08:36,490 --> 01:08:40,729
+
+1177
+01:08:40,729 --> 01:08:44,920
+The model itself is
+maybe about this big.
+
+1178
+01:08:44,920 --> 01:08:47,609
+So I'm guessing the
+size of the square
+
+1179
+01:08:47,609 --> 01:08:50,729
+was something like a meter,
+if not a little larger.
+
+1180
+01:08:50,729 --> 01:08:54,899
+
+1181
+01:08:54,899 --> 01:08:57,720
+It's a long time to work
+with a single sheet of paper.
+
+1182
+01:08:57,720 --> 01:08:58,220
+All right.
+
+1183
+01:08:58,220 --> 01:09:01,740
+So we're going to very quickly,
+maybe for the next 10, 15
+
+1184
+01:09:01,740 --> 01:09:05,770
+minutes, go through a
+design example of a crab.
+
+1185
+01:09:05,770 --> 01:09:10,490
+And so we're going to kind
+of go through it quickly.
+
+1186
+01:09:10,490 --> 01:09:12,520
+To help you do your
+homework, I just
+
+1187
+01:09:12,520 --> 01:09:16,870
+want to let you know about
+some details of TreeMaker that
+
+1188
+01:09:16,870 --> 01:09:19,220
+might be useful to
+you to be able to make
+
+1189
+01:09:19,220 --> 01:09:21,880
+a cleaner or nicer
+crease pattern.
+
+1190
+01:09:21,880 --> 01:09:27,819
+So to go to a TreeMaker example,
+I'm going to open up TreeMaker.
+
+1191
+01:09:27,819 --> 01:09:34,410
+
+1192
+01:09:34,410 --> 01:09:40,164
+I need to bring
+TreeMaker over here.
+
+1193
+01:09:40,164 --> 01:09:42,950
+
+1194
+01:09:42,950 --> 01:09:44,290
+So we have TreeMaker.
+
+1195
+01:09:44,290 --> 01:09:47,469
+
+1196
+01:09:47,469 --> 01:09:49,010
+And let's say we
+want to make a crab.
+
+1197
+01:09:49,010 --> 01:09:52,479
+So how do you want
+to draw this tree?
+
+1198
+01:09:52,479 --> 01:09:54,520
+Maybe I'll just draw the
+tree that we had before.
+
+1199
+01:09:54,520 --> 01:09:57,420
+
+1200
+01:09:57,420 --> 01:10:06,370
+First we have four legs
+all of equal length.
+
+1201
+01:10:06,370 --> 01:10:10,300
+
+1202
+01:10:10,300 --> 01:10:13,730
+We could have them all
+coming from the same spot.
+
+1203
+01:10:13,730 --> 01:10:37,170
+But traditionally, if we
+take a look at a crab--
+
+1204
+01:10:37,170 --> 01:10:41,340
+That's a cartoony
+version of a crab,
+
+1205
+01:10:41,340 --> 01:10:47,080
+but we see that these maybe
+our axis of our model is here.
+
+1206
+01:10:47,080 --> 01:10:53,070
+These legs actually don't
+need to split at the axis.
+
+1207
+01:10:53,070 --> 01:10:57,330
+We could actually model
+this as in the tree,
+
+1208
+01:10:57,330 --> 01:11:02,650
+maybe we have our body
+segment, and maybe we
+
+1209
+01:11:02,650 --> 01:11:07,760
+separate these four
+flaps off from the axis
+
+1210
+01:11:07,760 --> 01:11:10,620
+by a certain distance so that
+we actually can save paper.
+
+1211
+01:11:10,620 --> 01:11:14,310
+We don't have to make each
+one of these flaps this long.
+
+1212
+01:11:14,310 --> 01:11:15,550
+You see?
+
+1213
+01:11:15,550 --> 01:11:18,920
+So I'm going to add a
+little line segment there.
+
+1214
+01:11:18,920 --> 01:11:25,010
+Repeat on the other side.
+
+1215
+01:11:25,010 --> 01:11:25,765
+You get the idea.
+
+1216
+01:11:25,765 --> 01:11:28,530
+
+1217
+01:11:28,530 --> 01:11:31,550
+Then maybe you
+have some modeling
+
+1218
+01:11:31,550 --> 01:11:34,270
+of the thickness of the model.
+
+1219
+01:11:34,270 --> 01:11:36,140
+Then we have claws.
+
+1220
+01:11:36,140 --> 01:11:40,200
+
+1221
+01:11:40,200 --> 01:11:44,300
+One nice thing about this is
+we could view just the tree.
+
+1222
+01:11:44,300 --> 01:11:46,190
+That might make things
+a little easier.
+
+1223
+01:11:46,190 --> 01:11:47,940
+There's lots of these
+view characteristics
+
+1224
+01:11:47,940 --> 01:11:49,680
+that we're going to
+take advantage of.
+
+1225
+01:11:49,680 --> 01:11:53,070
+
+1226
+01:11:53,070 --> 01:11:57,040
+And maybe we want to
+represent the eyes.
+
+1227
+01:11:57,040 --> 01:11:59,580
+
+1228
+01:11:59,580 --> 01:12:05,140
+Now, the lengths of these
+edges in the program
+
+1229
+01:12:05,140 --> 01:12:08,170
+don't really mean anything.
+
+1230
+01:12:08,170 --> 01:12:10,490
+So take that into note first.
+
+1231
+01:12:10,490 --> 01:12:12,950
+You actually I've to
+click on each edge
+
+1232
+01:12:12,950 --> 01:12:16,260
+and specify its length
+relative to all the others.
+
+1233
+01:12:16,260 --> 01:12:19,070
+So maybe we want
+to make the claws
+
+1234
+01:12:19,070 --> 01:12:28,320
+half as long as the
+branch connecting them.
+
+1235
+01:12:28,320 --> 01:12:33,550
+
+1236
+01:12:33,550 --> 01:12:34,670
+Bear with me.
+
+1237
+01:12:34,670 --> 01:12:37,330
+
+1238
+01:12:37,330 --> 01:12:40,080
+There's no good way of
+automating this process
+
+1239
+01:12:40,080 --> 01:12:41,400
+at this point.
+
+1240
+01:12:41,400 --> 01:12:43,010
+And maybe we make
+the eyes-- they're
+
+1241
+01:12:43,010 --> 01:12:45,430
+pretty short-- so
+we maybe make them
+
+1242
+01:12:45,430 --> 01:12:47,285
+a quarter of the
+length of those.
+
+1243
+01:12:47,285 --> 01:12:51,240
+
+1244
+01:12:51,240 --> 01:12:55,500
+The body segment, I don't know.
+
+1245
+01:12:55,500 --> 01:12:57,650
+Also a quarter.
+
+1246
+01:12:57,650 --> 01:12:59,310
+This is really
+kind of arbitrary,
+
+1247
+01:12:59,310 --> 01:13:02,820
+but you can play around
+with these dimensions.
+
+1248
+01:13:02,820 --> 01:13:06,140
+And these guys, also a quarter.
+
+1249
+01:13:06,140 --> 01:13:10,730
+And the back legs
+can also be one.
+
+1250
+01:13:10,730 --> 01:13:12,130
+Something like that.
+
+1251
+01:13:12,130 --> 01:13:13,160
+All right.
+
+1252
+01:13:13,160 --> 01:13:20,910
+When we've got that, we see that
+we actually have circles there.
+
+1253
+01:13:20,910 --> 01:13:22,760
+Now, these circles
+are kind of crossing.
+
+1254
+01:13:22,760 --> 01:13:26,530
+We don't want
+that, because paper
+
+1255
+01:13:26,530 --> 01:13:28,930
+can't go to two points at once.
+
+1256
+01:13:28,930 --> 01:13:30,760
+What we can do now
+is scale everything.
+
+1257
+01:13:30,760 --> 01:13:33,530
+
+1258
+01:13:33,530 --> 01:13:37,910
+So it tries to pack
+all the circles such
+
+1259
+01:13:37,910 --> 01:13:42,750
+that none of the conditions
+are being violated.
+
+1260
+01:13:42,750 --> 01:13:47,710
+So this is a valid packing,
+except these points
+
+1261
+01:13:47,710 --> 01:13:52,080
+in the middle here, this
+whole polygon is constrained.
+
+1262
+01:13:52,080 --> 01:13:55,250
+The green line segments
+here are active paths.
+
+1263
+01:13:55,250 --> 01:14:01,750
+Basically, the distance between
+these points on the tree
+
+1264
+01:14:01,750 --> 01:14:03,940
+and these points on the
+paper are minimized,
+
+1265
+01:14:03,940 --> 01:14:05,640
+or they're equal.
+
+1266
+01:14:05,640 --> 01:14:08,170
+So there must be a crease there.
+
+1267
+01:14:08,170 --> 01:14:13,000
+That is a key statement
+of uniaxial bases,
+
+1268
+01:14:13,000 --> 01:14:15,810
+is that there must be a
+crease along active paths.
+
+1269
+01:14:15,810 --> 01:14:20,250
+Now, these two points can
+actually stand to get larger.
+
+1270
+01:14:20,250 --> 01:14:26,200
+
+1271
+01:14:26,200 --> 01:14:28,870
+That's evident to the fact
+that we can move these around
+
+1272
+01:14:28,870 --> 01:14:30,680
+and it's not violating
+any conditions.
+
+1273
+01:14:30,680 --> 01:14:33,270
+Well, if I move it over here,
+it's violating a condition.
+
+1274
+01:14:33,270 --> 01:14:34,970
+Whenever a condition
+is violated then
+
+1275
+01:14:34,970 --> 01:14:38,110
+you have these red
+lines that yell at you.
+
+1276
+01:14:38,110 --> 01:14:42,480
+But we can move this
+around in this area
+
+1277
+01:14:42,480 --> 01:14:44,200
+without violating
+any conditions.
+
+1278
+01:14:44,200 --> 01:14:46,900
+So it's not happy.
+
+1279
+01:14:46,900 --> 01:14:50,610
+It's not completely crystallized
+or well-constrained,
+
+1280
+01:14:50,610 --> 01:14:52,160
+so it's going to
+yell at us when we
+
+1281
+01:14:52,160 --> 01:14:56,520
+try to build the crease pattern.
+
+1282
+01:14:56,520 --> 01:15:00,000
+TreeMaker was not able
+to construct all polygons
+
+1283
+01:15:00,000 --> 01:15:03,730
+because a polygon was either
+non-convex or contained
+
+1284
+01:15:03,730 --> 01:15:05,390
+one or more nodes
+in its interiors.
+
+1285
+01:15:05,390 --> 01:15:07,289
+So these have nodes
+in its interior,
+
+1286
+01:15:07,289 --> 01:15:08,955
+so was not able to
+fill in this polygon.
+
+1287
+01:15:08,955 --> 01:15:12,030
+
+1288
+01:15:12,030 --> 01:15:14,250
+What we can do about
+that is we don't
+
+1289
+01:15:14,250 --> 01:15:17,620
+mind if these points
+get a little bigger.
+
+1290
+01:15:17,620 --> 01:15:19,500
+Or we could add an extra point.
+
+1291
+01:15:19,500 --> 01:15:23,330
+So we never modeled
+a body segment here.
+
+1292
+01:15:23,330 --> 01:15:25,250
+So maybe we just add
+in a body segment.
+
+1293
+01:15:25,250 --> 01:15:27,970
+
+1294
+01:15:27,970 --> 01:15:29,730
+So scale everything here.
+
+1295
+01:15:29,730 --> 01:15:32,730
+
+1296
+01:15:32,730 --> 01:15:33,930
+We still have this problem.
+
+1297
+01:15:33,930 --> 01:15:36,890
+This guy is unconstrained.
+
+1298
+01:15:36,890 --> 01:15:40,230
+So what I'm going to do is
+make this guy a little bigger
+
+1299
+01:15:40,230 --> 01:15:42,520
+by selecting the
+node and the edge.
+
+1300
+01:15:42,520 --> 01:15:45,480
+You have to do both.
+
+1301
+01:15:45,480 --> 01:15:48,040
+I can go here and scale
+just this selection.
+
+1302
+01:15:48,040 --> 01:15:50,820
+And it'll increase it by itself.
+
+1303
+01:15:50,820 --> 01:15:54,530
+
+1304
+01:15:54,530 --> 01:15:59,250
+Actually, nicely, this is
+somewhat of a symmetric crease
+
+1305
+01:15:59,250 --> 01:16:01,270
+pattern, which
+didn't occur before.
+
+1306
+01:16:01,270 --> 01:16:10,150
+
+1307
+01:16:10,150 --> 01:16:12,730
+So you see these lighter
+edges of the tree
+
+1308
+01:16:12,730 --> 01:16:14,800
+are fully constrained edges.
+
+1309
+01:16:14,800 --> 01:16:17,180
+These darker ones are not
+fully constrained edges.
+
+1310
+01:16:17,180 --> 01:16:20,280
+So this guy can actually
+also increase a little bit.
+
+1311
+01:16:20,280 --> 01:16:24,840
+So I'm going to scale selection.
+
+1312
+01:16:24,840 --> 01:16:26,690
+Now everything should be good.
+
+1313
+01:16:26,690 --> 01:16:28,760
+I can build the crease pattern.
+
+1314
+01:16:28,760 --> 01:16:30,550
+Guh!
+
+1315
+01:16:30,550 --> 01:16:34,480
+It built it, so whatever.
+
+1316
+01:16:34,480 --> 01:16:37,040
+So this is a foldable
+crease pattern
+
+1317
+01:16:37,040 --> 01:16:39,780
+that will form
+what we want it to.
+
+1318
+01:16:39,780 --> 01:16:44,260
+We can also go to
+this creases view,
+
+1319
+01:16:44,260 --> 01:16:47,870
+and it will show the
+creases of the model.
+
+1320
+01:16:47,870 --> 01:16:50,480
+It was not able to find
+valid mountain-valleys.
+
+1321
+01:16:50,480 --> 01:16:56,230
+
+1322
+01:16:56,230 --> 01:16:57,410
+Anyway.
+
+1323
+01:16:57,410 --> 01:16:59,810
+So to make this
+cleaner, you might
+
+1324
+01:16:59,810 --> 01:17:02,710
+want to deal with symmetry.
+
+1325
+01:17:02,710 --> 01:17:08,590
+So there's an ability to
+select diagonal symmetry
+
+1326
+01:17:08,590 --> 01:17:15,730
+and either add conditions
+to make a node fixed
+
+1327
+01:17:15,730 --> 01:17:19,110
+to the symmetry line, so
+add additional constraints
+
+1328
+01:17:19,110 --> 01:17:21,150
+to our system to
+make it cleaner.
+
+1329
+01:17:21,150 --> 01:17:23,480
+We can fix them to
+the symmetry line.
+
+1330
+01:17:23,480 --> 01:17:25,750
+We can fix it to the
+corner or the paper edge,
+
+1331
+01:17:25,750 --> 01:17:27,560
+fix to any arbitrary position.
+
+1332
+01:17:27,560 --> 01:17:29,310
+Or we can select two
+nodes and pair them
+
+1333
+01:17:29,310 --> 01:17:33,260
+about the symmetry line, which
+is a very useful thing to do.
+
+1334
+01:17:33,260 --> 01:17:44,382
+
+1335
+01:17:44,382 --> 01:17:46,090
+I don't know if it
+will yell at me again.
+
+1336
+01:17:46,090 --> 01:17:49,350
+Yeah, it didn't do anything.
+
+1337
+01:17:49,350 --> 01:17:51,790
+What I'm going to
+do is go in here.
+
+1338
+01:17:51,790 --> 01:17:53,830
+There's lots of things
+you could do here.
+
+1339
+01:17:53,830 --> 01:17:59,490
+We could perturb all
+the nodes, so they
+
+1340
+01:17:59,490 --> 01:18:01,780
+move if by a slight distance.
+
+1341
+01:18:01,780 --> 01:18:04,350
+And maybe if we try
+scaling it again,
+
+1342
+01:18:04,350 --> 01:18:05,755
+it'll find a valid solution.
+
+1343
+01:18:05,755 --> 01:18:17,060
+
+1344
+01:18:17,060 --> 01:18:22,940
+This was unfortunate.
+
+1345
+01:18:22,940 --> 01:18:24,990
+Scale everything.
+
+1346
+01:18:24,990 --> 01:18:31,600
+
+1347
+01:18:31,600 --> 01:18:33,070
+Kill the strain on this.
+
+1348
+01:18:33,070 --> 01:18:49,230
+
+1349
+01:18:49,230 --> 01:18:50,552
+Yes?
+
+1350
+01:18:50,552 --> 01:18:51,510
+AUDIENCE: I'm confused.
+
+1351
+01:18:51,510 --> 01:18:53,510
+Is it failing
+because the problem
+
+1352
+01:18:53,510 --> 01:18:57,050
+is over-constrained
+or under-constrained?
+
+1353
+01:18:57,050 --> 01:18:59,230
+JASON KU: It's not
+failing because of either.
+
+1354
+01:18:59,230 --> 01:19:04,840
+It's failing because
+certain creases
+
+1355
+01:19:04,840 --> 01:19:06,280
+get very close together.
+
+1356
+01:19:06,280 --> 01:19:07,880
+Now it's failing
+because it can't
+
+1357
+01:19:07,880 --> 01:19:11,862
+find a correct
+valley-mountain assignment
+
+1358
+01:19:11,862 --> 01:19:12,820
+for the crease pattern.
+
+1359
+01:19:12,820 --> 01:19:16,540
+So it's able to build
+the creases fine.
+
+1360
+01:19:16,540 --> 01:19:21,670
+So build crease pattern, fine.
+
+1361
+01:19:21,670 --> 01:19:24,620
+It just wasn't able to construct
+a mountain-valley assignment,
+
+1362
+01:19:24,620 --> 01:19:26,690
+which in the creases view
+would usually give you
+
+1363
+01:19:26,690 --> 01:19:28,023
+mountain and valley assignments.
+
+1364
+01:19:28,023 --> 01:19:30,350
+AUDIENCE: That means
+it's not possible?
+
+1365
+01:19:30,350 --> 01:19:31,642
+JASON KU: It couldn't find it.
+
+1366
+01:19:31,642 --> 01:19:32,975
+It's not that it's not possible.
+
+1367
+01:19:32,975 --> 01:19:36,330
+It just couldn't find it.
+
+1368
+01:19:36,330 --> 01:19:37,790
+I want to say one other thing.
+
+1369
+01:19:37,790 --> 01:19:43,360
+
+1370
+01:19:43,360 --> 01:19:45,150
+Kill the crease pattern.
+
+1371
+01:19:45,150 --> 01:19:49,570
+We have a polygon bounded
+by active paths that's
+
+1372
+01:19:49,570 --> 01:19:51,560
+not triangular.
+
+1373
+01:19:51,560 --> 01:19:58,182
+But we can actually split it
+any of these up into triangles.
+
+1374
+01:19:58,182 --> 01:20:00,140
+I'm just going to mention
+that you can do this.
+
+1375
+01:20:00,140 --> 01:20:03,320
+You click on one
+of these polygons,
+
+1376
+01:20:03,320 --> 01:20:06,850
+go here, stub, triangulate tree.
+
+1377
+01:20:06,850 --> 01:20:10,050
+It adds random points.
+
+1378
+01:20:10,050 --> 01:20:12,584
+And now all the
+polygons are triangles,
+
+1379
+01:20:12,584 --> 01:20:13,875
+and that's much easier to fold.
+
+1380
+01:20:13,875 --> 01:20:16,590
+
+1381
+01:20:16,590 --> 01:20:18,636
+Or not.
+
+1382
+01:20:18,636 --> 01:20:19,760
+That's how you would do it.
+
+1383
+01:20:19,760 --> 01:20:23,010
+Anyway, I'm running
+out of time, so I'm
+
+1384
+01:20:23,010 --> 01:20:24,790
+going to go back to
+the presentation.
+
+1385
+01:20:24,790 --> 01:20:27,390
+But if you need any
+help with these,
+
+1386
+01:20:27,390 --> 01:20:32,790
+or the tutorial with
+this program, I'm around.
+
+1387
+01:20:32,790 --> 01:20:37,490
+You can contact me through
+the OrigaMIT website,
+
+1388
+01:20:37,490 --> 01:20:42,220
+or you can come to it an
+OrigaMIT workshop on Sunday
+
+1389
+01:20:42,220 --> 01:20:45,400
+and ask me questions then.
+
+1390
+01:20:45,400 --> 01:20:50,625
+So I'm going to quickly just go
+right back to the presentation.
+
+1391
+01:20:50,625 --> 01:20:53,320
+
+1392
+01:20:53,320 --> 01:20:56,830
+Play slide show.
+
+1393
+01:20:56,830 --> 01:20:57,330
+Nope.
+
+1394
+01:20:57,330 --> 01:21:06,800
+
+1395
+01:21:06,800 --> 01:21:08,106
+Technical difficulties.
+
+1396
+01:21:08,106 --> 01:21:16,560
+
+1397
+01:21:16,560 --> 01:21:18,940
+Play slide show.
+
+1398
+01:21:18,940 --> 01:21:23,380
+So that was the
+example of TreeMaker.
+
+1399
+01:21:23,380 --> 01:21:26,680
+Here's an example of a
+non-TreeMaker example
+
+1400
+01:21:26,680 --> 01:21:30,040
+that I designed this
+weekend of a crab.
+
+1401
+01:21:30,040 --> 01:21:34,710
+I actually designed
+this model it
+
+1402
+01:21:34,710 --> 01:21:37,050
+after I had drawn this picture.
+
+1403
+01:21:37,050 --> 01:21:42,320
+And I wanted to incorporate some
+of the elements of this picture
+
+1404
+01:21:42,320 --> 01:21:43,640
+into my design process.
+
+1405
+01:21:43,640 --> 01:21:46,690
+So one of the first
+I actually started
+
+1406
+01:21:46,690 --> 01:21:48,240
+was designing the
+back so that it
+
+1407
+01:21:48,240 --> 01:21:49,700
+would have this
+kind of structure
+
+1408
+01:21:49,700 --> 01:21:56,910
+with this polygon there, kind of
+a Komatsu-like design process,
+
+1409
+01:21:56,910 --> 01:22:02,126
+and trying to make the
+final form polygons
+
+1410
+01:22:02,126 --> 01:22:04,000
+and incorporate those
+into my crease pattern.
+
+1411
+01:22:04,000 --> 01:22:07,820
+So that's what this
+area is right here.
+
+1412
+01:22:07,820 --> 01:22:16,430
+It has a very similar structure
+to the tree we drew already.
+
+1413
+01:22:16,430 --> 01:22:20,310
+We have the four points for
+the legs, the body segment.
+
+1414
+01:22:20,310 --> 01:22:23,530
+These are going to be the eyes.
+
+1415
+01:22:23,530 --> 01:22:25,440
+And so there are some
+extra points just
+
+1416
+01:22:25,440 --> 01:22:28,710
+to make things easier to fold.
+
+1417
+01:22:28,710 --> 01:22:29,840
+The claws.
+
+1418
+01:22:29,840 --> 01:22:30,840
+Here's the body segment.
+
+1419
+01:22:30,840 --> 01:22:34,770
+There's these extra two
+things on either side.
+
+1420
+01:22:34,770 --> 01:22:37,150
+And I made those
+so that there could
+
+1421
+01:22:37,150 --> 01:22:40,920
+be an underbelly to
+the crab, and that I
+
+1422
+01:22:40,920 --> 01:22:43,650
+could add some texture
+in and things like that.
+
+1423
+01:22:43,650 --> 01:22:46,900
+But you can see some
+of the constraints
+
+1424
+01:22:46,900 --> 01:22:50,480
+that I've put on it are that
+I want this to be 22.5 degree
+
+1425
+01:22:50,480 --> 01:22:54,430
+folding, which is hard to
+implement in TreeMaker.
+
+1426
+01:22:54,430 --> 01:22:58,380
+I've also shown
+some of the thinning
+
+1427
+01:22:58,380 --> 01:23:03,240
+to make these points
+thinner on the right.
+
+1428
+01:23:03,240 --> 01:23:05,790
+So if we actually
+pick out the tree
+
+1429
+01:23:05,790 --> 01:23:09,770
+for this hinge
+representation, we
+
+1430
+01:23:09,770 --> 01:23:11,590
+get something that kind
+of looks like this.
+
+1431
+01:23:11,590 --> 01:23:13,410
+So we have our legs.
+
+1432
+01:23:13,410 --> 01:23:14,410
+Here's our body segment.
+
+1433
+01:23:14,410 --> 01:23:19,150
+Here are the flaps that I make
+into the underbelly, eyes,
+
+1434
+01:23:19,150 --> 01:23:21,080
+and the claws.
+
+1435
+01:23:21,080 --> 01:23:23,769
+And here's the folded
+proof of concept version
+
+1436
+01:23:23,769 --> 01:23:24,810
+that I folded last night.
+
+1437
+01:23:24,810 --> 01:23:26,640
+It's actually a
+really crappy picture.
+
+1438
+01:23:26,640 --> 01:23:27,490
+I apologize.
+
+1439
+01:23:27,490 --> 01:23:30,080
+But it's up here.
+
+1440
+01:23:30,080 --> 01:23:34,090
+I fold it like 10:00 last
+night, because I thought
+
+1441
+01:23:34,090 --> 01:23:36,960
+it would be useful for you guys
+to see what a folded one might
+
+1442
+01:23:36,960 --> 01:23:37,950
+look like.
+
+1443
+01:23:37,950 --> 01:23:42,590
+But it actually turns out
+to be somewhat non-uniaxial.
+
+1444
+01:23:42,590 --> 01:23:45,280
+
+1445
+01:23:45,280 --> 01:23:48,160
+And you can see some of the
+texturing on the underbelly,
+
+1446
+01:23:48,160 --> 01:23:50,960
+if you take a look at
+it and come up here.
+
+1447
+01:23:50,960 --> 01:23:54,890
+
+1448
+01:23:54,890 --> 01:23:59,780
+So that's kind of describing
+some of the design
+
+1449
+01:23:59,780 --> 01:24:06,380
+process of a real work that uses
+the concepts of uniaxial bases,
+
+1450
+01:24:06,380 --> 01:24:09,370
+that I can make this hinge
+crease representation,
+
+1451
+01:24:09,370 --> 01:24:13,000
+but then use some
+shaping to modify it.
+
+1452
+01:24:13,000 --> 01:24:16,280
+If you're interested in
+learning about anything related
+
+1453
+01:24:16,280 --> 01:24:19,900
+to origami, there's an
+excellent online forum
+
+1454
+01:24:19,900 --> 01:24:24,200
+that you can ask questions
+or show off work that you do
+
+1455
+01:24:24,200 --> 01:24:25,730
+or anything like that.
+
+1456
+01:24:25,730 --> 01:24:30,675
+And if you want to do
+something slightly more local--
+
+1457
+01:24:30,675 --> 01:24:32,460
+this is shameless
+self-promotion--
+
+1458
+01:24:32,460 --> 01:24:37,350
+but the origami club at MIT
+welcomes you with open arms.
+
+1459
+01:24:37,350 --> 01:24:39,430
+We meet every Sunday
+in the Student Center
+
+1460
+01:24:39,430 --> 01:24:40,450
+from 2:00 to 4:00 PM.
+
+1461
+01:24:40,450 --> 01:24:43,840
+You can find all sorts of
+details on our website.
+
+1462
+01:24:43,840 --> 01:24:46,290
+So that's about it.
+
+1463
+01:24:46,290 --> 01:24:48,949
+AUDIENCE: Are those
+origami letters?
+
+1464
+01:24:48,949 --> 01:24:49,990
+JASON KU: Those are, yes.
+
+1465
+01:24:49,990 --> 01:24:52,950
+
+1466
+01:24:52,950 --> 01:24:57,280
+Each one of these
+letters was a model.
+
+1467
+01:24:57,280 --> 01:25:03,820
+They're all the same model I
+designed, in which you have a 3
+
+1468
+01:25:03,820 --> 01:25:07,680
+by 4 grid of flippable
+squares of color change
+
+1469
+01:25:07,680 --> 01:25:12,120
+that you can flip to either
+be in the all white state
+
+1470
+01:25:12,120 --> 01:25:15,830
+or all black state.
+
+1471
+01:25:15,830 --> 01:25:21,720
+And you could also do some
+of these half pixeling.
+
+1472
+01:25:21,720 --> 01:25:27,260
+But you can basically make
+any of these letters--
+
+1473
+01:25:27,260 --> 01:25:30,490
+I have a whole alphabet of
+things-- from a single model.
+
+1474
+01:25:30,490 --> 01:25:31,500
+I was lazy.
+
+1475
+01:25:31,500 --> 01:25:33,670
+I didn't want to
+design 26 models.
+
+1476
+01:25:33,670 --> 01:25:35,140
+I just want to design one model.
+
+1477
+01:25:35,140 --> 01:25:39,110
+So that that's what those are.
+
+1478
+01:25:39,110 --> 01:25:40,870
+So that concludes the lecture.
+
+1479
+01:25:40,870 --> 01:25:43,480
+We're just about at time.
+
+1480
+01:25:43,480 --> 01:26:18,497
+

@@ -1,0 +1,4688 @@
+1
+0-1:59:59,500 --> 00:00:02,679
+
+2
+00:00:02,679 --> 00:00:04,970
+PROFESSOR: So we are honored
+to have Professor Tomohiro
+
+3
+00:00:04,970 --> 00:00:08,990
+Tachi here today visiting
+from the University of Tokyo.
+
+4
+00:00:08,990 --> 00:00:12,870
+We first met in
+SIGGRAPH 2006, which
+
+5
+00:00:12,870 --> 00:00:16,310
+was in Boston, big
+graphics conference,
+
+6
+00:00:16,310 --> 00:00:18,140
+when he was a PhD student.
+
+7
+00:00:18,140 --> 00:00:21,300
+And Tomohiro has very
+quickly become a star
+
+8
+00:00:21,300 --> 00:00:23,790
+in the area of
+computational origami,
+
+9
+00:00:23,790 --> 00:00:27,450
+and it's really exciting to see
+in particular his perspective
+
+10
+00:00:27,450 --> 00:00:29,530
+coming from an
+architecture background
+
+11
+00:00:29,530 --> 00:00:31,131
+and how that
+influences his work.
+
+12
+00:00:31,131 --> 00:00:33,130
+He's going to talk about
+lots of exciting things
+
+13
+00:00:33,130 --> 00:00:36,690
+in the context of architectural
+origami for our grand finale
+
+14
+00:00:36,690 --> 00:00:37,190
+lecture.
+
+15
+00:00:37,190 --> 00:00:39,462
+So please welcome Tomohiro.
+
+16
+00:00:39,462 --> 00:00:42,060
+[APPLAUSE]
+
+17
+00:00:42,060 --> 00:00:45,070
+PROFESSOR: Thank
+you very much, Erik.
+
+18
+00:00:45,070 --> 00:00:49,040
+So I'm Tomohiro Tachi from
+the University of Tokyo,
+
+19
+00:00:49,040 --> 00:00:52,610
+and I'm going to talk about
+architecture origami, which
+
+20
+00:00:52,610 --> 00:00:55,250
+is architectural form
+design systems based
+
+21
+00:00:55,250 --> 00:00:57,510
+in computational origami.
+
+22
+00:00:57,510 --> 00:01:01,150
+So first, introduction.
+
+23
+00:01:01,150 --> 00:01:06,460
+I have been doing origami as a
+hobby, as well as my research.
+
+24
+00:01:06,460 --> 00:01:12,640
+Well, it was before my research
+started that I began folding.
+
+25
+00:01:12,640 --> 00:01:18,480
+These are examples of folding
+using a traditional way
+
+26
+00:01:18,480 --> 00:01:25,980
+of box pleating or
+a 3D curved surface.
+
+27
+00:01:25,980 --> 00:01:30,230
+This is pure origami,
+and there is also
+
+28
+00:01:30,230 --> 00:01:33,360
+applied origami,
+which is applying
+
+29
+00:01:33,360 --> 00:01:35,900
+origami for
+engineering purposes.
+
+30
+00:01:35,900 --> 00:01:40,430
+For example, we can
+use sheet folding
+
+31
+00:01:40,430 --> 00:01:48,090
+for manufacturing a
+3D surface or use it
+
+32
+00:01:48,090 --> 00:01:51,720
+for increasing the
+structure's stiffness.
+
+33
+00:01:51,720 --> 00:01:57,550
+These are examples of
+a formed 3D surface
+
+34
+00:01:57,550 --> 00:02:01,100
+from a sheet of metal.
+
+35
+00:02:01,100 --> 00:02:05,350
+We can use a dynamic
+property of origami
+
+36
+00:02:05,350 --> 00:02:09,440
+for deployable
+structure, such as this
+
+37
+00:02:09,440 --> 00:02:16,410
+is folding of solar panels
+used for spatial structures.
+
+38
+00:02:16,410 --> 00:02:20,440
+A good thing about origami is
+that unlike the truss structure
+
+39
+00:02:20,440 --> 00:02:23,780
+or scissors structure,
+you can form basically
+
+40
+00:02:23,780 --> 00:02:26,230
+a continuous surface,
+and that continuity
+
+41
+00:02:26,230 --> 00:02:32,480
+is preserved all the way
+of the transformation.
+
+42
+00:02:32,480 --> 00:02:36,560
+So this makes
+origami potentially
+
+43
+00:02:36,560 --> 00:02:39,380
+useful for adaptive
+environment, which
+
+44
+00:02:39,380 --> 00:02:44,100
+includes context customized
+design or personal design
+
+45
+00:02:44,100 --> 00:02:48,880
+so that you can make some
+kind of origami structures
+
+46
+00:02:48,880 --> 00:02:54,350
+that fit customized to your
+body or customised to the design
+
+47
+00:02:54,350 --> 00:02:55,800
+context.
+
+48
+00:02:55,800 --> 00:03:00,990
+And you can, of course, do
+fabrication oriented design
+
+49
+00:03:00,990 --> 00:03:06,520
+so that you can efficiently
+use the material
+
+50
+00:03:06,520 --> 00:03:10,870
+to build the 3D
+structure that you want.
+
+51
+00:03:10,870 --> 00:03:15,490
+What I'm proposing with
+the architectural origami,
+
+52
+00:03:15,490 --> 00:03:18,460
+it's different from
+origami architecture.
+
+53
+00:03:18,460 --> 00:03:23,170
+I have been using the word
+"origami architecture," which
+
+54
+00:03:23,170 --> 00:03:27,395
+might mean the application
+of origami to design.
+
+55
+00:03:27,395 --> 00:03:32,480
+
+56
+00:03:32,480 --> 00:03:36,660
+So this is the direction
+of application.
+
+57
+00:03:36,660 --> 00:03:39,850
+We start from some kind
+of shape or pattern
+
+58
+00:03:39,850 --> 00:03:45,310
+and see how it is folded
+or see the behavior
+
+59
+00:03:45,310 --> 00:03:51,570
+by simulating, or directly
+applying in physical world.
+
+60
+00:03:51,570 --> 00:03:58,960
+But that can result in
+very restricted design
+
+61
+00:03:58,960 --> 00:04:01,620
+because origami is
+very constrained,
+
+62
+00:04:01,620 --> 00:04:04,450
+and that would
+just result in just
+
+63
+00:04:04,450 --> 00:04:08,320
+a copy of some known
+origami pattern to design.
+
+64
+00:04:08,320 --> 00:04:14,360
+Or sometimes, there are lots
+of origami inspired designs
+
+65
+00:04:14,360 --> 00:04:19,209
+that don't use any of the
+origami properties that
+
+66
+00:04:19,209 --> 00:04:22,360
+might be useful for
+engineering purpose.
+
+67
+00:04:22,360 --> 00:04:25,460
+So what I am proposing
+with the word
+
+68
+00:04:25,460 --> 00:04:29,900
+"architectural origami" is
+that origami theory for design
+
+69
+00:04:29,900 --> 00:04:33,300
+and a design system
+that uses that.
+
+70
+00:04:33,300 --> 00:04:37,380
+So the idea is in
+this direction.
+
+71
+00:04:37,380 --> 00:04:41,320
+We want to get some kind
+of designed property,
+
+72
+00:04:41,320 --> 00:04:48,410
+like how it behaves in
+3D or in time, also,
+
+73
+00:04:48,410 --> 00:04:58,860
+and we want to extract the
+characteristics of origami
+
+74
+00:04:58,860 --> 00:05:05,130
+and obtain the solution from
+that required condition,
+
+75
+00:05:05,130 --> 00:05:07,230
+and also design
+contexts that are
+
+76
+00:05:07,230 --> 00:05:12,100
+given by the design purpose.
+
+77
+00:05:12,100 --> 00:05:13,240
+This is the outline.
+
+78
+00:05:13,240 --> 00:05:16,250
+First is Origamizer.
+
+79
+00:05:16,250 --> 00:05:20,990
+I'm going to talk about
+basically the software I've
+
+80
+00:05:20,990 --> 00:05:24,130
+been developing, the systems.
+
+81
+00:05:24,130 --> 00:05:24,880
+One is Origamizer.
+
+82
+00:05:24,880 --> 00:05:45,900
+
+83
+00:05:45,900 --> 00:05:52,870
+Some of you have
+attended Erik's class,
+
+84
+00:05:52,870 --> 00:05:57,180
+so the theoretic side of
+the Origamizer altorithm,
+
+85
+00:05:57,180 --> 00:06:03,210
+but I'm going to talk
+about the software itself
+
+86
+00:06:03,210 --> 00:06:06,280
+and the algorithm that
+efficiently works.
+
+87
+00:06:06,280 --> 00:06:09,240
+So first, Origamizer.
+
+88
+00:06:09,240 --> 00:06:14,280
+This is the software is
+available on my web page.
+
+89
+00:06:14,280 --> 00:06:16,755
+It's freely available.
+
+90
+00:06:16,755 --> 00:06:21,280
+
+91
+00:06:21,280 --> 00:06:22,710
+It's about origami design.
+
+92
+00:06:22,710 --> 00:06:27,370
+This is my oldest
+work as research.
+
+93
+00:06:27,370 --> 00:06:35,630
+We had a tree method or
+circle river packing method
+
+94
+00:06:35,630 --> 00:06:38,690
+developed by Meguro
+and Lang, which
+
+95
+00:06:38,690 --> 00:06:46,090
+is using stick figure for
+representing the model
+
+96
+00:06:46,090 --> 00:06:52,090
+and designed by packing
+circles and rivers.
+
+97
+00:06:52,090 --> 00:06:56,820
+I think Jason has
+talked in the class.
+
+98
+00:06:56,820 --> 00:07:01,790
+So this is existing
+method for origami design,
+
+99
+00:07:01,790 --> 00:07:05,020
+and what I wanted
+to do is make 3D
+
+100
+00:07:05,020 --> 00:07:07,970
+instead of this
+kind of 1D figure.
+
+101
+00:07:07,970 --> 00:07:12,260
+So this is what we can get
+from the circle river packing
+
+102
+00:07:12,260 --> 00:07:17,150
+method, and with Origamizer
+or Freeform Origami,
+
+103
+00:07:17,150 --> 00:07:21,882
+we can get this kind of 3D form.
+
+104
+00:07:21,882 --> 00:07:23,840
+You can say that what
+you see is what you fold.
+
+105
+00:07:23,840 --> 00:07:30,400
+
+106
+00:07:30,400 --> 00:07:38,040
+In this case, what you see is
+not what you fold, actually.
+
+107
+00:07:38,040 --> 00:07:42,560
+So I manually designed
+something like that.
+
+108
+00:07:42,560 --> 00:07:45,260
+It's a laptop PC.
+
+109
+00:07:45,260 --> 00:07:47,590
+Well, I think it's the
+most complicated one.
+
+110
+00:07:47,590 --> 00:07:52,950
+So for example, you can see
+there is an RGB output here
+
+111
+00:07:52,950 --> 00:07:57,210
+and USB outputs here, and
+this is the touch pad,
+
+112
+00:07:57,210 --> 00:08:00,450
+and this is keyboard.
+
+113
+00:08:00,450 --> 00:08:02,430
+Good thing about that
+is the function key
+
+114
+00:08:02,430 --> 00:08:07,440
+is a little bit narrower
+than the normal key here.
+
+115
+00:08:07,440 --> 00:08:11,260
+Anyway, this is what
+I've been working on.
+
+116
+00:08:11,260 --> 00:08:16,310
+Well, I think it
+was my hobby, but I
+
+117
+00:08:16,310 --> 00:08:22,090
+was trying to make some kind of
+box pleating to make anything.
+
+118
+00:08:22,090 --> 00:08:25,540
+And also, this is more
+three dimensional figure.
+
+119
+00:08:25,540 --> 00:08:29,400
+
+120
+00:08:29,400 --> 00:08:36,500
+The body is represented
+basically by blocks of cubes.
+
+121
+00:08:36,500 --> 00:08:44,770
+And I did more purely geometric
+things with concave vertex.
+
+122
+00:08:44,770 --> 00:08:49,020
+This was very important for me.
+
+123
+00:08:49,020 --> 00:08:53,650
+It's very easy to make a
+convex polyhedron with paper.
+
+124
+00:08:53,650 --> 00:08:57,630
+Just wrapping paper
+will result in folding.
+
+125
+00:08:57,630 --> 00:09:03,630
+But it's very hard to
+make concave vertex.
+
+126
+00:09:03,630 --> 00:09:12,210
+When I finished this model, I
+thought everything is possible,
+
+127
+00:09:12,210 --> 00:09:17,970
+so I did a software
+to do this for me.
+
+128
+00:09:17,970 --> 00:09:20,910
+
+129
+00:09:20,910 --> 00:09:24,570
+The program is to realize
+arbitrarily given polyhedra
+
+130
+00:09:24,570 --> 00:09:28,540
+surface with a developable
+surface by folding.
+
+131
+00:09:28,540 --> 00:09:31,110
+
+132
+00:09:31,110 --> 00:09:33,200
+The geometric constraints
+is, of course,
+
+133
+00:09:33,200 --> 00:09:36,715
+developability so that it can
+be folded from a sheet of paper.
+
+134
+00:09:36,715 --> 00:09:39,680
+
+135
+00:09:39,680 --> 00:09:42,150
+In this case, we forget
+about continuous motion
+
+136
+00:09:42,150 --> 00:09:45,480
+from a sheet of paper
+to the resulting state.
+
+137
+00:09:45,480 --> 00:09:51,140
+We believe that physically
+it exists, so it works.
+
+138
+00:09:51,140 --> 00:09:54,140
+
+139
+00:09:54,140 --> 00:09:59,050
+It can be applied in engineering
+sense for fabrication
+
+140
+00:09:59,050 --> 00:10:02,130
+by folding and bending.
+
+141
+00:10:02,130 --> 00:10:06,130
+We put arbitrary polyhedron
+and get the crease pattern,
+
+142
+00:10:06,130 --> 00:10:09,140
+and by only folding
+this part, you
+
+143
+00:10:09,140 --> 00:10:14,630
+get the folded state that's the
+same as this arbitrarily given
+
+144
+00:10:14,630 --> 00:10:17,230
+polyhedron.
+
+145
+00:10:17,230 --> 00:10:20,140
+The idea is to use tuck.
+
+146
+00:10:20,140 --> 00:10:31,650
+This is a given polyhedron, and
+this grey area is our tucks.
+
+147
+00:10:31,650 --> 00:10:35,360
+By folding a tuck, it's hidden.
+
+148
+00:10:35,360 --> 00:10:39,660
+It's flat folded and it's hidden
+behind a polyhedron's surface,
+
+149
+00:10:39,660 --> 00:10:43,460
+like in this movie.
+
+150
+00:10:43,460 --> 00:10:46,060
+When it's in developed
+state, it forms
+
+151
+00:10:46,060 --> 00:10:50,970
+a plane with a
+surface polyhedron.
+
+152
+00:10:50,970 --> 00:10:54,260
+This is good because we can
+make a negative curvature
+
+153
+00:10:54,260 --> 00:10:59,770
+vertex, a concave or
+negative curvature vertex.
+
+154
+00:10:59,770 --> 00:11:07,230
+
+155
+00:11:07,230 --> 00:11:14,970
+The basic algorithm is to
+start from making the problem
+
+156
+00:11:14,970 --> 00:11:21,570
+into laying out the surface
+polygons onto a plane.
+
+157
+00:11:21,570 --> 00:11:27,160
+By properly aligning, we can get
+the edge tucking molecule that
+
+158
+00:11:27,160 --> 00:11:31,680
+folds the edge to edge and
+vertex tucking molecule which
+
+159
+00:11:31,680 --> 00:11:38,560
+folds vertices to vertex, and
+we can pack them and tesselate
+
+160
+00:11:38,560 --> 00:11:43,250
+the surface with these elements.
+
+161
+00:11:43,250 --> 00:11:47,192
+We can parameterize
+this configuration,
+
+162
+00:11:47,192 --> 00:11:53,140
+and we can solve it by
+solving non-linear equation
+
+163
+00:11:53,140 --> 00:11:55,430
+and inequality conditions.
+
+164
+00:11:55,430 --> 00:11:57,250
+That's the basic idea.
+
+165
+00:11:57,250 --> 00:12:01,290
+What we have is
+geometric constraints,
+
+166
+00:12:01,290 --> 00:12:06,040
+which are represented
+by equations.
+
+167
+00:12:06,040 --> 00:12:08,630
+So these are the
+equations, where
+
+168
+00:12:08,630 --> 00:12:13,640
+this one represents the
+total sum, sums up 2 pi,
+
+169
+00:12:13,640 --> 00:12:23,510
+and this shows that this forms
+a closed loop for each vertex.
+
+170
+00:12:23,510 --> 00:12:28,590
+We assign these conditions
+for each vertex,
+
+171
+00:12:28,590 --> 00:12:34,270
+and we solve that by two
+step linear mapping, which
+
+172
+00:12:34,270 --> 00:12:41,030
+is basically solving this
+equation and this equation.
+
+173
+00:12:41,030 --> 00:12:45,540
+Good thing about that is
+that it becomes linear,
+
+174
+00:12:45,540 --> 00:12:48,980
+which means that
+you can pre-compute
+
+175
+00:12:48,980 --> 00:12:55,500
+and you can go around
+the solution space.
+
+176
+00:12:55,500 --> 00:13:00,490
+I will show you later
+the design system.
+
+177
+00:13:00,490 --> 00:13:11,630
+
+178
+00:13:11,630 --> 00:13:17,290
+I don't go into details, but
+there are several inequality
+
+179
+00:13:17,290 --> 00:13:22,245
+conditions, which are
+for making crease pattern
+
+180
+00:13:22,245 --> 00:13:29,930
+and for making it to fit into 3D
+configuration of the polyhedron
+
+181
+00:13:29,930 --> 00:13:35,650
+and tuck property,
+which is assumed
+
+182
+00:13:35,650 --> 00:13:42,320
+place of the tuck that's hidden.
+
+183
+00:13:42,320 --> 00:13:43,290
+So this is a system.
+
+184
+00:13:43,290 --> 00:13:46,480
+
+185
+00:13:46,480 --> 00:13:50,780
+You put the input
+here in this window,
+
+186
+00:13:50,780 --> 00:13:58,000
+and you have the layout
+of the surface polygons,
+
+187
+00:13:58,000 --> 00:14:00,030
+and then you get the
+crease pattern like that.
+
+188
+00:14:00,030 --> 00:14:04,060
+
+189
+00:14:04,060 --> 00:14:07,080
+It automatically generates
+the crease pattern,
+
+190
+00:14:07,080 --> 00:14:13,580
+and here you see it's
+edited in real time.
+
+191
+00:14:13,580 --> 00:14:14,840
+By the way, this is real time.
+
+192
+00:14:14,840 --> 00:14:21,420
+
+193
+00:14:21,420 --> 00:14:25,630
+The linear equations
+are represented
+
+194
+00:14:25,630 --> 00:14:34,290
+by linear equations, so you can
+pre-compute the linear matrix
+
+195
+00:14:34,290 --> 00:14:39,635
+and then you can calculate the
+configuration interactively.
+
+196
+00:14:39,635 --> 00:14:42,220
+
+197
+00:14:42,220 --> 00:14:46,015
+You can also do some
+kind of boundary editing.
+
+198
+00:14:46,015 --> 00:14:47,401
+Do you have questions?
+
+199
+00:14:47,401 --> 00:14:47,984
+AUDIENCE: Yes.
+
+200
+00:14:47,984 --> 00:14:51,390
+Does this maximize the amout
+of paper on the outside?
+
+201
+00:14:51,390 --> 00:14:56,410
+PROFESSOR: It's about
+maximizing the size
+
+202
+00:14:56,410 --> 00:14:59,740
+of the model with respect
+to the paper size.
+
+203
+00:14:59,740 --> 00:15:00,270
+It's not.
+
+204
+00:15:00,270 --> 00:15:04,170
+
+205
+00:15:04,170 --> 00:15:06,390
+Yes, you can, of
+course, implement
+
+206
+00:15:06,390 --> 00:15:08,780
+some kind of optimization
+onto the program,
+
+207
+00:15:08,780 --> 00:15:17,010
+but I keep it more free so that
+the software user can search
+
+208
+00:15:17,010 --> 00:15:21,355
+within the solution space that
+satisfies these origamizing
+
+209
+00:15:21,355 --> 00:15:21,855
+conditions.
+
+210
+00:15:21,855 --> 00:15:25,010
+
+211
+00:15:25,010 --> 00:15:30,230
+So this is a series of
+results that are folded.
+
+212
+00:15:30,230 --> 00:15:34,370
+
+213
+00:15:34,370 --> 00:15:37,500
+This is how to fold
+an origami bunny.
+
+214
+00:15:37,500 --> 00:15:41,120
+First thing you do is
+to get crease pattern
+
+215
+00:15:41,120 --> 00:15:44,170
+using Origamizer,
+and then fold along
+
+216
+00:15:44,170 --> 00:15:49,910
+the given crease
+pattern like this.
+
+217
+00:15:49,910 --> 00:15:54,960
+
+218
+00:15:54,960 --> 00:15:57,380
+Interesting thing
+about that is that it's
+
+219
+00:15:57,380 --> 00:15:59,960
+changing the
+lighting conditions.
+
+220
+00:15:59,960 --> 00:16:02,130
+It starts from
+natural light and it
+
+221
+00:16:02,130 --> 00:16:05,140
+becomes into artificial light.
+
+222
+00:16:05,140 --> 00:16:07,385
+It takes about 10
+hours or something.
+
+223
+00:16:07,385 --> 00:16:10,240
+
+224
+00:16:10,240 --> 00:16:11,440
+And it's done.
+
+225
+00:16:11,440 --> 00:16:16,435
+And I have this one.
+
+226
+00:16:16,435 --> 00:16:19,900
+[APPLAUSE]
+
+227
+00:16:19,900 --> 00:16:24,860
+
+228
+00:16:24,860 --> 00:16:28,940
+There are two existing
+models, not one,
+
+229
+00:16:28,940 --> 00:16:31,245
+so it's very easy to reproduce.
+
+230
+00:16:31,245 --> 00:16:39,560
+
+231
+00:16:39,560 --> 00:16:43,880
+One thing that I'm
+doing with Erik
+
+232
+00:16:43,880 --> 00:16:47,870
+is to prove that
+anything is possible.
+
+233
+00:16:47,870 --> 00:16:52,780
+The software is a little
+bit approximation,
+
+234
+00:16:52,780 --> 00:16:56,150
+or it doesn't work
+in some cases,
+
+235
+00:16:56,150 --> 00:17:02,020
+so we are doing really
+make it possible.
+
+236
+00:17:02,020 --> 00:17:04,400
+This is the part
+of the Origamizer,
+
+237
+00:17:04,400 --> 00:17:07,609
+so if you have questions
+for Origamizer.
+
+238
+00:17:07,609 --> 00:17:08,683
+Yes?
+
+239
+00:17:08,683 --> 00:17:12,350
+AUDIENCE: So for the
+input of the model
+
+240
+00:17:12,350 --> 00:17:16,394
+that you can use, does it
+take [INAUDIBLE], the format?
+
+241
+00:17:16,394 --> 00:17:18,523
+AUDIENCE: It's polygons.
+
+242
+00:17:18,523 --> 00:17:20,431
+AUDIENCE: What's the
+file format that you
+
+243
+00:17:20,431 --> 00:17:23,359
+have to import in in order to--
+
+244
+00:17:23,359 --> 00:17:26,800
+PROFESSOR: Format of 3D input.
+
+245
+00:17:26,800 --> 00:17:34,270
+It's basically OBJ file that
+this particular software
+
+246
+00:17:34,270 --> 00:17:36,860
+accepts, but basically,
+it's OK if it's
+
+247
+00:17:36,860 --> 00:17:42,400
+a polyhedral surface with
+actually any topology
+
+248
+00:17:42,400 --> 00:17:47,610
+because you can basically assign
+the boundary of paper onto it
+
+249
+00:17:47,610 --> 00:17:50,920
+so that it always
+becomes a disk.
+
+250
+00:17:50,920 --> 00:17:53,314
+Yes?
+
+251
+00:17:53,314 --> 00:17:57,242
+AUDIENCE: You mentioned that
+earlier on in the process,
+
+252
+00:17:57,242 --> 00:18:00,679
+you need to properly lay out
+the polygons onto the plane.
+
+253
+00:18:00,679 --> 00:18:02,643
+What constitutes proper layout?
+
+254
+00:18:02,643 --> 00:18:07,960
+
+255
+00:18:07,960 --> 00:18:15,960
+PROFESSOR: Your question
+is, what is a proper layout?
+
+256
+00:18:15,960 --> 00:18:22,110
+This is basically given
+by these conditions.
+
+257
+00:18:22,110 --> 00:18:28,200
+
+258
+00:18:28,200 --> 00:18:35,730
+In an intuitive way, if
+you lay out polygons,
+
+259
+00:18:35,730 --> 00:18:41,790
+I want to fold this line onto
+this line with, actually,
+
+260
+00:18:41,790 --> 00:18:46,090
+a single line, so
+you have to keep
+
+261
+00:18:46,090 --> 00:18:49,720
+this symmetric
+against some line.
+
+262
+00:18:49,720 --> 00:18:52,325
+So that gives a constraint.
+
+263
+00:18:52,325 --> 00:18:58,030
+
+264
+00:18:58,030 --> 00:19:03,500
+This is the basic equations
+that you have to solve,
+
+265
+00:19:03,500 --> 00:19:07,860
+and there are several
+others, such as the boundary
+
+266
+00:19:07,860 --> 00:19:11,670
+should be convex because
+we don't want to end up
+
+267
+00:19:11,670 --> 00:19:18,270
+in some kind of very
+complex boundary.
+
+268
+00:19:18,270 --> 00:19:21,610
+If it's foldable
+form a convex paper,
+
+269
+00:19:21,610 --> 00:19:24,240
+then it's foldable
+from a square,
+
+270
+00:19:24,240 --> 00:19:27,410
+so that's the
+convexity of paper.
+
+271
+00:19:27,410 --> 00:19:31,695
+No intersection, of
+course, between polygons.
+
+272
+00:19:31,695 --> 00:19:34,740
+
+273
+00:19:34,740 --> 00:19:38,340
+It's a little bit difficult,
+but when you place crease lines,
+
+274
+00:19:38,340 --> 00:19:42,400
+then it might hit
+adjacent crease lines.
+
+275
+00:19:42,400 --> 00:19:47,180
+That's pretty bad, so
+you have to avoid that.
+
+276
+00:19:47,180 --> 00:19:51,390
+Also, you have to fit
+to the 3D surface.
+
+277
+00:19:51,390 --> 00:19:55,470
+Sometimes a tuck
+that's coming inside
+
+278
+00:19:55,470 --> 00:20:04,500
+is bad, so you have
+to adjust that,
+
+279
+00:20:04,500 --> 00:20:07,846
+and in order to do that,
+you need a condition.
+
+280
+00:20:07,846 --> 00:20:10,042
+AUDIENCE: Did you find
+that you were moving around
+
+281
+00:20:10,042 --> 00:20:13,214
+where the edges of
+the [INAUDIBLE] model,
+
+282
+00:20:13,214 --> 00:20:17,606
+or can you just start
+anywhere and randomly come up
+
+283
+00:20:17,606 --> 00:20:18,582
+with a solution?
+
+284
+00:20:18,582 --> 00:20:22,322
+
+285
+00:20:22,322 --> 00:20:23,530
+PROFESSOR: It's how to solve?
+
+286
+00:20:23,530 --> 00:20:24,155
+AUDIENCE: Yeah.
+
+287
+00:20:24,155 --> 00:20:30,290
+Does it get a lot harder
+as the polygons increase?
+
+288
+00:20:30,290 --> 00:20:36,270
+PROFESSOR: It's not a step by
+step approach to laying out
+
+289
+00:20:36,270 --> 00:20:38,200
+one piece at a
+time, but it's more
+
+290
+00:20:38,200 --> 00:20:44,200
+like solving all the equations
+all at the same time using
+
+291
+00:20:44,200 --> 00:20:47,200
+big vector equation.
+
+292
+00:20:47,200 --> 00:20:49,654
+AUDIENCE: Maybe what he means
+is, is it numerically well
+
+293
+00:20:49,654 --> 00:20:52,470
+conditioned?
+
+294
+00:20:52,470 --> 00:20:53,820
+PROFESSOR: No.
+
+295
+00:20:53,820 --> 00:20:57,896
+That's why we need
+extra work for proving.
+
+296
+00:20:57,896 --> 00:20:59,520
+AUDIENCE: That it's
+always [INAUDIBLE].
+
+297
+00:20:59,520 --> 00:21:02,400
+
+298
+00:21:02,400 --> 00:21:04,450
+PROFESSOR: That's a question.
+
+299
+00:21:04,450 --> 00:21:11,400
+Well, it's not always.
+
+300
+00:21:11,400 --> 00:21:13,460
+There are sometimes
+that produces
+
+301
+00:21:13,460 --> 00:21:19,810
+some kind of over constrained
+part and free part.
+
+302
+00:21:19,810 --> 00:21:22,780
+AUDIENCE: Also, are the tucks
+under mechanical tension?
+
+303
+00:21:22,780 --> 00:21:26,500
+Does it want to stay tucked
+or does it want to come apart?
+
+304
+00:21:26,500 --> 00:21:29,270
+
+305
+00:21:29,270 --> 00:21:31,030
+PROFESSOR: Physical
+property of the tuck.
+
+306
+00:21:31,030 --> 00:21:33,384
+AUDIENCE: Yes.
+
+307
+00:21:33,384 --> 00:21:34,800
+PROFESSOR: Because
+of the crimping
+
+308
+00:21:34,800 --> 00:21:43,660
+that's done to each of these
+vertices to fit the curvature,
+
+309
+00:21:43,660 --> 00:21:46,730
+it stays in this form.
+
+310
+00:21:46,730 --> 00:21:50,240
+You don't have any
+glues or crimps here.
+
+311
+00:21:50,240 --> 00:21:57,291
+This is actually a good
+property of this design method.
+
+312
+00:21:57,291 --> 00:21:57,790
+Yes?
+
+313
+00:21:57,790 --> 00:22:01,906
+
+314
+00:22:01,906 --> 00:22:03,280
+AUDIENCE: To
+approximate a curve,
+
+315
+00:22:03,280 --> 00:22:09,350
+you're breaking it down into
+smaller straight edge segments.
+
+316
+00:22:09,350 --> 00:22:12,432
+Is that useful or plannable
+as to what the lower bound is
+
+317
+00:22:12,432 --> 00:22:19,110
+to how granular you make
+the curve approximation?
+
+318
+00:22:19,110 --> 00:22:23,810
+PROFESSOR: About the
+condition for the input.
+
+319
+00:22:23,810 --> 00:22:27,830
+
+320
+00:22:27,830 --> 00:22:32,030
+In this system, I
+don't give any kind
+
+321
+00:22:32,030 --> 00:22:38,940
+of numerical upper
+boundary for the regularity
+
+322
+00:22:38,940 --> 00:22:43,720
+of triangles or something.
+
+323
+00:22:43,720 --> 00:22:47,320
+But I think it's good if
+we can do for anything,
+
+324
+00:22:47,320 --> 00:22:52,510
+so that's why I'm working
+with Erik on proving.
+
+325
+00:22:52,510 --> 00:22:59,776
+
+326
+00:22:59,776 --> 00:23:04,090
+AUDIENCE: Is there a Mac
+version of the program?
+
+327
+00:23:04,090 --> 00:23:05,255
+PROFESSOR: Mac version?
+
+328
+00:23:05,255 --> 00:23:11,470
+No, it's still
+Windows version only.
+
+329
+00:23:11,470 --> 00:23:20,795
+It's written with cross platform
+library, so sometime in future.
+
+330
+00:23:20,795 --> 00:23:27,840
+
+331
+00:23:27,840 --> 00:23:33,340
+So let's move on to the next
+topic and software, which
+
+332
+00:23:33,340 --> 00:23:34,420
+is Freeform Origami.
+
+333
+00:23:34,420 --> 00:23:37,970
+
+334
+00:23:37,970 --> 00:23:42,460
+So the objective
+of Freeform Origami
+
+335
+00:23:42,460 --> 00:23:51,770
+is that we don't want to
+spend too much time to make
+
+336
+00:23:51,770 --> 00:23:56,460
+this kind of 3D
+form, and also, we
+
+337
+00:23:56,460 --> 00:24:02,310
+want some kind of conditions,
+not only developability.
+
+338
+00:24:02,310 --> 00:24:07,340
+We want some condition
+that most origami has.
+
+339
+00:24:07,340 --> 00:24:10,060
+
+340
+00:24:10,060 --> 00:24:12,880
+This is flat
+foldability so that it
+
+341
+00:24:12,880 --> 00:24:17,320
+folds flat, and also
+transformability or elastic
+
+342
+00:24:17,320 --> 00:24:18,290
+properties.
+
+343
+00:24:18,290 --> 00:24:22,900
+We want to use these good
+properties from origami
+
+344
+00:24:22,900 --> 00:24:28,340
+while we want to make some
+kind of freeform surface.
+
+345
+00:24:28,340 --> 00:24:33,530
+So the approach here is start
+from existing origami models
+
+346
+00:24:33,530 --> 00:24:39,470
+and then modify that
+to a different shape
+
+347
+00:24:39,470 --> 00:24:46,500
+while keeping the
+origami conditions
+
+348
+00:24:46,500 --> 00:24:51,020
+with direct, straightforward
+user interface.
+
+349
+00:24:51,020 --> 00:25:03,470
+Here, I used triangular mesh for
+representing the origami model,
+
+350
+00:25:03,470 --> 00:25:07,990
+and we represent
+the origami models
+
+351
+00:25:07,990 --> 00:25:13,570
+by the vertex
+coordinates of the model.
+
+352
+00:25:13,570 --> 00:25:19,230
+These variables are constrained
+by developability and flat
+
+353
+00:25:19,230 --> 00:25:27,220
+foldability This is a very
+direct way of implementing
+
+354
+00:25:27,220 --> 00:25:30,265
+origami deformation.
+
+355
+00:25:30,265 --> 00:25:34,020
+
+356
+00:25:34,020 --> 00:25:36,560
+First thing we want to
+keep is developability,
+
+357
+00:25:36,560 --> 00:25:39,815
+which is that you can fold
+from a sheet of paper.
+
+358
+00:25:39,815 --> 00:25:42,690
+
+359
+00:25:42,690 --> 00:25:45,270
+In engineering sense,
+it means that it
+
+360
+00:25:45,270 --> 00:25:48,340
+can be manufactured from
+a sheet material, which
+
+361
+00:25:48,340 --> 00:25:51,360
+is very nice, by folding
+and bending only.
+
+362
+00:25:51,360 --> 00:25:55,430
+
+363
+00:25:55,430 --> 00:25:59,160
+The condition is
+globally represented
+
+364
+00:25:59,160 --> 00:26:03,300
+that there exists some
+isometric mapping to a plane,
+
+365
+00:26:03,300 --> 00:26:06,750
+but if the surface is
+a topological disk,
+
+366
+00:26:06,750 --> 00:26:14,090
+it can be represented by a
+local condition of every point.
+
+367
+00:26:14,090 --> 00:26:20,110
+So every point on the surface,
+the Gauss curvature is zero.
+
+368
+00:26:20,110 --> 00:26:26,480
+Actually, we are thinking
+of a non-smooth surface,
+
+369
+00:26:26,480 --> 00:26:31,610
+but we are thinking of a
+piecewise linear surface, which
+
+370
+00:26:31,610 --> 00:26:35,090
+allows variation.
+
+371
+00:26:35,090 --> 00:26:39,110
+Smooth developer surface is only
+allowed to be in these forms,
+
+372
+00:26:39,110 --> 00:26:43,780
+but we have lots of
+different form variations
+
+373
+00:26:43,780 --> 00:26:44,640
+if we allow creases.
+
+374
+00:26:44,640 --> 00:26:51,020
+
+375
+00:26:51,020 --> 00:26:54,880
+Even in this case, we have
+to think about Gauss area,
+
+376
+00:26:54,880 --> 00:26:57,480
+and it's very easy
+to define Gauss area
+
+377
+00:26:57,480 --> 00:27:08,310
+for a C2 version of surface
+by multiplying curvatures,
+
+378
+00:27:08,310 --> 00:27:15,780
+but for polyhedra case, we
+use instead Gauss area, which
+
+379
+00:27:15,780 --> 00:27:22,790
+is represented by this, which
+is 2 pi minus sum of angles
+
+380
+00:27:22,790 --> 00:27:25,020
+around the vertex.
+
+381
+00:27:25,020 --> 00:27:28,450
+It's a very simple
+way to express
+
+382
+00:27:28,450 --> 00:27:31,570
+that it's folded from a plane.
+
+383
+00:27:31,570 --> 00:27:34,820
+This sums up to 2 pi.
+
+384
+00:27:34,820 --> 00:27:39,290
+This is what you can
+use for developability.
+
+385
+00:27:39,290 --> 00:27:42,920
+We want to also have flat
+foldability for the surface.
+
+386
+00:27:42,920 --> 00:27:46,440
+
+387
+00:27:46,440 --> 00:27:54,070
+This is applicable for
+compactly packaging a surface
+
+388
+00:27:54,070 --> 00:27:57,300
+from 3D to 2D and from 2D to 3D.
+
+389
+00:27:57,300 --> 00:28:00,180
+
+390
+00:28:00,180 --> 00:28:04,080
+It's also represented
+by isometric condition,
+
+391
+00:28:04,080 --> 00:28:05,770
+like in developability.
+
+392
+00:28:05,770 --> 00:28:09,770
+And also, we have a little bit
+of layering condition, which
+
+393
+00:28:09,770 --> 00:28:17,690
+is actually NP
+complete, which is hard,
+
+394
+00:28:17,690 --> 00:28:23,610
+but for practical purposes,
+we can avoid that.
+
+395
+00:28:23,610 --> 00:28:26,430
+
+396
+00:28:26,430 --> 00:28:28,700
+The first one is isometry.
+
+397
+00:28:28,700 --> 00:28:31,690
+That can be
+similarly represented
+
+398
+00:28:31,690 --> 00:28:40,010
+by angle condition, which is
+called Kawasaki's theorem, so
+
+399
+00:28:40,010 --> 00:28:45,740
+that the alternating sum
+of each vertex is zero.
+
+400
+00:28:45,740 --> 00:28:50,100
+And the layer ordering
+is NP complete,
+
+401
+00:28:50,100 --> 00:28:57,160
+but we can use, for example,
+sufficient condition given
+
+402
+00:28:57,160 --> 00:29:01,440
+by Kawasaki or
+empirical condition,
+
+403
+00:29:01,440 --> 00:29:08,540
+which basically given for
+each local adjacent angle,
+
+404
+00:29:08,540 --> 00:29:11,000
+so it's very easy to implement.
+
+405
+00:29:11,000 --> 00:29:14,850
+And it works, so we forget
+about NP complete part.
+
+406
+00:29:14,850 --> 00:29:18,530
+
+407
+00:29:18,530 --> 00:29:21,240
+And also, we can give
+several constraints.
+
+408
+00:29:21,240 --> 00:29:23,250
+For example, this
+fold doesn't want
+
+409
+00:29:23,250 --> 00:29:27,690
+to fold so that it
+forms a planar surface,
+
+410
+00:29:27,690 --> 00:29:35,800
+or you can fix the point
+to a point in 3D space,
+
+411
+00:29:35,800 --> 00:29:41,100
+or we can make some
+edge to be rigid.
+
+412
+00:29:41,100 --> 00:29:43,770
+
+413
+00:29:43,770 --> 00:29:48,940
+So we have these coordinates,
+and these are the variables
+
+414
+00:29:48,940 --> 00:29:52,325
+to represent the configuration,
+and be assign developability,
+
+415
+00:29:52,325 --> 00:29:54,220
+flat foldability, or
+other constraints.
+
+416
+00:29:54,220 --> 00:29:57,760
+
+417
+00:29:57,760 --> 00:30:02,500
+This forms an
+under-determined system,
+
+418
+00:30:02,500 --> 00:30:07,320
+which means that it gives you
+a multi-dimensional solution
+
+419
+00:30:07,320 --> 00:30:08,450
+space.
+
+420
+00:30:08,450 --> 00:30:11,030
+Within the solution
+space, we move.
+
+421
+00:30:11,030 --> 00:30:16,020
+We transform the
+surface so that you
+
+422
+00:30:16,020 --> 00:30:20,690
+will get the always
+valid solution.
+
+423
+00:30:20,690 --> 00:30:24,260
+That's the method
+we are applying.
+
+424
+00:30:24,260 --> 00:30:30,420
+In order to solve
+that, we can use
+
+425
+00:30:30,420 --> 00:30:35,860
+the Jacobian of the constraints
+and calculate it numerically.
+
+426
+00:30:35,860 --> 00:30:38,630
+
+427
+00:30:38,630 --> 00:30:46,710
+So for each step, it's a given
+assumed transformation mold,
+
+428
+00:30:46,710 --> 00:30:51,290
+and this gives you a
+valid transformation mold
+
+429
+00:30:51,290 --> 00:30:55,015
+by using the generalized
+inverse or pseudo inverse.
+
+430
+00:30:55,015 --> 00:30:59,350
+
+431
+00:30:59,350 --> 00:31:02,920
+You can implement
+software like this.
+
+432
+00:31:02,920 --> 00:31:09,140
+
+433
+00:31:09,140 --> 00:31:13,490
+The top is what happens
+with Freeform Origami.
+
+434
+00:31:13,490 --> 00:31:16,630
+This is a crease
+pattern of the paper
+
+435
+00:31:16,630 --> 00:31:21,120
+and this is the folded
+pattern when it's X-rayed.
+
+436
+00:31:21,120 --> 00:31:24,010
+You can see that if
+you drag this point up,
+
+437
+00:31:24,010 --> 00:31:27,160
+then all the crease pattern
+and the flat folded pattern
+
+438
+00:31:27,160 --> 00:31:30,140
+changes at the same time.
+
+439
+00:31:30,140 --> 00:31:31,380
+This is for comparison.
+
+440
+00:31:31,380 --> 00:31:36,710
+This is kind of a simulation.
+
+441
+00:31:36,710 --> 00:31:43,700
+In this case, the model cannot
+change the crease pattern,
+
+442
+00:31:43,700 --> 00:31:48,135
+which makes a less flexible
+motion for origami.
+
+443
+00:31:48,135 --> 00:31:57,040
+
+444
+00:31:57,040 --> 00:32:03,041
+So we want to do some
+mesh modification
+
+445
+00:32:03,041 --> 00:32:08,790
+because if you change
+the crease pattern, then
+
+446
+00:32:08,790 --> 00:32:14,420
+it will end up being
+degenerate triangles,
+
+447
+00:32:14,420 --> 00:32:19,360
+so that we need to do some kind
+of edge collapse operation.
+
+448
+00:32:19,360 --> 00:32:24,500
+However, in order to do that,
+we have several conditions.
+
+449
+00:32:24,500 --> 00:32:26,880
+We have to keep
+Maekawa's theorem
+
+450
+00:32:26,880 --> 00:32:30,850
+if the surface is
+flat foldable, and we
+
+451
+00:32:30,850 --> 00:32:34,360
+use that for doing
+edge collapsing
+
+452
+00:32:34,360 --> 00:32:36,680
+and mesh modification.
+
+453
+00:32:36,680 --> 00:32:41,860
+You see these patterns
+change, and these
+
+454
+00:32:41,860 --> 00:32:47,850
+are getting very
+degenerate triangles
+
+455
+00:32:47,850 --> 00:32:52,690
+that are removed
+by this operation.
+
+456
+00:32:52,690 --> 00:32:55,040
+This is interesting
+because you will end up
+
+457
+00:32:55,040 --> 00:32:56,240
+in different patterns.
+
+458
+00:32:56,240 --> 00:32:59,570
+
+459
+00:32:59,570 --> 00:33:05,450
+This part is similar to diamond
+pattern or Yoshimura pattern,
+
+460
+00:33:05,450 --> 00:33:11,980
+and this part is kept the
+same as Miura-Ori pattern.
+
+461
+00:33:11,980 --> 00:33:15,840
+
+462
+00:33:15,840 --> 00:33:20,850
+Mesh modification
+enables to transform
+
+463
+00:33:20,850 --> 00:33:23,230
+to produce more
+variations for pattern.
+
+464
+00:33:23,230 --> 00:33:25,770
+
+465
+00:33:25,770 --> 00:33:31,190
+From now, I will show some
+examples of Freeform Origami.
+
+466
+00:33:31,190 --> 00:33:35,240
+First one is starting
+from Miura-Ori.
+
+467
+00:33:35,240 --> 00:33:38,070
+I think it's well known.
+
+468
+00:33:38,070 --> 00:33:45,360
+This is actually very old,
+you can see from napkin folds.
+
+469
+00:33:45,360 --> 00:33:49,370
+For paper models, I think you
+can see pictures from Bauhaus.
+
+470
+00:33:49,370 --> 00:33:52,490
+
+471
+00:33:52,490 --> 00:33:55,670
+Anyway, this is
+called Miura-Ori,
+
+472
+00:33:55,670 --> 00:34:00,150
+and it gives you
+expansive motion,
+
+473
+00:34:00,150 --> 00:34:04,310
+and also it can be
+compactly packaged
+
+474
+00:34:04,310 --> 00:34:08,350
+and it's developable, of course.
+
+475
+00:34:08,350 --> 00:34:15,429
+So this is a variation of that,
+and this is another example.
+
+476
+00:34:15,429 --> 00:34:23,690
+
+477
+00:34:23,690 --> 00:34:26,065
+This model is called
+Melting Ice Cream.
+
+478
+00:34:26,065 --> 00:34:29,929
+
+479
+00:34:29,929 --> 00:34:37,245
+The idea is that using a
+variation of Miura-Ori,
+
+480
+00:34:37,245 --> 00:34:47,219
+it forms a 3D surface that
+is irregular and asymmetric,
+
+481
+00:34:47,219 --> 00:34:52,679
+while it can be folded flat
+so that you can roll it up,
+
+482
+00:34:52,679 --> 00:34:55,659
+carry out.
+
+483
+00:34:55,659 --> 00:34:57,010
+This is a model.
+
+484
+00:34:57,010 --> 00:35:03,550
+
+485
+00:35:03,550 --> 00:35:05,820
+This is another example.
+
+486
+00:35:05,820 --> 00:35:09,220
+Here, I wanted to start
+from regular Miura-Ori
+
+487
+00:35:09,220 --> 00:35:16,240
+and then to transform into
+a more free form surface.
+
+488
+00:35:16,240 --> 00:35:19,410
+
+489
+00:35:19,410 --> 00:35:23,120
+You can also generalize
+Ron Resch pattern.
+
+490
+00:35:23,120 --> 00:35:27,720
+This is one of Ron Resch's
+designed triangular
+
+491
+00:35:27,720 --> 00:35:30,320
+tessellations.
+
+492
+00:35:30,320 --> 00:35:35,390
+Good thing about
+this is that it forms
+
+493
+00:35:35,390 --> 00:35:38,290
+a kind of composite
+surface when its folded.
+
+494
+00:35:38,290 --> 00:35:43,480
+So it's composed with
+top surface and tucks
+
+495
+00:35:43,480 --> 00:35:48,940
+inside, just like this
+bunny, but it's more flexible
+
+496
+00:35:48,940 --> 00:35:54,370
+and you can fold from
+a sheet to the 3D form.
+
+497
+00:35:54,370 --> 00:35:59,490
+In order to design this,
+we assigned the condition
+
+498
+00:35:59,490 --> 00:36:07,370
+that in 3D state, these three
+vertices form one vertex.
+
+499
+00:36:07,370 --> 00:36:10,970
+That's extra constraints
+to enable generalization
+
+500
+00:36:10,970 --> 00:36:12,290
+of Ron Resch pattern.
+
+501
+00:36:12,290 --> 00:36:15,310
+So for example, you
+can get this kind
+
+502
+00:36:15,310 --> 00:36:24,390
+of asymmetric polyhedral surface
+with this generalized pattern,
+
+503
+00:36:24,390 --> 00:36:28,210
+or this form with this pattern.
+
+504
+00:36:28,210 --> 00:36:31,850
+Each triangle has
+different shapes.
+
+505
+00:36:31,850 --> 00:36:36,230
+A little bit of
+differentiated shape.
+
+506
+00:36:36,230 --> 00:36:41,420
+Or you can just apply to
+some regular triangular mesh
+
+507
+00:36:41,420 --> 00:36:52,820
+and then get some nice
+crumpled paper like that.
+
+508
+00:36:52,820 --> 00:36:58,890
+I think this is a good way
+for using this software.
+
+509
+00:36:58,890 --> 00:37:00,810
+You can design crumpled paper.
+
+510
+00:37:00,810 --> 00:37:03,510
+
+511
+00:37:03,510 --> 00:37:06,248
+It's very hard to crumple
+paper in real life.
+
+512
+00:37:06,248 --> 00:37:09,510
+
+513
+00:37:09,510 --> 00:37:12,100
+If you feel it's very
+difficult, then you
+
+514
+00:37:12,100 --> 00:37:14,780
+can use this software
+to crumple up paper.
+
+515
+00:37:14,780 --> 00:37:17,750
+
+516
+00:37:17,750 --> 00:37:22,530
+This is a generalized version
+of Yoshimura pattern or diamond
+
+517
+00:37:22,530 --> 00:37:29,060
+pattern that you can use for a
+kind of shell-like structure.
+
+518
+00:37:29,060 --> 00:37:34,575
+This is another pattern
+called waterbomb pattern.
+
+519
+00:37:34,575 --> 00:37:47,390
+
+520
+00:37:47,390 --> 00:37:54,410
+It's supposed to be
+playing the puffer fish
+
+521
+00:37:54,410 --> 00:37:56,486
+motion by [INAUDIBLE].
+
+522
+00:37:56,486 --> 00:37:59,150
+
+523
+00:37:59,150 --> 00:38:05,520
+Anyway, this type of pattern
+is called waterbomb pattern.
+
+524
+00:38:05,520 --> 00:38:12,820
+I think the oldest known
+is by Shuzo Fujimoto.
+
+525
+00:38:12,820 --> 00:38:15,495
+It's kind of a flexible pattern.
+
+526
+00:38:15,495 --> 00:38:19,250
+
+527
+00:38:19,250 --> 00:38:21,120
+Because it's flat
+foldable, it can
+
+528
+00:38:21,120 --> 00:38:24,760
+be used for
+deployable structure,
+
+529
+00:38:24,760 --> 00:38:29,760
+and because of the
+elastic property
+
+530
+00:38:29,760 --> 00:38:33,730
+that the folding gives, you
+can use for textured material
+
+531
+00:38:33,730 --> 00:38:38,320
+or cloth folding.
+
+532
+00:38:38,320 --> 00:38:42,430
+This is an example
+of deformation.
+
+533
+00:38:42,430 --> 00:38:45,390
+This is the normal
+waterbomb pattern.
+
+534
+00:38:45,390 --> 00:38:48,260
+
+535
+00:38:48,260 --> 00:38:52,330
+This is based on triangles.
+
+536
+00:38:52,330 --> 00:38:58,620
+This one forms more planar
+surface when it's in 3D,
+
+537
+00:38:58,620 --> 00:39:00,300
+and this is some generalization.
+
+538
+00:39:00,300 --> 00:39:04,310
+
+539
+00:39:04,310 --> 00:39:06,440
+This is the folded form.
+
+540
+00:39:06,440 --> 00:39:10,350
+I think it's a little
+bit too small to show.
+
+541
+00:39:10,350 --> 00:39:15,040
+
+542
+00:39:15,040 --> 00:39:22,160
+This is the pattern,
+and you fold it
+
+543
+00:39:22,160 --> 00:39:26,050
+into a kind of a
+butterfly shape,
+
+544
+00:39:26,050 --> 00:39:31,160
+and it forms a hyperbolic
+paraboloidal shape,
+
+545
+00:39:31,160 --> 00:39:35,980
+but it's a subtle shape.
+
+546
+00:39:35,980 --> 00:39:39,430
+This is another way to make
+a [INAUDIBLE] in paper,
+
+547
+00:39:39,430 --> 00:39:41,210
+and this exists.
+
+548
+00:39:41,210 --> 00:39:48,760
+
+549
+00:39:48,760 --> 00:39:52,256
+This was Freeform Origami.
+
+550
+00:39:52,256 --> 00:39:54,910
+Do you have any questions
+about Freeform Origami?
+
+551
+00:39:54,910 --> 00:39:59,471
+
+552
+00:39:59,471 --> 00:40:02,054
+AUDIENCE: Why can't you solve
+directly for the final shape
+
+553
+00:40:02,054 --> 00:40:05,880
+that you want?
+
+554
+00:40:05,880 --> 00:40:09,290
+PROFESSOR: The question
+is, why do I not
+
+555
+00:40:09,290 --> 00:40:17,410
+search for the 3D shape
+instead of gradually changing?
+
+556
+00:40:17,410 --> 00:40:27,210
+This is because the
+constraints are non-linear,
+
+557
+00:40:27,210 --> 00:40:32,960
+and that makes it possible that
+the solution doesn't exist.
+
+558
+00:40:32,960 --> 00:40:36,940
+If you do it
+continuously, then it
+
+559
+00:40:36,940 --> 00:40:39,790
+is always true that you
+get the right answer.
+
+560
+00:40:39,790 --> 00:40:52,950
+
+561
+00:40:52,950 --> 00:40:54,180
+This is a demonstration.
+
+562
+00:40:54,180 --> 00:40:58,530
+
+563
+00:40:58,530 --> 00:41:03,160
+This is good because
+basically, you
+
+564
+00:41:03,160 --> 00:41:07,660
+can interact with the
+geometry of the origami
+
+565
+00:41:07,660 --> 00:41:10,655
+to find some new results.
+
+566
+00:41:10,655 --> 00:41:17,510
+
+567
+00:41:17,510 --> 00:41:23,520
+It's more similar to when you
+design with paper, like when
+
+568
+00:41:23,520 --> 00:41:27,930
+you interact with real
+material, but this
+
+569
+00:41:27,930 --> 00:41:36,040
+gives more flexible change
+of material than simulation.
+
+570
+00:41:36,040 --> 00:41:41,290
+I wanted to make that kind
+of interaction possible,
+
+571
+00:41:41,290 --> 00:41:48,120
+so this moves like that, and
+that changes the pattern.
+
+572
+00:41:48,120 --> 00:42:03,060
+
+573
+00:42:03,060 --> 00:42:08,560
+That's the reason I
+do it in this way,
+
+574
+00:42:08,560 --> 00:42:12,920
+solve the equation
+by deformation.
+
+575
+00:42:12,920 --> 00:42:17,230
+
+576
+00:42:17,230 --> 00:42:17,950
+Any questions?
+
+577
+00:42:17,950 --> 00:42:20,842
+
+578
+00:42:20,842 --> 00:42:22,342
+AUDIENCE: I'm just
+curious, how long
+
+579
+00:42:22,342 --> 00:42:27,720
+did it take you to develop
+both this and the Origamizer?
+
+580
+00:42:27,720 --> 00:42:31,790
+PROFESSOR: The time for
+developing the software.
+
+581
+00:42:31,790 --> 00:42:37,440
+Well, it's always continuing.
+
+582
+00:42:37,440 --> 00:42:39,300
+I'm always containing
+developing,
+
+583
+00:42:39,300 --> 00:42:40,990
+so it's very hard to say.
+
+584
+00:42:40,990 --> 00:42:45,110
+
+585
+00:42:45,110 --> 00:42:47,060
+I don't know.
+
+586
+00:42:47,060 --> 00:42:51,050
+I think basically it starts
+to work in half a year,
+
+587
+00:42:51,050 --> 00:42:54,120
+and then polish a lot of times.
+
+588
+00:42:54,120 --> 00:42:59,400
+
+589
+00:42:59,400 --> 00:43:01,967
+AUDIENCE: Did you want
+to show the demo one?
+
+590
+00:43:01,967 --> 00:43:02,550
+PROFESSOR: No.
+
+591
+00:43:02,550 --> 00:43:03,550
+Not yet.
+
+592
+00:43:03,550 --> 00:43:12,850
+
+593
+00:43:12,850 --> 00:43:17,790
+So then we talk about
+the rigid origami.
+
+594
+00:43:17,790 --> 00:43:20,352
+
+595
+00:43:20,352 --> 00:43:21,276
+Question?
+
+596
+00:43:21,276 --> 00:43:24,048
+AUDIENCE: I might not
+understand it correctly,
+
+597
+00:43:24,048 --> 00:43:27,935
+but in either of these programs,
+or is there a program that
+
+598
+00:43:27,935 --> 00:43:32,010
+exists that allows the
+user to design dynamically
+
+599
+00:43:32,010 --> 00:43:35,290
+like this curved crease origami?
+
+600
+00:43:35,290 --> 00:43:38,190
+
+601
+00:43:38,190 --> 00:43:43,820
+PROFESSOR: So curved crease
+origami is quite hard.
+
+602
+00:43:43,820 --> 00:43:52,630
+I have tried with this software,
+and it works for some cases,
+
+603
+00:43:52,630 --> 00:43:56,470
+and it doesn't work
+for most of the cases
+
+604
+00:43:56,470 --> 00:44:01,530
+because there are too
+much degrees of freedom.
+
+605
+00:44:01,530 --> 00:44:13,970
+If you simulate curve folding by
+very thin quadrilateral strips,
+
+606
+00:44:13,970 --> 00:44:18,730
+so that's a future work
+so that the software
+
+607
+00:44:18,730 --> 00:44:24,510
+can work with curve folding.
+
+608
+00:44:24,510 --> 00:44:28,340
+If it's a coarse
+approximation, then it works.
+
+609
+00:44:28,340 --> 00:44:35,910
+
+610
+00:44:35,910 --> 00:44:38,335
+So rigid origami.
+
+611
+00:44:38,335 --> 00:44:44,590
+
+612
+00:44:44,590 --> 00:44:50,405
+This is the closest part
+of computational origami
+
+613
+00:44:50,405 --> 00:44:51,230
+to architecture.
+
+614
+00:44:51,230 --> 00:44:55,030
+
+615
+00:44:55,030 --> 00:44:59,640
+So rigid origami is
+plates and hinges model
+
+616
+00:44:59,640 --> 00:45:04,240
+for origami like this.
+
+617
+00:45:04,240 --> 00:45:14,490
+So each rigid panel is
+connected to adjacent panel
+
+618
+00:45:14,490 --> 00:45:19,170
+with a rotational
+hinge, one axis hinge.
+
+619
+00:45:19,170 --> 00:45:22,070
+
+620
+00:45:22,070 --> 00:45:27,950
+The panels do not deform, and it
+produces a synchronized motion.
+
+621
+00:45:27,950 --> 00:45:33,890
+So that's a model
+when you want to apply
+
+622
+00:45:33,890 --> 00:45:39,480
+origami's dynamic
+features to some designs.
+
+623
+00:45:39,480 --> 00:45:43,460
+
+624
+00:45:43,460 --> 00:45:53,870
+And this is a comparison, and
+this illustrates the energy
+
+625
+00:45:53,870 --> 00:45:58,360
+that's caused by the
+distortion of facets.
+
+626
+00:45:58,360 --> 00:46:02,560
+For example, this model
+falls to this state,
+
+627
+00:46:02,560 --> 00:46:10,250
+but there is no path that gives
+you zero energy deformation.
+
+628
+00:46:10,250 --> 00:46:15,000
+But this is rigid
+foldable, which
+
+629
+00:46:15,000 --> 00:46:18,355
+keeps each of the
+faces not deforming.
+
+630
+00:46:18,355 --> 00:46:21,730
+
+631
+00:46:21,730 --> 00:46:26,020
+And it's useful for a
+self deployable structure
+
+632
+00:46:26,020 --> 00:46:30,260
+or architectural structure
+that is very large.
+
+633
+00:46:30,260 --> 00:46:34,490
+You can substitute
+panels with thick panels.
+
+634
+00:46:34,490 --> 00:46:36,670
+I will talk in the last part.
+
+635
+00:46:36,670 --> 00:46:40,490
+
+636
+00:46:40,490 --> 00:46:41,410
+So like this.
+
+637
+00:46:41,410 --> 00:46:48,562
+
+638
+00:46:48,562 --> 00:46:49,270
+So rigid origami.
+
+639
+00:46:49,270 --> 00:47:05,110
+
+640
+00:47:05,110 --> 00:47:12,800
+Here, we want to apply rigid
+origami to design purposes.
+
+641
+00:47:12,800 --> 00:47:16,700
+In order to do that, we
+want to think about first
+
+642
+00:47:16,700 --> 00:47:21,070
+to also generalize
+rigid foldability
+
+643
+00:47:21,070 --> 00:47:30,060
+to different shapes, and also
+to generalize into cylinders
+
+644
+00:47:30,060 --> 00:47:38,795
+and other topology, like
+compound structures.
+
+645
+00:47:38,795 --> 00:47:42,360
+
+646
+00:47:42,360 --> 00:47:48,005
+Before that, I would like to
+show example of rigid folding.
+
+647
+00:47:48,005 --> 00:47:52,350
+
+648
+00:47:52,350 --> 00:47:56,882
+This is the
+simulation of folding.
+
+649
+00:47:56,882 --> 00:47:59,840
+AUDIENCE: Could you play
+the lower left again?
+
+650
+00:47:59,840 --> 00:48:04,780
+PROFESSOR: So this is
+a triangulated model
+
+651
+00:48:04,780 --> 00:48:12,260
+of a tesselation
+designed by Ray Schamp.
+
+652
+00:48:12,260 --> 00:48:14,050
+This is a waterbomb
+tessellation.
+
+653
+00:48:14,050 --> 00:48:19,400
+
+654
+00:48:19,400 --> 00:48:23,410
+So first thing we want to
+do is to simulate folding
+
+655
+00:48:23,410 --> 00:48:31,340
+to understand the geometry, the
+kinematics of rigid origami.
+
+656
+00:48:31,340 --> 00:48:35,970
+
+657
+00:48:35,970 --> 00:48:39,400
+This can be represented.
+
+658
+00:48:39,400 --> 00:48:42,910
+First easy representation
+is a truss model,
+
+659
+00:48:42,910 --> 00:48:50,110
+which you basically use vertex
+coordinates as the variables
+
+660
+00:48:50,110 --> 00:48:52,430
+and then constrain them
+with rigid bars that
+
+661
+00:48:52,430 --> 00:48:56,550
+are connected to vertices.
+
+662
+00:48:56,550 --> 00:48:59,000
+And this one is
+different representation
+
+663
+00:48:59,000 --> 00:49:01,190
+that uses folding angle.
+
+664
+00:49:01,190 --> 00:49:05,280
+This is a more direct
+way, and I have a software
+
+665
+00:49:05,280 --> 00:49:09,130
+called Rigid Origami
+Simulator which basically
+
+666
+00:49:09,130 --> 00:49:15,200
+is based on this constraint
+and representation.
+
+667
+00:49:15,200 --> 00:49:19,710
+The configuration is
+represented by folding angles,
+
+668
+00:49:19,710 --> 00:49:24,770
+and then the folding angles
+are constrained at each vertex
+
+669
+00:49:24,770 --> 00:49:30,970
+by this equation, which
+is a three by three matrix
+
+670
+00:49:30,970 --> 00:49:34,280
+form, which actually
+gives nine equations,
+
+671
+00:49:34,280 --> 00:49:38,975
+but only three of
+them are independent.
+
+672
+00:49:38,975 --> 00:49:42,570
+
+673
+00:49:42,570 --> 00:49:47,990
+We have three equations
+for each vertex.
+
+674
+00:49:47,990 --> 00:49:52,260
+That will give also
+under-determined system
+
+675
+00:49:52,260 --> 00:49:59,540
+so that you can simulate folding
+using also generalized inverse
+
+676
+00:49:59,540 --> 00:50:02,220
+so that you can search
+within the solution space
+
+677
+00:50:02,220 --> 00:50:12,790
+by giving some pieces kind of
+a force that's asserted to each
+
+678
+00:50:12,790 --> 00:50:15,770
+of the edges, and
+then this results
+
+679
+00:50:15,770 --> 00:50:18,820
+in the deformation
+that is valid.
+
+680
+00:50:18,820 --> 00:50:24,110
+
+681
+00:50:24,110 --> 00:50:26,070
+In generic case,
+because there are
+
+682
+00:50:26,070 --> 00:50:29,690
+three constraints
+for each vertex
+
+683
+00:50:29,690 --> 00:50:38,840
+and one variable for each edge,
+we have this degree of freedom.
+
+684
+00:50:38,840 --> 00:50:43,460
+
+685
+00:50:43,460 --> 00:50:46,980
+First way to design
+rigid origami is
+
+686
+00:50:46,980 --> 00:50:57,460
+to use this information from
+Euler's polyhedral formula,
+
+687
+00:50:57,460 --> 00:51:02,250
+we can say that any triangular
+mesh-- well, not any.
+
+688
+00:51:02,250 --> 00:51:09,460
+It's a generic triangular mesh--
+produces a degree of freedom,
+
+689
+00:51:09,460 --> 00:51:14,830
+which is number of edges
+on the boundary minus 3.
+
+690
+00:51:14,830 --> 00:51:18,310
+So for example, in this
+[? hyper ?] triangular model,
+
+691
+00:51:18,310 --> 00:51:23,620
+this gives one degree of
+freedom because the boundary
+
+692
+00:51:23,620 --> 00:51:27,340
+edges are four.
+
+693
+00:51:27,340 --> 00:51:30,990
+And we can generalize
+it to cases
+
+694
+00:51:30,990 --> 00:51:33,050
+where there are holes also.
+
+695
+00:51:33,050 --> 00:51:37,500
+
+696
+00:51:37,500 --> 00:51:41,170
+With this idea, you can make
+hexagonal tripod shell, which
+
+697
+00:51:41,170 --> 00:51:48,010
+is using six edged,
+hexagonal boundary,
+
+698
+00:51:48,010 --> 00:51:52,610
+so that the degree
+of freedom is three,
+
+699
+00:51:52,610 --> 00:51:58,370
+and then we pin joint three
+of the vertices, which
+
+700
+00:51:58,370 --> 00:51:59,330
+gives nine constraints.
+
+701
+00:51:59,330 --> 00:52:02,190
+
+702
+00:52:02,190 --> 00:52:08,460
+Because of the rigid body
+degree of freedom, which is six,
+
+703
+00:52:08,460 --> 00:52:14,130
+we have nine degrees of
+freedom of transformation,
+
+704
+00:52:14,130 --> 00:52:17,100
+and then that's our
+constraint by nine,
+
+705
+00:52:17,100 --> 00:52:23,110
+so it produces static structure.
+
+706
+00:52:23,110 --> 00:52:26,210
+By changing the position
+of these points,
+
+707
+00:52:26,210 --> 00:52:29,910
+you can get the different forms.
+
+708
+00:52:29,910 --> 00:52:36,170
+For example, this is the
+shape, triangular form.
+
+709
+00:52:36,170 --> 00:52:44,930
+The position of these pods
+changes the overall shape,
+
+710
+00:52:44,930 --> 00:52:49,305
+and it's static when it's
+fixed, it's all pin joint.
+
+711
+00:52:49,305 --> 00:52:58,860
+
+712
+00:52:58,860 --> 00:52:59,800
+This is an example.
+
+713
+00:52:59,800 --> 00:53:02,590
+
+714
+00:53:02,590 --> 00:53:11,320
+If you change the
+position of the leg,
+
+715
+00:53:11,320 --> 00:53:14,000
+then you get the
+different shapes,
+
+716
+00:53:14,000 --> 00:53:16,930
+3D configuration like this.
+
+717
+00:53:16,930 --> 00:53:19,910
+
+718
+00:53:19,910 --> 00:53:30,040
+This is one way to build
+rigid origami structures.
+
+719
+00:53:30,040 --> 00:53:45,440
+This is quite obvious result.
+
+720
+00:53:45,440 --> 00:53:49,330
+Theoretically, it's more
+interesting to think about
+
+721
+00:53:49,330 --> 00:53:52,510
+the one that you cannot
+imagine the transformation,
+
+722
+00:53:52,510 --> 00:53:56,510
+for example, quadrilateral mesh.
+
+723
+00:53:56,510 --> 00:54:04,400
+So for quadrilateral
+mesh, each vertex
+
+724
+00:54:04,400 --> 00:54:10,060
+has also three constraints
+so that this itself
+
+725
+00:54:10,060 --> 00:54:13,830
+forms a one DOF structure.
+
+726
+00:54:13,830 --> 00:54:21,420
+Think about when you form a
+mesh with this, like Miura-Ori.
+
+727
+00:54:21,420 --> 00:54:31,200
+Basically, if you define
+this folding angle,
+
+728
+00:54:31,200 --> 00:54:33,700
+then all the folding
+angles here are defined.
+
+729
+00:54:33,700 --> 00:54:37,430
+
+730
+00:54:37,430 --> 00:54:41,510
+If you have another
+degree for vertex,
+
+731
+00:54:41,510 --> 00:54:47,110
+then everything is
+here defined, and you
+
+732
+00:54:47,110 --> 00:54:51,920
+want to have another
+vertex here that
+
+733
+00:54:51,920 --> 00:54:54,630
+is defined by this
+folding angle.
+
+734
+00:54:54,630 --> 00:55:00,309
+Then you will have a problem
+here because this folding angle
+
+735
+00:55:00,309 --> 00:55:01,725
+and this folding
+angle contradict.
+
+736
+00:55:01,725 --> 00:55:05,030
+
+737
+00:55:05,030 --> 00:55:13,860
+In general, it contradicts so
+that you cannot make an array
+
+738
+00:55:13,860 --> 00:55:19,540
+of folding by
+quadrilateral mesh.
+
+739
+00:55:19,540 --> 00:55:22,480
+However, as you can
+see from this figure,
+
+740
+00:55:22,480 --> 00:55:25,930
+there exist examples
+like Miura-Ori
+
+741
+00:55:25,930 --> 00:55:29,210
+that give one degree
+of freedom motion.
+
+742
+00:55:29,210 --> 00:55:35,880
+This is actually a very
+interesting thing happening.
+
+743
+00:55:35,880 --> 00:55:40,200
+And also, this is great
+because all the constraints
+
+744
+00:55:40,200 --> 00:55:41,670
+are redundant.
+
+745
+00:55:41,670 --> 00:55:46,750
+You can remove this part, so you
+can put a hole in the center,
+
+746
+00:55:46,750 --> 00:55:51,990
+but still, it results
+in the same motion.
+
+747
+00:55:51,990 --> 00:55:57,400
+You can design more
+freely with this kind
+
+748
+00:55:57,400 --> 00:56:01,200
+of robust, redundant
+constraint structure.
+
+749
+00:56:01,200 --> 00:56:04,470
+
+750
+00:56:04,470 --> 00:56:13,260
+What I want to do is to
+generalize this to a freeform.
+
+751
+00:56:13,260 --> 00:56:16,010
+We start from Miura-Ori
+and also start
+
+752
+00:56:16,010 --> 00:56:19,980
+from this pattern, which is
+not a developable surface,
+
+753
+00:56:19,980 --> 00:56:23,600
+but also gives one
+degree of freedom motion
+
+754
+00:56:23,600 --> 00:56:30,730
+with redundant constraints in
+its quadrilateral mesh design.
+
+755
+00:56:30,730 --> 00:56:35,845
+These can be generalized to
+rigid, non-symmetric forms.
+
+756
+00:56:35,845 --> 00:56:43,560
+
+757
+00:56:43,560 --> 00:56:45,790
+Miura-Ori is
+something like that,
+
+758
+00:56:45,790 --> 00:56:56,610
+and we can extract the
+property of rigid folding
+
+759
+00:56:56,610 --> 00:56:58,090
+by looking at these vertex.
+
+760
+00:56:58,090 --> 00:57:03,020
+
+761
+00:57:03,020 --> 00:57:06,050
+If it's a flat
+foldable vertex, it's
+
+762
+00:57:06,050 --> 00:57:12,640
+a degree four vertex
+with flat foldability,
+
+763
+00:57:12,640 --> 00:57:16,120
+and this gives a
+folding motion where
+
+764
+00:57:16,120 --> 00:57:20,440
+the opposite folding
+angle are the same
+
+765
+00:57:20,440 --> 00:57:23,610
+and these are the
+same, and also,
+
+766
+00:57:23,610 --> 00:57:29,370
+that the folding angle
+here and here are related.
+
+767
+00:57:29,370 --> 00:57:32,800
+If you look at the tangent
+of half of the angle,
+
+768
+00:57:32,800 --> 00:57:37,160
+then it's linearly related.
+
+769
+00:57:37,160 --> 00:57:42,190
+This is very useful because if
+you find one configuration that
+
+770
+00:57:42,190 --> 00:57:48,210
+works, then you will have
+continuous folding that works.
+
+771
+00:57:48,210 --> 00:57:51,300
+
+772
+00:57:51,300 --> 00:57:55,830
+In this way, you can
+make sufficient condition
+
+773
+00:57:55,830 --> 00:58:01,950
+for making a quadrilateral
+mesh rigid foldable.
+
+774
+00:58:01,950 --> 00:58:09,860
+This is easy to get because it's
+only the finite folding motion.
+
+775
+00:58:09,860 --> 00:58:14,570
+So the continuous folding
+motion from a sheet
+
+776
+00:58:14,570 --> 00:58:18,770
+to the folded
+state is guaranteed
+
+777
+00:58:18,770 --> 00:58:25,565
+by one 3D configuration that
+satisfies these conditions.
+
+778
+00:58:25,565 --> 00:58:28,710
+
+779
+00:58:28,710 --> 00:58:31,190
+In order to get one
+configuration that
+
+780
+00:58:31,190 --> 00:58:36,140
+satisfies this configuration,
+we can use the Freeform Origami,
+
+781
+00:58:36,140 --> 00:58:42,150
+so it's very easy
+for us to do that.
+
+782
+00:58:42,150 --> 00:58:45,730
+This is an example
+of rigid origami
+
+783
+00:58:45,730 --> 00:58:52,500
+that's using
+redundant constraints.
+
+784
+00:58:52,500 --> 00:58:56,260
+It produces one degree
+of freedom motion
+
+785
+00:58:56,260 --> 00:58:59,910
+and it's very light because
+this part and this part
+
+786
+00:58:59,910 --> 00:59:03,580
+counterbalance the gravity.
+
+787
+00:59:03,580 --> 00:59:08,020
+
+788
+00:59:08,020 --> 00:59:09,090
+This is another example.
+
+789
+00:59:09,090 --> 00:59:15,930
+
+790
+00:59:15,930 --> 00:59:20,475
+Quadrilateral mesh can be
+a rigid folding motion.
+
+791
+00:59:20,475 --> 00:59:32,180
+
+792
+00:59:32,180 --> 00:59:35,840
+You can apply to something
+like curve folding.
+
+793
+00:59:35,840 --> 00:59:38,700
+It's rigid foldable
+curve folding.
+
+794
+00:59:38,700 --> 00:59:42,800
+This is kind of
+contradictory, but we
+
+795
+00:59:42,800 --> 00:59:47,260
+can rationalize curve folding
+into quadrilateral mesh.
+
+796
+00:59:47,260 --> 00:59:53,630
+Then you can produce one degree
+of freedom motion like that.
+
+797
+00:59:53,630 --> 00:59:59,120
+Another example with
+thickness is here.
+
+798
+00:59:59,120 --> 01:00:05,660
+It's interesting that it's
+one degree of freedom motion
+
+799
+01:00:05,660 --> 01:00:10,760
+so that every motion is
+coded in the pattern here.
+
+800
+01:00:10,760 --> 01:00:14,170
+
+801
+01:00:14,170 --> 01:00:17,650
+Another example is
+using Eggbox pattern.
+
+802
+01:00:17,650 --> 01:00:21,840
+
+803
+01:00:21,840 --> 01:00:24,240
+This actually has
+the same property
+
+804
+01:00:24,240 --> 01:00:30,700
+as the Miura-Ori vertex or flat
+foldable degree for vertex,
+
+805
+01:00:30,700 --> 01:00:36,040
+so that you can
+use the same idea
+
+806
+01:00:36,040 --> 01:00:39,610
+to produce rigid
+foldable variations.
+
+807
+01:00:39,610 --> 01:00:42,250
+
+808
+01:00:42,250 --> 01:00:46,460
+You can actually combine
+with origami structure
+
+809
+01:00:46,460 --> 01:00:53,240
+if you define this
+mountain fold, valley fold,
+
+810
+01:00:53,240 --> 01:00:55,840
+and also add complementary
+mountain fold
+
+811
+01:00:55,840 --> 01:01:04,820
+and complementary valley
+fold, defined here.
+
+812
+01:01:04,820 --> 01:01:11,570
+If you use that kind of
+extension of the origami,
+
+813
+01:01:11,570 --> 01:01:20,450
+then you will get
+design variations
+
+814
+01:01:20,450 --> 01:01:26,240
+that combine origami.
+
+815
+01:01:26,240 --> 01:01:28,510
+This part is origami
+vertex but this is not.
+
+816
+01:01:28,510 --> 01:01:31,080
+
+817
+01:01:31,080 --> 01:01:36,160
+This can have positive
+Gaussian curvature
+
+818
+01:01:36,160 --> 01:01:39,730
+while this part is zero
+Gaussian curvature.
+
+819
+01:01:39,730 --> 01:01:41,380
+The interesting
+point is that you
+
+820
+01:01:41,380 --> 01:01:44,750
+can develop the
+flat folded state
+
+821
+01:01:44,750 --> 01:01:49,960
+or actually, in this case, it's
+two flat folded states because
+
+822
+01:01:49,960 --> 01:01:56,690
+in this case, it's
+not totally developed,
+
+823
+01:01:56,690 --> 01:02:02,010
+but complementary
+fold lines are folded.
+
+824
+01:02:02,010 --> 01:02:05,350
+So that's why I call it
+bidirectionally flat foldable
+
+825
+01:02:05,350 --> 01:02:10,169
+planar quadrilateral mesh, and
+that can be rigidity foldable.
+
+826
+01:02:10,169 --> 01:02:10,960
+This is an example.
+
+827
+01:02:10,960 --> 01:02:27,680
+
+828
+01:02:27,680 --> 01:02:30,980
+This was about a
+disk, and we can
+
+829
+01:02:30,980 --> 01:02:33,880
+develop into a
+cylindrical structure.
+
+830
+01:02:33,880 --> 01:02:42,960
+And cylinder is not trivial
+because, for example, this
+
+831
+01:02:42,960 --> 01:02:45,180
+is known origami
+pattern, but this
+
+832
+01:02:45,180 --> 01:02:46,880
+doesn't transform
+to this pattern
+
+833
+01:02:46,880 --> 01:02:53,225
+because this is has a
+different number or edges.
+
+834
+01:02:53,225 --> 01:02:58,290
+You cannot produce this kind
+of motion in rigid folding
+
+835
+01:02:58,290 --> 01:03:01,050
+mechanism.
+
+836
+01:03:01,050 --> 01:03:07,440
+You can see what's the problem
+by looking at this kind of disk
+
+837
+01:03:07,440 --> 01:03:10,200
+surface that is
+rigidly foldable,
+
+838
+01:03:10,200 --> 01:03:14,720
+and it forms a
+cylinder at one state
+
+839
+01:03:14,720 --> 01:03:20,240
+but it doesn't produce in
+a continuous motion that
+
+840
+01:03:20,240 --> 01:03:24,040
+fix this loop.
+
+841
+01:03:24,040 --> 01:03:25,880
+But there exists.
+
+842
+01:03:25,880 --> 01:03:34,720
+So the idea is to mirror reflect
+one part of Miura-Ori vertex.
+
+843
+01:03:34,720 --> 01:03:40,700
+Actually, you can see from the
+origami model by Thoki Yenn.
+
+844
+01:03:40,700 --> 01:03:42,560
+It's called Flip Flop.
+
+845
+01:03:42,560 --> 01:03:43,935
+It's a very interesting model.
+
+846
+01:03:43,935 --> 01:03:47,270
+
+847
+01:03:47,270 --> 01:03:56,240
+You can develop more generalized
+origami cylinders like these.
+
+848
+01:03:56,240 --> 01:04:01,190
+I think this is rigid
+foldable cylinders.
+
+849
+01:04:01,190 --> 01:04:05,200
+Since it's using
+quadrilateral panels,
+
+850
+01:04:05,200 --> 01:04:09,000
+it similarly produces one
+degree of freedom motion.
+
+851
+01:04:09,000 --> 01:04:12,750
+And you can see, for
+example, like that.
+
+852
+01:04:12,750 --> 01:04:14,100
+This is the motion produced.
+
+853
+01:04:14,100 --> 01:04:16,910
+
+854
+01:04:16,910 --> 01:04:22,400
+Any part produces
+the whole motion.
+
+855
+01:04:22,400 --> 01:04:28,460
+
+856
+01:04:28,460 --> 01:04:32,680
+And also, you can make some
+kind of design variations.
+
+857
+01:04:32,680 --> 01:04:36,685
+This is using grasshopper
+on rhinoceros.
+
+858
+01:04:36,685 --> 01:04:39,820
+
+859
+01:04:39,820 --> 01:04:46,510
+This is the given shape, the
+section, and from the section,
+
+860
+01:04:46,510 --> 01:04:51,910
+you can make a rigid
+foldable cylinder and also
+
+861
+01:04:51,910 --> 01:04:53,700
+composite structures like this.
+
+862
+01:04:53,700 --> 01:04:58,500
+
+863
+01:04:58,500 --> 01:05:00,650
+So we can make
+composite structures
+
+864
+01:05:00,650 --> 01:05:06,265
+like this, so it's great
+that it fills the space.
+
+865
+01:05:06,265 --> 01:05:09,980
+
+866
+01:05:09,980 --> 01:05:13,890
+It tessellates while
+preserving the one
+
+867
+01:05:13,890 --> 01:05:15,140
+degree of freedom motion.
+
+868
+01:05:15,140 --> 01:05:19,520
+
+869
+01:05:19,520 --> 01:05:24,550
+This is an implementation
+with thick panels.
+
+870
+01:05:24,550 --> 01:05:29,450
+Think I have got the
+cylindrical tessellation model.
+
+871
+01:05:29,450 --> 01:05:32,030
+
+872
+01:05:32,030 --> 01:05:39,680
+This is a tessellated model,
+which moves like that.
+
+873
+01:05:39,680 --> 01:05:46,073
+It's kind of a volume that
+flattens into two states,
+
+874
+01:05:46,073 --> 01:05:48,990
+and it's good that
+it's rigidly foldable
+
+875
+01:05:48,990 --> 01:05:51,100
+and it's one degree
+of freedom mechanism.
+
+876
+01:05:51,100 --> 01:05:58,980
+
+877
+01:05:58,980 --> 01:06:00,300
+I want to generalize more.
+
+878
+01:06:00,300 --> 01:06:05,490
+
+879
+01:06:05,490 --> 01:06:08,300
+This is symmetric.
+
+880
+01:06:08,300 --> 01:06:13,240
+There exists one axis that
+repeats the unit structure.
+
+881
+01:06:13,240 --> 01:06:19,450
+I want to make it more general.
+
+882
+01:06:19,450 --> 01:06:22,370
+I like the asymmetry
+than symmetry.
+
+883
+01:06:22,370 --> 01:06:28,220
+I think you do also.
+
+884
+01:06:28,220 --> 01:06:33,630
+But you have to think about
+the conditions around a hole,
+
+885
+01:06:33,630 --> 01:06:39,490
+and actually, this is
+a difficult condition
+
+886
+01:06:39,490 --> 01:06:45,260
+to be solved then
+the disk version.
+
+887
+01:06:45,260 --> 01:06:53,120
+However, you can do that
+by fixing the first loop,
+
+888
+01:06:53,120 --> 01:06:56,300
+then you know that this
+part is rigid foldable,
+
+889
+01:06:56,300 --> 01:07:01,100
+so you can continue
+deformation from there.
+
+890
+01:07:01,100 --> 01:07:04,050
+This is kind of
+sufficient condition,
+
+891
+01:07:04,050 --> 01:07:08,720
+but useful for designing
+something like this.
+
+892
+01:07:08,720 --> 01:07:12,580
+It's more free form.
+
+893
+01:07:12,580 --> 01:07:16,860
+For example, this
+is also one degree
+
+894
+01:07:16,860 --> 01:07:19,930
+of freedom rigid
+foldable cylinder.
+
+895
+01:07:19,930 --> 01:07:24,430
+
+896
+01:07:24,430 --> 01:07:27,100
+This is an example folded.
+
+897
+01:07:27,100 --> 01:07:36,710
+
+898
+01:07:36,710 --> 01:07:37,720
+It folds like that.
+
+899
+01:07:37,720 --> 01:07:46,240
+
+900
+01:07:46,240 --> 01:07:48,510
+This is also an example.
+
+901
+01:07:48,510 --> 01:07:53,790
+This forms a torus
+when it's unfolded.
+
+902
+01:07:53,790 --> 01:07:57,670
+
+903
+01:07:57,670 --> 01:08:00,655
+Or this type of structure.
+
+904
+01:08:00,655 --> 01:08:03,949
+
+905
+01:08:03,949 --> 01:08:04,990
+So it's also cylindrical.
+
+906
+01:08:04,990 --> 01:08:07,750
+
+907
+01:08:07,750 --> 01:08:12,720
+And for kind of
+architectural image.
+
+908
+01:08:12,720 --> 01:08:15,340
+
+909
+01:08:15,340 --> 01:08:20,330
+This is a rigid
+origami for cylinder.
+
+910
+01:08:20,330 --> 01:08:31,020
+And how to implement rigid
+origami to real model,
+
+911
+01:08:31,020 --> 01:08:37,010
+because in architecture
+design or any other designs,
+
+912
+01:08:37,010 --> 01:08:45,279
+we want some kind of
+finite thickness model.
+
+913
+01:08:45,279 --> 01:08:48,220
+There's no ideal origami.
+
+914
+01:08:48,220 --> 01:08:53,270
+Well, probably
+Origamido can produce.
+
+915
+01:08:53,270 --> 01:09:00,319
+Anyway, we want some thick
+panels and rotating hinges
+
+916
+01:09:00,319 --> 01:09:01,910
+to produce rigid origami.
+
+917
+01:09:01,910 --> 01:09:05,680
+
+918
+01:09:05,680 --> 01:09:08,750
+This is the typical
+way to do that.
+
+919
+01:09:08,750 --> 01:09:13,000
+So you put the hinge
+on the valley side.
+
+920
+01:09:13,000 --> 01:09:22,300
+The main problem of this one
+is that each vertex, there
+
+921
+01:09:22,300 --> 01:09:27,200
+are several fold lines that
+are joining at the vertex,
+
+922
+01:09:27,200 --> 01:09:33,100
+but this will no
+longer be concurrent.
+
+923
+01:09:33,100 --> 01:09:37,540
+But rigid origami mechanism
+assumes that the fold lines are
+
+924
+01:09:37,540 --> 01:09:46,370
+concurrent, which means
+that it includes translation
+
+925
+01:09:46,370 --> 01:09:49,410
+constraints and it
+increases the number
+
+926
+01:09:49,410 --> 01:09:51,640
+of constraints for each vertex.
+
+927
+01:09:51,640 --> 01:09:55,570
+So previously, it was
+three constraints there,
+
+928
+01:09:55,570 --> 01:09:59,110
+but it becomes six constraints
+because it includes
+
+929
+01:09:59,110 --> 01:10:02,710
+transformation,
+which is very bad,
+
+930
+01:10:02,710 --> 01:10:07,580
+but there is asymmetric
+vertex that allows that.
+
+931
+01:10:07,580 --> 01:10:10,670
+So using asymmetry, you can
+make something like that.
+
+932
+01:10:10,670 --> 01:10:18,570
+Also, there is a way that you
+can slide the hinge like that,
+
+933
+01:10:18,570 --> 01:10:24,450
+but there is a problem
+in the case like this.
+
+934
+01:10:24,450 --> 01:10:32,000
+The problem of sliding is in
+global accumulation of errors.
+
+935
+01:10:32,000 --> 01:10:37,280
+So what I do is instead
+of shifting hinge,
+
+936
+01:10:37,280 --> 01:10:44,600
+you can trim the volume
+of the vertex valley
+
+937
+01:10:44,600 --> 01:10:46,880
+side of the model.
+
+938
+01:10:46,880 --> 01:10:49,540
+
+939
+01:10:49,540 --> 01:10:53,090
+This is actually very easy.
+
+940
+01:10:53,090 --> 01:10:58,160
+You assume that this
+folds to pi minus delta,
+
+941
+01:10:58,160 --> 01:11:04,000
+and you can just
+remove this part
+
+942
+01:11:04,000 --> 01:11:08,510
+according to this
+maximum folding angle.
+
+943
+01:11:08,510 --> 01:11:18,090
+And you can define this point
+by offsetting the edges, which
+
+944
+01:11:18,090 --> 01:11:24,300
+is basically calculating
+with a straight skeleton.
+
+945
+01:11:24,300 --> 01:11:29,330
+This also can be applied
+to constant thickness
+
+946
+01:11:29,330 --> 01:11:35,210
+panels, which is more
+easy to be manufactured,
+
+947
+01:11:35,210 --> 01:11:37,740
+only with three axis
+milling machine.
+
+948
+01:11:37,740 --> 01:11:41,920
+
+949
+01:11:41,920 --> 01:11:48,110
+This is a thick panel,
+thick rigid origami
+
+950
+01:11:48,110 --> 01:11:49,060
+using this method.
+
+951
+01:11:49,060 --> 01:11:51,800
+
+952
+01:11:51,800 --> 01:11:56,990
+This is an example using
+a constant thickness model
+
+953
+01:11:56,990 --> 01:12:02,470
+where no error is
+accumulated, like this model,
+
+954
+01:12:02,470 --> 01:12:05,100
+a slideable hinge.
+
+955
+01:12:05,100 --> 01:12:09,190
+This is implemented by
+using grasshopper again.
+
+956
+01:12:09,190 --> 01:12:14,170
+Grasshopper is a good tool
+to implement something
+
+957
+01:12:14,170 --> 01:12:21,750
+that does not require iterative
+optimization calculation,
+
+958
+01:12:21,750 --> 01:12:31,340
+but it's very good for forward
+calculation of geometry.
+
+959
+01:12:31,340 --> 01:12:33,720
+That calculates the
+pattern, and then you
+
+960
+01:12:33,720 --> 01:12:37,190
+can lay out the pattern.
+
+961
+01:12:37,190 --> 01:12:42,540
+This is a cloth, and
+we put the thick panels
+
+962
+01:12:42,540 --> 01:12:47,550
+on both sides of the cloth to
+make a rigid foldable structure
+
+963
+01:12:47,550 --> 01:12:49,330
+like this.
+
+964
+01:12:49,330 --> 01:12:51,620
+In the center, there
+is a cloth that
+
+965
+01:12:51,620 --> 01:12:54,855
+represents the ideal origami.
+
+966
+01:12:54,855 --> 01:12:58,190
+
+967
+01:12:58,190 --> 01:12:59,475
+This is what happens.
+
+968
+01:12:59,475 --> 01:13:04,760
+
+969
+01:13:04,760 --> 01:13:10,590
+I would like to give an
+example of rigid origami
+
+970
+01:13:10,590 --> 01:13:13,250
+design for architecture.
+
+971
+01:13:13,250 --> 01:13:21,760
+So this example is that we
+are given existing building
+
+972
+01:13:21,760 --> 01:13:27,380
+openings, and we want to connect
+these openings temporarily.
+
+973
+01:13:27,380 --> 01:13:31,390
+
+974
+01:13:31,390 --> 01:13:37,570
+I want that to be compactly
+folded to fit to this facade,
+
+975
+01:13:37,570 --> 01:13:42,650
+but because this is
+quite large like that,
+
+976
+01:13:42,650 --> 01:13:45,270
+you cannot make from
+a flexible material.
+
+977
+01:13:45,270 --> 01:13:54,120
+That will be a problem if
+you make it as a structure.
+
+978
+01:13:54,120 --> 01:13:56,740
+So in order to solve
+that kind of problem,
+
+979
+01:13:56,740 --> 01:14:03,690
+we can use freeform origami to
+design to fit the condition.
+
+980
+01:14:03,690 --> 01:14:12,150
+So these red lines are the
+openings of two buildings that
+
+981
+01:14:12,150 --> 01:14:22,910
+are actually not parallel,
+and the sizes are different.
+
+982
+01:14:22,910 --> 01:14:27,630
+But still, you can connect
+it on freefrom origami,
+
+983
+01:14:27,630 --> 01:14:32,100
+and also, you can keep the
+boundary to fit on the ground,
+
+984
+01:14:32,100 --> 01:14:36,720
+and then you can get
+these form variations
+
+985
+01:14:36,720 --> 01:14:44,775
+and you can choose one of them
+and calculate the paneling
+
+986
+01:14:44,775 --> 01:14:45,275
+patterns.
+
+987
+01:14:45,275 --> 01:14:48,190
+
+988
+01:14:48,190 --> 01:14:53,950
+This is a rendering
+representation,
+
+989
+01:14:53,950 --> 01:14:56,770
+but basically, you can
+make this kind of structure
+
+990
+01:14:56,770 --> 01:15:02,325
+that can connect to buildings.
+
+991
+01:15:02,325 --> 01:15:06,410
+
+992
+01:15:06,410 --> 01:15:08,262
+Thank you very much.
+
+993
+01:15:08,262 --> 01:15:17,110
+[APPLAUSE]
+
+994
+01:15:17,110 --> 01:15:27,180
+This was more hand craft thing.
+
+995
+01:15:27,180 --> 01:15:33,810
+I did this with
+Dukes there, and we
+
+996
+01:15:33,810 --> 01:15:41,060
+wanted to test
+the metal folding,
+
+997
+01:15:41,060 --> 01:15:45,530
+whether curved folding is
+useful for manufacturing things.
+
+998
+01:15:45,530 --> 01:15:50,550
+I think that's
+true, but this model
+
+999
+01:15:50,550 --> 01:15:57,315
+required a lot of hammering
+and it wasn't so easy.
+
+1000
+01:15:57,315 --> 01:16:00,950
+
+1001
+01:16:00,950 --> 01:16:04,430
+I think you can
+have a way to make
+
+1002
+01:16:04,430 --> 01:16:07,960
+it more easily constructed.
+
+1003
+01:16:07,960 --> 01:16:11,235
+So this is a table
+just by folding
+
+1004
+01:16:11,235 --> 01:16:14,610
+a sheet of metal or chair.
+
+1005
+01:16:14,610 --> 01:16:18,570
+
+1006
+01:16:18,570 --> 01:16:20,000
+This one?
+
+1007
+01:16:20,000 --> 01:16:25,875
+So this one is a
+combination of four papers.
+
+1008
+01:16:25,875 --> 01:16:30,990
+
+1009
+01:16:30,990 --> 01:16:34,940
+In this case, I did
+not restrict to be
+
+1010
+01:16:34,940 --> 01:16:36,860
+foldable from one
+sheet of paper.
+
+1011
+01:16:36,860 --> 01:16:40,690
+
+1012
+01:16:40,690 --> 01:16:45,760
+Well, for design,
+I do not do that.
+
+1013
+01:16:45,760 --> 01:16:48,050
+You can only find
+it by simulating
+
+1014
+01:16:48,050 --> 01:16:54,390
+and see the collision.
+
+1015
+01:16:54,390 --> 01:16:58,660
+Basically, there will
+be no local collision
+
+1016
+01:16:58,660 --> 01:17:02,820
+for this quadrilateral
+mesh, but there
+
+1017
+01:17:02,820 --> 01:17:07,230
+might be some global collisions
+where this and this part
+
+1018
+01:17:07,230 --> 01:17:09,268
+are colliding.
+
+1019
+01:17:09,268 --> 01:17:12,754
+AUDIENCE: For example,
+for Ron Resch pattern.
+
+1020
+01:17:12,754 --> 01:17:16,330
+PROFESSOR: Ron Resch pattern.
+
+1021
+01:17:16,330 --> 01:17:18,840
+I only do a local
+collision test,
+
+1022
+01:17:18,840 --> 01:17:25,040
+which is between facets
+that are adjacent,
+
+1023
+01:17:25,040 --> 01:17:30,520
+which still works for
+that kind of good model.
+
+1024
+01:17:30,520 --> 01:17:42,660
+
+1025
+01:17:42,660 --> 01:17:47,350
+I think I will show
+all of the things here.
+
+1026
+01:17:47,350 --> 01:17:47,880
+Like that.
+
+1027
+01:17:47,880 --> 01:17:55,939
+
+1028
+01:17:55,939 --> 01:17:57,230
+PROFESSOR: Any other questions?
+
+1029
+01:17:57,230 --> 01:18:02,730
+
+1030
+01:18:02,730 --> 01:18:03,230
+All right.
+
+1031
+01:18:03,230 --> 01:18:03,530
+Thanks again.
+
+1032
+01:18:03,530 --> 01:18:04,821
+PROFESSOR: Thank you very much.
+
+1033
+01:18:04,821 --> 01:18:07,780
+[APPLAUSE]
+
+1034
+01:18:07,780 --> 01:18:14,434
+

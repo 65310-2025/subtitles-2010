@@ -1,0 +1,7577 @@
+1
+0-1:59:59,500 --> 00:00:02,654
+
+2
+00:00:02,654 --> 00:00:04,320
+PROFESSOR: Today we're
+going to continue
+
+3
+00:00:04,320 --> 00:00:05,980
+our theme of linkage
+folding, but we're
+
+4
+00:00:05,980 --> 00:00:08,040
+going to generalize
+our notion of linkage.
+
+5
+00:00:08,040 --> 00:00:10,970
+And so we want to go
+beyond folding just
+
+6
+00:00:10,970 --> 00:00:15,132
+one-dimensional structures
+in two dimensions, which
+
+7
+00:00:15,132 --> 00:00:17,340
+is what we've been talking
+about the last two classes
+
+8
+00:00:17,340 --> 00:00:18,090
+for the most part.
+
+9
+00:00:18,090 --> 00:00:19,870
+We did a little bit in 3-D.
+
+10
+00:00:19,870 --> 00:00:23,274
+But Carpenter's Rule theorem is
+about unfolding these things.
+
+11
+00:00:23,274 --> 00:00:24,690
+We talked about
+locked trees, when
+
+12
+00:00:24,690 --> 00:00:27,580
+you add degree
+three vertices here.
+
+13
+00:00:27,580 --> 00:00:30,090
+I want to make things a
+little harder and more
+
+14
+00:00:30,090 --> 00:00:39,240
+interesting by adding fat
+objects to those edges.
+
+15
+00:00:39,240 --> 00:00:42,190
+So these are solid regions.
+
+16
+00:00:42,190 --> 00:00:44,270
+You could think of
+them as polygons,
+
+17
+00:00:44,270 --> 00:00:52,070
+but they could also be smooth--
+whatever, lines, circles,
+
+18
+00:00:52,070 --> 00:00:54,070
+whatever you want.
+
+19
+00:00:54,070 --> 00:00:56,300
+They're still hinged at
+points, and they still
+
+20
+00:00:56,300 --> 00:00:59,110
+fold like this
+underlying linkage.
+
+21
+00:00:59,110 --> 00:01:01,489
+But now the collision
+constraint is even worse.
+
+22
+00:01:01,489 --> 00:01:03,280
+Not only are the bars
+not allowed to touch,
+
+23
+00:01:03,280 --> 00:01:05,310
+but these blobs that
+are attached to the bars
+
+24
+00:01:05,310 --> 00:01:06,940
+are not allowed to
+cross each other.
+
+25
+00:01:06,940 --> 00:01:07,550
+Question?
+
+26
+00:01:07,550 --> 00:01:13,300
+AUDIENCE: Isn't it kind of
+like a rigid sub-linkage?
+
+27
+00:01:13,300 --> 00:01:15,080
+PROFESSOR: Yeah
+it's kind of like,
+
+28
+00:01:15,080 --> 00:01:18,370
+say this was a polygon
+because everything's almost
+
+29
+00:01:18,370 --> 00:01:20,760
+a polygon-- everything's
+linear to the first order.
+
+30
+00:01:20,760 --> 00:01:23,230
+So you could just
+triangulate this guy
+
+31
+00:01:23,230 --> 00:01:26,510
+and say, yeah that's just like
+a more complicated linkage.
+
+32
+00:01:26,510 --> 00:01:28,770
+Now this moves as
+a rigid object,
+
+33
+00:01:28,770 --> 00:01:31,720
+and it can't collide
+with anything else.
+
+34
+00:01:31,720 --> 00:01:34,410
+You can even over-brace it if
+you want-- add lots of bars--
+
+35
+00:01:34,410 --> 00:01:35,861
+but it will move the same.
+
+36
+00:01:35,861 --> 00:01:37,360
+Of course, then you
+have collisions,
+
+37
+00:01:37,360 --> 00:01:38,580
+so that's kind of cheating.
+
+38
+00:01:38,580 --> 00:01:42,205
+But if you triangulate, you
+will get the same behavior
+
+39
+00:01:42,205 --> 00:01:45,030
+as these rigid objects, yeah.
+
+40
+00:01:45,030 --> 00:01:47,040
+Now, we know that
+as soon as you go--
+
+41
+00:01:47,040 --> 00:01:49,430
+as soon as you have a vertex
+of degree more than two,
+
+42
+00:01:49,430 --> 00:01:50,370
+things can lock.
+
+43
+00:01:50,370 --> 00:01:52,350
+So it's no surprise that
+these things can lock.
+
+44
+00:01:52,350 --> 00:01:55,140
+What's surprising is that you
+can prove interesting things
+
+45
+00:01:55,140 --> 00:01:57,200
+about them not locking.
+
+46
+00:01:57,200 --> 00:02:00,710
+Let's start with some simple
+examples of them locking.
+
+47
+00:02:00,710 --> 00:02:03,170
+So these are triangles
+hinged together
+
+48
+00:02:03,170 --> 00:02:05,300
+at points that are locked.
+
+49
+00:02:05,300 --> 00:02:08,330
+And this field
+began back in '98.
+
+50
+00:02:08,330 --> 00:02:10,650
+This is when we were
+working on locked trees.
+
+51
+00:02:10,650 --> 00:02:14,810
+Marty, our cameraman, was
+working on locked triangles,
+
+52
+00:02:14,810 --> 00:02:17,860
+and after a day he came
+up with these examples.
+
+53
+00:02:17,860 --> 00:02:19,860
+They're not too hard to find.
+
+54
+00:02:19,860 --> 00:02:22,780
+This is probably the
+most compelling one.
+
+55
+00:02:22,780 --> 00:02:26,900
+You have on the top
+those obtuse triangles.
+
+56
+00:02:26,900 --> 00:02:29,320
+And because they share
+an edge like that,
+
+57
+00:02:29,320 --> 00:02:31,350
+they can really
+only hinge one way.
+
+58
+00:02:31,350 --> 00:02:34,880
+They can only close this angle.
+
+59
+00:02:34,880 --> 00:02:37,880
+They can't open it, and
+so this guy's stuck.
+
+60
+00:02:37,880 --> 00:02:41,220
+It can't get out.
+
+61
+00:02:41,220 --> 00:02:44,520
+This is a little
+trickier, but what's
+
+62
+00:02:44,520 --> 00:02:46,090
+interesting about
+this example is
+
+63
+00:02:46,090 --> 00:02:47,837
+all the triangles
+are equilateral.
+
+64
+00:02:47,837 --> 00:02:48,670
+It's pretty special.
+
+65
+00:02:48,670 --> 00:02:50,390
+If you were hoping for
+some good results here,
+
+66
+00:02:50,390 --> 00:02:51,931
+you think, well
+equilateral triangle.
+
+67
+00:02:51,931 --> 00:02:54,600
+Those are the simplest,
+nice shapes I know.
+
+68
+00:02:54,600 --> 00:02:55,417
+So maybe they work.
+
+69
+00:02:55,417 --> 00:02:56,250
+But they don't work.
+
+70
+00:02:56,250 --> 00:02:57,900
+They can lock.
+
+71
+00:02:57,900 --> 00:02:59,680
+This may be a
+little less obvious
+
+72
+00:02:59,680 --> 00:03:03,500
+because this guy's
+reaching around on the top,
+
+73
+00:03:03,500 --> 00:03:08,020
+can't unwind if this is
+drawn sufficiently tight.
+
+74
+00:03:08,020 --> 00:03:10,820
+And in fact, it's pretty
+obvious because we
+
+75
+00:03:10,820 --> 00:03:13,190
+could apply rule one right here.
+
+76
+00:03:13,190 --> 00:03:16,080
+It's an edge spanned
+by two acute angles,
+
+77
+00:03:16,080 --> 00:03:17,720
+so that glues in there.
+
+78
+00:03:17,720 --> 00:03:22,580
+Then you have a rigid triangle
+here, so that stays co-linear
+
+79
+00:03:22,580 --> 00:03:24,095
+and then you're screwed.
+
+80
+00:03:24,095 --> 00:03:26,470
+Then the only thing that could
+move is that top triangle,
+
+81
+00:03:26,470 --> 00:03:28,710
+and it can't get out.
+
+82
+00:03:28,710 --> 00:03:33,720
+So the self-touching
+version is rigid,
+
+83
+00:03:33,720 --> 00:03:37,920
+and therefore any perturbation
+is strongly locked.
+
+84
+00:03:37,920 --> 00:03:41,560
+So we can use the same tools we
+did-- because you could ignore
+
+85
+00:03:41,560 --> 00:03:43,170
+the fact that these
+are solid things.
+
+86
+00:03:43,170 --> 00:03:45,180
+So just think of them as
+triangles, as linkages.
+
+87
+00:03:45,180 --> 00:03:47,240
+And we could still use
+rules one, and two,
+
+88
+00:03:47,240 --> 00:03:49,540
+and rigidity, and
+strongly locked, and all
+
+89
+00:03:49,540 --> 00:03:53,750
+those good things, and prove
+that these things are locked.
+
+90
+00:03:53,750 --> 00:03:56,500
+And we'll do that some later.
+
+91
+00:03:56,500 --> 00:04:01,200
+But I claim it's useful to
+think about rigid shapes being
+
+92
+00:04:01,200 --> 00:04:04,260
+attached to bars.
+
+93
+00:04:04,260 --> 00:04:08,940
+Because in particular, we know
+how to unfold things like this.
+
+94
+00:04:08,940 --> 00:04:11,324
+So maybe there are
+certain kinds of shapes
+
+95
+00:04:11,324 --> 00:04:12,240
+that you could attach.
+
+96
+00:04:12,240 --> 00:04:14,990
+Maybe if I just thickened
+it a little bit,
+
+97
+00:04:14,990 --> 00:04:18,589
+maybe that wouldn't
+matter too much.
+
+98
+00:04:18,589 --> 00:04:21,320
+We know that if you add
+equilateral triangles,
+
+99
+00:04:21,320 --> 00:04:22,250
+that can lock.
+
+100
+00:04:22,250 --> 00:04:26,110
+But what if I add some
+very small, thin triangles
+
+101
+00:04:26,110 --> 00:04:28,050
+to these edges?
+
+102
+00:04:28,050 --> 00:04:30,100
+Well then it turns
+out you can't lock
+
+103
+00:04:30,100 --> 00:04:33,200
+for the appropriate
+definition of thin.
+
+104
+00:04:33,200 --> 00:04:41,800
+So this is the idea of
+an adorned chain, where
+
+105
+00:04:41,800 --> 00:04:49,180
+you have rigid shapes
+attached to bars.
+
+106
+00:04:49,180 --> 00:04:52,720
+
+107
+00:04:52,720 --> 00:04:55,080
+So the bars guide the motion.
+
+108
+00:04:55,080 --> 00:04:59,470
+We're going to think
+about the underlying
+
+109
+00:04:59,470 --> 00:05:01,069
+linkage, the
+underlying chain here,
+
+110
+00:05:01,069 --> 00:05:03,360
+and then there are these
+rigid shapes attached to them.
+
+111
+00:05:03,360 --> 00:05:05,760
+They come along for the ride.
+
+112
+00:05:05,760 --> 00:05:11,750
+And in particular-- blah,
+blah, blah, all right
+
+113
+00:05:11,750 --> 00:05:13,990
+we have some terminology.
+
+114
+00:05:13,990 --> 00:05:18,510
+
+115
+00:05:18,510 --> 00:05:26,122
+An adornment in general
+looks something like this.
+
+116
+00:05:26,122 --> 00:05:32,120
+This is rigid region,
+but it has this segment
+
+117
+00:05:32,120 --> 00:05:35,900
+marked on it called the base.
+
+118
+00:05:35,900 --> 00:05:37,680
+The rest is the shape.
+
+119
+00:05:37,680 --> 00:05:41,200
+
+120
+00:05:41,200 --> 00:05:45,600
+So as the bar moves,
+you just rigidly move
+
+121
+00:05:45,600 --> 00:05:48,070
+the shape so that the base
+lines up with the bar.
+
+122
+00:05:48,070 --> 00:05:50,550
+And that's how
+they follow along.
+
+123
+00:05:50,550 --> 00:05:53,440
+
+124
+00:05:53,440 --> 00:05:58,180
+And now we can define
+the notion of thin,
+
+125
+00:05:58,180 --> 00:06:00,238
+except we call it slender.
+
+126
+00:06:00,238 --> 00:06:03,550
+A little nicer.
+
+127
+00:06:03,550 --> 00:06:05,605
+The best thing
+about mathematics is
+
+128
+00:06:05,605 --> 00:06:06,995
+you get to make up terminology.
+
+129
+00:06:06,995 --> 00:06:09,569
+
+130
+00:06:09,569 --> 00:06:11,110
+Not the best thing,
+but a cool thing.
+
+131
+00:06:11,110 --> 00:06:13,840
+
+132
+00:06:13,840 --> 00:06:17,510
+At some point, my dad was
+having dinner with a group
+
+133
+00:06:17,510 --> 00:06:18,760
+and saying, yeah that's great.
+
+134
+00:06:18,760 --> 00:06:20,134
+We've made up all
+these fun words
+
+135
+00:06:20,134 --> 00:06:21,940
+like slender on
+un-unfoldable which
+
+136
+00:06:21,940 --> 00:06:23,190
+is something we'll talk about.
+
+137
+00:06:23,190 --> 00:06:25,967
+And it's like what words
+have you guys made up?
+
+138
+00:06:25,967 --> 00:06:28,050
+And one guy raised his
+hand an said, oh, Ethernet.
+
+139
+00:06:28,050 --> 00:06:32,130
+
+140
+00:06:32,130 --> 00:06:34,180
+We're not that cool.
+
+141
+00:06:34,180 --> 00:06:36,950
+All right, so what does
+slender adornment mean?
+
+142
+00:06:36,950 --> 00:06:45,960
+
+143
+00:06:45,960 --> 00:06:49,930
+It's going to be shapes
+more like these thin things.
+
+144
+00:06:49,930 --> 00:06:53,000
+Maybe even these, I think,
+but not so much this.
+
+145
+00:06:53,000 --> 00:06:56,241
+That doesn't look
+so slender to me.
+
+146
+00:06:56,241 --> 00:06:57,740
+What we're going
+to do is walk along
+
+147
+00:06:57,740 --> 00:07:05,710
+the boundary from one base
+endpoint to the other.
+
+148
+00:07:05,710 --> 00:07:08,320
+
+149
+00:07:08,320 --> 00:07:12,300
+So let me draw an example here.
+
+150
+00:07:12,300 --> 00:07:13,425
+I think that'll be slender.
+
+151
+00:07:13,425 --> 00:07:17,370
+
+152
+00:07:17,370 --> 00:07:21,630
+So we start here, we walk
+along in this direction.
+
+153
+00:07:21,630 --> 00:07:25,430
+And what we want is that this
+motion, as you walk along
+
+154
+00:07:25,430 --> 00:07:39,840
+there you monatonically increase
+your distance to the endpoint
+
+155
+00:07:39,840 --> 00:07:44,950
+you started at, the
+former endpoint.
+
+156
+00:07:44,950 --> 00:07:50,397
+And also, sort of equivalently,
+you decrease the distance
+
+157
+00:07:50,397 --> 00:07:52,480
+to the other endpoint, the
+one you're approaching.
+
+158
+00:07:52,480 --> 00:07:55,060
+
+159
+00:07:55,060 --> 00:07:58,860
+And this should be true no
+matter how you get there.
+
+160
+00:07:58,860 --> 00:08:03,420
+So I'm walking in this
+along this outer boundary,
+
+161
+00:08:03,420 --> 00:08:04,180
+and I'm looking.
+
+162
+00:08:04,180 --> 00:08:08,390
+What is the distance
+to this end point?
+
+163
+00:08:08,390 --> 00:08:11,630
+I can just draw a whole
+bunch of concentric circles
+
+164
+00:08:11,630 --> 00:08:13,030
+around that point.
+
+165
+00:08:13,030 --> 00:08:16,570
+As long as these circles only
+hit my curve once, I'm happy.
+
+166
+00:08:16,570 --> 00:08:20,480
+That means this distance is
+increasing monotonically.
+
+167
+00:08:20,480 --> 00:08:23,080
+But you should also draw
+them from the other side.
+
+168
+00:08:23,080 --> 00:08:27,040
+
+169
+00:08:27,040 --> 00:08:31,450
+It's like offset curves, good
+old straight skeleton stuff.
+
+170
+00:08:31,450 --> 00:08:33,350
+And lo and behold,
+you monatonically
+
+171
+00:08:33,350 --> 00:08:36,789
+move outward from here if you
+went this direction, outward
+
+172
+00:08:36,789 --> 00:08:38,340
+from here if you
+went that direction.
+
+173
+00:08:38,340 --> 00:08:41,874
+And this should be true for
+both sides of the curve.
+
+174
+00:08:41,874 --> 00:08:43,175
+This one looks like, yeah.
+
+175
+00:08:43,175 --> 00:08:44,870
+It monotonically
+increases distance
+
+176
+00:08:44,870 --> 00:08:48,950
+from here, decreases from there
+as you move right to left.
+
+177
+00:08:48,950 --> 00:08:50,490
+That's slender.
+
+178
+00:08:50,490 --> 00:08:53,210
+Pretty simple definition.
+
+179
+00:08:53,210 --> 00:08:58,140
+The biggest slender shape you
+could hope for-- the biggest
+
+180
+00:08:58,140 --> 00:09:05,240
+one that you can do-- is if you
+draw one giant circle centered
+
+181
+00:09:05,240 --> 00:09:09,150
+at each of the
+points, and passing
+
+182
+00:09:09,150 --> 00:09:10,470
+through the other endpoint.
+
+183
+00:09:10,470 --> 00:09:16,900
+
+184
+00:09:16,900 --> 00:09:17,730
+That's slender.
+
+185
+00:09:17,730 --> 00:09:20,140
+I know it looks pretty fat.
+
+186
+00:09:20,140 --> 00:09:22,520
+This is like a
+Reuleaux triangle,
+
+187
+00:09:22,520 --> 00:09:23,744
+but that's still slender.
+
+188
+00:09:23,744 --> 00:09:25,660
+And if you go outside
+that, you're in trouble.
+
+189
+00:09:25,660 --> 00:09:27,235
+Then you won't be monatonic.
+
+190
+00:09:27,235 --> 00:09:31,380
+If I went here and came back,
+I'm getting farther away,
+
+191
+00:09:31,380 --> 00:09:33,380
+but then I'm getting
+closer again to this point.
+
+192
+00:09:33,380 --> 00:09:34,465
+So that's not allowed.
+
+193
+00:09:34,465 --> 00:09:37,650
+
+194
+00:09:37,650 --> 00:09:40,310
+Cool, so that's
+slender adornments.
+
+195
+00:09:40,310 --> 00:09:42,710
+There's actually a couple of
+different ways to define it.
+
+196
+00:09:42,710 --> 00:09:44,159
+And-- yeah, question?
+
+197
+00:09:44,159 --> 00:09:46,033
+AUDIENCE: Can you fit
+an equilateral triangle
+
+198
+00:09:46,033 --> 00:09:47,960
+within that?
+
+199
+00:09:47,960 --> 00:09:49,150
+PROFESSOR: Yes.
+
+200
+00:09:49,150 --> 00:09:52,210
+So I don't mean to say that
+if you take any-- you can fit
+
+201
+00:09:52,210 --> 00:09:54,340
+an equilateral triangle
+in there, I think.
+
+202
+00:09:54,340 --> 00:09:56,415
+Well, like this.
+
+203
+00:09:56,415 --> 00:09:58,360
+An equilateral triangle
+is not slender.
+
+204
+00:09:58,360 --> 00:10:00,190
+We can check that.
+
+205
+00:10:00,190 --> 00:10:01,330
+I know it's weird.
+
+206
+00:10:01,330 --> 00:10:02,630
+It's not a monoton definition.
+
+207
+00:10:02,630 --> 00:10:05,770
+If you take a subset
+of your slender shape,
+
+208
+00:10:05,770 --> 00:10:08,120
+the result will not
+necessarily be slender.
+
+209
+00:10:08,120 --> 00:10:15,780
+So if we do equilateral,
+if you draw a circle--
+
+210
+00:10:15,780 --> 00:10:19,860
+there's a circle here that's
+going to kiss this edge.
+
+211
+00:10:19,860 --> 00:10:24,610
+It's centered here and it kisses
+this edge of the triangle.
+
+212
+00:10:24,610 --> 00:10:27,340
+So that means you're going
+out and then coming back,
+
+213
+00:10:27,340 --> 00:10:28,766
+getting closer again.
+
+214
+00:10:28,766 --> 00:10:30,390
+So equilateral triangle
+is not slender.
+
+215
+00:10:30,390 --> 00:10:33,150
+That's good, because we know
+equilateral triangles can lock.
+
+216
+00:10:33,150 --> 00:10:35,710
+So it better not be slender,
+because I'm going to say that
+
+217
+00:10:35,710 --> 00:10:38,216
+slender chains cannot lock.
+
+218
+00:10:38,216 --> 00:10:40,430
+That's what we're
+going to prove.
+
+219
+00:10:40,430 --> 00:10:40,930
+I
+
+220
+00:10:40,930 --> 00:10:42,388
+Let me give you
+another definition.
+
+221
+00:10:42,388 --> 00:10:44,540
+It's a little bit
+easier to work with
+
+222
+00:10:44,540 --> 00:10:46,380
+and also gives some
+intuition about why
+
+223
+00:10:46,380 --> 00:10:47,940
+slender things are good.
+
+224
+00:10:47,940 --> 00:10:51,031
+
+225
+00:10:51,031 --> 00:10:53,155
+Well, it will give some
+intuition, not immediately.
+
+226
+00:10:53,155 --> 00:10:56,110
+
+227
+00:10:56,110 --> 00:11:01,470
+If you look at inward
+normals from the shape,
+
+228
+00:11:01,470 --> 00:11:02,500
+then they hit the base.
+
+229
+00:11:02,500 --> 00:11:13,520
+
+230
+00:11:13,520 --> 00:11:15,850
+This is assuming that my
+shape is somewhat smooth,
+
+231
+00:11:15,850 --> 00:11:17,790
+but it's not a big deal.
+
+232
+00:11:17,790 --> 00:11:22,520
+So let me take a
+nice shape again.
+
+233
+00:11:22,520 --> 00:11:25,690
+If I look, here's a tangent,
+here's an inward normal.
+
+234
+00:11:25,690 --> 00:11:28,960
+I extend it, it hits the base.
+
+235
+00:11:28,960 --> 00:11:32,930
+All of these inward
+normals hit the base.
+
+236
+00:11:32,930 --> 00:11:35,180
+That's good.
+
+237
+00:11:35,180 --> 00:11:37,776
+In this case, I could
+take an inward normal from
+
+238
+00:11:37,776 --> 00:11:40,234
+here-- say, if you don't want
+to do the corner because it's
+
+239
+00:11:40,234 --> 00:11:41,510
+a little confusing.
+
+240
+00:11:41,510 --> 00:11:45,440
+And you will go-- here
+you don't hit the base.
+
+241
+00:11:45,440 --> 00:11:48,330
+You hit this line of course.
+
+242
+00:11:48,330 --> 00:11:51,000
+Unless you happen to be
+parallel, you'll hit the line.
+
+243
+00:11:51,000 --> 00:11:53,720
+But I want it to actually
+hit the line segment that
+
+244
+00:11:53,720 --> 00:11:56,150
+is the base of the shape.
+
+245
+00:11:56,150 --> 00:12:03,490
+And maybe go back up here,
+the Reuleaux triangle,
+
+246
+00:12:03,490 --> 00:12:05,345
+you take one of the
+inward normals here,
+
+247
+00:12:05,345 --> 00:12:08,252
+it will actually just
+barely hit the base.
+
+248
+00:12:08,252 --> 00:12:09,210
+It hits it at a vertex.
+
+249
+00:12:09,210 --> 00:12:11,509
+That's, OK because
+this is slender.
+
+250
+00:12:11,509 --> 00:12:13,550
+That's why if you went a
+little bit outside, then
+
+251
+00:12:13,550 --> 00:12:16,812
+you'd have an inward normal
+that doesn't hit the base.
+
+252
+00:12:16,812 --> 00:12:18,270
+So it's pretty
+easy, given a shape,
+
+253
+00:12:18,270 --> 00:12:20,550
+to tell whether it is slender.
+
+254
+00:12:20,550 --> 00:12:25,070
+Just draw a bunch of inward
+normals and it either works
+
+255
+00:12:25,070 --> 00:12:27,084
+or it doesn't.
+
+256
+00:12:27,084 --> 00:12:28,000
+AUDIENCE: [INAUDIBLE].
+
+257
+00:12:28,000 --> 00:12:33,810
+
+258
+00:12:33,810 --> 00:12:36,140
+PROFESSOR: If you make some
+complex thing like that,
+
+259
+00:12:36,140 --> 00:12:37,910
+that's not going to be slender.
+
+260
+00:12:37,910 --> 00:12:39,910
+Now, you could take
+something called the slender
+
+261
+00:12:39,910 --> 00:12:43,430
+hull-- I'll define
+that in a moment.
+
+262
+00:12:43,430 --> 00:12:46,150
+Here's another definition.
+
+263
+00:12:46,150 --> 00:12:50,630
+It's a union of half-lenses.
+
+264
+00:12:50,630 --> 00:12:54,750
+
+265
+00:12:54,750 --> 00:12:57,370
+Half-lenses I want to define
+sort of like this Reuleaux
+
+266
+00:12:57,370 --> 00:12:58,580
+triangle example.
+
+267
+00:12:58,580 --> 00:13:02,430
+
+268
+00:13:02,430 --> 00:13:05,760
+But I don't necessarily take
+these vertices as the center.
+
+269
+00:13:05,760 --> 00:13:09,302
+I take some vertex
+here as the center.
+
+270
+00:13:09,302 --> 00:13:11,740
+Let's say I take
+two of them and I
+
+271
+00:13:11,740 --> 00:13:14,200
+draw a circle centered
+here passing through here--
+
+272
+00:13:14,200 --> 00:13:16,390
+so that's like this--
+a circle centered here
+
+273
+00:13:16,390 --> 00:13:18,540
+passing through here--
+that's like this.
+
+274
+00:13:18,540 --> 00:13:20,820
+I'm getting better
+at drawing circles.
+
+275
+00:13:20,820 --> 00:13:24,340
+That's my half-lens.
+
+276
+00:13:24,340 --> 00:13:27,270
+If I drew the whole thing,
+that would be a lens.
+
+277
+00:13:27,270 --> 00:13:28,280
+So you get a choice.
+
+278
+00:13:28,280 --> 00:13:30,900
+Now I could maybe choose
+this point and this point
+
+279
+00:13:30,900 --> 00:13:34,710
+and draw a circle here and here.
+
+280
+00:13:34,710 --> 00:13:36,250
+And then there's
+another half-lens.
+
+281
+00:13:36,250 --> 00:13:39,410
+If you take a whole bunch of
+those, union them together,
+
+282
+00:13:39,410 --> 00:13:40,860
+that will always be slender.
+
+283
+00:13:40,860 --> 00:13:43,070
+That's kind of
+obvious, because you
+
+284
+00:13:43,070 --> 00:13:44,720
+look at any of these
+inward normals,
+
+285
+00:13:44,720 --> 00:13:46,095
+they're going to
+hit one of these
+
+286
+00:13:46,095 --> 00:13:47,527
+x's that you drew on the line.
+
+287
+00:13:47,527 --> 00:13:49,860
+What's a little less obvious
+is that every slender shape
+
+288
+00:13:49,860 --> 00:13:52,560
+can be made by a
+bunch of these things.
+
+289
+00:13:52,560 --> 00:13:55,880
+Now admittedly, possibly
+infinitely many of them.
+
+290
+00:13:55,880 --> 00:14:00,530
+If my shape-- one of my
+favorite slender shapes
+
+291
+00:14:00,530 --> 00:14:01,390
+is a right triangle.
+
+292
+00:14:01,390 --> 00:14:03,990
+
+293
+00:14:03,990 --> 00:14:08,260
+And you can check all the
+inward normals hit the base.
+
+294
+00:14:08,260 --> 00:14:12,370
+Here they just
+barely hit the base.
+
+295
+00:14:12,370 --> 00:14:15,020
+Obviously you need an infinite--
+all of these half-lenses
+
+296
+00:14:15,020 --> 00:14:16,310
+are curved.
+
+297
+00:14:16,310 --> 00:14:19,800
+But if you take an appropriate
+infinite number of them, namely
+
+298
+00:14:19,800 --> 00:14:24,740
+all the points here, there
+is a lens that covers it.
+
+299
+00:14:24,740 --> 00:14:27,940
+You just take all of those--
+I'm not drawing them perfectly,
+
+300
+00:14:27,940 --> 00:14:29,872
+but they'll look
+something like that.
+
+301
+00:14:29,872 --> 00:14:31,330
+You take the union
+of all of those,
+
+302
+00:14:31,330 --> 00:14:32,790
+that'll give you the triangle.
+
+303
+00:14:32,790 --> 00:14:36,660
+So in fact, any shape
+you want to make slender
+
+304
+00:14:36,660 --> 00:14:38,480
+you take the lens
+that hits every point.
+
+305
+00:14:38,480 --> 00:14:40,105
+So this is the slender hull.
+
+306
+00:14:40,105 --> 00:14:43,870
+
+307
+00:14:43,870 --> 00:14:45,620
+If you have some shape
+that's not slender,
+
+308
+00:14:45,620 --> 00:14:49,250
+this is really ugly, they're
+inward normals that go up.
+
+309
+00:14:49,250 --> 00:14:51,740
+But I can fill it
+in, I don't know
+
+310
+00:14:51,740 --> 00:14:54,150
+exactly what this
+will look like.
+
+311
+00:14:54,150 --> 00:14:56,300
+But for example, this
+point is kind of bad.
+
+312
+00:14:56,300 --> 00:14:57,930
+It's got an inward
+normal going up.
+
+313
+00:14:57,930 --> 00:15:00,395
+So I'll take the slender hull.
+
+314
+00:15:00,395 --> 00:15:06,430
+I'll take some-- did I lie?
+
+315
+00:15:06,430 --> 00:15:09,840
+
+316
+00:15:09,840 --> 00:15:11,830
+I think it's even simpler.
+
+317
+00:15:11,830 --> 00:15:13,610
+Let me check.
+
+318
+00:15:13,610 --> 00:15:15,430
+Yeah, I was more
+complicated than I
+
+319
+00:15:15,430 --> 00:15:17,450
+have to be for half-lenses.
+
+320
+00:15:17,450 --> 00:15:19,720
+This does work, it'll
+still be slander.
+
+321
+00:15:19,720 --> 00:15:22,410
+But you can be-- in
+fact, because you
+
+322
+00:15:22,410 --> 00:15:24,750
+need to be monotonic the
+whole way around, you
+
+323
+00:15:24,750 --> 00:15:27,790
+might as well always use
+these two points as centers.
+
+324
+00:15:27,790 --> 00:15:29,820
+It's been a while since
+I've seen this stuff.
+
+325
+00:15:29,820 --> 00:15:32,650
+So if I had some
+point like this,
+
+326
+00:15:32,650 --> 00:15:35,230
+it'd be a little bit nicer if
+I took circle centered here,
+
+327
+00:15:35,230 --> 00:15:38,690
+and a circle centered way over
+there so it's almost vertical.
+
+328
+00:15:38,690 --> 00:15:40,060
+That's also half-lens.
+
+329
+00:15:40,060 --> 00:15:40,980
+That will be smaller.
+
+330
+00:15:40,980 --> 00:15:43,646
+I can, of course,
+add more stuff later,
+
+331
+00:15:43,646 --> 00:15:45,270
+but that's the minimum
+you can get away
+
+332
+00:15:45,270 --> 00:15:46,830
+with is that half-lens.
+
+333
+00:15:46,830 --> 00:15:48,630
+If I want to add
+this point, it's
+
+334
+00:15:48,630 --> 00:15:50,500
+going to be something like that.
+
+335
+00:15:50,500 --> 00:15:55,576
+Circle centered here and
+here, and that's my half-lens.
+
+336
+00:15:55,576 --> 00:15:56,950
+So that actually
+uniquely defines
+
+337
+00:15:56,950 --> 00:15:59,491
+what you want to do here, which
+is you take a circle centered
+
+338
+00:15:59,491 --> 00:16:02,740
+at this point, you take a
+circle centered at this point,
+
+339
+00:16:02,740 --> 00:16:05,330
+and you add that to your shape.
+
+340
+00:16:05,330 --> 00:16:07,620
+And so in general,
+in this example
+
+341
+00:16:07,620 --> 00:16:10,550
+it's going to fill in
+something like that.
+
+342
+00:16:10,550 --> 00:16:12,520
+This might be OK.
+
+343
+00:16:12,520 --> 00:16:15,000
+It might fill in
+a little bit here.
+
+344
+00:16:15,000 --> 00:16:17,910
+It's going to fill in something.
+
+345
+00:16:17,910 --> 00:16:20,735
+So then this shape
+will be slender.
+
+346
+00:16:20,735 --> 00:16:23,360
+So if you have some shape
+that's not quite slender,
+
+347
+00:16:23,360 --> 00:16:26,470
+and it's messy and ugly, you
+could fill it in like this.
+
+348
+00:16:26,470 --> 00:16:28,450
+And as long as that
+fill-in doesn't intersect
+
+349
+00:16:28,450 --> 00:16:30,670
+with any other shapes,
+you're still OK.
+
+350
+00:16:30,670 --> 00:16:33,610
+So if you have some crazy
+collection of shapes,
+
+351
+00:16:33,610 --> 00:16:35,304
+you fill them in with
+the slender hull,
+
+352
+00:16:35,304 --> 00:16:36,970
+and they're still not
+self-intersecting,
+
+353
+00:16:36,970 --> 00:16:38,803
+then you know that thing
+will not be locked.
+
+354
+00:16:38,803 --> 00:16:40,902
+Of course, if the fill-in
+doesn't intersect,
+
+355
+00:16:40,902 --> 00:16:42,610
+and you can move it
+without intersection,
+
+356
+00:16:42,610 --> 00:16:44,470
+then the original
+thing won't intersect.
+
+357
+00:16:44,470 --> 00:16:45,240
+So that's good.
+
+358
+00:16:45,240 --> 00:16:48,404
+Now of course, if you have
+crazy interlocked shapes,
+
+359
+00:16:48,404 --> 00:16:49,820
+well those are
+going to be locked.
+
+360
+00:16:49,820 --> 00:16:53,170
+So you're in trouble.
+
+361
+00:16:53,170 --> 00:16:54,574
+Something like this.
+
+362
+00:16:54,574 --> 00:16:56,740
+And then when you take the
+slender hull, you'll see,
+
+363
+00:16:56,740 --> 00:17:01,132
+oh they're overlapped so I don't
+know what's going to happen.
+
+364
+00:17:01,132 --> 00:17:03,340
+Of course, we're not going
+to be able to characterize
+
+365
+00:17:03,340 --> 00:17:07,934
+every collection of shapes
+that lock, slender gives you
+
+366
+00:17:07,934 --> 00:17:11,260
+a pretty good idea
+of when they do,
+
+367
+00:17:11,260 --> 00:17:15,310
+when you're guaranteed safe.
+
+368
+00:17:15,310 --> 00:17:17,300
+Oh, I think I even
+have to a figure
+
+369
+00:17:17,300 --> 00:17:19,440
+of a whole bunch
+of slender things.
+
+370
+00:17:19,440 --> 00:17:26,274
+On the top we have mostly
+half-lenses-- actually
+
+371
+00:17:26,274 --> 00:17:27,190
+they're all symmetric.
+
+372
+00:17:27,190 --> 00:17:29,090
+In this case, I took
+lenses, not half-lenses,
+
+373
+00:17:29,090 --> 00:17:32,250
+but you could just take the
+upper half or the bottom half.
+
+374
+00:17:32,250 --> 00:17:36,200
+You can take regular Kgons,
+circles, half circles,
+
+375
+00:17:36,200 --> 00:17:40,110
+Reuleaux triangles, various
+combinations thereof.
+
+376
+00:17:40,110 --> 00:17:41,970
+Lots of shapes are slender.
+
+377
+00:17:41,970 --> 00:17:43,810
+You can take this
+on one side and this
+
+378
+00:17:43,810 --> 00:17:46,400
+on the other side of the
+edge, whatever you want.
+
+379
+00:17:46,400 --> 00:17:48,270
+Or just put an
+adornment on one side.
+
+380
+00:17:48,270 --> 00:17:51,010
+
+381
+00:17:51,010 --> 00:17:52,025
+Many things are slender.
+
+382
+00:17:52,025 --> 00:17:58,450
+
+383
+00:17:58,450 --> 00:18:04,720
+So we want to prove, if
+you have a slender chain,
+
+384
+00:18:04,720 --> 00:18:05,520
+you are not locked.
+
+385
+00:18:05,520 --> 00:18:09,880
+
+386
+00:18:09,880 --> 00:18:14,044
+That's the theorem
+from 2006 originally.
+
+387
+00:18:14,044 --> 00:18:15,460
+The journal version
+just appeared.
+
+388
+00:18:15,460 --> 00:18:19,240
+
+389
+00:18:19,240 --> 00:18:21,750
+And the way we're going to prove
+that-- as you might guess--
+
+390
+00:18:21,750 --> 00:18:23,333
+is using the Carpenter's
+Rule theorem.
+
+391
+00:18:23,333 --> 00:18:26,610
+We have this underlying chain,
+we know how to unfold that.
+
+392
+00:18:26,610 --> 00:18:29,440
+Maybe if we're lucky,
+slender adornments
+
+393
+00:18:29,440 --> 00:18:32,210
+won't mess up the
+Carpenter's Rule of motion.
+
+394
+00:18:32,210 --> 00:18:39,390
+And in general, if you take an
+arbitrary unfolding of a chain,
+
+395
+00:18:39,390 --> 00:18:41,350
+you have no idea
+what's going to happen.
+
+396
+00:18:41,350 --> 00:18:45,190
+Maybe the shapes will
+intersect each other.
+
+397
+00:18:45,190 --> 00:18:46,440
+Your motion could be annoying.
+
+398
+00:18:46,440 --> 00:18:47,930
+But the Carpenter's
+Rule theorem tells
+
+399
+00:18:47,930 --> 00:18:49,221
+us, not only is there a motion.
+
+400
+00:18:49,221 --> 00:18:51,640
+There's a nice motion
+that's expansive.
+
+401
+00:18:51,640 --> 00:19:03,255
+And it turns out, as long as
+you have an expensive motion
+
+402
+00:19:03,255 --> 00:19:22,650
+of what I call the underlying
+chain, then that motion will
+
+403
+00:19:22,650 --> 00:19:25,330
+not cause any of the
+pieces to intersect.
+
+404
+00:19:25,330 --> 00:19:27,310
+Assuming they don't
+initially, then
+
+405
+00:19:27,310 --> 00:19:30,430
+that nonintersection will
+be preserved, provided
+
+406
+00:19:30,430 --> 00:19:31,840
+your adornments are slender.
+
+407
+00:19:31,840 --> 00:19:39,920
+
+408
+00:19:39,920 --> 00:19:43,120
+So that means, if we have
+some slender chain, slenderly
+
+409
+00:19:43,120 --> 00:19:49,220
+adorned chain, say open chain,
+then via an expensive motion
+
+410
+00:19:49,220 --> 00:19:51,870
+which we know exists
+you'll be able to unfold
+
+411
+00:19:51,870 --> 00:19:53,460
+the chain straight.
+
+412
+00:19:53,460 --> 00:19:55,210
+And then if you want
+to go somewhere else,
+
+413
+00:19:55,210 --> 00:19:58,010
+you can unfold that somewhere
+else straight, and then glue
+
+414
+00:19:58,010 --> 00:20:03,180
+those motions together, and you
+get your motion from a to b.
+
+415
+00:20:03,180 --> 00:20:06,100
+
+416
+00:20:06,100 --> 00:20:08,570
+Let me start with
+an intuitive proof.
+
+417
+00:20:08,570 --> 00:20:15,110
+
+418
+00:20:15,110 --> 00:20:34,220
+Suppose you have two slender
+shapes that are touching.
+
+419
+00:20:34,220 --> 00:20:36,280
+Suppose you're moving around.
+
+420
+00:20:36,280 --> 00:20:39,090
+If they're going to cross,
+first they have to touch.
+
+421
+00:20:39,090 --> 00:20:41,590
+So consider the moment
+at which they touch.
+
+422
+00:20:41,590 --> 00:20:44,040
+I claim they can't
+cross from there.
+
+423
+00:20:44,040 --> 00:20:45,790
+And the intuition
+is the following,
+
+424
+00:20:45,790 --> 00:20:51,310
+take an inward normal from--
+when they touch like this,
+
+425
+00:20:51,310 --> 00:20:53,810
+they have a common tangent.
+
+426
+00:20:53,810 --> 00:20:56,310
+And so if you take the
+inward normal on both sides,
+
+427
+00:20:56,310 --> 00:20:59,640
+those inward normals
+are co-linear.
+
+428
+00:20:59,640 --> 00:21:02,037
+And you know from the
+second definition--
+
+429
+00:21:02,037 --> 00:21:03,620
+I didn't prove they're
+all equivalent,
+
+430
+00:21:03,620 --> 00:21:08,690
+but they are-- that we will
+get some points on the bars,
+
+431
+00:21:08,690 --> 00:21:09,815
+on the edges, on the bases.
+
+432
+00:21:09,815 --> 00:21:12,760
+
+433
+00:21:12,760 --> 00:21:13,600
+So what?
+
+434
+00:21:13,600 --> 00:21:20,200
+Well, if I take
+two bars-- and I'm
+
+435
+00:21:20,200 --> 00:21:22,930
+computing expansive motions,
+meaning I know this distance
+
+436
+00:21:22,930 --> 00:21:25,840
+increases, this
+instance increases,
+
+437
+00:21:25,840 --> 00:21:29,050
+this distance increases,
+and this distance increases.
+
+438
+00:21:29,050 --> 00:21:30,740
+Those are the struts
+that we added.
+
+439
+00:21:30,740 --> 00:21:33,010
+It turns out-- I've
+actually used this
+
+440
+00:21:33,010 --> 00:21:35,120
+once before, I
+think-- that in effect
+
+441
+00:21:35,120 --> 00:21:37,710
+if you take any two
+points on the bars,
+
+442
+00:21:37,710 --> 00:21:39,270
+that distance also
+has to increase.
+
+443
+00:21:39,270 --> 00:21:41,810
+
+444
+00:21:41,810 --> 00:21:44,930
+It's pretty obvious, because
+these are straight things.
+
+445
+00:21:44,930 --> 00:21:47,410
+If any point here was going
+to approach any point here,
+
+446
+00:21:47,410 --> 00:21:50,790
+you would need to either
+move this point closer
+
+447
+00:21:50,790 --> 00:21:54,801
+to the this edge or this
+point closer to this edge.
+
+448
+00:21:54,801 --> 00:21:56,550
+And if you move a point
+closer to an edge,
+
+449
+00:21:56,550 --> 00:21:59,480
+one of these two edges will get
+shorter and that's now allowed.
+
+450
+00:21:59,480 --> 00:22:03,110
+So if all four of
+those cross distances
+
+451
+00:22:03,110 --> 00:22:05,080
+increase, then in
+fact the distance
+
+452
+00:22:05,080 --> 00:22:07,540
+between any two
+points on the segment
+
+453
+00:22:07,540 --> 00:22:08,910
+increase or stay the same.
+
+454
+00:22:08,910 --> 00:22:12,430
+Remember, in general
+we're expansive.
+
+455
+00:22:12,430 --> 00:22:15,270
+There's some pairs that you
+cannot strictly increase
+
+456
+00:22:15,270 --> 00:22:18,850
+the distances of, although
+most of them we can.
+
+457
+00:22:18,850 --> 00:22:21,080
+And so that's good news.
+
+458
+00:22:21,080 --> 00:22:23,440
+If this distance increases,
+it's pretty hard for them
+
+459
+00:22:23,440 --> 00:22:24,660
+to start intersecting there.
+
+460
+00:22:24,660 --> 00:22:27,650
+
+461
+00:22:27,650 --> 00:22:30,120
+This is an intuition,
+not quite a proof.
+
+462
+00:22:30,120 --> 00:22:32,560
+You can make this into a
+formal proof, it's just messy.
+
+463
+00:22:32,560 --> 00:22:34,510
+The trouble is, for
+example, if the distance
+
+464
+00:22:34,510 --> 00:22:38,230
+stays the same you can kind
+of spin around that point.
+
+465
+00:22:38,230 --> 00:22:40,790
+You can move first
+order left or right.
+
+466
+00:22:40,790 --> 00:22:43,560
+Maybe it's not actually
+this point from this guy
+
+467
+00:22:43,560 --> 00:22:46,900
+and this point from this guy who
+are going to start penetrating,
+
+468
+00:22:46,900 --> 00:22:49,160
+because as you move maybe
+it's some point nearby
+
+469
+00:22:49,160 --> 00:22:50,270
+that falls inside.
+
+470
+00:22:50,270 --> 00:22:53,370
+It's a little tricky to see
+who exactly can intersect what.
+
+471
+00:22:53,370 --> 00:22:54,180
+It looks good.
+
+472
+00:22:54,180 --> 00:22:56,150
+And in particular, if
+this distance is strictly
+
+473
+00:22:56,150 --> 00:22:58,830
+increasing, then it pretty
+much has to move away.
+
+474
+00:22:58,830 --> 00:23:00,830
+But there's a lot
+of subtle details,
+
+475
+00:23:00,830 --> 00:23:02,410
+and it's kind of a mess.
+
+476
+00:23:02,410 --> 00:23:03,809
+We did it once.
+
+477
+00:23:03,809 --> 00:23:05,350
+But in fact, we
+found a simpler proof
+
+478
+00:23:05,350 --> 00:23:06,808
+that does not have
+to rely on this.
+
+479
+00:23:06,808 --> 00:23:10,230
+But I still like this from
+an intuitive standpoint.
+
+480
+00:23:10,230 --> 00:23:15,760
+It's kind of clear why that
+inward normal property is good.
+
+481
+00:23:15,760 --> 00:23:17,770
+If the inward normals
+hit outside the bar, then
+
+482
+00:23:17,770 --> 00:23:20,260
+you have no idea whether
+that distance expands.
+
+483
+00:23:20,260 --> 00:23:22,400
+As long as it hits
+inside, you're golden.
+
+484
+00:23:22,400 --> 00:23:38,660
+
+485
+00:23:38,660 --> 00:23:42,040
+Let's start with a special case
+that's really easy to prove.
+
+486
+00:23:42,040 --> 00:23:48,040
+It's easy to prove by
+appealing to fancy mathematics.
+
+487
+00:23:48,040 --> 00:23:51,610
+They're actually pretty
+old mathematics from 1934.
+
+488
+00:23:51,610 --> 00:23:56,960
+There wasn't a lot of math then,
+and yet some great results.
+
+489
+00:23:56,960 --> 00:24:01,250
+So let's start with a symmetric
+case, where you have your base,
+
+490
+00:24:01,250 --> 00:24:03,630
+you have some slender
+adornment, and you
+
+491
+00:24:03,630 --> 00:24:07,300
+have exactly the reflection
+of the slender adornment
+
+492
+00:24:07,300 --> 00:24:08,420
+drawn below it.
+
+493
+00:24:08,420 --> 00:24:12,070
+So it's reflectionally
+symmetric about that line.
+
+494
+00:24:12,070 --> 00:24:13,970
+That's nice, because
+instead of having
+
+495
+00:24:13,970 --> 00:24:19,296
+to worry about half-lenses I
+can worry about entire lenses.
+
+496
+00:24:19,296 --> 00:24:20,910
+Like a special
+case, every time I
+
+497
+00:24:20,910 --> 00:24:26,900
+have some lens like this one--
+it should look like that,
+
+498
+00:24:26,900 --> 00:24:29,450
+a circle centered here,
+circle centered here,
+
+499
+00:24:29,450 --> 00:24:32,020
+that would be the half-lens--
+I have in fact the entire lens.
+
+500
+00:24:32,020 --> 00:24:36,530
+
+501
+00:24:36,530 --> 00:24:43,009
+So really if this shape is going
+to intersect some other shape,
+
+502
+00:24:43,009 --> 00:24:45,050
+then there's got to be
+some lens over here that's
+
+503
+00:24:45,050 --> 00:24:46,508
+going to intersect
+some other lens.
+
+504
+00:24:46,508 --> 00:24:49,490
+So really I can just
+think of a single lens,
+
+505
+00:24:49,490 --> 00:24:54,820
+pretty much, worry about
+one lens hitting another.
+
+506
+00:24:54,820 --> 00:25:02,090
+In the symmetric case, it turns
+out-- what do I want to say?
+
+507
+00:25:02,090 --> 00:25:04,710
+
+508
+00:25:04,710 --> 00:25:06,460
+This preserves not in
+[INAUDIBLE] section.
+
+509
+00:25:06,460 --> 00:25:17,840
+
+510
+00:25:17,840 --> 00:25:20,270
+It turns out, not only is
+nonintersection preserved
+
+511
+00:25:20,270 --> 00:25:24,140
+under continuous motions,
+which is what we care about,
+
+512
+00:25:24,140 --> 00:25:28,520
+it's preserved for what I'll
+call instantaneous motions.
+
+513
+00:25:28,520 --> 00:25:34,540
+
+514
+00:25:34,540 --> 00:25:37,380
+In the origami context, we
+would call these folded states.
+
+515
+00:25:37,380 --> 00:25:39,810
+We don't worry about how
+you got there, you just
+
+516
+00:25:39,810 --> 00:25:42,790
+draw it again differently.
+
+517
+00:25:42,790 --> 00:25:46,390
+It's like you instantaneously
+jumped to that point.
+
+518
+00:25:46,390 --> 00:25:47,990
+So in terms of
+configuration spaces,
+
+519
+00:25:47,990 --> 00:25:50,420
+we have some big
+configuration space.
+
+520
+00:25:50,420 --> 00:25:53,570
+And we say, well ideally
+I go somewhere by motion,
+
+521
+00:25:53,570 --> 00:25:56,300
+but maybe I just jump
+over to another point.
+
+522
+00:25:56,300 --> 00:26:00,580
+I just redraw these
+symmetric slender adornments.
+
+523
+00:26:00,580 --> 00:26:02,610
+And I should say, the
+motion should still
+
+524
+00:26:02,610 --> 00:26:07,840
+be expansive in the
+sense that if you measure
+
+525
+00:26:07,840 --> 00:26:10,400
+the distance between two
+vertices in the original
+
+526
+00:26:10,400 --> 00:26:12,880
+and you measure the
+distance between them
+
+527
+00:26:12,880 --> 00:26:16,600
+in the new resulting
+configuration,
+
+528
+00:26:16,600 --> 00:26:17,830
+the distance only goes up.
+
+529
+00:26:17,830 --> 00:26:19,900
+It could stay the same
+or strictly increase.
+
+530
+00:26:19,900 --> 00:26:24,009
+
+531
+00:26:24,009 --> 00:26:25,050
+So this is kind of crazy.
+
+532
+00:26:25,050 --> 00:26:28,800
+You don't even need
+continuity for this the hold
+
+533
+00:26:28,800 --> 00:26:29,890
+in the symmetric case.
+
+534
+00:26:29,890 --> 00:26:42,110
+
+535
+00:26:42,110 --> 00:26:49,340
+So in general we're
+worried about some lens.
+
+536
+00:26:49,340 --> 00:26:56,017
+
+537
+00:26:56,017 --> 00:26:58,100
+The lens is going to be
+symmetric about this line,
+
+538
+00:26:58,100 --> 00:27:01,260
+but not necessarily
+about this line.
+
+539
+00:27:01,260 --> 00:27:03,360
+We're worried about
+it intersecting
+
+540
+00:27:03,360 --> 00:27:08,800
+some other lens
+when that happens.
+
+541
+00:27:08,800 --> 00:27:13,260
+
+542
+00:27:13,260 --> 00:27:17,360
+Well, here's a cool theorem.
+
+543
+00:27:17,360 --> 00:27:20,725
+And this theorem has come into
+fashion in the last few years.
+
+544
+00:27:20,725 --> 00:27:27,900
+
+545
+00:27:27,900 --> 00:27:32,000
+Actually, let me tell
+you a bigger result
+
+546
+00:27:32,000 --> 00:27:34,260
+called the Kneser
+Poulsen Conjecture.
+
+547
+00:27:34,260 --> 00:27:36,370
+It's a conjecture I don't
+know how many years ago.
+
+548
+00:27:36,370 --> 00:27:38,300
+It's also called,
+pushing disks together.
+
+549
+00:27:38,300 --> 00:27:40,650
+I have a bunch of
+disks in the plane.
+
+550
+00:27:40,650 --> 00:27:42,190
+Suppose they overlap,
+who knows what
+
+551
+00:27:42,190 --> 00:27:44,280
+happens, but a bunch of disks.
+
+552
+00:27:44,280 --> 00:27:47,950
+And then I push
+them all together,
+
+553
+00:27:47,950 --> 00:27:50,620
+meaning the opposite
+of expansion.
+
+554
+00:27:50,620 --> 00:27:54,360
+All the centers of the disks
+get closer to each other.
+
+555
+00:27:54,360 --> 00:27:59,490
+Is it the case that the area of
+the union, or the intersection,
+
+556
+00:27:59,490 --> 00:28:00,950
+all these things should go down.
+
+557
+00:28:00,950 --> 00:28:04,210
+It seems intuitive
+enough, but was
+
+558
+00:28:04,210 --> 00:28:08,886
+unsolved until 2002,
+someone recent.
+
+559
+00:28:08,886 --> 00:28:11,360
+A special case of that
+turns out to be all we need.
+
+560
+00:28:11,360 --> 00:28:13,140
+There's obviously disks
+lying around here.
+
+561
+00:28:13,140 --> 00:28:17,610
+This is the intersection of
+two disks, so it seems useful.
+
+562
+00:28:17,610 --> 00:28:19,370
+Overall, there's four
+disks involved here.
+
+563
+00:28:19,370 --> 00:28:25,080
+There's one here, one here,
+one here, and one here.
+
+564
+00:28:25,080 --> 00:28:27,540
+What we really care about
+are four-way intersections
+
+565
+00:28:27,540 --> 00:28:28,900
+between all four of those disks.
+
+566
+00:28:28,900 --> 00:28:29,650
+That would be bad.
+
+567
+00:28:29,650 --> 00:28:33,730
+That would be the two
+lenses hitting each other.
+
+568
+00:28:33,730 --> 00:28:36,660
+Remember, really there's
+a bigger edge here.
+
+569
+00:28:36,660 --> 00:28:41,210
+But if they're going to hit,
+some two lenses have to hit.
+
+570
+00:28:41,210 --> 00:28:51,040
+And that special case
+is much older, 1934.
+
+571
+00:28:51,040 --> 00:28:58,540
+And it says, if
+we instantaneously
+
+572
+00:28:58,540 --> 00:29:01,110
+translate-- you can't
+really rotate disks,
+
+573
+00:29:01,110 --> 00:29:02,860
+it doesn't change much.
+
+574
+00:29:02,860 --> 00:29:07,220
+Let's say we have n disks,
+and we instantaneously
+
+575
+00:29:07,220 --> 00:29:09,080
+just move them around.
+
+576
+00:29:09,080 --> 00:29:12,990
+And I'm going to state
+it in the expansive form.
+
+577
+00:29:12,990 --> 00:29:18,470
+And suppose initially
+they have no intersection,
+
+578
+00:29:18,470 --> 00:29:24,215
+meaning they have an
+empty n-way intersection.
+
+579
+00:29:24,215 --> 00:29:35,520
+
+580
+00:29:35,520 --> 00:29:51,666
+And we instantaneously
+translate to an expansive motion
+
+581
+00:29:51,666 --> 00:30:01,610
+on the centers, then
+we'll still have
+
+582
+00:30:01,610 --> 00:30:04,956
+an empty n-way intersection.
+
+583
+00:30:04,956 --> 00:30:11,430
+
+584
+00:30:11,430 --> 00:30:15,180
+Now, in our case we
+care about n equals 4.
+
+585
+00:30:15,180 --> 00:30:17,330
+We have four disks
+we care about,
+
+586
+00:30:17,330 --> 00:30:20,600
+we somehow move
+them so the centers
+
+587
+00:30:20,600 --> 00:30:22,815
+are the vertices of my chain.
+
+588
+00:30:22,815 --> 00:30:25,640
+We don't even need that
+[INAUDIBLE] about other points.
+
+589
+00:30:25,640 --> 00:30:29,300
+I know the centers of my
+lenses are my endpoints.
+
+590
+00:30:29,300 --> 00:30:32,405
+I know all those distances
+are increasing somehow.
+
+591
+00:30:32,405 --> 00:30:34,700
+And now I'm even thinking
+about the instantaneous case.
+
+592
+00:30:34,700 --> 00:30:37,000
+So I just pick up all those
+points, drop them down so
+
+593
+00:30:37,000 --> 00:30:38,841
+all the distances
+increase, then the theorem
+
+594
+00:30:38,841 --> 00:30:40,840
+is, if those four disks
+didn't intersect before,
+
+595
+00:30:40,840 --> 00:30:42,700
+they still won't intersect.
+
+596
+00:30:42,700 --> 00:30:46,470
+Therefore, the lenses
+don't hit each other ever,
+
+597
+00:30:46,470 --> 00:30:50,250
+even when you can pick things
+up and drop them back down.
+
+598
+00:30:50,250 --> 00:30:51,800
+Done.
+
+599
+00:30:51,800 --> 00:30:52,990
+That covers what we need.
+
+600
+00:30:52,990 --> 00:30:55,170
+Now, I didn't
+prove this theorem.
+
+601
+00:30:55,170 --> 00:30:57,145
+I don't think it's
+too hard, but it's not
+
+602
+00:30:57,145 --> 00:30:59,395
+folding related so I'm just
+going to take it as given.
+
+603
+00:30:59,395 --> 00:31:06,190
+
+604
+00:31:06,190 --> 00:31:08,440
+But that was just
+one special case.
+
+605
+00:31:08,440 --> 00:31:10,905
+That's when we had lenses
+instead of half-lenses.
+
+606
+00:31:10,905 --> 00:31:14,490
+In reality we have
+half-lenses so there's
+
+607
+00:31:14,490 --> 00:31:15,710
+a little bit more work to do.
+
+608
+00:31:15,710 --> 00:31:51,640
+
+609
+00:31:51,640 --> 00:31:57,900
+Well, if the slender chain
+is going to intersect itself
+
+610
+00:31:57,900 --> 00:32:01,600
+by some expansive motion--- oh,
+by the way, the general case,
+
+611
+00:32:01,600 --> 00:32:03,670
+you need a continuous motion.
+
+612
+00:32:03,670 --> 00:32:06,910
+It doesn't work anymore when
+you do it instantaneously.
+
+613
+00:32:06,910 --> 00:32:11,670
+I have a nasty example here,
+sort of an annoying example.
+
+614
+00:32:11,670 --> 00:32:14,330
+Suppose you take a bar, and
+you take the Reuleaux triangle
+
+615
+00:32:14,330 --> 00:32:19,730
+or just something really big,
+and you have another bar here
+
+616
+00:32:19,730 --> 00:32:21,680
+with no adornment.
+
+617
+00:32:21,680 --> 00:32:25,100
+And now I instantaneously
+move it to the configuration
+
+618
+00:32:25,100 --> 00:32:28,400
+where I have the same--
+this guy didn't move.
+
+619
+00:32:28,400 --> 00:32:33,070
+I just put this guy
+here or something.
+
+620
+00:32:33,070 --> 00:32:36,840
+So if I measure this
+distance, it increased
+
+621
+00:32:36,840 --> 00:32:39,157
+but it's now self-intersecting.
+
+622
+00:32:39,157 --> 00:32:40,990
+So if you pick things
+up and drop them down,
+
+623
+00:32:40,990 --> 00:32:42,490
+it doesn't work in
+the general case.
+
+624
+00:32:42,490 --> 00:32:44,500
+That's because this
+wasn't symmetric.
+
+625
+00:32:44,500 --> 00:32:47,997
+If it was symmetric, then this
+guy was already intersecting.
+
+626
+00:32:47,997 --> 00:32:50,330
+But we can nonetheless prove
+for the case we care about,
+
+627
+00:32:50,330 --> 00:32:52,850
+which is continuous
+motion-- because we
+
+628
+00:32:52,850 --> 00:32:56,030
+know there's a continuous
+expensive motion-- we can still
+
+629
+00:32:56,030 --> 00:33:00,230
+prove that no two
+half-lenses will intersect.
+
+630
+00:33:00,230 --> 00:33:02,430
+So now I worry about two
+half-lenses intersecting.
+
+631
+00:33:02,430 --> 00:33:09,930
+A half-lens looks
+something like this.
+
+632
+00:33:09,930 --> 00:33:11,213
+Sorry, that's a lens.
+
+633
+00:33:11,213 --> 00:33:14,390
+A half-lens looks like that.
+
+634
+00:33:14,390 --> 00:33:17,910
+It has three sides, in general.
+
+635
+00:33:17,910 --> 00:33:19,680
+This one's bounded
+by a disk, this one's
+
+636
+00:33:19,680 --> 00:33:25,450
+bounded by a disk, this one's
+bounded by a base segment.
+
+637
+00:33:25,450 --> 00:33:28,140
+So there's basically a bunch
+of cases you could worry about.
+
+638
+00:33:28,140 --> 00:33:33,850
+You could worry about
+two of these guys hitting
+
+639
+00:33:33,850 --> 00:33:37,620
+in the curvy parts,
+so that's case one.
+
+640
+00:33:37,620 --> 00:33:41,400
+
+641
+00:33:41,400 --> 00:33:44,390
+That we get-- what
+did I call them?
+
+642
+00:33:44,390 --> 00:33:46,435
+The base.
+
+643
+00:33:46,435 --> 00:33:49,012
+
+644
+00:33:49,012 --> 00:33:50,470
+I'm going to rename
+this, because I
+
+645
+00:33:50,470 --> 00:33:52,790
+don't like the terminology
+I'm using here.
+
+646
+00:33:52,790 --> 00:33:57,920
+Curvy, curvy.
+
+647
+00:33:57,920 --> 00:34:01,310
+There's the two straight sides,
+and there's the two of each,
+
+648
+00:34:01,310 --> 00:34:03,140
+and there's the
+four curvy sides.
+
+649
+00:34:03,140 --> 00:34:09,290
+Suppose they hit on
+a curvy side of both?
+
+650
+00:34:09,290 --> 00:34:11,280
+Well, if they hit on
+the curvy side of both,
+
+651
+00:34:11,280 --> 00:34:13,540
+this is a convex region.
+
+652
+00:34:13,540 --> 00:34:17,620
+I could actually just put back
+the rest of the half-lens here
+
+653
+00:34:17,620 --> 00:34:19,560
+and the rest and
+a half-lens here.
+
+654
+00:34:19,560 --> 00:34:22,590
+They still won't intersect,
+because the bases are pointing
+
+655
+00:34:22,590 --> 00:34:25,540
+away from the intersection.
+
+656
+00:34:25,540 --> 00:34:29,699
+So this is actually covered
+by the case we just did.
+
+657
+00:34:29,699 --> 00:34:32,830
+We know that if we can complete
+it to a lens and still not have
+
+658
+00:34:32,830 --> 00:34:35,020
+intersection-- maybe it
+intersects other parts,
+
+659
+00:34:35,020 --> 00:34:38,460
+but we know these guys
+cannot intersect each other
+
+660
+00:34:38,460 --> 00:34:42,670
+because these entire lenses
+couldn't intersect each other.
+
+661
+00:34:42,670 --> 00:34:45,909
+So case one's done.
+
+662
+00:34:45,909 --> 00:34:49,420
+Case two is about is easy.
+
+663
+00:34:49,420 --> 00:34:53,495
+It could be we have curvy
+part meeting a base.
+
+664
+00:34:53,495 --> 00:34:56,190
+
+665
+00:34:56,190 --> 00:35:02,240
+So we have this example
+again, but now we
+
+666
+00:35:02,240 --> 00:35:06,520
+try to intersect with the
+base of some other half-lens.
+
+667
+00:35:06,520 --> 00:35:09,330
+
+668
+00:35:09,330 --> 00:35:10,625
+What should I do here?
+
+669
+00:35:10,625 --> 00:35:19,640
+
+670
+00:35:19,640 --> 00:35:20,960
+Anything useful I can do?
+
+671
+00:35:20,960 --> 00:35:21,460
+Yeah?
+
+672
+00:35:21,460 --> 00:35:23,432
+AUDIENCE: Think about
+the points on that line
+
+673
+00:35:23,432 --> 00:35:27,870
+as they should be expansive.
+
+674
+00:35:27,870 --> 00:35:31,958
+PROFESSOR: Yeah, these points
+are expansive from here.
+
+675
+00:35:31,958 --> 00:35:33,850
+AUDIENCE: Tiny, tiny lenses.
+
+676
+00:35:33,850 --> 00:35:35,990
+PROFESSOR: Tiny
+lenses, good, good.
+
+677
+00:35:35,990 --> 00:35:36,970
+Screw this lens.
+
+678
+00:35:36,970 --> 00:35:39,530
+
+679
+00:35:39,530 --> 00:35:42,040
+Yeah I mean, that
+lens really does not
+
+680
+00:35:42,040 --> 00:35:43,910
+participate in this
+intersection, right?
+
+681
+00:35:43,910 --> 00:35:46,400
+Think of this as if there
+is no adornment there,
+
+682
+00:35:46,400 --> 00:35:49,040
+which is like you have lots
+of tiny half-lenses there,
+
+683
+00:35:49,040 --> 00:35:51,100
+but there's just none.
+
+684
+00:35:51,100 --> 00:35:52,810
+It's an empty union of lenses.
+
+685
+00:35:52,810 --> 00:35:55,060
+This is obviously a
+slender adornment.
+
+686
+00:35:55,060 --> 00:35:57,180
+There's no adornment.
+
+687
+00:35:57,180 --> 00:35:59,140
+If the original is
+going to intersect,
+
+688
+00:35:59,140 --> 00:36:00,920
+this should also intersect.
+
+689
+00:36:00,920 --> 00:36:04,442
+And this one I can
+actually extend and make it
+
+690
+00:36:04,442 --> 00:36:06,650
+a full lens, because I'm
+intersecting on the top side
+
+691
+00:36:06,650 --> 00:36:07,150
+here.
+
+692
+00:36:07,150 --> 00:36:10,640
+These can't hit each
+other by convexity.
+
+693
+00:36:10,640 --> 00:36:15,630
+Great, so this is a symmetric
+lens, this is a lens,
+
+694
+00:36:15,630 --> 00:36:19,780
+this is a lens, symmetric case.
+
+695
+00:36:19,780 --> 00:36:24,060
+So we already know those guys
+can't intersect each other.
+
+696
+00:36:24,060 --> 00:36:27,950
+We have in some a-- there
+is a tiny lens here,
+
+697
+00:36:27,950 --> 00:36:31,090
+which is from that
+circle and that circle.
+
+698
+00:36:31,090 --> 00:36:34,080
+And the point is, the four
+circles defining those two
+
+699
+00:36:34,080 --> 00:36:36,280
+lenses cannot intersect.
+
+700
+00:36:36,280 --> 00:36:38,240
+So again, we're done
+by the symmetric case.
+
+701
+00:36:38,240 --> 00:36:40,830
+
+702
+00:36:40,830 --> 00:36:45,060
+The last case is actually,
+I guess, the easiest one,
+
+703
+00:36:45,060 --> 00:36:45,650
+base to base.
+
+704
+00:36:45,650 --> 00:36:48,190
+
+705
+00:36:48,190 --> 00:36:51,720
+Base to base is like this.
+
+706
+00:36:51,720 --> 00:36:54,500
+And yeah, there's
+some adornments,
+
+707
+00:36:54,500 --> 00:36:56,980
+but the adornments don't
+really play a role.
+
+708
+00:36:56,980 --> 00:36:58,730
+So you could imagine
+erasing them and just
+
+709
+00:36:58,730 --> 00:37:00,489
+talking about the
+tiny things again.
+
+710
+00:37:00,489 --> 00:37:02,530
+But really, this follows
+just because the linkage
+
+711
+00:37:02,530 --> 00:37:03,240
+is expansive.
+
+712
+00:37:03,240 --> 00:37:06,340
+We already know that the linkage
+will not self-intersect itself.
+
+713
+00:37:06,340 --> 00:37:08,160
+Particularly, this
+distance is increasing
+
+714
+00:37:08,160 --> 00:37:09,880
+and this distance is increasing.
+
+715
+00:37:09,880 --> 00:37:12,719
+It's got to move away,
+so that can't happen.
+
+716
+00:37:12,719 --> 00:37:14,760
+It could actually never
+get to the touching point
+
+717
+00:37:14,760 --> 00:37:15,885
+if it started non-touching.
+
+718
+00:37:15,885 --> 00:37:18,330
+
+719
+00:37:18,330 --> 00:37:19,830
+Done.
+
+720
+00:37:19,830 --> 00:37:23,070
+This proves that if you have
+a slender adorned chain,
+
+721
+00:37:23,070 --> 00:37:24,940
+you take an
+expansive motion, you
+
+722
+00:37:24,940 --> 00:37:26,231
+preserve non-self-intersection.
+
+723
+00:37:26,231 --> 00:37:32,260
+
+724
+00:37:32,260 --> 00:37:36,080
+If you have an open chain
+of slender adornments,
+
+725
+00:37:36,080 --> 00:37:38,520
+this is great because you can
+straighten out your chain--
+
+726
+00:37:38,520 --> 00:37:40,130
+why don't I draw the picture.
+
+727
+00:37:40,130 --> 00:37:49,300
+
+728
+00:37:49,300 --> 00:37:51,310
+If you want to
+get from one shape
+
+729
+00:37:51,310 --> 00:37:55,430
+to some other drawing
+of that same polyline,
+
+730
+00:37:55,430 --> 00:37:57,180
+pretend the links are
+the same and pretend
+
+731
+00:37:57,180 --> 00:37:59,471
+there's all these slender
+adornments that are the same,
+
+732
+00:37:59,471 --> 00:38:05,690
+you can straighten out
+each one and then just play
+
+733
+00:38:05,690 --> 00:38:08,290
+this motion backwards,
+and take this motion
+
+734
+00:38:08,290 --> 00:38:09,596
+to here, this motion to here.
+
+735
+00:38:09,596 --> 00:38:11,470
+This is something I call
+the FedEx algorithm,
+
+736
+00:38:11,470 --> 00:38:13,390
+we were talking about
+in the problem session,
+
+737
+00:38:13,390 --> 00:38:14,806
+because the original
+idea of FedEx
+
+738
+00:38:14,806 --> 00:38:17,460
+is you send all packages to
+one central FedEx location
+
+739
+00:38:17,460 --> 00:38:19,320
+then send them out to
+where you want to go.
+
+740
+00:38:19,320 --> 00:38:22,702
+Crazy idea, but it
+worked for quite awhile.
+
+741
+00:38:22,702 --> 00:38:24,160
+It's a little more
+complicated now,
+
+742
+00:38:24,160 --> 00:38:26,280
+but still that spirit is there.
+
+743
+00:38:26,280 --> 00:38:29,700
+And someone was asking
+in the problem session,
+
+744
+00:38:29,700 --> 00:38:32,200
+well what if you send a package
+from one point in California
+
+745
+00:38:32,200 --> 00:38:33,610
+the your neighbor?
+
+746
+00:38:33,610 --> 00:38:37,470
+I was like, well yeah, then it
+goes far away and comes back.
+
+747
+00:38:37,470 --> 00:38:42,080
+But for math, it's no
+problem, no energy issue.
+
+748
+00:38:42,080 --> 00:38:43,800
+So this is great
+for open chains.
+
+749
+00:38:43,800 --> 00:38:47,130
+It does not work for closed
+chains, because closed chains,
+
+750
+00:38:47,130 --> 00:38:49,172
+there's more than one
+convex configuration.
+
+751
+00:38:49,172 --> 00:38:51,505
+I could take that, I could
+take something more squashed.
+
+752
+00:38:51,505 --> 00:38:54,100
+
+753
+00:38:54,100 --> 00:38:55,490
+Now normally this is fine.
+
+754
+00:38:55,490 --> 00:39:00,081
+We haven't proved it, but
+for regular closed chains,
+
+755
+00:39:00,081 --> 00:39:02,330
+you could actually get from
+every convex configuration
+
+756
+00:39:02,330 --> 00:39:03,200
+to every other.
+
+757
+00:39:03,200 --> 00:39:05,158
+Maybe we'll prove that
+in the polyhedra section
+
+758
+00:39:05,158 --> 00:39:07,930
+because it's easy
+to prove there.
+
+759
+00:39:07,930 --> 00:39:09,620
+Believe that, but
+once you start adding
+
+760
+00:39:09,620 --> 00:39:12,170
+adornments it ain't possible.
+
+761
+00:39:12,170 --> 00:39:14,220
+So for example, if
+I take this thing
+
+762
+00:39:14,220 --> 00:39:19,520
+and I add some adornments to
+just fill in all the space,
+
+763
+00:39:19,520 --> 00:39:20,700
+this is not so slender.
+
+764
+00:39:20,700 --> 00:39:22,880
+But you can even draw it
+with it being slender.
+
+765
+00:39:22,880 --> 00:39:25,524
+There's no way I can
+go from here to here.
+
+766
+00:39:25,524 --> 00:39:27,690
+That's not very convincing,
+because there isn't even
+
+767
+00:39:27,690 --> 00:39:29,290
+a configuration like that.
+
+768
+00:39:29,290 --> 00:39:30,740
+Here's a more convincing one.
+
+769
+00:39:30,740 --> 00:39:33,220
+Suppose you have
+a parallelogram,
+
+770
+00:39:33,220 --> 00:39:37,670
+and you have a right triangle,
+and a right triangle.
+
+771
+00:39:37,670 --> 00:39:43,836
+And now I want to go to here.
+
+772
+00:39:43,836 --> 00:39:45,460
+If I was allotted
+instantaneous motion,
+
+773
+00:39:45,460 --> 00:39:48,954
+this would be fine,
+even be expansive.
+
+774
+00:39:48,954 --> 00:39:50,120
+Well, no it's not expansive.
+
+775
+00:39:50,120 --> 00:39:52,220
+This distance
+increases, and that's
+
+776
+00:39:52,220 --> 00:39:54,670
+why this theorem doesn't apply.
+
+777
+00:39:54,670 --> 00:39:56,470
+But these are two
+complex configurations.
+
+778
+00:39:56,470 --> 00:39:58,900
+I can't get from
+one to the other.
+
+779
+00:39:58,900 --> 00:40:00,601
+So for closed chains,
+this doesn't quite
+
+780
+00:40:00,601 --> 00:40:02,350
+prove the configuration
+space is connected
+
+781
+00:40:02,350 --> 00:40:04,433
+and you have to worry about
+the convex situations.
+
+782
+00:40:04,433 --> 00:40:07,980
+For open chains, it does.
+
+783
+00:40:07,980 --> 00:40:11,770
+Open problem, are there
+any other adornments
+
+784
+00:40:11,770 --> 00:40:13,046
+like slender ones?
+
+785
+00:40:13,046 --> 00:40:14,420
+Or are slender
+the most you could
+
+786
+00:40:14,420 --> 00:40:16,770
+hope for a general result?
+
+787
+00:40:16,770 --> 00:40:20,400
+Is there some shape that is not
+slender, such that no matter
+
+788
+00:40:20,400 --> 00:40:24,890
+how you add them to
+a chain you'd still
+
+789
+00:40:24,890 --> 00:40:29,420
+have a theorem like this
+that they never lock?
+
+790
+00:40:29,420 --> 00:40:31,730
+I would guess slender's the
+most you could hope for,
+
+791
+00:40:31,730 --> 00:40:34,620
+but I'm not sure.
+
+792
+00:40:34,620 --> 00:40:37,070
+One special case
+we can understand
+
+793
+00:40:37,070 --> 00:40:40,570
+is the case of triangles.
+
+794
+00:40:40,570 --> 00:40:42,900
+We know equilateral
+triangles are bad.
+
+795
+00:40:42,900 --> 00:40:45,580
+We know right
+triangles are good.
+
+796
+00:40:45,580 --> 00:40:49,060
+We know obtuse
+triangles are good,
+
+797
+00:40:49,060 --> 00:40:51,350
+because these are slender.
+
+798
+00:40:51,350 --> 00:40:56,580
+What if I take a triangle
+that's slightly more than 90,
+
+799
+00:40:56,580 --> 00:40:59,070
+slightly less than 90 here?
+
+800
+00:40:59,070 --> 00:41:01,650
+I know if I go all the
+way to 60, it's bad,
+
+801
+00:41:01,650 --> 00:41:03,490
+but what about
+slightly less than 90?
+
+802
+00:41:03,490 --> 00:41:06,410
+
+803
+00:41:06,410 --> 00:41:09,410
+Also bad.
+
+804
+00:41:09,410 --> 00:41:10,610
+That's not convincing yet.
+
+805
+00:41:10,610 --> 00:41:12,000
+This is equilateral triangles.
+
+806
+00:41:12,000 --> 00:41:14,290
+I've made it more
+complicated example
+
+807
+00:41:14,290 --> 00:41:17,230
+here in order to get a couple
+of properties, but one of them
+
+808
+00:41:17,230 --> 00:41:20,530
+is that all of the equilateral
+triangles are the same size.
+
+809
+00:41:20,530 --> 00:41:21,676
+It's a little bit cooler.
+
+810
+00:41:21,676 --> 00:41:23,300
+You have to imagine
+where the bars are.
+
+811
+00:41:23,300 --> 00:41:28,760
+There's a bar here, and
+a bar here, and so on.
+
+812
+00:41:28,760 --> 00:41:31,980
+This is what it looks like
+when it's self-touching.
+
+813
+00:41:31,980 --> 00:41:34,120
+And the reason I'm looking
+at that is I think,
+
+814
+00:41:34,120 --> 00:41:36,410
+what if I shear
+this whole picture
+
+815
+00:41:36,410 --> 00:41:39,120
+or scale it non-uniformly in y?
+
+816
+00:41:39,120 --> 00:41:41,820
+So make it taller.
+
+817
+00:41:41,820 --> 00:41:42,400
+Taller?
+
+818
+00:41:42,400 --> 00:41:43,040
+Shorter.
+
+819
+00:41:43,040 --> 00:41:44,850
+I make it shorter
+first in this picture.
+
+820
+00:41:44,850 --> 00:41:46,950
+I'm going to make it
+taller in a second.
+
+821
+00:41:46,950 --> 00:41:52,080
+I've got to correct things,
+but all of these triangles now,
+
+822
+00:41:52,080 --> 00:41:53,990
+the base is along here.
+
+823
+00:41:53,990 --> 00:41:55,390
+This is the apex angle.
+
+824
+00:41:55,390 --> 00:41:59,229
+So here I made the apex
+even smaller than 60,
+
+825
+00:41:59,229 --> 00:42:00,770
+just not the direction
+I cared about.
+
+826
+00:42:00,770 --> 00:42:02,460
+But the point is,
+this thing will
+
+827
+00:42:02,460 --> 00:42:04,655
+stay locked no matter
+how you shear it.
+
+828
+00:42:04,655 --> 00:42:06,280
+And so here I have
+a bunch of triangles
+
+829
+00:42:06,280 --> 00:42:09,350
+where the apex angles, you can
+make them arbitrarily small.
+
+830
+00:42:09,350 --> 00:42:11,270
+So even if I-- no surprise.
+
+831
+00:42:11,270 --> 00:42:14,210
+If I have a super
+pointy triangle,
+
+832
+00:42:14,210 --> 00:42:17,070
+you're going to be able
+to lock them like this.
+
+833
+00:42:17,070 --> 00:42:19,530
+But also if you go
+the other way and you
+
+834
+00:42:19,530 --> 00:42:25,720
+make this a kind of
+more than 60 angle,
+
+835
+00:42:25,720 --> 00:42:29,910
+as long as it's less than
+90 this will stay locked.
+
+836
+00:42:29,910 --> 00:42:33,400
+And to give you some
+intuition, if it's less than 90
+
+837
+00:42:33,400 --> 00:42:37,330
+I can apply rule one here.
+
+838
+00:42:37,330 --> 00:42:39,960
+
+839
+00:42:39,960 --> 00:42:44,950
+But as soon as that
+angle reaches 90,
+
+840
+00:42:44,950 --> 00:42:47,410
+this apex will be 90,
+and so then rule one
+
+841
+00:42:47,410 --> 00:42:49,550
+does not apply here.
+
+842
+00:42:49,550 --> 00:42:52,020
+I think it'll still
+apply on the other side,
+
+843
+00:42:52,020 --> 00:42:53,290
+but it doesn't matter.
+
+844
+00:42:53,290 --> 00:42:57,451
+You really need both sides to
+be acute for rule one to apply.
+
+845
+00:42:57,451 --> 00:42:58,950
+This example's
+actually a little bit
+
+846
+00:42:58,950 --> 00:43:01,020
+messy to prove that it's locked.
+
+847
+00:43:01,020 --> 00:43:03,900
+You can apply the
+rules down to here,
+
+848
+00:43:03,900 --> 00:43:06,740
+but then you're not able
+to apply rules anymore.
+
+849
+00:43:06,740 --> 00:43:09,100
+Actually, you can't even do
+it in the last one, I think.
+
+850
+00:43:09,100 --> 00:43:11,590
+Just up to here, so here
+I have a nice acute angle,
+
+851
+00:43:11,590 --> 00:43:12,965
+here I don't have
+an acute angle.
+
+852
+00:43:12,965 --> 00:43:14,332
+It's kind of annoying.
+
+853
+00:43:14,332 --> 00:43:16,790
+The best way that I know to
+prove that this thing is locked
+
+854
+00:43:16,790 --> 00:43:20,440
+is to compute an
+equilibrium stress that's
+
+855
+00:43:20,440 --> 00:43:24,520
+positive or negative
+on all of the struts.
+
+856
+00:43:24,520 --> 00:43:26,020
+Remember, there's
+little struts here
+
+857
+00:43:26,020 --> 00:43:29,074
+saying that this guy has to
+move away from this corner.
+
+858
+00:43:29,074 --> 00:43:30,490
+Or if could slide
+along the edges,
+
+859
+00:43:30,490 --> 00:43:32,770
+but it can't go
+on the other side.
+
+860
+00:43:32,770 --> 00:43:34,580
+So you could do that,
+it's kind of messy.
+
+861
+00:43:34,580 --> 00:43:38,614
+I will prove to you
+a simpler example.
+
+862
+00:43:38,614 --> 00:43:40,280
+We already did the
+first one, but here's
+
+863
+00:43:40,280 --> 00:43:42,260
+another equilateral
+triangle example.
+
+864
+00:43:42,260 --> 00:43:45,315
+Even fewer triangles,
+and also locked.
+
+865
+00:43:45,315 --> 00:43:47,920
+
+866
+00:43:47,920 --> 00:43:49,720
+This one you can't
+scale quite as nicely.
+
+867
+00:43:49,720 --> 00:43:58,300
+
+868
+00:43:58,300 --> 00:43:59,800
+Actually, I could
+give you a choice.
+
+869
+00:43:59,800 --> 00:44:01,216
+Which proof would
+you like to see,
+
+870
+00:44:01,216 --> 00:44:03,690
+the easy one or the hard one?
+
+871
+00:44:03,690 --> 00:44:05,650
+Easy?
+
+872
+00:44:05,650 --> 00:44:07,610
+Hard?
+
+873
+00:44:07,610 --> 00:44:10,290
+One person for hard,
+thanks Harrison.
+
+874
+00:44:10,290 --> 00:44:14,970
+
+875
+00:44:14,970 --> 00:44:16,510
+I like easy proofs.
+
+876
+00:44:16,510 --> 00:44:17,970
+They're more exciting.
+
+877
+00:44:17,970 --> 00:44:20,460
+OK, first the hard part is
+I have to draw the example.
+
+878
+00:44:20,460 --> 00:44:35,644
+
+879
+00:44:35,644 --> 00:44:37,060
+If you want to see
+the hard proof,
+
+880
+00:44:37,060 --> 00:44:38,143
+it's in the lecture notes.
+
+881
+00:44:38,143 --> 00:44:41,080
+I kept it in there.
+
+882
+00:44:41,080 --> 00:44:44,820
+This should be the same
+as that, more or less.
+
+883
+00:44:44,820 --> 00:44:46,049
+Imagine self-touching.
+
+884
+00:44:46,049 --> 00:44:47,590
+We're going to prove
+that it's rigid,
+
+885
+00:44:47,590 --> 00:44:50,890
+therefore any perturbation
+is strongly locked.
+
+886
+00:44:50,890 --> 00:44:53,548
+What should I do?
+
+887
+00:44:53,548 --> 00:44:55,040
+AUDIENCE: Apply rules.
+
+888
+00:44:55,040 --> 00:44:56,570
+PROFESSOR: Apply rules, yes.
+
+889
+00:44:56,570 --> 00:44:58,500
+I like the rules.
+
+890
+00:44:58,500 --> 00:44:59,540
+I live by the rules.
+
+891
+00:44:59,540 --> 00:45:02,340
+
+892
+00:45:02,340 --> 00:45:05,200
+The first rule of the rules
+is don't talk about the rules.
+
+893
+00:45:05,200 --> 00:45:07,420
+No, we have rule one here.
+
+894
+00:45:07,420 --> 00:45:09,980
+The first rule of the
+rules is apply the rules.
+
+895
+00:45:09,980 --> 00:45:14,110
+So we can apply rule one because
+this is acute, this is acute.
+
+896
+00:45:14,110 --> 00:45:15,640
+OK, now I have to redraw.
+
+897
+00:45:15,640 --> 00:45:25,130
+
+898
+00:45:25,130 --> 00:45:29,740
+I should really have one of
+these in the problem set.
+
+899
+00:45:29,740 --> 00:45:31,080
+Applying rules is so much fun.
+
+900
+00:45:31,080 --> 00:45:33,000
+It's also easy to make mistakes.
+
+901
+00:45:33,000 --> 00:45:35,580
+That's a good
+problem set question.
+
+902
+00:45:35,580 --> 00:45:37,595
+All right, these
+are not touching.
+
+903
+00:45:37,595 --> 00:45:39,925
+
+904
+00:45:39,925 --> 00:45:41,800
+I mean, I don't really
+have to fill these in.
+
+905
+00:45:41,800 --> 00:45:44,410
+They're triangles, of
+course they're rigid.
+
+906
+00:45:44,410 --> 00:45:46,105
+But now these are
+fused together.
+
+907
+00:45:46,105 --> 00:45:47,510
+Can I apply any more rules?
+
+908
+00:45:47,510 --> 00:45:52,230
+
+909
+00:45:52,230 --> 00:45:53,220
+I think so.
+
+910
+00:45:53,220 --> 00:45:55,750
+I've got to try
+not to cheat here.
+
+911
+00:45:55,750 --> 00:45:58,640
+This looks like a
+rule too, right?
+
+912
+00:45:58,640 --> 00:46:02,270
+This is an acute angle,
+so this fused together.
+
+913
+00:46:02,270 --> 00:46:03,650
+I'm just going to redraw that.
+
+914
+00:46:03,650 --> 00:46:05,370
+This fused together.
+
+915
+00:46:05,370 --> 00:46:05,880
+Any others?
+
+916
+00:46:05,880 --> 00:46:15,072
+
+917
+00:46:15,072 --> 00:46:17,926
+I guess that's it.
+
+918
+00:46:17,926 --> 00:46:20,590
+Now I've got to do something
+other than rules, darn it.
+
+919
+00:46:20,590 --> 00:46:23,170
+
+920
+00:46:23,170 --> 00:46:24,290
+Life is not so easy.
+
+921
+00:46:24,290 --> 00:46:31,840
+
+922
+00:46:31,840 --> 00:46:34,830
+I'm going to look at-- this
+is divine inspiration here.
+
+923
+00:46:34,830 --> 00:46:39,900
+Well, co-author
+inspiration, I suppose.
+
+924
+00:46:39,900 --> 00:46:46,900
+I'm going to look at that
+convex-- 1-2-3-4-5-- pentagon.
+
+925
+00:46:46,900 --> 00:46:48,382
+It's convex.
+
+926
+00:46:48,382 --> 00:46:49,090
+OK, not strictly.
+
+927
+00:46:49,090 --> 00:46:55,670
+There's a corner of angle 180.
+
+928
+00:46:55,670 --> 00:46:58,710
+Actually, there's a couple
+of ways to prove this.
+
+929
+00:46:58,710 --> 00:47:02,940
+Just look at this
+convex arm, open chain
+
+930
+00:47:02,940 --> 00:47:04,425
+on the edges of
+the convex polygon.
+
+931
+00:47:04,425 --> 00:47:08,857
+
+932
+00:47:08,857 --> 00:47:10,190
+What's the right way to do this?
+
+933
+00:47:10,190 --> 00:47:12,938
+
+934
+00:47:12,938 --> 00:47:15,000
+I have a better argument.
+
+935
+00:47:15,000 --> 00:47:25,310
+It turns out, if you take a
+motion of a convex polygon--
+
+936
+00:47:25,310 --> 00:47:32,270
+any motion must decrease
+at least two angles.
+
+937
+00:47:32,270 --> 00:47:38,390
+
+938
+00:47:38,390 --> 00:47:39,970
+And that's really
+hard to do here.
+
+939
+00:47:39,970 --> 00:47:42,710
+You can't decrease this angle,
+or this angle, or this angle,
+
+940
+00:47:42,710 --> 00:47:46,369
+of this angle, because you've
+got this stuff in the way.
+
+941
+00:47:46,369 --> 00:47:48,910
+There's only one angle you could
+maybe decrease, but actually
+
+942
+00:47:48,910 --> 00:47:51,440
+even that one's probably
+not going to work.
+
+943
+00:47:51,440 --> 00:47:53,880
+And I have to decrease two
+of them, contradiction.
+
+944
+00:47:53,880 --> 00:47:56,370
+So there's no motion
+of this thing.
+
+945
+00:47:56,370 --> 00:47:59,210
+It's like those tightly
+packed convex configurations.
+
+946
+00:47:59,210 --> 00:48:01,080
+You can't move from
+here, just looking
+
+947
+00:48:01,080 --> 00:48:03,620
+at the inside of this thing.
+
+948
+00:48:03,620 --> 00:48:05,706
+The rest is all been rigidified.
+
+949
+00:48:05,706 --> 00:48:10,117
+Well, I guess there's one vertex
+here, but once this is rigid,
+
+950
+00:48:10,117 --> 00:48:11,700
+then this triangle
+is rigidly attached
+
+951
+00:48:11,700 --> 00:48:13,080
+to these three triangles.
+
+952
+00:48:13,080 --> 00:48:18,720
+So the whole thing is rigid,
+and therefore from last lecture
+
+953
+00:48:18,720 --> 00:48:19,880
+it's strongly locked.
+
+954
+00:48:19,880 --> 00:48:25,150
+
+955
+00:48:25,150 --> 00:48:27,939
+AUDIENCE: The lecture
+notes say one angle?
+
+956
+00:48:27,939 --> 00:48:29,730
+PROFESSOR: The lecture
+notes say one angle.
+
+957
+00:48:29,730 --> 00:48:31,750
+I should change it
+to two, because I'm
+
+958
+00:48:31,750 --> 00:48:32,940
+more worried about this one.
+
+959
+00:48:32,940 --> 00:48:35,220
+But two is also true.
+
+960
+00:48:35,220 --> 00:48:38,380
+It also decreases
+at least one angle,
+
+961
+00:48:38,380 --> 00:48:42,860
+but in particular
+decreases two of them.
+
+962
+00:48:42,860 --> 00:48:44,625
+Where's the lecture notes?
+
+963
+00:48:44,625 --> 00:48:52,810
+
+964
+00:48:52,810 --> 00:48:54,590
+So it turns out--
+and this is something
+
+965
+00:48:54,590 --> 00:49:01,494
+we'll prove later, this is
+theorem by Koshy, like 1800s.
+
+966
+00:49:01,494 --> 00:49:03,785
+If you have a convex polygon,
+you move it, at least two
+
+967
+00:49:03,785 --> 00:49:06,201
+of the angles must decrease
+and at least two of the angles
+
+968
+00:49:06,201 --> 00:49:07,989
+must increase.
+
+969
+00:49:07,989 --> 00:49:10,530
+In fact, well there's all sorts
+of cool things you can prove,
+
+970
+00:49:10,530 --> 00:49:13,510
+but that's slated
+for another lecture.
+
+971
+00:49:13,510 --> 00:49:16,000
+We'll see that in the future.
+
+972
+00:49:16,000 --> 00:49:19,950
+I want to move on to a
+different cool topic, which
+
+973
+00:49:19,950 --> 00:49:22,000
+is hinge dissections.
+
+974
+00:49:22,000 --> 00:49:26,620
+Any questions about locked,
+slender, or nonslender
+
+975
+00:49:26,620 --> 00:49:28,450
+adornments?
+
+976
+00:49:28,450 --> 00:49:30,410
+So for triangles, we
+have a tight answer.
+
+977
+00:49:30,410 --> 00:49:33,360
+You need to be right or obtuse.
+
+978
+00:49:33,360 --> 00:49:34,960
+In general, slender works.
+
+979
+00:49:34,960 --> 00:49:37,660
+I don't know if other
+things work, but guess not.
+
+980
+00:49:37,660 --> 00:49:46,500
+
+981
+00:49:46,500 --> 00:49:49,470
+Oh, another open
+question, locked squares.
+
+982
+00:49:49,470 --> 00:49:52,380
+
+983
+00:49:52,380 --> 00:49:58,842
+Now, if you have squares
+that are properly aligned--
+
+984
+00:49:58,842 --> 00:50:04,145
+I don't draw them very well--
+so if the base of the square
+
+985
+00:50:04,145 --> 00:50:06,670
+is through the diagonal
+of the square, that's
+
+986
+00:50:06,670 --> 00:50:08,910
+slender so those can't lock.
+
+987
+00:50:08,910 --> 00:50:11,890
+But if you allow
+the base edge to be
+
+988
+00:50:11,890 --> 00:50:13,750
+along the side of
+a square like this,
+
+989
+00:50:13,750 --> 00:50:15,980
+I take unit squares
+in the plane.
+
+990
+00:50:15,980 --> 00:50:19,170
+Open question, are these locked?
+
+991
+00:50:19,170 --> 00:50:21,129
+It's probably
+really easy, we just
+
+992
+00:50:21,129 --> 00:50:22,670
+haven't worked hard
+enough in proving
+
+993
+00:50:22,670 --> 00:50:24,810
+that these things are locked.
+
+994
+00:50:24,810 --> 00:50:27,310
+So that's something we could
+work on in the problem session.
+
+995
+00:50:27,310 --> 00:50:29,250
+These are examples
+in this paper.
+
+996
+00:50:29,250 --> 00:50:31,160
+So, we conjecture
+these are locked.
+
+997
+00:50:31,160 --> 00:50:33,116
+So there's some work to do.
+
+998
+00:50:33,116 --> 00:50:37,422
+It's a fun, fun toy question.
+
+999
+00:50:37,422 --> 00:50:38,630
+All right, hinge dissections.
+
+1000
+00:50:38,630 --> 00:50:41,360
+
+1001
+00:50:41,360 --> 00:50:46,230
+The idea here is, if you look
+at one of these adorned chains
+
+1002
+00:50:46,230 --> 00:50:49,130
+we've been thinking about where
+you have solid blocks hinged
+
+1003
+00:50:49,130 --> 00:50:51,619
+together points, and you
+think about them moving--
+
+1004
+00:50:51,619 --> 00:50:53,160
+we've been thinking
+about them moving
+
+1005
+00:50:53,160 --> 00:50:54,720
+and when you can
+move from shape a
+
+1006
+00:50:54,720 --> 00:50:57,600
+to shape b or configuration
+a to configuration b.
+
+1007
+00:50:57,600 --> 00:51:01,450
+But in particular configurations
+where they're touching,
+
+1008
+00:51:01,450 --> 00:51:03,990
+you could imagine
+erasing those cuts.
+
+1009
+00:51:03,990 --> 00:51:06,530
+On the top I get a square,
+and the bottom here I
+
+1010
+00:51:06,530 --> 00:51:07,980
+get an equilateral triangle.
+
+1011
+00:51:07,980 --> 00:51:09,460
+So we call this a
+hinge dissection
+
+1012
+00:51:09,460 --> 00:51:12,520
+from an equilateral
+triangle to a square.
+
+1013
+00:51:12,520 --> 00:51:15,750
+This one goes back
+over a century
+
+1014
+00:51:15,750 --> 00:51:19,600
+by this puzzle guy,
+Henry Ernest Dudeney.
+
+1015
+00:51:19,600 --> 00:51:21,430
+A natural question
+is, can you do
+
+1016
+00:51:21,430 --> 00:51:25,600
+this for any two polygons
+of the same area?
+
+1017
+00:51:25,600 --> 00:51:29,190
+You have to preserve area,
+because unerasing-- fusing cuts
+
+1018
+00:51:29,190 --> 00:51:32,620
+does not change the area.
+
+1019
+00:51:32,620 --> 00:51:36,200
+Natural question,
+we've been working
+
+1020
+00:51:36,200 --> 00:51:41,045
+on this question
+for about 10 years.
+
+1021
+00:51:41,045 --> 00:51:45,450
+We started in 1999, and
+the first thing we proved
+
+1022
+00:51:45,450 --> 00:51:46,920
+is that you couldn't
+do everything,
+
+1023
+00:51:46,920 --> 00:51:51,380
+but if you pixelate
+shapes it works.
+
+1024
+00:51:51,380 --> 00:51:53,270
+So in this case,
+we're not pixelating.
+
+1025
+00:51:53,270 --> 00:51:56,020
+We're dividing our
+shape into half squares.
+
+1026
+00:51:56,020 --> 00:51:58,500
+It turns out, if you
+take every-- so here I
+
+1027
+00:51:58,500 --> 00:52:02,150
+have 32 half squares.
+
+1028
+00:52:02,150 --> 00:52:04,700
+In the letter A, I also
+have 32 half squares.
+
+1029
+00:52:04,700 --> 00:52:07,545
+So I want to go from
+the square to an A.
+
+1030
+00:52:07,545 --> 00:52:10,160
+It turns out, if you take
+each of these half squares
+
+1031
+00:52:10,160 --> 00:52:16,030
+and replace it by four
+smaller half squares,
+
+1032
+00:52:16,030 --> 00:52:19,890
+and I hinge the half squares
+in this particular pattern--
+
+1033
+00:52:19,890 --> 00:52:20,610
+you can check it.
+
+1034
+00:52:20,610 --> 00:52:23,420
+It alternates in a
+very regular pattern.
+
+1035
+00:52:23,420 --> 00:52:25,115
+It will work that
+way in the square,
+
+1036
+00:52:25,115 --> 00:52:26,823
+it'll also work that
+way in the letter A.
+
+1037
+00:52:26,823 --> 00:52:28,750
+I don't actually know
+for sure whether there's
+
+1038
+00:52:28,750 --> 00:52:30,760
+a continuous motion
+between these two
+
+1039
+00:52:30,760 --> 00:52:32,840
+without self-intersection,
+because these are not
+
+1040
+00:52:32,840 --> 00:52:35,800
+slender adornments the
+way I've drawn them.
+
+1041
+00:52:35,800 --> 00:52:38,510
+But this is a hinge
+dissection that
+
+1042
+00:52:38,510 --> 00:52:45,250
+exists in all of these states,
+the whole alphabet and numbers.
+
+1043
+00:52:45,250 --> 00:52:47,230
+And it's just 128 pieces.
+
+1044
+00:52:47,230 --> 00:52:49,230
+So that would actually
+be really fun to animate.
+
+1045
+00:52:49,230 --> 00:52:53,380
+I haven't tried to do that yet.
+
+1046
+00:52:53,380 --> 00:52:55,630
+You can generalize that
+to three dimensions.
+
+1047
+00:52:55,630 --> 00:52:57,890
+I think I showed
+this in lecture one.
+
+1048
+00:52:57,890 --> 00:53:00,100
+Here we have solid blocks.
+
+1049
+00:53:00,100 --> 00:53:03,360
+So this is like pixelating,
+but it's just stretched.
+
+1050
+00:53:03,360 --> 00:53:07,540
+And we have piano hinges,
+about 1,000 blocks here,
+
+1051
+00:53:07,540 --> 00:53:10,120
+and you can pick up your
+gloves and reconfigure
+
+1052
+00:53:10,120 --> 00:53:12,490
+the sculpture into
+whatever shape you want.
+
+1053
+00:53:12,490 --> 00:53:15,620
+The theorem is, you can make
+it into any polycube, any shape
+
+1054
+00:53:15,620 --> 00:53:22,140
+made out of-- not 1,000,
+but 250 for 125, I guess.
+
+1055
+00:53:22,140 --> 00:53:28,300
+You divide by 8 to make a 2 by 2
+by 2 larger square, or a larger
+
+1056
+00:53:28,300 --> 00:53:29,270
+cube.
+
+1057
+00:53:29,270 --> 00:53:31,710
+It's a stretched
+cube, but same thing.
+
+1058
+00:53:31,710 --> 00:53:35,832
+And then you can make any
+shape made out of those shapes.
+
+1059
+00:53:35,832 --> 00:53:36,790
+That was the beginning.
+
+1060
+00:53:36,790 --> 00:53:38,414
+This is not everything,
+it's everything
+
+1061
+00:53:38,414 --> 00:53:42,290
+up to some resolution, but we
+would really like everything.
+
+1062
+00:53:42,290 --> 00:53:45,769
+
+1063
+00:53:45,769 --> 00:53:49,052
+And in this class
+three years ago,
+
+1064
+00:53:49,052 --> 00:53:50,510
+we proved to you
+can make anything.
+
+1065
+00:53:50,510 --> 00:54:10,869
+
+1066
+00:54:10,869 --> 00:54:13,160
+I think I posed this question
+in the very first problem
+
+1067
+00:54:13,160 --> 00:54:17,520
+session three years
+ago, thinking maybe we
+
+1068
+00:54:17,520 --> 00:54:19,800
+can prove some special
+cases, something interesting.
+
+1069
+00:54:19,800 --> 00:54:22,290
+And then two or three
+problem sessions
+
+1070
+00:54:22,290 --> 00:54:28,610
+later, it started
+to collapse and get
+
+1071
+00:54:28,610 --> 00:54:32,572
+solved, which is super
+exciting given that we've
+
+1072
+00:54:32,572 --> 00:54:34,155
+been thinking about
+this for 10 years.
+
+1073
+00:54:34,155 --> 00:55:17,200
+
+1074
+00:55:17,200 --> 00:55:20,600
+So this is going to be a little
+more general than two polygons.
+
+1075
+00:55:20,600 --> 00:55:23,920
+And suggested by the
+alphabet, there's
+
+1076
+00:55:23,920 --> 00:55:25,510
+one hinge dissection
+that can fold
+
+1077
+00:55:25,510 --> 00:55:27,930
+into many different
+shapes, not just two.
+
+1078
+00:55:27,930 --> 00:55:33,410
+So you take any finite set
+of polygons of the same area,
+
+1079
+00:55:33,410 --> 00:55:36,240
+then there's one chain of
+polygons hinged together
+
+1080
+00:55:36,240 --> 00:55:39,610
+at points that can continuously
+fold into all of those things
+
+1081
+00:55:39,610 --> 00:55:42,395
+without self-intersection.
+
+1082
+00:55:42,395 --> 00:55:43,770
+Now, how do you
+think we're going
+
+1083
+00:55:43,770 --> 00:55:46,150
+to avoid self-intersection?
+
+1084
+00:55:46,150 --> 00:55:47,330
+Slender.
+
+1085
+00:55:47,330 --> 00:55:49,370
+We've got this
+great tool lined up
+
+1086
+00:55:49,370 --> 00:55:52,910
+for proving the continuously
+part of this theorem.
+
+1087
+00:55:52,910 --> 00:55:55,720
+The other part requires
+totally new ideas,
+
+1088
+00:55:55,720 --> 00:56:00,010
+but continuously is
+going to be easy,
+
+1089
+00:56:00,010 --> 00:56:01,450
+because the name
+of the game here
+
+1090
+00:56:01,450 --> 00:56:04,590
+is we're given polygons
+we want to make,
+
+1091
+00:56:04,590 --> 00:56:06,320
+but we can make
+them out of a chain
+
+1092
+00:56:06,320 --> 00:56:08,820
+of arbitrarily many pieces.
+
+1093
+00:56:08,820 --> 00:56:11,510
+So if we have some
+change that is working
+
+1094
+00:56:11,510 --> 00:56:13,750
+without the continuity,
+we can cut those pieces
+
+1095
+00:56:13,750 --> 00:56:15,590
+into smaller parts
+until they're slender.
+
+1096
+00:56:15,590 --> 00:56:17,810
+It turns out that's
+going to be easy.
+
+1097
+00:56:17,810 --> 00:56:21,620
+
+1098
+00:56:21,620 --> 00:56:22,730
+I'll come back to that.
+
+1099
+00:56:22,730 --> 00:56:34,910
+
+1100
+00:56:34,910 --> 00:56:38,050
+The hard part is to do this
+with ignoring continuous motion.
+
+1101
+00:56:38,050 --> 00:56:41,640
+
+1102
+00:56:41,640 --> 00:56:43,370
+So there's this crazy idea.
+
+1103
+00:56:43,370 --> 00:56:46,622
+It comes from Zack Abel who
+is attending the problem
+
+1104
+00:56:46,622 --> 00:56:48,580
+sessions this year, so
+a bunch of you know him.
+
+1105
+00:56:48,580 --> 00:56:58,530
+
+1106
+00:56:58,530 --> 00:57:00,420
+I guess number two
+is the crazy idea.
+
+1107
+00:57:00,420 --> 00:57:09,690
+
+1108
+00:57:09,690 --> 00:57:11,350
+Hinge dissections
+are actually named
+
+1109
+00:57:11,350 --> 00:57:14,246
+after something else
+called dissections.
+
+1110
+00:57:14,246 --> 00:57:16,620
+With dissections, you don't
+care about hinging the pieces
+
+1111
+00:57:16,620 --> 00:57:17,360
+together.
+
+1112
+00:57:17,360 --> 00:57:19,380
+I take one shape,
+I cut it into a lot
+
+1113
+00:57:19,380 --> 00:57:21,230
+of parts-- that's
+the dissecting.
+
+1114
+00:57:21,230 --> 00:57:24,710
+I rearrange the parts however
+I want-- rigid motions--
+
+1115
+00:57:24,710 --> 00:57:28,520
+and then fuse together the
+edges and I get another shape.
+
+1116
+00:57:28,520 --> 00:57:31,040
+So there's no hinging
+here, there's no folding.
+
+1117
+00:57:31,040 --> 00:57:33,750
+And it's well known
+since the 1800s
+
+1118
+00:57:33,750 --> 00:57:35,000
+that dissections always exist.
+
+1119
+00:57:35,000 --> 00:57:37,820
+
+1120
+00:57:37,820 --> 00:57:40,260
+I can give you a quick
+idea of how that's proved.
+
+1121
+00:57:40,260 --> 00:57:44,300
+You take some polygon and some
+other polygon of equal area.
+
+1122
+00:57:44,300 --> 00:57:48,550
+
+1123
+00:57:48,550 --> 00:57:50,887
+Just triangulate
+both the polygons
+
+1124
+00:57:50,887 --> 00:57:52,470
+because that always
+makes life easier.
+
+1125
+00:57:52,470 --> 00:57:57,270
+
+1126
+00:57:57,270 --> 00:58:00,980
+Still nothing's really
+matching between these two.
+
+1127
+00:58:00,980 --> 00:58:04,450
+If you take a
+triangle, if you just
+
+1128
+00:58:04,450 --> 00:58:10,400
+cut halfway up from the
+base and then cut here,
+
+1129
+00:58:10,400 --> 00:58:11,960
+you can even do this hinged.
+
+1130
+00:58:11,960 --> 00:58:17,400
+You flip this around,
+and flip this around,
+
+1131
+00:58:17,400 --> 00:58:21,460
+you get a rectangle of half
+the height of the triangle.
+
+1132
+00:58:21,460 --> 00:58:24,030
+This is how you compute the
+area of a triangle, right?
+
+1133
+00:58:24,030 --> 00:58:24,926
+Very easy.
+
+1134
+00:58:24,926 --> 00:58:26,550
+So do that for each
+of these triangles.
+
+1135
+00:58:26,550 --> 00:58:29,520
+Just cut them so
+they make rectangles.
+
+1136
+00:58:29,520 --> 00:58:32,490
+
+1137
+00:58:32,490 --> 00:58:34,590
+Do that here, do that here.
+
+1138
+00:58:34,590 --> 00:58:37,099
+What you'll be left with is a
+whole bunch of rectangles here
+
+1139
+00:58:37,099 --> 00:58:38,640
+and a whole bunch
+of rectangles here.
+
+1140
+00:58:38,640 --> 00:58:40,650
+Still kind of a mess.
+
+1141
+00:58:40,650 --> 00:58:42,120
+But there's this
+crazy dissection--
+
+1142
+00:58:42,120 --> 00:58:43,732
+which I won't be
+able to draw, and I
+
+1143
+00:58:43,732 --> 00:58:48,830
+didn't bring a picture of
+it-- that you can basically
+
+1144
+00:58:48,830 --> 00:58:51,590
+take a rectangle of
+some height and make
+
+1145
+00:58:51,590 --> 00:58:54,340
+it a rectangle of
+some other height.
+
+1146
+00:58:54,340 --> 00:58:58,764
+It's got to preserve area, so
+maybe look something like that.
+
+1147
+00:58:58,764 --> 00:59:00,430
+There is a dissection
+from here to here.
+
+1148
+00:59:00,430 --> 00:59:02,250
+It's not hinged,
+but you can do it.
+
+1149
+00:59:02,250 --> 00:59:07,760
+
+1150
+00:59:07,760 --> 00:59:12,780
+Believe me, this goes back
+three centuries, or something.
+
+1151
+00:59:12,780 --> 00:59:15,770
+Once you can do that, you can
+take your pile of rectangles
+
+1152
+00:59:15,770 --> 00:59:18,830
+here and just change them
+all to have the same height.
+
+1153
+00:59:18,830 --> 00:59:22,490
+It's got to be smaller, maybe,
+than your original height.
+
+1154
+00:59:22,490 --> 00:59:25,260
+But you just pick some
+epsilon and make a whole bunch
+
+1155
+00:59:25,260 --> 00:59:27,570
+of rectangles of epsilon height.
+
+1156
+00:59:27,570 --> 00:59:29,800
+If you turn this into a
+rectangle of height epsilon,
+
+1157
+00:59:29,800 --> 00:59:31,420
+this into a rectangle
+of height epsilon, each
+
+1158
+00:59:31,420 --> 00:59:33,050
+of these into a rectangle
+of height epsilon,
+
+1159
+00:59:33,050 --> 00:59:34,620
+and then string
+them together, you
+
+1160
+00:59:34,620 --> 00:59:39,000
+get a super long rectangle
+of height epsilon.
+
+1161
+00:59:39,000 --> 00:59:41,500
+If you do the same
+thing over here,
+
+1162
+00:59:41,500 --> 00:59:43,640
+you will also get a
+super long rectangle
+
+1163
+00:59:43,640 --> 00:59:45,760
+of height epsilon
+of the same length,
+
+1164
+00:59:45,760 --> 00:59:48,350
+because they have the
+same area overall.
+
+1165
+00:59:48,350 --> 00:59:50,530
+So I can dissect this
+into the rectangle,
+
+1166
+00:59:50,530 --> 00:59:53,890
+I can dissect this into the
+rectangle, now I just FedEx it.
+
+1167
+00:59:53,890 --> 00:59:56,846
+Except here FedExing means
+I take the cut pattern here,
+
+1168
+00:59:56,846 --> 00:59:58,220
+I overlay it with
+the cut pattern
+
+1169
+00:59:58,220 --> 01:00:00,690
+on the other which could
+square the number of pieces.
+
+1170
+01:00:00,690 --> 01:00:04,050
+Tons of pieces in this
+thing, but it works.
+
+1171
+01:00:04,050 --> 01:00:06,100
+And you can get from any
+polygon to any polygon
+
+1172
+01:00:06,100 --> 01:00:07,400
+using those gadgets.
+
+1173
+01:00:07,400 --> 01:00:10,400
+
+1174
+01:00:10,400 --> 01:00:13,850
+What I want to focus
+on is the hinging.
+
+1175
+01:00:13,850 --> 01:00:19,830
+Hinging is where the
+action is for us folders.
+
+1176
+01:00:19,830 --> 01:00:25,130
+And this was the open
+problem for a long time.
+
+1177
+01:00:25,130 --> 01:00:28,310
+The crazy idea is,
+hinge arbitrarily.
+
+1178
+01:00:28,310 --> 01:00:34,601
+
+1179
+01:00:34,601 --> 01:00:35,600
+Oh, that was two shapes.
+
+1180
+01:00:35,600 --> 01:00:37,730
+If you want k shapes,
+you just overlay
+
+1181
+01:00:37,730 --> 01:00:39,501
+k of those cut patterns.
+
+1182
+01:00:39,501 --> 01:00:41,000
+You'll get some
+collection of pieces
+
+1183
+01:00:41,000 --> 01:00:45,240
+that can be reassembled
+into your desired polygons,
+
+1184
+01:00:45,240 --> 01:00:47,530
+your target polygons here.
+
+1185
+01:00:47,530 --> 01:00:51,370
+Of course, not by hinging,
+and definitely not
+
+1186
+01:00:51,370 --> 01:00:52,770
+by hinging arbitrarily.
+
+1187
+01:00:52,770 --> 01:00:55,620
+Like you pick a piece, you hinge
+it to any other piece you want.
+
+1188
+01:00:55,620 --> 01:00:57,036
+I don't care which
+piece, you just
+
+1189
+01:00:57,036 --> 01:00:58,990
+keep hinging all
+these pieces together.
+
+1190
+01:00:58,990 --> 01:00:59,800
+It's insane.
+
+1191
+01:00:59,800 --> 01:01:01,550
+How could this possibly work?
+
+1192
+01:01:01,550 --> 01:01:04,430
+Well, by steps three and four.
+
+1193
+01:01:04,430 --> 01:01:07,430
+Only two steps to go.
+
+1194
+01:01:07,430 --> 01:01:08,700
+This is the crazy idea.
+
+1195
+01:01:08,700 --> 01:01:10,780
+For a long time we tried
+to mimic this proof
+
+1196
+01:01:10,780 --> 01:01:12,680
+but make all the
+steps hingeable.
+
+1197
+01:01:12,680 --> 01:01:15,710
+What's hard about that is,
+even if one step is hingeable,
+
+1198
+01:01:15,710 --> 01:01:17,780
+like the triangle
+to a rectangle,
+
+1199
+01:01:17,780 --> 01:01:19,790
+you can't really
+combine two hingeings.
+
+1200
+01:01:19,790 --> 01:01:20,941
+You can't FedEx.
+
+1201
+01:01:20,941 --> 01:01:22,690
+You can't do one thing
+and then the other.
+
+1202
+01:01:22,690 --> 01:01:25,250
+You don't have transitivity,
+because one hinging may not
+
+1203
+01:01:25,250 --> 01:01:28,180
+be compatible with
+the next hinging.
+
+1204
+01:01:28,180 --> 01:01:32,440
+So instead of trying to make
+it all work hinged all the way,
+
+1205
+01:01:32,440 --> 01:01:37,270
+we just let it not
+work and then fix it.
+
+1206
+01:01:37,270 --> 01:01:39,720
+Great idea.
+
+1207
+01:01:39,720 --> 01:01:41,780
+The way we're going to
+fix it is by subdividing
+
+1208
+01:01:41,780 --> 01:01:46,435
+the pieces, which will mean
+we have to add more hinges.
+
+1209
+01:01:46,435 --> 01:01:53,850
+
+1210
+01:01:53,850 --> 01:01:57,640
+And step three is, do
+this to make it work.
+
+1211
+01:01:57,640 --> 01:02:01,280
+
+1212
+01:02:01,280 --> 01:02:04,920
+So in some sense we know how
+we want to assemble the pieces.
+
+1213
+01:02:04,920 --> 01:02:06,490
+That's what the
+dissection tells us,
+
+1214
+01:02:06,490 --> 01:02:07,740
+that's what step one tells us.
+
+1215
+01:02:07,740 --> 01:02:09,570
+That if you arrange
+the pieces like this,
+
+1216
+01:02:09,570 --> 01:02:12,440
+it'll give you the
+polygon you want.
+
+1217
+01:02:12,440 --> 01:02:15,522
+Somehow I want to make each
+of those assemblies valid.
+
+1218
+01:02:15,522 --> 01:02:16,980
+I'm going to do
+that one at a time.
+
+1219
+01:02:16,980 --> 01:02:18,396
+I'm going to enable
+the first one,
+
+1220
+01:02:18,396 --> 01:02:20,294
+then enable the
+second one, and so on.
+
+1221
+01:02:20,294 --> 01:02:21,710
+I could actually
+get one for free.
+
+1222
+01:02:21,710 --> 01:02:23,140
+Instead of hinging
+arbitrarily, I
+
+1223
+01:02:23,140 --> 01:02:26,270
+could hinge to make
+the first one right.
+
+1224
+01:02:26,270 --> 01:02:29,020
+I just draw it as they are, and
+then just somehow add hinges
+
+1225
+01:02:29,020 --> 01:02:30,304
+to connect it all together.
+
+1226
+01:02:30,304 --> 01:02:31,720
+But I won't even
+worry about that.
+
+1227
+01:02:31,720 --> 01:02:33,145
+I'll just make it
+work for the first one
+
+1228
+01:02:33,145 --> 01:02:34,090
+and make it work
+for the second one.
+
+1229
+01:02:34,090 --> 01:02:35,506
+This is not going
+to be efficient,
+
+1230
+01:02:35,506 --> 01:02:37,640
+I should mention that.
+
+1231
+01:02:37,640 --> 01:02:41,030
+Not particularly efficient.
+
+1232
+01:02:41,030 --> 01:02:43,500
+The fourth step is,
+make it slender.
+
+1233
+01:02:43,500 --> 01:02:47,090
+And we're going to use the
+same trick of subdividing,
+
+1234
+01:02:47,090 --> 01:02:50,926
+and that will solve that.
+
+1235
+01:02:50,926 --> 01:02:52,630
+I haven't said much yet.
+
+1236
+01:02:52,630 --> 01:02:56,770
+
+1237
+01:02:56,770 --> 01:02:57,800
+Just now we have a plan.
+
+1238
+01:02:57,800 --> 01:03:02,200
+
+1239
+01:03:02,200 --> 01:03:06,990
+We need some gadgets, and
+here's where I get way
+
+1240
+01:03:06,990 --> 01:03:09,286
+beyond the pictures I
+could draw on the board.
+
+1241
+01:03:09,286 --> 01:03:11,660
+This I could draw on the board,
+but the picture to come I
+
+1242
+01:03:11,660 --> 01:03:13,000
+could not.
+
+1243
+01:03:13,000 --> 01:03:15,420
+So here's a general picture.
+
+1244
+01:03:15,420 --> 01:03:19,250
+Let's say we have some
+hinging in some arrangement.
+
+1245
+01:03:19,250 --> 01:03:21,480
+We really want it
+to be different,
+
+1246
+01:03:21,480 --> 01:03:23,779
+so we're committed to
+having a hinge here
+
+1247
+01:03:23,779 --> 01:03:25,320
+and committed to
+having a hinge here.
+
+1248
+01:03:25,320 --> 01:03:26,870
+We can never remove
+hinges, otherwise
+
+1249
+01:03:26,870 --> 01:03:28,940
+we'll break previous
+constructions.
+
+1250
+01:03:28,940 --> 01:03:32,400
+But what I can do is cut up
+the pieces and add more hinges.
+
+1251
+01:03:32,400 --> 01:03:34,100
+As long as it can
+still fold this way,
+
+1252
+01:03:34,100 --> 01:03:36,770
+I can still make everything
+I could make before.
+
+1253
+01:03:36,770 --> 01:03:39,054
+I just also want it to be
+able to fold into this.
+
+1254
+01:03:39,054 --> 01:03:40,470
+This does not look
+like a folding.
+
+1255
+01:03:40,470 --> 01:03:45,190
+Here I'm detaching
+the green thing from B
+
+1256
+01:03:45,190 --> 01:03:46,990
+and reattaching it to
+B prime on the top.
+
+1257
+01:03:46,990 --> 01:03:48,615
+So I just shifted
+the orange thing down
+
+1258
+01:03:48,615 --> 01:03:51,920
+and reattached the green
+at B prime instead of B,
+
+1259
+01:03:51,920 --> 01:03:56,780
+at the same vertex A.
+This is not everything
+
+1260
+01:03:56,780 --> 01:03:58,460
+I need, but this will
+be really useful.
+
+1261
+01:03:58,460 --> 01:04:01,100
+If I could do this, I'll
+be able to do everything
+
+1262
+01:04:01,100 --> 01:04:02,640
+in a couple steps.
+
+1263
+01:04:02,640 --> 01:04:04,345
+So let me show you
+how to do this.
+
+1264
+01:04:04,345 --> 01:04:04,845
+Watch.
+
+1265
+01:04:04,845 --> 01:04:08,290
+
+1266
+01:04:08,290 --> 01:04:11,750
+So this is dissection.
+
+1267
+01:04:11,750 --> 01:04:18,100
+We're going to cut out a lot
+of little isosceles triangles
+
+1268
+01:04:18,100 --> 01:04:20,250
+in pairs here.
+
+1269
+01:04:20,250 --> 01:04:23,060
+It's basically
+slicing up this angle.
+
+1270
+01:04:23,060 --> 01:04:26,640
+So here, two pairs are
+still in, and two pairs
+
+1271
+01:04:26,640 --> 01:04:28,880
+have just been folded out.
+
+1272
+01:04:28,880 --> 01:04:31,360
+And then we're
+also-- so remember we
+
+1273
+01:04:31,360 --> 01:04:34,310
+want it to go from
+here to up there.
+
+1274
+01:04:34,310 --> 01:04:37,950
+So we're also going to cut
+matching little triangles
+
+1275
+01:04:37,950 --> 01:04:42,900
+along the edges, along some
+path that goes from this vertex
+
+1276
+01:04:42,900 --> 01:04:43,990
+to that vertex.
+
+1277
+01:04:43,990 --> 01:04:47,180
+There's always some
+outside path I can follow,
+
+1278
+01:04:47,180 --> 01:04:49,010
+and so I'm going to cut.
+
+1279
+01:04:49,010 --> 01:04:55,890
+Now, the way we do it, we're
+making very shallow triangles
+
+1280
+01:04:55,890 --> 01:04:57,900
+here.
+
+1281
+01:04:57,900 --> 01:05:00,212
+I want to make them match
+the triangles that I'm
+
+1282
+01:05:00,212 --> 01:05:01,420
+going to be cutting out here.
+
+1283
+01:05:01,420 --> 01:05:03,240
+So it's got to be
+an even number.
+
+1284
+01:05:03,240 --> 01:05:05,950
+I just want to
+divide up that edge
+
+1285
+01:05:05,950 --> 01:05:08,650
+into an even number
+of tiny pieces.
+
+1286
+01:05:08,650 --> 01:05:11,140
+And then these two match the
+size of those two pieces,
+
+1287
+01:05:11,140 --> 01:05:13,170
+and these two match
+the size of those two,
+
+1288
+01:05:13,170 --> 01:05:16,940
+so that in particular I could
+not touch anything, leave it
+
+1289
+01:05:16,940 --> 01:05:22,200
+the way it used to be, and I
+have exactly the old picture.
+
+1290
+01:05:22,200 --> 01:05:25,130
+But alternatively-- and
+so it hinges all the ways
+
+1291
+01:05:25,130 --> 01:05:26,960
+it used to be able to hinge.
+
+1292
+01:05:26,960 --> 01:05:30,560
+But alternatively, I can
+take these pieces out
+
+1293
+01:05:30,560 --> 01:05:33,464
+and rearrange them like this.
+
+1294
+01:05:33,464 --> 01:05:34,880
+So the pieces are
+colored the same
+
+1295
+01:05:34,880 --> 01:05:37,270
+as they were before, except
+now instead of putting
+
+1296
+01:05:37,270 --> 01:05:39,450
+these green pieces
+in here, I put
+
+1297
+01:05:39,450 --> 01:05:44,120
+the green pieces along
+the boundary here.
+
+1298
+01:05:44,120 --> 01:05:46,320
+And we designed them
+to fit perfectly.
+
+1299
+01:05:46,320 --> 01:05:48,960
+So these two came from here.
+
+1300
+01:05:48,960 --> 01:05:51,910
+These two came from here,
+these two came from there,
+
+1301
+01:05:51,910 --> 01:05:54,320
+these two came from there.
+
+1302
+01:05:54,320 --> 01:05:57,250
+And if you think about
+it, then the green piece
+
+1303
+01:05:57,250 --> 01:06:01,240
+has reached around and
+can now touch there.
+
+1304
+01:06:01,240 --> 01:06:02,714
+We still have these
+orange pieces.
+
+1305
+01:06:02,714 --> 01:06:04,630
+They don't have their
+holes to go into before,
+
+1306
+01:06:04,630 --> 01:06:07,075
+but conveniently there
+are holes right there.
+
+1307
+01:06:07,075 --> 01:06:09,200
+And that orange chain is
+attached right at the top,
+
+1308
+01:06:09,200 --> 01:06:12,446
+right where it needs to be,
+so you just stuff them in.
+
+1309
+01:06:12,446 --> 01:06:13,820
+Never mind how
+you stuff them in.
+
+1310
+01:06:13,820 --> 01:06:16,260
+We don't have to worry
+about continuous motion yet,
+
+1311
+01:06:16,260 --> 01:06:18,970
+that will come later.
+
+1312
+01:06:18,970 --> 01:06:21,710
+And there you go.
+
+1313
+01:06:21,710 --> 01:06:24,910
+So we've moved this
+green piece up to there,
+
+1314
+01:06:24,910 --> 01:06:29,230
+and it had to attach it the
+same vertex of the green piece.
+
+1315
+01:06:29,230 --> 01:06:31,990
+Now, that's not
+quite what I want.
+
+1316
+01:06:31,990 --> 01:06:34,860
+What I'd really like to be
+able to do is take a piece
+
+1317
+01:06:34,860 --> 01:06:39,030
+and move it anywhere I want, and
+attach it at a different vertex
+
+1318
+01:06:39,030 --> 01:06:39,965
+than from before.
+
+1319
+01:06:39,965 --> 01:06:41,340
+Because in general,
+I've just got
+
+1320
+01:06:41,340 --> 01:06:42,780
+to put that green
+piece somewhere.
+
+1321
+01:06:42,780 --> 01:06:44,460
+And it's touching
+somebody, because I
+
+1322
+01:06:44,460 --> 01:06:46,890
+want to make a
+connected polygon.
+
+1323
+01:06:46,890 --> 01:06:50,290
+But it might not want to
+attach it at the same vertex.
+
+1324
+01:06:50,290 --> 01:06:52,330
+I might need to turn
+it around and attach it
+
+1325
+01:06:52,330 --> 01:06:53,250
+to some other vertex.
+
+1326
+01:06:53,250 --> 01:06:59,670
+It turns out, you just do this
+twice and you can fix that.
+
+1327
+01:06:59,670 --> 01:07:02,970
+So this is the
+elaboration on step three,
+
+1328
+01:07:02,970 --> 01:07:07,750
+and in general we're
+going to maintain
+
+1329
+01:07:07,750 --> 01:07:12,320
+at all times the pieces are
+connected together in a tree.
+
+1330
+01:07:12,320 --> 01:07:18,590
+Ultimately, I want an open
+chain of hinged polygons.
+
+1331
+01:07:18,590 --> 01:07:21,560
+But I'll worry about
+that at the end.
+
+1332
+01:07:21,560 --> 01:07:24,340
+For now, let's take
+it to be a tree.
+
+1333
+01:07:24,340 --> 01:07:26,590
+So far it looks like
+a chain, but easier
+
+1334
+01:07:26,590 --> 01:07:29,630
+to think about a tree.
+
+1335
+01:07:29,630 --> 01:07:33,470
+And then the key thing
+that we are able to do,
+
+1336
+01:07:33,470 --> 01:07:35,580
+what this picture
+almost proves--
+
+1337
+01:07:35,580 --> 01:07:38,700
+there's another issue
+which I'll get to--
+
+1338
+01:07:38,700 --> 01:07:51,720
+is the ability to effectively
+move a rooted subtree
+
+1339
+01:07:51,720 --> 01:07:59,105
+to attach at another
+hinge at any other vertex.
+
+1340
+01:07:59,105 --> 01:08:05,730
+
+1341
+01:08:05,730 --> 01:08:07,720
+What I've drawn here is
+we're moving one piece.
+
+1342
+01:08:07,720 --> 01:08:09,719
+But of course, if there
+are more pieces attached
+
+1343
+01:08:09,719 --> 01:08:11,490
+to the green thing,
+they could come along
+
+1344
+01:08:11,490 --> 01:08:13,532
+for the ride, no problem.
+
+1345
+01:08:13,532 --> 01:08:15,740
+So in computer science we
+call that a rooted subtree.
+
+1346
+01:08:15,740 --> 01:08:17,859
+So you have some
+collection of pieces,
+
+1347
+01:08:17,859 --> 01:08:21,609
+you have some tree of
+pieces hanging off.
+
+1348
+01:08:21,609 --> 01:08:23,688
+Basically if we deleted
+this vertex in a tree,
+
+1349
+01:08:23,688 --> 01:08:24,979
+it would detach into two parts.
+
+1350
+01:08:24,979 --> 01:08:28,420
+So here's part A,
+here's part B. And maybe
+
+1351
+01:08:28,420 --> 01:08:30,229
+I should actually
+give these names.
+
+1352
+01:08:30,229 --> 01:08:35,685
+So here, this is A, this
+is B. Here is little a,
+
+1353
+01:08:35,685 --> 01:08:38,120
+and here's little b.
+
+1354
+01:08:38,120 --> 01:08:41,196
+And what I can do is pick
+some other point, A prime.
+
+1355
+01:08:41,196 --> 01:08:42,529
+This is a whole bunch of pieces.
+
+1356
+01:08:42,529 --> 01:08:45,350
+I can pick any vertex
+of any piece in A,
+
+1357
+01:08:45,350 --> 01:08:47,550
+and I can move B over to there.
+
+1358
+01:08:47,550 --> 01:08:48,920
+I'll just redraw it here.
+
+1359
+01:08:48,920 --> 01:08:51,540
+
+1360
+01:08:51,540 --> 01:08:53,689
+Here's the old vertex, little a.
+
+1361
+01:08:53,689 --> 01:08:57,470
+Here's the new vertex,
+little a prime.
+
+1362
+01:08:57,470 --> 01:09:00,880
+And I can attach the
+triangle to be there,
+
+1363
+01:09:00,880 --> 01:09:05,470
+but it still had to attach
+at the same root, little b.
+
+1364
+01:09:05,470 --> 01:09:07,500
+What I'd really
+like to do, suppose
+
+1365
+01:09:07,500 --> 01:09:10,660
+I have some other
+vertex here, B prime,
+
+1366
+01:09:10,660 --> 01:09:14,025
+I'd really like to make B
+prime attach to A prime.
+
+1367
+01:09:14,025 --> 01:09:17,529
+
+1368
+01:09:17,529 --> 01:09:19,819
+This is step one.
+
+1369
+01:09:19,819 --> 01:09:24,270
+Step two is to do
+the same thing,
+
+1370
+01:09:24,270 --> 01:09:26,269
+but with the roles
+of A and B reversed.
+
+1371
+01:09:26,269 --> 01:09:27,310
+This is a rooted subtree.
+
+1372
+01:09:27,310 --> 01:09:29,674
+It's everything at
+this root and below.
+
+1373
+01:09:29,674 --> 01:09:31,090
+But this is also
+a rooted subtree.
+
+1374
+01:09:31,090 --> 01:09:33,910
+It's everything at
+this root and above.
+
+1375
+01:09:33,910 --> 01:09:35,622
+So I'm going to take
+this thing, think
+
+1376
+01:09:35,622 --> 01:09:37,080
+of it as a rooted
+subtree, and say,
+
+1377
+01:09:37,080 --> 01:09:39,040
+well I'd like to move
+this rooted subtree
+
+1378
+01:09:39,040 --> 01:09:41,630
+to attach at B prime
+instead of B. It's exactly
+
+1379
+01:09:41,630 --> 01:09:44,399
+the same operation,
+just reversing roles.
+
+1380
+01:09:44,399 --> 01:09:50,050
+Then I will have B
+with vertex little b,
+
+1381
+01:09:50,050 --> 01:09:52,310
+vertex little b prime.
+
+1382
+01:09:52,310 --> 01:09:58,490
+And I have my blob A,
+where this is A prime
+
+1383
+01:09:58,490 --> 01:10:10,050
+and this is little a,
+just rotating pieces.
+
+1384
+01:10:10,050 --> 01:10:15,780
+So look, I've now accomplished
+these two chunks of pieces
+
+1385
+01:10:15,780 --> 01:10:22,140
+I've been able to move
+subtree b instead of attaching
+
+1386
+01:10:22,140 --> 01:10:27,450
+at little a to little b, it now
+attaches at A prime B prime.
+
+1387
+01:10:27,450 --> 01:10:29,700
+This really means I can
+take any piece I want--
+
+1388
+01:10:29,700 --> 01:10:32,970
+you can think of B as just
+being a single piece, in fact,
+
+1389
+01:10:32,970 --> 01:10:34,976
+but I need this operation
+to work for subtrees.
+
+1390
+01:10:34,976 --> 01:10:36,600
+I take a single piece,
+I say, well it's
+
+1391
+01:10:36,600 --> 01:10:39,470
+currently attached at this
+vertex to this vertex,
+
+1392
+01:10:39,470 --> 01:10:41,560
+but I really want
+something else.
+
+1393
+01:10:41,560 --> 01:10:43,790
+I want some other
+vertex of B to attach
+
+1394
+01:10:43,790 --> 01:10:46,930
+to some other vertex
+of any other piece.
+
+1395
+01:10:46,930 --> 01:10:48,820
+And this will let me do that.
+
+1396
+01:10:48,820 --> 01:10:50,945
+I pick the vertex I
+want to attach to,
+
+1397
+01:10:50,945 --> 01:10:53,180
+I pick the vertex I
+want to attach from.
+
+1398
+01:10:53,180 --> 01:10:56,550
+I do two of these rooted
+subtree moves-- these things--
+
+1399
+01:10:56,550 --> 01:11:01,040
+and then I achieve moving
+this piece to anywhere I want.
+
+1400
+01:11:01,040 --> 01:11:01,989
+Question?
+
+1401
+01:11:01,989 --> 01:11:03,739
+AUDIENCE: So it seems
+like you're using up
+
+1402
+01:11:03,739 --> 01:11:06,470
+perimeter when you
+do each one of these.
+
+1403
+01:11:06,470 --> 01:11:07,095
+PROFESSOR: Yeah
+
+1404
+01:11:07,095 --> 01:11:08,636
+AUDIENCE: So what
+happens if you need
+
+1405
+01:11:08,636 --> 01:11:10,770
+to use the same [INAUDIBLE].
+
+1406
+01:11:10,770 --> 01:11:13,750
+PROFESSOR: So the question
+is, I'm using up perimeter.
+
+1407
+01:11:13,750 --> 01:11:15,000
+What if I had to use it again?
+
+1408
+01:11:15,000 --> 01:11:17,720
+Because I'm following
+one of these long paths,
+
+1409
+01:11:17,720 --> 01:11:21,297
+slicing up pieces like
+crazy, and now there
+
+1410
+01:11:21,297 --> 01:11:23,380
+may be some other piece
+that was attached to green
+
+1411
+01:11:23,380 --> 01:11:24,570
+and I want to move
+it somewhere else.
+
+1412
+01:11:24,570 --> 01:11:26,710
+It might have to follow
+along this path again.
+
+1413
+01:11:26,710 --> 01:11:29,657
+And indeed, I will.
+
+1414
+01:11:29,657 --> 01:11:31,490
+You can be smart about
+it, or you could say,
+
+1415
+01:11:31,490 --> 01:11:33,710
+well it'll kind of work.
+
+1416
+01:11:33,710 --> 01:11:38,320
+It's just now-- just
+think about this picture
+
+1417
+01:11:38,320 --> 01:11:40,510
+and you follow some path.
+
+1418
+01:11:40,510 --> 01:11:42,650
+There's now just more
+pieces you visit.
+
+1419
+01:11:42,650 --> 01:11:45,152
+So there's still an outer
+boundary to these pieces.
+
+1420
+01:11:45,152 --> 01:11:47,360
+I'm going to think of them
+still being in this state,
+
+1421
+01:11:47,360 --> 01:11:48,330
+not in this state.
+
+1422
+01:11:48,330 --> 01:11:50,154
+I can fix it to be
+whatever I want.
+
+1423
+01:11:50,154 --> 01:11:52,570
+So I'm going to end up cutting
+this into little triangles,
+
+1424
+01:11:52,570 --> 01:11:54,786
+and little triangles,
+little triangles.
+
+1425
+01:11:54,786 --> 01:11:56,660
+It's going to get really
+messy, really quick.
+
+1426
+01:11:56,660 --> 01:11:58,740
+Every time I do one
+of these operations,
+
+1427
+01:11:58,740 --> 01:12:02,440
+I potentially double the
+number of pieces or worse.
+
+1428
+01:12:02,440 --> 01:12:05,000
+So this going to be an
+exponential number of pieces
+
+1429
+01:12:05,000 --> 01:12:06,130
+if I'm not careful.
+
+1430
+01:12:06,130 --> 01:12:08,460
+You can be careful and
+do a little bit better,
+
+1431
+01:12:08,460 --> 01:12:12,370
+but you cannot hope for
+a bound in terms of n--
+
+1432
+01:12:12,370 --> 01:12:15,360
+like I would hope for n to
+some polynomial in n number
+
+1433
+01:12:15,360 --> 01:12:16,150
+of pieces.
+
+1434
+01:12:16,150 --> 01:12:18,850
+That's not possible,
+even for dissections.
+
+1435
+01:12:18,850 --> 01:12:22,860
+If I have a nice, fat
+rectangle and I just say,
+
+1436
+01:12:22,860 --> 01:12:28,560
+I want to make it into a
+super narrow, skinny rectangle
+
+1437
+01:12:28,560 --> 01:12:31,480
+of the same size,
+same area, that's
+
+1438
+01:12:31,480 --> 01:12:35,890
+going to require a lot of
+cuts even though n is 4.
+
+1439
+01:12:35,890 --> 01:12:37,710
+So I can't hope for
+a polynomial bound.
+
+1440
+01:12:37,710 --> 01:12:39,640
+You can actually get a
+pseudo polynomial bound
+
+1441
+01:12:39,640 --> 01:12:43,210
+in a certain sense, but I
+don't want to get into that,.
+
+1442
+01:12:43,210 --> 01:12:46,680
+Let's go for existence.
+
+1443
+01:12:46,680 --> 01:12:48,140
+So that was a good question.
+
+1444
+01:12:48,140 --> 01:12:50,350
+We're going to use this
+perimeter over and over.
+
+1445
+01:12:50,350 --> 01:12:52,808
+There's unfortunately another
+issue with this construction.
+
+1446
+01:12:52,808 --> 01:13:00,480
+This is not enough, because
+here I basically assumed
+
+1447
+01:13:00,480 --> 01:13:03,990
+that this green piece was
+one solid piece attached
+
+1448
+01:13:03,990 --> 01:13:07,320
+at one point to the orange.
+
+1449
+01:13:07,320 --> 01:13:09,290
+As soon as I do this
+operation, there's
+
+1450
+01:13:09,290 --> 01:13:15,450
+now a whole bunch of
+pieces here at this vertex.
+
+1451
+01:13:15,450 --> 01:13:18,130
+have to do a more general thing.
+
+1452
+01:13:18,130 --> 01:13:19,560
+This is where it get's messy.
+
+1453
+01:13:19,560 --> 01:13:20,030
+AUDIENCE: [WHISTLES]
+
+1454
+01:13:20,030 --> 01:13:20,821
+PROFESSOR: Exactly.
+
+1455
+01:13:20,821 --> 01:13:23,040
+
+1456
+01:13:23,040 --> 01:13:26,950
+In general, I might
+have several hinges
+
+1457
+01:13:26,950 --> 01:13:28,540
+connecting several
+pieces over here
+
+1458
+01:13:28,540 --> 01:13:29,890
+to several pieces over there.
+
+1459
+01:13:29,890 --> 01:13:32,265
+Pieces that don't have hinges
+I don't care so much about,
+
+1460
+01:13:32,265 --> 01:13:36,330
+but I have to worry about
+this in the general case.
+
+1461
+01:13:36,330 --> 01:13:38,390
+It is messier.
+
+1462
+01:13:38,390 --> 01:13:39,810
+So this is the input.
+
+1463
+01:13:39,810 --> 01:13:43,310
+Our goal is to attach these
+three pieces, because this
+
+1464
+01:13:43,310 --> 01:13:45,350
+is like a rooted subtree here.
+
+1465
+01:13:45,350 --> 01:13:47,690
+Initially, this may have
+just been one piece,
+
+1466
+01:13:47,690 --> 01:13:49,916
+but it's going to get
+cut up pretty quickly.
+
+1467
+01:13:49,916 --> 01:13:51,290
+So I've got to
+deal with the case
+
+1468
+01:13:51,290 --> 01:13:53,040
+that there are these three
+pieces simulating one.
+
+1469
+01:13:53,040 --> 01:13:54,623
+Maybe there's other
+stuff hanging off,
+
+1470
+01:13:54,623 --> 01:13:55,595
+that's not a big deal.
+
+1471
+01:13:55,595 --> 01:14:00,280
+And I need to move this entire
+bulk hinge somewhere else.
+
+1472
+01:14:00,280 --> 01:14:01,360
+Where are we going?
+
+1473
+01:14:01,360 --> 01:14:03,240
+It looks like the top.
+
+1474
+01:14:03,240 --> 01:14:04,920
+Yeah, little b prime.
+
+1475
+01:14:04,920 --> 01:14:09,060
+So here we're attached to B,
+we want to attach to b prime.
+
+1476
+01:14:09,060 --> 01:14:12,190
+It can be done.
+
+1477
+01:14:12,190 --> 01:14:15,320
+It's a little trickier, because
+more things have to match up.
+
+1478
+01:14:15,320 --> 01:14:17,270
+So again, we're
+going to slice out
+
+1479
+01:14:17,270 --> 01:14:20,410
+from the corner of green,
+the corner of purple,
+
+1480
+01:14:20,410 --> 01:14:22,040
+the corner of yellow.
+
+1481
+01:14:22,040 --> 01:14:25,150
+But our pieces are going
+to look a little different.
+
+1482
+01:14:25,150 --> 01:14:27,640
+So for green, the
+first piece will still
+
+1483
+01:14:27,640 --> 01:14:28,820
+make just skinny triangles.
+
+1484
+01:14:28,820 --> 01:14:31,410
+You can barely see them,
+but they are triangles.
+
+1485
+01:14:31,410 --> 01:14:35,080
+And they're again trying to
+match the edge lengths over
+
+1486
+01:14:35,080 --> 01:14:35,880
+here.
+
+1487
+01:14:35,880 --> 01:14:39,386
+So we're walking along the
+path, same path as before.
+
+1488
+01:14:39,386 --> 01:14:41,260
+So we just cut up a
+bunch of skinny triangles
+
+1489
+01:14:41,260 --> 01:14:42,790
+to make that work.
+
+1490
+01:14:42,790 --> 01:14:46,700
+But purple one, it's
+not going to work
+
+1491
+01:14:46,700 --> 01:14:48,200
+if we just did that
+for all of them.
+
+1492
+01:14:48,200 --> 01:14:50,259
+There just aren't enough
+slots to put things,
+
+1493
+01:14:50,259 --> 01:14:52,550
+because really you want to
+traverse that boundary three
+
+1494
+01:14:52,550 --> 01:14:53,647
+times.
+
+1495
+01:14:53,647 --> 01:14:55,480
+And here you can't just
+do it one at a time.
+
+1496
+01:14:55,480 --> 01:14:59,330
+I won't work, you'll
+get an infinite loop.
+
+1497
+01:14:59,330 --> 01:15:02,070
+So what we do is, each of
+the little triangles that
+
+1498
+01:15:02,070 --> 01:15:05,020
+would have come out of here we
+actually split into two parts.
+
+1499
+01:15:05,020 --> 01:15:07,020
+It may be easiest to
+see on the yellow.
+
+1500
+01:15:07,020 --> 01:15:08,820
+There's a triangle,
+and then there's
+
+1501
+01:15:08,820 --> 01:15:12,800
+this non-convex
+quadrilateral, a little kite.
+
+1502
+01:15:12,800 --> 01:15:14,990
+It just fits on top
+of the triangle.
+
+1503
+01:15:14,990 --> 01:15:17,890
+If you glue them together,
+you get a regular old triangle
+
+1504
+01:15:17,890 --> 01:15:20,870
+and it fits in here
+just like before.
+
+1505
+01:15:20,870 --> 01:15:23,450
+But I take that triangle,
+I cut it into two parts.
+
+1506
+01:15:23,450 --> 01:15:26,600
+I do that for both
+purple and yellow.
+
+1507
+01:15:26,600 --> 01:15:28,740
+But notice, this
+yellow triangle is
+
+1508
+01:15:28,740 --> 01:15:33,730
+bigger than this purple
+triangle a little bit.
+
+1509
+01:15:33,730 --> 01:15:35,390
+How much bigger?
+
+1510
+01:15:35,390 --> 01:15:39,030
+Well, it's designed so
+that this yellow triangle
+
+1511
+01:15:39,030 --> 01:15:42,864
+is the same size as these
+two pieces put together.
+
+1512
+01:15:42,864 --> 01:15:44,280
+And this triangle
+is the same size
+
+1513
+01:15:44,280 --> 01:15:47,190
+as this piece put
+together with itself.
+
+1514
+01:15:47,190 --> 01:15:49,580
+In general, the triangle
+at the next level
+
+1515
+01:15:49,580 --> 01:15:52,350
+up will be the same
+size as the two
+
+1516
+01:15:52,350 --> 01:15:57,590
+pieces from the previous level,
+except here there's only one.
+
+1517
+01:15:57,590 --> 01:15:58,600
+Why?
+
+1518
+01:15:58,600 --> 01:16:02,850
+Because we want to do
+this so that they all fit.
+
+1519
+01:16:02,850 --> 01:16:06,960
+If you take just the quad parts
+of everybody and the triangle
+
+1520
+01:16:06,960 --> 01:16:09,810
+of the last guy, then that
+triangle will fit into the quad
+
+1521
+01:16:09,810 --> 01:16:12,393
+of the next one , which will fit
+into the quad of the next one
+
+1522
+01:16:12,393 --> 01:16:13,520
+perfectly.
+
+1523
+01:16:13,520 --> 01:16:16,740
+Because as far as this
+yellow quad is concerned,
+
+1524
+01:16:16,740 --> 01:16:21,700
+that purple plus
+green is the same size
+
+1525
+01:16:21,700 --> 01:16:24,325
+as purple plus purple, which
+was a regular triangle.
+
+1526
+01:16:24,325 --> 01:16:26,200
+This triangle is supposed
+to be the same size
+
+1527
+01:16:26,200 --> 01:16:27,630
+as that yellow triangle.
+
+1528
+01:16:27,630 --> 01:16:30,150
+So from the viewpoint
+of this yellow quad,
+
+1529
+01:16:30,150 --> 01:16:32,727
+it's just wants
+a mate like this,
+
+1530
+01:16:32,727 --> 01:16:34,560
+which is the same as a
+mate like this, which
+
+1531
+01:16:34,560 --> 01:16:37,260
+is the same as a mate like this.
+
+1532
+01:16:37,260 --> 01:16:40,540
+And so those stack in, and
+they perfectly fit along.
+
+1533
+01:16:40,540 --> 01:16:44,550
+So the triangles we end up
+cutting out of the perimeter
+
+1534
+01:16:44,550 --> 01:16:48,130
+here are the biggest size.
+
+1535
+01:16:48,130 --> 01:16:49,960
+And then you can squeeze
+them all together
+
+1536
+01:16:49,960 --> 01:16:57,700
+like this, and boom, you get
+your alternate dissection.
+
+1537
+01:16:57,700 --> 01:16:59,680
+Then the other fun part,
+what you're left with
+
+1538
+01:16:59,680 --> 01:17:04,000
+is just the triangles from each
+of the colors except the green.
+
+1539
+01:17:04,000 --> 01:17:12,800
+And conveniently, it just works.
+
+1540
+01:17:12,800 --> 01:17:14,250
+There's a little
+more work to do,
+
+1541
+01:17:14,250 --> 01:17:16,166
+because you see there's
+also these red pieces.
+
+1542
+01:17:16,166 --> 01:17:17,600
+Where did those come from?
+
+1543
+01:17:17,600 --> 01:17:19,170
+Just more stuff.
+
+1544
+01:17:19,170 --> 01:17:21,955
+I see where they came
+from, up there at C3.
+
+1545
+01:17:21,955 --> 01:17:23,550
+A little corner got cut out.
+
+1546
+01:17:23,550 --> 01:17:26,850
+Oh, it's such a mess.
+
+1547
+01:17:26,850 --> 01:17:29,954
+But the idea is, well,
+the purple triangles
+
+1548
+01:17:29,954 --> 01:17:31,620
+are the same size as
+the green triangle.
+
+1549
+01:17:31,620 --> 01:17:36,210
+So they can fit in the green
+piece and fill in these holes.
+
+1550
+01:17:36,210 --> 01:17:38,620
+And then well, the
+yellow triangles
+
+1551
+01:17:38,620 --> 01:17:42,630
+are the same size as the
+purple triangles when
+
+1552
+01:17:42,630 --> 01:17:45,730
+you add them together-- that's
+what we cut out of here--
+
+1553
+01:17:45,730 --> 01:17:49,180
+and so the yellow just fits in
+there and fills in this space.
+
+1554
+01:17:49,180 --> 01:17:51,730
+And so we just shifted by one.
+
+1555
+01:17:51,730 --> 01:17:54,990
+The trouble is, the yellow guys
+we don't quite have enough.
+
+1556
+01:17:54,990 --> 01:17:58,310
+And for that we cut out
+some corner up there just
+
+1557
+01:17:58,310 --> 01:18:00,450
+to fill them back in.
+
+1558
+01:18:00,450 --> 01:18:02,670
+So you could just stick
+the red thing back
+
+1559
+01:18:02,670 --> 01:18:04,270
+into the red vertex,
+nothing changes.
+
+1560
+01:18:04,270 --> 01:18:06,940
+Or you can take the
+red guys, stick them
+
+1561
+01:18:06,940 --> 01:18:09,900
+into the yellow
+triangle, and in the end
+
+1562
+01:18:09,900 --> 01:18:13,100
+we successfully move
+a rooted subtree
+
+1563
+01:18:13,100 --> 01:18:16,330
+from anywhere to anywhere.
+
+1564
+01:18:16,330 --> 01:18:19,780
+Lots of things to check
+here, but if you stare at it
+
+1565
+01:18:19,780 --> 01:18:22,530
+enough it works.
+
+1566
+01:18:22,530 --> 01:18:24,700
+And it works for
+any value of three.
+
+1567
+01:18:24,700 --> 01:18:27,990
+Here we were talking about
+three pieces, three hinges,
+
+1568
+01:18:27,990 --> 01:18:29,795
+but you can do it for any count.
+
+1569
+01:18:29,795 --> 01:18:32,400
+
+1570
+01:18:32,400 --> 01:18:34,140
+That's the gadget.
+
+1571
+01:18:34,140 --> 01:18:40,450
+And good, we've just enough time
+to talk about slenderifying.
+
+1572
+01:18:40,450 --> 01:18:45,210
+So if we do this over
+and over, move each piece
+
+1573
+01:18:45,210 --> 01:18:47,769
+to wherever you want, move all
+the pieces to where you want
+
+1574
+01:18:47,769 --> 01:18:50,060
+for target shape, then do it
+for the next target shape,
+
+1575
+01:18:50,060 --> 01:18:51,601
+then do it for the
+next, you'll still
+
+1576
+01:18:51,601 --> 01:18:53,220
+be able to go to
+all the old foldings
+
+1577
+01:18:53,220 --> 01:18:55,220
+but you can also
+go to the new ones.
+
+1578
+01:18:55,220 --> 01:18:57,770
+The last step is
+how do we subdivide
+
+1579
+01:18:57,770 --> 01:19:00,840
+to make our thing slender?
+
+1580
+01:19:00,840 --> 01:19:02,762
+And so we have
+some tree hinging.
+
+1581
+01:19:02,762 --> 01:19:03,470
+It's not a chain.
+
+1582
+01:19:03,470 --> 01:19:06,009
+We want to also make it a
+chain and make it slender,
+
+1583
+01:19:06,009 --> 01:19:08,300
+because slender only works
+if it's a chain, not a tree.
+
+1584
+01:19:08,300 --> 01:19:09,800
+So we have some
+tree pieces here.
+
+1585
+01:19:09,800 --> 01:19:12,372
+I've drawn two pieces to
+make it a little simpler,
+
+1586
+01:19:12,372 --> 01:19:13,830
+but this really
+works for anything.
+
+1587
+01:19:13,830 --> 01:19:14,730
+It's super simple.
+
+1588
+01:19:14,730 --> 01:19:17,630
+Triangulate the pieces,
+just because triangles
+
+1589
+01:19:17,630 --> 01:19:19,200
+are easier to think about.
+
+1590
+01:19:19,200 --> 01:19:24,470
+Then for each triangle,
+cut to its centroid,
+
+1591
+01:19:24,470 --> 01:19:27,080
+where you can fit
+the largest disk.
+
+1592
+01:19:27,080 --> 01:19:30,720
+If you do that, each of these
+three angles will be obtuse.
+
+1593
+01:19:30,720 --> 01:19:32,880
+So as long as that's
+the apex of the triangle
+
+1594
+01:19:32,880 --> 01:19:36,650
+and this is the base--
+those are the base edges--
+
+1595
+01:19:36,650 --> 01:19:39,600
+it will be slender
+because it's obtuse.
+
+1596
+01:19:39,600 --> 01:19:42,070
+Or if might be 90
+degrees, maybe.
+
+1597
+01:19:42,070 --> 01:19:44,700
+Maybe not even that.
+
+1598
+01:19:44,700 --> 01:19:46,530
+I think it's always
+strictly obtuse.
+
+1599
+01:19:46,530 --> 01:19:48,990
+So you do that for
+each of the triangles,
+
+1600
+01:19:48,990 --> 01:19:52,387
+and then you just walk
+around the outside boundary
+
+1601
+01:19:52,387 --> 01:19:54,720
+and say, well, just hinge
+things together in that order.
+
+1602
+01:19:54,720 --> 01:19:56,960
+So I'm going to have this
+triangle hinge to this one,
+
+1603
+01:19:56,960 --> 01:19:59,070
+hinge up there around.
+
+1604
+01:19:59,070 --> 01:20:01,120
+So I just walked around
+the outside boundary.
+
+1605
+01:20:01,120 --> 01:20:03,870
+Now, the key thing to
+check is that every hinge
+
+1606
+01:20:03,870 --> 01:20:06,180
+that was here still exists here.
+
+1607
+01:20:06,180 --> 01:20:08,600
+It's still possible
+to fold there.
+
+1608
+01:20:08,600 --> 01:20:10,660
+And we just got more
+hinges, no big deal.
+
+1609
+01:20:10,660 --> 01:20:13,255
+Just like before,
+the constructions
+
+1610
+01:20:13,255 --> 01:20:15,380
+we've been doing, we've
+been cutting up the pieces,
+
+1611
+01:20:15,380 --> 01:20:18,066
+adding hinges, but preserving
+all the old hinges.
+
+1612
+01:20:18,066 --> 01:20:19,690
+Therefore, any motion
+that was possible
+
+1613
+01:20:19,690 --> 01:20:21,640
+before is still possible.
+
+1614
+01:20:21,640 --> 01:20:27,190
+And furthermore, this is now a
+slenderly adorned open chain,
+
+1615
+01:20:27,190 --> 01:20:29,270
+we know its configuration
+space is connected,
+
+1616
+01:20:29,270 --> 01:20:30,940
+so all those things
+that we knew could
+
+1617
+01:20:30,940 --> 01:20:33,570
+exist-- it could be like this
+or it could instantaneously
+
+1618
+01:20:33,570 --> 01:20:35,370
+move to here-- now we
+know there's actually
+
+1619
+01:20:35,370 --> 01:20:38,330
+continuous motion from
+everywhere everywhere.
+
+1620
+01:20:38,330 --> 01:20:39,930
+And this kind of
+a fun culmination
+
+1621
+01:20:39,930 --> 01:20:42,310
+of all this linkage stuff,
+with Carpenter's Rule,
+
+1622
+01:20:42,310 --> 01:20:45,070
+with slender adornments,
+all these powerful tools,
+
+1623
+01:20:45,070 --> 01:20:47,990
+we build up universal hinge
+dissections, basically
+
+1624
+01:20:47,990 --> 01:20:51,300
+transformers that can
+fold from in this case 2D
+
+1625
+01:20:51,300 --> 01:20:53,040
+shape to any other
+collection of 2D
+
+1626
+01:20:53,040 --> 01:20:55,200
+shapes you want of equal area.
+
+1627
+01:20:55,200 --> 01:20:59,400
+And again, you can generalize it
+to 3D, although this will work.
+
+1628
+01:20:59,400 --> 01:21:03,170
+Any section you have in
+3D will be hingeable,
+
+1629
+01:21:03,170 --> 01:21:05,741
+but dissections get
+a little bit harder.
+
+1630
+01:21:05,741 --> 01:21:07,740
+You need not just that
+the volumes are the same,
+
+1631
+01:21:07,740 --> 01:21:09,690
+but something else
+called the [INAUDIBLE]
+
+1632
+01:21:09,690 --> 01:21:13,550
+is the same, which I
+don't want to get into.
+
+1633
+01:21:13,550 --> 01:21:14,800
+That's hinges and dissections.
+
+1634
+01:21:14,800 --> 01:21:17,086
+Any questions?
+
+1635
+01:21:17,086 --> 01:21:21,580
+All right, turn in
+your problem set.
+

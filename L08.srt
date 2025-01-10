@@ -1,0 +1,7479 @@
+1
+0-1:59:59,500 --> 00:00:03,410
+
+2
+00:00:03,410 --> 00:00:05,270
+PROFESSOR: All right!
+
+3
+00:00:05,270 --> 00:00:07,670
+Welcome back to 6849.
+
+4
+00:00:07,670 --> 00:00:11,400
+Today, we're going to
+move into linkage folding.
+
+5
+00:00:11,400 --> 00:00:17,390
+And before we get there, I
+want to talk about an issue
+
+6
+00:00:17,390 --> 00:00:20,150
+that sort of motivates
+linkage folding.
+
+7
+00:00:20,150 --> 00:00:25,090
+And it's about the
+definition of folding.
+
+8
+00:00:25,090 --> 00:00:27,015
+So we've talked
+about origami a lot,
+
+9
+00:00:27,015 --> 00:00:28,640
+and we've talked
+about crease patterns,
+
+10
+00:00:28,640 --> 00:00:30,598
+and we've talked about
+the folded state-- which
+
+11
+00:00:30,598 --> 00:00:34,630
+is the finished product
+after you fold something.
+
+12
+00:00:34,630 --> 00:00:40,770
+
+13
+00:00:40,770 --> 00:00:42,780
+But there's another thing
+we might care about.
+
+14
+00:00:42,780 --> 00:00:53,727
+
+15
+00:00:53,727 --> 00:00:55,560
+So whenever we wanted
+to prove that we could
+
+16
+00:00:55,560 --> 00:00:57,650
+fold a piece of paper
+in a particular way,
+
+17
+00:00:57,650 --> 00:00:58,860
+we described a folded state.
+
+18
+00:00:58,860 --> 00:01:01,640
+We said what does the
+paper look like in 3D,
+
+19
+00:01:01,640 --> 00:01:05,010
+how are the layers stacked,
+all these kinds of issues.
+
+20
+00:01:05,010 --> 00:01:07,130
+But when you fold a
+real piece of paper,
+
+21
+00:01:07,130 --> 00:01:09,140
+you start from a
+flat thing, and you
+
+22
+00:01:09,140 --> 00:01:12,770
+want to continuously deform
+it into some 3D shape.
+
+23
+00:01:12,770 --> 00:01:14,980
+And that is another
+kind of folding,
+
+24
+00:01:14,980 --> 00:01:18,240
+which we call a folding
+motion, which we haven't really
+
+25
+00:01:18,240 --> 00:01:21,540
+worried about up until now.
+
+26
+00:01:21,540 --> 00:01:24,560
+And it's going to be the central
+concept in linkage folding.
+
+27
+00:01:24,560 --> 00:01:27,100
+
+28
+00:01:27,100 --> 00:01:30,970
+The way to define
+a folding motion
+
+29
+00:01:30,970 --> 00:01:33,240
+is just a continuum
+of folded states.
+
+30
+00:01:33,240 --> 00:01:38,260
+
+31
+00:01:38,260 --> 00:01:39,680
+It's a movie.
+
+32
+00:01:39,680 --> 00:01:42,580
+You start somewhere, usually
+we start from the flat folded
+
+33
+00:01:42,580 --> 00:01:46,535
+state, and then at all times
+we specify a new folded state,
+
+34
+00:01:46,535 --> 00:01:48,420
+a new way to fold
+a piece of paper.
+
+35
+00:01:48,420 --> 00:01:50,630
+As long as that's a
+continuous process,
+
+36
+00:01:50,630 --> 00:01:54,100
+then that is a folding motion.
+
+37
+00:01:54,100 --> 00:01:55,785
+So we've done all
+this work proving
+
+38
+00:01:55,785 --> 00:01:57,510
+that folded states exist.
+
+39
+00:01:57,510 --> 00:01:59,580
+The question is, what if
+I want a folding motion?
+
+40
+00:01:59,580 --> 00:02:01,420
+Because really, in
+order to fold the paper,
+
+41
+00:02:01,420 --> 00:02:03,270
+I've got to get there.
+
+42
+00:02:03,270 --> 00:02:04,830
+And that's we're
+going to worry about
+
+43
+00:02:04,830 --> 00:02:05,913
+for the first few minutes.
+
+44
+00:02:05,913 --> 00:02:17,790
+
+45
+00:02:17,790 --> 00:02:20,290
+The good news is the reason we
+haven't worried about this up
+
+46
+00:02:20,290 --> 00:02:22,120
+'till now is there's an
+equivalence between the two
+
+47
+00:02:22,120 --> 00:02:23,060
+for paper folding.
+
+48
+00:02:23,060 --> 00:02:25,870
+
+49
+00:02:25,870 --> 00:02:31,790
+So if you have-- it's called
+a simple polygonal piece
+
+50
+00:02:31,790 --> 00:02:44,180
+of paper, and that
+just means your piece
+
+51
+00:02:44,180 --> 00:02:48,625
+of paper some polygon,
+but it has no holes in it.
+
+52
+00:02:48,625 --> 00:02:51,190
+It's sort of solid,
+there's nothing like this.
+
+53
+00:02:51,190 --> 00:02:54,630
+
+54
+00:02:54,630 --> 00:03:11,570
+Then, it has a folding motion
+into any desired folded state.
+
+55
+00:03:11,570 --> 00:03:18,890
+
+56
+00:03:18,890 --> 00:03:20,790
+So you say, I don't know.
+
+57
+00:03:20,790 --> 00:03:23,290
+I have this folded state
+where all the lines of a swan
+
+58
+00:03:23,290 --> 00:03:25,670
+are aligned in that
+second fold and cut.
+
+59
+00:03:25,670 --> 00:03:31,080
+How do I actually fold
+into that folded state?
+
+60
+00:03:31,080 --> 00:03:31,750
+It's possible.
+
+61
+00:03:31,750 --> 00:03:33,130
+Any folded state
+we describe, you
+
+62
+00:03:33,130 --> 00:03:35,910
+can reach by a folding motion.
+
+63
+00:03:35,910 --> 00:03:38,850
+So we're going to prove this.
+
+64
+00:03:38,850 --> 00:03:42,060
+When you look at it the right
+way it's almost trivial,
+
+65
+00:03:42,060 --> 00:03:44,200
+but maybe a little confusing.
+
+66
+00:03:44,200 --> 00:03:50,914
+So I'll describe the proof to
+see what you think about it.
+
+67
+00:03:50,914 --> 00:03:53,330
+I'm going to start with the
+case of one dimensional paper,
+
+68
+00:03:53,330 --> 00:03:56,240
+because it's always
+easier to think about.
+
+69
+00:03:56,240 --> 00:03:57,380
+The idea is the following.
+
+70
+00:03:57,380 --> 00:04:04,530
+You have a piece of paper, and
+you have some folded state.
+
+71
+00:04:04,530 --> 00:04:06,390
+I'm going to draw
+a little letter
+
+72
+00:04:06,390 --> 00:04:08,270
+m, what you want
+to fold it into.
+
+73
+00:04:08,270 --> 00:04:10,040
+They should have
+the same length.
+
+74
+00:04:10,040 --> 00:04:13,500
+We're given this map, we're
+told how the piece of paper
+
+75
+00:04:13,500 --> 00:04:16,089
+folds-- in this case
+into two dimensions--
+
+76
+00:04:16,089 --> 00:04:17,630
+and if there were
+any touching layers
+
+77
+00:04:17,630 --> 00:04:20,829
+here it would be described
+which is on the top of which.
+
+78
+00:04:20,829 --> 00:04:22,880
+We're told how to
+instantaneously go
+
+79
+00:04:22,880 --> 00:04:23,850
+from here to here.
+
+80
+00:04:23,850 --> 00:04:26,400
+What we're not told is
+the steps in between,
+
+81
+00:04:26,400 --> 00:04:29,710
+and that's what we're
+going to fill in over here.
+
+82
+00:04:29,710 --> 00:04:33,370
+So the idea is rolling creases.
+
+83
+00:04:33,370 --> 00:04:37,740
+I have my piece of
+paper here, and I'm just
+
+84
+00:04:37,740 --> 00:04:40,610
+going to curl in the
+end a little bit.
+
+85
+00:04:40,610 --> 00:04:45,110
+So I'm going to fold
+this thing into--
+
+86
+00:04:45,110 --> 00:04:47,520
+or I just roll up the end,
+I can do this continuously.
+
+87
+00:04:47,520 --> 00:04:50,240
+It's sort of like the
+real piece of paper.
+
+88
+00:04:50,240 --> 00:04:55,350
+If you start folding
+and then pull,
+
+89
+00:04:55,350 --> 00:04:58,230
+I continuously roll that crease.
+
+90
+00:04:58,230 --> 00:05:02,060
+At all times, in fact, this
+is supposed to stay flat.
+
+91
+00:05:02,060 --> 00:05:04,040
+It's really hard to
+get started in reality,
+
+92
+00:05:04,040 --> 00:05:05,790
+but in theory, you
+can get started
+
+93
+00:05:05,790 --> 00:05:07,950
+with an infinitesimal
+part of the crease.
+
+94
+00:05:07,950 --> 00:05:08,930
+You just roll it in.
+
+95
+00:05:08,930 --> 00:05:11,130
+So you make the piece
+of paper smaller.
+
+96
+00:05:11,130 --> 00:05:15,040
+It will be-- geometrically
+these are on top of each other,
+
+97
+00:05:15,040 --> 00:05:18,710
+so it'll be tiny.
+
+98
+00:05:18,710 --> 00:05:22,830
+So it'll actually be a subset
+of the original piece of paper.
+
+99
+00:05:22,830 --> 00:05:25,260
+You keep doing this,
+you end up, let's say,
+
+100
+00:05:25,260 --> 00:05:28,564
+with a rolled up piece
+of paper like that.
+
+101
+00:05:28,564 --> 00:05:29,480
+A little hard to draw.
+
+102
+00:05:29,480 --> 00:05:32,080
+Really, it lies along
+the line segment,
+
+103
+00:05:32,080 --> 00:05:35,100
+and you're just going around
+and around in a line segment.
+
+104
+00:05:35,100 --> 00:05:37,710
+But it's like a cinnamon bun.
+
+105
+00:05:37,710 --> 00:05:41,100
+
+106
+00:05:41,100 --> 00:05:42,990
+Why do we bother?
+
+107
+00:05:42,990 --> 00:05:49,894
+Well, if we look at a tiny
+piece of this folding--
+
+108
+00:05:49,894 --> 00:05:52,060
+so in fact I should have
+done this at the beginning,
+
+109
+00:05:52,060 --> 00:05:57,190
+let me do that now--
+away from the creases.
+
+110
+00:05:57,190 --> 00:06:00,630
+If I look at a tiny portion,
+it's nice and smooth.
+
+111
+00:06:00,630 --> 00:06:02,580
+I'm not at a crease.
+
+112
+00:06:02,580 --> 00:06:05,600
+I'm going to highlight which
+portion of the paper here ends
+
+113
+00:06:05,600 --> 00:06:08,700
+up-- this piece of paper's
+roughly in quarters.
+
+114
+00:06:08,700 --> 00:06:13,120
+This is like the third quarter--
+that ends up over here.
+
+115
+00:06:13,120 --> 00:06:15,150
+What I'd really like to
+do is roll up everything
+
+116
+00:06:15,150 --> 00:06:18,870
+to lie on top of that,
+so I do some rolling.
+
+117
+00:06:18,870 --> 00:06:27,250
+Maybe this is the-- and
+I'm going to roll this up.
+
+118
+00:06:27,250 --> 00:06:31,630
+So I end up with
+the thick segment,
+
+119
+00:06:31,630 --> 00:06:35,679
+and then some stuff
+rolled on top of it.
+
+120
+00:06:35,679 --> 00:06:37,970
+I don't really care too much
+what it looks like, I just
+
+121
+00:06:37,970 --> 00:06:39,886
+need that there's a
+continuous rolling process
+
+122
+00:06:39,886 --> 00:06:43,280
+to get everything to lie
+on top of that segment.
+
+123
+00:06:43,280 --> 00:06:47,430
+Now what I do going down--
+this is all in one dimension.
+
+124
+00:06:47,430 --> 00:06:49,330
+All of this lies
+in one dimension.
+
+125
+00:06:49,330 --> 00:06:52,840
+Now we're going to go
+into the second dimension.
+
+126
+00:06:52,840 --> 00:06:55,290
+Exciting.
+
+127
+00:06:55,290 --> 00:07:00,810
+So we imagine that there's this
+M, the folded shape that we
+
+128
+00:07:00,810 --> 00:07:02,150
+want to build.
+
+129
+00:07:02,150 --> 00:07:05,510
+And we're going to place it
+where the thick part belongs,
+
+130
+00:07:05,510 --> 00:07:07,570
+where that highlighted
+part belongs.
+
+131
+00:07:07,570 --> 00:07:11,180
+So it belongs
+here, and of course
+
+132
+00:07:11,180 --> 00:07:12,820
+everything comes
+along for the ride.
+
+133
+00:07:12,820 --> 00:07:17,400
+So you've got a little roll
+here and a bigger roll here.
+
+134
+00:07:17,400 --> 00:07:19,449
+Something like that.
+
+135
+00:07:19,449 --> 00:07:21,990
+Just taking that-- or I guess
+they were all on the same side,
+
+136
+00:07:21,990 --> 00:07:24,320
+I'm not drawing
+very consistently.
+
+137
+00:07:24,320 --> 00:07:28,760
+OK, but it's all lying along
+this segment of the M. Now
+
+138
+00:07:28,760 --> 00:07:31,020
+I just need to unroll.
+
+139
+00:07:31,020 --> 00:07:33,370
+This is where for
+the mathematicians
+
+140
+00:07:33,370 --> 00:07:36,600
+this will become obvious
+in a little while.
+
+141
+00:07:36,600 --> 00:07:38,890
+Maybe, I don't know.
+
+142
+00:07:38,890 --> 00:07:40,990
+It's kind of a common trick.
+
+143
+00:07:40,990 --> 00:07:42,820
+So we have this motion
+that got us here.
+
+144
+00:07:42,820 --> 00:07:44,720
+We can obviously play
+that motion backwards.
+
+145
+00:07:44,720 --> 00:07:49,510
+It's symmetric, I could unroll
+just as easily as I rolled.
+
+146
+00:07:49,510 --> 00:07:52,160
+But now what I want to do is
+not unroll in one dimension--
+
+147
+00:07:52,160 --> 00:07:54,200
+if I did that, I'd end
+up lying along the line
+
+148
+00:07:54,200 --> 00:07:57,306
+segment extending this old part.
+
+149
+00:07:57,306 --> 00:07:58,930
+Actually, it's not
+even quite straight,
+
+150
+00:07:58,930 --> 00:08:02,470
+but let's pretend
+it's kind of straight.
+
+151
+00:08:02,470 --> 00:08:08,790
+But now I want to unroll along
+the M. So unrolling here,
+
+152
+00:08:08,790 --> 00:08:12,380
+the first thing I would
+unroll is this stuff.
+
+153
+00:08:12,380 --> 00:08:16,650
+It's going to go along the
+long direction, the left side.
+
+154
+00:08:16,650 --> 00:08:18,970
+So it's going to unroll
+along, and but instead
+
+155
+00:08:18,970 --> 00:08:21,220
+of going straight, I want
+it to just move along
+
+156
+00:08:21,220 --> 00:08:22,830
+the M. It's like
+I'm an ant, and I
+
+157
+00:08:22,830 --> 00:08:25,590
+don't realize that I live in
+this two dimensional space.
+
+158
+00:08:25,590 --> 00:08:28,430
+I'm going to pretend that I live
+on this one dimensional space,
+
+159
+00:08:28,430 --> 00:08:30,179
+even though it's not
+physically there yet.
+
+160
+00:08:30,179 --> 00:08:31,970
+That's why I drew it dashed.
+
+161
+00:08:31,970 --> 00:08:33,220
+I just unroll.
+
+162
+00:08:33,220 --> 00:08:37,820
+So I'll end up by the
+end-- at this point
+
+163
+00:08:37,820 --> 00:08:42,120
+I will have this half
+of the M, the bold part,
+
+164
+00:08:42,120 --> 00:08:45,400
+and then this half of the
+M hasn't been made yet.
+
+165
+00:08:45,400 --> 00:08:50,455
+And I'll have a little roll
+that's enough to make that.
+
+166
+00:08:50,455 --> 00:08:55,240
+I unroll more, and I
+end up going there.
+
+167
+00:08:55,240 --> 00:08:56,665
+So it's kind of crazy.
+
+168
+00:08:56,665 --> 00:08:58,290
+Just roll up the
+piece of paper so it's
+
+169
+00:08:58,290 --> 00:09:00,660
+super tiny so you can put
+it on the folded state
+
+170
+00:09:00,660 --> 00:09:03,250
+without having any creases,
+then undo everything
+
+171
+00:09:03,250 --> 00:09:09,310
+you did, but living on the
+surface instead of in the line.
+
+172
+00:09:09,310 --> 00:09:13,920
+So you may or may not believe
+that works, but it works.
+
+173
+00:09:13,920 --> 00:09:16,440
+It's kind of cool.
+
+174
+00:09:16,440 --> 00:09:18,770
+You can generalize that
+to two dimensional paper.
+
+175
+00:09:18,770 --> 00:09:20,860
+It's a little harder
+to draw the diagram,
+
+176
+00:09:20,860 --> 00:09:24,120
+so I bring the textbook.
+
+177
+00:09:24,120 --> 00:09:26,940
+Here we have a polygon
+of paper, but same idea.
+
+178
+00:09:26,940 --> 00:09:29,220
+We're going to roll
+up that piece of paper
+
+179
+00:09:29,220 --> 00:09:30,820
+until it's super
+tiny-- in this case,
+
+180
+00:09:30,820 --> 00:09:33,050
+super tiny is a little triangle.
+
+181
+00:09:33,050 --> 00:09:35,160
+We identify--
+actually, ahead of time
+
+182
+00:09:35,160 --> 00:09:38,700
+we identify a portion, a little
+triangle on the surface here,
+
+183
+00:09:38,700 --> 00:09:41,270
+that does not hit any creases.
+
+184
+00:09:41,270 --> 00:09:43,130
+Here it is.
+
+185
+00:09:43,130 --> 00:09:45,824
+And so we roll up the paper to
+be contained in that triangle.
+
+186
+00:09:45,824 --> 00:09:47,490
+Of course, there's
+many layers above it,
+
+187
+00:09:47,490 --> 00:09:50,240
+which you can't-- it's
+hard to draw here.
+
+188
+00:09:50,240 --> 00:09:52,210
+You just curl that
+triangle a little bit.
+
+189
+00:09:52,210 --> 00:09:54,481
+Now it lives on the crane.
+
+190
+00:09:54,481 --> 00:09:55,980
+Here, we're supposing
+we want to get
+
+191
+00:09:55,980 --> 00:09:57,354
+a continuous motion
+of the crane.
+
+192
+00:09:57,354 --> 00:09:59,730
+It's multiple layers,
+all sorts of fun things.
+
+193
+00:09:59,730 --> 00:10:02,050
+And then you just
+keep on rolling,
+
+194
+00:10:02,050 --> 00:10:04,640
+just like you did in the
+top thing but backwards.
+
+195
+00:10:04,640 --> 00:10:06,340
+And instead of
+living in the plane,
+
+196
+00:10:06,340 --> 00:10:10,130
+you now live on
+the crane surface.
+
+197
+00:10:10,130 --> 00:10:12,157
+And the mapping between
+them is given to you.
+
+198
+00:10:12,157 --> 00:10:13,990
+You're given the folded
+state that tells you
+
+199
+00:10:13,990 --> 00:10:16,110
+how the piece of paper
+lives on the crane,
+
+200
+00:10:16,110 --> 00:10:18,010
+and so you just undo
+everything on the crane,
+
+201
+00:10:18,010 --> 00:10:20,640
+instead of in the plane.
+
+202
+00:10:20,640 --> 00:10:23,670
+On the crane instead
+of in the plane--
+
+203
+00:10:23,670 --> 00:10:24,720
+should be a Doctor Seuss.
+
+204
+00:10:24,720 --> 00:10:27,400
+
+205
+00:10:27,400 --> 00:10:29,550
+Yeah, question.
+
+206
+00:10:29,550 --> 00:10:31,840
+How do I pick the region?
+
+207
+00:10:31,840 --> 00:10:34,360
+I just-- in general, we
+have some crease pattern.
+
+208
+00:10:34,360 --> 00:10:36,354
+I just take some region
+interior to one face
+
+209
+00:10:36,354 --> 00:10:37,270
+of the crease pattern.
+
+210
+00:10:37,270 --> 00:10:40,670
+So just avoiding
+creases is all I want.
+
+211
+00:10:40,670 --> 00:10:42,420
+Yeah.
+
+212
+00:10:42,420 --> 00:10:44,770
+The level of detail in
+describing any region will do.
+
+213
+00:10:44,770 --> 00:10:47,110
+In reality, we want
+it small, so that's
+
+214
+00:10:47,110 --> 00:10:49,950
+almost flat by smoothness.
+
+215
+00:10:49,950 --> 00:10:52,510
+But that's sort of
+a technical detail.
+
+216
+00:10:52,510 --> 00:10:54,114
+Other questions?
+
+217
+00:10:54,114 --> 00:10:55,780
+How many people does
+this make sense to?
+
+218
+00:10:55,780 --> 00:10:58,380
+Just curious.
+
+219
+00:10:58,380 --> 00:11:01,040
+Yeah, almost everyone
+kind of makes sense.
+
+220
+00:11:01,040 --> 00:11:01,969
+Good.
+
+221
+00:11:01,969 --> 00:11:03,260
+You have to see it a few times.
+
+222
+00:11:03,260 --> 00:11:06,692
+
+223
+00:11:06,692 --> 00:11:10,950
+I remember giving a talk
+of this paper in 2001,
+
+224
+00:11:10,950 --> 00:11:15,092
+and I sort of understood it, but
+it was a very interactive talk.
+
+225
+00:11:15,092 --> 00:11:16,300
+People kept asking questions.
+
+226
+00:11:16,300 --> 00:11:18,480
+I think by the end
+everyone understood it.
+
+227
+00:11:18,480 --> 00:11:20,214
+Now I understand it.
+
+228
+00:11:20,214 --> 00:11:20,880
+It's good stuff.
+
+229
+00:11:20,880 --> 00:11:23,260
+There's some important
+open questions, though.
+
+230
+00:11:23,260 --> 00:11:27,010
+This crucially relies on--
+this maybe not so-- well, yeah.
+
+231
+00:11:27,010 --> 00:11:31,300
+If you had a hole in your piece
+of paper, this would not work.
+
+232
+00:11:31,300 --> 00:11:33,700
+Because you can't reduce--
+you can't get rid of the hole
+
+233
+00:11:33,700 --> 00:11:35,370
+by folding.
+
+234
+00:11:35,370 --> 00:11:38,130
+And you can do all sorts
+of rolling, folding corners
+
+235
+00:11:38,130 --> 00:11:39,740
+over, and making
+this thing smaller,
+
+236
+00:11:39,740 --> 00:11:42,270
+but you'll never be able
+to get rid of that hole.
+
+237
+00:11:42,270 --> 00:11:44,040
+And so this approach
+breaks down.
+
+238
+00:11:44,040 --> 00:11:46,800
+Also, if your piece
+of paper was a cube,
+
+239
+00:11:46,800 --> 00:11:49,970
+the surface of the cube--
+like, the end the last class
+
+240
+00:11:49,970 --> 00:11:51,870
+we talked about
+flattening, we had a cube,
+
+241
+00:11:51,870 --> 00:11:53,551
+and you want to
+collapse it flat.
+
+242
+00:11:53,551 --> 00:11:55,300
+There we know that
+there's a folded state,
+
+243
+00:11:55,300 --> 00:11:57,580
+but we don't know about
+the folding motions.
+
+244
+00:11:57,580 --> 00:11:59,030
+It's kind of disconcerting.
+
+245
+00:11:59,030 --> 00:12:02,840
+We presume there's
+a folding motion,
+
+246
+00:12:02,840 --> 00:12:05,710
+but again, this
+approach doesn't work
+
+247
+00:12:05,710 --> 00:12:09,010
+because you can't get a cube
+down to a tiny triangle.
+
+248
+00:12:09,010 --> 00:12:13,380
+You can't get rid of the--
+it's kind of like having holes,
+
+249
+00:12:13,380 --> 00:12:15,850
+but you surround a hole
+in the case of the cube,
+
+250
+00:12:15,850 --> 00:12:19,560
+and you can't get rid of that
+topological feature by folding.
+
+251
+00:12:19,560 --> 00:12:22,950
+So it's tricky.
+
+252
+00:12:22,950 --> 00:12:26,440
+We avoid collision
+throughout here.
+
+253
+00:12:26,440 --> 00:12:28,911
+We also crease
+basically every point.
+
+254
+00:12:28,911 --> 00:12:30,660
+This is rather impractical
+if you actually
+
+255
+00:12:30,660 --> 00:12:31,930
+want to make something.
+
+256
+00:12:31,930 --> 00:12:34,390
+It's comforting,
+theoretically, but this is not
+
+257
+00:12:34,390 --> 00:12:37,030
+how you actually fold
+a crane, because you
+
+258
+00:12:37,030 --> 00:12:39,130
+have to do all this
+continuous crease rolling.
+
+259
+00:12:39,130 --> 00:12:41,350
+So over time, every
+point of paper
+
+260
+00:12:41,350 --> 00:12:43,850
+is at some point on a crease.
+
+261
+00:12:43,850 --> 00:12:45,620
+And a big open problem
+is what can you
+
+262
+00:12:45,620 --> 00:12:47,386
+do with finitely many creases?
+
+263
+00:12:47,386 --> 00:12:48,260
+I'll write that down.
+
+264
+00:12:48,260 --> 00:12:51,820
+
+265
+00:12:51,820 --> 00:12:54,680
+Let's suppose you have no
+overlapping layers of paper,
+
+266
+00:12:54,680 --> 00:12:56,115
+to make life a
+little bit easier.
+
+267
+00:12:56,115 --> 00:12:59,000
+
+268
+00:12:59,000 --> 00:13:03,220
+So the paper doesn't
+touch itself, so to speak.
+
+269
+00:13:03,220 --> 00:13:07,030
+Can you do a finite
+number of extra creases?
+
+270
+00:13:07,030 --> 00:13:12,600
+
+271
+00:13:12,600 --> 00:13:14,540
+I would conjecture
+maybe yes, but this
+
+272
+00:13:14,540 --> 00:13:18,760
+is a challenging problem.
+
+273
+00:13:18,760 --> 00:13:20,870
+Here we have sort of
+infinitely many creases.
+
+274
+00:13:20,870 --> 00:13:23,120
+Everything becomes a crease.
+
+275
+00:13:23,120 --> 00:13:25,420
+The extreme form
+of this is what we
+
+276
+00:13:25,420 --> 00:13:31,785
+call rigid origami, where
+you have no extra creases.
+
+277
+00:13:31,785 --> 00:13:34,510
+
+278
+00:13:34,510 --> 00:13:39,760
+So you're supposed to
+just use the creases that
+
+279
+00:13:39,760 --> 00:13:42,990
+are given to you in
+the crease pattern,
+
+280
+00:13:42,990 --> 00:13:49,740
+and the faces of the crease
+pattern are rigid polygons.
+
+281
+00:13:49,740 --> 00:13:53,560
+They have to stay flat
+throughout the folding motion.
+
+282
+00:13:53,560 --> 00:13:55,330
+So rigid origami
+is a thing about
+
+283
+00:13:55,330 --> 00:13:58,470
+ridge-- about folding motions,
+not about folded states.
+
+284
+00:13:58,470 --> 00:14:00,610
+I have some folded
+state I want to get to,
+
+285
+00:14:00,610 --> 00:14:03,230
+can I get there
+with rigid polygons?
+
+286
+00:14:03,230 --> 00:14:05,610
+And the creases now
+become hinges, basically.
+
+287
+00:14:05,610 --> 00:14:09,160
+If you're making
+origami out of metal
+
+288
+00:14:09,160 --> 00:14:12,520
+with flat sheets,
+or plastic polygons,
+
+289
+00:14:12,520 --> 00:14:14,600
+whatever, hinging them together.
+
+290
+00:14:14,600 --> 00:14:16,950
+Can use still fold this thing?
+
+291
+00:14:16,950 --> 00:14:19,620
+Or did folding it
+require this kind
+
+292
+00:14:19,620 --> 00:14:23,360
+of bending the
+paper in crazy ways,
+
+293
+00:14:23,360 --> 00:14:25,670
+putting creases
+all over the place?
+
+294
+00:14:25,670 --> 00:14:29,870
+Sometimes you can do this,
+most of the time you can't.
+
+295
+00:14:29,870 --> 00:14:32,610
+And there's a lot we don't
+know about rigid origami.
+
+296
+00:14:32,610 --> 00:14:34,960
+I have one simple example.
+
+297
+00:14:34,960 --> 00:14:38,260
+Something we know is bad,
+which is kind of fun.
+
+298
+00:14:38,260 --> 00:14:40,480
+Should have brought an
+actual paper shopping bag.
+
+299
+00:14:40,480 --> 00:14:43,060
+You take a paper shopping
+bag, they're mass produced
+
+300
+00:14:43,060 --> 00:14:46,230
+in this crease pattern,
+so they're produced flat,
+
+301
+00:14:46,230 --> 00:14:47,860
+I believe.
+
+302
+00:14:47,860 --> 00:14:54,360
+And can't be folded,
+doesn't fold rigidly.
+
+303
+00:14:54,360 --> 00:14:56,360
+You just have these
+creases-- the edges
+
+304
+00:14:56,360 --> 00:14:58,880
+of the bag, this
+kind of simple thing.
+
+305
+00:14:58,880 --> 00:15:02,890
+It looks like straight skeleton
+over here, and a perpendicular.
+
+306
+00:15:02,890 --> 00:15:05,830
+Looks very nice from a
+fold and cut standpoint.
+
+307
+00:15:05,830 --> 00:15:09,794
+And it does have a folded
+state, which is flat.
+
+308
+00:15:09,794 --> 00:15:10,960
+There's no way to get there.
+
+309
+00:15:10,960 --> 00:15:14,480
+If you look at all the
+possible folded states
+
+310
+00:15:14,480 --> 00:15:18,550
+of this pattern with rigid
+panels, there are two.
+
+311
+00:15:18,550 --> 00:15:20,880
+There's the 3D state
+you should see here.
+
+312
+00:15:20,880 --> 00:15:22,609
+There's the flat state.
+
+313
+00:15:22,609 --> 00:15:24,650
+There's nothing that could
+possibly connect them.
+
+314
+00:15:24,650 --> 00:15:27,240
+There are no other states,
+so there's no folding motion
+
+315
+00:15:27,240 --> 00:15:28,750
+from one to the other.
+
+316
+00:15:28,750 --> 00:15:30,990
+You could
+instantaneously be flat,
+
+317
+00:15:30,990 --> 00:15:32,600
+and you could
+instantaneously be open,
+
+318
+00:15:32,600 --> 00:15:34,610
+but you can't do
+anything in between
+
+319
+00:15:34,610 --> 00:15:38,960
+without curving the paper
+or doing something invalid
+
+320
+00:15:38,960 --> 00:15:40,320
+according to rigid origami.
+
+321
+00:15:40,320 --> 00:15:42,980
+So obviously you don't want to
+make a paper shopping bag out
+
+322
+00:15:42,980 --> 00:15:47,160
+of metal, I guess is the
+lesson, without adding
+
+323
+00:15:47,160 --> 00:15:48,215
+extra creases at least.
+
+324
+00:15:48,215 --> 00:15:50,690
+
+325
+00:15:50,690 --> 00:15:51,190
+Yeah.
+
+326
+00:15:51,190 --> 00:15:54,664
+
+327
+00:15:54,664 --> 00:15:57,080
+I would love to find more open
+questions on rigid origami,
+
+328
+00:15:57,080 --> 00:16:02,160
+but so far we've just looked
+at a few small things.
+
+329
+00:16:02,160 --> 00:16:08,920
+But this turns us
+over to linkages,
+
+330
+00:16:08,920 --> 00:16:11,810
+which are all about finding
+these motions without making
+
+331
+00:16:11,810 --> 00:16:12,485
+extra creases.
+
+332
+00:16:12,485 --> 00:16:16,340
+
+333
+00:16:16,340 --> 00:16:18,600
+So I need to introduce a
+little bit of terminology.
+
+334
+00:16:18,600 --> 00:16:21,510
+This is like creases
+and all those things
+
+335
+00:16:21,510 --> 00:16:24,550
+from the origami world.
+
+336
+00:16:24,550 --> 00:16:27,620
+But we care about various
+levels of linkages.
+
+337
+00:16:27,620 --> 00:16:30,270
+Let me remind you,
+in general a linkage
+
+338
+00:16:30,270 --> 00:16:33,040
+is going to be something
+like these guys.
+
+339
+00:16:33,040 --> 00:16:35,500
+This is the Peaucellier
+linkage, these guys
+
+340
+00:16:35,500 --> 00:16:37,780
+were pinned to the
+projector screen,
+
+341
+00:16:37,780 --> 00:16:42,040
+these guys were flexible,
+these are rigid bars,
+
+342
+00:16:42,040 --> 00:16:45,370
+and this guy ended up
+tracing a straight line
+
+343
+00:16:45,370 --> 00:16:46,760
+as this thing moved.
+
+344
+00:16:46,760 --> 00:16:49,194
+So that's the thing we want
+to map-- model mathematically.
+
+345
+00:16:49,194 --> 00:16:50,860
+We're going to have
+zero thickness, just
+
+346
+00:16:50,860 --> 00:16:53,240
+like with paper folding.
+
+347
+00:16:53,240 --> 00:16:57,260
+We're going to have vertices,
+where things come together.
+
+348
+00:16:57,260 --> 00:17:02,568
+And we're going to have edges,
+which are those rigid bars.
+
+349
+00:17:02,568 --> 00:17:04,609
+And I'm going to try to
+speak in two languages at
+
+350
+00:17:04,609 --> 00:17:06,840
+once-- the fairly
+intuitive one, and I'm
+
+351
+00:17:06,840 --> 00:17:08,589
+going to use some
+notation in parentheses.
+
+352
+00:17:08,589 --> 00:17:10,450
+So if you follow
+the math, great.
+
+353
+00:17:10,450 --> 00:17:11,920
+If not, also fine.
+
+354
+00:17:11,920 --> 00:17:16,369
+
+355
+00:17:16,369 --> 00:17:19,569
+The graph is just
+combinatorial structure.
+
+356
+00:17:19,569 --> 00:17:22,400
+It just says, look, I've
+got things joined together
+
+357
+00:17:22,400 --> 00:17:22,900
+like this.
+
+358
+00:17:22,900 --> 00:17:24,829
+There's no geometry,
+there's just
+
+359
+00:17:24,829 --> 00:17:28,090
+a sense of what edges are
+joined together at vertices.
+
+360
+00:17:28,090 --> 00:17:30,330
+It's an abstract thing, kind
+of like the shadow trees
+
+361
+00:17:30,330 --> 00:17:31,340
+we work with.
+
+362
+00:17:31,340 --> 00:17:33,070
+They're not really
+embedded anywhere,
+
+363
+00:17:33,070 --> 00:17:35,240
+though here, you don't
+even have lengths.
+
+364
+00:17:35,240 --> 00:17:39,980
+Linkage, you assign lengths
+to the edges, and that's it.
+
+365
+00:17:39,980 --> 00:17:47,440
+So I take a graph and then
+I add lengths to edges.
+
+366
+00:17:47,440 --> 00:17:50,390
+
+367
+00:17:50,390 --> 00:17:53,230
+Its lengths of edges.
+
+368
+00:17:53,230 --> 00:17:55,630
+So in math, this
+would be a function l
+
+369
+00:17:55,630 --> 00:17:59,970
+that maps every edge to a
+non-negative real number.
+
+370
+00:17:59,970 --> 00:18:03,910
+
+371
+00:18:03,910 --> 00:18:06,560
+And I might want
+a little bit more.
+
+372
+00:18:06,560 --> 00:18:08,690
+So this is sort of optional.
+
+373
+00:18:08,690 --> 00:18:10,220
+You might have some
+pinned vertices,
+
+374
+00:18:10,220 --> 00:18:13,780
+things that are not
+allowed to move.
+
+375
+00:18:13,780 --> 00:18:18,190
+So you might add coordinates
+for pinned vertices.
+
+376
+00:18:18,190 --> 00:18:24,990
+
+377
+00:18:24,990 --> 00:18:27,730
+And so in math, this
+would be a function p
+
+378
+00:18:27,730 --> 00:18:29,750
+that maps some subset
+of the vertices E
+
+379
+00:18:29,750 --> 00:18:34,265
+prime to wherever
+you happen to live.
+
+380
+00:18:34,265 --> 00:18:37,510
+
+381
+00:18:37,510 --> 00:18:39,920
+So here, I'm supposing our
+linkage lives in d dimensions,
+
+382
+00:18:39,920 --> 00:18:42,950
+because we're going to think
+about linkages in 2D today.
+
+383
+00:18:42,950 --> 00:18:45,730
+We're going to think about
+linkages in 3D, linkages in 4D,
+
+384
+00:18:45,730 --> 00:18:46,240
+and higher.
+
+385
+00:18:46,240 --> 00:18:48,920
+Everything is fair game.
+
+386
+00:18:48,920 --> 00:18:50,440
+We're going to be
+pretty general.
+
+387
+00:18:50,440 --> 00:18:52,730
+And sometimes, I want to
+think about the linkage
+
+388
+00:18:52,730 --> 00:18:54,175
+as this abstract thing.
+
+389
+00:18:54,175 --> 00:18:55,950
+It tells me how
+things are connected,
+
+390
+00:18:55,950 --> 00:18:57,200
+tells me what the lengths are.
+
+391
+00:18:57,200 --> 00:18:58,830
+This is again like
+a shadow tree.
+
+392
+00:18:58,830 --> 00:19:01,210
+Maybe I'm also told
+some vertices are pinned
+
+393
+00:19:01,210 --> 00:19:04,862
+in particular places in the
+plane or in 3D or whatever.
+
+394
+00:19:04,862 --> 00:19:07,070
+But sometimes I want to
+forget about that extra stuff
+
+395
+00:19:07,070 --> 00:19:08,420
+and just think about the graph.
+
+396
+00:19:08,420 --> 00:19:10,270
+We won't do that
+'till next lecture,
+
+397
+00:19:10,270 --> 00:19:14,890
+but I mention it now
+because we will need it.
+
+398
+00:19:14,890 --> 00:19:17,575
+And then where
+the real action is
+
+399
+00:19:17,575 --> 00:19:20,650
+is in the configuration
+of a linkage.
+
+400
+00:19:20,650 --> 00:19:23,880
+And that's the geometry,
+that's how the thing is folded.
+
+401
+00:19:23,880 --> 00:19:26,385
+This is basically a
+folded state for linkages.
+
+402
+00:19:26,385 --> 00:19:32,757
+
+403
+00:19:32,757 --> 00:19:34,840
+Why is it different
+terminology than folded state?
+
+404
+00:19:34,840 --> 00:19:41,030
+Just because it's a
+different sub-field, I guess.
+
+405
+00:19:41,030 --> 00:19:43,917
+Avoid confusion with
+the other notions.
+
+406
+00:19:43,917 --> 00:19:45,750
+With folded states,
+usually we allow creases
+
+407
+00:19:45,750 --> 00:19:46,530
+all over the place.
+
+408
+00:19:46,530 --> 00:19:48,363
+With the linkage, you're
+really only allowed
+
+409
+00:19:48,363 --> 00:19:50,990
+to bend at the vertices,
+so it's a bit special.
+
+410
+00:19:50,990 --> 00:19:53,890
+
+411
+00:19:53,890 --> 00:19:55,660
+So a configuration
+just gives you
+
+412
+00:19:55,660 --> 00:19:57,710
+coordinates for every vertex.
+
+413
+00:19:57,710 --> 00:20:00,690
+
+414
+00:20:00,690 --> 00:20:05,400
+So we would say configuration
+C maps every vertex
+
+415
+00:20:05,400 --> 00:20:09,716
+to some point in d
+dimensions, and you
+
+416
+00:20:09,716 --> 00:20:11,340
+have to satisfy a
+bunch of constraints.
+
+417
+00:20:11,340 --> 00:20:24,130
+
+418
+00:20:24,130 --> 00:20:26,470
+And the constraints are
+given by the linkage,
+
+419
+00:20:26,470 --> 00:20:30,120
+so you've got the lengths
+and you've got the pinning.
+
+420
+00:20:30,120 --> 00:20:34,040
+So you have to have that.
+
+421
+00:20:34,040 --> 00:20:37,770
+If you look at two vertices
+that are connected by an edge,
+
+422
+00:20:37,770 --> 00:20:39,890
+that edge has a
+length, the distance
+
+423
+00:20:39,890 --> 00:20:41,950
+between those two
+points should be
+
+424
+00:20:41,950 --> 00:20:47,780
+equal to the length of that edge
+as given by that function l.
+
+425
+00:20:47,780 --> 00:20:59,570
+This is for phi w an edge, and
+then for the pinned vertices
+
+426
+00:20:59,570 --> 00:21:01,600
+the point you choose
+better be exactly what's
+
+427
+00:21:01,600 --> 00:21:02,865
+given by the pin function.
+
+428
+00:21:02,865 --> 00:21:10,990
+
+429
+00:21:10,990 --> 00:21:14,600
+Never mind the details,
+it's pretty intuitive.
+
+430
+00:21:14,600 --> 00:21:16,330
+But link-- whenever
+I say linkage,
+
+431
+00:21:16,330 --> 00:21:17,650
+I mean the abstract thing.
+
+432
+00:21:17,650 --> 00:21:21,760
+Configuration, I mean actually
+embedded in whatever space
+
+433
+00:21:21,760 --> 00:21:23,630
+you're living in.
+
+434
+00:21:23,630 --> 00:21:25,103
+So let's do a simple example.
+
+435
+00:21:25,103 --> 00:21:36,520
+
+436
+00:21:36,520 --> 00:21:39,050
+Basically, the simplest
+linkage that you can think of
+
+437
+00:21:39,050 --> 00:21:45,170
+is a square, and abstractly just
+a bunch of vertices and edges.
+
+438
+00:21:45,170 --> 00:21:47,440
+This is the graph.
+
+439
+00:21:47,440 --> 00:21:49,400
+I haven't written down anything.
+
+440
+00:21:49,400 --> 00:21:55,610
+When I add lengths-- let's say
+they're all the same length,
+
+441
+00:21:55,610 --> 00:21:58,845
+I want to represent a square--
+that becomes a linkage.
+
+442
+00:21:58,845 --> 00:22:01,600
+
+443
+00:22:01,600 --> 00:22:06,100
+And maybe I also specify this
+guy is at coordinates 0, 0;
+
+444
+00:22:06,100 --> 00:22:10,490
+and this guy is at
+coordinates 1, 0 that's
+
+445
+00:22:10,490 --> 00:22:12,177
+one unit away from this point.
+
+446
+00:22:12,177 --> 00:22:13,760
+So that would sort
+of pin things down,
+
+447
+00:22:13,760 --> 00:22:16,120
+and these guys are
+still available to move.
+
+448
+00:22:16,120 --> 00:22:17,870
+This is of course not
+a valid drawing, not
+
+449
+00:22:17,870 --> 00:22:19,411
+a valid configuration
+of the linkage.
+
+450
+00:22:19,411 --> 00:22:21,210
+The lengths aren't
+all the same, this guy
+
+451
+00:22:21,210 --> 00:22:23,190
+looks longer than this one.
+
+452
+00:22:23,190 --> 00:22:26,290
+But then a valid configuration
+would be an actual square.
+
+453
+00:22:26,290 --> 00:22:29,660
+
+454
+00:22:29,660 --> 00:22:31,030
+I should draw in the plane.
+
+455
+00:22:31,030 --> 00:22:36,670
+Let's say-- so this is
+at 0, 0; this is at 0, 1;
+
+456
+00:22:36,670 --> 00:22:39,220
+this is 1, 1; 1, 0.
+
+457
+00:22:39,220 --> 00:22:41,879
+So that's a configuration.
+
+458
+00:22:41,879 --> 00:22:43,920
+There are a bunch of
+configurations this linkage.
+
+459
+00:22:43,920 --> 00:22:50,590
+For example, that would
+be another configuration.
+
+460
+00:22:50,590 --> 00:22:54,721
+And there's a whole
+degree of freedom here.
+
+461
+00:22:54,721 --> 00:22:57,220
+And we really care about all
+those different configurations.
+
+462
+00:22:57,220 --> 00:22:58,990
+We call that the
+configuration space.
+
+463
+00:22:58,990 --> 00:23:02,260
+
+464
+00:23:02,260 --> 00:23:05,730
+Configuration space is the
+set of all configurations.
+
+465
+00:23:05,730 --> 00:23:08,760
+
+466
+00:23:08,760 --> 00:23:11,920
+So it has one thing
+for the square,
+
+467
+00:23:11,920 --> 00:23:15,560
+there's one thing for this
+particular parallelogram,
+
+468
+00:23:15,560 --> 00:23:17,640
+and there's that whole picture.
+
+469
+00:23:17,640 --> 00:23:24,200
+Why don't I show you
+graphically what it looks like?
+
+470
+00:23:24,200 --> 00:23:29,710
+So here we have a
+square-- square, move.
+
+471
+00:23:29,710 --> 00:23:31,600
+There we go.
+
+472
+00:23:31,600 --> 00:23:33,930
+So yeah, it's flexible.
+
+473
+00:23:33,930 --> 00:23:35,770
+That vertex C is
+moving around a circle.
+
+474
+00:23:35,770 --> 00:23:38,720
+
+475
+00:23:38,720 --> 00:23:41,270
+We can go around, and
+around, and around.
+
+476
+00:23:41,270 --> 00:23:42,790
+All right, you get the idea.
+
+477
+00:23:42,790 --> 00:23:44,248
+Are there any other
+configurations?
+
+478
+00:23:44,248 --> 00:23:47,160
+
+479
+00:23:47,160 --> 00:23:48,410
+No or yes.
+
+480
+00:23:48,410 --> 00:23:49,230
+Pick one.
+
+481
+00:23:49,230 --> 00:23:50,035
+Yes is correct.
+
+482
+00:23:50,035 --> 00:23:52,950
+
+483
+00:23:52,950 --> 00:23:54,950
+Ah, yeah, there.
+
+484
+00:23:54,950 --> 00:23:57,130
+So when I get to here
+and everything's sort
+
+485
+00:23:57,130 --> 00:23:59,320
+of overlapping--
+little hard to see,
+
+486
+00:23:59,320 --> 00:24:01,340
+but you see there's
+the yellow and green.
+
+487
+00:24:01,340 --> 00:24:03,200
+Then I can bend--
+and this I can't
+
+488
+00:24:03,200 --> 00:24:05,380
+do in the way this
+program's set up-- I
+
+489
+00:24:05,380 --> 00:24:08,130
+can now move d
+without moving AB.
+
+490
+00:24:08,130 --> 00:24:10,860
+I could move the segment
+BD and spin that around.
+
+491
+00:24:10,860 --> 00:24:13,980
+
+492
+00:24:13,980 --> 00:24:18,390
+So in fact, if you think
+about it for a while--
+
+493
+00:24:18,390 --> 00:24:20,860
+I hope I got this
+right, because I
+
+494
+00:24:20,860 --> 00:24:22,570
+think every time I've
+given this lecture
+
+495
+00:24:22,570 --> 00:24:25,110
+I draw a different picture.
+
+496
+00:24:25,110 --> 00:24:28,040
+The space, the
+configuration space,
+
+497
+00:24:28,040 --> 00:24:35,275
+it looks something like
+three kissing circles.
+
+498
+00:24:35,275 --> 00:24:38,070
+
+499
+00:24:38,070 --> 00:24:40,742
+So it's not quite
+drawn to scale.
+
+500
+00:24:40,742 --> 00:24:42,450
+Each of these points
+I want to correspond
+
+501
+00:24:42,450 --> 00:24:45,460
+to one configuration.
+
+502
+00:24:45,460 --> 00:24:47,540
+I should really draw this
+with more board room.
+
+503
+00:24:47,540 --> 00:24:58,670
+
+504
+00:24:58,670 --> 00:25:00,910
+All right, so we
+started with the square.
+
+505
+00:25:00,910 --> 00:25:05,340
+And let's say these are the
+pinned guys on the bottom.
+
+506
+00:25:05,340 --> 00:25:08,630
+I had this one circle
+of motion, which
+
+507
+00:25:08,630 --> 00:25:11,760
+just moved this segment
+around sort of in a circle.
+
+508
+00:25:11,760 --> 00:25:16,280
+So at the opposite point would
+be where these guys are pinned
+
+509
+00:25:16,280 --> 00:25:19,850
+and the square is inside out.
+
+510
+00:25:19,850 --> 00:25:23,590
+And halfway along
+would be I don't know,
+
+511
+00:25:23,590 --> 00:25:27,620
+let's say I'm going left
+here, I've got this,
+
+512
+00:25:27,620 --> 00:25:29,170
+and then my square is over here.
+
+513
+00:25:29,170 --> 00:25:31,710
+
+514
+00:25:31,710 --> 00:25:34,540
+Draw the right number
+of points, yeah.
+
+515
+00:25:34,540 --> 00:25:38,560
+And over on this side would
+be these are the pinned guys,
+
+516
+00:25:38,560 --> 00:25:42,090
+and my square is over there.
+
+517
+00:25:42,090 --> 00:25:44,120
+From here, I can
+do another circle
+
+518
+00:25:44,120 --> 00:25:47,410
+of motion, which is I can
+never move these points,
+
+519
+00:25:47,410 --> 00:25:50,460
+but now I can turn
+this guy around.
+
+520
+00:25:50,460 --> 00:25:53,110
+And when I go halfway
+around it will
+
+521
+00:25:53,110 --> 00:25:56,480
+be sort of folded on itself.
+
+522
+00:25:56,480 --> 00:25:59,180
+So these are the
+pinned guys, and then
+
+523
+00:25:59,180 --> 00:26:02,450
+the polygon's like that,
+all on top of itself.
+
+524
+00:26:02,450 --> 00:26:04,840
+We're only thinking about
+where the vertices are,
+
+525
+00:26:04,840 --> 00:26:07,940
+we're not thinking about
+overlap order here, one
+
+526
+00:26:07,940 --> 00:26:10,860
+of the differences
+with linkages.
+
+527
+00:26:10,860 --> 00:26:13,340
+And if I go around
+from this guy,
+
+528
+00:26:13,340 --> 00:26:16,610
+it turns out-- I'm pretty
+sure these circles of things
+
+529
+00:26:16,610 --> 00:26:20,030
+are different except right here.
+
+530
+00:26:20,030 --> 00:26:26,890
+And so this thing is
+equal to this thing.
+
+531
+00:26:26,890 --> 00:26:31,495
+So hence, three circles
+that, pairwise, kiss, I
+
+532
+00:26:31,495 --> 00:26:33,019
+think is the topology
+of this space.
+
+533
+00:26:33,019 --> 00:26:34,310
+You can walk around this thing.
+
+534
+00:26:34,310 --> 00:26:36,860
+It was a little hard to
+draw, but in this very simple
+
+535
+00:26:36,860 --> 00:26:40,310
+example, we can draw effectively
+how the configuration
+
+536
+00:26:40,310 --> 00:26:43,600
+space works, how you
+can navigate operations.
+
+537
+00:26:43,600 --> 00:26:47,210
+In general, I want points
+in the configuration space
+
+538
+00:26:47,210 --> 00:26:49,570
+to correspond to
+configurations of the linkage.
+
+539
+00:26:49,570 --> 00:26:54,310
+
+540
+00:26:54,310 --> 00:26:58,490
+and I want paths in
+the configuration space
+
+541
+00:26:58,490 --> 00:27:02,197
+to corresponds to motions.
+
+542
+00:27:02,197 --> 00:27:04,780
+This is actually the first time
+we get a definition of motion.
+
+543
+00:27:04,780 --> 00:27:07,170
+I haven't specified one
+here, although motion is just
+
+544
+00:27:07,170 --> 00:27:08,980
+going to be a continuum
+of configurations,
+
+545
+00:27:08,980 --> 00:27:11,720
+just like we had with paper.
+
+546
+00:27:11,720 --> 00:27:13,420
+In the configuration
+space, a motion
+
+547
+00:27:13,420 --> 00:27:15,600
+is just some path
+through the space.
+
+548
+00:27:15,600 --> 00:27:16,600
+You start at some point.
+
+549
+00:27:16,600 --> 00:27:18,050
+You end at some point.
+
+550
+00:27:18,050 --> 00:27:20,846
+There may be multiple
+ways to get there,
+
+551
+00:27:20,846 --> 00:27:22,470
+but if your thing is
+connected, there's
+
+552
+00:27:22,470 --> 00:27:24,842
+a way to get from
+anywhere to anywhere.
+
+553
+00:27:24,842 --> 00:27:26,300
+We want to understand
+the structure
+
+554
+00:27:26,300 --> 00:27:27,390
+of paths in that space.
+
+555
+00:27:27,390 --> 00:27:28,650
+That's motions.
+
+556
+00:27:28,650 --> 00:27:31,950
+That's how you can get places.
+
+557
+00:27:31,950 --> 00:27:35,510
+Mathematically, I guess
+this is one big parenthesis,
+
+558
+00:27:35,510 --> 00:27:47,260
+you can think of a conflagration
+of an n-vertex linkage
+
+559
+00:27:47,260 --> 00:27:50,210
+as a bunch of coordinates.
+
+560
+00:27:50,210 --> 00:27:55,530
+You've got the coordinates
+for the first vertex,
+
+561
+00:27:55,530 --> 00:27:58,000
+coordinates for v1, so
+if we're in d dimensions,
+
+562
+00:27:58,000 --> 00:28:00,060
+there's going to be
+d of these things.
+
+563
+00:28:00,060 --> 00:28:02,250
+So you've got, x, y, whatever.
+
+564
+00:28:02,250 --> 00:28:05,700
+Then you could write down
+the coordinates for v2.
+
+565
+00:28:05,700 --> 00:28:07,200
+Let's say we're in
+three dimensions.
+
+566
+00:28:07,200 --> 00:28:10,550
+So we've got three
+here, three values here.
+
+567
+00:28:10,550 --> 00:28:12,412
+I'm not going to write
+down what they are,
+
+568
+00:28:12,412 --> 00:28:14,120
+because I don't know
+what they are-- then
+
+569
+00:28:14,120 --> 00:28:16,620
+three values for
+the third vertex,
+
+570
+00:28:16,620 --> 00:28:24,420
+and so on for n vertices.
+
+571
+00:28:24,420 --> 00:28:26,930
+Why is this useful?
+
+572
+00:28:26,930 --> 00:28:28,870
+Because you can think
+of a configuration,
+
+573
+00:28:28,870 --> 00:28:30,550
+specify all these coordinates.
+
+574
+00:28:30,550 --> 00:28:32,655
+How many coordinates in total?
+
+575
+00:28:32,655 --> 00:28:37,420
+It's d times n numbers.
+
+576
+00:28:37,420 --> 00:28:40,630
+You can think of a configuration
+as just d times n numbers.
+
+577
+00:28:40,630 --> 00:28:42,610
+So you can think
+of a configuration
+
+578
+00:28:42,610 --> 00:28:52,490
+as a point in d times
+n dimensional space.
+
+579
+00:28:52,490 --> 00:28:54,580
+So this is giant space.
+
+580
+00:28:54,580 --> 00:28:59,890
+Like for our square, I drew it
+as a two-dimensional diagram,
+
+581
+00:28:59,890 --> 00:29:03,270
+but in reality
+there's four vertices.
+
+582
+00:29:03,270 --> 00:29:05,730
+Each has two dimensions.
+
+583
+00:29:05,730 --> 00:29:08,500
+So it's an eight-dimensional
+space-- a little hard
+
+584
+00:29:08,500 --> 00:29:11,090
+to imagine.
+
+585
+00:29:11,090 --> 00:29:14,380
+But it's so constrained--
+you can't just
+
+586
+00:29:14,380 --> 00:29:15,780
+take any set of numbers here.
+
+587
+00:29:15,780 --> 00:29:18,940
+They have to satisfy the
+edge length conditions,
+
+588
+00:29:18,940 --> 00:29:21,030
+and they have to satisfy
+the pinning constraints.
+
+589
+00:29:21,030 --> 00:29:23,650
+And by the end, the space
+is locally one-dimensional.
+
+590
+00:29:23,650 --> 00:29:26,980
+It lives in eight
+dimensions, but you can only
+
+591
+00:29:26,980 --> 00:29:31,570
+move along
+one-dimensional curves.
+
+592
+00:29:31,570 --> 00:29:33,910
+So we say this
+configuration space
+
+593
+00:29:33,910 --> 00:29:37,170
+or that these configurations
+have one degree of freedom.
+
+594
+00:29:37,170 --> 00:29:39,962
+
+595
+00:29:39,962 --> 00:29:41,420
+And "degree of
+freedom" is probably
+
+596
+00:29:41,420 --> 00:29:42,880
+a term you've heard before.
+
+597
+00:29:42,880 --> 00:29:44,880
+It's used all over the place.
+
+598
+00:29:44,880 --> 00:29:46,630
+And the formal notion
+of degree of freedom
+
+599
+00:29:46,630 --> 00:29:50,890
+here is just, locally, how
+many dimensions do you have
+
+600
+00:29:50,890 --> 00:29:54,410
+if you look at the paths
+going out from where you are?
+
+601
+00:29:54,410 --> 00:29:56,880
+If, for example, I have
+just a free segment,
+
+602
+00:29:56,880 --> 00:30:00,751
+it's got a bunch of dimensions--
+a bunch of degrees of freedom.
+
+603
+00:30:00,751 --> 00:30:02,250
+It can translate,
+and it can rotate.
+
+604
+00:30:02,250 --> 00:30:03,742
+I guess, three.
+
+605
+00:30:03,742 --> 00:30:05,450
+If I pin one of the
+vertices, now it only
+
+606
+00:30:05,450 --> 00:30:06,533
+has one degree of freedom.
+
+607
+00:30:06,533 --> 00:30:08,120
+It can spin around.
+
+608
+00:30:08,120 --> 00:30:11,550
+Just locally, how many
+different ways can you move?
+
+609
+00:30:11,550 --> 00:30:13,169
+What is the dimension
+of your space?
+
+610
+00:30:13,169 --> 00:30:14,960
+And a lot of the time,
+we care about things
+
+611
+00:30:14,960 --> 00:30:16,150
+that have only one
+degree of freedom
+
+612
+00:30:16,150 --> 00:30:17,560
+because they're controlled.
+
+613
+00:30:17,560 --> 00:30:18,990
+We get to say what they do.
+
+614
+00:30:18,990 --> 00:30:22,510
+
+615
+00:30:22,510 --> 00:30:23,220
+All right.
+
+616
+00:30:23,220 --> 00:30:27,836
+Let's move on to something
+interesting about all this,
+
+617
+00:30:27,836 --> 00:30:29,970
+which is Kempe's
+Universality Theorem.
+
+618
+00:30:29,970 --> 00:30:59,300
+
+619
+00:30:59,300 --> 00:31:02,400
+So this is the result that
+you can sign your name, so
+
+620
+00:31:02,400 --> 00:31:04,620
+to speak, but I'll
+state it more formally.
+
+621
+00:31:04,620 --> 00:31:09,340
+
+622
+00:31:09,340 --> 00:31:15,590
+My input is an algebraic
+planar curve, and all of this
+
+623
+00:31:15,590 --> 00:31:18,180
+can be generalized to
+beyond two dimensions,
+
+624
+00:31:18,180 --> 00:31:20,870
+but I'll start with
+the planar case.
+
+625
+00:31:20,870 --> 00:31:36,840
+
+626
+00:31:36,840 --> 00:31:38,040
+Let me get back to that.
+
+627
+00:31:38,040 --> 00:31:40,970
+
+628
+00:31:40,970 --> 00:31:44,160
+Think of that as
+just this blind,
+
+629
+00:31:44,160 --> 00:31:46,490
+some kind of polynomial curve.
+
+630
+00:31:46,490 --> 00:31:51,240
+
+631
+00:31:51,240 --> 00:31:56,950
+We're going to restrict that
+curve to a bounded disk,
+
+632
+00:31:56,950 --> 00:32:01,520
+then claim that is
+exactly the trajectory
+
+633
+00:32:01,520 --> 00:32:03,390
+of some vertex in a linkage.
+
+634
+00:32:03,390 --> 00:32:22,224
+
+635
+00:32:22,224 --> 00:32:22,740
+OK.
+
+636
+00:32:22,740 --> 00:32:26,910
+So I have a lot of
+things to define here.
+
+637
+00:32:26,910 --> 00:32:29,540
+One of them is trajectory.
+
+638
+00:32:29,540 --> 00:32:31,160
+So this is pretty intuitive.
+
+639
+00:32:31,160 --> 00:32:34,360
+So for example, you take some
+linkage like this square,
+
+640
+00:32:34,360 --> 00:32:38,630
+and as it moves, you just
+follow one of the vertices.
+
+641
+00:32:38,630 --> 00:32:42,710
+So for example, if we look
+at c, the trajectory of c
+
+642
+00:32:42,710 --> 00:32:47,340
+is this white circle, at
+least as we move to here.
+
+643
+00:32:47,340 --> 00:32:49,800
+I think even here, when
+we move d, c doesn't move.
+
+644
+00:32:49,800 --> 00:32:52,700
+So the trajectory
+of c is that circle.
+
+645
+00:32:52,700 --> 00:32:55,060
+It's just-- you take
+all the configurations,
+
+646
+00:32:55,060 --> 00:32:57,119
+but then you just
+focus on one vertex
+
+647
+00:32:57,119 --> 00:32:58,660
+and see where it
+can go in the plane.
+
+648
+00:32:58,660 --> 00:33:06,150
+In general, it can be very
+complicated, like here, maybe.
+
+649
+00:33:06,150 --> 00:33:07,330
+Yeah.
+
+650
+00:33:07,330 --> 00:33:11,379
+You may recall it seems
+I do this every time.
+
+651
+00:33:11,379 --> 00:33:13,920
+If you look at the trajectory,
+this is not actually a vertex,
+
+652
+00:33:13,920 --> 00:33:17,350
+and that is not a valid color
+if you want to see something.
+
+653
+00:33:17,350 --> 00:33:20,740
+
+654
+00:33:20,740 --> 00:33:22,580
+This vertex, for
+example, its trajectory
+
+655
+00:33:22,580 --> 00:33:25,640
+is some kind of figure
+eight curve like that.
+
+656
+00:33:25,640 --> 00:33:28,020
+In general, it can
+be some crazy curve,
+
+657
+00:33:28,020 --> 00:33:31,600
+and we want that crazy curve
+to match a given planar curve.
+
+658
+00:33:31,600 --> 00:33:35,390
+
+659
+00:33:35,390 --> 00:33:37,700
+What is this notation?
+
+660
+00:33:37,700 --> 00:33:42,580
+All I mean, it's just
+something like 3x cubed times
+
+661
+00:33:42,580 --> 00:33:52,130
+y minus 7y to the
+fourth power equals 0.
+
+662
+00:33:52,130 --> 00:33:54,680
+You can also add 23 to it.
+
+663
+00:33:54,680 --> 00:33:55,712
+Whatever.
+
+664
+00:33:55,712 --> 00:33:56,840
+So you have some equation.
+
+665
+00:33:56,840 --> 00:33:58,330
+This is an equation on points.
+
+666
+00:33:58,330 --> 00:34:00,640
+In general, if you
+think about it,
+
+667
+00:34:00,640 --> 00:34:03,360
+you've got two degrees
+of freedom for a point.
+
+668
+00:34:03,360 --> 00:34:05,640
+It has an x-coordinate
+and a y-coordinate.
+
+669
+00:34:05,640 --> 00:34:07,670
+You add one equation,
+one constraint,
+
+670
+00:34:07,670 --> 00:34:10,545
+that effectively pins it
+down to be one-dimensional.
+
+671
+00:34:10,545 --> 00:34:12,670
+So it's going to define
+some one-dimensional curve.
+
+672
+00:34:12,670 --> 00:34:13,750
+It could be very general.
+
+673
+00:34:13,750 --> 00:34:15,560
+It could even be disconnected.
+
+674
+00:34:15,560 --> 00:34:18,090
+All sorts of weird stuff.
+
+675
+00:34:18,090 --> 00:34:20,860
+But you can use this to write
+down circles and ellipses.
+
+676
+00:34:20,860 --> 00:34:22,560
+That's the quadratic
+polynomials.
+
+677
+00:34:22,560 --> 00:34:26,570
+But you could also write much
+more complicated things here.
+
+678
+00:34:26,570 --> 00:34:30,010
+So this defines some
+crazy curve, locally
+
+679
+00:34:30,010 --> 00:34:31,860
+one-dimensional thing.
+
+680
+00:34:31,860 --> 00:34:35,400
+And it may also go off to
+infinity if there's hyperbolas,
+
+681
+00:34:35,400 --> 00:34:36,444
+or whatever, in there.
+
+682
+00:34:36,444 --> 00:34:38,610
+We're not going to try to
+capture the infinite curve
+
+683
+00:34:38,610 --> 00:34:40,068
+because that's
+actually impossible.
+
+684
+00:34:40,068 --> 00:34:43,130
+If you have any pin
+vertex, then you
+
+685
+00:34:43,130 --> 00:34:45,830
+can only get so far away
+from that pin vertex.
+
+686
+00:34:45,830 --> 00:34:47,380
+If you have no pin
+vertices, then you
+
+687
+00:34:47,380 --> 00:34:50,191
+can show you can make
+any point in the plane.
+
+688
+00:34:50,191 --> 00:34:51,940
+So if I want to get a
+one-dimensional set,
+
+689
+00:34:51,940 --> 00:34:54,790
+it's got to be a bounded
+set from a linkage.
+
+690
+00:34:54,790 --> 00:34:57,990
+So I take some big
+disk that captures
+
+691
+00:34:57,990 --> 00:35:01,610
+the stuff I care about in
+that one-dimensional curve,
+
+692
+00:35:01,610 --> 00:35:04,890
+and then I am going to
+trace out everything
+
+693
+00:35:04,890 --> 00:35:09,340
+of that curve inside that disk
+using one vertex of a linkage.
+
+694
+00:35:09,340 --> 00:35:11,610
+That's my goal.
+
+695
+00:35:11,610 --> 00:35:14,220
+So it's a pretty
+powerful result.
+
+696
+00:35:14,220 --> 00:35:16,950
+I like to call it Kempe's
+Universality Theorem
+
+697
+00:35:16,950 --> 00:35:23,350
+because Kempe wrote a paper
+about it in 1891 or so-- 1876.
+
+698
+00:35:23,350 --> 00:35:26,050
+Even earlier.
+
+699
+00:35:26,050 --> 00:35:28,110
+He didn't really prove
+the theorem, though.
+
+700
+00:35:28,110 --> 00:35:33,860
+Kempe is quite famous for
+two wrong proofs of theorems,
+
+701
+00:35:33,860 --> 00:35:35,390
+but the theorems are true.
+
+702
+00:35:35,390 --> 00:35:37,960
+The one he's most famous for
+is the four color theorem,
+
+703
+00:35:37,960 --> 00:35:39,126
+which you may have heard of.
+
+704
+00:35:39,126 --> 00:35:42,020
+Any plane or map can be
+colored with four colors
+
+705
+00:35:42,020 --> 00:35:44,750
+such that no two
+countries share boundary
+
+706
+00:35:44,750 --> 00:35:46,410
+if they have the same color.
+
+707
+00:35:46,410 --> 00:35:49,460
+He didn't prove that theorem,
+but it was the late 1800s.
+
+708
+00:35:49,460 --> 00:35:52,360
+It wasn't proved
+until 1960 or so.
+
+709
+00:35:52,360 --> 00:35:59,040
+But the technique he used is
+called the discharging method,
+
+710
+00:35:59,040 --> 00:36:00,650
+is the proof that
+people use today.
+
+711
+00:36:00,650 --> 00:36:02,090
+There are now two proofs
+to the four color theorem.
+
+712
+00:36:02,090 --> 00:36:03,590
+They both use discharging.
+
+713
+00:36:03,590 --> 00:36:07,560
+So they both use Kempe's ideas.
+
+714
+00:36:07,560 --> 00:36:11,090
+He was just ahead of his time.
+
+715
+00:36:11,090 --> 00:36:13,387
+He also claimed to
+prove this theorem.
+
+716
+00:36:13,387 --> 00:36:15,720
+And he proved a slightly
+weaker version of this theorem.
+
+717
+00:36:15,720 --> 00:36:17,900
+I'm going to show you his
+proof because it's nice,
+
+718
+00:36:17,900 --> 00:36:20,130
+and it can be fixed,
+actually, relatively easily--
+
+719
+00:36:20,130 --> 00:36:23,900
+although that was done only in
+the context of this class six
+
+720
+00:36:23,900 --> 00:36:25,430
+years ago.
+
+721
+00:36:25,430 --> 00:36:28,060
+So Kempe's proof has been
+around for over 100 years.
+
+722
+00:36:28,060 --> 00:36:29,560
+Other people had
+proved this theorem
+
+723
+00:36:29,560 --> 00:36:31,311
+but in more complicated ways.
+
+724
+00:36:31,311 --> 00:36:33,060
+We can prove it in the
+same way Kempe did,
+
+725
+00:36:33,060 --> 00:36:34,185
+just a little bit of extra.
+
+726
+00:36:34,185 --> 00:36:42,247
+
+727
+00:36:42,247 --> 00:36:44,830
+So the rest of the lecture will
+be about proving that theorem.
+
+728
+00:36:44,830 --> 00:37:06,150
+
+729
+00:37:06,150 --> 00:37:07,280
+All right.
+
+730
+00:37:07,280 --> 00:37:09,320
+So we've got two things
+we need to worry about.
+
+731
+00:37:09,320 --> 00:37:10,965
+We have to worry
+about this curve,
+
+732
+00:37:10,965 --> 00:37:13,290
+and we have to worry about
+being in a bounded disk.
+
+733
+00:37:13,290 --> 00:37:14,660
+I like being in a bounded disk.
+
+734
+00:37:14,660 --> 00:37:15,820
+That sounds really easy.
+
+735
+00:37:15,820 --> 00:37:17,310
+Let's start with that.
+
+736
+00:37:17,310 --> 00:37:20,400
+So this is this figure.
+
+737
+00:37:20,400 --> 00:37:23,590
+I have, just for fun, a scan of
+the original Kempe paper where
+
+738
+00:37:23,590 --> 00:37:25,139
+he draws the
+corresponding gadgets.
+
+739
+00:37:25,139 --> 00:37:26,430
+This is, again, a gadget proof.
+
+740
+00:37:26,430 --> 00:37:29,950
+We're going to have lots of
+cool gadgets to do fun things.
+
+741
+00:37:29,950 --> 00:37:32,320
+A rhombus looks like this.
+
+742
+00:37:32,320 --> 00:37:35,700
+It has one pin vertex,
+a, here, and you
+
+743
+00:37:35,700 --> 00:37:38,604
+have a degree of freedom in
+how you specify this thing.
+
+744
+00:37:38,604 --> 00:37:41,020
+You specify the lengths of the
+edges, but all of the edges
+
+745
+00:37:41,020 --> 00:37:43,870
+have the same length.
+
+746
+00:37:43,870 --> 00:37:48,010
+So it's like a square, except
+I only pin one of the vertices.
+
+747
+00:37:48,010 --> 00:37:49,620
+That's really the same thing.
+
+748
+00:37:49,620 --> 00:37:53,840
+And you can see, it can only
+go out to twice that distance,
+
+749
+00:37:53,840 --> 00:37:56,104
+and then it fails
+to exist out here.
+
+750
+00:37:56,104 --> 00:37:58,520
+These figures are drawn using
+a program called Cinderella,
+
+751
+00:37:58,520 --> 00:38:00,340
+which is very, very cool.
+
+752
+00:38:00,340 --> 00:38:04,520
+It's commercial, but
+you can download a demo
+
+753
+00:38:04,520 --> 00:38:06,440
+and make your own fun
+constructions like this.
+
+754
+00:38:06,440 --> 00:38:10,490
+These are all on the web,
+the ones I drew here.
+
+755
+00:38:10,490 --> 00:38:12,610
+So you can see,
+basically, that point b
+
+756
+00:38:12,610 --> 00:38:14,820
+is constrained to lie in a disk.
+
+757
+00:38:14,820 --> 00:38:15,740
+That's it.
+
+758
+00:38:15,740 --> 00:38:17,480
+Very simple.
+
+759
+00:38:17,480 --> 00:38:22,610
+So that's the rhombus gadget.
+
+760
+00:38:22,610 --> 00:38:29,190
+
+761
+00:38:29,190 --> 00:38:30,940
+But I want to think
+about it a little bit.
+
+762
+00:38:30,940 --> 00:38:37,450
+
+763
+00:38:37,450 --> 00:38:40,024
+So this vertex is pinned,
+let's say, at 0,0.
+
+764
+00:38:40,024 --> 00:38:42,190
+Well, I guess it's pinned
+at the center of the disk.
+
+765
+00:38:42,190 --> 00:38:44,900
+I don't know where that is.
+
+766
+00:38:44,900 --> 00:38:47,060
+This vertex is going to be
+the vertex I care about.
+
+767
+00:38:47,060 --> 00:38:49,830
+It's the one that I want to
+force to lie on the curve
+
+768
+00:38:49,830 --> 00:38:51,180
+and trace out the curve.
+
+769
+00:38:51,180 --> 00:38:55,300
+This is going to
+be my magic vertex.
+
+770
+00:38:55,300 --> 00:38:57,270
+Let's call it x,y.
+
+771
+00:38:57,270 --> 00:38:59,830
+Say the point that
+it lives on is x,y.
+
+772
+00:38:59,830 --> 00:39:03,330
+
+773
+00:39:03,330 --> 00:39:08,010
+I somehow have to evaluate this
+multinomial, various powers
+
+774
+00:39:08,010 --> 00:39:10,050
+of x and y, multiply
+them by some constants,
+
+775
+00:39:10,050 --> 00:39:12,580
+add them together, and
+force that to equal 0
+
+776
+00:39:12,580 --> 00:39:14,634
+by some constraint, by
+adding-- bars, in general,
+
+777
+00:39:14,634 --> 00:39:15,300
+are constraints.
+
+778
+00:39:15,300 --> 00:39:16,240
+Edges are constraints.
+
+779
+00:39:16,240 --> 00:39:18,470
+They give me
+equality constraints.
+
+780
+00:39:18,470 --> 00:39:20,345
+I say the distance
+between these two vertices
+
+781
+00:39:20,345 --> 00:39:21,860
+is equal to something.
+
+782
+00:39:21,860 --> 00:39:24,420
+Somehow I have to set up the
+distance between two vertices
+
+783
+00:39:24,420 --> 00:39:26,950
+to be that crazy
+function that I'm given.
+
+784
+00:39:26,950 --> 00:39:28,300
+It could be anything.
+
+785
+00:39:28,300 --> 00:39:31,010
+It could be a mess.
+
+786
+00:39:31,010 --> 00:39:34,850
+So Kempe had this cool idea.
+
+787
+00:39:34,850 --> 00:39:38,910
+He said, look, you
+can write this point
+
+788
+00:39:38,910 --> 00:39:44,650
+as a sequence of motions,
+you can think of them.
+
+789
+00:39:44,650 --> 00:39:47,770
+So you start at the
+origin here, and then you
+
+790
+00:39:47,770 --> 00:39:49,520
+move along this segment,
+and then you move
+
+791
+00:39:49,520 --> 00:39:50,560
+along this segment.
+
+792
+00:39:50,560 --> 00:39:52,435
+So let's just write
+down-- what's that angle?
+
+793
+00:39:52,435 --> 00:39:53,200
+Call it alpha.
+
+794
+00:39:53,200 --> 00:39:55,670
+Let me be consistent
+with my notation.
+
+795
+00:39:55,670 --> 00:39:57,590
+Yes, alpha.
+
+796
+00:39:57,590 --> 00:40:01,100
+And these are horizontal lines.
+
+797
+00:40:01,100 --> 00:40:04,964
+And you can think of this
+angle-- I'll call it beta.
+
+798
+00:40:04,964 --> 00:40:06,130
+So there's some length here.
+
+799
+00:40:06,130 --> 00:40:07,590
+Did I give it a name?
+
+800
+00:40:07,590 --> 00:40:08,690
+I do.
+
+801
+00:40:08,690 --> 00:40:13,210
+I call it r/2, because
+if these are both r/2
+
+802
+00:40:13,210 --> 00:40:16,940
+and these are also r/2-- that's
+the definition of a rhombus--
+
+803
+00:40:16,940 --> 00:40:19,680
+then this point
+can get to anywhere
+
+804
+00:40:19,680 --> 00:40:22,140
+within a disk of radius
+r centered at this point.
+
+805
+00:40:22,140 --> 00:40:25,370
+So this would be the
+center of the disk.
+
+806
+00:40:25,370 --> 00:40:27,850
+So we're given r, we're
+told what the disk is.
+
+807
+00:40:27,850 --> 00:40:28,700
+We set this up.
+
+808
+00:40:28,700 --> 00:40:31,950
+But now alpha and beta
+are in some sense free.
+
+809
+00:40:31,950 --> 00:40:33,375
+They're actually
+related to-- no,
+
+810
+00:40:33,375 --> 00:40:35,000
+they're not even
+related to each other.
+
+811
+00:40:35,000 --> 00:40:37,960
+This point still has
+two degrees of freedom.
+
+812
+00:40:37,960 --> 00:40:40,027
+Even though it can't
+go out to infinity,
+
+813
+00:40:40,027 --> 00:40:41,610
+it can move in x and
+it can move in y.
+
+814
+00:40:41,610 --> 00:40:44,040
+We saw because only
+one point was pinned,
+
+815
+00:40:44,040 --> 00:40:47,560
+it could float around in
+a tw-dimensional space.
+
+816
+00:40:47,560 --> 00:40:52,530
+So alpha and beta are actually
+both free to some extent.
+
+817
+00:40:52,530 --> 00:40:54,710
+So instead of
+coordinatizing by x,y,
+
+818
+00:40:54,710 --> 00:40:56,770
+you could coordinatize
+by alpha and beta.
+
+819
+00:40:56,770 --> 00:41:00,780
+And you can relate those two
+coordinatizations by some trig.
+
+820
+00:41:00,780 --> 00:41:03,265
+
+821
+00:41:03,265 --> 00:41:04,890
+I'm going to cheat
+here because I never
+
+822
+00:41:04,890 --> 00:41:07,490
+remember which is sine or
+cosine without thinking
+
+823
+00:41:07,490 --> 00:41:08,230
+for 30 seconds.
+
+824
+00:41:08,230 --> 00:41:12,000
+
+825
+00:41:12,000 --> 00:41:13,810
+The way I remember
+is always cosine
+
+826
+00:41:13,810 --> 00:41:16,500
+is alphabetically
+smaller than sine,
+
+827
+00:41:16,500 --> 00:41:18,380
+and so cosine is
+the x-coordinate
+
+828
+00:41:18,380 --> 00:41:21,950
+and sine is the
+y-coordinate, if you
+
+829
+00:41:21,950 --> 00:41:24,170
+draw the triangle in the
+conical orientation, which
+
+830
+00:41:24,170 --> 00:41:24,878
+you might forget.
+
+831
+00:41:24,878 --> 00:41:32,447
+
+832
+00:41:32,447 --> 00:41:34,030
+If you were given
+these angles and you
+
+833
+00:41:34,030 --> 00:41:35,446
+want to construct
+this point, it's
+
+834
+00:41:35,446 --> 00:41:37,790
+like, well, I go
+in this direction.
+
+835
+00:41:37,790 --> 00:41:40,710
+That direction is cosine
+alpha, sine alpha.
+
+836
+00:41:40,710 --> 00:41:43,470
+And I go that direction
+for r/2 distance.
+
+837
+00:41:43,470 --> 00:41:48,820
+So I have r/2 times cosine alpha
+in the x-coordinate, r/2 sine
+
+838
+00:41:48,820 --> 00:41:49,945
+alpha in the y-coordinates.
+
+839
+00:41:49,945 --> 00:41:51,920
+It's nice and alphabetical.
+
+840
+00:41:51,920 --> 00:41:55,110
+Then from there, I
+go in this direction,
+
+841
+00:41:55,110 --> 00:41:57,530
+which is in the beta
+direction-- the cosine beta,
+
+842
+00:41:57,530 --> 00:41:59,480
+sine beta direction.
+
+843
+00:41:59,480 --> 00:42:02,360
+I go that direction by
+the same amount, r/2.
+
+844
+00:42:02,360 --> 00:42:03,177
+So there you go.
+
+845
+00:42:03,177 --> 00:42:05,260
+That's x and y written in
+terms of alpha and beta.
+
+846
+00:42:05,260 --> 00:42:07,840
+
+847
+00:42:07,840 --> 00:42:11,040
+For the purpose of this exercise
+I prefer cosines over sines.
+
+848
+00:42:11,040 --> 00:42:12,970
+So I'm going to
+rewrite these sines
+
+849
+00:42:12,970 --> 00:42:15,940
+in terms of cosines
+in the obvious way,
+
+850
+00:42:15,940 --> 00:42:27,380
+which I will look up, which
+is cosine alpha minus pi/2,
+
+851
+00:42:27,380 --> 00:42:31,860
+Those r/2 cosine
+beta minus pi/2.
+
+852
+00:42:31,860 --> 00:42:34,670
+
+853
+00:42:34,670 --> 00:42:36,066
+OK.
+
+854
+00:42:36,066 --> 00:42:38,660
+Let's see if I can successfully
+draw cosine and sine.
+
+855
+00:42:38,660 --> 00:42:41,720
+Sine starts here and does that.
+
+856
+00:42:41,720 --> 00:42:44,060
+Cosine starts here
+and does that.
+
+857
+00:42:44,060 --> 00:42:45,840
+They're just shifts
+of each other, which
+
+858
+00:42:45,840 --> 00:42:48,867
+I didn't draw so beautifully.
+
+859
+00:42:48,867 --> 00:42:49,700
+Something like that.
+
+860
+00:42:49,700 --> 00:42:53,150
+
+861
+00:42:53,150 --> 00:42:55,590
+Cosine and sine,
+just a shift by pi/2.
+
+862
+00:42:55,590 --> 00:42:58,330
+So if I subtract
+pi/2 from the angles,
+
+863
+00:42:58,330 --> 00:43:04,160
+I can turn it into a
+cosine instead of a sine.
+
+864
+00:43:04,160 --> 00:43:04,850
+Great.
+
+865
+00:43:04,850 --> 00:43:06,820
+So I have x and y
+written as cosines
+
+866
+00:43:06,820 --> 00:43:09,210
+of things involving
+alpha and beta.
+
+867
+00:43:09,210 --> 00:43:10,970
+So what?
+
+868
+00:43:10,970 --> 00:43:17,030
+Well magically, when I think
+about squaring or raising
+
+869
+00:43:17,030 --> 00:43:21,660
+x to some power like 10, if
+you look in angle space what
+
+870
+00:43:21,660 --> 00:43:23,240
+happens to alpha
+and beta, it's kind
+
+871
+00:43:23,240 --> 00:43:26,210
+of like multiplying
+the angles by 10.
+
+872
+00:43:26,210 --> 00:43:29,170
+In some sense, going into
+the trigonometric world
+
+873
+00:43:29,170 --> 00:43:31,424
+is like taking logarithms
+if you're into algebra.
+
+874
+00:43:31,424 --> 00:43:33,840
+You have these exponents, and
+they're hard to think about.
+
+875
+00:43:33,840 --> 00:43:35,506
+You take logs, it's
+just multiplication.
+
+876
+00:43:35,506 --> 00:43:37,010
+No biggie.
+
+877
+00:43:37,010 --> 00:43:40,210
+And for those of you who
+know complex analysis,
+
+878
+00:43:40,210 --> 00:43:41,565
+that should be obvious.
+
+879
+00:43:41,565 --> 00:43:44,510
+For the rest, just
+take it on faith,
+
+880
+00:43:44,510 --> 00:43:46,890
+and we'll just find
+out that it's true.
+
+881
+00:43:46,890 --> 00:43:49,320
+Because you have
+this good friend.
+
+882
+00:43:49,320 --> 00:43:52,582
+
+883
+00:43:52,582 --> 00:43:54,230
+You have the product
+of two cosines.
+
+884
+00:43:54,230 --> 00:44:02,970
+
+885
+00:44:02,970 --> 00:44:07,571
+You can rewrite it in terms of
+adding and subtracting angles.
+
+886
+00:44:07,571 --> 00:44:09,320
+Now, you may not have
+learned it this way.
+
+887
+00:44:09,320 --> 00:44:11,480
+You probably learned
+about rules for cosines
+
+888
+00:44:11,480 --> 00:44:14,770
+of sums of things and cosines
+of differences of things.
+
+889
+00:44:14,770 --> 00:44:18,550
+If you take these two
+expansions, add them together,
+
+890
+00:44:18,550 --> 00:44:20,590
+lots of things
+cancel, and you end up
+
+891
+00:44:20,590 --> 00:44:24,890
+just being left with cosine a
+times cosine b with a module
+
+892
+00:44:24,890 --> 00:44:27,020
+a factor of 2.
+
+893
+00:44:27,020 --> 00:44:31,270
+So in our situation, we
+have this crazy thing.
+
+894
+00:44:31,270 --> 00:44:34,660
+Let me write down another
+one-- x to the seventh times y
+
+895
+00:44:34,660 --> 00:44:40,610
+squared plus whatever,
+maybe times 6 here.
+
+896
+00:44:40,610 --> 00:44:41,930
+Well, I know what x and y are.
+
+897
+00:44:41,930 --> 00:44:43,000
+I just expand them.
+
+898
+00:44:43,000 --> 00:44:45,230
+I can just plug in
+this thing involving
+
+899
+00:44:45,230 --> 00:44:48,430
+cosine alpha and cosine beta
+into x, and plug in this thing
+
+900
+00:44:48,430 --> 00:44:53,000
+involving cosine of alpha
+minus pi/2 and so on into y.
+
+901
+00:44:53,000 --> 00:44:54,320
+Multiply all that stuff out.
+
+902
+00:44:54,320 --> 00:44:56,900
+What you end up doing is
+multiplying cosines times
+
+903
+00:44:56,900 --> 00:44:58,320
+cosines.
+
+904
+00:44:58,320 --> 00:44:59,460
+And here's how we do it.
+
+905
+00:44:59,460 --> 00:45:03,330
+To multiply two cosines, I
+absorb things and turn it
+
+906
+00:45:03,330 --> 00:45:08,580
+into cosines of sums of angles
+and differences of angles.
+
+907
+00:45:08,580 --> 00:45:10,390
+And I brought an
+example for you.
+
+908
+00:45:10,390 --> 00:45:14,672
+
+909
+00:45:14,672 --> 00:45:16,690
+I'm from Waterloo,
+so I use Maple.
+
+910
+00:45:16,690 --> 00:45:21,560
+You could use Mathematica,
+whatever you want,
+
+911
+00:45:21,560 --> 00:45:23,940
+because doing this
+algebra is a pain.
+
+912
+00:45:23,940 --> 00:45:27,090
+But at the top there, it
+says substitute x equal
+
+913
+00:45:27,090 --> 00:45:29,500
+that crazy thing and y
+equal that crazy thing.
+
+914
+00:45:29,500 --> 00:45:33,220
+Here I didn't bother
+rewriting in terms of cosines
+
+915
+00:45:33,220 --> 00:45:37,460
+because Maple's smarter than I
+am, so I don't need to do that.
+
+916
+00:45:37,460 --> 00:45:39,610
+And I have some crazy
+equation at the top
+
+917
+00:45:39,610 --> 00:45:42,560
+there, which is x cubed
+times y minus 5 times x times
+
+918
+00:45:42,560 --> 00:45:46,400
+y squared equals 0, but I'm
+ignoring the equals 0 part.
+
+919
+00:45:46,400 --> 00:45:50,400
+So I just plug that in, and the
+first time, the first answer
+
+920
+00:45:50,400 --> 00:45:51,650
+there, it doesn't do anything.
+
+921
+00:45:51,650 --> 00:45:53,240
+It just plugs it in.
+
+922
+00:45:53,240 --> 00:45:57,670
+Then I say expand that, and
+it does all this crazy stuff.
+
+923
+00:45:57,670 --> 00:46:00,970
+It multiplies all those things
+out, uses binomial theorem
+
+924
+00:46:00,970 --> 00:46:01,470
+or whatever.
+
+925
+00:46:01,470 --> 00:46:03,261
+You get various new
+coefficients out there,
+
+926
+00:46:03,261 --> 00:46:05,580
+but you get various powers
+of cosines and sines
+
+927
+00:46:05,580 --> 00:46:07,930
+of alphas and betas.
+
+928
+00:46:07,930 --> 00:46:10,190
+And then I use the
+magic operation
+
+929
+00:46:10,190 --> 00:46:12,397
+Combine Using Trig Formulas.
+
+930
+00:46:12,397 --> 00:46:14,730
+And combine means when you
+have a product of two things,
+
+931
+00:46:14,730 --> 00:46:17,250
+try to make it one thing.
+
+932
+00:46:17,250 --> 00:46:20,760
+And that's just a way of telling
+Maple to apply this formula,
+
+933
+00:46:20,760 --> 00:46:24,300
+but it does it for the sine case
+also-- both cosines and sines.
+
+934
+00:46:24,300 --> 00:46:28,480
+And then you get this pretty
+equation, or pretty left-hand
+
+935
+00:46:28,480 --> 00:46:29,980
+side I guess.
+
+936
+00:46:29,980 --> 00:46:31,580
+You get sines.
+
+937
+00:46:31,580 --> 00:46:33,584
+It's written it as
+sines and cosines.
+
+938
+00:46:33,584 --> 00:46:35,000
+In our situation,
+we're only going
+
+939
+00:46:35,000 --> 00:46:38,740
+to get cosines because I
+was very reductionist here.
+
+940
+00:46:38,740 --> 00:46:41,600
+And it'll always be cosines
+of various integer multiples
+
+941
+00:46:41,600 --> 00:46:46,000
+of alpha plus some
+integer multiple of beta.
+
+942
+00:46:46,000 --> 00:46:48,655
+And then there'll be some
+power of r out there.
+
+943
+00:46:48,655 --> 00:46:49,280
+It's no biggie.
+
+944
+00:46:49,280 --> 00:46:50,780
+In fact, we're told what r is.
+
+945
+00:46:50,780 --> 00:46:52,330
+We don't have to
+think very hard.
+
+946
+00:46:52,330 --> 00:46:55,110
+We can construct r
+to the seventh power.
+
+947
+00:46:55,110 --> 00:46:56,844
+It's not a big deal.
+
+948
+00:46:56,844 --> 00:46:58,260
+In fact, all of
+these coefficients
+
+949
+00:46:58,260 --> 00:46:59,140
+are not a big deal.
+
+950
+00:46:59,140 --> 00:47:02,200
+We can just say 15
+over 32 times r cubed.
+
+951
+00:47:02,200 --> 00:47:04,660
+We can just make an
+edge that's that length.
+
+952
+00:47:04,660 --> 00:47:06,940
+The hard part is making
+these things because alpha,
+
+953
+00:47:06,940 --> 00:47:08,260
+beta are variables.
+
+954
+00:47:08,260 --> 00:47:09,680
+They're not a fixed thing.
+
+955
+00:47:09,680 --> 00:47:13,420
+As this thing moves, we want to
+be able to compute twice alpha
+
+956
+00:47:13,420 --> 00:47:17,510
+plus beta, and then take
+the cosine of that thing.
+
+957
+00:47:17,510 --> 00:47:19,460
+Now taking the cosine
+of a thing is easy.
+
+958
+00:47:19,460 --> 00:47:21,900
+It's just the x-coordinate.
+
+959
+00:47:21,900 --> 00:47:28,400
+If I have a segment that's
+going in direction theta,
+
+960
+00:47:28,400 --> 00:47:29,890
+then the x-coordinate
+of this thing
+
+961
+00:47:29,890 --> 00:47:33,010
+with respect to that
+thing is cos theta.
+
+962
+00:47:33,010 --> 00:47:34,760
+This is what I've been
+using all the time.
+
+963
+00:47:34,760 --> 00:47:36,760
+The y-coordinate is sine
+theta, but x-coordinate
+
+964
+00:47:36,760 --> 00:47:37,980
+is cosine theta.
+
+965
+00:47:37,980 --> 00:47:40,510
+So if we can construct something
+at an angle of twice alpha
+
+966
+00:47:40,510 --> 00:47:44,800
+plus beta, then we just
+project onto the x-axis.
+
+967
+00:47:44,800 --> 00:47:46,550
+This length is cosine theta.
+
+968
+00:47:46,550 --> 00:47:49,060
+
+969
+00:47:49,060 --> 00:47:49,780
+Done.
+
+970
+00:47:49,780 --> 00:47:52,080
+So all we need is to be
+able to take an angle,
+
+971
+00:47:52,080 --> 00:47:55,440
+multiply it by some
+integer like 27,
+
+972
+00:47:55,440 --> 00:47:58,882
+and we need to be able to
+add two angles together.
+
+973
+00:47:58,882 --> 00:48:00,700
+And that's what Kempe does.
+
+974
+00:48:00,700 --> 00:48:03,250
+
+975
+00:48:03,250 --> 00:48:07,340
+So he does it with
+this crazy thing
+
+976
+00:48:07,340 --> 00:48:09,440
+called a contraparallelogram.
+
+977
+00:48:09,440 --> 00:48:11,960
+
+978
+00:48:11,960 --> 00:48:15,360
+A parallelogram looks like this.
+
+979
+00:48:15,360 --> 00:48:16,636
+You see the parallelogram.
+
+980
+00:48:16,636 --> 00:48:18,510
+So it's a little more
+general than a rhombus,
+
+981
+00:48:18,510 --> 00:48:19,310
+but not much more.
+
+982
+00:48:19,310 --> 00:48:22,790
+And then the contraparallelogram
+is you take this diagonal,
+
+983
+00:48:22,790 --> 00:48:26,250
+a,y I guess it's called here,
+and you reflect one side down.
+
+984
+00:48:26,250 --> 00:48:28,850
+And so the blue thing is
+the contraparallelogram.
+
+985
+00:48:28,850 --> 00:48:31,770
+
+986
+00:48:31,770 --> 00:48:33,330
+How does it work?
+
+987
+00:48:33,330 --> 00:48:34,630
+What does it do?
+
+988
+00:48:34,630 --> 00:48:36,840
+Well, I'm assuming the
+left point there is pinned.
+
+989
+00:48:36,840 --> 00:48:40,430
+Actually, I'm assuming
+both x and y are pinned.
+
+990
+00:48:40,430 --> 00:48:42,420
+And it just moves around.
+
+991
+00:48:42,420 --> 00:48:43,390
+It's kind of cool.
+
+992
+00:48:43,390 --> 00:48:46,420
+
+993
+00:48:46,420 --> 00:48:50,685
+It has this great
+feature that the angle
+
+994
+00:48:50,685 --> 00:48:54,120
+at a here between
+the two blue segments
+
+995
+00:48:54,120 --> 00:48:56,650
+is the same as the angle at y.
+
+996
+00:48:56,650 --> 00:49:00,665
+And the angle at x is the
+same as the angle at b.
+
+997
+00:49:00,665 --> 00:49:02,920
+You can see that
+throughout the motion.
+
+998
+00:49:02,920 --> 00:49:05,989
+So it's basically
+an angle copier.
+
+999
+00:49:05,989 --> 00:49:07,530
+Angle copier sounds
+good because if I
+
+1000
+00:49:07,530 --> 00:49:10,050
+want to multiply an angle by
+2, I'd like two copies of it
+
+1001
+00:49:10,050 --> 00:49:12,090
+and then stick them together.
+
+1002
+00:49:12,090 --> 00:49:15,004
+So we're just going to take
+this contraparallelogram
+
+1003
+00:49:15,004 --> 00:49:19,690
+and combine a bunch of them.
+
+1004
+00:49:19,690 --> 00:49:23,780
+So if we're going
+to multiply by 2--
+
+1005
+00:49:23,780 --> 00:49:26,350
+it's a little harder
+to see right on blue.
+
+1006
+00:49:26,350 --> 00:49:29,530
+So I have one
+contraparallelogram here,
+
+1007
+00:49:29,530 --> 00:49:33,800
+and then I make a similar--
+you just scale it up--
+
+1008
+00:49:33,800 --> 00:49:37,800
+contraparallelogram that
+lies along that one.
+
+1009
+00:49:37,800 --> 00:49:39,300
+So there's two
+contraparallelograms.
+
+1010
+00:49:39,300 --> 00:49:41,990
+
+1011
+00:49:41,990 --> 00:49:44,920
+And as I said
+before, this angle is
+
+1012
+00:49:44,920 --> 00:49:46,510
+going to be equal to this angle.
+
+1013
+00:49:46,510 --> 00:49:48,440
+That's going to be
+our input alpha.
+
+1014
+00:49:48,440 --> 00:49:50,180
+And we're trying to
+compute twice alpha,
+
+1015
+00:49:50,180 --> 00:49:52,340
+which will be here.
+
+1016
+00:49:52,340 --> 00:49:54,880
+And because this
+contraparallelogram
+
+1017
+00:49:54,880 --> 00:49:58,170
+is similar to this one,
+the angles are the same.
+
+1018
+00:49:58,170 --> 00:49:59,950
+It's just a blowing up of it.
+
+1019
+00:49:59,950 --> 00:50:02,970
+So that means these angles,
+which are equal to each other
+
+1020
+00:50:02,970 --> 00:50:04,690
+because it's
+contraparallelogram,
+
+1021
+00:50:04,690 --> 00:50:07,850
+will be equal to these
+angles because it's
+
+1022
+00:50:07,850 --> 00:50:10,110
+the same contraparallelogram
+scaled up.
+
+1023
+00:50:10,110 --> 00:50:13,262
+Therefore, we have two copies
+of the angle right there.
+
+1024
+00:50:13,262 --> 00:50:15,840
+I'll just show
+you that it works.
+
+1025
+00:50:15,840 --> 00:50:18,610
+A little hard to see on a
+digital screen with pixels.
+
+1026
+00:50:18,610 --> 00:50:19,110
+Here.
+
+1027
+00:50:19,110 --> 00:50:21,526
+When we get 90 degrees, we're
+going to get the twice of it
+
+1028
+00:50:21,526 --> 00:50:23,310
+is exactly 180.
+
+1029
+00:50:23,310 --> 00:50:25,900
+Here's 45.
+
+1030
+00:50:25,900 --> 00:50:29,430
+Here's two 30s
+make 60, and so on.
+
+1031
+00:50:29,430 --> 00:50:32,510
+It works basically all the time.
+
+1032
+00:50:32,510 --> 00:50:34,830
+Wow, cool.
+
+1033
+00:50:34,830 --> 00:50:37,490
+It's hard to see in some cases.
+
+1034
+00:50:37,490 --> 00:50:43,260
+I guess there, twice 180
+is making 360, and so on.
+
+1035
+00:50:43,260 --> 00:50:46,730
+That's how you
+multiply an angle by 2.
+
+1036
+00:50:46,730 --> 00:50:50,120
+But then you can extend that and
+just repeat this construction.
+
+1037
+00:50:50,120 --> 00:50:52,720
+I take one contraparallelogram,
+I attach it
+
+1038
+00:50:52,720 --> 00:50:54,570
+to another similar
+contraparallelogram,
+
+1039
+00:50:54,570 --> 00:50:57,077
+I attach that to another
+similar contraparallelogram,
+
+1040
+00:50:57,077 --> 00:50:58,410
+I get three copies of the angle.
+
+1041
+00:50:58,410 --> 00:51:03,310
+
+1042
+00:51:03,310 --> 00:51:05,020
+Amazing.
+
+1043
+00:51:05,020 --> 00:51:07,590
+Here's trisecting
+180 degree angle.
+
+1044
+00:51:07,590 --> 00:51:08,385
+I get three 60s.
+
+1045
+00:51:08,385 --> 00:51:11,240
+
+1046
+00:51:11,240 --> 00:51:12,920
+Wow, that looks crazy.
+
+1047
+00:51:12,920 --> 00:51:16,230
+
+1048
+00:51:16,230 --> 00:51:17,617
+But it works.
+
+1049
+00:51:17,617 --> 00:51:19,200
+This is sort of a
+proof that it works.
+
+1050
+00:51:19,200 --> 00:51:20,670
+It exists in all the states.
+
+1051
+00:51:20,670 --> 00:51:23,280
+
+1052
+00:51:23,280 --> 00:51:23,780
+Great.
+
+1053
+00:51:23,780 --> 00:51:25,230
+This is an angle
+trisector, which
+
+1054
+00:51:25,230 --> 00:51:27,370
+was a big deal in
+the late 1800s.
+
+1055
+00:51:27,370 --> 00:51:29,760
+You could build a linkage
+where if-- instead
+
+1056
+00:51:29,760 --> 00:51:31,570
+of thinking of this
+as being your input,
+
+1057
+00:51:31,570 --> 00:51:34,153
+or this, whatever-- any one of
+these three could be the input,
+
+1058
+00:51:34,153 --> 00:51:36,000
+and the output is
+three times that.
+
+1059
+00:51:36,000 --> 00:51:37,250
+That's what we want.
+
+1060
+00:51:37,250 --> 00:51:40,260
+You could turn it around and
+say, if I'm given some angle,
+
+1061
+00:51:40,260 --> 00:51:42,710
+I line up these two bars
+to be equal to that,
+
+1062
+00:51:42,710 --> 00:51:46,200
+and then I'll get three
+trisections of the angle.
+
+1063
+00:51:46,200 --> 00:51:47,917
+You can use this to
+quintisect an angle.
+
+1064
+00:51:47,917 --> 00:51:49,500
+You can divide into
+any integer number
+
+1065
+00:51:49,500 --> 00:51:53,280
+parts using this crazy linkage.
+
+1066
+00:51:53,280 --> 00:51:54,500
+Fun stuff.
+
+1067
+00:51:54,500 --> 00:51:58,250
+And we can use it to multiply
+an angle by some constant.
+
+1068
+00:51:58,250 --> 00:52:03,190
+I should write, we
+do this, we expand,
+
+1069
+00:52:03,190 --> 00:52:05,660
+and we will get
+a bunch of terms.
+
+1070
+00:52:05,660 --> 00:52:10,490
+We will get that our
+function phi here
+
+1071
+00:52:10,490 --> 00:52:12,890
+is a sum of a
+bunch of terms that
+
+1072
+00:52:12,890 --> 00:52:15,800
+look like some constant,
+which we can compute ahead
+
+1073
+00:52:15,800 --> 00:52:23,260
+of time nothing's changing,
+times cosine of some integer,
+
+1074
+00:52:23,260 --> 00:52:31,880
+what do I call it, it's
+to match minutes here,
+
+1075
+00:52:31,880 --> 00:52:40,180
+r sub i times alpha,
+plus s sub i times
+
+1076
+00:52:40,180 --> 00:52:43,650
+beta, plus some
+magic number delta,
+
+1077
+00:52:43,650 --> 00:52:48,979
+and delta is 0, or plus
+or minus pi over 2.
+
+1078
+00:52:48,979 --> 00:52:50,020
+So that's not a big deal.
+
+1079
+00:52:50,020 --> 00:52:52,870
+That's just saying whether
+we're using sign or cosine.
+
+1080
+00:52:52,870 --> 00:52:54,550
+What we need is to
+construct, and these
+
+1081
+00:52:54,550 --> 00:52:58,301
+are both integers could
+be positive or negative,
+
+1082
+00:52:58,301 --> 00:52:59,800
+negative's not such
+a big deal, it's
+
+1083
+00:52:59,800 --> 00:53:03,140
+just you look at the
+angle the other way.
+
+1084
+00:53:03,140 --> 00:53:06,270
+So we need some integer times
+alpha, some integer times beta,
+
+1085
+00:53:06,270 --> 00:53:07,750
+we can now do that.
+
+1086
+00:53:07,750 --> 00:53:10,180
+Then we need to
+add them together.
+
+1087
+00:53:10,180 --> 00:53:11,870
+How do we do that?
+
+1088
+00:53:11,870 --> 00:53:13,480
+We use the Kempe Additor.
+
+1089
+00:53:13,480 --> 00:53:16,820
+
+1090
+00:53:16,820 --> 00:53:18,510
+There he is drawing it.
+
+1091
+00:53:18,510 --> 00:53:22,980
+we drew a slightly more detailed
+diagram, looks like this.
+
+1092
+00:53:22,980 --> 00:53:24,480
+Now, this is a
+little more confusing
+
+1093
+00:53:24,480 --> 00:53:26,190
+so I had to label the thing.
+
+1094
+00:53:26,190 --> 00:53:29,820
+We've got the x-axis,
+I like that part.
+
+1095
+00:53:29,820 --> 00:53:32,110
+The idea is we have two inputs.
+
+1096
+00:53:32,110 --> 00:53:35,460
+Here's input one, defining
+one angle to the x-axis.
+
+1097
+00:53:35,460 --> 00:53:38,080
+Here's input two, another
+angle to the x-axis,
+
+1098
+00:53:38,080 --> 00:53:39,491
+here is about 90 degrees.
+
+1099
+00:53:39,491 --> 00:53:40,990
+I want to add them
+together and that
+
+1100
+00:53:40,990 --> 00:53:44,420
+will be this output over here.
+
+1101
+00:53:44,420 --> 00:53:49,030
+Our idea, I think I should
+draw this separately,
+
+1102
+00:53:49,030 --> 00:53:52,200
+not our idea this is
+Kempe's idea, here's
+
+1103
+00:53:52,200 --> 00:53:56,040
+0 here's input
+one, and input two.
+
+1104
+00:53:56,040 --> 00:53:59,460
+Both of these are measured
+as angles to the x-axis.
+
+1105
+00:53:59,460 --> 00:54:03,760
+All we need to do is sort of
+rotate this angle to be here,
+
+1106
+00:54:03,760 --> 00:54:08,440
+and then this guy
+will be the sum.
+
+1107
+00:54:08,440 --> 00:54:11,510
+How do we figure that out
+when all we know how to do
+
+1108
+00:54:11,510 --> 00:54:16,270
+is multiply angles by two or
+divide them in half let's say?
+
+1109
+00:54:16,270 --> 00:54:17,690
+I told you that.
+
+1110
+00:54:17,690 --> 00:54:19,830
+You think about it
+for a while, you
+
+1111
+00:54:19,830 --> 00:54:22,920
+realize, oh well
+let's instead think
+
+1112
+00:54:22,920 --> 00:54:25,779
+of it as taking this
+angle the smaller one,
+
+1113
+00:54:25,779 --> 00:54:27,320
+doesn't really matter
+but it's easier
+
+1114
+00:54:27,320 --> 00:54:30,070
+to think about copying
+that angle over here.
+
+1115
+00:54:30,070 --> 00:54:31,620
+I want to copy that
+angle over here,
+
+1116
+00:54:31,620 --> 00:54:35,540
+and I'm an origamist
+I think reflection.
+
+1117
+00:54:35,540 --> 00:54:39,850
+I would really like to
+reflect along the bisector.
+
+1118
+00:54:39,850 --> 00:54:42,110
+Now what is it a bisector of?
+
+1119
+00:54:42,110 --> 00:54:45,830
+It's a bisector of this angle,
+which hasn't been marked here.
+
+1120
+00:54:45,830 --> 00:54:51,430
+But if this a, this is b,
+then this would be b minus a.
+
+1121
+00:54:51,430 --> 00:54:58,015
+So I want to bisect that angle.
+
+1122
+00:54:58,015 --> 00:54:59,390
+Really I want to
+bisect the angle
+
+1123
+00:54:59,390 --> 00:55:03,066
+between this edge and this edge.
+
+1124
+00:55:03,066 --> 00:55:04,090
+How do I do that?
+
+1125
+00:55:04,090 --> 00:55:07,830
+I use a Kempe
+multiplicator, value of two,
+
+1126
+00:55:07,830 --> 00:55:12,500
+apply it to this angle, then
+I figure out that bisector.
+
+1127
+00:55:12,500 --> 00:55:15,750
+How do I copy this
+thing over to here?
+
+1128
+00:55:15,750 --> 00:55:18,810
+Well I take this
+angle and I double it,
+
+1129
+00:55:18,810 --> 00:55:22,660
+I'll get that, actually that.
+
+1130
+00:55:22,660 --> 00:55:24,980
+So I just used two
+Kempe doublers,
+
+1131
+00:55:24,980 --> 00:55:28,980
+one to have been one to double.
+
+1132
+00:55:28,980 --> 00:55:31,730
+And I can we
+possibly see it here?
+
+1133
+00:55:31,730 --> 00:55:33,480
+I have this line marked middle.
+
+1134
+00:55:33,480 --> 00:55:36,030
+That is the bisector between
+the input two line and the input
+
+1135
+00:55:36,030 --> 00:55:37,080
+one line.
+
+1136
+00:55:37,080 --> 00:55:38,450
+How is it found?
+
+1137
+00:55:38,450 --> 00:55:42,250
+Well it's here.
+
+1138
+00:55:42,250 --> 00:55:48,860
+That's one part of the Kempe
+halfer, doubler, whatever.
+
+1139
+00:55:48,860 --> 00:55:52,300
+And it's attached to one
+over there, similar one.
+
+1140
+00:55:52,300 --> 00:55:55,630
+So it's attached on one side to
+input two and on the other side
+
+1141
+00:55:55,630 --> 00:55:57,730
+to input one.
+
+1142
+00:55:57,730 --> 00:56:00,460
+And so therefore it
+actually takes that angle
+
+1143
+00:56:00,460 --> 00:56:02,450
+and it cuts it in half there.
+
+1144
+00:56:02,450 --> 00:56:03,720
+That's what it does.
+
+1145
+00:56:03,720 --> 00:56:06,250
+So now I have that
+middle line and I
+
+1146
+00:56:06,250 --> 00:56:09,260
+have another Kempe doubler
+which is attached to the output
+
+1147
+00:56:09,260 --> 00:56:13,730
+thing, and the middle, and
+it's attached to the x-axis
+
+1148
+00:56:13,730 --> 00:56:14,580
+to ground it.
+
+1149
+00:56:14,580 --> 00:56:17,880
+So now we're taking this
+angle and doubling it
+
+1150
+00:56:17,880 --> 00:56:20,170
+and that gives us the output.
+
+1151
+00:56:20,170 --> 00:56:24,580
+And you do it, and magically
+thanks to Cinderella,
+
+1152
+00:56:24,580 --> 00:56:25,750
+it does the right thing.
+
+1153
+00:56:25,750 --> 00:56:28,920
+So as I move, here I'm
+changing input one,
+
+1154
+00:56:28,920 --> 00:56:31,290
+and I'm moving the output
+and also this middle line,
+
+1155
+00:56:31,290 --> 00:56:35,180
+it's staying a bisector there,
+when they both get to 90
+
+1156
+00:56:35,180 --> 00:56:37,250
+it'll be 180, and so on.
+
+1157
+00:56:37,250 --> 00:56:40,900
+And I can change
+and put two as well.
+
+1158
+00:56:40,900 --> 00:56:43,550
+And once you build it it's kind
+of clear that it will work.
+
+1159
+00:56:43,550 --> 00:56:46,782
+
+1160
+00:56:46,782 --> 00:56:48,240
+There's a special
+case of doubling,
+
+1161
+00:56:48,240 --> 00:56:50,170
+but I can add any
+two angles I want.
+
+1162
+00:56:50,170 --> 00:56:52,910
+And what's fun is it also
+works, I set it up for input one
+
+1163
+00:56:52,910 --> 00:56:55,640
+being smaller input
+two, but it works just
+
+1164
+00:56:55,640 --> 00:56:57,077
+as fine the other way around.
+
+1165
+00:56:57,077 --> 00:56:58,910
+I don't want to go too
+big because I get out
+
+1166
+00:56:58,910 --> 00:57:02,380
+of the screen.
+
+1167
+00:57:02,380 --> 00:57:05,850
+There's 0 adding 0 to something.
+
+1168
+00:57:05,850 --> 00:57:07,380
+Cool, huh?
+
+1169
+00:57:07,380 --> 00:57:08,400
+Like magic.
+
+1170
+00:57:08,400 --> 00:57:09,620
+So Kempe was really smart.
+
+1171
+00:57:09,620 --> 00:57:11,370
+He knew about these linkages.
+
+1172
+00:57:11,370 --> 00:57:13,460
+He wrote that book How
+to Draw a Straight Line.
+
+1173
+00:57:13,460 --> 00:57:15,034
+But he knew a lot
+more about then
+
+1174
+00:57:15,034 --> 00:57:16,200
+how to draw a straight line.
+
+1175
+00:57:16,200 --> 00:57:21,160
+He could use, he could
+add two angles, man.
+
+1176
+00:57:21,160 --> 00:57:23,780
+Very cool.
+
+1177
+00:57:23,780 --> 00:57:26,210
+All right, what's left.
+
+1178
+00:57:26,210 --> 00:57:28,990
+Basically done,
+for Kempe's proof.
+
+1179
+00:57:28,990 --> 00:57:31,190
+I haven't told you what's
+wrong with this proof yet.
+
+1180
+00:57:31,190 --> 00:57:34,785
+Maybe you've been
+thinking about it.
+
+1181
+00:57:34,785 --> 00:57:37,330
+Then you just have to put
+all these gadgets together.
+
+1182
+00:57:37,330 --> 00:57:41,300
+We have a schematic
+of it in the textbook.
+
+1183
+00:57:41,300 --> 00:57:46,075
+So we started at the
+top with our rhombus.
+
+1184
+00:57:46,075 --> 00:57:48,880
+Not really drawn like a
+rhombus there, but pretend it's
+
+1185
+00:57:48,880 --> 00:57:52,030
+a rhombus, this guy.
+
+1186
+00:57:52,030 --> 00:57:56,802
+I guess this is simplified
+since we drew this figure.
+
+1187
+00:57:56,802 --> 00:57:58,260
+So all the edge
+links are the same.
+
+1188
+00:57:58,260 --> 00:58:00,242
+We've got that
+point p at the top,
+
+1189
+00:58:00,242 --> 00:58:01,450
+that's the one we care about.
+
+1190
+00:58:01,450 --> 00:58:05,589
+We've got the o in the bottom
+left, it's pinned to the table.
+
+1191
+00:58:05,589 --> 00:58:07,380
+And there's one gadget
+I didn't talk about,
+
+1192
+00:58:07,380 --> 00:58:09,900
+translators which is copies,
+angles around, not too
+
+1193
+00:58:09,900 --> 00:58:12,310
+big a deal.
+
+1194
+00:58:12,310 --> 00:58:14,650
+Then we, in this case
+say, we take alpha,
+
+1195
+00:58:14,650 --> 00:58:19,030
+it's right there, we multiply
+it by two, get two alpha,
+
+1196
+00:58:19,030 --> 00:58:22,420
+take beta maybe add those two
+together, we'll get twice alpha
+
+1197
+00:58:22,420 --> 00:58:24,560
+plus beta.
+
+1198
+00:58:24,560 --> 00:58:26,470
+And that is some angle
+we want to measure
+
+1199
+00:58:26,470 --> 00:58:31,510
+the x-coordinate of the
+segment with that angle.
+
+1200
+00:58:31,510 --> 00:58:35,696
+So we just make this thing
+have the right length.
+
+1201
+00:58:35,696 --> 00:58:36,820
+What length should it have?
+
+1202
+00:58:36,820 --> 00:58:40,440
+Well we have this
+cosine of whatever
+
+1203
+00:58:40,440 --> 00:58:45,180
+of our angle in
+our formula here.
+
+1204
+00:58:45,180 --> 00:58:47,280
+And there's some
+constant in front of it.
+
+1205
+00:58:47,280 --> 00:58:49,800
+And for whatever reason
+we have this constant 3a
+
+1206
+00:58:49,800 --> 00:58:53,110
+squared times b, something
+that we know how to compute.
+
+1207
+00:58:53,110 --> 00:58:56,667
+So we just make this edge
+have that length, that's
+
+1208
+00:58:56,667 --> 00:59:00,210
+a scale marker, and
+measure the projected
+
+1209
+00:59:00,210 --> 00:59:02,447
+x length of that thing.
+
+1210
+00:59:02,447 --> 00:59:05,030
+Well, in fact in general we have
+a whole bunch of these terms.
+
+1211
+00:59:05,030 --> 00:59:07,320
+We need to add them together.
+
+1212
+00:59:07,320 --> 00:59:10,860
+We have a whole bunch of these
+things you saw on the maple,
+
+1213
+00:59:10,860 --> 00:59:12,620
+had I don't know, 20 of those.
+
+1214
+00:59:12,620 --> 00:59:15,530
+So we just string them together.
+
+1215
+00:59:15,530 --> 00:59:18,540
+That's our thing we start at
+some point, which we call 0.
+
+1216
+00:59:18,540 --> 00:59:22,350
+In fact, it will be the
+same as that o, let's say.
+
+1217
+00:59:22,350 --> 00:59:23,776
+It should be the same as that o.
+
+1218
+00:59:23,776 --> 00:59:26,150
+We're going to measure relative
+to the center of the disk
+
+1219
+00:59:26,150 --> 00:59:30,770
+say, wherever 0 0 is.
+
+1220
+00:59:30,770 --> 00:59:34,132
+And then we want to measure
+how long this thing gets in x.
+
+1221
+00:59:34,132 --> 00:59:36,090
+Some of these terms might
+actually be negative,
+
+1222
+00:59:36,090 --> 00:59:38,580
+some are positive.
+
+1223
+00:59:38,580 --> 00:59:41,540
+But we're effectively adding
+up all of these weighted sums
+
+1224
+00:59:41,540 --> 00:59:43,660
+of cosines of our
+angles which we
+
+1225
+00:59:43,660 --> 00:59:46,330
+compute through
+these crazy things.
+
+1226
+00:59:46,330 --> 00:59:50,000
+At the end we want this to be 0.
+
+1227
+00:59:50,000 --> 00:59:53,350
+So our goal is to make the
+sum of all these things, which
+
+1228
+00:59:53,350 --> 00:59:56,270
+is the sum of all these
+things rewritten, equal to 0
+
+1229
+00:59:56,270 --> 00:59:59,140
+That was the definition
+of our curve.
+
+1230
+00:59:59,140 --> 01:00:00,340
+How do we force it to be 0?
+
+1231
+01:00:00,340 --> 01:00:03,760
+Well the actual value is
+the x-coordinate here.
+
+1232
+01:00:03,760 --> 01:00:06,270
+And I'm going to
+force this to lie
+
+1233
+01:00:06,270 --> 01:00:09,470
+on x equals 0 using a
+peaucellier linkage,
+
+1234
+01:00:09,470 --> 01:00:12,029
+because it forces
+points to line a line.
+
+1235
+01:00:12,029 --> 01:00:13,570
+In the way we drew
+it, it would force
+
+1236
+01:00:13,570 --> 01:00:16,670
+it to be on a vertical line.
+
+1237
+01:00:16,670 --> 01:00:19,200
+So you have to imagine this
+picture a little differently,
+
+1238
+01:00:19,200 --> 01:00:20,830
+because in fact
+this should be at x
+
+1239
+01:00:20,830 --> 01:00:23,570
+equals 0, which is
+normally right here.
+
+1240
+01:00:23,570 --> 01:00:25,480
+So this thing actually
+goes over to the right
+
+1241
+01:00:25,480 --> 01:00:27,940
+and we'll get positive
+and negative values
+
+1242
+01:00:27,940 --> 01:00:31,660
+and it should lie along
+the vertical line there.
+
+1243
+01:00:31,660 --> 01:00:36,010
+And that's how you force, now
+this point p prime has nothing
+
+1244
+01:00:36,010 --> 01:00:38,170
+to do with them, is
+not the same as p.
+
+1245
+01:00:38,170 --> 01:00:40,420
+But we computed it based
+on all these things
+
+1246
+01:00:40,420 --> 01:00:42,200
+in terms of alpha and beta.
+
+1247
+01:00:42,200 --> 01:00:44,720
+So this is a constraint
+on p in the end,
+
+1248
+01:00:44,720 --> 01:00:46,620
+because p determined
+all these things.
+
+1249
+01:00:46,620 --> 01:00:49,780
+And either this thing will
+be on the line or not.
+
+1250
+01:00:49,780 --> 01:00:51,771
+And we add this one
+equality constraint
+
+1251
+01:00:51,771 --> 01:00:53,395
+which would be exactly
+this constraint.
+
+1252
+01:00:53,395 --> 01:00:57,700
+It will constrain p
+to lie on that curve,
+
+1253
+01:00:57,700 --> 01:01:00,875
+and that's Kempe's construction.
+
+1254
+01:01:00,875 --> 01:01:01,375
+Questions?
+
+1255
+01:01:01,375 --> 01:01:06,200
+
+1256
+01:01:06,200 --> 01:01:10,310
+Three cool, just slightly wrong.
+
+1257
+01:01:10,310 --> 01:01:11,600
+Any ideas what's wrong?
+
+1258
+01:01:11,600 --> 01:01:22,630
+
+1259
+01:01:22,630 --> 01:01:24,180
+Has nothing do
+with this picture.
+
+1260
+01:01:24,180 --> 01:01:26,065
+It has everything to
+do with the gadgets.
+
+1261
+01:01:26,065 --> 01:01:31,460
+
+1262
+01:01:31,460 --> 01:01:34,860
+And actually it really has
+to do with all this business
+
+1263
+01:01:34,860 --> 01:01:36,610
+about the square.
+
+1264
+01:01:36,610 --> 01:01:38,840
+I've lost my diagram of
+the configuration space
+
+1265
+01:01:38,840 --> 01:01:39,640
+to the square.
+
+1266
+01:01:39,640 --> 01:01:43,110
+We had this thing that
+when the square was flat,
+
+1267
+01:01:43,110 --> 01:01:45,060
+it could fold in a new way.
+
+1268
+01:01:45,060 --> 01:01:47,282
+And you saw I couldn't
+even do that in Cinderella.
+
+1269
+01:01:47,282 --> 01:01:48,740
+Cinderella is
+designed to find sort
+
+1270
+01:01:48,740 --> 01:01:51,970
+of one primary
+arc of this thing.
+
+1271
+01:01:51,970 --> 01:01:56,650
+But there are these
+branch points, these guys.
+
+1272
+01:01:56,650 --> 01:01:59,020
+And this construction
+is perfect if you always
+
+1273
+01:01:59,020 --> 01:02:01,000
+stay on your track.
+
+1274
+01:02:01,000 --> 01:02:03,640
+But in a real linkage, you
+can diverge at any point
+
+1275
+01:02:03,640 --> 01:02:06,422
+and go to some other track, and
+you can walk around this space.
+
+1276
+01:02:06,422 --> 01:02:08,380
+When you have these branch
+points where there's
+
+1277
+01:02:08,380 --> 01:02:12,340
+more than two curves coming
+together, you have a choice.
+
+1278
+01:02:12,340 --> 01:02:15,640
+So you're not supposed
+to have a choice here,
+
+1279
+01:02:15,640 --> 01:02:18,750
+supposed to always
+do this thing.
+
+1280
+01:02:18,750 --> 01:02:25,530
+And sadly there's one
+gadget, really two gadgets,
+
+1281
+01:02:25,530 --> 01:02:27,670
+the parallelogram and
+the contra-parallelogram.
+
+1282
+01:02:27,670 --> 01:02:30,040
+The parallelogram
+we're using here.
+
+1283
+01:02:30,040 --> 01:02:33,300
+It's also used in the copy
+gadget which I didn't show you.
+
+1284
+01:02:33,300 --> 01:02:39,730
+What don't I tell you, a
+copy gadget looks like this.
+
+1285
+01:02:39,730 --> 01:02:44,860
+It's like a lamp, you
+know like the Pixar lamp.
+
+1286
+01:02:44,860 --> 01:02:49,710
+So if you have an angle here
+it gets copied here, right.
+
+1287
+01:02:49,710 --> 01:02:52,309
+These are just two
+identical parallelograms.
+
+1288
+01:02:52,309 --> 01:02:54,100
+So if you need multiple
+copies of an angle,
+
+1289
+01:02:54,100 --> 01:02:55,930
+you can make multiple
+copies that way.
+
+1290
+01:02:55,930 --> 01:02:59,832
+I don't think you really
+need this, but Kempe used it.
+
+1291
+01:02:59,832 --> 01:03:02,960
+It feels good to be
+able to copy an angel.
+
+1292
+01:03:02,960 --> 01:03:04,790
+And it's a parallelogram.
+
+1293
+01:03:04,790 --> 01:03:07,450
+And we used a lot, the
+contra-parallelogram.
+
+1294
+01:03:07,450 --> 01:03:10,050
+The trouble is they
+are the same linkage.
+
+1295
+01:03:10,050 --> 01:03:12,820
+If you forget about
+the configuration,
+
+1296
+01:03:12,820 --> 01:03:14,970
+you just look at the linkage
+which is who's pinned,
+
+1297
+01:03:14,970 --> 01:03:17,830
+what are the edge links, what
+is the graph connectivity,
+
+1298
+01:03:17,830 --> 01:03:22,432
+it looks like this, just these
+numbers are not all the same,
+
+1299
+01:03:22,432 --> 01:03:24,140
+and only one of these
+vertices is pinned.
+
+1300
+01:03:24,140 --> 01:03:26,080
+Other than that it's
+exactly this diagram.
+
+1301
+01:03:26,080 --> 01:03:28,370
+You know, It's a square,
+it's a quadrilateral,
+
+1302
+01:03:28,370 --> 01:03:31,230
+has some lengths.
+
+1303
+01:03:31,230 --> 01:03:34,150
+Opposite pairs are equal.
+
+1304
+01:03:34,150 --> 01:03:38,280
+But you can't really
+distinguish from the two
+
+1305
+01:03:38,280 --> 01:03:39,450
+kinds of configurations.
+
+1306
+01:03:39,450 --> 01:03:41,490
+There's one track which
+is the parallelogram.
+
+1307
+01:03:41,490 --> 01:03:43,823
+There's another track which
+is the contra-parallelogram.
+
+1308
+01:03:43,823 --> 01:03:45,560
+
+1309
+01:03:45,560 --> 01:03:48,080
+And you can do this.
+
+1310
+01:03:48,080 --> 01:03:52,910
+Let me show you in animation,
+give you some intuition.
+
+1311
+01:03:52,910 --> 01:03:55,700
+So here I drew both, oh sorry,
+not supposed to move that.
+
+1312
+01:03:55,700 --> 01:04:01,270
+Here I drew both of them, got
+the green contra-parallelogram.
+
+1313
+01:04:01,270 --> 01:04:05,630
+And there's the, sorry green,
+the blue contra-parallelogram.
+
+1314
+01:04:05,630 --> 01:04:08,650
+And then we've got the
+black and blue parallelogram
+
+1315
+01:04:08,650 --> 01:04:09,770
+on the outside.
+
+1316
+01:04:09,770 --> 01:04:13,690
+And ignore this diagonal, it
+should be a different color.
+
+1317
+01:04:13,690 --> 01:04:17,860
+And when we're flat,
+that's the same thing.
+
+1318
+01:04:17,860 --> 01:04:20,470
+And so we've got this one
+cycle that goes around
+
+1319
+01:04:20,470 --> 01:04:22,380
+and that's the blue picture.
+
+1320
+01:04:22,380 --> 01:04:25,450
+Then at this point you can
+switch into the black picture
+
+1321
+01:04:25,450 --> 01:04:29,920
+and follow the parallelogram
+around until it's flat.
+
+1322
+01:04:29,920 --> 01:04:33,380
+And that point you could also
+switch back to blue or not.
+
+1323
+01:04:33,380 --> 01:04:37,090
+So I think this is two
+circles joined to two points.
+
+1324
+01:04:37,090 --> 01:04:39,840
+If I'm not mistaken,
+the configuration space
+
+1325
+01:04:39,840 --> 01:04:41,920
+would look like this.
+
+1326
+01:04:41,920 --> 01:04:45,374
+So one of these tracks, say this
+one, is a contra-parallelogram.
+
+1327
+01:04:45,374 --> 01:04:46,540
+This one is a parallelogram.
+
+1328
+01:04:46,540 --> 01:04:50,730
+They meet at the two
+extremes, both flat cases.
+
+1329
+01:04:50,730 --> 01:04:54,750
+And in Kempe's construction
+he wants each of the things
+
+1330
+01:04:54,750 --> 01:04:56,860
+that we call the
+parallelogram like this one,
+
+1331
+01:04:56,860 --> 01:04:58,627
+to stay on one, the
+parallelogram track.
+
+1332
+01:04:58,627 --> 01:05:00,210
+And he wants the
+contra-parallelograms
+
+1333
+01:05:00,210 --> 01:05:03,450
+to stay on the
+contra-parallelograms track.
+
+1334
+01:05:03,450 --> 01:05:05,550
+But how do you force that?
+
+1335
+01:05:05,550 --> 01:05:08,620
+He didn't force it,
+and so technically he
+
+1336
+01:05:08,620 --> 01:05:10,050
+did not solve this problem.
+
+1337
+01:05:10,050 --> 01:05:12,992
+He solved, that
+solved this problem,
+
+1338
+01:05:12,992 --> 01:05:14,450
+which is that you
+would get exactly
+
+1339
+01:05:14,450 --> 01:05:16,250
+the trajectory of a vertex.
+
+1340
+01:05:16,250 --> 01:05:19,550
+He solved the slightly weaker
+problem, which is his point
+
+1341
+01:05:19,550 --> 01:05:22,430
+can travel along that curve.
+
+1342
+01:05:22,430 --> 01:05:25,160
+It can also travel
+on other curves.
+
+1343
+01:05:25,160 --> 01:05:26,660
+But it's going to
+be one dimensional
+
+1344
+01:05:26,660 --> 01:05:27,880
+because it is constrained.
+
+1345
+01:05:27,880 --> 01:05:30,130
+But there are these other
+tracks you might conceivably
+
+1346
+01:05:30,130 --> 01:05:31,440
+be able to go on.
+
+1347
+01:05:31,440 --> 01:05:33,179
+In particular, you
+can follow this track.
+
+1348
+01:05:33,179 --> 01:05:34,345
+There might be other things.
+
+1349
+01:05:34,345 --> 01:05:36,550
+And we'd like to
+get rid of that.
+
+1350
+01:05:36,550 --> 01:05:39,250
+It turns out you can get
+rid of that pretty easily.
+
+1351
+01:05:39,250 --> 01:05:42,790
+
+1352
+01:05:42,790 --> 01:05:45,840
+This problem was first noticed
+by Kapovitch and Millson
+
+1353
+01:05:45,840 --> 01:05:52,150
+in like 2002 I think.
+
+1354
+01:05:52,150 --> 01:05:53,470
+Yeah.
+
+1355
+01:05:53,470 --> 01:05:55,220
+Well that's when it
+finally got published.
+
+1356
+01:05:55,220 --> 01:05:57,940
+I think it was around for
+a few years before that.
+
+1357
+01:05:57,940 --> 01:06:02,230
+And they observed that
+for parallelograms you
+
+1358
+01:06:02,230 --> 01:06:05,550
+can fix it pretty easily
+like in this picture.
+
+1359
+01:06:05,550 --> 01:06:08,730
+You have the
+parallelogram a-b-c-d.
+
+1360
+01:06:08,730 --> 01:06:11,540
+You construct the
+midpoints of a and b
+
+1361
+01:06:11,540 --> 01:06:13,440
+and the midpoints of d and c.
+
+1362
+01:06:13,440 --> 01:06:15,410
+How do you actually do this?
+
+1363
+01:06:15,410 --> 01:06:18,990
+I want that point x to stay
+on the middle of that bar.
+
+1364
+01:06:18,990 --> 01:06:20,520
+You can do that
+by making, if you
+
+1365
+01:06:20,520 --> 01:06:22,860
+want to construct a point
+in the middle of a bar,
+
+1366
+01:06:22,860 --> 01:06:25,130
+you just add a tiny
+triangle, where
+
+1367
+01:06:25,130 --> 01:06:29,880
+it's forced to be that
+way, where a b equals,
+
+1368
+01:06:29,880 --> 01:06:33,690
+I mean the sum of a
+and b equals a plus b.
+
+1369
+01:06:33,690 --> 01:06:37,477
+And if you want,
+do we need this?
+
+1370
+01:06:37,477 --> 01:06:39,560
+I think you could just
+construct those three bars.
+
+1371
+01:06:39,560 --> 01:06:41,800
+This makes a little
+bit more rigid,
+
+1372
+01:06:41,800 --> 01:06:46,550
+but I don't think we
+actually need that here.
+
+1373
+01:06:46,550 --> 01:06:49,000
+So you can force a vertex
+to be along the midpoint
+
+1374
+01:06:49,000 --> 01:06:53,620
+there by making a tiny
+triangle, a zero area triangle.
+
+1375
+01:06:53,620 --> 01:06:57,980
+And when you do that, I don;t
+actually have a picture of it,
+
+1376
+01:06:57,980 --> 01:07:01,570
+we can look at the
+countra-parallelogram I guess,
+
+1377
+01:07:01,570 --> 01:07:04,552
+it forces the thing to work.
+
+1378
+01:07:04,552 --> 01:07:06,510
+So for example, suppose
+we go from the midpoint
+
+1379
+01:07:06,510 --> 01:07:08,920
+here to the midpoint there.
+
+1380
+01:07:08,920 --> 01:07:12,190
+That's going to stay parallel to
+this segment and this segment.
+
+1381
+01:07:12,190 --> 01:07:14,540
+It's like two parallelograms
+joined together.
+
+1382
+01:07:14,540 --> 01:07:17,560
+Okay, and if you went
+here, and then you
+
+1383
+01:07:17,560 --> 01:07:22,389
+tried to go off into the
+contra-parallelogram state,
+
+1384
+01:07:22,389 --> 01:07:23,180
+what would that do?
+
+1385
+01:07:23,180 --> 01:07:26,280
+Well you'd have like from
+the midpoint of this segment
+
+1386
+01:07:26,280 --> 01:07:28,850
+to the midpoint of this segment.
+
+1387
+01:07:28,850 --> 01:07:29,820
+Holy cow.
+
+1388
+01:07:29,820 --> 01:07:31,980
+It's like they're right
+on top of each other.
+
+1389
+01:07:31,980 --> 01:07:33,855
+So that's not going to
+have the right length.
+
+1390
+01:07:33,855 --> 01:07:36,710
+Right now it's supposed to be
+this length, same as the length
+
+1391
+01:07:36,710 --> 01:07:38,540
+a x.
+
+1392
+01:07:38,540 --> 01:07:41,280
+So if you try to jump
+tracks you can't.
+
+1393
+01:07:41,280 --> 01:07:44,060
+It's really easy to force
+to stay on the parallelogram
+
+1394
+01:07:44,060 --> 01:07:44,560
+track.
+
+1395
+01:07:44,560 --> 01:07:47,620
+
+1396
+01:07:47,620 --> 01:07:49,760
+And then six years
+ago in this class
+
+1397
+01:07:49,760 --> 01:07:51,570
+I posed, hey can we
+do the same thing
+
+1398
+01:07:51,570 --> 01:07:53,142
+for the contra-parallelogram.
+
+1399
+01:07:53,142 --> 01:07:55,350
+Kapovich and Millson gave
+some other very complicated
+
+1400
+01:07:55,350 --> 01:07:56,480
+solution.
+
+1401
+01:07:56,480 --> 01:07:59,840
+Turns out there's also
+pretty easy way to fix
+
+1402
+01:07:59,840 --> 01:08:04,820
+the contra-parallelogram, which
+is you add this pinpoint set up
+
+1403
+01:08:04,820 --> 01:08:07,180
+to be--- So these midpoints
+will all be aligned
+
+1404
+01:08:07,180 --> 01:08:09,450
+because it's a
+contra-parallelogram.
+
+1405
+01:08:09,450 --> 01:08:11,400
+You take the middle
+and you bisect,
+
+1406
+01:08:11,400 --> 01:08:15,560
+you put x far away, it would
+be very far down there.
+
+1407
+01:08:15,560 --> 01:08:19,040
+And you just make these
+lengths be what they should be.
+
+1408
+01:08:19,040 --> 01:08:20,899
+And it's not so
+obvious but you can
+
+1409
+01:08:20,899 --> 01:08:23,660
+prove that as the
+contra-parallelogram moves,
+
+1410
+01:08:23,660 --> 01:08:26,898
+these edges will all
+have the same length.
+
+1411
+01:08:26,898 --> 01:08:29,270
+It works.
+
+1412
+01:08:29,270 --> 01:08:35,200
+Whereas if you try to go
+into the parallelogram state,
+
+1413
+01:08:35,200 --> 01:08:36,740
+and you measure
+these links, they're
+
+1414
+01:08:36,740 --> 01:08:37,939
+going to be really tiny.
+
+1415
+01:08:37,939 --> 01:08:39,800
+Here they're really large.
+
+1416
+01:08:39,800 --> 01:08:41,460
+Am I doing that right?
+
+1417
+01:08:41,460 --> 01:08:42,550
+What am I measuring?
+
+1418
+01:08:42,550 --> 01:08:45,000
+No, the point is it's
+not about those links.
+
+1419
+01:08:45,000 --> 01:08:48,479
+These guys have to be co-linear
+in the contra-parallelogram
+
+1420
+01:08:48,479 --> 01:08:51,300
+case, but they are not collinear
+in the parallelogram case,
+
+1421
+01:08:51,300 --> 01:08:54,140
+and this is essentially
+forcing that co-linearity.
+
+1422
+01:08:54,140 --> 01:08:56,640
+So I don't want to go into the
+details of how that's proved,
+
+1423
+01:08:56,640 --> 01:08:58,130
+it's in the textbook.
+
+1424
+01:08:58,130 --> 01:09:01,560
+But this bracing will force it
+to say contra-parallelogram,
+
+1425
+01:09:01,560 --> 01:09:04,080
+that bracing will force
+it to be a parallelogram,
+
+1426
+01:09:04,080 --> 01:09:06,029
+and then we actually
+have proofed
+
+1427
+01:09:06,029 --> 01:09:08,530
+Kempe's universality theorem,
+with just a slight tweak
+
+1428
+01:09:08,530 --> 01:09:09,420
+to his proof.
+
+1429
+01:09:09,420 --> 01:09:12,910
+
+1430
+01:09:12,910 --> 01:09:15,270
+So that's the bug and the fix.
+
+1431
+01:09:15,270 --> 01:09:17,930
+Let me tell you some
+generalizations,
+
+1432
+01:09:17,930 --> 01:09:19,710
+some open problems,
+some applications.
+
+1433
+01:09:19,710 --> 01:09:28,319
+
+1434
+01:09:28,319 --> 01:09:31,569
+Maybe start with
+the obvious stuff
+
+1435
+01:09:31,569 --> 01:09:37,490
+which is something called
+Weierstrass approximation
+
+1436
+01:09:37,490 --> 01:09:57,250
+theorem, which is that if you
+have any continuous function,
+
+1437
+01:09:57,250 --> 01:10:03,590
+I should say let's
+think of it as a curve,
+
+1438
+01:10:03,590 --> 01:10:09,650
+has an epsilon approximation
+as a polynomial.
+
+1439
+01:10:09,650 --> 01:10:15,450
+
+1440
+01:10:15,450 --> 01:10:17,030
+OK, so in particular
+what this tells
+
+1441
+01:10:17,030 --> 01:10:19,290
+us is if we have some
+crazy curve we want
+
+1442
+01:10:19,290 --> 01:10:24,330
+to make, like a signature,
+then you can approximate it
+
+1443
+01:10:24,330 --> 01:10:29,170
+by a polynomial of the form that
+we analyzed, this [INAUDIBLE]
+
+1444
+01:10:29,170 --> 01:10:33,740
+of x y equals 0.
+
+1445
+01:10:33,740 --> 01:10:35,840
+And the polynomial will
+actually look like this,
+
+1446
+01:10:35,840 --> 01:10:37,540
+It's a little bit
+ugly, if you've ever
+
+1447
+01:10:37,540 --> 01:10:39,480
+seen these constructions.
+
+1448
+01:10:39,480 --> 01:10:44,430
+But it will be always within
+an epsilon thickness of Erik,
+
+1449
+01:10:44,430 --> 01:10:48,270
+always Erik, never
+any other curve.
+
+1450
+01:10:48,270 --> 01:10:50,810
+All right so you can apply
+this to make your signature
+
+1451
+01:10:50,810 --> 01:10:53,462
+or make whatever crazy
+curve you have in mind.
+
+1452
+01:10:53,462 --> 01:10:54,295
+That's kind of nice.
+
+1453
+01:10:54,295 --> 01:10:56,820
+
+1454
+01:10:56,820 --> 01:10:59,265
+So this is why you can sign
+your name using polynomials.
+
+1455
+01:10:59,265 --> 01:11:01,890
+
+1456
+01:11:01,890 --> 01:11:03,399
+So that's an easy application.
+
+1457
+01:11:03,399 --> 01:11:04,273
+Some generalizations.
+
+1458
+01:11:04,273 --> 01:11:12,776
+
+1459
+01:11:12,776 --> 01:11:13,760
+All right.
+
+1460
+01:11:13,760 --> 01:11:19,840
+You can do curves
+in d dimensions.
+
+1461
+01:11:19,840 --> 01:11:22,020
+We talked about two dimensions.
+
+1462
+01:11:22,020 --> 01:11:23,630
+You can generalize that.
+
+1463
+01:11:23,630 --> 01:11:28,030
+You can also do surfaces
+in d dimensions.
+
+1464
+01:11:28,030 --> 01:11:30,940
+Basically if you want to specify
+a curve in three dimensions,
+
+1465
+01:11:30,940 --> 01:11:35,320
+you need two equations
+to constrain it down
+
+1466
+01:11:35,320 --> 01:11:36,949
+to a one dimensional thing.
+
+1467
+01:11:36,949 --> 01:11:38,490
+Generally you start
+with d dimensions
+
+1468
+01:11:38,490 --> 01:11:40,656
+and you can remove however
+many dimensions you want.
+
+1469
+01:11:40,656 --> 01:11:42,210
+You'll get some
+subsurface in there.
+
+1470
+01:11:42,210 --> 01:11:44,360
+Just add a bunch of
+polynomial constraints.
+
+1471
+01:11:44,360 --> 01:11:46,850
+You can do that.
+
+1472
+01:11:46,850 --> 01:11:49,020
+Other fun facts.
+
+1473
+01:11:49,020 --> 01:11:54,352
+The number of edges you
+need is about n to the d.
+
+1474
+01:11:54,352 --> 01:11:58,460
+This is being careful
+about reusing structure.
+
+1475
+01:11:58,460 --> 01:12:01,450
+In the plane you can deal
+with n squared edges.
+
+1476
+01:12:01,450 --> 01:12:02,550
+And that's optimal.
+
+1477
+01:12:02,550 --> 01:12:04,300
+You can show you
+need n squared edges
+
+1478
+01:12:04,300 --> 01:12:08,890
+to construct certain
+polynomials in the plane.
+
+1479
+01:12:08,890 --> 01:12:13,060
+In three dimensions you're
+going to need more, turns out.
+
+1480
+01:12:13,060 --> 01:12:15,040
+Basically, because the
+constructions we used
+
+1481
+01:12:15,040 --> 01:12:17,920
+want to work in a plane, and
+if you live in d dimensions,
+
+1482
+01:12:17,920 --> 01:12:19,540
+you have to add lots
+of edges to force
+
+1483
+01:12:19,540 --> 01:12:22,870
+it to live in two dimensions.
+
+1484
+01:12:22,870 --> 01:12:27,510
+So you can do the computation,
+add the numbers, and so on.
+
+1485
+01:12:27,510 --> 01:12:29,898
+What other good things?
+
+1486
+01:12:29,898 --> 01:12:32,610
+All right, for the
+mathematicians,
+
+1487
+01:12:32,610 --> 01:12:38,950
+you can make any compact
+semi algebraic set.
+
+1488
+01:12:38,950 --> 01:12:43,520
+
+1489
+01:12:43,520 --> 01:12:46,400
+It's basically a
+fancy way to say
+
+1490
+01:12:46,400 --> 01:12:47,935
+you can add polynomial
+constraints,
+
+1491
+01:12:47,935 --> 01:12:51,110
+but you can also take
+unions of solution sets.
+
+1492
+01:12:51,110 --> 01:12:53,030
+So I could take the
+union of five curves
+
+1493
+01:12:53,030 --> 01:12:57,025
+that I like, or I can take the
+intersection of five curves
+
+1494
+01:12:57,025 --> 01:12:58,530
+that I like.
+
+1495
+01:12:58,530 --> 01:13:00,490
+Bunch of things
+you can do, that's
+
+1496
+01:13:00,490 --> 01:13:02,510
+the meaning of semi
+algebraic set, polynomials
+
+1497
+01:13:02,510 --> 01:13:03,635
+and union and intersection.
+
+1498
+01:13:03,635 --> 01:13:07,590
+
+1499
+01:13:07,590 --> 01:13:12,300
+These are all proved in paper
+with Tim Avit and Reid Barton
+
+1500
+01:13:12,300 --> 01:13:14,730
+from this class six years ago.
+
+1501
+01:13:14,730 --> 01:13:19,210
+Another fun fact
+from that paper is
+
+1502
+01:13:19,210 --> 01:13:22,940
+that it's coNP-hard
+to test rigidity.
+
+1503
+01:13:22,940 --> 01:13:26,190
+
+1504
+01:13:26,190 --> 01:13:30,430
+Rigidity is the
+topic of next class.
+
+1505
+01:13:30,430 --> 01:13:32,960
+You're given a linkage,
+does it move it all?
+
+1506
+01:13:32,960 --> 01:13:34,450
+And you can use
+these constructions
+
+1507
+01:13:34,450 --> 01:13:37,660
+to mean, to show that something
+will move at all if and only
+
+1508
+01:13:37,660 --> 01:13:39,940
+if all these polynomials
+have a solution.
+
+1509
+01:13:39,940 --> 01:13:43,020
+And that turns out
+to be really hard.
+
+1510
+01:13:43,020 --> 01:13:45,610
+And it's something
+called coNP-hard,
+
+1511
+01:13:45,610 --> 01:13:47,610
+which is almost the
+same as NP-hard.
+
+1512
+01:13:47,610 --> 01:13:50,670
+it's just for rigidity,
+it's really easy
+
+1513
+01:13:50,670 --> 01:13:53,030
+to prove that something is
+not rigid, you just move it.
+
+1514
+01:13:53,030 --> 01:13:55,520
+It's a little harder to show
+that it can't move in any way.
+
+1515
+01:13:55,520 --> 01:13:58,560
+So that's for those who know
+coNP, it's coNP, not NP.
+
+1516
+01:13:58,560 --> 01:14:01,320
+
+1517
+01:14:01,320 --> 01:14:02,070
+Cool.
+
+1518
+01:14:02,070 --> 01:14:05,050
+Those are various
+generalizations.
+
+1519
+01:14:05,050 --> 01:14:08,790
+Big open problem
+here is what if you
+
+1520
+01:14:08,790 --> 01:14:11,139
+forbid the edges from crossing.
+
+1521
+01:14:11,139 --> 01:14:12,680
+This actually came
+up in lecture one.
+
+1522
+01:14:12,680 --> 01:14:13,450
+Someone asked it.
+
+1523
+01:14:13,450 --> 01:14:18,686
+It was first posed that I know
+from Don Shimamoto in 2004,
+
+1524
+01:14:18,686 --> 01:14:20,480
+I was giving a talk.
+
+1525
+01:14:20,480 --> 01:14:22,380
+And all these
+constructions, especially
+
+1526
+01:14:22,380 --> 01:14:24,610
+the contra-parallelogram,
+need to have
+
+1527
+01:14:24,610 --> 01:14:26,747
+edges that cross each other.
+
+1528
+01:14:26,747 --> 01:14:28,330
+Next class will also
+be about the case
+
+1529
+01:14:28,330 --> 01:14:29,710
+where edges cross
+each other but soon
+
+1530
+01:14:29,710 --> 01:14:31,006
+we are going to
+enter the case where
+
+1531
+01:14:31,006 --> 01:14:32,297
+edges are not allowed to cross.
+
+1532
+01:14:32,297 --> 01:14:34,150
+Can you do any of
+this stuff, construct
+
+1533
+01:14:34,150 --> 01:14:36,000
+any interesting polynomials?
+
+1534
+01:14:36,000 --> 01:14:38,320
+Even constructing a straight
+line, I think is open.
+
+1535
+01:14:38,320 --> 01:14:41,250
+The peaucellier linkage
+definitely doesn't work.
+
+1536
+01:14:41,250 --> 01:14:42,750
+Maybe there are
+some other linkages,
+
+1537
+01:14:42,750 --> 01:14:44,070
+we'd have to check them.
+
+1538
+01:14:44,070 --> 01:14:46,690
+But definitely Kempe's
+universality result
+
+1539
+01:14:46,690 --> 01:14:50,540
+is open for non-crossing edges.
+
+1540
+01:14:50,540 --> 01:14:52,314
+I have some fun
+projects like it'd
+
+1541
+01:14:52,314 --> 01:14:53,730
+be fun to implement
+this algorithm
+
+1542
+01:14:53,730 --> 01:14:55,777
+and see this thing run.
+
+1543
+01:14:55,777 --> 01:14:57,860
+You could build a sculpture
+out of Kempe linkages.
+
+1544
+01:14:57,860 --> 01:14:59,670
+They're a little
+bit tedious I would
+
+1545
+01:14:59,670 --> 01:15:02,310
+say to make interesting curves,
+but there's some cool ones.
+
+1546
+01:15:02,310 --> 01:15:06,810
+Like in the notes I have a
+link to the letter C made out
+
+1547
+01:15:06,810 --> 01:15:07,800
+of a linkage.
+
+1548
+01:15:07,800 --> 01:15:10,360
+You could do a whole
+alphabet, be kind of fun.
+
+1549
+01:15:10,360 --> 01:15:12,310
+Have these things cranking
+around and spelling
+
+1550
+01:15:12,310 --> 01:15:17,560
+all sorts of, actually spelling
+names would be the idea.
+
+1551
+01:15:17,560 --> 01:15:21,260
+Another fun application that I
+thought I would just throw in.
+
+1552
+01:15:21,260 --> 01:15:24,240
+If you are, back to origami.
+
+1553
+01:15:24,240 --> 01:15:27,160
+Origami can in some
+sense simulate linkages.
+
+1554
+01:15:27,160 --> 01:15:28,931
+And the motivation for
+this is you've, you
+
+1555
+01:15:28,931 --> 01:15:31,430
+know you've designed, you just
+design all these awesome tree
+
+1556
+01:15:31,430 --> 01:15:35,000
+maker diagrams for
+your problem set.
+
+1557
+01:15:35,000 --> 01:15:37,160
+And you realize, oh
+man, there's points
+
+1558
+01:15:37,160 --> 01:15:39,230
+all over the place on
+this piece of paper.
+
+1559
+01:15:39,230 --> 01:15:41,211
+How the heck am I
+going to find, if I
+
+1560
+01:15:41,211 --> 01:15:42,960
+had to make origami
+diagrams, first I say,
+
+1561
+01:15:42,960 --> 01:15:45,300
+oh you do this step, then
+this step, then this step.
+
+1562
+01:15:45,300 --> 01:15:49,990
+How am I going to tell someone
+oh, just fold to root 3 over
+
+1563
+01:15:49,990 --> 01:15:54,280
+7 comma root 5
+plus root 7 over 4,
+
+1564
+01:15:54,280 --> 01:15:56,010
+Which you could figure
+out in some sense
+
+1565
+01:15:56,010 --> 01:15:58,920
+from those geometries what
+all those coordinates are.
+
+1566
+01:15:58,920 --> 01:16:02,710
+How do you tell
+someone to fold there?
+
+1567
+01:16:02,710 --> 01:16:06,040
+Well, you could
+use a polynomial.
+
+1568
+01:16:06,040 --> 01:16:09,850
+Could say oh, you've
+got to construct root 5.
+
+1569
+01:16:09,850 --> 01:16:11,040
+Or what's a tough one?
+
+1570
+01:16:11,040 --> 01:16:14,120
+
+1571
+01:16:14,120 --> 01:16:19,940
+Let's say you want to compute
+the fifth root of 103.
+
+1572
+01:16:19,940 --> 01:16:20,920
+Is that prime?
+
+1573
+01:16:20,920 --> 01:16:22,750
+I think so.
+
+1574
+01:16:22,750 --> 01:16:25,160
+So some nasty thing like this.
+
+1575
+01:16:25,160 --> 01:16:28,010
+You say oh well, I
+would really like
+
+1576
+01:16:28,010 --> 01:16:31,390
+x to the fifth to equal 103.
+
+1577
+01:16:31,390 --> 01:16:33,830
+If I could solve
+this polynomial,
+
+1578
+01:16:33,830 --> 01:16:36,009
+then I could
+construct this number.
+
+1579
+01:16:36,009 --> 01:16:37,300
+How do I solve that polynomial?
+
+1580
+01:16:37,300 --> 01:16:40,360
+Well I'm all about solving
+polynomials using linkages.
+
+1581
+01:16:40,360 --> 01:16:43,080
+I could build a crazy
+linkage device out
+
+1582
+01:16:43,080 --> 01:16:44,550
+of my piece of paper.
+
+1583
+01:16:44,550 --> 01:16:46,530
+Don't try this at home, please.
+
+1584
+01:16:46,530 --> 01:16:50,620
+But in theory, you could come up
+with these n really long bars,
+
+1585
+01:16:50,620 --> 01:16:53,760
+fold them around, and
+think of them as linkages.
+
+1586
+01:16:53,760 --> 01:16:58,240
+And you tell people, oh well you
+just need to align these dots,
+
+1587
+01:16:58,240 --> 01:17:02,490
+you may make little pinches on
+at the ends of these things,
+
+1588
+01:17:02,490 --> 01:17:04,830
+those simulate the
+edges of your linkage.
+
+1589
+01:17:04,830 --> 01:17:07,850
+And then you just tell people
+to move these creases around
+
+1590
+01:17:07,850 --> 01:17:11,140
+until this point
+lies on some line.
+
+1591
+01:17:11,140 --> 01:17:13,750
+And then you've solved
+your polynomial.
+
+1592
+01:17:13,750 --> 01:17:15,640
+And this is a natural
+generalization
+
+1593
+01:17:15,640 --> 01:17:18,290
+in some sense to something
+called origami axioms, which
+
+1594
+01:17:18,290 --> 01:17:20,270
+we will probably talk
+about at some point.
+
+1595
+01:17:20,270 --> 01:17:22,350
+Usually you think about
+doing one fold at a time.
+
+1596
+01:17:22,350 --> 01:17:24,485
+You want to make one fold
+so that this point maps
+
+1597
+01:17:24,485 --> 01:17:26,610
+onto this line, and this
+point maps onto this line.
+
+1598
+01:17:26,610 --> 01:17:28,610
+That's the typical
+origami axiom.
+
+1599
+01:17:28,610 --> 01:17:29,350
+It's pretty good.
+
+1600
+01:17:29,350 --> 01:17:31,480
+It can trisect angles
+and it can do fun things.
+
+1601
+01:17:31,480 --> 01:17:34,192
+But it can really only
+solve degree four equations.
+
+1602
+01:17:34,192 --> 01:17:35,900
+You want to solve a
+degree five equation,
+
+1603
+01:17:35,900 --> 01:17:38,050
+you need some higher
+level techniques.
+
+1604
+01:17:38,050 --> 01:17:40,340
+And one way to do that is
+with Kempe's universality.
+
+1605
+01:17:40,340 --> 01:17:44,410
+It's pretty impractical,
+but at least in theory you
+
+1606
+01:17:44,410 --> 01:17:48,350
+can do anything, you can
+locate any point you want,
+
+1607
+01:17:48,350 --> 01:17:50,320
+any algebraic point,
+which are the things you'd
+
+1608
+01:17:50,320 --> 01:17:56,692
+want from tree maker, using
+this technique, little crazy.
+
+1609
+01:17:56,692 --> 01:17:58,150
+There are other
+ways to do it, too.
+
+1610
+01:17:58,150 --> 01:18:01,185
+But this one way to do it,
+as mentioned in the textbook.
+
+1611
+01:18:01,185 --> 01:18:01,685
+Questions.
+
+1612
+01:18:01,685 --> 01:18:05,260
+
+1613
+01:18:05,260 --> 01:18:06,142
+All right.
+
+1614
+01:18:06,142 --> 01:18:07,350
+That's how to sign your name.
+
+1615
+01:18:07,350 --> 01:18:11,170
+Next time we'll talk about
+rigidity and other fun linkage
+
+1616
+01:18:11,170 --> 01:18:12,720
+problems.
+
+1617
+01:18:12,720 --> 01:18:17,569
+

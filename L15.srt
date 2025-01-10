@@ -1,0 +1,7489 @@
+1
+0-1:59:59,500 --> 00:00:04,210
+
+2
+00:00:04,210 --> 00:00:05,920
+PROFESSOR: Let's get started.
+
+3
+00:00:05,920 --> 00:00:08,810
+Today we're really going
+to take on folding polygons
+
+4
+00:00:08,810 --> 00:00:11,130
+into polyhedra in a big way.
+
+5
+00:00:11,130 --> 00:00:14,190
+We got started last time.
+
+6
+00:00:14,190 --> 00:00:15,890
+Today we're going
+to do the real thing
+
+7
+00:00:15,890 --> 00:00:17,780
+with some tape and scissors.
+
+8
+00:00:17,780 --> 00:00:22,300
+
+9
+00:00:22,300 --> 00:00:27,195
+Folding polyhedra.
+
+10
+00:00:27,195 --> 00:00:31,939
+
+11
+00:00:31,939 --> 00:00:34,140
+It's pretty much the
+last kind of folding
+
+12
+00:00:34,140 --> 00:00:36,450
+that we're going to be
+talking about in this class.
+
+13
+00:00:36,450 --> 00:00:42,270
+We see linkage folding, paper
+folding, unfolding polyhedra,
+
+14
+00:00:42,270 --> 00:00:44,430
+and finally, folding polyhedra.
+
+15
+00:00:44,430 --> 00:00:47,289
+
+16
+00:00:47,289 --> 00:00:48,580
+So this is a, sort of, problem.
+
+17
+00:00:48,580 --> 00:00:49,994
+We're given some polygon.
+
+18
+00:00:49,994 --> 00:00:52,160
+We're not told where to
+folder or how to glue it up,
+
+19
+00:00:52,160 --> 00:00:53,330
+necessarily.
+
+20
+00:00:53,330 --> 00:00:55,470
+We'd like to find,
+is there some way
+
+21
+00:00:55,470 --> 00:00:59,055
+to glue this
+boundary to itself--
+
+22
+00:00:59,055 --> 00:01:05,550
+I've drawn this picture
+before, something like this--
+
+23
+00:01:05,550 --> 00:01:08,425
+in order to make a
+convex polyhedron?
+
+24
+00:01:08,425 --> 00:01:15,195
+
+25
+00:01:15,195 --> 00:01:19,080
+There's several versions
+of this problem.
+
+26
+00:01:19,080 --> 00:01:23,405
+One is the decision version,
+which is, I give you a polygon.
+
+27
+00:01:23,405 --> 00:01:25,895
+And I want to know, does it
+make any convex polyhedron?
+
+28
+00:01:25,895 --> 00:01:30,340
+
+29
+00:01:30,340 --> 00:01:32,730
+For the cross,
+the answer is yes.
+
+30
+00:01:32,730 --> 00:01:35,800
+We will see examples later
+today where the answer is no.
+
+31
+00:01:35,800 --> 00:01:37,660
+In fact, most of the
+time the answer is no.
+
+32
+00:01:37,660 --> 00:01:43,080
+
+33
+00:01:43,080 --> 00:01:52,610
+So given a polygon, can its
+boundary be glued to itself?
+
+34
+00:01:52,610 --> 00:01:56,510
+
+35
+00:01:56,510 --> 00:01:58,850
+And this is the
+distinguishing feature
+
+36
+00:01:58,850 --> 00:02:03,360
+from origami is that's
+all you get to do
+
+37
+00:02:03,360 --> 00:02:05,920
+and no multiple coverage.
+
+38
+00:02:05,920 --> 00:02:15,320
+You want exactly
+that surface to be
+
+39
+00:02:15,320 --> 00:02:18,680
+folded into convex polyhedron.
+
+40
+00:02:18,680 --> 00:02:37,310
+
+41
+00:02:37,310 --> 00:02:41,080
+And today's lecture is going
+to be mainly about mathematics
+
+42
+00:02:41,080 --> 00:02:43,130
+for solving this problem.
+
+43
+00:02:43,130 --> 00:02:45,080
+The next class will be
+algorithms for solving
+
+44
+00:02:45,080 --> 00:02:45,810
+this problem.
+
+45
+00:02:45,810 --> 00:02:48,920
+So we need some mathematical
+tools, some cool geometry
+
+46
+00:02:48,920 --> 00:02:53,672
+stuff by a Russian
+geometer called Alexandrov,
+
+47
+00:02:53,672 --> 00:02:55,926
+from the '40s.
+
+48
+00:02:55,926 --> 00:02:57,800
+And that's what we'll
+be talking about today.
+
+49
+00:02:57,800 --> 00:03:00,258
+Then we'll see how that turns
+into an algorithm next class.
+
+50
+00:03:00,258 --> 00:03:06,600
+
+51
+00:03:06,600 --> 00:03:07,810
+Decision is nice.
+
+52
+00:03:07,810 --> 00:03:12,990
+But of course, we'd like to
+actually find these gluings.
+
+53
+00:03:12,990 --> 00:03:16,450
+I want to actually know that
+this guy folds into a cube.
+
+54
+00:03:16,450 --> 00:03:19,360
+So there's the
+enumeration problem,
+
+55
+00:03:19,360 --> 00:03:24,060
+which is list all the
+gluings and all the foldings.
+
+56
+00:03:24,060 --> 00:03:31,660
+
+57
+00:03:31,660 --> 00:03:34,610
+And there's also the more
+mathematical combinatorial
+
+58
+00:03:34,610 --> 00:03:42,850
+problem, which is,
+how many can there be?
+
+59
+00:03:42,850 --> 00:03:53,460
+
+60
+00:03:53,460 --> 00:03:56,770
+And we'll start
+addressing that today
+
+61
+00:03:56,770 --> 00:03:59,230
+by showing that there
+can be infinitely many.
+
+62
+00:03:59,230 --> 00:04:01,390
+There can be continua.
+
+63
+00:04:01,390 --> 00:04:04,460
+For example, this
+polygon, this rectangle,
+
+64
+00:04:04,460 --> 00:04:07,180
+can fold into infinitely
+many polyhedra.
+
+65
+00:04:07,180 --> 00:04:10,110
+We'll prove that today.
+
+66
+00:04:10,110 --> 00:04:11,330
+We won't do all of them.
+
+67
+00:04:11,330 --> 00:04:15,260
+But we'll one of them, I guess.
+
+68
+00:04:15,260 --> 00:04:19,130
+So that's makes this listing
+all of them a little bit
+
+69
+00:04:19,130 --> 00:04:20,810
+difficult, when there's
+infinitely many.
+
+70
+00:04:20,810 --> 00:04:23,240
+But it turns out they'll
+fall into some nice classes.
+
+71
+00:04:23,240 --> 00:04:24,656
+We'll be able to
+characterize that
+
+72
+00:04:24,656 --> 00:04:26,166
+at the end of today's class.
+
+73
+00:04:26,166 --> 00:04:28,040
+And so this problem is
+actually well defined.
+
+74
+00:04:28,040 --> 00:04:31,280
+They're a finite number
+of distinct classes.
+
+75
+00:04:31,280 --> 00:04:33,922
+And you could list them all.
+
+76
+00:04:33,922 --> 00:04:35,380
+There can actually
+be exponentially
+
+77
+00:04:35,380 --> 00:04:37,470
+many of those classes.
+
+78
+00:04:37,470 --> 00:04:39,110
+But most the time,
+it's polynomial.
+
+79
+00:04:39,110 --> 00:04:40,760
+That'll be more next class.
+
+80
+00:04:40,760 --> 00:04:44,970
+These are the sorts of problems
+we're interested in folding.
+
+81
+00:04:44,970 --> 00:04:47,770
+Now, one natural
+question is, why am I
+
+82
+00:04:47,770 --> 00:04:49,740
+restricting myself to convex?
+
+83
+00:04:49,740 --> 00:04:51,990
+And one answer is, well,
+that's where most of the work
+
+84
+00:04:51,990 --> 00:04:52,870
+has been done.
+
+85
+00:04:52,870 --> 00:04:56,030
+But there is some nice
+work on the nonconvex case.
+
+86
+00:04:56,030 --> 00:04:57,280
+So let me tell you about that.
+
+87
+00:04:57,280 --> 00:05:01,590
+
+88
+00:05:01,590 --> 00:05:08,286
+So for nonconvex-- or
+where you don't care about
+
+89
+00:05:08,286 --> 00:05:09,910
+whether the result
+is convex-- you just
+
+90
+00:05:09,910 --> 00:05:12,920
+want it to make some polyhedron.
+
+91
+00:05:12,920 --> 00:05:14,925
+You can show it's
+always possible.
+
+92
+00:05:14,925 --> 00:05:20,160
+
+93
+00:05:20,160 --> 00:05:23,540
+What this means is if
+I'm given some polygon,
+
+94
+00:05:23,540 --> 00:05:25,400
+and I glue up the
+boundary somehow--
+
+95
+00:05:25,400 --> 00:05:26,890
+and this result
+even holds if you
+
+96
+00:05:26,890 --> 00:05:28,910
+don't glue up all
+of the boundary.
+
+97
+00:05:28,910 --> 00:05:31,750
+Because then we're no longer
+trying to make a convex thing.
+
+98
+00:05:31,750 --> 00:05:34,100
+For example, I could
+glue up all the boundary,
+
+99
+00:05:34,100 --> 00:05:38,010
+as long as the way that I glue
+things is orientable-- I don't
+
+100
+00:05:38,010 --> 00:05:43,890
+put twists in an unresolvable
+way, in these gluings--
+
+101
+00:05:43,890 --> 00:05:47,090
+then you're golden.
+
+102
+00:05:47,090 --> 00:05:58,375
+So you need that the surface
+is orientable or has boundary.
+
+103
+00:05:58,375 --> 00:06:06,200
+
+104
+00:06:06,200 --> 00:06:10,360
+So this is posed as an
+open problem in our book.
+
+105
+00:06:10,360 --> 00:06:12,240
+And then we
+discovered, this year,
+
+106
+00:06:12,240 --> 00:06:16,880
+that it was already solved
+in 1960, but in Russian.
+
+107
+00:06:16,880 --> 00:06:18,990
+And then, it was only
+translated in 1996.
+
+108
+00:06:18,990 --> 00:06:21,860
+We still should have
+known about it in '96.
+
+109
+00:06:21,860 --> 00:06:25,141
+But we finally
+realized that they
+
+110
+00:06:25,141 --> 00:06:26,640
+didn't talk about
+folding or gluing.
+
+111
+00:06:26,640 --> 00:06:30,350
+They were talking about
+realizing polyhedral metrics,
+
+112
+00:06:30,350 --> 00:06:32,710
+which is the language we're
+going to translate to soon.
+
+113
+00:06:32,710 --> 00:06:37,180
+But our bad.
+
+114
+00:06:37,180 --> 00:06:39,260
+And I think this is a
+pretty complicated result.
+
+115
+00:06:39,260 --> 00:06:40,968
+So we're not going to
+talk about it here.
+
+116
+00:06:40,968 --> 00:06:42,255
+But it's interesting.
+
+117
+00:06:42,255 --> 00:06:44,700
+I'd like to learn more about it.
+
+118
+00:06:44,700 --> 00:06:49,840
+So it's by Burago
+and Zalgaller, I've
+
+119
+00:06:49,840 --> 00:06:51,410
+used others of their theorems.
+
+120
+00:06:51,410 --> 00:06:54,850
+So it's funny I
+didn't know this one.
+
+121
+00:06:54,850 --> 00:06:56,730
+In some sense, the
+decision question
+
+122
+00:06:56,730 --> 00:06:59,690
+isn't interesting for
+non-convex polyhedra.
+
+123
+00:06:59,690 --> 00:07:01,334
+So by restricting
+the convex, saying,
+
+124
+00:07:01,334 --> 00:07:02,750
+I want to make
+convex shapes, this
+
+125
+00:07:02,750 --> 00:07:04,041
+becomes an interesting problem.
+
+126
+00:07:04,041 --> 00:07:06,700
+And it leads to lots of cool
+mathematics and algorithms.
+
+127
+00:07:06,700 --> 00:07:10,080
+And that's what we're
+going to talk about.
+
+128
+00:07:10,080 --> 00:07:15,180
+So I want to talk about
+this guy, Alexandrov.
+
+129
+00:07:15,180 --> 00:07:18,070
+
+130
+00:07:18,070 --> 00:07:21,880
+Not really the guy, but the
+mathematics that he did.
+
+131
+00:07:21,880 --> 00:07:24,630
+And we're going to appropriate
+his name a little bit
+
+132
+00:07:24,630 --> 00:07:26,794
+and talk about
+Alexandrov gluings.
+
+133
+00:07:26,794 --> 00:07:28,960
+This is a term that we made
+up, obviously he didn't.
+
+134
+00:07:28,960 --> 00:07:31,543
+You don't usually make up your
+own terms named after yourself.
+
+135
+00:07:31,543 --> 00:07:34,850
+
+136
+00:07:34,850 --> 00:07:37,144
+We'd like to know which
+gluings are valid.
+
+137
+00:07:37,144 --> 00:07:39,560
+We're not going to think about
+where the thing is creased,
+
+138
+00:07:39,560 --> 00:07:40,520
+how to fold.
+
+139
+00:07:40,520 --> 00:07:43,230
+We're just going to focus
+on the gluing for now.
+
+140
+00:07:43,230 --> 00:07:45,290
+What makes a gluing valid?
+
+141
+00:07:45,290 --> 00:07:48,670
+Well, one thing that we
+talked about last time
+
+142
+00:07:48,670 --> 00:07:50,710
+is that once you have a
+gluing, in this picture,
+
+143
+00:07:50,710 --> 00:07:52,550
+you can compute shortest paths.
+
+144
+00:07:52,550 --> 00:07:55,510
+You can compute the shortest
+path from this vertex
+
+145
+00:07:55,510 --> 00:07:56,309
+to this vertex.
+
+146
+00:07:56,309 --> 00:07:57,600
+But here, it's a straight line.
+
+147
+00:07:57,600 --> 00:07:59,016
+There's probably
+another path that
+
+148
+00:07:59,016 --> 00:08:00,710
+goes around a different way.
+
+149
+00:08:00,710 --> 00:08:03,100
+Last time we did the shortest
+path from here to here.
+
+150
+00:08:03,100 --> 00:08:05,382
+And it was some
+complicated thing.
+
+151
+00:08:05,382 --> 00:08:08,044
+I won't try to do it again.
+
+152
+00:08:08,044 --> 00:08:09,460
+But you can compute
+shortest paths
+
+153
+00:08:09,460 --> 00:08:11,780
+once you know what's
+connected to what.
+
+154
+00:08:11,780 --> 00:08:15,020
+So this defines what
+we call a metric.
+
+155
+00:08:15,020 --> 00:08:17,270
+We're going to learn
+something about that.
+
+156
+00:08:17,270 --> 00:08:29,320
+Polygon plus gluing
+induce a metric.
+
+157
+00:08:29,320 --> 00:08:32,364
+Metric just means it tells you
+how far different points are
+
+158
+00:08:32,364 --> 00:08:33,030
+from each other.
+
+159
+00:08:33,030 --> 00:08:35,860
+
+160
+00:08:35,860 --> 00:08:39,350
+And we can compute that metric
+by computing shortest paths.
+
+161
+00:08:39,350 --> 00:08:43,330
+
+162
+00:08:43,330 --> 00:08:45,330
+I'm going to start
+abstracting a little bit away
+
+163
+00:08:45,330 --> 00:08:48,570
+from polygon plus gluing
+and just think about,
+
+164
+00:08:48,570 --> 00:08:50,960
+there's some surface
+that, in your mind,
+
+165
+00:08:50,960 --> 00:08:53,192
+it's not really
+geometric thing entirely.
+
+166
+00:08:53,192 --> 00:08:54,900
+But locally, you
+understand the geometry.
+
+167
+00:08:54,900 --> 00:08:57,040
+If you're at some
+corner, you can
+
+168
+00:08:57,040 --> 00:09:00,910
+understand what other
+vertices are near to you
+
+169
+00:09:00,910 --> 00:09:02,650
+and how to walk around
+on that surface.
+
+170
+00:09:02,650 --> 00:09:06,300
+So locally, you understand the
+metric and how it's laid out.
+
+171
+00:09:06,300 --> 00:09:09,250
+When you're at this
+corner, you know--
+
+172
+00:09:09,250 --> 00:09:12,810
+and let's say I glued this to
+this-- that your curvature is
+
+173
+00:09:12,810 --> 00:09:15,790
+90 degrees, that there's 270
+degrees of material there.
+
+174
+00:09:15,790 --> 00:09:19,750
+And you could go any one of
+those 270 degrees of directions
+
+175
+00:09:19,750 --> 00:09:21,910
+from there.
+
+176
+00:09:21,910 --> 00:09:24,900
+So that's the sense in
+which we have a metric.
+
+177
+00:09:24,900 --> 00:09:28,180
+Now, there are three things
+that this metric should satisfy
+
+178
+00:09:28,180 --> 00:09:31,489
+if we want to make
+something that's convex.
+
+179
+00:09:31,489 --> 00:09:32,155
+Any suggestions?
+
+180
+00:09:32,155 --> 00:09:37,740
+
+181
+00:09:37,740 --> 00:09:39,767
+AUDIENCE: Less than
+or equal to 360.
+
+182
+00:09:39,767 --> 00:09:42,100
+PROFESSOR: Less than or equal
+to 360 degrees of material
+
+183
+00:09:42,100 --> 00:09:42,641
+an any point.
+
+184
+00:09:42,641 --> 00:09:46,230
+Yep, that is what we
+would call convexity.
+
+185
+00:09:46,230 --> 00:09:55,500
+
+186
+00:09:55,500 --> 00:09:56,970
+It's really a local convexity.
+
+187
+00:09:56,970 --> 00:10:00,410
+
+188
+00:10:00,410 --> 00:10:07,290
+All points have 0 or
+positive curvature.
+
+189
+00:10:07,290 --> 00:10:08,540
+That's the way I would say it.
+
+190
+00:10:08,540 --> 00:10:13,880
+Remember, curvature
+was 360 minus some
+
+191
+00:10:13,880 --> 00:10:15,047
+of the angles at the vertex.
+
+192
+00:10:15,047 --> 00:10:17,546
+So this is the same as saying
+you have, at most, 360 degrees
+
+193
+00:10:17,546 --> 00:10:18,470
+of material any point.
+
+194
+00:10:18,470 --> 00:10:20,220
+This is obviously necessary.
+
+195
+00:10:20,220 --> 00:10:22,401
+And the point is, you can
+evaluate this just knowing
+
+196
+00:10:22,401 --> 00:10:23,650
+how things are glued together.
+
+197
+00:10:23,650 --> 00:10:25,850
+You don't need to
+understand 3D geometry.
+
+198
+00:10:25,850 --> 00:10:27,367
+It's a local property.
+
+199
+00:10:27,367 --> 00:10:28,950
+And certainly necessary
+if we're going
+
+200
+00:10:28,950 --> 00:10:32,180
+to try to make a
+convex polyhedron.
+
+201
+00:10:32,180 --> 00:10:32,980
+Anything else?
+
+202
+00:10:32,980 --> 00:10:39,450
+
+203
+00:10:39,450 --> 00:10:41,259
+They get less obvious
+from here, I guess.
+
+204
+00:10:41,259 --> 00:10:47,074
+
+205
+00:10:47,074 --> 00:10:47,740
+Any topologists?
+
+206
+00:10:47,740 --> 00:10:55,835
+
+207
+00:10:55,835 --> 00:10:57,300
+AUDIENCE: You
+shouldn't have holes.
+
+208
+00:10:57,300 --> 00:10:58,560
+PROFESSOR: Shouldn't have holes.
+
+209
+00:10:58,560 --> 00:10:59,059
+Right.
+
+210
+00:10:59,059 --> 00:11:02,570
+So I should definitely
+glue everything together.
+
+211
+00:11:02,570 --> 00:11:05,360
+It's sort of implicit
+in this statement
+
+212
+00:11:05,360 --> 00:11:07,800
+but not totally explicit.
+
+213
+00:11:07,800 --> 00:11:09,385
+And there's a little
+more than that.
+
+214
+00:11:09,385 --> 00:11:11,260
+Not only should everything
+to glued together,
+
+215
+00:11:11,260 --> 00:11:17,480
+but for example, if I glued
+this edge to this edge
+
+216
+00:11:17,480 --> 00:11:23,910
+and I glued this edge to this
+edge-- something like that.
+
+217
+00:11:23,910 --> 00:11:26,300
+That's probably not
+going to work out.
+
+218
+00:11:26,300 --> 00:11:29,050
+Crossings are bad.
+
+219
+00:11:29,050 --> 00:11:32,060
+And what's really going
+wrong there is the topology.
+
+220
+00:11:32,060 --> 00:11:34,310
+If we're trying to make
+something that's convex,
+
+221
+00:11:34,310 --> 00:11:37,560
+it better be
+topologically a sphere.
+
+222
+00:11:37,560 --> 00:11:40,140
+So that's the third condition.
+
+223
+00:11:40,140 --> 00:11:45,836
+
+224
+00:11:45,836 --> 00:11:47,210
+And this is, again,
+something you
+
+225
+00:11:47,210 --> 00:11:52,265
+can figure out just by
+looking at the local metric.
+
+226
+00:11:52,265 --> 00:12:01,136
+
+227
+00:12:01,136 --> 00:12:02,510
+This is a property
+about metrics.
+
+228
+00:12:02,510 --> 00:12:04,170
+In their case of
+polygons plus gluings,
+
+229
+00:12:04,170 --> 00:12:05,680
+it's really easy
+to figure out when
+
+230
+00:12:05,680 --> 00:12:10,089
+this is the case, which is that
+the gluing should be complete,
+
+231
+00:12:10,089 --> 00:12:10,880
+as you were saying.
+
+232
+00:12:10,880 --> 00:12:13,670
+You shouldn't leave
+anything blank.
+
+233
+00:12:13,670 --> 00:12:15,990
+Everything gets
+glued to something.
+
+234
+00:12:15,990 --> 00:12:19,960
+And it has no
+crossings that will
+
+235
+00:12:19,960 --> 00:12:23,452
+be equivalent to being
+sphere like, in our case.
+
+236
+00:12:23,452 --> 00:12:25,160
+The other property
+actually always holds.
+
+237
+00:12:25,160 --> 00:12:29,060
+So it's no surprise that
+you didn't think of it.
+
+238
+00:12:29,060 --> 00:12:31,930
+
+239
+00:12:31,930 --> 00:12:34,250
+But if you want to think
+a little more generally,
+
+240
+00:12:34,250 --> 00:12:38,050
+this a key property we're
+using that we started
+
+241
+00:12:38,050 --> 00:12:43,240
+from a polygon, not some
+smooth curve thing, which
+
+242
+00:12:43,240 --> 00:12:49,880
+is that only a finite number of
+points have nonzero curvature.
+
+243
+00:12:49,880 --> 00:12:55,400
+
+244
+00:12:55,400 --> 00:12:57,650
+If we want to make a polyhedron
+with a finite a number
+
+245
+00:12:57,650 --> 00:12:59,300
+vertices, well,
+these are going to be
+
+246
+00:12:59,300 --> 00:13:02,990
+the vertices, all the points
+with nonzero curvature.
+
+247
+00:13:02,990 --> 00:13:05,230
+So there had better be a
+finite number of those.
+
+248
+00:13:05,230 --> 00:13:07,470
+Now, when we start with
+a polygon and just glue
+
+249
+00:13:07,470 --> 00:13:09,720
+some finite set of
+segments to each other,
+
+250
+00:13:09,720 --> 00:13:11,780
+that will happen automatically.
+
+251
+00:13:11,780 --> 00:13:15,290
+But it's a property we're using.
+
+252
+00:13:15,290 --> 00:13:18,520
+So these three
+properties together
+
+253
+00:13:18,520 --> 00:13:21,840
+are what I'm going to
+call Alexandrov gluing.
+
+254
+00:13:21,840 --> 00:13:27,700
+If you satisfy all three of
+these, you are Alexandrov.
+
+255
+00:13:27,700 --> 00:13:31,450
+And now, we have a cool
+theorem about Alexandrov
+
+256
+00:13:31,450 --> 00:13:33,600
+gluings is called
+Alexandrov's Theorem.
+
+257
+00:13:33,600 --> 00:13:36,660
+
+258
+00:13:36,660 --> 00:13:39,150
+He had a lot of gluings,
+but this the one
+
+259
+00:13:39,150 --> 00:13:41,820
+we use a lot in this field.
+
+260
+00:13:41,820 --> 00:13:50,490
+
+261
+00:13:50,490 --> 00:13:54,310
+Originally proved
+in 1941, I believe.
+
+262
+00:13:54,310 --> 00:13:58,870
+Then finally, his big
+book about convex surfaces
+
+263
+00:13:58,870 --> 00:14:03,620
+was translated to English
+in 2005, pretty recent.
+
+264
+00:14:03,620 --> 00:14:06,620
+But we've been reading other
+translations, and so on,
+
+265
+00:14:06,620 --> 00:14:09,020
+to understand this theorem.
+
+266
+00:14:09,020 --> 00:14:23,400
+
+267
+00:14:23,400 --> 00:14:25,510
+I guess I'm not using
+Alexandrov gluing here.
+
+268
+00:14:25,510 --> 00:14:27,760
+But we have a
+convex, polyhedral,
+
+269
+00:14:27,760 --> 00:14:29,270
+and topologically sphere.
+
+270
+00:14:29,270 --> 00:14:41,660
+
+271
+00:14:41,660 --> 00:14:43,990
+Take any one of those things.
+
+272
+00:14:43,990 --> 00:14:50,340
+Then it's realized by a
+unique convex polyhedron.
+
+273
+00:14:50,340 --> 00:14:58,400
+
+274
+00:14:58,400 --> 00:15:00,990
+So this is basically the answer.
+
+275
+00:15:00,990 --> 00:15:03,650
+And from our perspective, it's
+like , yeah, yeah, polyhedral.
+
+276
+00:15:03,650 --> 00:15:04,594
+Yeah, no crossings.
+
+277
+00:15:04,594 --> 00:15:06,010
+But really, the
+central constraint
+
+278
+00:15:06,010 --> 00:15:08,510
+that we have to worry
+about is convexity,
+
+279
+00:15:08,510 --> 00:15:11,310
+that we never glue
+together too much material.
+
+280
+00:15:11,310 --> 00:15:14,140
+As long as you don't glue
+together more than 360 degrees
+
+281
+00:15:14,140 --> 00:15:17,130
+material at any
+point, then that thing
+
+282
+00:15:17,130 --> 00:15:19,055
+will realize a unique
+convex polyhedron.
+
+283
+00:15:19,055 --> 00:15:22,210
+
+284
+00:15:22,210 --> 00:15:24,444
+It's pretty cool but surprising.
+
+285
+00:15:24,444 --> 00:15:26,110
+The uniqueness should
+not be surprising,
+
+286
+00:15:26,110 --> 00:15:29,400
+because we proved
+that last class.
+
+287
+00:15:29,400 --> 00:15:31,070
+I can remind you briefly.
+
+288
+00:15:31,070 --> 00:15:32,570
+We proved Cauchy's
+Rigidity Theorem,
+
+289
+00:15:32,570 --> 00:15:34,070
+which is not quite the same.
+
+290
+00:15:34,070 --> 00:15:37,324
+And then we said, oh, yeah, if
+you have some convex polyhedron
+
+291
+00:15:37,324 --> 00:15:38,740
+metric, you don't
+know necessarily
+
+292
+00:15:38,740 --> 00:15:39,990
+know what it looks like in 3D.
+
+293
+00:15:39,990 --> 00:15:41,590
+But you can compute
+all shortest paths
+
+294
+00:15:41,590 --> 00:15:44,570
+from every vertex to
+every other vertex.
+
+295
+00:15:44,570 --> 00:15:48,210
+And then however you
+try to fold that thing,
+
+296
+00:15:48,210 --> 00:15:49,810
+every edge is a shortest path.
+
+297
+00:15:49,810 --> 00:15:53,130
+That's just a fact
+about polyhedra.
+
+298
+00:15:53,130 --> 00:15:56,990
+The edges must be some subset
+of these shortest paths.
+
+299
+00:15:56,990 --> 00:16:00,844
+So you think of this
+as a convex polyhedron.
+
+300
+00:16:00,844 --> 00:16:02,260
+And then Cauchy's
+Rigidity Theorem
+
+301
+00:16:02,260 --> 00:16:04,970
+says, there's only
+one convex realization
+
+302
+00:16:04,970 --> 00:16:07,500
+of that thing with those edges.
+
+303
+00:16:07,500 --> 00:16:11,190
+And Cauchy allows some of the
+edges to be flat like this.
+
+304
+00:16:11,190 --> 00:16:13,810
+So there will only be one
+way to embed that in 3D--
+
+305
+00:16:13,810 --> 00:16:15,199
+at most one way.
+
+306
+00:16:15,199 --> 00:16:16,990
+The surprising thing
+is that there actually
+
+307
+00:16:16,990 --> 00:16:21,240
+is one way that you can
+realize-- I'm just thinking
+
+308
+00:16:21,240 --> 00:16:24,830
+totally locally in
+this kind of gluing--
+
+309
+00:16:24,830 --> 00:16:27,090
+and yet, as long as
+I don't glue together
+
+310
+00:16:27,090 --> 00:16:31,100
+too much material at any point,
+I get a convex polyhedron.
+
+311
+00:16:31,100 --> 00:16:34,060
+With the usual gluing here,
+without these crossings,
+
+312
+00:16:34,060 --> 00:16:35,445
+I get a cube.
+
+313
+00:16:35,445 --> 00:16:38,170
+No surprise, and it's unique.
+
+314
+00:16:38,170 --> 00:16:40,420
+But there are other ways
+to glue this polygon.
+
+315
+00:16:40,420 --> 00:16:42,170
+We saw them, actually,
+in Lecture 1--
+
+316
+00:16:42,170 --> 00:16:43,939
+I'll show them
+again next class--
+
+317
+00:16:43,939 --> 00:16:45,480
+that can make other
+convex polyhedra.
+
+318
+00:16:45,480 --> 00:16:50,410
+
+319
+00:16:50,410 --> 00:16:55,680
+Let me give you a little
+idea of the proof.
+
+320
+00:16:55,680 --> 00:16:58,960
+This is going to be a
+pretty high-level sketch.
+
+321
+00:16:58,960 --> 00:17:01,510
+But I'll tell you the
+combinatorial part.
+
+322
+00:17:01,510 --> 00:17:03,710
+And then there's the
+topology analysis part
+
+323
+00:17:03,710 --> 00:17:06,210
+that's a little less obvious.
+
+324
+00:17:06,210 --> 00:17:15,180
+
+325
+00:17:15,180 --> 00:17:16,780
+We've already proved uniqueness.
+
+326
+00:17:16,780 --> 00:17:18,670
+I want to look at existence.
+
+327
+00:17:18,670 --> 00:17:23,630
+And we're going to use induction
+on the number of vertices.
+
+328
+00:17:23,630 --> 00:17:27,410
+
+329
+00:17:27,410 --> 00:17:29,720
+And remember, vertices
+are well defined.
+
+330
+00:17:29,720 --> 00:17:32,140
+When I say vertex
+here, I really mean
+
+331
+00:17:32,140 --> 00:17:35,407
+point of nonzero curvature.
+
+332
+00:17:35,407 --> 00:17:36,990
+We know there's
+finitely many of them.
+
+333
+00:17:36,990 --> 00:17:38,730
+Call the number n.
+
+334
+00:17:38,730 --> 00:17:40,850
+And we're going to try to
+simplify our polyhedron
+
+335
+00:17:40,850 --> 00:17:43,520
+and reduce the number vertices.
+
+336
+00:17:43,520 --> 00:17:47,130
+But there's lots of ways
+to do that with polyhedra.
+
+337
+00:17:47,130 --> 00:17:48,960
+But here, we don't
+have a polyhedron.
+
+338
+00:17:48,960 --> 00:17:51,740
+We have this kind of abstract
+polyhedron in Never Never Land.
+
+339
+00:17:51,740 --> 00:17:54,320
+We know how to walk around
+on the surface, locally.
+
+340
+00:17:54,320 --> 00:17:58,680
+But we don't really
+know any 3D geometry.
+
+341
+00:17:58,680 --> 00:18:00,510
+So is this a crazy idea.
+
+342
+00:18:00,510 --> 00:18:02,530
+Before we get to
+the crazy idea, I
+
+343
+00:18:02,530 --> 00:18:13,510
+need an important fact, which
+is total curvature, if you
+
+344
+00:18:13,510 --> 00:18:22,190
+sum over all vertices,
+is 720 degrees.
+
+345
+00:18:22,190 --> 00:18:25,060
+
+346
+00:18:25,060 --> 00:18:27,370
+This is actually true, even
+of nonconvex polyhedra,
+
+347
+00:18:27,370 --> 00:18:29,920
+as long as you have something
+homeomorphic to a sphere,
+
+348
+00:18:29,920 --> 00:18:31,580
+topologically a sphere.
+
+349
+00:18:31,580 --> 00:18:34,607
+Total curvature is 720.
+
+350
+00:18:34,607 --> 00:18:36,940
+This is actually why it's
+useful to talk about curvature
+
+351
+00:18:36,940 --> 00:18:40,810
+and not how much angle is
+coming together at a point.
+
+352
+00:18:40,810 --> 00:18:43,440
+So obviously, we've got zillions
+of points with a curvature 0.
+
+353
+00:18:43,440 --> 00:18:45,830
+Those don't count for anything.
+
+354
+00:18:45,830 --> 00:18:48,730
+But then, somehow this thing
+has to wrap around a sphere.
+
+355
+00:18:48,730 --> 00:18:52,160
+And you can compute the
+curvature of a sphere at 720.
+
+356
+00:18:52,160 --> 00:18:54,152
+And this has to match that.
+
+357
+00:18:54,152 --> 00:18:57,786
+I can't give a lot of intuition
+for this, but it's true.
+
+358
+00:18:57,786 --> 00:18:59,915
+And it's kind of powerful.
+
+359
+00:18:59,915 --> 00:19:03,090
+
+360
+00:19:03,090 --> 00:19:05,090
+It says you can't have
+very many sharp vertices.
+
+361
+00:19:05,090 --> 00:19:09,620
+If I have a super-sharp point
+in my convex polyhedron,
+
+362
+00:19:09,620 --> 00:19:11,620
+it has a curvature close to 360.
+
+363
+00:19:11,620 --> 00:19:14,500
+It's going to be
+260 minus almost 0.
+
+364
+00:19:14,500 --> 00:19:18,920
+I can only have two of
+those in any polyhedron.
+
+365
+00:19:18,920 --> 00:19:20,550
+Now, with a
+nonconvex polyhedron,
+
+366
+00:19:20,550 --> 00:19:22,440
+I can have negative
+curvature to compensate.
+
+367
+00:19:22,440 --> 00:19:25,240
+And so then, I can have lots
+of spikes, like an our witch's
+
+368
+00:19:25,240 --> 00:19:27,810
+hats, where we had four spikes.
+
+369
+00:19:27,810 --> 00:19:30,614
+But for convex, I don't
+have any negative numbers
+
+370
+00:19:30,614 --> 00:19:32,530
+to compensate with these
+big positive numbers.
+
+371
+00:19:32,530 --> 00:19:35,690
+So I can only have two spikes.
+
+372
+00:19:35,690 --> 00:19:38,390
+We're going to use that
+a lot today, this fact.
+
+373
+00:19:38,390 --> 00:19:40,577
+It's called Descartes Theorem.
+
+374
+00:19:40,577 --> 00:19:41,910
+You may have heard of Descartes.
+
+375
+00:19:41,910 --> 00:19:44,429
+
+376
+00:19:44,429 --> 00:19:45,970
+Nowadays, you prove
+it in other ways.
+
+377
+00:19:45,970 --> 00:19:47,594
+But we're not going
+to look at a proof.
+
+378
+00:19:47,594 --> 00:19:49,342
+We're just going to use it.
+
+379
+00:19:49,342 --> 00:19:51,300
+I'm also going to assume
+that my polyhedron has
+
+380
+00:19:51,300 --> 00:19:52,430
+at least five vertices.
+
+381
+00:19:52,430 --> 00:19:57,330
+Or really, my polyhedral metric
+has at least five vertices.
+
+382
+00:19:57,330 --> 00:19:58,800
+If it has at least
+five vertices,
+
+383
+00:19:58,800 --> 00:20:00,880
+in other words,
+more than four, then
+
+384
+00:20:00,880 --> 00:20:03,880
+there will be some vertex
+that has less than a quarter
+
+385
+00:20:03,880 --> 00:20:08,130
+of 720 curvature, in
+fact, two of them.
+
+386
+00:20:08,130 --> 00:20:13,700
+
+387
+00:20:13,700 --> 00:20:22,500
+Two vertices-- and I call
+them x and y-- have curvature.
+
+388
+00:20:22,500 --> 00:20:26,688
+
+389
+00:20:26,688 --> 00:20:31,400
+Call them alpha and
+beta, less than 180,
+
+390
+00:20:31,400 --> 00:20:35,240
+which is one quarter of 720.
+
+391
+00:20:35,240 --> 00:20:37,550
+The average is obviously
+going down as n goes up.
+
+392
+00:20:37,550 --> 00:20:42,440
+So when n is 5, I can get two
+reasonably small curvature
+
+393
+00:20:42,440 --> 00:20:44,477
+vertices.
+
+394
+00:20:44,477 --> 00:20:46,560
+This is like saying, there's
+more than 180 degrees
+
+395
+00:20:46,560 --> 00:20:51,240
+of material glued at
+these two points So what?
+
+396
+00:20:51,240 --> 00:20:55,080
+Well, now I'm going
+to do some surgery,
+
+397
+00:20:55,080 --> 00:20:57,110
+as topologists call it.
+
+398
+00:20:57,110 --> 00:21:04,524
+I have these vertices, x and
+y, in this sphere-like thing.
+
+399
+00:21:04,524 --> 00:21:06,190
+There's some shortest
+path between them.
+
+400
+00:21:06,190 --> 00:21:07,825
+I can compute that.
+
+401
+00:21:07,825 --> 00:21:09,200
+And now we're
+saying that there's
+
+402
+00:21:09,200 --> 00:21:11,550
+a fair amount of material here
+and a fair amount of material
+
+403
+00:21:11,550 --> 00:21:12,080
+here.
+
+404
+00:21:12,080 --> 00:21:17,020
+What I'd like to do is
+slice the surface open along
+
+405
+00:21:17,020 --> 00:21:18,270
+that shortest path.
+
+406
+00:21:18,270 --> 00:21:21,100
+I've drawn it twice,
+because I've cut it open.
+
+407
+00:21:21,100 --> 00:21:23,870
+There's surface here, surface
+here, and a hole there.
+
+408
+00:21:23,870 --> 00:21:27,610
+And I'm going to glue
+in some more material.
+
+409
+00:21:27,610 --> 00:21:32,510
+And I'm going to
+glue in a triangle--
+
+410
+00:21:32,510 --> 00:21:35,690
+actually, two triangles
+right on top of each other.
+
+411
+00:21:35,690 --> 00:21:37,970
+So that here, the edges
+are glued together.
+
+412
+00:21:37,970 --> 00:21:42,260
+Back here, the edges are glued
+together, here, they're not.
+
+413
+00:21:42,260 --> 00:21:44,960
+So you can see, this is
+still topologically a sphere.
+
+414
+00:21:44,960 --> 00:21:49,420
+As you walk on to this edge,
+you end up on the top triangle.
+
+415
+00:21:49,420 --> 00:21:52,170
+I can go around the back
+to the bottom triangle.
+
+416
+00:21:52,170 --> 00:21:54,910
+And eventually, I will
+get to the back edge.
+
+417
+00:21:54,910 --> 00:21:56,686
+And then I can walk like that.
+
+418
+00:21:56,686 --> 00:21:58,060
+Shortest paths
+are not preserved.
+
+419
+00:21:58,060 --> 00:22:00,230
+But it's at least still
+topologically a sphere.
+
+420
+00:22:00,230 --> 00:22:04,540
+I've slipped this open,
+wedged in two triangles.
+
+421
+00:22:04,540 --> 00:22:06,480
+I get a new metric.
+
+422
+00:22:06,480 --> 00:22:12,320
+Now, I get to choose
+what triangles I glue in.
+
+423
+00:22:12,320 --> 00:22:17,230
+And I'm going to
+set these angles.
+
+424
+00:22:17,230 --> 00:22:20,270
+Ultimately, I'd like
+this angle to be
+
+425
+00:22:20,270 --> 00:22:26,340
+alpha over 2 and this
+angle to be beta over 2.
+
+426
+00:22:26,340 --> 00:22:30,450
+Remember, curvature is 360 minus
+the sum of the angles there.
+
+427
+00:22:30,450 --> 00:22:32,940
+That means that's how
+much extra material
+
+428
+00:22:32,940 --> 00:22:37,190
+you need to stick in
+until that vertex is flat.
+
+429
+00:22:37,190 --> 00:22:39,760
+So if I stick in an
+angle of alpha over 2
+
+430
+00:22:39,760 --> 00:22:42,920
+here, at this point, and
+there's two copies of it.
+
+431
+00:22:42,920 --> 00:22:45,580
+Because there's the front
+triangle and the back triangle,
+
+432
+00:22:45,580 --> 00:22:47,080
+Then I'll be wedging
+in alpha, which
+
+433
+00:22:47,080 --> 00:22:50,510
+is exactly what it
+takes to make x flat.
+
+434
+00:22:50,510 --> 00:22:53,860
+And this is exactly what
+it takes to make y flat.
+
+435
+00:22:53,860 --> 00:22:55,721
+The result will be
+I'd obliterate x.
+
+436
+00:22:55,721 --> 00:22:56,720
+It's no longer a vertex.
+
+437
+00:22:56,720 --> 00:22:57,345
+I obliterate y.
+
+438
+00:22:57,345 --> 00:22:58,370
+It's no longer a vertex.
+
+439
+00:22:58,370 --> 00:23:00,520
+But I add this new vertex, z.
+
+440
+00:23:00,520 --> 00:23:03,740
+
+441
+00:23:03,740 --> 00:23:06,170
+In that way, I remove
+two vertices, add one,
+
+442
+00:23:06,170 --> 00:23:07,690
+which decreases n.
+
+443
+00:23:07,690 --> 00:23:09,710
+And then I can use induction.
+
+444
+00:23:09,710 --> 00:23:12,850
+Now, there's lots of things
+to say why this works.
+
+445
+00:23:12,850 --> 00:23:14,640
+But this is the crazy idea.
+
+446
+00:23:14,640 --> 00:23:17,964
+It's the Alexandrov
+induction, and it's useful.
+
+447
+00:23:17,964 --> 00:23:19,380
+If you want to
+prove, for example,
+
+448
+00:23:19,380 --> 00:23:21,300
+that the star unfolding
+doesn't overlap,
+
+449
+00:23:21,300 --> 00:23:22,535
+you use this induction also.
+
+450
+00:23:22,535 --> 00:23:23,941
+It's the only
+proof that's known.
+
+451
+00:23:23,941 --> 00:23:27,090
+
+452
+00:23:27,090 --> 00:23:31,040
+So why did we need
+these properties?
+
+453
+00:23:31,040 --> 00:23:33,676
+Well, the biggest
+triangle you could make,
+
+454
+00:23:33,676 --> 00:23:35,050
+something like
+this, like we were
+
+455
+00:23:35,050 --> 00:23:37,300
+doing in witch's hats,
+where this is almost 90.
+
+456
+00:23:37,300 --> 00:23:38,970
+This is almost 90.
+
+457
+00:23:38,970 --> 00:23:40,930
+This is x and y.
+
+458
+00:23:40,930 --> 00:23:44,170
+
+459
+00:23:44,170 --> 00:23:46,690
+The biggest we can make
+alpha over 2 is almost 90.
+
+460
+00:23:46,690 --> 00:23:49,400
+And the biggest we can make
+beta over 2 is almost 90.
+
+461
+00:23:49,400 --> 00:23:52,940
+So we'd really like alpha
+and beta to be less than 180.
+
+462
+00:23:52,940 --> 00:23:55,160
+But then there is a valid
+triangle that does this.
+
+463
+00:23:55,160 --> 00:23:59,630
+Once you fix two angles, it of
+course determines third one.
+
+464
+00:23:59,630 --> 00:24:01,570
+It might be very close to 0.
+
+465
+00:24:01,570 --> 00:24:04,760
+So z might have very large
+curvature, but that's OK.
+
+466
+00:24:04,760 --> 00:24:07,540
+
+467
+00:24:07,540 --> 00:24:10,080
+What else?
+
+468
+00:24:10,080 --> 00:24:12,980
+The other thing is, in what
+sense could you induct?
+
+469
+00:24:12,980 --> 00:24:15,200
+And this is where I'm going
+to be a little hand wavy.
+
+470
+00:24:15,200 --> 00:24:18,730
+Yeah, I've found some
+other polyhedral metric.
+
+471
+00:24:18,730 --> 00:24:21,380
+It has one fewer vertex.
+
+472
+00:24:21,380 --> 00:24:24,460
+So by induction I know that
+it's realized by a unique convex
+
+473
+00:24:24,460 --> 00:24:25,540
+polyhedron.
+
+474
+00:24:25,540 --> 00:24:28,500
+The how in the world
+would I convert that
+
+475
+00:24:28,500 --> 00:24:32,360
+into a realization of
+the original polyhedron?
+
+476
+00:24:32,360 --> 00:24:36,760
+And the answer is
+continuity and magic.
+
+477
+00:24:36,760 --> 00:24:39,319
+The continuity is easy to see.
+
+478
+00:24:39,319 --> 00:24:40,860
+When I glue in this
+triangle, I don't
+
+479
+00:24:40,860 --> 00:24:42,660
+have to just glue
+in the triangle
+
+480
+00:24:42,660 --> 00:24:44,310
+with those final angles.
+
+481
+00:24:44,310 --> 00:24:47,470
+I could actually glue in a
+very tiny triangle initially.
+
+482
+00:24:47,470 --> 00:24:50,116
+And I could change these
+angles continuously.
+
+483
+00:24:50,116 --> 00:24:51,740
+That makes me feel
+a little bit better.
+
+484
+00:24:51,740 --> 00:24:53,150
+I start with something
+that's very, very
+
+485
+00:24:53,150 --> 00:24:54,108
+close to my polyhedron.
+
+486
+00:24:54,108 --> 00:24:55,720
+Obviously, If I
+could realize that,
+
+487
+00:24:55,720 --> 00:24:57,667
+I could still realize
+the original, right?
+
+488
+00:24:57,667 --> 00:24:59,916
+It's almost the same, if I
+glue in a tiny, tiny sliver
+
+489
+00:24:59,916 --> 00:25:01,350
+of a triangle.
+
+490
+00:25:01,350 --> 00:25:03,530
+That's not obvious,
+but it's true.
+
+491
+00:25:03,530 --> 00:25:06,990
+And you vary it until the
+point, where you actually
+
+492
+00:25:06,990 --> 00:25:08,570
+get something with
+one fewer vertex.
+
+493
+00:25:08,570 --> 00:25:10,195
+Then you actually do
+get a realization.
+
+494
+00:25:10,195 --> 00:25:14,570
+And then you continuously
+morph it back to your original.
+
+495
+00:25:14,570 --> 00:25:16,304
+That's the idea.
+
+496
+00:25:16,304 --> 00:25:17,720
+I'm not going to
+detail that idea.
+
+497
+00:25:17,720 --> 00:25:23,010
+It uses something called the
+inverse function theorem, which
+
+498
+00:25:23,010 --> 00:25:27,750
+is a cool theorem
+in real analysis.
+
+499
+00:25:27,750 --> 00:25:30,190
+But I think most of you
+haven't had real analysis.
+
+500
+00:25:30,190 --> 00:25:33,360
+So you can read about
+it if you're interested.
+
+501
+00:25:33,360 --> 00:25:34,920
+It's cool.
+
+502
+00:25:34,920 --> 00:25:36,850
+The main consequence
+for us algorithms
+
+503
+00:25:36,850 --> 00:25:39,640
+people is that it's
+non constructive.
+
+504
+00:25:39,640 --> 00:25:41,484
+It doesn't actually
+tell you how to do this.
+
+505
+00:25:41,484 --> 00:25:42,900
+It just says, well,
+by continuity,
+
+506
+00:25:42,900 --> 00:25:45,584
+it really ought to
+work out somehow.
+
+507
+00:25:45,584 --> 00:25:46,500
+But we don't know how.
+
+508
+00:25:46,500 --> 00:25:50,610
+We've tried to make it
+work out and failed.
+
+509
+00:25:50,610 --> 00:25:54,291
+While this does sort of prove
+the theorem by continuity,
+
+510
+00:25:54,291 --> 00:25:55,790
+it doesn't actually
+give us any idea
+
+511
+00:25:55,790 --> 00:25:59,110
+of how to find what
+polyhedron we are realizing,
+
+512
+00:25:59,110 --> 00:26:01,810
+which is a bit frustrating.
+
+513
+00:26:01,810 --> 00:26:05,280
+And that was the state of
+the art until four years ago.
+
+514
+00:26:05,280 --> 00:26:14,350
+
+515
+00:26:14,350 --> 00:26:21,390
+Four years ago, these guys,
+Bobenko and Izmestiev,
+
+516
+00:26:21,390 --> 00:26:24,700
+came up with a
+constructive version
+
+517
+00:26:24,700 --> 00:26:25,860
+of Alexandrov's Theorem.
+
+518
+00:26:25,860 --> 00:26:29,520
+
+519
+00:26:29,520 --> 00:26:33,360
+And I just want to sketch
+an idea of how this works.
+
+520
+00:26:33,360 --> 00:26:40,910
+But the end consequence, which
+is done in this class, I think,
+
+521
+00:26:40,910 --> 00:26:43,150
+as a class project
+three years ago,
+
+522
+00:26:43,150 --> 00:26:45,680
+is that you get a pseudo
+polynomial algorithm
+
+523
+00:26:45,680 --> 00:26:48,660
+for solving this problem.
+
+524
+00:26:48,660 --> 00:26:50,520
+So I'll jump ahead a little bit.
+
+525
+00:26:50,520 --> 00:26:54,530
+
+526
+00:26:54,530 --> 00:26:56,840
+Running time, we
+get-- this, again,
+
+527
+00:26:56,840 --> 00:27:05,495
+for amusement value-- 1891.
+
+528
+00:27:05,495 --> 00:27:06,460
+It's a good year.
+
+529
+00:27:06,460 --> 00:27:15,790
+
+530
+00:27:15,790 --> 00:27:19,830
+I think I said, last time, that
+n to the 125 times r to the 41
+
+531
+00:27:19,830 --> 00:27:20,560
+was my record.
+
+532
+00:27:20,560 --> 00:27:22,960
+Well, it's been surpassed.
+
+533
+00:27:22,960 --> 00:27:24,400
+I just forgot about it.
+
+534
+00:27:24,400 --> 00:27:29,350
+n to the 456.5 times r to the
+1891, over epsilon epsilon.
+
+535
+00:27:29,350 --> 00:27:33,150
+Here is the desired error.
+
+536
+00:27:33,150 --> 00:27:35,240
+So you can make the error
+as small as you want.
+
+537
+00:27:35,240 --> 00:27:37,160
+We can't do it perfectly.
+
+538
+00:27:37,160 --> 00:27:40,970
+But your running time increases
+as the error goes down.
+
+539
+00:27:40,970 --> 00:27:43,730
+This is our usual feature size.
+
+540
+00:27:43,730 --> 00:27:50,890
+It's the longest length in
+your input metric, let's say,
+
+541
+00:27:50,890 --> 00:27:53,760
+divided by the shortest length.
+
+542
+00:27:53,760 --> 00:27:56,510
+So that's a measure of how
+tight the features are.
+
+543
+00:27:56,510 --> 00:27:59,730
+We had that before with
+carpenter's rule stuff.
+
+544
+00:27:59,730 --> 00:28:03,670
+And n is the number vertices.
+
+545
+00:28:03,670 --> 00:28:06,264
+Obviously, this is
+a very bad bound.
+
+546
+00:28:06,264 --> 00:28:07,930
+But the point is it's
+pseudo polynomial.
+
+547
+00:28:07,930 --> 00:28:09,810
+It's a bad bound
+for the same reason
+
+548
+00:28:09,810 --> 00:28:12,140
+that our last giant ginormous
+bound was ginormous.
+
+549
+00:28:12,140 --> 00:28:15,800
+Because differential flow is
+hard to get good bounds on.
+
+550
+00:28:15,800 --> 00:28:18,764
+See it's possible to
+get some kind of bound.
+
+551
+00:28:18,764 --> 00:28:21,430
+But they don't usually represent
+how fast the algorithm actually
+
+552
+00:28:21,430 --> 00:28:21,930
+is.
+
+553
+00:28:21,930 --> 00:28:24,264
+Again, this algorithm
+is pretty practical.
+
+554
+00:28:24,264 --> 00:28:25,430
+There's an implementational.
+
+555
+00:28:25,430 --> 00:28:27,190
+I'll show it to you in a moment.
+
+556
+00:28:27,190 --> 00:28:28,765
+Maybe I'll show it
+to you right now.
+
+557
+00:28:28,765 --> 00:28:32,030
+It'll be more fun.
+
+558
+00:28:32,030 --> 00:28:35,130
+It is available on
+the web for free.
+
+559
+00:28:35,130 --> 00:28:37,010
+Try it out.
+
+560
+00:28:37,010 --> 00:28:41,231
+I assume this is a student
+of Bobenko and Izmestiev
+
+561
+00:28:41,231 --> 00:28:46,900
+in Berlin, and he implemented
+this program, Java.
+
+562
+00:28:46,900 --> 00:28:50,000
+So you specify a
+polyhedral metric.
+
+563
+00:28:50,000 --> 00:28:51,826
+Now, that's the tricky part.
+
+564
+00:28:51,826 --> 00:28:53,200
+And especially,
+it's tricky here,
+
+565
+00:28:53,200 --> 00:28:55,730
+because it has to
+be triangulated.
+
+566
+00:28:55,730 --> 00:28:58,430
+But we would normally
+do it by specifying
+
+567
+00:28:58,430 --> 00:29:00,162
+a polygon plus a gluing.
+
+568
+00:29:00,162 --> 00:29:02,120
+But of course, by computing
+all shortest paths,
+
+569
+00:29:02,120 --> 00:29:05,070
+you can eventually make that
+a nice triangulated thing.
+
+570
+00:29:05,070 --> 00:29:08,750
+So here I have a very simple
+triangulated thing, namely,
+
+571
+00:29:08,750 --> 00:29:11,160
+a complete graph on
+four vertices, which
+
+572
+00:29:11,160 --> 00:29:12,780
+makes a regular tetrahedron.
+
+573
+00:29:12,780 --> 00:29:15,080
+It doesn't look so
+regular, because I
+
+574
+00:29:15,080 --> 00:29:18,730
+have a lot of perspective in
+a small, narrow angle of view.
+
+575
+00:29:18,730 --> 00:29:22,340
+But that is a regular
+tetrahedron, believe me.
+
+576
+00:29:22,340 --> 00:29:23,960
+Then I can change
+the edge lengths.
+
+577
+00:29:23,960 --> 00:29:26,570
+Right now, they're
+all one, so I should
+
+578
+00:29:26,570 --> 00:29:32,970
+be able to make one of
+the edges longer, like 2.
+
+579
+00:29:32,970 --> 00:29:33,870
+I haven't tried this.
+
+580
+00:29:33,870 --> 00:29:34,828
+We'll see what happens.
+
+581
+00:29:34,828 --> 00:29:40,900
+I say, Compute, and it says,
+Starting Calculations--
+
+582
+00:29:40,900 --> 00:29:45,380
+not my intended answer.
+
+583
+00:29:45,380 --> 00:29:46,880
+I like it to finish
+the calculation.
+
+584
+00:29:46,880 --> 00:29:49,374
+
+585
+00:29:49,374 --> 00:29:51,165
+That's why it prepared
+some other examples.
+
+586
+00:29:51,165 --> 00:29:54,710
+
+587
+00:29:54,710 --> 00:29:56,450
+I suspect it's not
+the program failing,
+
+588
+00:29:56,450 --> 00:29:59,805
+but I've had some trouble
+running it on this computer.
+
+589
+00:29:59,805 --> 00:30:06,710
+
+590
+00:30:06,710 --> 00:30:08,660
+I think we have demo effect.
+
+591
+00:30:08,660 --> 00:30:10,490
+Finally, something
+failed in this class.
+
+592
+00:30:10,490 --> 00:30:12,392
+It took a long time.
+
+593
+00:30:12,392 --> 00:30:13,600
+You'll have to try it online.
+
+594
+00:30:13,600 --> 00:30:16,640
+You can change the edge lengths
+to all sorts of crazy things.
+
+595
+00:30:16,640 --> 00:30:18,860
+If you have very close
+to degenerate situations,
+
+596
+00:30:18,860 --> 00:30:20,244
+it does tend to fail.
+
+597
+00:30:20,244 --> 00:30:21,660
+Because there's
+some tricky issues
+
+598
+00:30:21,660 --> 00:30:24,874
+to deal with and
+this floating point.
+
+599
+00:30:24,874 --> 00:30:26,290
+Oops, it might be
+doing something.
+
+600
+00:30:26,290 --> 00:30:32,320
+
+601
+00:30:32,320 --> 00:30:34,690
+Dare I try to open a file?
+
+602
+00:30:34,690 --> 00:30:38,260
+
+603
+00:30:38,260 --> 00:30:40,530
+Here, you get to see my
+organizational structure
+
+604
+00:30:40,530 --> 00:30:42,210
+or lack thereof.
+
+605
+00:30:42,210 --> 00:30:51,570
+Courses, Slides, 15,
+and let's take Cube.
+
+606
+00:30:51,570 --> 00:30:52,895
+Exciting.
+
+607
+00:30:52,895 --> 00:30:53,520
+This is a cube.
+
+608
+00:30:53,520 --> 00:30:56,630
+It's not so obvious
+that it is a cube.
+
+609
+00:30:56,630 --> 00:30:58,550
+But you set the edge links.
+
+610
+00:30:58,550 --> 00:31:02,410
+And a lot of these
+are sort of diagonals.
+
+611
+00:31:02,410 --> 00:31:05,720
+And if I do it right,
+maybe add some iterations.
+
+612
+00:31:05,720 --> 00:31:08,064
+
+613
+00:31:08,064 --> 00:31:09,980
+It says, [INAUDIBLE]
+successfully constructed.
+
+614
+00:31:09,980 --> 00:31:13,040
+You can see it, right?
+
+615
+00:31:13,040 --> 00:31:15,352
+My job is failing, I'm afraid.
+
+616
+00:31:15,352 --> 00:31:16,060
+Sorry about that.
+
+617
+00:31:16,060 --> 00:31:19,979
+
+618
+00:31:19,979 --> 00:31:20,479
+Go away.
+
+619
+00:31:20,479 --> 00:31:23,350
+
+620
+00:31:23,350 --> 00:31:24,600
+You'll have to try it at home.
+
+621
+00:31:24,600 --> 00:31:25,040
+AUDIENCE: It was there.
+
+622
+00:31:25,040 --> 00:31:25,740
+PROFESSOR: It was there?
+
+623
+00:31:25,740 --> 00:31:26,240
+Oh.
+
+624
+00:31:26,240 --> 00:31:29,230
+AUDIENCE: [LAUGHTER]
+
+625
+00:31:29,230 --> 00:31:32,440
+PROFESSOR: Wait, I
+don't see a cube.
+
+626
+00:31:32,440 --> 00:31:35,690
+What did you see?
+
+627
+00:31:35,690 --> 00:31:36,670
+AUDIENCE: It was there.
+
+628
+00:31:36,670 --> 00:31:37,669
+PROFESSOR: It was there.
+
+629
+00:31:37,669 --> 00:31:39,540
+All right, you saw it.
+
+630
+00:31:39,540 --> 00:31:40,450
+It's like it ghost.
+
+631
+00:31:40,450 --> 00:31:43,030
+It's the left over
+from Halloween.
+
+632
+00:31:43,030 --> 00:31:45,120
+Let me tell you a little
+bit about how this works.
+
+633
+00:31:45,120 --> 00:31:47,070
+And you'll have to try
+the program at home.
+
+634
+00:31:47,070 --> 00:31:53,530
+
+635
+00:31:53,530 --> 00:31:56,000
+A crazy idea is we have
+this polyhedron, which
+
+636
+00:31:56,000 --> 00:31:58,200
+we want to find.
+
+637
+00:31:58,200 --> 00:31:59,460
+It's a surface.
+
+638
+00:31:59,460 --> 00:32:02,580
+It's hard to think about
+surfaces that live in 3D.
+
+639
+00:32:02,580 --> 00:32:06,030
+So I want to make it
+more three dimensional.
+
+640
+00:32:06,030 --> 00:32:07,470
+And the way I
+going to do that is
+
+641
+00:32:07,470 --> 00:32:10,220
+by thinking about the
+inside of the polyhedron.
+
+642
+00:32:10,220 --> 00:32:12,527
+And say, well,
+imagine it's convex.
+
+643
+00:32:12,527 --> 00:32:14,360
+So there's some point
+inside the polyhedron.
+
+644
+00:32:14,360 --> 00:32:15,790
+Start with one point.
+
+645
+00:32:15,790 --> 00:32:18,430
+And then, I'd like to fill
+the interior in between.
+
+646
+00:32:18,430 --> 00:32:21,637
+So the surface, as you saw--
+we're assuming that everything
+
+647
+00:32:21,637 --> 00:32:22,720
+is initially triangulated.
+
+648
+00:32:22,720 --> 00:32:25,332
+We can do that by
+adding shortest paths.
+
+649
+00:32:25,332 --> 00:32:27,040
+Well, if this triangle
+is on the surface,
+
+650
+00:32:27,040 --> 00:32:29,460
+and this point is in the
+center, the natural thing to do
+
+651
+00:32:29,460 --> 00:32:33,360
+is to make tetrahedra inside.
+
+652
+00:32:33,360 --> 00:32:36,680
+
+653
+00:32:36,680 --> 00:32:39,260
+If I could find
+the 3D triangles,
+
+654
+00:32:39,260 --> 00:32:41,430
+I could also find
+the 3D tetrahedra.
+
+655
+00:32:41,430 --> 00:32:43,050
+So we're going to
+do a harder job
+
+656
+00:32:43,050 --> 00:32:44,277
+of finding the 3D tetrahedra.
+
+657
+00:32:44,277 --> 00:32:46,110
+From that, we will
+derive what the triangles
+
+658
+00:32:46,110 --> 00:32:48,320
+are-- easy enough idea.
+
+659
+00:32:48,320 --> 00:32:49,650
+Make your problem harder.
+
+660
+00:32:49,650 --> 00:32:51,000
+That often makes things easier.
+
+661
+00:32:51,000 --> 00:32:55,190
+
+662
+00:32:55,190 --> 00:32:56,350
+How do we do that?
+
+663
+00:32:56,350 --> 00:32:58,940
+Well, for every
+vertex up here-- call
+
+664
+00:32:58,940 --> 00:33:01,500
+it vi-- there's some distance.
+
+665
+00:33:01,500 --> 00:33:04,240
+This dashed line-- we're
+going to call that ri.
+
+666
+00:33:04,240 --> 00:33:06,350
+That's really what we'd
+like to figure out.
+
+667
+00:33:06,350 --> 00:33:10,030
+We already know the triangles--
+we know their geometry.
+
+668
+00:33:10,030 --> 00:33:12,370
+That's given to us as
+part of the metric.
+
+669
+00:33:12,370 --> 00:33:14,162
+We don't know how the
+triangles are hinged,
+
+670
+00:33:14,162 --> 00:33:15,286
+with respect to each other.
+
+671
+00:33:15,286 --> 00:33:16,540
+That's the dihedral angles.
+
+672
+00:33:16,540 --> 00:33:17,820
+That's the tricky part.
+
+673
+00:33:17,820 --> 00:33:19,861
+But we're not going to
+worry about that directly.
+
+674
+00:33:19,861 --> 00:33:23,030
+We're going to think about
+these edge lengths, ri.
+
+675
+00:33:23,030 --> 00:33:27,070
+Because if I knew
+all the ri lengths--
+
+676
+00:33:27,070 --> 00:33:30,471
+they're the sort of radii
+from the center point-- then
+
+677
+00:33:30,471 --> 00:33:32,470
+I'd know all the edge
+lengths of the tetrahedron
+
+678
+00:33:32,470 --> 00:33:34,189
+that uniquely determined
+the tetrahedron.
+
+679
+00:33:34,189 --> 00:33:35,730
+If I do that for
+all the tetrahedron,
+
+680
+00:33:35,730 --> 00:33:37,320
+there would be a unique
+way to glue them together.
+
+681
+00:33:37,320 --> 00:33:38,550
+And I would get the answer.
+
+682
+00:33:38,550 --> 00:33:40,000
+So I really just
+need these ri's.
+
+683
+00:33:40,000 --> 00:33:42,610
+
+684
+00:33:42,610 --> 00:33:44,160
+What I'd like to
+do is characterize,
+
+685
+00:33:44,160 --> 00:33:47,630
+when are the ri's valid?
+
+686
+00:33:47,630 --> 00:33:52,730
+And there's a few conditions
+to make them reasonable.
+
+687
+00:33:52,730 --> 00:33:56,110
+The first thing, I guess I
+didn't even write in the notes.
+
+688
+00:33:56,110 --> 00:33:59,050
+You might call it
+sanity, which is
+
+689
+00:33:59,050 --> 00:34:04,645
+that these are
+real 3D tetrahedra.
+
+690
+00:34:04,645 --> 00:34:07,639
+
+691
+00:34:07,639 --> 00:34:10,060
+I'm not going to try to
+characterize when that's true.
+
+692
+00:34:10,060 --> 00:34:13,130
+It's some function on the ri
+lengths and existing lengths.
+
+693
+00:34:13,130 --> 00:34:15,760
+But I always want these to
+correspond actual tetrahedra.
+
+694
+00:34:15,760 --> 00:34:17,810
+The trouble is, they might
+not fit together right
+
+695
+00:34:17,810 --> 00:34:19,210
+to make 3D polyhedron.
+
+696
+00:34:19,210 --> 00:34:22,130
+So I won't really have to
+worry about this condition.
+
+697
+00:34:22,130 --> 00:34:27,754
+The next condition-- what
+do I call it-- is convexity.
+
+698
+00:34:27,754 --> 00:34:32,330
+
+699
+00:34:32,330 --> 00:34:34,050
+This will also be kind of easy.
+
+700
+00:34:34,050 --> 00:34:38,270
+What I want is that the
+outside surface is convex.
+
+701
+00:34:38,270 --> 00:34:42,120
+Now, if you look at the outside
+surface, what we really want
+
+702
+00:34:42,120 --> 00:34:44,310
+is that one of these edges,
+on the outside surface,
+
+703
+00:34:44,310 --> 00:34:46,670
+bends the correct way.
+
+704
+00:34:46,670 --> 00:34:47,837
+So when will that be true?
+
+705
+00:34:47,837 --> 00:34:49,670
+Well, I'm going to look
+at the two triangles
+
+706
+00:34:49,670 --> 00:34:51,050
+next to that edge.
+
+707
+00:34:51,050 --> 00:34:58,374
+That defines two tetrahedra
+that share a face.
+
+708
+00:34:58,374 --> 00:34:59,790
+And if I knew what
+the ri's where,
+
+709
+00:34:59,790 --> 00:35:01,520
+I'd know what those
+tetrahedra are.
+
+710
+00:35:01,520 --> 00:35:04,790
+And what I really need is
+that if I look at the angle--
+
+711
+00:35:04,790 --> 00:35:06,790
+I'm going to draw this
+a little bit thicker--
+
+712
+00:35:06,790 --> 00:35:11,660
+this dihedral angle
+between-- it's hard to draw.
+
+713
+00:35:11,660 --> 00:35:13,340
+If you look at
+this edge, there's
+
+714
+00:35:13,340 --> 00:35:15,190
+two tetrahedra glued there.
+
+715
+00:35:15,190 --> 00:35:17,710
+So there's some
+solid dihedral angle
+
+716
+00:35:17,710 --> 00:35:20,260
+of tetrahedron glued at that
+edge from this tetrahedron.
+
+717
+00:35:20,260 --> 00:35:22,120
+And there's some
+angle over here that's
+
+718
+00:35:22,120 --> 00:35:24,150
+glued to this edge
+from that tetrahedron.
+
+719
+00:35:24,150 --> 00:35:29,250
+I want the sum of those
+two dihedral angles,
+
+720
+00:35:29,250 --> 00:35:34,600
+the total material there, to
+be less than or equal to 180.
+
+721
+00:35:34,600 --> 00:35:36,670
+That is, the sum of
+those angles is really
+
+722
+00:35:36,670 --> 00:35:38,680
+the dihedral angle
+along this edge.
+
+723
+00:35:38,680 --> 00:35:41,370
+If it's less than
+180, it'll be convex.
+
+724
+00:35:41,370 --> 00:35:45,440
+It's hard to draw,
+but very intuitive.
+
+725
+00:35:45,440 --> 00:35:48,360
+This is also pretty easy to get.
+
+726
+00:35:48,360 --> 00:35:50,280
+You can set the ri
+so that that's true.
+
+727
+00:35:50,280 --> 00:35:54,200
+The hard part is
+looking at a vertex.
+
+728
+00:35:54,200 --> 00:35:55,470
+You think about a vertex.
+
+729
+00:35:55,470 --> 00:35:57,440
+It has a whole bunch
+of triangles around it.
+
+730
+00:35:57,440 --> 00:36:00,580
+
+731
+00:36:00,580 --> 00:36:06,150
+From this vertex to the central
+point, which we usually call p,
+
+732
+00:36:06,150 --> 00:36:09,850
+if you look at that edge-- I'm
+not going to try to draw it--
+
+733
+00:36:09,850 --> 00:36:11,860
+there's, in this
+case, five tetrahedra
+
+734
+00:36:11,860 --> 00:36:15,030
+glued around that edge.
+
+735
+00:36:15,030 --> 00:36:18,800
+The total dihedral angle
+of those five tetrahedra
+
+736
+00:36:18,800 --> 00:36:21,120
+ought to be exactly 360.
+
+737
+00:36:21,120 --> 00:36:23,370
+If these tetrahedra are going
+to fit together and make
+
+738
+00:36:23,370 --> 00:36:29,045
+a solid thing-- and this we
+call the reality constraint.
+
+739
+00:36:29,045 --> 00:36:31,550
+
+740
+00:36:31,550 --> 00:36:33,670
+I'm not usually bound by
+the reality constraint.
+
+741
+00:36:33,670 --> 00:36:35,540
+In fact, we will
+relax it a little bit.
+
+742
+00:36:35,540 --> 00:36:42,350
+But we would like that the
+sum of the dihedral angles
+
+743
+00:36:42,350 --> 00:36:51,610
+around some edge from
+P to vi equals 360.
+
+744
+00:36:51,610 --> 00:36:53,770
+This is the hard
+constraint to get.
+
+745
+00:36:53,770 --> 00:36:55,840
+Reality is tough.
+
+746
+00:36:55,840 --> 00:36:57,240
+Sanity, convexity, easy.
+
+747
+00:36:57,240 --> 00:37:01,740
+
+748
+00:37:01,740 --> 00:37:06,240
+I guess I shouldn't
+kill this yet.
+
+749
+00:37:06,240 --> 00:37:09,790
+So let me tell you a little
+bit more about how we get this.
+
+750
+00:37:09,790 --> 00:37:35,710
+
+751
+00:37:35,710 --> 00:37:37,880
+I'll just tell you
+some of this stuff.
+
+752
+00:37:37,880 --> 00:37:40,830
+The first thing we do is
+get sanity and convexity
+
+753
+00:37:40,830 --> 00:37:42,840
+and forget about reality.
+
+754
+00:37:42,840 --> 00:37:43,715
+Reality is overrated.
+
+755
+00:37:43,715 --> 00:37:46,370
+
+756
+00:37:46,370 --> 00:37:48,100
+To do that, we actually
+need two things.
+
+757
+00:37:48,100 --> 00:37:50,720
+One, is we need a
+triangulation of the surface.
+
+758
+00:37:50,720 --> 00:37:52,470
+We're presumably given
+some triangulation,
+
+759
+00:37:52,470 --> 00:37:55,500
+but that one might
+be hard to work with.
+
+760
+00:37:55,500 --> 00:37:59,290
+And the answer is,
+to start out, it's
+
+761
+00:37:59,290 --> 00:38:03,130
+nice to use Delaunay
+triangulation.
+
+762
+00:38:03,130 --> 00:38:05,830
+How many people know about
+the Delaunay triangulations?
+
+763
+00:38:05,830 --> 00:38:08,940
+They're nice triangulations.
+
+764
+00:38:08,940 --> 00:38:10,840
+And you can define
+Delaunay triangulation
+
+765
+00:38:10,840 --> 00:38:12,890
+in an implicit
+surface like this.
+
+766
+00:38:12,890 --> 00:38:15,010
+I won't do that here.
+
+767
+00:38:15,010 --> 00:38:17,480
+But it can be done,
+and it can be computed.
+
+768
+00:38:17,480 --> 00:38:19,880
+One of the innovations
+in this paper
+
+769
+00:38:19,880 --> 00:38:21,620
+was to actually show
+how to compute it
+
+770
+00:38:21,620 --> 00:38:23,180
+in pseudo polynomial time.
+
+771
+00:38:23,180 --> 00:38:26,080
+It's not too hard.
+
+772
+00:38:26,080 --> 00:38:28,460
+It's just shortest paths.
+
+773
+00:38:28,460 --> 00:38:31,640
+Then, it turns out, if you
+start with that triangulation,
+
+774
+00:38:31,640 --> 00:38:34,520
+and you let all the ri's be
+really, really big, close
+
+775
+00:38:34,520 --> 00:38:38,940
+to infinity, then sanity
+and convexity hold.
+
+776
+00:38:38,940 --> 00:38:41,359
+So I guess intuition may
+be like witch's hats.
+
+777
+00:38:41,359 --> 00:38:41,900
+I don't know.
+
+778
+00:38:41,900 --> 00:38:45,190
+You're making these super-sharp
+triangles, tetrahedra.
+
+779
+00:38:45,190 --> 00:38:45,950
+And it will work.
+
+780
+00:38:45,950 --> 00:38:49,980
+Now, it'll make
+everything big and equal.
+
+781
+00:38:49,980 --> 00:38:53,710
+And so reality will be violated.
+
+782
+00:38:53,710 --> 00:38:58,830
+But sanity and convexity
+are OK, and that
+
+783
+00:38:58,830 --> 00:39:01,330
+will be your starting point.
+
+784
+00:39:01,330 --> 00:39:03,960
+So now the crazy
+idea is to fix it.
+
+785
+00:39:03,960 --> 00:39:11,420
+
+786
+00:39:11,420 --> 00:39:14,220
+I'm going to define
+a kind of curvature
+
+787
+00:39:14,220 --> 00:39:24,930
+around each edge, around that
+center line from p to vi.
+
+788
+00:39:24,930 --> 00:39:28,190
+That's the sum that we
+wanted to be equal to 360.
+
+789
+00:39:28,190 --> 00:39:30,070
+And now I'm just
+taking 360 minus that.
+
+790
+00:39:30,070 --> 00:39:30,970
+That's the deficit.
+
+791
+00:39:30,970 --> 00:39:33,310
+This is how much we're off by.
+
+792
+00:39:33,310 --> 00:39:34,830
+So we have some starting point.
+
+793
+00:39:34,830 --> 00:39:39,750
+And it turns out the Ki
+will be positive, I believe.
+
+794
+00:39:39,750 --> 00:39:51,675
+And we want to make Ki
+evolve with time, so that it
+
+795
+00:39:51,675 --> 00:39:54,670
+is 1 minus t, times
+the initial Ki.
+
+796
+00:39:54,670 --> 00:39:57,250
+
+797
+00:39:57,250 --> 00:39:59,500
+So we start at times
+0, with the solution
+
+798
+00:39:59,500 --> 00:40:00,939
+where all the ri's are large.
+
+799
+00:40:00,939 --> 00:40:02,480
+So we're staying in
+convex, and we're
+
+800
+00:40:02,480 --> 00:40:05,010
+going to be staying in
+convex from then on.
+
+801
+00:40:05,010 --> 00:40:08,850
+And then, if we could do this,
+we would start at t equals 0.
+
+802
+00:40:08,850 --> 00:40:12,020
+This is 1 times the original
+curvature at every edge,
+
+803
+00:40:12,020 --> 00:40:13,640
+so it's a problem.
+
+804
+00:40:13,640 --> 00:40:16,860
+But at t equals 1, at time
+1, when this is finished,
+
+805
+00:40:16,860 --> 00:40:19,640
+we will get 0 times
+whatever we had.
+
+806
+00:40:19,640 --> 00:40:21,810
+So all of these numbers
+will magically go to 0.
+
+807
+00:40:21,810 --> 00:40:24,660
+And then it adds up to 360.
+
+808
+00:40:24,660 --> 00:40:27,570
+It's not obvious that
+this works, but it does.
+
+809
+00:40:27,570 --> 00:40:29,110
+It defines a differential flow.
+
+810
+00:40:29,110 --> 00:40:34,170
+And those who know
+differential equations,
+
+811
+00:40:34,170 --> 00:40:37,627
+this will look pretty.
+
+812
+00:40:37,627 --> 00:40:39,210
+This is partial
+differential equations
+
+813
+00:40:39,210 --> 00:40:41,390
+to make it a little
+more exciting.
+
+814
+00:40:41,390 --> 00:40:49,060
+This is a kappa and
+inverse and phi.
+
+815
+00:40:49,060 --> 00:40:50,770
+What was phi?
+
+816
+00:40:50,770 --> 00:40:55,190
+I'm forgetting my own
+notation, some initial value.
+
+817
+00:40:55,190 --> 00:40:58,110
+
+818
+00:40:58,110 --> 00:41:00,306
+It should probably be r.
+
+819
+00:41:00,306 --> 00:41:00,806
+r?
+
+820
+00:41:00,806 --> 00:41:04,090
+We'll see.
+
+821
+00:41:04,090 --> 00:41:08,000
+All this is saying
+is what I really
+
+822
+00:41:08,000 --> 00:41:10,507
+want is to evolve
+kappas to go smaller.
+
+823
+00:41:10,507 --> 00:41:12,965
+I don't know how to do that,
+because all I can do is change
+
+824
+00:41:12,965 --> 00:41:13,647
+the ri's.
+
+825
+00:41:13,647 --> 00:41:14,980
+That's the only thing I control.
+
+826
+00:41:14,980 --> 00:41:17,720
+The kappas are computed
+as a function of the ri's.
+
+827
+00:41:17,720 --> 00:41:20,740
+There's a standard trick in
+analysis-- or I guess, whatever
+
+828
+00:41:20,740 --> 00:41:26,800
+that is, calculus--
+to rewrite things.
+
+829
+00:41:26,800 --> 00:41:28,180
+You get to control the ri's.
+
+830
+00:41:28,180 --> 00:41:31,450
+You want to control the kappas.
+
+831
+00:41:31,450 --> 00:41:36,000
+So you use this thing, which
+is called the Jacobian.
+
+832
+00:41:36,000 --> 00:41:38,640
+
+833
+00:41:38,640 --> 00:41:40,150
+It's a matrix.
+
+834
+00:41:40,150 --> 00:41:43,100
+But really, it says,
+if I change ri,
+
+835
+00:41:43,100 --> 00:41:44,730
+how does that change kappa j?
+
+836
+00:41:44,730 --> 00:41:46,232
+It says that for all i and j.
+
+837
+00:41:46,232 --> 00:41:48,190
+So it's just a whole
+bunch of different values.
+
+838
+00:41:48,190 --> 00:41:50,050
+They're really functions.
+
+839
+00:41:50,050 --> 00:41:51,480
+You invert that
+because you really
+
+840
+00:41:51,480 --> 00:41:55,140
+want to know how--
+I want to change
+
+841
+00:41:55,140 --> 00:41:57,850
+the ri's in order to
+affect the kappas.
+
+842
+00:41:57,850 --> 00:42:01,090
+So you write this
+differential equation.
+
+843
+00:42:01,090 --> 00:42:07,090
+And you just follow your nose,
+and it tells you what to do.
+
+844
+00:42:07,090 --> 00:42:09,870
+I'm going to slide a whole
+bunch of details under the rug.
+
+845
+00:42:09,870 --> 00:42:13,020
+The hard part is proving that
+this relation is actually
+
+846
+00:42:13,020 --> 00:42:15,310
+feasible, that you can
+change the ri's in order
+
+847
+00:42:15,310 --> 00:42:17,690
+to change the kappas,
+no matter how you want.
+
+848
+00:42:17,690 --> 00:42:21,510
+This is equivalent to saying
+that the Jacobian is never 0,
+
+849
+00:42:21,510 --> 00:42:24,209
+and it always has an inverse.
+
+850
+00:42:24,209 --> 00:42:25,250
+And that's hard to prove.
+
+851
+00:42:25,250 --> 00:42:28,070
+And in fact, they prove it using
+the Inverse Function Theorem,
+
+852
+00:42:28,070 --> 00:42:29,990
+which is what we
+were trying to avoid.
+
+853
+00:42:29,990 --> 00:42:33,110
+But hey, it's a
+construction of sorts,
+
+854
+00:42:33,110 --> 00:42:35,290
+and it leads to
+that implementation.
+
+855
+00:42:35,290 --> 00:42:38,490
+This, in some sense,
+gives you an algorithm.
+
+856
+00:42:38,490 --> 00:42:40,540
+To turn it into an
+actual algorithm--
+
+857
+00:42:40,540 --> 00:42:46,710
+as we did in this paper, which
+appeared last year-- you need
+
+858
+00:42:46,710 --> 00:42:49,300
+to make this proof a little
+bit more constructive,
+
+859
+00:42:49,300 --> 00:42:52,200
+a little bit more
+algorithmic, let's say.
+
+860
+00:42:52,200 --> 00:42:54,842
+You don't just want to prove
+that this Jacobian is never
+
+861
+00:42:54,842 --> 00:42:56,550
+zero 0 and that it
+always has an inverse.
+
+862
+00:42:56,550 --> 00:42:58,070
+You need to prove
+that it's actually
+
+863
+00:42:58,070 --> 00:42:59,800
+always at least some epsilon.
+
+864
+00:42:59,800 --> 00:43:02,460
+It's bounded away from 0,
+and same for the inverse.
+
+865
+00:43:02,460 --> 00:43:05,312
+
+866
+00:43:05,312 --> 00:43:07,020
+Instead of using
+inverse functions there,
+
+867
+00:43:07,020 --> 00:43:08,350
+and we're totally
+constructive, we just
+
+868
+00:43:08,350 --> 00:43:10,230
+look at second derivatives
+and bound those.
+
+869
+00:43:10,230 --> 00:43:13,790
+We get a really awful
+bound, which is this one.
+
+870
+00:43:13,790 --> 00:43:17,330
+But we do get an explicit
+bound on how long, essentially,
+
+871
+00:43:17,330 --> 00:43:23,310
+the algorithm is implemented
+and the applet takes.
+
+872
+00:43:23,310 --> 00:43:25,920
+So, a high-level sketch,
+but it gives you an idea.
+
+873
+00:43:25,920 --> 00:43:30,461
+This is pretty new stuff.
+
+874
+00:43:30,461 --> 00:43:30,960
+Questions?
+
+875
+00:43:30,960 --> 00:43:34,190
+
+876
+00:43:34,190 --> 00:43:42,139
+I want to move on to more
+fun topics, let's technical,
+
+877
+00:43:42,139 --> 00:43:42,680
+I should say.
+
+878
+00:43:42,680 --> 00:43:45,770
+
+879
+00:43:45,770 --> 00:43:47,840
+So that's Alexandrov's
+Theorem algorithms.
+
+880
+00:43:47,840 --> 00:43:50,050
+In theory, there's
+now a computer program
+
+881
+00:43:50,050 --> 00:43:55,650
+that will tell you
+how to fold something,
+
+882
+00:43:55,650 --> 00:43:58,030
+as long as we have
+an Alexandrov gluing.
+
+883
+00:43:58,030 --> 00:43:59,210
+So it has to be polyhedral.
+
+884
+00:43:59,210 --> 00:44:00,376
+That's pretty much for free.
+
+885
+00:44:00,376 --> 00:44:01,224
+It has to be convex.
+
+886
+00:44:01,224 --> 00:44:02,390
+That's the interesting part.
+
+887
+00:44:02,390 --> 00:44:04,310
+It has to be a
+topological sphere that
+
+888
+00:44:04,310 --> 00:44:06,350
+is just non-crossing.
+
+889
+00:44:06,350 --> 00:44:08,590
+So let's think about gluings.
+
+890
+00:44:08,590 --> 00:44:10,660
+We know that as long as
+we find a good gluing,
+
+891
+00:44:10,660 --> 00:44:12,680
+it corresponds to something.
+
+892
+00:44:12,680 --> 00:44:14,730
+We know that something's
+a little hard to find.
+
+893
+00:44:14,730 --> 00:44:16,935
+But we'll see how we
+find them in practice.
+
+894
+00:44:16,935 --> 00:44:17,670
+It's kind of fun.
+
+895
+00:44:17,670 --> 00:44:21,310
+
+896
+00:44:21,310 --> 00:44:23,800
+We talked about the
+decision problem.
+
+897
+00:44:23,800 --> 00:44:27,220
+Is it possible at all
+for a given polygon?
+
+898
+00:44:27,220 --> 00:44:30,712
+So here's a polygon where
+it's not possible at all.
+
+899
+00:44:30,712 --> 00:44:31,920
+It's kind of fun-- ungluable.
+
+900
+00:44:31,920 --> 00:44:38,240
+
+901
+00:44:38,240 --> 00:44:39,365
+I should make that sharper.
+
+902
+00:44:39,365 --> 00:44:43,470
+
+903
+00:44:43,470 --> 00:44:45,341
+So this is a polygon.
+
+904
+00:44:45,341 --> 00:44:46,215
+This is the material.
+
+905
+00:44:46,215 --> 00:44:49,600
+
+906
+00:44:49,600 --> 00:44:51,720
+I want to glue it
+into a convex shape.
+
+907
+00:44:51,720 --> 00:44:54,740
+I claim it's not possible.
+
+908
+00:44:54,740 --> 00:44:58,120
+The reason is, think
+about this vertex.
+
+909
+00:44:58,120 --> 00:45:02,018
+What could get glued
+to that vertex?
+
+910
+00:45:02,018 --> 00:45:03,531
+It has to be less than 360.
+
+911
+00:45:03,531 --> 00:45:04,780
+Right now, it's less than 360.
+
+912
+00:45:04,780 --> 00:45:07,140
+It's that much material.
+
+913
+00:45:07,140 --> 00:45:10,910
+Could I glue any other
+vertex to that point?
+
+914
+00:45:10,910 --> 00:45:11,410
+No.
+
+915
+00:45:11,410 --> 00:45:13,950
+Because all the other vertices
+have at least 90 degrees
+
+916
+00:45:13,950 --> 00:45:15,130
+of material.
+
+917
+00:45:15,130 --> 00:45:17,000
+This one has even more.
+
+918
+00:45:17,000 --> 00:45:18,250
+But all them have at least 90.
+
+919
+00:45:18,250 --> 00:45:20,320
+And there's less
+than 90 remaining.
+
+920
+00:45:20,320 --> 00:45:22,180
+So no other vertex
+could be glued there.
+
+921
+00:45:22,180 --> 00:45:24,430
+The other possibility, it
+doesn't have to be a vertex.
+
+922
+00:45:24,430 --> 00:45:26,410
+It could be a point in
+the middle of an edge.
+
+923
+00:45:26,410 --> 00:45:27,830
+But that has 180 degrees.
+
+924
+00:45:27,830 --> 00:45:31,110
+That's way too much,
+so nothing fits there.
+
+925
+00:45:31,110 --> 00:45:33,120
+Therefore, I have
+glue like this.
+
+926
+00:45:33,120 --> 00:45:36,330
+This is what we call zipping.
+
+927
+00:45:36,330 --> 00:45:38,800
+I zip those two
+edges to each other.
+
+928
+00:45:38,800 --> 00:45:40,990
+Now, they happen to be
+exactly the same length.
+
+929
+00:45:40,990 --> 00:45:44,810
+Therefore, this vertex
+gets glued to that vertex.
+
+930
+00:45:44,810 --> 00:45:47,140
+But that's not allowed,
+because there's more than 180
+
+931
+00:45:47,140 --> 00:45:50,140
+and more than 180
+here-- contradiction.
+
+932
+00:45:50,140 --> 00:45:52,068
+So that's it.
+
+933
+00:45:52,068 --> 00:45:55,845
+This can actually happen a lot.
+
+934
+00:45:55,845 --> 00:45:59,080
+Let me formalize that.
+
+935
+00:45:59,080 --> 00:46:06,350
+
+936
+00:46:06,350 --> 00:46:09,015
+So we could look at what you
+might call the generic case.
+
+937
+00:46:09,015 --> 00:46:13,020
+
+938
+00:46:13,020 --> 00:46:15,490
+And I won't call it
+the generic case.
+
+939
+00:46:15,490 --> 00:46:19,900
+But there's a back reference
+there, all the linkage stuff.
+
+940
+00:46:19,900 --> 00:46:21,980
+I can explicitly think
+about the random case.
+
+941
+00:46:21,980 --> 00:46:24,020
+Suppose you choose all
+the lengths of your edges
+
+942
+00:46:24,020 --> 00:46:27,390
+and all you angles at
+random in your polygon.
+
+943
+00:46:27,390 --> 00:46:29,260
+You get some messy thing.
+
+944
+00:46:29,260 --> 00:46:36,080
+But the point is,
+around half the vertices
+
+945
+00:46:36,080 --> 00:46:41,820
+will be reflex
+angle, more than 180.
+
+946
+00:46:41,820 --> 00:46:43,400
+And those are kind of troubled.
+
+947
+00:46:43,400 --> 00:46:47,350
+Because if you have a
+reflex vertex like this,
+
+948
+00:46:47,350 --> 00:46:50,650
+in particular, you can't
+glue the middle of an edge.
+
+949
+00:46:50,650 --> 00:46:53,090
+Because that has 180.
+
+950
+00:46:53,090 --> 00:46:55,300
+You can only blue
+convex vertices
+
+951
+00:46:55,300 --> 00:46:58,900
+that have some smaller
+angle into there.
+
+952
+00:46:58,900 --> 00:47:04,010
+Otherwise, use zip, and
+zipping would be like this.
+
+953
+00:47:04,010 --> 00:47:07,990
+So, what do I want to say?
+
+954
+00:47:07,990 --> 00:47:08,600
+Yeah, I see.
+
+955
+00:47:08,600 --> 00:47:10,260
+Right, cool.
+
+956
+00:47:10,260 --> 00:47:13,571
+Before I get to zipping,
+maybe I glue some convex angle
+
+957
+00:47:13,571 --> 00:47:14,070
+in there.
+
+958
+00:47:14,070 --> 00:47:15,430
+It's the same kind of analysis.
+
+959
+00:47:15,430 --> 00:47:16,721
+Maybe I glue some convex angle.
+
+960
+00:47:16,721 --> 00:47:18,812
+But if the angles
+are chosen at random,
+
+961
+00:47:18,812 --> 00:47:21,020
+I'm not going to get lucky
+and completely flatten out
+
+962
+00:47:21,020 --> 00:47:21,519
+the vertex.
+
+963
+00:47:21,519 --> 00:47:22,390
+It won't disappear.
+
+964
+00:47:22,390 --> 00:47:24,360
+That would be too
+much to hope for.
+
+965
+00:47:24,360 --> 00:47:25,960
+So most the time,
+I'm going to glue
+
+966
+00:47:25,960 --> 00:47:27,790
+in-- maybe I glue
+in some material.
+
+967
+00:47:27,790 --> 00:47:28,936
+Then I glue in some more.
+
+968
+00:47:28,936 --> 00:47:30,060
+At some point, I get stuck.
+
+969
+00:47:30,060 --> 00:47:33,190
+I can't glue anymore in, or
+I decide I don't want to.
+
+970
+00:47:33,190 --> 00:47:35,450
+At that point, I must zip.
+
+971
+00:47:35,450 --> 00:47:37,680
+This is a rather
+ambiguous notation.
+
+972
+00:47:37,680 --> 00:47:41,370
+But zipping, I want to glue
+this edge to that edge.
+
+973
+00:47:41,370 --> 00:47:43,870
+Well, how long can
+I zip them for?
+
+974
+00:47:43,870 --> 00:47:47,160
+
+975
+00:47:47,160 --> 00:47:49,231
+Well, let's say I zip them.
+
+976
+00:47:49,231 --> 00:47:51,850
+
+977
+00:47:51,850 --> 00:47:53,930
+At any moment here,
+I'm gluing a 180 degree
+
+978
+00:47:53,930 --> 00:47:55,510
+angle to another
+180 degree angle.
+
+979
+00:47:55,510 --> 00:47:57,242
+I can't stop zipping
+once I start.
+
+980
+00:47:57,242 --> 00:47:59,450
+Because there's nothing else
+that could fit in there.
+
+981
+00:47:59,450 --> 00:48:04,710
+So I've got to zip
+until I get to a corner.
+
+982
+00:48:04,710 --> 00:48:07,500
+There's going to be some
+corner, some vertex, that's
+
+983
+00:48:07,500 --> 00:48:10,162
+glued to some point.
+
+984
+00:48:10,162 --> 00:48:11,870
+Now, is it going to
+be glued to a vertex?
+
+985
+00:48:11,870 --> 00:48:13,210
+Well, that would
+be awfully lucky.
+
+986
+00:48:13,210 --> 00:48:14,420
+That would mean
+that these two edges
+
+987
+00:48:14,420 --> 00:48:15,628
+have exactly the same length.
+
+988
+00:48:15,628 --> 00:48:17,980
+That's not going
+to happen randomly.
+
+989
+00:48:17,980 --> 00:48:20,650
+One of these is going to
+be larger than the other.
+
+990
+00:48:20,650 --> 00:48:25,120
+Now I'm gluing some angle
+to a 180 degree angle.
+
+991
+00:48:25,120 --> 00:48:28,270
+The result is another
+reflex vertex.
+
+992
+00:48:28,270 --> 00:48:30,230
+This will keep going.
+
+993
+00:48:30,230 --> 00:48:33,390
+And you'll never finish.
+
+994
+00:48:33,390 --> 00:48:34,910
+So this is a bit hand wavy.
+
+995
+00:48:34,910 --> 00:48:38,500
+But you can see the textbook
+for more formal argument.
+
+996
+00:48:38,500 --> 00:48:42,550
+
+997
+00:48:42,550 --> 00:48:43,190
+I have it here.
+
+998
+00:48:43,190 --> 00:48:46,710
+I'll finish it for you.
+
+999
+00:48:46,710 --> 00:48:49,420
+This would be fine if
+this vertex is convex.
+
+1000
+00:48:49,420 --> 00:48:51,110
+This is less than 180.
+
+1001
+00:48:51,110 --> 00:48:54,096
+But actually, with
+probability 1/2,
+
+1002
+00:48:54,096 --> 00:48:55,470
+it's going to be
+a reflex vertex.
+
+1003
+00:48:55,470 --> 00:48:58,330
+And then you're screwed, because
+now you have more than 180
+
+1004
+00:48:58,330 --> 00:48:59,290
+gluing to 180.
+
+1005
+00:48:59,290 --> 00:49:00,950
+That's more than 360.
+
+1006
+00:49:00,950 --> 00:49:03,350
+So you don't even have to
+go all the way to the end.
+
+1007
+00:49:03,350 --> 00:49:05,770
+Immediately, after
+the very first zip,
+
+1008
+00:49:05,770 --> 00:49:07,900
+with probability
+1/2, you'll fail.
+
+1009
+00:49:07,900 --> 00:49:12,210
+I you have n vertices, and
+half of them are reflex,
+
+1010
+00:49:12,210 --> 00:49:14,200
+a quarter of them
+are going to fail.
+
+1011
+00:49:14,200 --> 00:49:17,608
+So that's plenty, as long
+as n is bigger than 4.
+
+1012
+00:49:17,608 --> 00:49:20,660
+For n large, you're going to get
+exponentially high probability
+
+1013
+00:49:20,660 --> 00:49:23,800
+that this fails.
+
+1014
+00:49:23,800 --> 00:49:26,670
+Most of the time, if you're
+choosing random polyhedra,
+
+1015
+00:49:26,670 --> 00:49:29,600
+random polygons,
+you can't glue them.
+
+1016
+00:49:29,600 --> 00:49:34,610
+
+1017
+00:49:34,610 --> 00:49:39,890
+So you've got to be clever,
+choose some nice polygons.
+
+1018
+00:49:39,890 --> 00:49:41,390
+It's actually not that hard.
+
+1019
+00:49:41,390 --> 00:49:44,630
+Like the cross, if you
+just glued together
+
+1020
+00:49:44,630 --> 00:49:47,250
+a bunch of unit squares,
+it'll go into something nice
+
+1021
+00:49:47,250 --> 00:49:48,210
+probably.
+
+1022
+00:49:48,210 --> 00:49:51,180
+Or here's another great, class.
+
+1023
+00:49:51,180 --> 00:49:52,285
+Convex polygons.
+
+1024
+00:49:52,285 --> 00:49:56,170
+
+1025
+00:49:56,170 --> 00:50:01,160
+Convex polygons do
+always glue to something
+
+1026
+00:50:01,160 --> 00:50:03,990
+using something called
+perimeter having.
+
+1027
+00:50:03,990 --> 00:50:09,670
+
+1028
+00:50:09,670 --> 00:50:13,320
+What to do, basically,
+by having the perimeter.
+
+1029
+00:50:13,320 --> 00:50:16,590
+I have some convex polygon.
+
+1030
+00:50:16,590 --> 00:50:19,700
+I'm going to choose any
+point on the boundary.
+
+1031
+00:50:19,700 --> 00:50:21,380
+And then have the
+perimeter from there.
+
+1032
+00:50:21,380 --> 00:50:30,060
+So I walk equal distance,
+all around this thing-- equal
+
+1033
+00:50:30,060 --> 00:50:30,910
+speed, I should say.
+
+1034
+00:50:30,910 --> 00:50:37,500
+
+1035
+00:50:37,500 --> 00:50:38,440
+Something like that.
+
+1036
+00:50:38,440 --> 00:50:45,390
+
+1037
+00:50:45,390 --> 00:50:47,010
+This is x.
+
+1038
+00:50:47,010 --> 00:50:52,570
+This is the antipodal point, in
+terms of measuring perimeter.
+
+1039
+00:50:52,570 --> 00:50:56,580
+Now I zip.
+
+1040
+00:50:56,580 --> 00:50:58,610
+So I'm going to
+glue this to this.
+
+1041
+00:50:58,610 --> 00:51:00,380
+I'm going to glue this to this.
+
+1042
+00:51:00,380 --> 00:51:01,896
+I drew all those marks.
+
+1043
+00:51:01,896 --> 00:51:02,770
+I was planning ahead.
+
+1044
+00:51:02,770 --> 00:51:04,370
+Can you tell?
+
+1045
+00:51:04,370 --> 00:51:07,310
+I was trying to make all the
+segments the same length,
+
+1046
+00:51:07,310 --> 00:51:09,752
+so that I could properly glue.
+
+1047
+00:51:09,752 --> 00:51:11,710
+Something I've never
+really said about gluings,
+
+1048
+00:51:11,710 --> 00:51:15,900
+but you should always glue same
+length things to other things.
+
+1049
+00:51:15,900 --> 00:51:16,400
+Segments.
+
+1050
+00:51:16,400 --> 00:51:19,504
+
+1051
+00:51:19,504 --> 00:51:20,170
+OK, there we go.
+
+1052
+00:51:20,170 --> 00:51:20,878
+There's a gluing.
+
+1053
+00:51:20,878 --> 00:51:23,420
+There's no crossings
+in that glowing.
+
+1054
+00:51:23,420 --> 00:51:24,230
+You can check.
+
+1055
+00:51:24,230 --> 00:51:25,480
+Its Alexandrov.
+
+1056
+00:51:25,480 --> 00:51:29,760
+It is convex, because
+what do I glue to what?
+
+1057
+00:51:29,760 --> 00:51:32,395
+Well, here, maybe
+I'm going this vertex
+
+1058
+00:51:32,395 --> 00:51:33,520
+to the middle of this edge.
+
+1059
+00:51:33,520 --> 00:51:34,720
+But it's a convex vertex.
+
+1060
+00:51:34,720 --> 00:51:35,320
+So that's OK.
+
+1061
+00:51:35,320 --> 00:51:37,575
+
+1062
+00:51:37,575 --> 00:51:38,700
+Everything looks like that.
+
+1063
+00:51:38,700 --> 00:51:41,542
+You're always gluing some
+vertex to some other edge.
+
+1064
+00:51:41,542 --> 00:51:42,875
+And all the vertices are convex.
+
+1065
+00:51:42,875 --> 00:51:45,170
+So it will be less than 360.
+
+1066
+00:51:45,170 --> 00:51:48,230
+Maybe, if you got lucky, some
+edge will glue to some edge.
+
+1067
+00:51:48,230 --> 00:51:50,740
+But that's still barely OK.
+
+1068
+00:51:50,740 --> 00:51:53,350
+So for convex polygons,
+it's always going to work.
+
+1069
+00:51:53,350 --> 00:51:56,150
+Let's try it out, shall we?
+
+1070
+00:51:56,150 --> 00:51:58,650
+I don't want to use this page,
+because I'm not done with it.
+
+1071
+00:51:58,650 --> 00:52:01,970
+We'll take page one,
+make a convex polygon.
+
+1072
+00:52:01,970 --> 00:52:10,640
+
+1073
+00:52:10,640 --> 00:52:13,290
+I don't want to make
+it too complicated.
+
+1074
+00:52:13,290 --> 00:52:16,231
+I'll spend a lot of time taping.
+
+1075
+00:52:16,231 --> 00:52:18,480
+You an try this at home with
+your own, favorite convex
+
+1076
+00:52:18,480 --> 00:52:18,979
+polygon.
+
+1077
+00:52:18,979 --> 00:52:20,860
+Here's a convex polygon.
+
+1078
+00:52:20,860 --> 00:52:23,090
+And now, we're going
+to pick a point.
+
+1079
+00:52:23,090 --> 00:52:27,930
+
+1080
+00:52:27,930 --> 00:52:31,170
+Do I have a good
+point written here?
+
+1081
+00:52:31,170 --> 00:52:34,250
+Let's try here.
+
+1082
+00:52:34,250 --> 00:52:37,150
+
+1083
+00:52:37,150 --> 00:52:40,590
+See that point, purple?
+
+1084
+00:52:40,590 --> 00:52:42,980
+Now we are going to zip.
+
+1085
+00:52:42,980 --> 00:52:46,300
+So take this.
+
+1086
+00:52:46,300 --> 00:52:48,610
+I glue those edges together.
+
+1087
+00:52:48,610 --> 00:52:51,136
+I don't have glue, or
+glue takes a while to dry.
+
+1088
+00:52:51,136 --> 00:52:52,260
+So we're going to use tape.
+
+1089
+00:52:52,260 --> 00:52:55,020
+
+1090
+00:52:55,020 --> 00:52:55,520
+Ta-da.
+
+1091
+00:52:55,520 --> 00:52:58,060
+
+1092
+00:52:58,060 --> 00:53:00,810
+Now, we have to
+glue a little more.
+
+1093
+00:53:00,810 --> 00:53:04,296
+I'm going to pretend
+those just met.
+
+1094
+00:53:04,296 --> 00:53:07,630
+Eh, it's a little ugly.
+
+1095
+00:53:07,630 --> 00:53:09,180
+Man, couldn't I have
+chosen something
+
+1096
+00:53:09,180 --> 00:53:10,221
+a little more degenerate?
+
+1097
+00:53:10,221 --> 00:53:13,725
+
+1098
+00:53:13,725 --> 00:53:15,600
+Here, it really does
+work in the random case,
+
+1099
+00:53:15,600 --> 00:53:18,105
+which is fine, as long as
+I was restricted to convex.
+
+1100
+00:53:18,105 --> 00:53:21,136
+
+1101
+00:53:21,136 --> 00:53:23,351
+Now, we're going to
+If you brought tape,
+
+1102
+00:53:23,351 --> 00:53:24,225
+you can try yourself.
+
+1103
+00:53:24,225 --> 00:53:28,398
+
+1104
+00:53:28,398 --> 00:53:29,690
+Tape a little more.
+
+1105
+00:53:29,690 --> 00:53:33,690
+
+1106
+00:53:33,690 --> 00:53:36,180
+See, it's already making
+a convex polyhedron.
+
+1107
+00:53:36,180 --> 00:53:39,280
+It's like magic.
+
+1108
+00:53:39,280 --> 00:53:41,730
+For a long time, we've
+tried to turn this process
+
+1109
+00:53:41,730 --> 00:53:42,920
+into an algorithm.
+
+1110
+00:53:42,920 --> 00:53:45,740
+Because it looks
+pretty good, right?
+
+1111
+00:53:45,740 --> 00:53:49,425
+But we have not been
+able to formalize this.
+
+1112
+00:53:49,425 --> 00:53:51,925
+This differential flow does not
+really follow our intuition.
+
+1113
+00:53:51,925 --> 00:53:55,890
+
+1114
+00:53:55,890 --> 00:53:57,890
+Now, I'm going to glue
+these are edges together.
+
+1115
+00:53:57,890 --> 00:54:05,037
+
+1116
+00:54:05,037 --> 00:54:06,620
+This is when I wish
+I had three hands.
+
+1117
+00:54:06,620 --> 00:54:19,998
+
+1118
+00:54:19,998 --> 00:54:20,810
+A little more.
+
+1119
+00:54:20,810 --> 00:54:40,220
+
+1120
+00:54:40,220 --> 00:54:43,550
+And there, we've computed
+the antipodal point.
+
+1121
+00:54:43,550 --> 00:54:44,920
+In theory, you would zip that.
+
+1122
+00:54:44,920 --> 00:54:46,910
+But I'm going to leave
+it open to give myself
+
+1123
+00:54:46,910 --> 00:54:49,070
+some maneuverability here.
+
+1124
+00:54:49,070 --> 00:54:50,570
+So you puff it out a little.
+
+1125
+00:54:50,570 --> 00:54:54,130
+It will be kind of
+round and convex.
+
+1126
+00:54:54,130 --> 00:54:55,590
+Now, that's not
+quite a polyhedron.
+
+1127
+00:54:55,590 --> 00:54:57,960
+But this is a polyhedral metric.
+
+1128
+00:54:57,960 --> 00:55:00,070
+And Alexandrov's
+Theorem says this
+
+1129
+00:55:00,070 --> 00:55:02,370
+should make a unique
+convex polyhedron.
+
+1130
+00:55:02,370 --> 00:55:05,850
+And with a little bit of
+practice and thinking about it,
+
+1131
+00:55:05,850 --> 00:55:08,810
+you can derive that actually
+this must be an edge here.
+
+1132
+00:55:08,810 --> 00:55:12,240
+
+1133
+00:55:12,240 --> 00:55:15,160
+It's more of an intuition thing.
+
+1134
+00:55:15,160 --> 00:55:17,390
+See, it looks like this
+really wants to bend there.
+
+1135
+00:55:17,390 --> 00:55:19,930
+So that must be an edge.
+
+1136
+00:55:19,930 --> 00:55:22,930
+This one looks like it
+must be an edge here.
+
+1137
+00:55:22,930 --> 00:55:24,180
+This gets a little hard to do.
+
+1138
+00:55:24,180 --> 00:55:27,360
+
+1139
+00:55:27,360 --> 00:55:29,720
+But this is how we
+used to do them.
+
+1140
+00:55:29,720 --> 00:55:33,520
+Wow, this probably
+still is how we do them.
+
+1141
+00:55:33,520 --> 00:55:37,057
+I haven't done a lot
+of these in a while.
+
+1142
+00:55:37,057 --> 00:55:38,515
+It looks like
+there's an edge here.
+
+1143
+00:55:38,515 --> 00:55:41,225
+
+1144
+00:55:41,225 --> 00:55:46,966
+Oh boy, something like that.
+
+1145
+00:55:46,966 --> 00:55:50,820
+Here there already is and
+edge, kind of convenient.
+
+1146
+00:55:50,820 --> 00:55:51,820
+Here there's an edge.
+
+1147
+00:55:51,820 --> 00:55:56,950
+
+1148
+00:55:56,950 --> 00:56:00,215
+I'm just folding point to point.
+
+1149
+00:56:00,215 --> 00:56:02,250
+I'm almost triangulated.
+
+1150
+00:56:02,250 --> 00:56:04,125
+I've got a nice line there.
+
+1151
+00:56:04,125 --> 00:56:09,284
+
+1152
+00:56:09,284 --> 00:56:10,950
+It's starting to look
+like a polyhedron.
+
+1153
+00:56:10,950 --> 00:56:11,991
+There's a couple missing.
+
+1154
+00:56:11,991 --> 00:56:15,120
+This guy probably has
+a diagonal somewhere.
+
+1155
+00:56:15,120 --> 00:56:17,060
+I would guess here.
+
+1156
+00:56:17,060 --> 00:56:20,470
+And on the bottom, there's
+a diagonal missing,
+
+1157
+00:56:20,470 --> 00:56:24,387
+I would guess, here.
+
+1158
+00:56:24,387 --> 00:56:25,970
+One of them is going
+to make it reflex
+
+1159
+00:56:25,970 --> 00:56:27,750
+when the other one
+will make it convex.
+
+1160
+00:56:27,750 --> 00:56:28,910
+You can experiment.
+
+1161
+00:56:28,910 --> 00:56:32,590
+Then you unfold, ideally,
+and make a better version
+
+1162
+00:56:32,590 --> 00:56:36,170
+of this with more properly
+drawn lines and then refold it.
+
+1163
+00:56:36,170 --> 00:56:41,930
+And I bet you it makes a
+beautiful convex polyhedron.
+
+1164
+00:56:41,930 --> 00:56:46,060
+So this is the
+experimental approach.
+
+1165
+00:56:46,060 --> 00:56:50,540
+And this gives you a hands-on
+feel for Alexandrov's Theorem.
+
+1166
+00:56:50,540 --> 00:56:57,344
+
+1167
+00:56:57,344 --> 00:56:58,316
+Like that.
+
+1168
+00:56:58,316 --> 00:57:03,190
+
+1169
+00:57:03,190 --> 00:57:05,630
+Yeah, almost.
+
+1170
+00:57:05,630 --> 00:57:08,850
+Believe me, it's a
+triangulated convex polyhedron.
+
+1171
+00:57:08,850 --> 00:57:09,350
+Gorgeous.
+
+1172
+00:57:09,350 --> 00:57:13,160
+
+1173
+00:57:13,160 --> 00:57:14,374
+That's how it works.
+
+1174
+00:57:14,374 --> 00:57:16,290
+And you can try for your
+own convex polyhedron
+
+1175
+00:57:16,290 --> 00:57:18,570
+where you're
+guaranteed not to fail.
+
+1176
+00:57:18,570 --> 00:57:21,710
+Now, you prove some nice things
+about these perimeter havings.
+
+1177
+00:57:21,710 --> 00:57:24,950
+In particular, I had this
+flexibility of where I started
+
+1178
+00:57:24,950 --> 00:57:26,450
+and where I ended.
+
+1179
+00:57:26,450 --> 00:57:29,310
+And I could move those
+points continuously.
+
+1180
+00:57:29,310 --> 00:57:32,690
+There's infinitely many
+choices for x and y.
+
+1181
+00:57:32,690 --> 00:57:35,980
+And certainly, there's
+infinitely many gluings.
+
+1182
+00:57:35,980 --> 00:57:38,800
+I can just keep moving x and
+moving y correspondingly.
+
+1183
+00:57:38,800 --> 00:57:41,150
+There's a whole
+continuum of gluings.
+
+1184
+00:57:41,150 --> 00:57:42,990
+They're all different.
+
+1185
+00:57:42,990 --> 00:57:46,500
+They all generate
+different polyhedra,
+
+1186
+00:57:46,500 --> 00:57:47,690
+if you think about it.
+
+1187
+00:57:47,690 --> 00:57:54,627
+Because if you think
+of x being very close.
+
+1188
+00:57:54,627 --> 00:57:56,960
+x is definitely going to be
+a vertex of your polyhedron.
+
+1189
+00:57:56,960 --> 00:58:00,859
+Because you end up gluing
+this part of the edge
+
+1190
+00:58:00,859 --> 00:58:01,900
+to this part of the edge.
+
+1191
+00:58:01,900 --> 00:58:04,210
+So you have 180 degrees
+of material there.
+
+1192
+00:58:04,210 --> 00:58:08,779
+That's a vertex, less than 360.
+
+1193
+00:58:08,779 --> 00:58:10,320
+And this is also a
+vertex, let's say.
+
+1194
+00:58:10,320 --> 00:58:13,160
+Look at the nearest
+neighbor to x.
+
+1195
+00:58:13,160 --> 00:58:15,700
+Here is a distance
+between two vertices.
+
+1196
+00:58:15,700 --> 00:58:16,716
+It's the shortest path.
+
+1197
+00:58:16,716 --> 00:58:18,340
+If you make x very
+close to the vertex,
+
+1198
+00:58:18,340 --> 00:58:20,680
+it will be a shortest path.
+
+1199
+00:58:20,680 --> 00:58:22,350
+And you're setting
+that to infinitely
+
+1200
+00:58:22,350 --> 00:58:26,150
+many different values, a whole
+continuum, very close to 0.
+
+1201
+00:58:26,150 --> 00:58:28,590
+If you look at some polyhedron
+that this thing realizes,
+
+1202
+00:58:28,590 --> 00:58:30,377
+it has whatever, n vertices.
+
+1203
+00:58:30,377 --> 00:58:32,460
+You look at the n squared
+different shortest paths
+
+1204
+00:58:32,460 --> 00:58:33,001
+between them.
+
+1205
+00:58:33,001 --> 00:58:34,626
+That's some finite
+set of real numbers.
+
+1206
+00:58:34,626 --> 00:58:37,042
+And here, I'm supposed to get
+a continuum of real numbers.
+
+1207
+00:58:37,042 --> 00:58:38,690
+Therefore, the set
+of all polyhedra
+
+1208
+00:58:38,690 --> 00:58:41,544
+that you are making in this
+process is a continuum.
+
+1209
+00:58:41,544 --> 00:58:42,460
+There's a lot of them.
+
+1210
+00:58:42,460 --> 00:58:45,392
+
+1211
+00:58:45,392 --> 00:58:47,100
+Most of the things
+you'll get out of this
+
+1212
+00:58:47,100 --> 00:58:48,427
+are different polyhedra.
+
+1213
+00:58:48,427 --> 00:58:50,010
+If I started with a
+different x and y,
+
+1214
+00:58:50,010 --> 00:58:51,676
+I'd get a slightly
+different polyhedron.
+
+1215
+00:58:51,676 --> 00:58:57,421
+It will change continuously,
+but it will be different.
+
+1216
+00:58:57,421 --> 00:58:59,420
+So this is the sense in
+which, at the beginning,
+
+1217
+00:58:59,420 --> 00:59:01,755
+I said there infinitely
+many gluings.
+
+1218
+00:59:01,755 --> 00:59:05,049
+
+1219
+00:59:05,049 --> 00:59:06,840
+Really, the only time
+that they're infinite
+
+1220
+00:59:06,840 --> 00:59:09,290
+is when you have a
+convex polygon somewhere
+
+1221
+00:59:09,290 --> 00:59:11,255
+embedded inside your polygon.
+
+1222
+00:59:11,255 --> 00:59:14,380
+It doesn't have
+to be at the top.
+
+1223
+00:59:14,380 --> 00:59:16,298
+All right, where
+do I want to go?
+
+1224
+00:59:16,298 --> 00:59:16,798
+Here.
+
+1225
+00:59:16,798 --> 00:59:43,170
+
+1226
+00:59:43,170 --> 00:59:48,010
+One way to think about
+gluings is all these arrows
+
+1227
+00:59:48,010 --> 00:59:48,969
+that are not crossing.
+
+1228
+00:59:48,969 --> 00:59:50,760
+But it's a little bit
+awkward to work with.
+
+1229
+00:59:50,760 --> 00:59:53,580
+And next class we're
+going to really find
+
+1230
+00:59:53,580 --> 00:59:55,570
+algorithms to compute
+these gluings.
+
+1231
+00:59:55,570 --> 00:59:57,820
+And it's useful to have
+another structure, another way
+
+1232
+00:59:57,820 --> 01:00:02,390
+of looking and gluings,
+called the gluing tree.
+
+1233
+01:00:02,390 --> 01:00:05,710
+And the main idea is to
+take your polygon, which
+
+1234
+01:00:05,710 --> 01:00:07,840
+I'm going to explicitly shade.
+
+1235
+01:00:07,840 --> 01:00:09,320
+Because you're
+soon going to lose
+
+1236
+01:00:09,320 --> 01:00:13,180
+track of where it is
+if I don't shade it.
+
+1237
+01:00:13,180 --> 01:00:14,680
+So that's the inside
+of the polygon,
+
+1238
+01:00:14,680 --> 01:00:16,030
+and there's outside space.
+
+1239
+01:00:16,030 --> 01:00:19,020
+I want to turn this
+whole picture inside out.
+
+1240
+01:00:19,020 --> 01:00:21,141
+Think of this as
+living on a sphere.
+
+1241
+01:00:21,141 --> 01:00:22,890
+On the sphere, there's
+some shaded region.
+
+1242
+01:00:22,890 --> 01:00:24,260
+That's the material.
+
+1243
+01:00:24,260 --> 01:00:28,890
+And then there's the rest,
+the black of the blackboard.
+
+1244
+01:00:28,890 --> 01:00:31,010
+If I look on the other
+side of the sphere,
+
+1245
+01:00:31,010 --> 01:00:35,260
+my perspective will be, I
+have some convex polygon.
+
+1246
+01:00:35,260 --> 01:00:37,580
+And the interior of the
+polygon is on the outside.
+
+1247
+01:00:37,580 --> 01:00:40,540
+
+1248
+01:00:40,540 --> 01:00:43,710
+This is a useful way of
+thinking about things.
+
+1249
+01:00:43,710 --> 01:00:46,320
+So there's my
+polygons out there.
+
+1250
+01:00:46,320 --> 01:00:51,710
+Now in fact, in a convex case,
+this would be less than 180.
+
+1251
+01:00:51,710 --> 01:00:53,340
+It's hard to see
+that in this picture.
+
+1252
+01:00:53,340 --> 01:00:54,830
+But just think of
+it topologically.
+
+1253
+01:00:54,830 --> 01:00:56,684
+Don't worry so much
+about the geometry.
+
+1254
+01:00:56,684 --> 01:00:59,100
+Now, what I'm trying to do--
+it's a little easier to think
+
+1255
+01:00:59,100 --> 01:01:01,950
+about, oh, I need to glue
+this edge to this edge
+
+1256
+01:01:01,950 --> 01:01:05,910
+and then maybe glue
+up to whatever.
+
+1257
+01:01:05,910 --> 01:01:07,570
+Maybe these were
+the full length.
+
+1258
+01:01:07,570 --> 01:01:11,080
+Then I'll glue this edge to
+this portion of that edge.
+
+1259
+01:01:11,080 --> 01:01:20,775
+So I still can draw my
+arrows, something like that.
+
+1260
+01:01:20,775 --> 01:01:23,567
+This would be a
+parameter having gluing.
+
+1261
+01:01:23,567 --> 01:01:25,150
+I can still draw
+them, but now they're
+
+1262
+01:01:25,150 --> 01:01:26,700
+on the inside instead
+of the outside.
+
+1263
+01:01:26,700 --> 01:01:28,360
+It's easier to see them.
+
+1264
+01:01:28,360 --> 01:01:30,020
+And in particular,
+I could actually
+
+1265
+01:01:30,020 --> 01:01:32,603
+say, well, if I want to go that
+edge to that edge, why don't I
+
+1266
+01:01:32,603 --> 01:01:34,870
+draw them next to each other?
+
+1267
+01:01:34,870 --> 01:01:39,010
+So it would look like this.
+
+1268
+01:01:39,010 --> 01:01:43,200
+Then have these edges when I
+draw them next to each other.
+
+1269
+01:01:43,200 --> 01:01:49,000
+And then I have those edges
+and then that edge and then
+
+1270
+01:01:49,000 --> 01:01:54,120
+the little edges, except these
+are actually the same point.
+
+1271
+01:01:54,120 --> 01:01:57,420
+So it would look like that.
+
+1272
+01:01:57,420 --> 01:02:00,980
+I think of these as almost
+touching and then the material
+
+1273
+01:02:00,980 --> 01:02:03,500
+still on the outside.
+
+1274
+01:02:03,500 --> 01:02:08,380
+It's not looking so white
+anymore, but you get the idea.
+
+1275
+01:02:08,380 --> 01:02:09,790
+Well, that's a path.
+
+1276
+01:02:09,790 --> 01:02:12,490
+In general, you get a tree.
+
+1277
+01:02:12,490 --> 01:02:18,190
+So a gluing tree will look
+something like this, maybe.
+
+1278
+01:02:18,190 --> 01:02:19,260
+It's a double tree.
+
+1279
+01:02:19,260 --> 01:02:22,940
+There's an underlying tree here,
+and then you walk around it.
+
+1280
+01:02:22,940 --> 01:02:24,580
+And the material
+is all out here.
+
+1281
+01:02:24,580 --> 01:02:28,610
+
+1282
+01:02:28,610 --> 01:02:31,520
+It's like that's
+where you're gluing.
+
+1283
+01:02:31,520 --> 01:02:33,840
+Now, this is actually
+really intuitive to us.
+
+1284
+01:02:33,840 --> 01:02:36,230
+It could be.
+
+1285
+01:02:36,230 --> 01:02:38,790
+When we were thinking
+about where to cut along
+
+1286
+01:02:38,790 --> 01:02:40,940
+the surface of a
+convex polyhedron,
+
+1287
+01:02:40,940 --> 01:02:45,530
+at some point we said, well,
+in a convex polyhedron,
+
+1288
+01:02:45,530 --> 01:02:47,550
+we had all these properties
+that, in the end,
+
+1289
+01:02:47,550 --> 01:02:50,500
+said the cuts must be a
+spanning tree of the vertices.
+
+1290
+01:02:50,500 --> 01:02:52,131
+Every vertex must get cut too.
+
+1291
+01:02:52,131 --> 01:02:53,880
+And you can't have any
+cycles in the cuts,
+
+1292
+01:02:53,880 --> 01:02:56,180
+because that would
+disconnect the surface.
+
+1293
+01:02:56,180 --> 01:02:58,640
+So where you cut was
+a set of was a tree,
+
+1294
+01:02:58,640 --> 01:03:00,640
+a set of edges forming a tree.
+
+1295
+01:03:00,640 --> 01:03:06,070
+That's the cut tree, just
+viewed from the other side.
+
+1296
+01:03:06,070 --> 01:03:07,404
+That's where we want to glue.
+
+1297
+01:03:07,404 --> 01:03:09,320
+Folding is supposed to
+be exactly the opposite
+
+1298
+01:03:09,320 --> 01:03:11,620
+of unfolding.
+
+1299
+01:03:11,620 --> 01:03:14,070
+That's why the gluing
+tree is a tree.
+
+1300
+01:03:14,070 --> 01:03:20,910
+
+1301
+01:03:20,910 --> 01:03:23,110
+You could think about
+some interesting things
+
+1302
+01:03:23,110 --> 01:03:28,440
+like where are the vertices
+of my polygon in that picture?
+
+1303
+01:03:28,440 --> 01:03:31,077
+So here, I made all these
+notches, but not all of them
+
+1304
+01:03:31,077 --> 01:03:31,660
+were vertices.
+
+1305
+01:03:31,660 --> 01:03:34,370
+Some of them were
+the middles of edges.
+
+1306
+01:03:34,370 --> 01:03:37,050
+So this one might be 180,
+meaning it wasn't really
+
+1307
+01:03:37,050 --> 01:03:38,640
+a vertex of the polygon.
+
+1308
+01:03:38,640 --> 01:03:42,610
+It was the middle of an edge.
+
+1309
+01:03:42,610 --> 01:03:45,190
+Obviously, if I
+look at some vertex
+
+1310
+01:03:45,190 --> 01:03:52,070
+where three corners are coming
+together, if one of them
+
+1311
+01:03:52,070 --> 01:03:55,430
+was 180 and another
+one was 180, we
+
+1312
+01:03:55,430 --> 01:03:58,700
+would not have room for a third.
+
+1313
+01:03:58,700 --> 01:04:01,010
+At a degree 3 vertex
+or more, it could have,
+
+1314
+01:04:01,010 --> 01:04:02,910
+at most, one middle of an edge.
+
+1315
+01:04:02,910 --> 01:04:05,390
+These guys, the
+other remaining guys,
+
+1316
+01:04:05,390 --> 01:04:08,580
+must be vertices of the polygon.
+
+1317
+01:04:08,580 --> 01:04:12,100
+The middle of an edge
+could be two 180s.
+
+1318
+01:04:12,100 --> 01:04:14,860
+That's actually
+the typical case.
+
+1319
+01:04:14,860 --> 01:04:19,745
+If you look at one of these
+gluings, most of the points,
+
+1320
+01:04:19,745 --> 01:04:21,120
+it's the middle
+of an edge gluing
+
+1321
+01:04:21,120 --> 01:04:22,700
+to another middle of an edge.
+
+1322
+01:04:22,700 --> 01:04:25,580
+That's what's happening
+almost everywhere.
+
+1323
+01:04:25,580 --> 01:04:30,710
+But you could also have some
+180 gluing to some vertex.
+
+1324
+01:04:30,710 --> 01:04:36,227
+But then it had better be a
+convex vertex, less than 180.
+
+1325
+01:04:36,227 --> 01:04:37,810
+You can go around
+and think about what
+
+1326
+01:04:37,810 --> 01:04:41,137
+all these situations are.
+
+1327
+01:04:41,137 --> 01:04:42,720
+When there's a 180,
+the remaining guys
+
+1328
+01:04:42,720 --> 01:04:43,660
+had better be convex.
+
+1329
+01:04:43,660 --> 01:04:48,449
+And their total angle had
+better be less than 180.
+
+1330
+01:04:48,449 --> 01:04:49,365
+What about the leaves?
+
+1331
+01:04:49,365 --> 01:04:57,240
+
+1332
+01:04:57,240 --> 01:04:58,355
+This is a zipping place.
+
+1333
+01:04:58,355 --> 01:05:01,150
+I was talking about zips before,
+were you just locally join
+
+1334
+01:05:01,150 --> 01:05:04,230
+the two incident
+edges to themselves.
+
+1335
+01:05:04,230 --> 01:05:05,950
+The leaves are
+where zips happen.
+
+1336
+01:05:05,950 --> 01:05:08,610
+Trees have leaves,
+so zips happen.
+
+1337
+01:05:08,610 --> 01:05:11,520
+
+1338
+01:05:11,520 --> 01:05:13,036
+Zip happens.
+
+1339
+01:05:13,036 --> 01:05:14,866
+[LAUGHTER]
+
+1340
+01:05:14,866 --> 01:05:16,240
+PROFESSOR: This
+angle, obviously,
+
+1341
+01:05:16,240 --> 01:05:17,840
+will be less than 360.
+
+1342
+01:05:17,840 --> 01:05:20,580
+It could be a vertex,
+and then at some angle,
+
+1343
+01:05:20,580 --> 01:05:22,830
+or it could be the
+middle of an edge.
+
+1344
+01:05:22,830 --> 01:05:24,770
+And then it will be 180.
+
+1345
+01:05:24,770 --> 01:05:26,860
+That's what we had over here.
+
+1346
+01:05:26,860 --> 01:05:33,400
+
+1347
+01:05:33,400 --> 01:05:37,212
+I chose one and
+x to be a vertex.
+
+1348
+01:05:37,212 --> 01:05:38,920
+But then, generically,
+on the other side,
+
+1349
+01:05:38,920 --> 01:05:40,670
+you're going to get
+the middle of an edge.
+
+1350
+01:05:40,670 --> 01:05:43,970
+And the example I did
+in reality, both of them
+
+1351
+01:05:43,970 --> 01:05:45,890
+were in the middle of an edge.
+
+1352
+01:05:45,890 --> 01:05:49,540
+I'm going to make
+special note of the ones
+
+1353
+01:05:49,540 --> 01:05:55,320
+where we have
+material like this,
+
+1354
+01:05:55,320 --> 01:05:57,890
+and you end up
+zipping like that,
+
+1355
+01:05:57,890 --> 01:06:01,990
+we call this a fold point.
+
+1356
+01:06:01,990 --> 01:06:04,930
+I don't know why,
+but you fold at it.
+
+1357
+01:06:04,930 --> 01:06:07,690
+So it's some shorthand.
+
+1358
+01:06:07,690 --> 01:06:10,710
+So these are fold
+points, the leaves that
+
+1359
+01:06:10,710 --> 01:06:14,130
+are at the middle
+of an edge, they're
+
+1360
+01:06:14,130 --> 01:06:18,670
+a little special or
+a little restricted.
+
+1361
+01:06:18,670 --> 01:06:22,080
+Because how much curvature
+is at that point?
+
+1362
+01:06:22,080 --> 01:06:24,550
+180.
+
+1363
+01:06:24,550 --> 01:06:32,090
+Fold points have curvature 180.
+
+1364
+01:06:32,090 --> 01:06:34,500
+The total curvature is 720.
+
+1365
+01:06:34,500 --> 01:06:37,205
+So I can't have more
+than four fold points.
+
+1366
+01:06:37,205 --> 01:06:46,480
+
+1367
+01:06:46,480 --> 01:06:49,530
+They're actually quite
+rare, but they can happen.
+
+1368
+01:06:49,530 --> 01:06:51,685
+Obviously, we had two of
+them in these examples.
+
+1369
+01:06:51,685 --> 01:06:56,040
+
+1370
+01:06:56,040 --> 01:06:57,390
+Can actually have four?
+
+1371
+01:06:57,390 --> 01:07:00,720
+
+1372
+01:07:00,720 --> 01:07:02,131
+Yeah I think.
+
+1373
+01:07:02,131 --> 01:07:03,672
+AUDIENCE: Could you
+have [INAUDIBLE]?
+
+1374
+01:07:03,672 --> 01:07:11,540
+
+1375
+01:07:11,540 --> 01:07:13,510
+PROFESSOR: I'm going to
+draw an actual folding,
+
+1376
+01:07:13,510 --> 01:07:15,440
+with creases and everything.
+
+1377
+01:07:15,440 --> 01:07:18,760
+This is a blintz space,
+for the origamists.
+
+1378
+01:07:18,760 --> 01:07:19,730
+You fold like that.
+
+1379
+01:07:19,730 --> 01:07:23,520
+You get a doubly covered square.
+
+1380
+01:07:23,520 --> 01:07:27,725
+The gluing tree is
+going to look like this.
+
+1381
+01:07:27,725 --> 01:07:30,369
+
+1382
+01:07:30,369 --> 01:07:30,910
+You see that?
+
+1383
+01:07:30,910 --> 01:07:34,810
+And it will be drawn
+right on top of that,
+
+1384
+01:07:34,810 --> 01:07:37,940
+and the actual
+material is back here.
+
+1385
+01:07:37,940 --> 01:07:40,100
+So this will be exactly
+four fold points.
+
+1386
+01:07:40,100 --> 01:07:42,540
+And just by luck, you have
+these four 90 degree angles.
+
+1387
+01:07:42,540 --> 01:07:44,149
+So there's no more
+curvature there.
+
+1388
+01:07:44,149 --> 01:07:46,190
+So yeah, you can definitely
+get four fold points.
+
+1389
+01:07:46,190 --> 01:07:47,955
+I don't know if you can
+get a large examples four
+
+1390
+01:07:47,955 --> 01:07:48,700
+fold points.
+
+1391
+01:07:48,700 --> 01:07:51,680
+AUDIENCE: I think four fold
+points means it'll be flat.
+
+1392
+01:07:51,680 --> 01:07:53,680
+PROFESSOR: Four fold
+points means it'll be flat.
+
+1393
+01:07:53,680 --> 01:07:56,735
+AUDIENCE: So that's going
+to be 0 curvature at that.
+
+1394
+01:07:56,735 --> 01:07:58,110
+PROFESSOR: You're
+going to have 0
+
+1395
+01:07:58,110 --> 01:08:00,200
+curvature at every other vertex.
+
+1396
+01:08:00,200 --> 01:08:02,730
+It's certainly implies
+that you are a tetrahedron.
+
+1397
+01:08:02,730 --> 01:08:06,750
+Because you only have
+four vertices at all.
+
+1398
+01:08:06,750 --> 01:08:07,251
+So yeah.
+
+1399
+01:08:07,251 --> 01:08:09,666
+You might be able to start
+with some complicate a polygon.
+
+1400
+01:08:09,666 --> 01:08:11,430
+And then, everything
+somehow disappears,
+
+1401
+01:08:11,430 --> 01:08:15,490
+because all the angles match
+up in a lucky way, like this.
+
+1402
+01:08:15,490 --> 01:08:18,244
+But the polyhedron itself will
+definitely be a tetrahedron.
+
+1403
+01:08:18,244 --> 01:08:19,660
+I'm not sure if
+it has to be flat,
+
+1404
+01:08:19,660 --> 01:08:22,550
+but tetrahedron
+is pretty simple.
+
+1405
+01:08:22,550 --> 01:08:24,680
+So it's not so exciting.
+
+1406
+01:08:24,680 --> 01:08:26,330
+Let me tell you
+about rolling belts,
+
+1407
+01:08:26,330 --> 01:08:29,260
+because they're really cool.
+
+1408
+01:08:29,260 --> 01:08:31,780
+And then I think we're done.
+
+1409
+01:08:31,780 --> 01:09:00,191
+
+1410
+01:09:00,191 --> 01:09:03,420
+A rolling belt is basically
+an embedded, convex polygon.
+
+1411
+01:09:03,420 --> 01:09:05,979
+
+1412
+01:09:05,979 --> 01:09:08,370
+And we saw that when we
+looked at a convex polygon,
+
+1413
+01:09:08,370 --> 01:09:12,997
+from the perspective of a
+gluing tree, it was a path.
+
+1414
+01:09:12,997 --> 01:09:14,080
+In general, I have a tree.
+
+1415
+01:09:14,080 --> 01:09:17,359
+And I want to define
+when a path in that tree
+
+1416
+01:09:17,359 --> 01:09:19,710
+is like a convex polygon.
+
+1417
+01:09:19,710 --> 01:09:21,819
+And like in the sense
+that it can roll.
+
+1418
+01:09:21,819 --> 01:09:25,082
+I could move x continuously
+and move y corresponding,
+
+1419
+01:09:25,082 --> 01:09:26,790
+and I'd always have
+an Alexandrov gluing.
+
+1420
+01:09:26,790 --> 01:09:29,210
+So it's like one of
+these infinite families.
+
+1421
+01:09:29,210 --> 01:09:34,220
+I'd like to detect those things,
+and we call them rolling belts.
+
+1422
+01:09:34,220 --> 01:09:37,189
+They're going to be a
+path in the gluing tree.
+
+1423
+01:09:37,189 --> 01:09:39,680
+Here are the
+conditions you need.
+
+1424
+01:09:39,680 --> 01:09:51,560
+The endpoints are
+either fold points
+
+1425
+01:09:51,560 --> 01:09:53,684
+or convex vertices, no reflex.
+
+1426
+01:09:53,684 --> 01:10:00,520
+
+1427
+01:10:00,520 --> 01:10:02,890
+In that case, they
+must be leaves.
+
+1428
+01:10:02,890 --> 01:10:11,680
+And along that path, you
+always have less than
+
+1429
+01:10:11,680 --> 01:10:19,080
+or equal to 180 degrees of
+material on either side.
+
+1430
+01:10:19,080 --> 01:10:24,360
+
+1431
+01:10:24,360 --> 01:10:26,130
+This is pretty intuitive.
+
+1432
+01:10:26,130 --> 01:10:27,710
+So you have some tree.
+
+1433
+01:10:27,710 --> 01:10:31,152
+
+1434
+01:10:31,152 --> 01:10:33,110
+I'll draw a slightly more
+general picture here.
+
+1435
+01:10:33,110 --> 01:10:41,660
+
+1436
+01:10:41,660 --> 01:10:48,582
+And then, I look at some path
+in that tree, maybe from here
+
+1437
+01:10:48,582 --> 01:10:49,880
+to here.
+
+1438
+01:10:49,880 --> 01:10:55,132
+
+1439
+01:10:55,132 --> 01:10:56,840
+Yeah, this was the
+way I glued things up.
+
+1440
+01:10:56,840 --> 01:10:59,739
+Now, imagine that I recut here.
+
+1441
+01:10:59,739 --> 01:11:01,780
+Ideally, these are supposed
+to be glued together.
+
+1442
+01:11:01,780 --> 01:11:04,650
+But what if I separated, I
+pulled just those parts apart?
+
+1443
+01:11:04,650 --> 01:11:07,100
+I left these intact, all
+the sub trees hanging off I
+
+1444
+01:11:07,100 --> 01:11:08,310
+didn't touch.
+
+1445
+01:11:08,310 --> 01:11:10,040
+And then I just
+rolled that thing
+
+1446
+01:11:10,040 --> 01:11:11,380
+like it was a convex polygon.
+
+1447
+01:11:11,380 --> 01:11:13,920
+Which means, instead
+of going here to here,
+
+1448
+01:11:13,920 --> 01:11:16,740
+I'm going to glue this
+point to this point.
+
+1449
+01:11:16,740 --> 01:11:20,580
+I'm going to slide
+this over a little bit.
+
+1450
+01:11:20,580 --> 01:11:22,080
+Whereas before,
+this point was glued
+
+1451
+01:11:22,080 --> 01:11:26,290
+to itself-- that was the end of
+the zip-- the new zip point is
+
+1452
+01:11:26,290 --> 01:11:30,750
+going to be-- I can't tell,
+everything's moving this way.
+
+1453
+01:11:30,750 --> 01:11:33,720
+This point is going
+to move up here.
+
+1454
+01:11:33,720 --> 01:11:36,580
+And it's going to become
+the new zip point.
+
+1455
+01:11:36,580 --> 01:11:38,890
+Everybody here is moving
+in that direction.
+
+1456
+01:11:38,890 --> 01:11:40,960
+Everybody here is moving
+in that direction.
+
+1457
+01:11:40,960 --> 01:11:46,580
+I just kind of roll that belt
+along, and then I reglue.
+
+1458
+01:11:46,580 --> 01:11:49,450
+And as long as it looks like
+a convex polygon-- meaning,
+
+1459
+01:11:49,450 --> 01:11:52,180
+as you walk around here,
+the total amount of material
+
+1460
+01:11:52,180 --> 01:11:55,090
+getting glued, like, here I
+have two portions of material--
+
+1461
+01:11:55,090 --> 01:11:59,427
+as long as that's, at most,
+180 in total, I can do that.
+
+1462
+01:11:59,427 --> 01:12:01,260
+Because if it's, at
+most, 180 on both sides,
+
+1463
+01:12:01,260 --> 01:12:02,830
+it will be, at
+most, 360 in total.
+
+1464
+01:12:02,830 --> 01:12:05,430
+
+1465
+01:12:05,430 --> 01:12:06,560
+So that's it.
+
+1466
+01:12:06,560 --> 01:12:08,550
+And there's a separate
+corner condition.
+
+1467
+01:12:08,550 --> 01:12:12,207
+But all it's saying is that
+it's, at most, 180 everywhere.
+
+1468
+01:12:12,207 --> 01:12:14,290
+And then it's really acting
+like a convex polygon,
+
+1469
+01:12:14,290 --> 01:12:18,780
+but not in total, just in that
+little subpath of the tree.
+
+1470
+01:12:18,780 --> 01:12:21,780
+
+1471
+01:12:21,780 --> 01:12:23,560
+Turns out, this is
+the only way to have
+
+1472
+01:12:23,560 --> 01:12:25,970
+an infinite set of gluings.
+
+1473
+01:12:25,970 --> 01:12:30,090
+All infinite goings will
+look like rolling belts.
+
+1474
+01:12:30,090 --> 01:12:32,350
+Now, there can be more
+than one rolling belt
+
+1475
+01:12:32,350 --> 01:12:35,330
+in a single example.
+
+1476
+01:12:35,330 --> 01:12:38,511
+And this I can even build.
+
+1477
+01:12:38,511 --> 01:12:39,580
+It's pretty simple.
+
+1478
+01:12:39,580 --> 01:12:46,095
+I take a rectangle, and I
+glue it into a cylinder.
+
+1479
+01:12:46,095 --> 01:12:55,130
+
+1480
+01:12:55,130 --> 01:12:57,035
+Beautiful, what an
+amazing cylinder.
+
+1481
+01:12:57,035 --> 01:13:05,987
+
+1482
+01:13:05,987 --> 01:13:08,320
+But I'm not going to commit
+to how the rest of the thing
+
+1483
+01:13:08,320 --> 01:13:09,920
+is glued.
+
+1484
+01:13:09,920 --> 01:13:10,970
+There's a cylinder.
+
+1485
+01:13:10,970 --> 01:13:12,240
+What did I draw?
+
+1486
+01:13:12,240 --> 01:13:12,920
+The gluing tree.
+
+1487
+01:13:12,920 --> 01:13:17,770
+So initially, my rectangles
+out here, imagine.
+
+1488
+01:13:17,770 --> 01:13:19,870
+And I've glued--
+what did I glue,
+
+1489
+01:13:19,870 --> 01:13:22,790
+the shortage to the shortage?
+
+1490
+01:13:22,790 --> 01:13:24,910
+So what I end up with,
+in terms of gluing tree,
+
+1491
+01:13:24,910 --> 01:13:26,550
+is I have these two edges
+that are glued to each other.
+
+1492
+01:13:26,550 --> 01:13:28,580
+And then I have this
+big thing, which
+
+1493
+01:13:28,580 --> 01:13:30,950
+I don't know how I
+want to glue that yet.
+
+1494
+01:13:30,950 --> 01:13:32,460
+I haven't decided.
+
+1495
+01:13:32,460 --> 01:13:35,220
+So those loops are supposed
+to get squashed into a tree.
+
+1496
+01:13:35,220 --> 01:13:38,260
+And that's this
+loop and this loop.
+
+1497
+01:13:38,260 --> 01:13:42,686
+You can almost see this is a
+weird projection of a cylinder.
+
+1498
+01:13:42,686 --> 01:13:44,310
+A cylinder goes around
+on the backside,
+
+1499
+01:13:44,310 --> 01:13:45,851
+because all the
+material is out here.
+
+1500
+01:13:45,851 --> 01:13:48,360
+
+1501
+01:13:48,360 --> 01:13:50,490
+I'm totally free, what
+I do with the top here.
+
+1502
+01:13:50,490 --> 01:13:51,530
+It's a rolling belt.
+
+1503
+01:13:51,530 --> 01:13:52,571
+Look, I can even role it.
+
+1504
+01:13:52,571 --> 01:13:53,080
+It's great.
+
+1505
+01:13:53,080 --> 01:13:59,390
+I can slide it around,
+slide, slide, slide.
+
+1506
+01:13:59,390 --> 01:14:02,140
+I can do this forever,
+because it's cyclic.
+
+1507
+01:14:02,140 --> 01:14:06,200
+And then separately, I can
+slide this one however I want.
+
+1508
+01:14:06,200 --> 01:14:07,250
+It doesn't matter.
+
+1509
+01:14:07,250 --> 01:14:11,090
+At all times, I'm just
+gluing 180 to 180.
+
+1510
+01:14:11,090 --> 01:14:13,670
+And at the ends, I'm getting
+to just single 180's.
+
+1511
+01:14:13,670 --> 01:14:15,856
+Those are fold points.
+
+1512
+01:14:15,856 --> 01:14:17,730
+Well, this one's not
+technically a fold point
+
+1513
+01:14:17,730 --> 01:14:22,160
+if I did it right at the vertex,
+but it acts the same way.
+
+1514
+01:14:22,160 --> 01:14:23,820
+So the gluing tree
+is always going
+
+1515
+01:14:23,820 --> 01:14:27,482
+to look something like this.
+
+1516
+01:14:27,482 --> 01:14:28,690
+But each of these could roll.
+
+1517
+01:14:28,690 --> 01:14:29,840
+So it could look like that.
+
+1518
+01:14:29,840 --> 01:14:32,790
+It could look like it's even.
+
+1519
+01:14:32,790 --> 01:14:35,950
+You get to slide this around.
+
+1520
+01:14:35,950 --> 01:14:40,370
+So it's a double continuum,
+a double rainbow.
+
+1521
+01:14:40,370 --> 01:14:43,370
+
+1522
+01:14:43,370 --> 01:14:45,960
+In some cases, like this
+one, when there are lines,
+
+1523
+01:14:45,960 --> 01:14:48,780
+you actually get a flat thing,
+which is kind of boring.
+
+1524
+01:14:48,780 --> 01:14:55,050
+In all other cases, you will get
+a convex tetrahedron, non-flat,
+
+1525
+01:14:55,050 --> 01:14:57,010
+for this one example.
+
+1526
+01:14:57,010 --> 01:14:58,140
+That's two rolling belts.
+
+1527
+01:14:58,140 --> 01:14:59,780
+Now notice, to have
+to rolling belts,
+
+1528
+01:14:59,780 --> 01:15:02,540
+I basically had to
+have four fold points.
+
+1529
+01:15:02,540 --> 01:15:03,790
+Sounds familiar.
+
+1530
+01:15:03,790 --> 01:15:07,550
+I can only have
+four fold points.
+
+1531
+01:15:07,550 --> 01:15:09,380
+So it seems like
+maybe two rolling
+
+1532
+01:15:09,380 --> 01:15:11,330
+belts is the most I can have.
+
+1533
+01:15:11,330 --> 01:15:15,170
+Because each rolling belt--
+if you roll a little bit,
+
+1534
+01:15:15,170 --> 01:15:16,950
+it will have a fold
+point on either end.
+
+1535
+01:15:16,950 --> 01:15:19,480
+
+1536
+01:15:19,480 --> 01:15:23,720
+Two is kind of the
+max, but only kind of.
+
+1537
+01:15:23,720 --> 01:15:24,600
+You can do three.
+
+1538
+01:15:24,600 --> 01:15:28,536
+
+1539
+01:15:28,536 --> 01:15:29,290
+Let's do three.
+
+1540
+01:15:29,290 --> 01:15:38,000
+
+1541
+01:15:38,000 --> 01:15:39,555
+Three rolling belts.
+
+1542
+01:15:39,555 --> 01:15:44,380
+
+1543
+01:15:44,380 --> 01:15:48,070
+I'm going to take this
+example, the blintz space.
+
+1544
+01:15:48,070 --> 01:15:51,600
+
+1545
+01:15:51,600 --> 01:15:53,900
+Yeah, let's look at this
+example for a little bit.
+
+1546
+01:15:53,900 --> 01:15:57,150
+I hadn't planned this.
+
+1547
+01:15:57,150 --> 01:16:01,130
+The tree here, is this nice
+four star, four-armed star.
+
+1548
+01:16:01,130 --> 01:16:07,280
+And there's kind of a rolling
+belt from here to here.
+
+1549
+01:16:07,280 --> 01:16:10,360
+If I ignore the fact that there
+are these things hanging off,
+
+1550
+01:16:10,360 --> 01:16:14,105
+then I have, at most,
+180 on both sides.
+
+1551
+01:16:14,105 --> 01:16:16,460
+It acts just like a
+rolling belt Also,
+
+1552
+01:16:16,460 --> 01:16:17,860
+there's a rolling belt here.
+
+1553
+01:16:17,860 --> 01:16:19,590
+They cross each other.
+
+1554
+01:16:19,590 --> 01:16:21,320
+Crazy.
+
+1555
+01:16:21,320 --> 01:16:27,980
+But in theory, it's
+a little tricky.
+
+1556
+01:16:27,980 --> 01:16:29,710
+They're not independent anymore.
+
+1557
+01:16:29,710 --> 01:16:32,980
+I can roll one of
+them however I want.
+
+1558
+01:16:32,980 --> 01:16:36,590
+But if I roll that one at all,
+I cannot roll the other one.
+
+1559
+01:16:36,590 --> 01:16:38,820
+Because as soon as
+you roll-- let's say
+
+1560
+01:16:38,820 --> 01:16:40,600
+I roll the horizontal one.
+
+1561
+01:16:40,600 --> 01:16:43,560
+It'll look like this.
+
+1562
+01:16:43,560 --> 01:16:46,120
+
+1563
+01:16:46,120 --> 01:16:49,380
+They'll be if you roll that.
+
+1564
+01:16:49,380 --> 01:16:53,190
+So these top and bottom
+guys are no longer touching.
+
+1565
+01:16:53,190 --> 01:16:56,902
+And if you try to make
+this path a rolling belt,
+
+1566
+01:16:56,902 --> 01:16:59,920
+it doesn't look so good.
+
+1567
+01:16:59,920 --> 01:17:07,710
+Because here, this side,
+there's more than 180.
+
+1568
+01:17:07,710 --> 01:17:11,732
+It's going to have a 90 from
+here and 180 from down there.
+
+1569
+01:17:11,732 --> 01:17:13,190
+So that's no longer
+a rolling belt.
+
+1570
+01:17:13,190 --> 01:17:14,564
+Right now it is,
+and I could roll
+
+1571
+01:17:14,564 --> 01:17:17,540
+just the vertical one or the
+horizontal one but not both.
+
+1572
+01:17:17,540 --> 01:17:19,930
+
+1573
+01:17:19,930 --> 01:17:22,180
+But the point here is, you
+can have rolling belts that
+
+1574
+01:17:22,180 --> 01:17:26,170
+cross or overlap each
+other, in general.
+
+1575
+01:17:26,170 --> 01:17:34,520
+If we do the same thing
+with a triangle-- in fact,
+
+1576
+01:17:34,520 --> 01:17:37,960
+I think I'm going to make a
+tetrahedron-- look at that.
+
+1577
+01:17:37,960 --> 01:17:38,589
+Amazing.
+
+1578
+01:17:38,589 --> 01:17:40,005
+Bring those three
+points together.
+
+1579
+01:17:40,005 --> 01:17:43,820
+
+1580
+01:17:43,820 --> 01:17:47,432
+The gluing tree looks like that.
+
+1581
+01:17:47,432 --> 01:17:48,890
+This is the top of
+the tetrahedron.
+
+1582
+01:17:48,890 --> 01:17:51,530
+These are the other three
+vertices of the tetrahedron.
+
+1583
+01:17:51,530 --> 01:17:53,071
+It's a spanning tree
+of the vertices.
+
+1584
+01:17:53,071 --> 01:17:55,950
+
+1585
+01:17:55,950 --> 01:17:58,290
+I claim this is a rolling belt.
+
+1586
+01:17:58,290 --> 01:18:01,430
+And therefore, so is
+this and so is this.
+
+1587
+01:18:01,430 --> 01:18:04,110
+So there are three of them.
+
+1588
+01:18:04,110 --> 01:18:06,700
+Because at this point, well,
+that was like a fold point.
+
+1589
+01:18:06,700 --> 01:18:08,720
+There's only 180 degrees there.
+
+1590
+01:18:08,720 --> 01:18:13,410
+As I walk around, here I
+have two 60s going together.
+
+1591
+01:18:13,410 --> 01:18:16,120
+That's less than 180.
+
+1592
+01:18:16,120 --> 01:18:18,170
+And on the other
+side, I just have 160.
+
+1593
+01:18:18,170 --> 01:18:21,060
+So it's definitely less
+than 180 on both sides,
+
+1594
+01:18:21,060 --> 01:18:22,410
+all the way along this curve.
+
+1595
+01:18:22,410 --> 01:18:23,930
+And by symmetry,
+along all three.
+
+1596
+01:18:23,930 --> 01:18:25,890
+So I can kind of get
+three rolling belts.
+
+1597
+01:18:25,890 --> 01:18:28,700
+They're not independent,
+I don't think.
+
+1598
+01:18:28,700 --> 01:18:33,720
+If I roll one of them, it
+looks like actually maybe I
+
+1599
+01:18:33,720 --> 01:18:36,460
+can keep rolling the others.
+
+1600
+01:18:36,460 --> 01:18:38,920
+But this is the only way you
+can get three rolling belts.
+
+1601
+01:18:38,920 --> 01:18:42,185
+It turns out, four rolling
+belts are impossible.
+
+1602
+01:18:42,185 --> 01:18:49,970
+
+1603
+01:18:49,970 --> 01:18:52,910
+This is actually something
+we proved in this class.
+
+1604
+01:18:52,910 --> 01:18:56,380
+We've proved it six years ago.
+
+1605
+01:18:56,380 --> 01:18:58,080
+So it's probably
+even in the textbook.
+
+1606
+01:18:58,080 --> 01:18:59,715
+I don't remember,
+very simple proof.
+
+1607
+01:18:59,715 --> 01:19:04,580
+
+1608
+01:19:04,580 --> 01:19:07,770
+If you have four rolling
+belts, even if they overlap,
+
+1609
+01:19:07,770 --> 01:19:13,515
+you have to have a lot of fold
+points, at least four of them.
+
+1610
+01:19:13,515 --> 01:19:15,890
+There has to be at least one
+fold point per rolling belt,
+
+1611
+01:19:15,890 --> 01:19:17,264
+because they have
+different ends.
+
+1612
+01:19:17,264 --> 01:19:19,240
+At least one end is different.
+
+1613
+01:19:19,240 --> 01:19:22,506
+Here, we had three fold
+points and three belts.
+
+1614
+01:19:22,506 --> 01:19:26,390
+If we have four fold
+points, at least four belts.
+
+1615
+01:19:26,390 --> 01:19:29,690
+If you have four rolling belts,
+at least four fold points.
+
+1616
+01:19:29,690 --> 01:19:31,280
+Get the right direction.
+
+1617
+01:19:31,280 --> 01:19:32,980
+We know there's only
+four fold points.
+
+1618
+01:19:32,980 --> 01:19:34,909
+So it's actually exactly
+four fold points.
+
+1619
+01:19:34,909 --> 01:19:37,200
+But as you were saying, when
+you have four fold points,
+
+1620
+01:19:37,200 --> 01:19:39,116
+there's really no more
+curvature to go around.
+
+1621
+01:19:39,116 --> 01:19:41,486
+
+1622
+01:19:41,486 --> 01:19:42,610
+In fact, this can't happen.
+
+1623
+01:19:42,610 --> 01:19:45,120
+Because your four fold
+points-- all the curvature
+
+1624
+01:19:45,120 --> 01:19:46,940
+is at those four leaves.
+
+1625
+01:19:46,940 --> 01:19:50,630
+Every other vertex must be
+perfectly balanced, has to have
+
+1626
+01:19:50,630 --> 01:19:51,240
+0 curvature.
+
+1627
+01:19:51,240 --> 01:19:56,190
+
+1628
+01:19:56,190 --> 01:19:58,106
+And then things break.
+
+1629
+01:19:58,106 --> 01:19:59,605
+It's not a very
+convincing argument.
+
+1630
+01:19:59,605 --> 01:20:06,690
+
+1631
+01:20:06,690 --> 01:20:07,960
+You imagine these fold points.
+
+1632
+01:20:07,960 --> 01:20:15,086
+They're somewhere
+in your gluing tree.
+
+1633
+01:20:15,086 --> 01:20:17,390
+Maybe they're here.
+
+1634
+01:20:17,390 --> 01:20:21,830
+In order to fit four rolling
+belts, there's got to be,
+
+1635
+01:20:21,830 --> 01:20:26,490
+on average, two rolling belts
+coming out of every vertex.
+
+1636
+01:20:26,490 --> 01:20:29,500
+And where they diverge,
+it's a problem.
+
+1637
+01:20:29,500 --> 01:20:32,249
+Because there has to be
+basically 0 degrees of material
+
+1638
+01:20:32,249 --> 01:20:34,540
+out here for them to roll
+that way and to role that way
+
+1639
+01:20:34,540 --> 01:20:36,260
+and have 0 curvature.
+
+1640
+01:20:36,260 --> 01:20:37,730
+So it fails.
+
+1641
+01:20:37,730 --> 01:20:41,130
+
+1642
+01:20:41,130 --> 01:20:42,630
+One rolling belt,
+two rolling belts,
+
+1643
+01:20:42,630 --> 01:20:44,820
+three rolling belts, no more.
+
+1644
+01:20:44,820 --> 01:20:46,700
+So it's not that
+complicated, in terms
+
+1645
+01:20:46,700 --> 01:20:48,160
+of the infinite structure.
+
+1646
+01:20:48,160 --> 01:20:51,030
+What's really interesting is
+all the very combinatorially
+
+1647
+01:20:51,030 --> 01:20:51,959
+different trees.
+
+1648
+01:20:51,959 --> 01:20:53,500
+When I roll a belt,
+not much changes.
+
+1649
+01:20:53,500 --> 01:20:55,680
+It's just changing a
+few of the lengths.
+
+1650
+01:20:55,680 --> 01:20:59,680
+Next class, we're going to look
+at how the trees themselves
+
+1651
+01:20:59,680 --> 01:21:02,750
+can actually change
+combinatorially and get bounds
+
+1652
+01:21:02,750 --> 01:21:04,480
+on how many there or
+how to compute them.
+
+1653
+01:21:04,480 --> 01:21:07,340
+There's good algorithms
+for it, all that stuff.
+
+1654
+01:21:07,340 --> 01:21:09,140
+Still some open problems too.
+
+1655
+01:21:09,140 --> 01:21:12,274
+That'll be next class,
+which is on Monday.
+
+1656
+01:21:12,274 --> 01:21:13,190
+No class on Wednesday.
+
+1657
+01:21:13,190 --> 01:21:15,740
+
+1658
+01:21:15,740 --> 01:21:17,430
+That's it.
+

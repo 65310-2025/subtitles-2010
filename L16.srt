@@ -1,0 +1,7093 @@
+1
+0-1:59:59,500 --> 00:00:02,810
+
+2
+00:00:02,810 --> 00:00:05,120
+PROFESSOR: All right,
+let's get started.
+
+3
+00:00:05,120 --> 00:00:08,970
+We are continuing our
+theme of folding polygons
+
+4
+00:00:08,970 --> 00:00:14,020
+into convex polyhedra.
+
+5
+00:00:14,020 --> 00:00:17,550
+Let's do a quick
+reminder, we're talking
+
+6
+00:00:17,550 --> 00:00:22,345
+about gluing up the boundary
+of a polygon to itself.
+
+7
+00:00:22,345 --> 00:00:28,530
+
+8
+00:00:28,530 --> 00:00:35,140
+And we were representing that
+with gluing trees last time.
+
+9
+00:00:35,140 --> 00:00:38,714
+So I want to do an actual
+example of a gluing tree.
+
+10
+00:00:38,714 --> 00:00:40,130
+So this is how you
+make a cube out
+
+11
+00:00:40,130 --> 00:00:42,475
+of a cross, my favorite example.
+
+12
+00:00:42,475 --> 00:00:45,410
+
+13
+00:00:45,410 --> 00:00:48,900
+And a valid gluing,
+it's an Alexandroff
+
+14
+00:00:48,900 --> 00:00:50,756
+gluing because it
+has no crossing, so
+
+15
+00:00:50,756 --> 00:00:51,880
+its topologically a sphere.
+
+16
+00:00:51,880 --> 00:00:53,910
+Everything is glued
+to everything.
+
+17
+00:00:53,910 --> 00:00:57,700
+And it never glues more
+than 360 degrees of material
+
+18
+00:00:57,700 --> 00:00:58,410
+to any point.
+
+19
+00:00:58,410 --> 00:01:01,680
+In fact, it's going to
+be 270 at every point,
+
+20
+00:01:01,680 --> 00:01:05,710
+because that's the curvature
+of every vertex of a cube.
+
+21
+00:01:05,710 --> 00:01:11,427
+And the gluing tree was, if we
+sort of turned this inside out
+
+22
+00:01:11,427 --> 00:01:13,760
+and think of the polygon as
+being on the outside instead
+
+23
+00:01:13,760 --> 00:01:17,150
+of the inside, it's really
+hard to see here how to convert
+
+24
+00:01:17,150 --> 00:01:19,840
+that into a gluing tree,
+though you can do it.
+
+25
+00:01:19,840 --> 00:01:22,557
+It's the way that
+these arrows nest.
+
+26
+00:01:22,557 --> 00:01:24,640
+But it's a little easier
+to think of on the sphere
+
+27
+00:01:24,640 --> 00:01:26,848
+or on the polyhedron, because
+then turning inside out
+
+28
+00:01:26,848 --> 00:01:28,170
+is just upside down.
+
+29
+00:01:28,170 --> 00:01:29,480
+It's not a big deal.
+
+30
+00:01:29,480 --> 00:01:37,542
+So if we look at where
+the cut are on the cube,
+
+31
+00:01:37,542 --> 00:01:39,780
+it looks something like this.
+
+32
+00:01:39,780 --> 00:01:41,374
+That should be a cross.
+
+33
+00:01:41,374 --> 00:01:42,790
+This is the top
+of the cross, this
+
+34
+00:01:42,790 --> 00:01:44,230
+is the bottom of the cross.
+
+35
+00:01:44,230 --> 00:01:46,920
+It goes around the back side.
+
+36
+00:01:46,920 --> 00:01:50,140
+So then the gluing tree is
+essentially this doubled.
+
+37
+00:01:50,140 --> 00:01:53,190
+If we walk around the
+outside of the cuts,
+
+38
+00:01:53,190 --> 00:01:54,810
+that is the gluing tree.
+
+39
+00:01:54,810 --> 00:01:59,180
+So I can see, there's this
+segment, then this segment,
+
+40
+00:01:59,180 --> 00:02:01,960
+then that segment.
+
+41
+00:02:01,960 --> 00:02:09,289
+Then we're back here,
+then we go up one, two,
+
+42
+00:02:09,289 --> 00:02:10,310
+and then we turn around.
+
+43
+00:02:10,310 --> 00:02:14,500
+That's a leaf, and so it's
+going to look like this weird h
+
+44
+00:02:14,500 --> 00:02:16,030
+shape.
+
+45
+00:02:16,030 --> 00:02:19,355
+And these are vertices.
+
+46
+00:02:19,355 --> 00:02:25,790
+
+47
+00:02:25,790 --> 00:02:29,260
+That's right, all of
+these should be vertices.
+
+48
+00:02:29,260 --> 00:02:32,320
+And locally you can see, ah,
+this is a 90 degree angle.
+
+49
+00:02:32,320 --> 00:02:34,030
+This is actually the
+top of the cross,
+
+50
+00:02:34,030 --> 00:02:36,424
+remember the polygon
+is now out here.
+
+51
+00:02:36,424 --> 00:02:37,840
+That's going to
+be the top across.
+
+52
+00:02:37,840 --> 00:02:39,620
+This is where it turns,
+it gets a little confusing
+
+53
+00:02:39,620 --> 00:02:41,000
+because of the
+way I've drawn it.
+
+54
+00:02:41,000 --> 00:02:42,140
+Here's the bottom of the cross.
+
+55
+00:02:42,140 --> 00:02:43,306
+Those parts are easy to see.
+
+56
+00:02:43,306 --> 00:02:45,550
+The rest is little awkward.
+
+57
+00:02:45,550 --> 00:02:47,290
+But for algorithms,
+this is a great way
+
+58
+00:02:47,290 --> 00:02:48,360
+to think about things.
+
+59
+00:02:48,360 --> 00:02:50,880
+And also for proving bounds
+and how many different ways
+
+60
+00:02:50,880 --> 00:02:53,800
+to fold, it's really useful
+to think about gluing trees.
+
+61
+00:02:53,800 --> 00:02:55,830
+Of course, all of these
+views are equivalent,
+
+62
+00:02:55,830 --> 00:02:59,340
+but a lot of things will
+be easier to analyze here.
+
+63
+00:02:59,340 --> 00:03:01,800
+So, clear?
+
+64
+00:03:01,800 --> 00:03:07,360
+Let me first tell you what
+we're going to prove today.
+
+65
+00:03:07,360 --> 00:03:15,260
+We're going to do combinatorial
+bounds and algorithms
+
+66
+00:03:15,260 --> 00:03:16,593
+for all of this.
+
+67
+00:03:16,593 --> 00:03:19,960
+
+68
+00:03:19,960 --> 00:03:21,290
+And let's see.
+
+69
+00:03:21,290 --> 00:03:27,870
+So I want general gluings,
+general situation,
+
+70
+00:03:27,870 --> 00:03:34,890
+edge-to-edge gluings, and a
+particular kind of polygon
+
+71
+00:03:34,890 --> 00:03:36,073
+called bounded sharpness.
+
+72
+00:03:36,073 --> 00:03:43,620
+
+73
+00:03:43,620 --> 00:03:45,610
+And then I want two columns.
+
+74
+00:03:45,610 --> 00:03:49,110
+
+75
+00:03:49,110 --> 00:03:51,612
+The first question is, how
+many gluings are there?
+
+76
+00:03:51,612 --> 00:03:53,820
+And whenever we get a bound
+on the number of gluings,
+
+77
+00:03:53,820 --> 00:03:56,180
+we're also going to get
+an enumeration algorithm.
+
+78
+00:03:56,180 --> 00:03:58,787
+
+79
+00:03:58,787 --> 00:04:00,120
+Remember, there are three goals.
+
+80
+00:04:00,120 --> 00:04:01,286
+The first goal was decision.
+
+81
+00:04:01,286 --> 00:04:02,780
+Is there any folding?
+
+82
+00:04:02,780 --> 00:04:06,570
+Second goal was enumeration,
+give me all the foldings.
+
+83
+00:04:06,570 --> 00:04:08,710
+And third goal was
+counting, I think.
+
+84
+00:04:08,710 --> 00:04:12,485
+How many different
+solutions are there?
+
+85
+00:04:12,485 --> 00:04:18,790
+For [INAUDIBLE], this is mainly
+about decision and enumeration.
+
+86
+00:04:18,790 --> 00:04:20,540
+And this number
+of gluings, that's
+
+87
+00:04:20,540 --> 00:04:23,040
+the combinatorial problem.
+
+88
+00:04:23,040 --> 00:04:24,990
+So it turns out, for
+everything the we'll do,
+
+89
+00:04:24,990 --> 00:04:26,680
+these two have the same answer.
+
+90
+00:04:26,680 --> 00:04:28,550
+So I'm going to put
+it in one column.
+
+91
+00:04:28,550 --> 00:04:29,930
+But sometimes for
+a decision, you
+
+92
+00:04:29,930 --> 00:04:33,240
+can do it a little faster
+than enumerating them.
+
+93
+00:04:33,240 --> 00:04:37,420
+In particular, because
+the number of gluings
+
+94
+00:04:37,420 --> 00:04:39,894
+can be exponential.
+
+95
+00:04:39,894 --> 00:04:42,060
+We saw last time that it
+could actually be infinite.
+
+96
+00:04:42,060 --> 00:04:43,820
+I'm going to fix
+that, don't worry.
+
+97
+00:04:43,820 --> 00:04:45,200
+We'll make it finite.
+
+98
+00:04:45,200 --> 00:04:47,440
+And then the right
+bound is exponential.
+
+99
+00:04:47,440 --> 00:04:50,260
+There's upper and lower
+bounds of two to the theta n.
+
+100
+00:04:50,260 --> 00:04:54,333
+
+101
+00:04:54,333 --> 00:04:59,606
+And also here, bounded
+sharpness is interesting
+
+102
+00:04:59,606 --> 00:05:00,605
+because it's polynomial.
+
+103
+00:05:00,605 --> 00:05:03,990
+
+104
+00:05:03,990 --> 00:05:05,390
+And so this is also polynomial.
+
+105
+00:05:05,390 --> 00:05:18,100
+
+106
+00:05:18,100 --> 00:05:22,400
+The one result here that
+is not tight is this one.
+
+107
+00:05:22,400 --> 00:05:25,589
+It's an open question whether
+for the general setup, the most
+
+108
+00:05:25,589 --> 00:05:27,505
+interesting scenario,
+just give you a polygon,
+
+109
+00:05:27,505 --> 00:05:29,410
+is there any gluing?
+
+110
+00:05:29,410 --> 00:05:32,360
+The best algorithm we
+know is exponential,
+
+111
+00:05:32,360 --> 00:05:34,750
+even to decide whether
+there's a gluing.
+
+112
+00:05:34,750 --> 00:05:36,770
+So I put a star
+there to say that.
+
+113
+00:05:36,770 --> 00:05:37,679
+It is not tight.
+
+114
+00:05:37,679 --> 00:05:39,720
+The open problem is, can
+you do it in polynomial?
+
+115
+00:05:39,720 --> 00:05:45,590
+I suspect yes, but we worked on
+it a long time ago and failed.
+
+116
+00:05:45,590 --> 00:05:48,630
+For the special case of
+edge-to-edge gluings, which
+
+117
+00:05:48,630 --> 00:05:51,130
+is when you only glue
+whole edges of the polygons
+
+118
+00:05:51,130 --> 00:05:58,182
+to other whole edges, there is
+a n to the order one algorithm.
+
+119
+00:05:58,182 --> 00:06:00,140
+You can think of this as
+an edge-to-edge gluing
+
+120
+00:06:00,140 --> 00:06:01,860
+if you imagine this
+as being two edges.
+
+121
+00:06:01,860 --> 00:06:03,950
+If I actually draw
+a vertex there,
+
+122
+00:06:03,950 --> 00:06:05,784
+then this is an
+edge-to-edge gluing.
+
+123
+00:06:05,784 --> 00:06:07,950
+And then there's a polynomial
+algorithm to tell you,
+
+124
+00:06:07,950 --> 00:06:09,050
+is there any folding?
+
+125
+00:06:09,050 --> 00:06:11,810
+
+126
+00:06:11,810 --> 00:06:14,205
+If you want to list all
+of the gluings though,
+
+127
+00:06:14,205 --> 00:06:15,830
+you need exponential
+time because there
+
+128
+00:06:15,830 --> 00:06:18,370
+can be exponentially many.
+
+129
+00:06:18,370 --> 00:06:20,750
+But everything except
+this one result
+
+130
+00:06:20,750 --> 00:06:22,436
+is the best you could hope for.
+
+131
+00:06:22,436 --> 00:06:25,300
+Bounded sharpness
+is a natural sense
+
+132
+00:06:25,300 --> 00:06:28,810
+in which this exponential
+is kind of cheating.
+
+133
+00:06:28,810 --> 00:06:31,650
+Let's see, let me tell you
+about bounded sharpness.
+
+134
+00:06:31,650 --> 00:06:41,920
+
+135
+00:06:41,920 --> 00:06:47,110
+I want to bound how sharp an
+angle can be in a polygon.
+
+136
+00:06:47,110 --> 00:06:50,030
+This is a really sharp angle.
+
+137
+00:06:50,030 --> 00:06:59,620
+If every angle-- is that
+actually the sharpness I want?
+
+138
+00:06:59,620 --> 00:07:01,200
+Actually, no.
+
+139
+00:07:01,200 --> 00:07:05,970
+Sorry, I'm getting
+inside out already.
+
+140
+00:07:05,970 --> 00:07:09,185
+Actually, what I care
+about are reflex vertices.
+
+141
+00:07:09,185 --> 00:07:12,490
+
+142
+00:07:12,490 --> 00:07:15,510
+I don't want to have a
+super big angles here.
+
+143
+00:07:15,510 --> 00:07:19,910
+So if every angle
+is at least 360
+
+144
+00:07:19,910 --> 00:07:29,410
+minus some epsilon--
+for a constant epsilon--
+
+145
+00:07:29,410 --> 00:07:31,620
+then I call my polygon
+bounded sharpness.
+
+146
+00:07:31,620 --> 00:07:34,140
+
+147
+00:07:34,140 --> 00:07:36,660
+If your polygon has
+bounded sharpness,
+
+148
+00:07:36,660 --> 00:07:39,820
+we get a polynomial bound
+on the number of gluings
+
+149
+00:07:39,820 --> 00:07:42,440
+and a polynomial algorithm
+to list all the gluings.
+
+150
+00:07:42,440 --> 00:07:45,850
+This is really the sense in
+which this is all practical.
+
+151
+00:07:45,850 --> 00:07:49,430
+Give me a polygon that's going
+to have some sharpest angle,
+
+152
+00:07:49,430 --> 00:07:52,660
+call that the bound.
+
+153
+00:07:52,660 --> 00:07:55,290
+If epsilon gets really tiny, if
+your reflex angles get really
+
+154
+00:07:55,290 --> 00:07:58,350
+close to 360, then
+this bound will go up.
+
+155
+00:07:58,350 --> 00:08:03,840
+But as long as you're not
+too extreme, you're all set.
+
+156
+00:08:03,840 --> 00:08:07,870
+
+157
+00:08:07,870 --> 00:08:11,350
+I mean less than or
+equal to, yes, thank you.
+
+158
+00:08:11,350 --> 00:08:14,700
+
+159
+00:08:14,700 --> 00:08:16,515
+Yeah, that would
+be a weird polygon
+
+160
+00:08:16,515 --> 00:08:18,650
+if all the angles were so big.
+
+161
+00:08:18,650 --> 00:08:20,770
+I think that doesn't exist.
+
+162
+00:08:20,770 --> 00:08:24,040
+So for example, convex polygons
+always have bounded sharpness.
+
+163
+00:08:24,040 --> 00:08:27,750
+Epsilon is 180 in
+that situation.
+
+164
+00:08:27,750 --> 00:08:29,890
+So, that's good.
+
+165
+00:08:29,890 --> 00:08:33,620
+
+166
+00:08:33,620 --> 00:08:35,370
+I told you about
+edge-to-edge gluings.
+
+167
+00:08:35,370 --> 00:08:37,450
+Just glue whole
+edges to whole edges.
+
+168
+00:08:37,450 --> 00:08:40,549
+What I haven't really told you
+is how we made this finite,
+
+169
+00:08:40,549 --> 00:08:42,130
+so let me go to that.
+
+170
+00:08:42,130 --> 00:08:44,790
+And when I say
+gluings here, I really
+
+171
+00:08:44,790 --> 00:08:52,080
+mean a combinatorial
+type of gluing,
+
+172
+00:08:52,080 --> 00:08:54,250
+because we had rolling belts.
+
+173
+00:08:54,250 --> 00:08:59,296
+So there were infinitely
+many actual gluings,
+
+174
+00:08:59,296 --> 00:09:00,920
+but I'm going to
+think of most of those
+
+175
+00:09:00,920 --> 00:09:03,850
+as being the same thing and
+just distinguish essentially
+
+176
+00:09:03,850 --> 00:09:06,990
+what the gluing tree looks
+like combinatorially.
+
+177
+00:09:06,990 --> 00:09:08,836
+So let me define that.
+
+178
+00:09:08,836 --> 00:09:14,690
+The first part is what I call
+the abstract gluing tree.
+
+179
+00:09:14,690 --> 00:09:18,810
+
+180
+00:09:18,810 --> 00:09:21,570
+So this is just what the
+picture looks like in general.
+
+181
+00:09:21,570 --> 00:09:26,280
+So for example, the one
+over there-- the cube--
+
+182
+00:09:26,280 --> 00:09:30,510
+combinatorially the
+tree looks like this.
+
+183
+00:09:30,510 --> 00:09:35,120
+It has four leaves and a kind
+of wishbone configuration.
+
+184
+00:09:35,120 --> 00:09:37,650
+So I'm not trying to measure
+the lengths or anything, just
+
+185
+00:09:37,650 --> 00:09:43,080
+that's the abstract
+picture, no metric.
+
+186
+00:09:43,080 --> 00:09:46,070
+And then the second
+part is I'm going
+
+187
+00:09:46,070 --> 00:09:55,830
+to specify which polygon
+vertices and edges are where.
+
+188
+00:09:55,830 --> 00:10:21,810
+
+189
+00:10:21,810 --> 00:10:24,810
+And I'm going to specify that
+at things called junctions.
+
+190
+00:10:24,810 --> 00:10:28,730
+So in particular, at
+leaves I want to say,
+
+191
+00:10:28,730 --> 00:10:32,240
+oh this is vertex one.
+
+192
+00:10:32,240 --> 00:10:35,840
+At places like this, where
+three edges come together,
+
+193
+00:10:35,840 --> 00:10:39,070
+I want to specify for each
+one, oh this is vertex two,
+
+194
+00:10:39,070 --> 00:10:44,094
+this is edge eight, this
+is vertex 10, whatever.
+
+195
+00:10:44,094 --> 00:10:45,260
+I'm making up these numbers.
+
+196
+00:10:45,260 --> 00:10:46,760
+They don't necessarily
+correspond,
+
+197
+00:10:46,760 --> 00:10:49,380
+but they should appear in order
+because this is the polygon
+
+198
+00:10:49,380 --> 00:10:51,690
+after all, just
+warped inside out.
+
+199
+00:10:51,690 --> 00:10:55,170
+
+200
+00:10:55,170 --> 00:10:57,090
+Also this one.
+
+201
+00:10:57,090 --> 00:11:00,830
+Also, I didn't really draw
+this picture big enough,
+
+202
+00:11:00,830 --> 00:11:03,450
+but if I have two parts
+of the gluing tree
+
+203
+00:11:03,450 --> 00:11:06,290
+where a vertex glues
+against something--
+
+204
+00:11:06,290 --> 00:11:09,100
+it could be another vertex
+or it could be an edge--
+
+205
+00:11:09,100 --> 00:11:11,750
+I also consider those junctions.
+
+206
+00:11:11,750 --> 00:11:15,280
+So junctions are going
+to be all the vertices--
+
+207
+00:11:15,280 --> 00:11:17,350
+the only exception is when
+there's an edge gluing
+
+208
+00:11:17,350 --> 00:11:19,540
+to an edge, I don't
+consider that a junction
+
+209
+00:11:19,540 --> 00:11:21,581
+because there's going to
+be fairly many of those.
+
+210
+00:11:21,581 --> 00:11:22,760
+I want there to be finite.
+
+211
+00:11:22,760 --> 00:11:25,050
+So everything of
+degree one, everything
+
+212
+00:11:25,050 --> 00:11:27,450
+of degree three or
+more, for degree two
+
+213
+00:11:27,450 --> 00:11:30,390
+there has to be at
+least one vertex.
+
+214
+00:11:30,390 --> 00:11:40,440
+So degree not equal to 2,
+or at least one vertex.
+
+215
+00:11:40,440 --> 00:11:41,810
+Those are junctions.
+
+216
+00:11:41,810 --> 00:11:44,050
+For each I'm going to
+mark where they are.
+
+217
+00:11:44,050 --> 00:11:47,430
+That's part of my abstract
+gluing tree, specifying where
+
+218
+00:11:47,430 --> 00:11:49,180
+the junctures are, how
+they're configured.
+
+219
+00:11:49,180 --> 00:11:52,371
+And then for each
+one, wherever there's
+
+220
+00:11:52,371 --> 00:11:53,870
+part of the polygon
+coming together,
+
+221
+00:11:53,870 --> 00:11:56,482
+I specify which vertex
+or edge is coming there.
+
+222
+00:11:56,482 --> 00:11:57,940
+Now when I specify
+an edge, I don't
+
+223
+00:11:57,940 --> 00:12:00,840
+say what point on the edge,
+because that could be infinite.
+
+224
+00:12:00,840 --> 00:12:03,240
+There could be a whole range
+of points, there could be.
+
+225
+00:12:03,240 --> 00:12:06,490
+We'll worry about that later.
+
+226
+00:12:06,490 --> 00:12:09,810
+I just specify that
+edge eight is there.
+
+227
+00:12:09,810 --> 00:12:12,340
+So this is what I call
+combinatorial type of gluing.
+
+228
+00:12:12,340 --> 00:12:15,180
+And in this case, there are
+only finitely many gluings,
+
+229
+00:12:15,180 --> 00:12:19,570
+finitely many types, but
+it can be exponential.
+
+230
+00:12:19,570 --> 00:12:22,040
+It's still big, just
+not quite as big.
+
+231
+00:12:22,040 --> 00:12:33,120
+
+232
+00:12:33,120 --> 00:12:35,120
+So just to get
+warmed up a little,
+
+233
+00:12:35,120 --> 00:12:39,290
+let's prove this exponential
+upper bound that is only 2
+
+234
+00:12:39,290 --> 00:12:40,681
+to the order n.
+
+235
+00:12:40,681 --> 00:12:42,180
+That will in
+particular convince you
+
+236
+00:12:42,180 --> 00:12:44,495
+that there's only
+finitely many of these,
+
+237
+00:12:44,495 --> 00:12:47,395
+although I think that's probably
+obvious that it's finite.
+
+238
+00:12:47,395 --> 00:12:49,520
+It's conceivable it could
+be more than exponential.
+
+239
+00:12:49,520 --> 00:12:54,720
+
+240
+00:12:54,720 --> 00:12:57,164
+This is not a particularly
+exciting bound,
+
+241
+00:12:57,164 --> 00:12:59,080
+but we're going to use
+a lot of the same ideas
+
+242
+00:12:59,080 --> 00:13:02,670
+in the other proofs, in
+particular this one which
+
+243
+00:13:02,670 --> 00:13:04,155
+is more interesting.
+
+244
+00:13:04,155 --> 00:13:09,200
+
+245
+00:13:09,200 --> 00:13:14,880
+I want to look at
+leaves of my tree.
+
+246
+00:13:14,880 --> 00:13:20,130
+And we have to remember back
+to the previous lecture, who
+
+247
+00:13:20,130 --> 00:13:22,580
+can be at the leaves?
+
+248
+00:13:22,580 --> 00:13:26,380
+Well, if could be a vertex
+or it could be an edge.
+
+249
+00:13:26,380 --> 00:13:28,730
+When it was an edge, we
+called it a fold point.
+
+250
+00:13:28,730 --> 00:13:30,740
+When we folded in the
+middle of an edge--
+
+251
+00:13:30,740 --> 00:13:34,890
+so here's an edge of
+the polygon and I end up
+
+252
+00:13:34,890 --> 00:13:38,530
+subdividing it and gluing
+the edge onto itself-- right
+
+253
+00:13:38,530 --> 00:13:41,210
+there is 180 degrees
+of curvature.
+
+254
+00:13:41,210 --> 00:13:44,020
+Total amount of
+curvature is 720,
+
+255
+00:13:44,020 --> 00:13:46,870
+therefore I only
+have-- I can't count,
+
+256
+00:13:46,870 --> 00:13:48,920
+I'm jetlagged-- four of them.
+
+257
+00:13:48,920 --> 00:13:51,700
+At most four fold points.
+
+258
+00:13:51,700 --> 00:13:54,060
+Everybody else is a vertex.
+
+259
+00:13:54,060 --> 00:13:58,785
+So if I have n vertices, I
+have at most n plus 4 leaves.
+
+260
+00:13:58,785 --> 00:14:03,380
+
+261
+00:14:03,380 --> 00:14:05,470
+That's already feeling good.
+
+262
+00:14:05,470 --> 00:14:08,140
+I pull a rabbit out
+of a hat and tell you
+
+263
+00:14:08,140 --> 00:14:10,560
+that if I have only
+n plus 4 leaves,
+
+264
+00:14:10,560 --> 00:14:14,570
+there are 2 to the order n
+trees on that many leaves.
+
+265
+00:14:14,570 --> 00:14:20,470
+
+266
+00:14:20,470 --> 00:14:25,080
+Actually, I should be
+a little more careful.
+
+267
+00:14:25,080 --> 00:14:28,060
+If I can bound the number
+of nodes in the tree,
+
+268
+00:14:28,060 --> 00:14:30,560
+then I'll get an exponential
+bound on the number of trees.
+
+269
+00:14:30,560 --> 00:14:33,539
+And that will be part one,
+the abstract gluing tree.
+
+270
+00:14:33,539 --> 00:14:36,080
+But right now I have a bound on
+the number of leaves, not the
+
+271
+00:14:36,080 --> 00:14:37,030
+number of nodes.
+
+272
+00:14:37,030 --> 00:14:39,220
+And there's a difference
+here, because if you
+
+273
+00:14:39,220 --> 00:14:42,800
+have a tree which has
+a whole bunch of degree
+
+274
+00:14:42,800 --> 00:14:52,270
+2 vertices, then that would be
+bad, because I only have two
+
+275
+00:14:52,270 --> 00:14:55,270
+leaves I have
+arbitrarily many nodes.
+
+276
+00:14:55,270 --> 00:14:59,690
+But every time I have one
+of these degree 2 nodes,
+
+277
+00:14:59,690 --> 00:15:02,660
+we already threw away
+the degree 2 nodes that
+
+278
+00:15:02,660 --> 00:15:05,079
+had no vertices at them, because
+there are infinitely many
+
+279
+00:15:05,079 --> 00:15:06,370
+of those and those don't count.
+
+280
+00:15:06,370 --> 00:15:11,840
+So once we throw that away,
+the only degree two junctions
+
+281
+00:15:11,840 --> 00:15:14,617
+are the ones that have a vertex,
+which is why-- these dots are
+
+282
+00:15:14,617 --> 00:15:16,700
+supposed to be the actual
+vertices of the polygon.
+
+283
+00:15:16,700 --> 00:15:19,030
+So it might be an edge here,
+it might be an edge there.
+
+284
+00:15:19,030 --> 00:15:21,160
+There's at least one
+vertex at each of them.
+
+285
+00:15:21,160 --> 00:15:24,960
+So the total number of nodes
+here is indeed order n.
+
+286
+00:15:24,960 --> 00:15:28,240
+I mean, it's probably actually
+at most n plus 4 again.
+
+287
+00:15:28,240 --> 00:15:30,970
+But if we're sloppy you say,
+well the number of leaves
+
+288
+00:15:30,970 --> 00:15:31,950
+is at most n plus 4.
+
+289
+00:15:31,950 --> 00:15:36,810
+The number of degree
+2 nodes is at most n.
+
+290
+00:15:36,810 --> 00:15:38,790
+Then there could be
+some degree three nodes.
+
+291
+00:15:38,790 --> 00:15:40,940
+It's also at most
+n plus 4 in total,
+
+292
+00:15:40,940 --> 00:15:43,970
+or n is all I care about.
+
+293
+00:15:43,970 --> 00:15:45,890
+You could be more
+careful and figure out
+
+294
+00:15:45,890 --> 00:15:46,840
+what the consonant is.
+
+295
+00:15:46,840 --> 00:15:51,190
+But we get from this,
+this is order n nodes.
+
+296
+00:15:51,190 --> 00:15:54,030
+
+297
+00:15:54,030 --> 00:15:56,970
+And once you have that the tree
+has a linear number of nodes,
+
+298
+00:15:56,970 --> 00:16:00,720
+I'll tell you this is one of
+the [? Kadhalan ?] problems,
+
+299
+00:16:00,720 --> 00:16:02,970
+that there's only 2
+the order n such trees.
+
+300
+00:16:02,970 --> 00:16:06,400
+But that's only part one
+of the combinatorial type
+
+301
+00:16:06,400 --> 00:16:07,100
+of the gluing.
+
+302
+00:16:07,100 --> 00:16:10,080
+We also have to worry about
+which vertices are where.
+
+303
+00:16:10,080 --> 00:16:13,040
+
+304
+00:16:13,040 --> 00:16:15,480
+I want to show that that
+is only exponential.
+
+305
+00:16:15,480 --> 00:16:23,650
+
+306
+00:16:23,650 --> 00:16:28,610
+So imagine at this
+point you've fixed
+
+307
+00:16:28,610 --> 00:16:30,410
+the combinatorial
+structure of the tree,
+
+308
+00:16:30,410 --> 00:16:33,220
+but you have no
+idea what's what.
+
+309
+00:16:33,220 --> 00:16:36,930
+So in particular,
+at these points--
+
+310
+00:16:36,930 --> 00:16:40,950
+and maybe also you've
+defined some degree 2
+
+311
+00:16:40,950 --> 00:16:42,840
+junctions, which you
+know are supposed
+
+312
+00:16:42,840 --> 00:16:47,910
+to have at least one vertex--
+the first thing I want
+
+313
+00:16:47,910 --> 00:16:50,650
+to specify is, for each
+of these little dots that
+
+314
+00:16:50,650 --> 00:16:56,410
+come together-- these are the
+junctions-- is it a vertex,
+
+315
+00:16:56,410 --> 00:16:59,010
+or is it an edge?
+
+316
+00:16:59,010 --> 00:17:01,070
+So that's just binary
+information for each one.
+
+317
+00:17:01,070 --> 00:17:02,720
+I'll fill it in, say
+if it's a vertex,
+
+318
+00:17:02,720 --> 00:17:05,400
+I'll leave it open
+if it's an edge.
+
+319
+00:17:05,400 --> 00:17:08,490
+In fact, I know that at
+most one edge comes together
+
+320
+00:17:08,490 --> 00:17:09,050
+at any point.
+
+321
+00:17:09,050 --> 00:17:12,640
+Otherwise, you'd have too
+much material glued there.
+
+322
+00:17:12,640 --> 00:17:15,475
+So maybe it looks
+something like this.
+
+323
+00:17:15,475 --> 00:17:18,090
+It could be a fold point,
+maybe another fold point.
+
+324
+00:17:18,090 --> 00:17:22,140
+
+325
+00:17:22,140 --> 00:17:23,540
+Something like that.
+
+326
+00:17:23,540 --> 00:17:26,255
+So that coloring, black
+and white, there's only 2
+
+327
+00:17:26,255 --> 00:17:29,530
+to the order and such colorings.
+
+328
+00:17:29,530 --> 00:17:35,740
+Call it a vertex edge
+coloring, because again there's
+
+329
+00:17:35,740 --> 00:17:37,440
+order n dots.
+
+330
+00:17:37,440 --> 00:17:41,370
+Each one, there's two choices,
+black or white, vertex or edge.
+
+331
+00:17:41,370 --> 00:17:45,110
+
+332
+00:17:45,110 --> 00:17:47,220
+And now what we
+really care about
+
+333
+00:17:47,220 --> 00:17:49,860
+is where the vertices,
+because remember, this
+
+334
+00:17:49,860 --> 00:17:52,830
+is the polygon in order.
+
+335
+00:17:52,830 --> 00:17:57,100
+So if I could tell you, let's
+say which vertex is vertex one?
+
+336
+00:17:57,100 --> 00:18:00,490
+Maybe this vertex is vertex one.
+
+337
+00:18:00,490 --> 00:18:03,740
+Then I know this is vertex two,
+I know this is vertex three,
+
+338
+00:18:03,740 --> 00:18:05,810
+I know this is edge
+three or whichever
+
+339
+00:18:05,810 --> 00:18:09,100
+edge connects V3 three and V4.
+
+340
+00:18:09,100 --> 00:18:11,190
+This is also edge
+three, and so on.
+
+341
+00:18:11,190 --> 00:18:14,710
+I could just walk around
+and label them in order.
+
+342
+00:18:14,710 --> 00:18:17,880
+All I needed to do is
+know where vertex one is.
+
+343
+00:18:17,880 --> 00:18:21,180
+There's only n
+possibilities for that.
+
+344
+00:18:21,180 --> 00:18:27,540
+
+345
+00:18:27,540 --> 00:18:31,040
+There's n filled circles, which
+are where the vertices are.
+
+346
+00:18:31,040 --> 00:18:34,410
+One of them is V1, so there's
+only n choices for it.
+
+347
+00:18:34,410 --> 00:18:39,840
+You multiply all of these
+things together, n times 2
+
+348
+00:18:39,840 --> 00:18:41,890
+to the order n, times
+2 to the order n,
+
+349
+00:18:41,890 --> 00:18:44,170
+that result is 2 to
+the some other order n.
+
+350
+00:18:44,170 --> 00:18:46,820
+
+351
+00:18:46,820 --> 00:18:49,880
+That's total number of choices.
+
+352
+00:18:49,880 --> 00:18:54,559
+So that's a rough
+but fine upper bound.
+
+353
+00:18:54,559 --> 00:18:56,350
+I'm not going to try
+to tune this constant.
+
+354
+00:18:56,350 --> 00:18:57,470
+I guess it would
+be an open problem
+
+355
+00:18:57,470 --> 00:18:59,261
+to get a really good
+bound on the constant.
+
+356
+00:18:59,261 --> 00:19:01,340
+I'm not sure if even
+one has been worked out,
+
+357
+00:19:01,340 --> 00:19:04,160
+but what I will show you is
+that this is pretty much tight,
+
+358
+00:19:04,160 --> 00:19:06,640
+so you can't hope to do
+much better than this
+
+359
+00:19:06,640 --> 00:19:10,250
+because there's a 2 to
+the omega n lower bound
+
+360
+00:19:10,250 --> 00:19:13,955
+on the number of gluings.
+
+361
+00:19:13,955 --> 00:19:16,720
+
+362
+00:19:16,720 --> 00:19:20,670
+And that is this crazy example.
+
+363
+00:19:20,670 --> 00:19:24,360
+I'll draw it also on the board.
+
+364
+00:19:24,360 --> 00:19:25,910
+It's a little tricky to draw.
+
+365
+00:19:25,910 --> 00:19:32,000
+It's a very spiky star,
+something like that.
+
+366
+00:19:32,000 --> 00:19:44,590
+So I have e points, and n
+spikes, n convex corners.
+
+367
+00:19:44,590 --> 00:19:46,920
+The convex angle,
+I think, is alpha.
+
+368
+00:19:46,920 --> 00:19:49,272
+Let me match the notation.
+
+369
+00:19:49,272 --> 00:19:51,560
+Yes, convex angle is alpha.
+
+370
+00:19:51,560 --> 00:19:55,560
+The reflex angle here is
+beta, but otherwise it's
+
+371
+00:19:55,560 --> 00:19:56,520
+completely symmetric.
+
+372
+00:19:56,520 --> 00:19:59,030
+So all the reflex
+angles are beta,
+
+373
+00:19:59,030 --> 00:20:01,116
+all the convex angles are alpha.
+
+374
+00:20:01,116 --> 00:20:03,130
+I have n spikes.
+
+375
+00:20:03,130 --> 00:20:09,230
+I want these points--
+it's hard to draw,
+
+376
+00:20:09,230 --> 00:20:12,950
+but I want them to be very,
+very close to the center.
+
+377
+00:20:12,950 --> 00:20:14,420
+Take the limit.
+
+378
+00:20:14,420 --> 00:20:18,180
+In the limit, alpha is 0.
+
+379
+00:20:18,180 --> 00:20:23,335
+So alpha is going to be some
+very tiny amount epsilon.
+
+380
+00:20:23,335 --> 00:20:23,835
+Beta.
+
+381
+00:20:23,835 --> 00:20:26,780
+
+382
+00:20:26,780 --> 00:20:30,190
+What's the limit of beta?
+
+383
+00:20:30,190 --> 00:20:32,420
+180, 360?
+
+384
+00:20:32,420 --> 00:20:34,580
+No, it's not 360.
+
+385
+00:20:34,580 --> 00:20:35,660
+That's what's important.
+
+386
+00:20:35,660 --> 00:20:38,710
+
+387
+00:20:38,710 --> 00:20:44,020
+360 times 1 minus
+1 over n, yeah.
+
+388
+00:20:44,020 --> 00:20:46,180
+It's like 360 minus 360 over n.
+
+389
+00:20:46,180 --> 00:20:50,550
+
+390
+00:20:50,550 --> 00:20:53,670
+Believe it or not,
+this is a big number,
+
+391
+00:20:53,670 --> 00:20:55,880
+in that it doesn't
+depend on epsilon.
+
+392
+00:20:55,880 --> 00:21:00,099
+So it's going to be, what,
+a little bit smaller--
+
+393
+00:21:00,099 --> 00:21:01,640
+going to be some
+minus epsilon prime.
+
+394
+00:21:01,640 --> 00:21:03,670
+But I really don't care
+about the epsilons.
+
+395
+00:21:03,670 --> 00:21:06,120
+They're kind of irrelevant.
+
+396
+00:21:06,120 --> 00:21:09,640
+Let me just cross them out,
+but they're really there.
+
+397
+00:21:09,640 --> 00:21:16,680
+So alpha is basically 0, beta
+is a chunk less than 360.
+
+398
+00:21:16,680 --> 00:21:21,620
+What this means is in the limit
+I can take one of these alphas
+
+399
+00:21:21,620 --> 00:21:24,647
+and glue it into
+one of the betas,
+
+400
+00:21:24,647 --> 00:21:26,105
+and it will still
+be less than 360.
+
+401
+00:21:26,105 --> 00:21:28,770
+In fact I could
+glue n of the alpha.
+
+402
+00:21:28,770 --> 00:21:33,517
+I could glue all of these
+spikes into one of these gaps.
+
+403
+00:21:33,517 --> 00:21:35,475
+Remember, the limiting
+picture looks like this.
+
+404
+00:21:35,475 --> 00:21:38,562
+
+405
+00:21:38,562 --> 00:21:39,770
+That's maybe more convincing.
+
+406
+00:21:39,770 --> 00:21:42,020
+It doesn't look that way here.
+
+407
+00:21:42,020 --> 00:21:43,440
+This is nothing.
+
+408
+00:21:43,440 --> 00:21:46,880
+Of course, I can fit arbitrarily
+many of them into this gap
+
+409
+00:21:46,880 --> 00:21:50,250
+and it will still
+sum to less than 360.
+
+410
+00:21:50,250 --> 00:21:53,700
+So this is kind of the key
+to why this example works.
+
+411
+00:21:53,700 --> 00:21:56,460
+
+412
+00:21:56,460 --> 00:22:00,240
+I've got tons a room for alphas
+in the complement of betas.
+
+413
+00:22:00,240 --> 00:22:04,180
+
+414
+00:22:04,180 --> 00:22:08,890
+Now, I would like to make
+this not only an exponential
+
+415
+00:22:08,890 --> 00:22:11,200
+lower bound on the
+general case, but also
+
+416
+00:22:11,200 --> 00:22:13,460
+on the edge-to-edge
+case, because that's
+
+417
+00:22:13,460 --> 00:22:15,960
+a little bit stronger to say
+even edge-to-edge gluings there
+
+418
+00:22:15,960 --> 00:22:17,380
+can be exponentially many.
+
+419
+00:22:17,380 --> 00:22:21,360
+To do that, I'm going to
+take the midpoint of one
+
+420
+00:22:21,360 --> 00:22:24,100
+of the edges, call
+that a vertex,
+
+421
+00:22:24,100 --> 00:22:29,090
+and take the perimeter antipode,
+which is like here hopefully,
+
+422
+00:22:29,090 --> 00:22:29,904
+more or less.
+
+423
+00:22:29,904 --> 00:22:32,070
+So I want the left parameter
+and the right perimeter
+
+424
+00:22:32,070 --> 00:22:35,430
+to be equal, also
+call that a vertex.
+
+425
+00:22:35,430 --> 00:22:37,851
+And now one thing we know how
+to do is perimeter halving.
+
+426
+00:22:37,851 --> 00:22:40,350
+Now, we were only supposed to
+do perimeter halving on convex
+
+427
+00:22:40,350 --> 00:22:43,350
+polygons, but it turns out it
+will work on this polygon too.
+
+428
+00:22:43,350 --> 00:22:46,326
+So I'm going to glue this
+half edge to this half edge,
+
+429
+00:22:46,326 --> 00:22:48,450
+then I'm going to glue this
+edge to this edge, then
+
+430
+00:22:48,450 --> 00:22:51,270
+this one to this one, and so on.
+
+431
+00:22:51,270 --> 00:22:54,050
+So just do that gluing.
+
+432
+00:22:54,050 --> 00:22:58,160
+And the only thing
+to worry about
+
+433
+00:22:58,160 --> 00:22:59,850
+is that you glue
+two betas together.
+
+434
+00:22:59,850 --> 00:23:01,440
+That would be more than 360.
+
+435
+00:23:01,440 --> 00:23:05,180
+Anything else, beta to any
+number of alpha's is OK.
+
+436
+00:23:05,180 --> 00:23:08,844
+At this point it is really
+helpful to draw a gluing tree,
+
+437
+00:23:08,844 --> 00:23:10,330
+so let me do that.
+
+438
+00:23:10,330 --> 00:23:24,910
+
+439
+00:23:24,910 --> 00:23:30,060
+So gluing tree for
+perimeter halving is path.
+
+440
+00:23:30,060 --> 00:23:34,724
+And do I give these guys
+names, probably x and y?
+
+441
+00:23:34,724 --> 00:23:36,610
+Yeah, that's what
+I would call them,
+
+442
+00:23:36,610 --> 00:23:40,080
+so naturally that's
+what I called them.
+
+443
+00:23:40,080 --> 00:23:43,850
+We have x over here,
+we have y over here.
+
+444
+00:23:43,850 --> 00:23:46,190
+And then we have the
+perimeter in between.
+
+445
+00:23:46,190 --> 00:23:47,920
+So let's just
+check what happens.
+
+446
+00:23:47,920 --> 00:23:50,590
+Here we get an
+alpha on one side--
+
+447
+00:23:50,590 --> 00:23:54,305
+I'm going to say the right
+side is the bottom, let's say.
+
+448
+00:23:54,305 --> 00:23:55,930
+I'm not going to try
+to think about it.
+
+449
+00:23:55,930 --> 00:24:00,195
+So there's an alpha,
+and that meets a beta.
+
+450
+00:24:00,195 --> 00:24:01,820
+And then it just
+alternates from there.
+
+451
+00:24:01,820 --> 00:24:05,350
+There's an alpha, it meets a
+beta, but on the other side.
+
+452
+00:24:05,350 --> 00:24:08,900
+And a beta meets
+an alpha and so on.
+
+453
+00:24:08,900 --> 00:24:14,440
+At the end, it's probably the
+reverse, like alpha, beta.
+
+454
+00:24:14,440 --> 00:24:18,700
+I've drawn it up
+here at the very top.
+
+455
+00:24:18,700 --> 00:24:23,060
+The alpha's red, betas are black
+so you can distinguish them.
+
+456
+00:24:23,060 --> 00:24:25,840
+But that's clearly an OK gluing
+because it's just one alpha
+
+457
+00:24:25,840 --> 00:24:26,680
+gluing to one beta.
+
+458
+00:24:26,680 --> 00:24:30,540
+We know we can glue tons
+of alphas into one beta.
+
+459
+00:24:30,540 --> 00:24:31,597
+That's one gluing.
+
+460
+00:24:31,597 --> 00:24:33,430
+The fun part is that
+there are exponentially
+
+461
+00:24:33,430 --> 00:24:38,000
+many of these gluings which look
+like this, where you take some
+
+462
+00:24:38,000 --> 00:24:42,580
+of the betas and turn
+them into leaves,
+
+463
+00:24:42,580 --> 00:24:45,110
+kind of squeeze them out.
+
+464
+00:24:45,110 --> 00:24:47,930
+And the result is that
+you get two alphas gluing
+
+465
+00:24:47,930 --> 00:24:50,220
+to a beta, which is fine.
+
+466
+00:24:50,220 --> 00:24:52,130
+The beta glues to
+itself, which is fine.
+
+467
+00:24:52,130 --> 00:24:53,970
+I mean, it's a vertex.
+
+468
+00:24:53,970 --> 00:24:57,560
+It's comforting that it
+has an angle almost 360.
+
+469
+00:24:57,560 --> 00:25:00,300
+Therefore, there's very little
+curvature out at that leaf,
+
+470
+00:25:00,300 --> 00:25:02,170
+but we don't really
+need to check that.
+
+471
+00:25:02,170 --> 00:25:05,560
+It is just necessary
+for this to work.
+
+472
+00:25:05,560 --> 00:25:10,060
+Of course, beta is less
+than 360 by itself.
+
+473
+00:25:10,060 --> 00:25:12,220
+Here's an example where I
+squeezed two of the betas
+
+474
+00:25:12,220 --> 00:25:14,770
+right next to each
+other, then three alpha's
+
+475
+00:25:14,770 --> 00:25:17,630
+come together and
+glue to a beta.
+
+476
+00:25:17,630 --> 00:25:20,980
+But what's nice is we don't
+have to think about the polygon.
+
+477
+00:25:20,980 --> 00:25:22,520
+We just think about
+the gluing tree.
+
+478
+00:25:22,520 --> 00:25:27,950
+And we say, well if
+I pull this down-- so
+
+479
+00:25:27,950 --> 00:25:31,030
+I end up with
+that-- that's going
+
+480
+00:25:31,030 --> 00:25:34,050
+to be just fine as long as
+I also pull one on the top.
+
+481
+00:25:34,050 --> 00:25:36,400
+I have to squeeze the
+same number of betas
+
+482
+00:25:36,400 --> 00:25:37,900
+on the top and the
+bottom, otherwise
+
+483
+00:25:37,900 --> 00:25:39,320
+these links won't match up.
+
+484
+00:25:39,320 --> 00:25:43,190
+As long as I do that,
+I get a valid gluing.
+
+485
+00:25:43,190 --> 00:25:49,490
+So what I'm going to do,
+I have n betas total.
+
+486
+00:25:49,490 --> 00:25:54,800
+So I have n over
+2 betas on the top
+
+487
+00:25:54,800 --> 00:25:59,150
+and n over 2 betas
+on the bottom.
+
+488
+00:25:59,150 --> 00:26:07,520
+I'm going to squeeze n over
+4 on the top and n over 4
+
+489
+00:26:07,520 --> 00:26:10,010
+on the bottom, so half of them.
+
+490
+00:26:10,010 --> 00:26:15,660
+
+491
+00:26:15,660 --> 00:26:18,020
+That way the lengths
+will match up,
+
+492
+00:26:18,020 --> 00:26:21,630
+and I happen to know there's
+a lot of ways to do this.
+
+493
+00:26:21,630 --> 00:26:27,120
+The actual number is n over
+2 choose n over 4 for the top
+
+494
+00:26:27,120 --> 00:26:28,450
+and the same for the bottom.
+
+495
+00:26:28,450 --> 00:26:31,260
+So it's this
+squared, and I'm just
+
+496
+00:26:31,260 --> 00:26:33,460
+going to tell you that
+is 2 to the theta n.
+
+497
+00:26:33,460 --> 00:26:36,640
+
+498
+00:26:36,640 --> 00:26:41,590
+Actually, I think you
+can be pretty precise.
+
+499
+00:26:41,590 --> 00:26:42,650
+Can you?
+
+500
+00:26:42,650 --> 00:26:44,010
+I've forgotten.
+
+501
+00:26:44,010 --> 00:26:49,910
+Isn't n choose n over
+2-- it's very close to 2
+
+502
+00:26:49,910 --> 00:26:52,604
+to the n over 2, I believe.
+
+503
+00:26:52,604 --> 00:26:55,160
+Is that right?
+
+504
+00:26:55,160 --> 00:26:57,510
+But not exactly, yeah.
+
+505
+00:26:57,510 --> 00:26:59,681
+All right, I'm
+going to be sloppy.
+
+506
+00:26:59,681 --> 00:27:01,260
+It's 2 to the theta n.
+
+507
+00:27:01,260 --> 00:27:03,360
+You could figure out what
+the constant is there.
+
+508
+00:27:03,360 --> 00:27:08,950
+I think I have a bound
+written down, maybe.
+
+509
+00:27:08,950 --> 00:27:11,480
+Oh, it is the power of 2, yeah.
+
+510
+00:27:11,480 --> 00:27:14,175
+It is equal, I believe,
+according to my notes.
+
+511
+00:27:14,175 --> 00:27:17,490
+
+512
+00:27:17,490 --> 00:27:20,970
+So this is going
+to be 2 to the n
+
+513
+00:27:20,970 --> 00:27:24,915
+over 4 squared, which is
+2 to the n over 2 exactly.
+
+514
+00:27:24,915 --> 00:27:29,750
+
+515
+00:27:29,750 --> 00:27:30,344
+Yeah?
+
+516
+00:27:30,344 --> 00:27:31,260
+AUDIENCE: [INAUDIBLE]?
+
+517
+00:27:31,260 --> 00:27:36,760
+
+518
+00:27:36,760 --> 00:27:39,430
+PROFESSOR: I only am allowed
+to squeeze betas, not alphas.
+
+519
+00:27:39,430 --> 00:27:42,150
+But I can do whatever pattern I
+want on the top and separately
+
+520
+00:27:42,150 --> 00:27:44,650
+any pattern I want
+on the bottom.
+
+521
+00:27:44,650 --> 00:27:46,600
+Because what's key
+is by squeezing
+
+522
+00:27:46,600 --> 00:27:50,850
+betas I preserve the parity,
+because when I squeeze away
+
+523
+00:27:50,850 --> 00:27:52,780
+a beta I bring two
+alphas together.
+
+524
+00:27:52,780 --> 00:27:55,589
+So the parity and who's matching
+whom on the top and the bottom
+
+525
+00:27:55,589 --> 00:27:56,380
+is always the same.
+
+526
+00:27:56,380 --> 00:27:57,720
+And the beta on
+the top will always
+
+527
+00:27:57,720 --> 00:27:59,770
+be matching some number
+of alpha's on the bottom,
+
+528
+00:27:59,770 --> 00:28:01,387
+and vice versa.
+
+529
+00:28:01,387 --> 00:28:03,470
+So it doesn't matter what
+pattern I do on the top,
+
+530
+00:28:03,470 --> 00:28:04,860
+or what pattern I
+do on the bottom.
+
+531
+00:28:04,860 --> 00:28:06,610
+It just matters they
+have the same length,
+
+532
+00:28:06,610 --> 00:28:09,487
+so I arbitrarily chose
+them to both be n over 4.
+
+533
+00:28:09,487 --> 00:28:11,070
+Well, it wasn't
+arbitrary, but I chose
+
+534
+00:28:11,070 --> 00:28:12,290
+it to be that
+because I knew there
+
+535
+00:28:12,290 --> 00:28:13,460
+would be a lot of those choices.
+
+536
+00:28:13,460 --> 00:28:14,543
+There are more, of course.
+
+537
+00:28:14,543 --> 00:28:18,180
+Really I should sum this
+over all choices of n over 4,
+
+538
+00:28:18,180 --> 00:28:20,700
+but this is good enough.
+
+539
+00:28:20,700 --> 00:28:22,825
+That summation would not
+improve the bound by much.
+
+540
+00:28:22,825 --> 00:28:30,370
+
+541
+00:28:30,370 --> 00:28:31,840
+So that's sort of the bad news.
+
+542
+00:28:31,840 --> 00:28:33,410
+These are really nasty polygons.
+
+543
+00:28:33,410 --> 00:28:35,460
+They have exponentially
+many gluings.
+
+544
+00:28:35,460 --> 00:28:43,140
+For fun, we actually
+did this for small n.
+
+545
+00:28:43,140 --> 00:28:44,730
+It's been a while.
+
+546
+00:28:44,730 --> 00:28:47,940
+This was some time ago
+that we made all these.
+
+547
+00:28:47,940 --> 00:28:49,760
+I think it actually
+was before 2002,
+
+548
+00:28:49,760 --> 00:28:52,480
+but that was when
+the paper appeared.
+
+549
+00:28:52,480 --> 00:28:55,890
+So here is a four
+star, and these
+
+550
+00:28:55,890 --> 00:28:58,930
+are I think all of
+the possible gluings.
+
+551
+00:28:58,930 --> 00:29:01,150
+Maybe just some of
+them, it's been awhile,
+
+552
+00:29:01,150 --> 00:29:02,460
+I could think about it.
+
+553
+00:29:02,460 --> 00:29:05,315
+
+554
+00:29:05,315 --> 00:29:07,440
+Not drawn as gluing trees
+here, but drawn as actual
+
+555
+00:29:07,440 --> 00:29:08,398
+gulings on the polygon.
+
+556
+00:29:08,398 --> 00:29:10,320
+Here instead of
+drawing the gluings
+
+557
+00:29:10,320 --> 00:29:12,780
+on the outside, which
+is how they happen
+
+558
+00:29:12,780 --> 00:29:14,904
+in the gluing three, I've
+drawn them on the inside,
+
+559
+00:29:14,904 --> 00:29:16,370
+just because it's
+easier to draw.
+
+560
+00:29:16,370 --> 00:29:18,030
+And then we built
+them in the same way
+
+561
+00:29:18,030 --> 00:29:20,488
+that I built one like I showed
+you last time, where we just
+
+562
+00:29:20,488 --> 00:29:23,530
+took a polygon, started
+taping edges together,
+
+563
+00:29:23,530 --> 00:29:27,240
+and these are the
+roughly taped versions.
+
+564
+00:29:27,240 --> 00:29:29,622
+And then you guess where
+the crease signs are,
+
+565
+00:29:29,622 --> 00:29:31,580
+and then you can draw
+the crease lines on here.
+
+566
+00:29:31,580 --> 00:29:33,642
+And two of them
+are drawn sort of
+
+567
+00:29:33,642 --> 00:29:35,850
+worked out where exactly
+the crease lines have to be,
+
+568
+00:29:35,850 --> 00:29:39,530
+according to getting all
+the edge links to match.
+
+569
+00:29:39,530 --> 00:29:41,100
+And then you can
+make your polygons.
+
+570
+00:29:41,100 --> 00:29:46,582
+That is n equals 4,
+then we did n equals 8.
+
+571
+00:29:46,582 --> 00:29:48,665
+I guess we want n to be
+even here for convenience.
+
+572
+00:29:48,665 --> 00:29:51,250
+
+573
+00:29:51,250 --> 00:29:54,240
+And there's more, although
+still not a huge number.
+
+574
+00:29:54,240 --> 00:30:00,910
+I think these are the top sides
+and these are the bottom sides.
+
+575
+00:30:00,910 --> 00:30:03,200
+And you can see, in some
+cases it was a little tricky
+
+576
+00:30:03,200 --> 00:30:05,200
+to tell where the creases
+are, because they were
+
+577
+00:30:05,200 --> 00:30:07,630
+almost flat or possibly
+actually exactly flat.
+
+578
+00:30:07,630 --> 00:30:09,560
+Like here they are flat.
+
+579
+00:30:09,560 --> 00:30:11,040
+But it's a fun exercise.
+
+580
+00:30:11,040 --> 00:30:13,597
+You can, whenever you
+have these gluings,
+
+581
+00:30:13,597 --> 00:30:14,680
+reconstruct the polyhedra.
+
+582
+00:30:14,680 --> 00:30:17,680
+Of course now that we have
+algorithms for Alexandroff's
+
+583
+00:30:17,680 --> 00:30:20,730
+theorem, we could try plugging
+these into the programs
+
+584
+00:30:20,730 --> 00:30:25,790
+and they should give us exact 3D
+polyhedra, from which we could
+
+585
+00:30:25,790 --> 00:30:28,752
+figure out where the
+crease lines are.
+
+586
+00:30:28,752 --> 00:30:32,140
+It would be a fun, small,
+mini-project, I guess,
+
+587
+00:30:32,140 --> 00:30:32,790
+to do that.
+
+588
+00:30:32,790 --> 00:30:34,400
+This is all from ages ago.
+
+589
+00:30:34,400 --> 00:30:37,300
+
+590
+00:30:37,300 --> 00:30:43,640
+At this point I want to move
+on to this result, which
+
+591
+00:30:43,640 --> 00:30:44,410
+is the good news.
+
+592
+00:30:44,410 --> 00:30:46,618
+This is sort of bad news
+that there are exponentially
+
+593
+00:30:46,618 --> 00:30:49,410
+many different gluings.
+
+594
+00:30:49,410 --> 00:30:51,925
+It's not so bad in that at
+least we can enumerate them
+
+595
+00:30:51,925 --> 00:30:53,050
+in the same amount of time.
+
+596
+00:30:53,050 --> 00:30:54,434
+We'll get to that later.
+
+597
+00:30:54,434 --> 00:30:56,100
+While we're in the
+combinatorial streak,
+
+598
+00:30:56,100 --> 00:30:57,880
+I want to prove
+that there's only
+
+599
+00:30:57,880 --> 00:31:00,290
+a polynomial number
+of combinatorially
+
+600
+00:31:00,290 --> 00:31:03,750
+distinct gluings for
+bounded sharpness polygons.
+
+601
+00:31:03,750 --> 00:31:06,550
+So of course, this
+star polygon does not
+
+602
+00:31:06,550 --> 00:31:08,010
+have bounded sharpness.
+
+603
+00:31:08,010 --> 00:31:13,660
+We set beta to be very,
+very close to 360.
+
+604
+00:31:13,660 --> 00:31:16,330
+It may be worth talking
+about this a little bit,
+
+605
+00:31:16,330 --> 00:31:20,520
+because it wasn't exactly 360.
+
+606
+00:31:20,520 --> 00:31:24,370
+It was bounded away from 360 by
+this value of 360 divided by n.
+
+607
+00:31:24,370 --> 00:31:26,410
+Now I said that
+was a big number,
+
+608
+00:31:26,410 --> 00:31:30,180
+because it was much,
+much bigger than alpha.
+
+609
+00:31:30,180 --> 00:31:32,280
+Bigger than n times
+alpha even, because I
+
+610
+00:31:32,280 --> 00:31:34,910
+can make alpha very close to 0.
+
+611
+00:31:34,910 --> 00:31:36,920
+But it is not what we
+call bounded sharpness.
+
+612
+00:31:36,920 --> 00:31:40,620
+Bounded sharpness was 360
+minus a constant-- I really
+
+613
+00:31:40,620 --> 00:31:43,570
+shouldn't have called it
+epsilon because it's confusing.
+
+614
+00:31:43,570 --> 00:31:47,040
+Let me call it gamma just
+got another Greek letter.
+
+615
+00:31:47,040 --> 00:31:49,810
+
+616
+00:31:49,810 --> 00:31:51,310
+Gamma is not arbitrarily small.
+
+617
+00:31:51,310 --> 00:31:56,280
+It is a constant value, whereas
+over here it's not constant.
+
+618
+00:31:56,280 --> 00:32:00,140
+It's a constant divided
+by n, that's sub-constant.
+
+619
+00:32:00,140 --> 00:32:03,240
+So this is not bounded
+sharpness, just to check.
+
+620
+00:32:03,240 --> 00:32:07,330
+But if we have all the
+reflex angles, at most 360
+
+621
+00:32:07,330 --> 00:32:09,910
+minus an actual
+constant bigger than 0,
+
+622
+00:32:09,910 --> 00:32:11,900
+then we can get a
+polynomial bound
+
+623
+00:32:11,900 --> 00:32:15,240
+on the number of combinatorially
+distinct gluings.
+
+624
+00:32:15,240 --> 00:32:16,667
+So let me show that to you.
+
+625
+00:32:16,667 --> 00:32:42,994
+
+626
+00:32:42,994 --> 00:32:44,910
+Here's the cool thing
+about bounded sharpness.
+
+627
+00:32:44,910 --> 00:32:52,690
+
+628
+00:32:52,690 --> 00:32:56,600
+How many leaves can
+the gluing tree have?
+
+629
+00:32:56,600 --> 00:33:00,650
+Each leaf is either an edge,
+like it's a fold point.
+
+630
+00:33:00,650 --> 00:33:04,620
+In that case, the
+curvature is 180 degrees.
+
+631
+00:33:04,620 --> 00:33:06,810
+Or it's a vertex.
+
+632
+00:33:06,810 --> 00:33:11,550
+If it's a vertex, the
+curvature at that point
+
+633
+00:33:11,550 --> 00:33:15,594
+is 360 minus the
+angle at that point.
+
+634
+00:33:15,594 --> 00:33:21,520
+360 minus the angle,
+let's call it alpha.
+
+635
+00:33:21,520 --> 00:33:24,480
+Now, we know that every
+angle alpha is at most 360
+
+636
+00:33:24,480 --> 00:33:26,540
+minus gamma.
+
+637
+00:33:26,540 --> 00:33:34,970
+So if this is going to be
+at least 360 minus gamma,
+
+638
+00:33:34,970 --> 00:33:35,890
+which is just gamma.
+
+639
+00:33:35,890 --> 00:33:38,570
+
+640
+00:33:38,570 --> 00:33:43,040
+So every vertex, every
+leaf of the tree,
+
+641
+00:33:43,040 --> 00:33:45,870
+has curvature at least gamma.
+
+642
+00:33:45,870 --> 00:33:47,600
+Gamma is a constant.
+
+643
+00:33:47,600 --> 00:33:57,950
+Total curvature is 720, exactly.
+
+644
+00:33:57,950 --> 00:34:04,650
+Therefore, the number
+of leaves is at most 720
+
+645
+00:34:04,650 --> 00:34:08,980
+over gamma, which is a constant.
+
+646
+00:34:08,980 --> 00:34:12,380
+
+647
+00:34:12,380 --> 00:34:14,280
+That's going to help.
+
+648
+00:34:14,280 --> 00:34:18,125
+We don't have to worry
+about trees with n leaves.
+
+649
+00:34:18,125 --> 00:34:19,500
+We only have to
+worry about trees
+
+650
+00:34:19,500 --> 00:34:23,179
+with 20 leaves, some
+constant number of leaves.
+
+651
+00:34:23,179 --> 00:34:27,590
+Again, as the bound on sharpness
+goes down, the number of leaves
+
+652
+00:34:27,590 --> 00:34:31,060
+will go up in this
+inverse proportional way,
+
+653
+00:34:31,060 --> 00:34:33,190
+but it's a constant.
+
+654
+00:34:33,190 --> 00:34:36,900
+So at least for part
+one, we're golden.
+
+655
+00:34:36,900 --> 00:34:38,870
+I mean, the number
+of gluing trees,
+
+656
+00:34:38,870 --> 00:34:42,560
+I said over here-- where is it?
+
+657
+00:34:42,560 --> 00:34:44,940
+If I have n nodes
+in my tree, I'll
+
+658
+00:34:44,940 --> 00:34:48,400
+only have 2 to
+the order n trees.
+
+659
+00:34:48,400 --> 00:34:50,590
+So if I can reduce the
+number of nodes in my tree,
+
+660
+00:34:50,590 --> 00:34:52,673
+I will reduce the number
+of trees correspondingly.
+
+661
+00:34:52,673 --> 00:34:56,440
+
+662
+00:34:56,440 --> 00:34:58,500
+If there's only a
+constant number of nodes,
+
+663
+00:34:58,500 --> 00:35:00,483
+there will be a constant
+number of trees.
+
+664
+00:35:00,483 --> 00:35:03,380
+It doesn't matter that a
+constant gets exponentiated,
+
+665
+00:35:03,380 --> 00:35:06,020
+it'll still be constant.
+
+666
+00:35:06,020 --> 00:35:08,070
+So that's good news,
+except we bounded again
+
+667
+00:35:08,070 --> 00:35:10,910
+the number of leaves,
+not the number of nodes.
+
+668
+00:35:10,910 --> 00:35:13,960
+So we have to be a
+little bit careful,
+
+669
+00:35:13,960 --> 00:35:22,740
+because in particular we can
+have degree 2 junctions, which
+
+670
+00:35:22,740 --> 00:35:24,900
+are real junctions--
+they might look like this
+
+671
+00:35:24,900 --> 00:35:27,320
+where a vertex comes to an edge.
+
+672
+00:35:27,320 --> 00:35:29,600
+There's got to be
+about n of those,
+
+673
+00:35:29,600 --> 00:35:31,750
+because the vertices
+have to be somewhere.
+
+674
+00:35:31,750 --> 00:35:35,650
+We're saying there aren't
+very many at the leaves.
+
+675
+00:35:35,650 --> 00:35:38,080
+And therefore, at the degree
+three and higher junctions,
+
+676
+00:35:38,080 --> 00:35:40,059
+there can't be very many.
+
+677
+00:35:40,059 --> 00:35:41,600
+Maybe I haven't said
+this, but if you
+
+678
+00:35:41,600 --> 00:35:43,650
+have a tree with
+L leaves, you'll
+
+679
+00:35:43,650 --> 00:35:48,710
+only have at most L internal
+nodes, branching nodes.
+
+680
+00:35:48,710 --> 00:35:52,210
+But degree two nodes, there
+could be arbitrarily many.
+
+681
+00:35:52,210 --> 00:35:59,010
+So what we come to is, if
+I have L leaves in a tree,
+
+682
+00:35:59,010 --> 00:36:02,555
+then I'll only get 2
+to the order L gluings.
+
+683
+00:36:02,555 --> 00:36:03,805
+This is what we need to prove.
+
+684
+00:36:03,805 --> 00:36:08,122
+
+685
+00:36:08,122 --> 00:36:09,580
+It will tell us
+that in particular,
+
+686
+00:36:09,580 --> 00:36:11,270
+if we have a constant
+number of leaves,
+
+687
+00:36:11,270 --> 00:36:14,230
+as comes from the
+bounded sharpens case,
+
+688
+00:36:14,230 --> 00:36:17,400
+I will get-- constant
+number of gluings?
+
+689
+00:36:17,400 --> 00:36:19,980
+That's not right.
+
+690
+00:36:19,980 --> 00:36:24,520
+There's some polynomial
+on n times 2 to the order
+
+691
+00:36:24,520 --> 00:36:30,780
+L. Ah, that's why.
+
+692
+00:36:30,780 --> 00:36:35,590
+
+693
+00:36:35,590 --> 00:36:37,560
+I should look at my
+notes occasionally.
+
+694
+00:36:37,560 --> 00:36:39,440
+The right bound to
+n to the order L.
+
+695
+00:36:39,440 --> 00:36:42,710
+In fact, what I wrote
+is an open problem.
+
+696
+00:36:42,710 --> 00:36:47,920
+I think maybe it's n to the
+order 1 times 2 to the order L.
+
+697
+00:36:47,920 --> 00:36:51,886
+This is what you'd call a fixed
+parameter tractable bound,
+
+698
+00:36:51,886 --> 00:36:53,260
+but no such upper
+bound is known.
+
+699
+00:36:53,260 --> 00:36:55,426
+That might be fun to work
+on in the problem session.
+
+700
+00:36:55,426 --> 00:36:57,750
+It might not be difficult,
+just at the time
+
+701
+00:36:57,750 --> 00:36:59,500
+I didn't know those
+bounds were important.
+
+702
+00:36:59,500 --> 00:37:02,570
+
+703
+00:37:02,570 --> 00:37:05,220
+So we still have
+to prove this, n
+
+704
+00:37:05,220 --> 00:37:15,340
+to the order L. This is the
+part where my notes are wrong.
+
+705
+00:37:15,340 --> 00:37:20,707
+
+706
+00:37:20,707 --> 00:37:22,790
+Here's the idea, we have
+a small number of leaves,
+
+707
+00:37:22,790 --> 00:37:25,700
+we're worried about
+these degree 2 junctions.
+
+708
+00:37:25,700 --> 00:37:29,920
+But I claim, actually
+there isn't a lot going on.
+
+709
+00:37:29,920 --> 00:37:33,190
+
+710
+00:37:33,190 --> 00:37:35,050
+Because one of the
+great things we can do,
+
+711
+00:37:35,050 --> 00:37:38,390
+over here we said for
+every dot, was it a vertex
+
+712
+00:37:38,390 --> 00:37:39,215
+or was it an edge?
+
+713
+00:37:39,215 --> 00:37:42,140
+
+714
+00:37:42,140 --> 00:37:45,990
+We can't afford that anymore,
+because there's n dots still.
+
+715
+00:37:45,990 --> 00:37:48,380
+We can't afford
+2 to the order n.
+
+716
+00:37:48,380 --> 00:37:51,180
+Where we can afford it is at
+the leaves, because there's only
+
+717
+00:37:51,180 --> 00:37:54,720
+L of those, and at
+the branching nodes.
+
+718
+00:37:54,720 --> 00:37:58,820
+So everything except
+these degree 2 problems
+
+719
+00:37:58,820 --> 00:38:00,080
+we could specify.
+
+720
+00:38:00,080 --> 00:38:02,680
+And really we could
+specify anything we want.
+
+721
+00:38:02,680 --> 00:38:06,540
+So yeah, we could specify, is
+it a vertex or is it an edge?
+
+722
+00:38:06,540 --> 00:38:12,144
+But we could make
+life even easier-- hm,
+
+723
+00:38:12,144 --> 00:38:14,300
+I have an idea for
+solving this open problem.
+
+724
+00:38:14,300 --> 00:38:17,030
+Do I want to solve it right now?
+
+725
+00:38:17,030 --> 00:38:18,020
+Yeah, let's do it.
+
+726
+00:38:18,020 --> 00:38:22,110
+
+727
+00:38:22,110 --> 00:38:24,626
+Let me think for a second.
+
+728
+00:38:24,626 --> 00:38:26,410
+I think that's going to work.
+
+729
+00:38:26,410 --> 00:38:28,660
+OK, cool, cool.
+
+730
+00:38:28,660 --> 00:38:30,740
+I needed to rewrite
+these notes anyway,
+
+731
+00:38:30,740 --> 00:38:34,060
+so I might as well
+prove a stronger result.
+
+732
+00:38:34,060 --> 00:38:36,100
+All right, so let
+me draw a picture.
+
+733
+00:38:36,100 --> 00:38:41,787
+
+734
+00:38:41,787 --> 00:38:44,370
+There's branching nodes, and I
+surely draw one of these longer
+
+735
+00:38:44,370 --> 00:38:46,800
+so I can say, oh there's some
+degree two junctions here.
+
+736
+00:38:46,800 --> 00:38:49,140
+Those are annoying,
+ignore those.
+
+737
+00:38:49,140 --> 00:38:52,450
+For everything else-- the
+leaves and the branching
+
+738
+00:38:52,450 --> 00:38:56,030
+nodes-- I'm going to specify
+the same binary thing.
+
+739
+00:38:56,030 --> 00:38:58,490
+Is it a vertex,
+or is it an edge?
+
+740
+00:38:58,490 --> 00:39:01,660
+But now there's only
+order L of them.
+
+741
+00:39:01,660 --> 00:39:05,110
+There's L leaves, so there's at
+most L minus 1 internal nodes.
+
+742
+00:39:05,110 --> 00:39:09,210
+Each of them has some
+degree, but the total number
+
+743
+00:39:09,210 --> 00:39:14,010
+of these dots will be order
+L if I ignore the degree 2.
+
+744
+00:39:14,010 --> 00:39:22,820
+So that's 2 to the order
+L vertex edge colorings,
+
+745
+00:39:22,820 --> 00:39:30,070
+just like before
+except now with L,
+
+746
+00:39:30,070 --> 00:39:36,920
+of leaves and branching nodes.
+
+747
+00:39:36,920 --> 00:39:38,523
+Oh, I see the problem.
+
+748
+00:39:38,523 --> 00:39:39,023
+Darn it.
+
+749
+00:39:39,023 --> 00:39:44,230
+
+750
+00:39:44,230 --> 00:39:47,740
+What I'd like to do is mimic
+the same proof and say, well
+
+751
+00:39:47,740 --> 00:39:52,641
+choose where V1 is and then
+just label them around.
+
+752
+00:39:52,641 --> 00:39:54,140
+There's a problem
+with that, though.
+
+753
+00:39:54,140 --> 00:39:55,030
+Say V1 is here.
+
+754
+00:39:55,030 --> 00:39:57,960
+
+755
+00:39:57,960 --> 00:39:59,340
+Where's V2?
+
+756
+00:39:59,340 --> 00:40:01,930
+Well, maybe this is an
+edge, maybe this is an edge.
+
+757
+00:40:01,930 --> 00:40:03,460
+This, I have no idea.
+
+758
+00:40:03,460 --> 00:40:04,530
+Is it an edge?
+
+759
+00:40:04,530 --> 00:40:05,810
+Is it a vertex?
+
+760
+00:40:05,810 --> 00:40:07,360
+I can't tell.
+
+761
+00:40:07,360 --> 00:40:10,730
+At degree 2 junctions,
+I have a problem.
+
+762
+00:40:10,730 --> 00:40:13,270
+That's kind of annoying.
+
+763
+00:40:13,270 --> 00:40:18,170
+To fix that-- and so this is
+still going to be open, alas.
+
+764
+00:40:18,170 --> 00:40:23,370
+To fix that I need to-- I
+really want to know which dot
+
+765
+00:40:23,370 --> 00:40:27,590
+is which vertex for
+reasons to be determined.
+
+766
+00:40:27,590 --> 00:40:30,250
+But in particular, that
+is part of number two.
+
+767
+00:40:30,250 --> 00:40:33,480
+
+768
+00:40:33,480 --> 00:40:40,960
+So I'm just going to give
+up and say, well there's
+
+769
+00:40:40,960 --> 00:40:45,305
+2n different things that they
+could be, n vertices and edges.
+
+770
+00:40:45,305 --> 00:40:48,440
+
+771
+00:40:48,440 --> 00:40:51,730
+Do I want to do it that way?
+
+772
+00:40:51,730 --> 00:40:57,330
+Maybe n choose order L. I'm
+just going to write down
+
+773
+00:40:57,330 --> 00:41:01,290
+wherever I have a filled dot--
+I guess this one is not filled.
+
+774
+00:41:01,290 --> 00:41:03,691
+Maybe this one's filled, filled.
+
+775
+00:41:03,691 --> 00:41:06,190
+I just going to write down,
+what is the vertex number there?
+
+776
+00:41:06,190 --> 00:41:16,980
+This is maybe V3, V5,
+V20, V21, whatever,
+
+777
+00:41:16,980 --> 00:41:18,990
+for each of the filled
+dots among the vertices
+
+778
+00:41:18,990 --> 00:41:23,350
+that I can see, ignoring again
+the degree two junctions.
+
+779
+00:41:23,350 --> 00:41:26,465
+There's order L of them.
+
+780
+00:41:26,465 --> 00:41:30,541
+I just going to for each one
+pick out one of the labels.
+
+781
+00:41:30,541 --> 00:41:32,500
+Again, the order is
+determined, so this
+
+782
+00:41:32,500 --> 00:41:34,060
+is the right number of them.
+
+783
+00:41:34,060 --> 00:41:39,770
+And this is n to
+the order L at most.
+
+784
+00:41:39,770 --> 00:41:41,687
+So this is where I'm
+being a bit wasteful.
+
+785
+00:41:41,687 --> 00:41:43,770
+It would be interesting
+to try to get around that.
+
+786
+00:41:43,770 --> 00:41:46,800
+
+787
+00:41:46,800 --> 00:41:48,955
+This was actual
+vertex labelings.
+
+788
+00:41:48,955 --> 00:41:55,540
+
+789
+00:41:55,540 --> 00:41:58,700
+So now, among the
+vertices I can see--
+
+790
+00:41:58,700 --> 00:42:01,990
+the degree three
+junctions, and the leaves,
+
+791
+00:42:01,990 --> 00:42:04,569
+and higher degree
+junctions-- I know
+
+792
+00:42:04,569 --> 00:42:05,860
+which vertices are glued there.
+
+793
+00:42:05,860 --> 00:42:09,825
+I can also figure out
+which edges are glued there
+
+794
+00:42:09,825 --> 00:42:14,216
+by similar labeling, although
+I don't think I actually care.
+
+795
+00:42:14,216 --> 00:42:19,110
+No, I probably care, because
+it's part of number 2.
+
+796
+00:42:19,110 --> 00:42:22,610
+So I do have to also label
+the open circles which
+
+797
+00:42:22,610 --> 00:42:24,650
+edge is there.
+
+798
+00:42:24,650 --> 00:42:28,390
+But a similar bound holds.
+
+799
+00:42:28,390 --> 00:42:28,905
+What's left?
+
+800
+00:42:28,905 --> 00:42:33,060
+
+801
+00:42:33,060 --> 00:42:35,176
+What's left are the
+degree 2 vertices.
+
+802
+00:42:35,176 --> 00:42:36,550
+I don't know
+anything about them.
+
+803
+00:42:36,550 --> 00:42:40,190
+
+804
+00:42:40,190 --> 00:42:46,830
+This is particularly tricky
+when I have some edge here.
+
+805
+00:42:46,830 --> 00:42:48,690
+But let's first
+think about the case
+
+806
+00:42:48,690 --> 00:42:53,490
+where I have a
+vertex, add a leaf,
+
+807
+00:42:53,490 --> 00:42:57,640
+and I have these
+degree two junctions.
+
+808
+00:42:57,640 --> 00:43:00,892
+And I don't know which edge
+is here, which vertex is here.
+
+809
+00:43:00,892 --> 00:43:02,600
+In this case, because
+everything's small,
+
+810
+00:43:02,600 --> 00:43:03,850
+I might be able to figure out.
+
+811
+00:43:03,850 --> 00:43:07,460
+But here, where's the
+V3 to V4 transition?
+
+812
+00:43:07,460 --> 00:43:10,400
+Could be here, or
+it could be here.
+
+813
+00:43:10,400 --> 00:43:12,540
+It could be here.
+
+814
+00:43:12,540 --> 00:43:15,830
+I can't afford to figure it out.
+
+815
+00:43:15,830 --> 00:43:20,220
+Fortunately, I don't
+have to figure it out.
+
+816
+00:43:20,220 --> 00:43:21,080
+It's not so obvious.
+
+817
+00:43:21,080 --> 00:43:23,420
+From this picture you
+can't see what's going on,
+
+818
+00:43:23,420 --> 00:43:26,020
+but this came from a polygon.
+
+819
+00:43:26,020 --> 00:43:29,790
+This is an actual vertex,
+this is an actual vertex.
+
+820
+00:43:29,790 --> 00:43:36,950
+So this edge length is the
+total perimeter from V3 to V5
+
+821
+00:43:36,950 --> 00:43:39,190
+along the polygon.
+
+822
+00:43:39,190 --> 00:43:42,540
+I know how long that is.
+
+823
+00:43:42,540 --> 00:43:48,260
+So also if that was
+going clockwise from V3
+
+824
+00:43:48,260 --> 00:43:49,822
+around the polygon--
+actually, that's
+
+825
+00:43:49,822 --> 00:43:51,530
+probably counter-clockwise
+in the polygon
+
+826
+00:43:51,530 --> 00:43:52,920
+because everything's inside out.
+
+827
+00:43:52,920 --> 00:43:56,755
+If I go the other way--
+let's be relative-- from V3,
+
+828
+00:43:56,755 --> 00:44:00,060
+I can measure out
+the same length.
+
+829
+00:44:00,060 --> 00:44:02,020
+So in fact, I have
+some polygon-- maybe
+
+830
+00:44:02,020 --> 00:44:03,550
+it looks like this, whatever.
+
+831
+00:44:03,550 --> 00:44:10,770
+I go from V3 to V5, and I
+measure out that length.
+
+832
+00:44:10,770 --> 00:44:13,970
+And I go the other
+way from V3, and I
+
+833
+00:44:13,970 --> 00:44:17,410
+know this is getting
+glued to that.
+
+834
+00:44:17,410 --> 00:44:23,270
+So I know where the vertices
+are from the lengths.
+
+835
+00:44:23,270 --> 00:44:25,770
+I can figure out exactly
+what this picture must
+
+836
+00:44:25,770 --> 00:44:27,814
+be when I have-- in
+this case, I happen
+
+837
+00:44:27,814 --> 00:44:29,730
+to maybe get a vertex
+going to another vertex.
+
+838
+00:44:29,730 --> 00:44:33,810
+In general, probably get some
+vertex gluing to some edge,
+
+839
+00:44:33,810 --> 00:44:35,492
+and maybe vice versa.
+
+840
+00:44:35,492 --> 00:44:37,700
+But if I can figure out
+exactly what that pattern is,
+
+841
+00:44:37,700 --> 00:44:42,160
+I can figure out the
+label of these guys,
+
+842
+00:44:42,160 --> 00:44:45,515
+because I know exactly
+what's happening there.
+
+843
+00:44:45,515 --> 00:44:46,140
+So that's good.
+
+844
+00:44:46,140 --> 00:44:54,420
+If it's a vertex to vertex edge
+in the gluing tree like this,
+
+845
+00:44:54,420 --> 00:44:57,960
+I can figure out everything
+between that pair.
+
+846
+00:44:57,960 --> 00:45:07,986
+
+847
+00:45:07,986 --> 00:45:10,237
+Is that enough?
+
+848
+00:45:10,237 --> 00:45:10,736
+Almost.
+
+849
+00:45:10,736 --> 00:45:17,300
+
+850
+00:45:17,300 --> 00:45:21,616
+So if I have a leaf where
+this is a vertex, which
+
+851
+00:45:21,616 --> 00:45:25,760
+I was usually denoting
+by a filled circle,
+
+852
+00:45:25,760 --> 00:45:27,200
+I have various
+degree 2 junctions
+
+853
+00:45:27,200 --> 00:45:31,000
+which I ignore until I get
+to a degree three or higher
+
+854
+00:45:31,000 --> 00:45:33,100
+junction.
+
+855
+00:45:33,100 --> 00:45:36,920
+Now at this place,
+even just looking
+
+856
+00:45:36,920 --> 00:45:40,490
+at this dot and this dot,
+I know at least one of them
+
+857
+00:45:40,490 --> 00:45:41,330
+must be a vertex.
+
+858
+00:45:41,330 --> 00:45:44,940
+Because I can't glue two edges
+together plus other stuff.
+
+859
+00:45:44,940 --> 00:45:46,110
+I can glue at most one edge.
+
+860
+00:45:46,110 --> 00:45:48,310
+So maybe this one's an
+edge, like in the picture
+
+861
+00:45:48,310 --> 00:45:49,860
+that we did before.
+
+862
+00:45:49,860 --> 00:45:51,330
+But one of them
+has to be a vertex.
+
+863
+00:45:51,330 --> 00:45:54,270
+And then I can figure out
+exactly what's happening there,
+
+864
+00:45:54,270 --> 00:45:56,220
+because I have this
+vertex to vertex thing.
+
+865
+00:45:56,220 --> 00:45:57,270
+And I know the labels.
+
+866
+00:45:57,270 --> 00:46:01,384
+I know this is V5 and
+this is V13, whatever.
+
+867
+00:46:01,384 --> 00:46:03,550
+I know exactly what's
+happening on the right side, I
+
+868
+00:46:03,550 --> 00:46:05,060
+measure backwards, I
+know exactly what's
+
+869
+00:46:05,060 --> 00:46:07,270
+happening on the left side
+and who's going to what.
+
+870
+00:46:07,270 --> 00:46:09,850
+So that determines everything.
+
+871
+00:46:09,850 --> 00:46:15,410
+The problem is when
+I have an edge here,
+
+872
+00:46:15,410 --> 00:46:17,870
+because then I don't know
+where it is along the edge.
+
+873
+00:46:17,870 --> 00:46:20,417
+I can't measure lengths
+anymore, somewhere
+
+874
+00:46:20,417 --> 00:46:21,500
+in the middle of the edge.
+
+875
+00:46:21,500 --> 00:46:24,390
+
+876
+00:46:24,390 --> 00:46:32,510
+And indeed, if I have
+something like this,
+
+877
+00:46:32,510 --> 00:46:35,190
+where all of these angles--
+I mean this for example
+
+878
+00:46:35,190 --> 00:46:40,530
+is in a convex polygon, this
+could be a perimeter halving--
+
+879
+00:46:40,530 --> 00:46:43,020
+and it's not determined
+what's happening here
+
+880
+00:46:43,020 --> 00:46:46,360
+because this is a rolling belt.
+
+881
+00:46:46,360 --> 00:46:48,230
+I'll show you how
+undetermined it is.
+
+882
+00:46:48,230 --> 00:46:51,610
+Suppose you have a bunch
+of vertices like this,
+
+883
+00:46:51,610 --> 00:46:58,190
+and then some
+vertices like this.
+
+884
+00:46:58,190 --> 00:47:02,470
+Depending on where I
+bend around for E5,
+
+885
+00:47:02,470 --> 00:47:04,450
+these guys could be here.
+
+886
+00:47:04,450 --> 00:47:07,480
+They could be here,
+or here, or here.
+
+887
+00:47:07,480 --> 00:47:12,220
+They could be in the
+middle straddling this.
+
+888
+00:47:12,220 --> 00:47:17,220
+In fact, there are about
+n squared different places
+
+889
+00:47:17,220 --> 00:47:20,280
+where these guys could be,
+relative to these guys.
+
+890
+00:47:20,280 --> 00:47:23,870
+Because there's going to be n
+transitions from-- if this is n
+
+891
+00:47:23,870 --> 00:47:28,000
+and this is n-- n transitions
+from this versus that guy,
+
+892
+00:47:28,000 --> 00:47:30,380
+then n transitions from
+these versus that guy,
+
+893
+00:47:30,380 --> 00:47:35,030
+n transitions versus that
+guy, total of about n squared.
+
+894
+00:47:35,030 --> 00:47:38,940
+Actually if this is n and this
+is n, it's exactly n squared.
+
+895
+00:47:38,940 --> 00:47:41,190
+So we're not quite
+done, but I claim
+
+896
+00:47:41,190 --> 00:47:43,720
+that there's really only
+order n squared left.
+
+897
+00:47:43,720 --> 00:47:45,520
+It's always from
+the rolling belts.
+
+898
+00:47:45,520 --> 00:47:50,870
+We know from last time there's
+at most three rolling belts,
+
+899
+00:47:50,870 --> 00:47:53,550
+so at most quadratic per belt.
+
+900
+00:47:53,550 --> 00:47:59,160
+So total outcome is
+polynomial for what's
+
+901
+00:47:59,160 --> 00:48:02,480
+left, what we haven't specified,
+for how the degree 2 vertices
+
+902
+00:48:02,480 --> 00:48:03,020
+behave.
+
+903
+00:48:03,020 --> 00:48:05,210
+These are all
+degree 2 junctions.
+
+904
+00:48:05,210 --> 00:48:09,176
+It's here, or they're
+here, we don't know.
+
+905
+00:48:09,176 --> 00:48:12,540
+So if you want to get the full
+specification of what's where,
+
+906
+00:48:12,540 --> 00:48:14,157
+you do all this work.
+
+907
+00:48:14,157 --> 00:48:15,740
+And then for the
+degree two junctions,
+
+908
+00:48:15,740 --> 00:48:18,212
+you have to deal with
+the rolling belts.
+
+909
+00:48:18,212 --> 00:48:19,670
+The way to prove
+this is say, well,
+
+910
+00:48:19,670 --> 00:48:22,690
+if I have a leaf that's a
+vertex, I can get rid of it
+
+911
+00:48:22,690 --> 00:48:24,010
+and induct.
+
+912
+00:48:24,010 --> 00:48:26,520
+In the end, I'll have
+at most four leaves
+
+913
+00:48:26,520 --> 00:48:28,940
+because there's at
+most four fold points.
+
+914
+00:48:28,940 --> 00:48:32,310
+So I have a constant
+number of leaves.
+
+915
+00:48:32,310 --> 00:48:33,900
+You look at each
+belt, each of them
+
+916
+00:48:33,900 --> 00:48:39,520
+is quadratic and polynomial.
+
+917
+00:48:39,520 --> 00:48:41,370
+If you work out the
+bounds here-- we've
+
+918
+00:48:41,370 --> 00:48:43,170
+tried to be a little
+more precise--
+
+919
+00:48:43,170 --> 00:48:49,380
+you could prove an overall
+bound of n to the 2L minus 2
+
+920
+00:48:49,380 --> 00:48:50,080
+for L leaves.
+
+921
+00:48:50,080 --> 00:48:52,720
+
+922
+00:48:52,720 --> 00:48:55,830
+And we have slightly better
+bounds for L equals 4
+
+923
+00:48:55,830 --> 00:49:01,870
+and L equals 3, but
+that's pretty good.
+
+924
+00:49:01,870 --> 00:49:05,410
+But the proof I gave is
+at least n to the order L.
+
+925
+00:49:05,410 --> 00:49:09,270
+We could n to the order L
+count different things here,
+
+926
+00:49:09,270 --> 00:49:11,710
+and then some N to the
+constant at the end.
+
+927
+00:49:11,710 --> 00:49:17,700
+
+928
+00:49:17,700 --> 00:49:19,830
+This ends the
+combinatorial part.
+
+929
+00:49:19,830 --> 00:49:22,320
+Now we're going to
+get to algorithms.
+
+930
+00:49:22,320 --> 00:49:24,920
+So we've proved all
+of these things.
+
+931
+00:49:24,920 --> 00:49:26,570
+Exponential upper
+and lower bounds
+
+932
+00:49:26,570 --> 00:49:28,790
+for the general case
+and edge-to-edge case,
+
+933
+00:49:28,790 --> 00:49:32,300
+and polynomial for
+bounded sharpness,
+
+934
+00:49:32,300 --> 00:49:35,250
+or when you have a reasonable
+number of leaves in your tree.
+
+935
+00:49:35,250 --> 00:50:07,800
+
+936
+00:50:07,800 --> 00:50:14,440
+I'm going to start with this
+edge-to-edge gluing algorithm.
+
+937
+00:50:14,440 --> 00:50:31,640
+
+938
+00:50:31,640 --> 00:50:38,850
+This is going to use a technique
+called dynamic programming,
+
+939
+00:50:38,850 --> 00:50:43,090
+which some of you have seen
+before, some of you haven't.
+
+940
+00:50:43,090 --> 00:50:44,690
+It's a very simple idea.
+
+941
+00:50:44,690 --> 00:50:46,220
+You take your
+problem that you want
+
+942
+00:50:46,220 --> 00:50:48,400
+to solve-- which is
+I have a polygon--
+
+943
+00:50:48,400 --> 00:50:51,646
+and you split it up
+into sub-problems.
+
+944
+00:50:51,646 --> 00:50:54,330
+You solve each of
+the sub-problems,
+
+945
+00:50:54,330 --> 00:50:57,070
+and one of the sub-problems
+is actually the whole problem,
+
+946
+00:50:57,070 --> 00:50:59,000
+and then you're done.
+
+947
+00:50:59,000 --> 00:51:01,580
+In our case, a
+sub-problem is going
+
+948
+00:51:01,580 --> 00:51:05,450
+to be some sub-chain
+from one vertex
+
+949
+00:51:05,450 --> 00:51:08,750
+to another vertex
+of the polygon.
+
+950
+00:51:08,750 --> 00:51:15,180
+
+951
+00:51:15,180 --> 00:51:18,140
+So I have some
+polygon, and I just
+
+952
+00:51:18,140 --> 00:51:25,560
+look at some interval of
+the boundary from VI to VJ.
+
+953
+00:51:25,560 --> 00:51:31,230
+And the idea is, well suppose
+that VI is glued to VJ.
+
+954
+00:51:31,230 --> 00:51:33,570
+How many different
+ways, or how should I
+
+955
+00:51:33,570 --> 00:51:34,670
+glue the part in between?
+
+956
+00:51:34,670 --> 00:51:38,040
+
+957
+00:51:38,040 --> 00:51:40,049
+How should I glue
+this into itself?
+
+958
+00:51:40,049 --> 00:51:41,590
+Because there's no
+crossings, there's
+
+959
+00:51:41,590 --> 00:51:45,400
+going to be no gluings
+from inside to outside.
+
+960
+00:51:45,400 --> 00:51:47,010
+So that's the sub-problem.
+
+961
+00:51:47,010 --> 00:51:53,200
+And of course if I say from
+the interval from V1 to V1,
+
+962
+00:51:53,200 --> 00:51:55,000
+that is the entire problem.
+
+963
+00:51:55,000 --> 00:51:56,940
+Of course V1 is glued to V1.
+
+964
+00:51:56,940 --> 00:52:02,480
+So in particular, the
+V1 to V1 sub-problem
+
+965
+00:52:02,480 --> 00:52:05,240
+is what we want to solve.
+
+966
+00:52:05,240 --> 00:52:08,049
+So this is our goal.
+
+967
+00:52:08,049 --> 00:52:09,590
+So I'm going to tell
+you how to solve
+
+968
+00:52:09,590 --> 00:52:11,256
+all of these sub-problems,
+and therefore
+
+969
+00:52:11,256 --> 00:52:13,460
+how to solve what we
+actually want to solve.
+
+970
+00:52:13,460 --> 00:52:17,030
+That's dynamic programming.
+
+971
+00:52:17,030 --> 00:52:22,492
+So let's try to solve one of
+these sub-problems, VI to VJ.
+
+972
+00:52:22,492 --> 00:52:23,700
+How are we going to solve it?
+
+973
+00:52:23,700 --> 00:52:27,210
+
+974
+00:52:27,210 --> 00:52:31,400
+So I'm going to draw a picture.
+
+975
+00:52:31,400 --> 00:52:33,289
+It looks like this.
+
+976
+00:52:33,289 --> 00:52:35,080
+This is now thinking
+about the gluing tree,
+
+977
+00:52:35,080 --> 00:52:38,570
+so the polygon's on
+the outside here.
+
+978
+00:52:38,570 --> 00:52:41,460
+That's one of the main reasons
+gluing trees were developed,
+
+979
+00:52:41,460 --> 00:52:42,950
+just to describe this algorithm.
+
+980
+00:52:42,950 --> 00:52:45,040
+This algorthim's
+actually quite old,
+
+981
+00:52:45,040 --> 00:52:48,530
+1996 by [INAUDIBLE]
+and [INAUDIBLE].
+
+982
+00:52:48,530 --> 00:52:51,470
+The edge-to-edge case was
+before I joined this group.
+
+983
+00:52:51,470 --> 00:52:54,604
+And then later together
+we did the general case,
+
+984
+00:52:54,604 --> 00:52:56,645
+unbounded sharpness, which
+is what we'll do next.
+
+985
+00:52:56,645 --> 00:52:59,237
+
+986
+00:52:59,237 --> 00:53:00,820
+So this is at the
+heart of everything.
+
+987
+00:53:00,820 --> 00:53:03,670
+So we have VO to
+VJ glued together.
+
+988
+00:53:03,670 --> 00:53:07,120
+We want to know how to
+glue together the rest.
+
+989
+00:53:07,120 --> 00:53:10,790
+Well, maybe some vertices
+get glued in here in addition
+
+990
+00:53:10,790 --> 00:53:15,390
+to VI and VJ, maybe not.
+
+991
+00:53:15,390 --> 00:53:18,110
+Let's think about what
+gets glued to this edge.
+
+992
+00:53:18,110 --> 00:53:21,129
+There's the edge
+from VI to VI plus 1.
+
+993
+00:53:21,129 --> 00:53:22,920
+And this is an edge-to-edge
+gluing, so what
+
+994
+00:53:22,920 --> 00:53:24,780
+gets glued there
+is an actual edge.
+
+995
+00:53:24,780 --> 00:53:27,290
+
+996
+00:53:27,290 --> 00:53:28,320
+What edge could it be?
+
+997
+00:53:28,320 --> 00:53:32,756
+Some edge over here, I
+don't know which one.
+
+998
+00:53:32,756 --> 00:53:34,450
+The power of the
+dynamic programming
+
+999
+00:53:34,450 --> 00:53:35,830
+is you don't need to know.
+
+1000
+00:53:35,830 --> 00:53:40,990
+It's some edge, VK, VK
+plus 1 gets glued there.
+
+1001
+00:53:40,990 --> 00:53:44,420
+
+1002
+00:53:44,420 --> 00:53:47,210
+There's only one of them,
+it's out there somewhere.
+
+1003
+00:53:47,210 --> 00:53:48,906
+It has to have
+matching edge length,
+
+1004
+00:53:48,906 --> 00:53:50,780
+but there could be many
+choices, all of which
+
+1005
+00:53:50,780 --> 00:53:51,863
+have matching edge length.
+
+1006
+00:53:51,863 --> 00:53:53,720
+Maybe all the edge
+lengths are the same,
+
+1007
+00:53:53,720 --> 00:54:05,050
+but there's at most n
+choices for that edge.
+
+1008
+00:54:05,050 --> 00:54:08,440
+It's actually at most J
+minus I choices plus 1.
+
+1009
+00:54:08,440 --> 00:54:12,216
+But there's at most
+n edges in here,
+
+1010
+00:54:12,216 --> 00:54:14,090
+so there's at most n
+different possibilities.
+
+1011
+00:54:14,090 --> 00:54:16,320
+Just try them all.
+
+1012
+00:54:16,320 --> 00:54:18,140
+Think about all of them.
+
+1013
+00:54:18,140 --> 00:54:20,410
+I haven't said here whether
+I'm doing-- or I have?
+
+1014
+00:54:20,410 --> 00:54:22,462
+I guess I've been pointing here.
+
+1015
+00:54:22,462 --> 00:54:24,670
+I really want to do both of
+these algorithms at once,
+
+1016
+00:54:24,670 --> 00:54:27,710
+but I'll start with this
+one, which is just find
+
+1017
+00:54:27,710 --> 00:54:29,630
+all the gluings in
+exponential time, which
+
+1018
+00:54:29,630 --> 00:54:31,380
+is optimal in the worst
+case because there
+
+1019
+00:54:31,380 --> 00:54:32,796
+can be exponentially
+many outputs.
+
+1020
+00:54:32,796 --> 00:54:36,830
+
+1021
+00:54:36,830 --> 00:54:40,520
+So try all n choices
+for VK VK plus 1.
+
+1022
+00:54:40,520 --> 00:54:42,910
+What happens when
+I do one of them?
+
+1023
+00:54:42,910 --> 00:54:44,070
+I might choose one of them.
+
+1024
+00:54:44,070 --> 00:54:49,070
+
+1025
+00:54:49,070 --> 00:54:59,690
+Well, the new picture will
+be-- so the topological picture
+
+1026
+00:54:59,690 --> 00:55:02,900
+is I still have VI glued to VJ.
+
+1027
+00:55:02,900 --> 00:55:05,500
+
+1028
+00:55:05,500 --> 00:55:12,520
+Then I also have here VK and
+VI plus 1 glued together.
+
+1029
+00:55:12,520 --> 00:55:17,839
+And I have VI also
+glued to VK plus 1.
+
+1030
+00:55:17,839 --> 00:55:19,630
+Now it's possible
+actually VK plus 1 and VJ
+
+1031
+00:55:19,630 --> 00:55:22,364
+are the same thing, in which
+case there's no loop here.
+
+1032
+00:55:22,364 --> 00:55:24,030
+And that's the case
+when no extra vertex
+
+1033
+00:55:24,030 --> 00:55:25,210
+got glued in there.
+
+1034
+00:55:25,210 --> 00:55:28,766
+But this is the
+generic situation.
+
+1035
+00:55:28,766 --> 00:55:32,640
+If this is link 0, then
+these guys are the same.
+
+1036
+00:55:32,640 --> 00:55:36,030
+So really what I have now are
+two different sub-problems.
+
+1037
+00:55:36,030 --> 00:55:41,020
+There's this thing, which
+is VI plus 1, dot, dot, VK.
+
+1038
+00:55:41,020 --> 00:55:45,185
+And there's this one which
+is VK plus 1 dot, dot, VJ.
+
+1039
+00:55:45,185 --> 00:55:48,260
+
+1040
+00:55:48,260 --> 00:55:49,870
+The idea with the
+sub-problems is
+
+1041
+00:55:49,870 --> 00:55:51,620
+to solve the
+sub-problems in order
+
+1042
+00:55:51,620 --> 00:55:54,040
+by increasing chain length.
+
+1043
+00:55:54,040 --> 00:55:56,520
+So start with very short ones.
+
+1044
+00:55:56,520 --> 00:55:59,360
+And I saw longer and longer
+ones using the previous results.
+
+1045
+00:55:59,360 --> 00:56:01,660
+If I've already
+computed the answers
+
+1046
+00:56:01,660 --> 00:56:04,476
+to VK plus 1 to VJ
+because that is smaller
+
+1047
+00:56:04,476 --> 00:56:05,850
+than the original--
+look, there's
+
+1048
+00:56:05,850 --> 00:56:07,980
+two edges fewer at least.
+
+1049
+00:56:07,980 --> 00:56:10,630
+This thing is at least 2
+smaller than the original chain
+
+1050
+00:56:10,630 --> 00:56:12,220
+because here's two edges.
+
+1051
+00:56:12,220 --> 00:56:14,020
+So I wanted to solve VI to VJ.
+
+1052
+00:56:14,020 --> 00:56:17,190
+I guessed what VK
+to VK plus 1 was,
+
+1053
+00:56:17,190 --> 00:56:19,674
+meaning I tried all the
+possibilities for each one.
+
+1054
+00:56:19,674 --> 00:56:21,840
+I say, well what are all
+the possibilities for this?
+
+1055
+00:56:21,840 --> 00:56:24,120
+What are all the
+possibilities for this?
+
+1056
+00:56:24,120 --> 00:56:25,840
+Take the cross-product.
+
+1057
+00:56:25,840 --> 00:56:28,000
+Just multiply those
+sets together.
+
+1058
+00:56:28,000 --> 00:56:30,250
+Those are all the
+possible gluings.
+
+1059
+00:56:30,250 --> 00:56:31,550
+And then I sum that.
+
+1060
+00:56:31,550 --> 00:56:37,880
+I take all the options for
+all the different values of K.
+
+1061
+00:56:37,880 --> 00:56:39,510
+And that's it.
+
+1062
+00:56:39,510 --> 00:56:43,524
+That output is all
+the possible gluings.
+
+1063
+00:56:43,524 --> 00:56:45,190
+So this should actually
+give another way
+
+1064
+00:56:45,190 --> 00:56:47,100
+to prove that the number
+of different gluings
+
+1065
+00:56:47,100 --> 00:56:51,460
+is only exponential, but this is
+just for the edge-to-edge case.
+
+1066
+00:56:51,460 --> 00:56:55,210
+
+1067
+00:56:55,210 --> 00:56:57,770
+Maybe I should write that down.
+
+1068
+00:56:57,770 --> 00:57:09,520
+So we have for each
+choice of K output--
+
+1069
+00:57:09,520 --> 00:57:18,160
+let's say, and for each
+solution to the smaller
+
+1070
+00:57:18,160 --> 00:57:20,780
+sub-problem VK plus 1 to VJ.
+
+1071
+00:57:20,780 --> 00:57:35,687
+And then for each solution
+to VK plus 1 to VK output.
+
+1072
+00:57:35,687 --> 00:57:36,520
+This is very simple.
+
+1073
+00:57:36,520 --> 00:57:39,690
+This is just a product
+over various things.
+
+1074
+00:57:39,690 --> 00:57:45,110
+There's only order
+n choices here.
+
+1075
+00:57:45,110 --> 00:57:47,190
+This thing, it depends
+how many solutions there
+
+1076
+00:57:47,190 --> 00:57:51,360
+are to those sub-problems, but
+it's the product of the two.
+
+1077
+00:57:51,360 --> 00:57:56,470
+And then that's
+the total output.
+
+1078
+00:57:56,470 --> 00:57:59,550
+Believe me, this runs
+in exponential time.
+
+1079
+00:57:59,550 --> 00:58:01,226
+That's not very hard to prove.
+
+1080
+00:58:01,226 --> 00:58:02,600
+What's interesting
+is we can make
+
+1081
+00:58:02,600 --> 00:58:06,330
+the same algorithm with
+a little bit of tweaking
+
+1082
+00:58:06,330 --> 00:58:08,780
+get a polynomial time
+decision algorithm.
+
+1083
+00:58:08,780 --> 00:58:11,580
+
+1084
+00:58:11,580 --> 00:58:13,510
+That's cool.
+
+1085
+00:58:13,510 --> 00:58:17,670
+How do we make it a
+polynomial decision algorithm?
+
+1086
+00:58:17,670 --> 00:58:20,850
+I can't afford to store every
+solution for every sub-problem
+
+1087
+00:58:20,850 --> 00:58:22,720
+because there can be
+exponentially many.
+
+1088
+00:58:22,720 --> 00:58:26,055
+So I only get to store one
+solution for every sub-problem.
+
+1089
+00:58:26,055 --> 00:58:28,780
+
+1090
+00:58:28,780 --> 00:58:29,970
+So this is the great idea.
+
+1091
+00:58:29,970 --> 00:58:35,870
+
+1092
+00:58:35,870 --> 00:58:55,330
+Let's say for each sub-problem,
+let's say VI to VK only store
+
+1093
+00:58:55,330 --> 00:59:01,490
+the solution that
+minimizes the amount
+
+1094
+00:59:01,490 --> 00:59:03,670
+of stuff glued into VI VJ.
+
+1095
+00:59:03,670 --> 00:59:09,760
+
+1096
+00:59:09,760 --> 00:59:16,940
+So the sum of the
+angles glued at VI,
+
+1097
+00:59:16,940 --> 00:59:21,690
+which is the same thing as
+VJ because they are already
+
+1098
+00:59:21,690 --> 00:59:23,770
+glued together.
+
+1099
+00:59:23,770 --> 00:59:25,310
+That's what we were told.
+
+1100
+00:59:25,310 --> 00:59:27,340
+So I had many choices here.
+
+1101
+00:59:27,340 --> 00:59:30,580
+I had all the choices for
+K. I had all the choices
+
+1102
+00:59:30,580 --> 00:59:31,554
+for up here.
+
+1103
+00:59:31,554 --> 00:59:32,970
+I had all the
+choices for up here.
+
+1104
+00:59:32,970 --> 00:59:35,511
+Well actually now I'm just going
+to think about one choice up
+
+1105
+00:59:35,511 --> 00:59:37,690
+here, which is what
+is the choice that
+
+1106
+00:59:37,690 --> 00:59:40,100
+minimizes the angle glued here?
+
+1107
+00:59:40,100 --> 00:59:41,760
+And what is the
+choice over here that
+
+1108
+00:59:41,760 --> 00:59:44,150
+minimizes the angle glued there?
+
+1109
+00:59:44,150 --> 00:59:45,300
+Why the minimum?
+
+1110
+00:59:45,300 --> 00:59:47,640
+Because some of these are wrong.
+
+1111
+00:59:47,640 --> 00:59:51,770
+I should actually say
+output if it's Alexandroff.
+
+1112
+00:59:51,770 --> 00:59:53,990
+We only want to output
+Alexandroff gluings.
+
+1113
+00:59:53,990 --> 00:59:55,550
+We only want to
+output gluings where
+
+1114
+00:59:55,550 --> 00:59:58,030
+the total sum of the angles
+is less than or equal to 360.
+
+1115
+00:59:58,030 --> 01:00:02,570
+I need to check
+that for every one.
+
+1116
+01:00:02,570 --> 01:00:05,760
+If I want to have the most
+chance of it being Alexandroff,
+
+1117
+01:00:05,760 --> 01:00:08,520
+if I got the least possible
+angle glued here and glued
+
+1118
+01:00:08,520 --> 01:00:11,030
+here, that's my best
+hope of it working.
+
+1119
+01:00:11,030 --> 01:00:14,200
+Now I still have flexibility,
+which is I get to choose k.
+
+1120
+01:00:14,200 --> 01:00:17,080
+There's still n choices
+for k, but everything else
+
+1121
+01:00:17,080 --> 01:00:19,010
+is determined at that point.
+
+1122
+01:00:19,010 --> 01:00:23,230
+Once I fix K I see, well
+does this work, yes or no?
+
+1123
+01:00:23,230 --> 01:00:26,060
+If it works, that
+gives me one candidate
+
+1124
+01:00:26,060 --> 01:00:28,219
+for how much material
+gets glued here.
+
+1125
+01:00:28,219 --> 01:00:29,760
+It could be a lot,
+could be a little.
+
+1126
+01:00:29,760 --> 01:00:32,980
+I try for all K, I
+take the smallest one.
+
+1127
+01:00:32,980 --> 01:00:36,510
+So it's the same loop, except
+there's no four loops here.
+
+1128
+01:00:36,510 --> 01:00:38,250
+It's just for every
+choice of K, I
+
+1129
+01:00:38,250 --> 01:00:41,990
+look at the solution to VK plus
+1 to VJ, the solution for VI
+
+1130
+01:00:41,990 --> 01:00:43,360
+plus 1 to VK.
+
+1131
+01:00:43,360 --> 01:00:45,750
+If it's Alexandroff,
+I don't output it.
+
+1132
+01:00:45,750 --> 01:00:50,210
+But I check, is it the best
+solution so far in terms
+
+1133
+01:00:50,210 --> 01:00:54,650
+of the total angle
+glued of VI and VJ.
+
+1134
+01:00:54,650 --> 01:00:57,220
+I keep looping until I
+find the very best one,
+
+1135
+01:00:57,220 --> 01:00:59,100
+and I output that one.
+
+1136
+01:00:59,100 --> 01:01:03,050
+That would be the
+solution that I store.
+
+1137
+01:01:03,050 --> 01:01:08,200
+The result is, the running
+time is actually polynomial,
+
+1138
+01:01:08,200 --> 01:01:12,430
+because the number of
+sub-problems-- a sub-problem
+
+1139
+01:01:12,430 --> 01:01:14,380
+is determined by two vertices.
+
+1140
+01:01:14,380 --> 01:01:16,300
+There's only n of
+these, n of these.
+
+1141
+01:01:16,300 --> 01:01:20,540
+So the number of
+sub-problems is n squared.
+
+1142
+01:01:20,540 --> 01:01:28,040
+For each sub-problem I need to
+look at order n choices for K.
+
+1143
+01:01:28,040 --> 01:01:30,770
+And so the total
+running time is n
+
+1144
+01:01:30,770 --> 01:01:37,450
+squared times n,
+which is n cubed.
+
+1145
+01:01:37,450 --> 01:01:39,130
+And that will tell
+you if there's
+
+1146
+01:01:39,130 --> 01:01:41,620
+any hope of anything
+working, if there's
+
+1147
+01:01:41,620 --> 01:01:46,480
+any gluing this will find
+one, because it's always
+
+1148
+01:01:46,480 --> 01:01:53,342
+trying to minimize the angles
+that get glued together
+
+1149
+01:01:53,342 --> 01:01:54,300
+That's is edge-to-edge.
+
+1150
+01:01:54,300 --> 01:01:59,530
+
+1151
+01:01:59,530 --> 01:02:01,020
+Now we can generalize.
+
+1152
+01:02:01,020 --> 01:02:04,290
+It's a little bit
+messy, but we can
+
+1153
+01:02:04,290 --> 01:02:06,560
+generalize to arbitrary gluings.
+
+1154
+01:02:06,560 --> 01:02:12,270
+
+1155
+01:02:12,270 --> 01:02:14,650
+Let me sketch a little
+bit how that goes.
+
+1156
+01:02:14,650 --> 01:02:21,530
+
+1157
+01:02:21,530 --> 01:02:26,950
+So we've seen now this result
+for algorithms and this result
+
+1158
+01:02:26,950 --> 01:02:28,300
+for algorithms.
+
+1159
+01:02:28,300 --> 01:02:30,500
+And now I'm going to tell
+you about this result.
+
+1160
+01:02:30,500 --> 01:02:32,670
+I wish there was a result
+here to tell you about,
+
+1161
+01:02:32,670 --> 01:02:33,421
+but there isn't.
+
+1162
+01:02:33,421 --> 01:02:35,920
+So this last part that I did
+where the decision algorithm is
+
+1163
+01:02:35,920 --> 01:02:38,660
+very efficient, we don't
+know how to generalize that
+
+1164
+01:02:38,660 --> 01:02:41,565
+to the general case,
+arbitrary gluings.
+
+1165
+01:02:41,565 --> 01:02:42,940
+This only works
+for edge-to-edge.
+
+1166
+01:02:42,940 --> 01:02:45,560
+We assumed a whole
+edge, VK VK plus 1
+
+1167
+01:02:45,560 --> 01:02:48,980
+was glued to VI VI plus 1.
+
+1168
+01:02:48,980 --> 01:02:51,690
+But the enumeration
+part where we said,
+
+1169
+01:02:51,690 --> 01:02:53,310
+oh just give me
+all the solutions,
+
+1170
+01:02:53,310 --> 01:02:54,600
+that we can get to work.
+
+1171
+01:02:54,600 --> 01:02:57,750
+It's just slightly
+more complicated.
+
+1172
+01:02:57,750 --> 01:03:04,270
+Let me tell you how it
+gets more complicated.
+
+1173
+01:03:04,270 --> 01:03:10,430
+So one difference is that there
+are more kinds of sub-problems,
+
+1174
+01:03:10,430 --> 01:03:12,430
+this is the heart
+of the problem.
+
+1175
+01:03:12,430 --> 01:03:18,010
+We have the VI to VJ sub-problem
+just like before, that's easy.
+
+1176
+01:03:18,010 --> 01:03:23,050
+And then we have the
+VI to EJ sub-problem.
+
+1177
+01:03:23,050 --> 01:03:28,330
+So this one was VI was glued to
+VJ, very clear what that means.
+
+1178
+01:03:28,330 --> 01:03:32,955
+Here we have VI is
+glued to an edge EJ.
+
+1179
+01:03:32,955 --> 01:03:35,690
+
+1180
+01:03:35,690 --> 01:03:39,380
+The trouble with that is we
+don't know where on the edge
+
+1181
+01:03:39,380 --> 01:03:40,700
+it's glued.
+
+1182
+01:03:40,700 --> 01:03:44,720
+It's somewhere on the edge.
+
+1183
+01:03:44,720 --> 01:03:47,700
+This is where
+things get trickier.
+
+1184
+01:03:47,700 --> 01:03:49,250
+And there's also
+the symmetric case,
+
+1185
+01:03:49,250 --> 01:03:51,305
+of course, where it's EI to VJ.
+
+1186
+01:03:51,305 --> 01:03:52,930
+But we don't really
+need to worry about
+
+1187
+01:03:52,930 --> 01:03:53,805
+that, it's symmetric.
+
+1188
+01:03:53,805 --> 01:04:02,170
+
+1189
+01:04:02,170 --> 01:04:04,580
+So what does a
+solution look like?
+
+1190
+01:04:04,580 --> 01:04:08,810
+
+1191
+01:04:08,810 --> 01:04:12,060
+So before, a solution
+was an entire gluing.
+
+1192
+01:04:12,060 --> 01:04:15,102
+Now, because the
+gluings can be infinite.
+
+1193
+01:04:15,102 --> 01:04:17,060
+There can be infinitely
+many different gluings.
+
+1194
+01:04:17,060 --> 01:04:19,550
+I can't actually list
+every one explicitly.
+
+1195
+01:04:19,550 --> 01:04:21,640
+I've actually got to
+explain ranges of gluings
+
+1196
+01:04:21,640 --> 01:04:24,380
+if I have any hope of
+capturing all of them.
+
+1197
+01:04:24,380 --> 01:04:27,550
+So what a solution
+is going to look like
+
+1198
+01:04:27,550 --> 01:04:39,726
+is the combinatorial type of the
+gluing, which was this stuff.
+
+1199
+01:04:39,726 --> 01:04:41,100
+You have an abstract
+gluing tree,
+
+1200
+01:04:41,100 --> 01:04:43,270
+you get which vertices
+glue to what edges.
+
+1201
+01:04:43,270 --> 01:04:45,430
+So you have pretty
+much the whole picture,
+
+1202
+01:04:45,430 --> 01:04:49,210
+just not exactly where each
+vertex is glued to which edge.
+
+1203
+01:04:49,210 --> 01:04:54,510
+Then I also will tell
+you a total angle
+
+1204
+01:04:54,510 --> 01:05:05,322
+of material glued at VI so far.
+
+1205
+01:05:05,322 --> 01:05:06,780
+In both these cases,
+I want to know
+
+1206
+01:05:06,780 --> 01:05:10,820
+how much stuff in
+my gluing at VI
+
+1207
+01:05:10,820 --> 01:05:14,000
+so I can tell whether
+it's Alexandroff.
+
+1208
+01:05:14,000 --> 01:05:22,260
+And then in the case where I
+glue a vertex to an edge, what
+
+1209
+01:05:22,260 --> 01:05:24,260
+I'm going to do is
+give you an interval.
+
+1210
+01:05:24,260 --> 01:05:28,035
+
+1211
+01:05:28,035 --> 01:05:32,520
+The Interval's always
+going to be starting at 0,
+
+1212
+01:05:32,520 --> 01:05:37,760
+and going to some
+value x. x is less than
+
+1213
+01:05:37,760 --> 01:05:42,315
+or equal to the length
+of the edge, VJ.
+
+1214
+01:05:42,315 --> 01:05:46,010
+
+1215
+01:05:46,010 --> 01:05:49,920
+And this is the interval along
+the edge where VI can glue.
+
+1216
+01:05:49,920 --> 01:05:53,010
+
+1217
+01:05:53,010 --> 01:05:55,290
+So I'm going to tell
+you an actual interval
+
+1218
+01:05:55,290 --> 01:05:59,820
+here from the edge EJ.
+
+1219
+01:05:59,820 --> 01:06:01,920
+As long as you glue VI
+to somewhere between
+
+1220
+01:06:01,920 --> 01:06:04,310
+there and there,
+this stuff works.
+
+1221
+01:06:04,310 --> 01:06:06,480
+Whatever I specified
+works over there.
+
+1222
+01:06:06,480 --> 01:06:07,830
+You can't go beyond some point.
+
+1223
+01:06:07,830 --> 01:06:15,397
+
+1224
+01:06:15,397 --> 01:06:16,730
+That will turn out to be enough.
+
+1225
+01:06:16,730 --> 01:06:31,920
+
+1226
+01:06:31,920 --> 01:06:39,250
+So while there's the VI to VJ
+case, it's less interesting.
+
+1227
+01:06:39,250 --> 01:06:42,610
+Let's think about now if
+I want to actually solve
+
+1228
+01:06:42,610 --> 01:06:49,575
+the VI to EJ case.
+
+1229
+01:06:49,575 --> 01:06:52,870
+
+1230
+01:06:52,870 --> 01:06:54,630
+What could happen?
+
+1231
+01:06:54,630 --> 01:06:57,120
+Before there was
+only one-- we looked
+
+1232
+01:06:57,120 --> 01:07:01,700
+at what glues VI to VI
+plus 1 and it was one edge.
+
+1233
+01:07:01,700 --> 01:07:04,649
+It was a little
+easier to think about.
+
+1234
+01:07:04,649 --> 01:07:06,190
+Let's not think
+about the whole edge,
+
+1235
+01:07:06,190 --> 01:07:10,910
+but let's think about locally
+what happens just after VI.
+
+1236
+01:07:10,910 --> 01:07:12,980
+Something gets glued there.
+
+1237
+01:07:12,980 --> 01:07:15,499
+Now it could be EJ
+actually gets glued there.
+
+1238
+01:07:15,499 --> 01:07:16,790
+It could be we continue gluing.
+
+1239
+01:07:16,790 --> 01:07:18,880
+That's kind of like
+zipping, although not
+
+1240
+01:07:18,880 --> 01:07:21,150
+exactly what we were
+calling zipping before.
+
+1241
+01:07:21,150 --> 01:07:26,700
+Here I call it
+zipping, good choice.
+
+1242
+01:07:26,700 --> 01:07:30,120
+So one option is that you
+zip for a little while.
+
+1243
+01:07:30,120 --> 01:07:31,940
+Now, how long would you zip?
+
+1244
+01:07:31,940 --> 01:07:33,430
+A couple options.
+
+1245
+01:07:33,430 --> 01:07:35,260
+You zip until you
+hit a vertex, you
+
+1246
+01:07:35,260 --> 01:07:37,740
+can't stop in the
+middle of two edges.
+
+1247
+01:07:37,740 --> 01:07:39,660
+So maybe you hit a
+vertex here first,
+
+1248
+01:07:39,660 --> 01:07:41,130
+maybe you hit a
+vertex here first,
+
+1249
+01:07:41,130 --> 01:07:44,020
+and the next vertex
+here is farther away.
+
+1250
+01:07:44,020 --> 01:07:45,950
+So there's two pictures.
+
+1251
+01:07:45,950 --> 01:07:48,341
+Let me draw the two pictures.
+
+1252
+01:07:48,341 --> 01:07:50,705
+It could be hit you
+hit VI plus 1 first.
+
+1253
+01:07:50,705 --> 01:07:55,820
+
+1254
+01:07:55,820 --> 01:07:58,190
+So here's EJ.
+
+1255
+01:07:58,190 --> 01:08:03,520
+It could be you hit
+the vertex of EJ first.
+
+1256
+01:08:03,520 --> 01:08:10,830
+
+1257
+01:08:10,830 --> 01:08:12,880
+In this case, you
+get a sub-problem
+
+1258
+01:08:12,880 --> 01:08:16,050
+which is VI plus 1 to EJ.
+
+1259
+01:08:16,050 --> 01:08:18,410
+These are glued to each other.
+
+1260
+01:08:18,410 --> 01:08:21,060
+In this case, you get
+this vertex, which I think
+
+1261
+01:08:21,060 --> 01:08:28,330
+is VJ gets glued to the
+edge EI, which is just
+
+1262
+01:08:28,330 --> 01:08:32,960
+the symmetric case I
+was talking about here.
+
+1263
+01:08:32,960 --> 01:08:36,819
+Edge EI is glued to Vertex VJ.
+
+1264
+01:08:36,819 --> 01:08:38,319
+So those are smaller
+sub-problems.
+
+1265
+01:08:38,319 --> 01:08:40,464
+You solve those, and
+then from that you
+
+1266
+01:08:40,464 --> 01:08:42,130
+will see whether this
+actually gives you
+
+1267
+01:08:42,130 --> 01:08:44,200
+a solution to the
+original sub-problem
+
+1268
+01:08:44,200 --> 01:08:46,750
+you wanted to solve.
+
+1269
+01:08:46,750 --> 01:08:48,170
+That's the zip case.
+
+1270
+01:08:48,170 --> 01:08:51,720
+There's another case
+which we call tug.
+
+1271
+01:08:51,720 --> 01:08:55,189
+
+1272
+01:08:55,189 --> 01:08:59,220
+In the tug case-- so
+that was supposing,
+
+1273
+01:08:59,220 --> 01:09:03,090
+we'll maybe nothing
+else gets glued in here.
+
+1274
+01:09:03,090 --> 01:09:05,939
+But maybe another vertex gets
+glued in there, that's the tug.
+
+1275
+01:09:05,939 --> 01:09:09,250
+To pick a vertex, I pull it in.
+
+1276
+01:09:09,250 --> 01:09:16,649
+So in that case we get
+a picture like this.
+
+1277
+01:09:16,649 --> 01:09:20,270
+
+1278
+01:09:20,270 --> 01:09:24,380
+So here's EJ, here's
+VI, and now there's
+
+1279
+01:09:24,380 --> 01:09:28,560
+some other vertex VK
+that gets glued in there.
+
+1280
+01:09:28,560 --> 01:09:29,279
+Which vertex?
+
+1281
+01:09:29,279 --> 01:09:31,752
+I don't know, try them all.
+
+1282
+01:09:31,752 --> 01:09:33,460
+Just like before,
+before we were choosing
+
+1283
+01:09:33,460 --> 01:09:35,066
+an edge that gets glued in.
+
+1284
+01:09:35,066 --> 01:09:36,649
+Now it's not necessarily
+a whole edge,
+
+1285
+01:09:36,649 --> 01:09:40,520
+but if there's any
+vertex that glues in,
+
+1286
+01:09:40,520 --> 01:09:42,220
+pick who's the next one.
+
+1287
+01:09:42,220 --> 01:09:46,430
+And now I get a sub-problem
+here which is VI to VK.
+
+1288
+01:09:46,430 --> 01:09:52,710
+I get a sub-problem
+here which is VK to EJ.
+
+1289
+01:09:52,710 --> 01:09:56,110
+I solve each of those, I
+take the cross-product,
+
+1290
+01:09:56,110 --> 01:10:01,180
+I do that for all values
+of K just like I did here,
+
+1291
+01:10:01,180 --> 01:10:03,180
+except the labels have
+changed a little bit,
+
+1292
+01:10:03,180 --> 01:10:04,470
+and I find all the outputs.
+
+1293
+01:10:04,470 --> 01:10:08,890
+And again, you can show that
+it's exponential time at most.
+
+1294
+01:10:08,890 --> 01:10:13,490
+So that's an algorithm.
+
+1295
+01:10:13,490 --> 01:10:19,250
+Now, it's exponential time,
+but really it's not so bad
+
+1296
+01:10:19,250 --> 01:10:24,180
+because it's at most
+cubic like we had before.
+
+1297
+01:10:24,180 --> 01:10:25,860
+But we're doing
+extra work, which
+
+1298
+01:10:25,860 --> 01:10:31,400
+is something like the
+number of gluings dealt
+
+1299
+01:10:31,400 --> 01:10:37,090
+with at each stage
+per sub-problem.
+
+1300
+01:10:37,090 --> 01:10:40,810
+Now, it's not just the
+number of actual solutions,
+
+1301
+01:10:40,810 --> 01:10:43,650
+because we generate
+all possible solutions
+
+1302
+01:10:43,650 --> 01:10:45,870
+and then check whether
+they're Alexandroff.
+
+1303
+01:10:45,870 --> 01:10:50,440
+So if you have some example that
+happens to be unique in the way
+
+1304
+01:10:50,440 --> 01:10:53,740
+that it glues up, this bound
+will not actually be very good.
+
+1305
+01:10:53,740 --> 01:10:55,620
+It's still going to
+consider lots of options.
+
+1306
+01:10:55,620 --> 01:11:02,230
+But in the case of
+bounded sharpness,
+
+1307
+01:11:02,230 --> 01:11:04,775
+where the number of gluings
+is only polynomial--
+
+1308
+01:11:04,775 --> 01:11:06,790
+and it's polynomial
+for a strong reason
+
+1309
+01:11:06,790 --> 01:11:09,820
+that the trees can't
+get very complicated--
+
+1310
+01:11:09,820 --> 01:11:12,790
+then we can actually turn this
+into a polynomial algorithm.
+
+1311
+01:11:12,790 --> 01:11:15,380
+This will be n cubed
+times that bound.
+
+1312
+01:11:15,380 --> 01:11:18,564
+As long as your polygon
+is bounded sharpness,
+
+1313
+01:11:18,564 --> 01:11:21,230
+you can show that at every stage
+of course the number of gluings
+
+1314
+01:11:21,230 --> 01:11:23,607
+will also be polynomial.
+
+1315
+01:11:23,607 --> 01:11:25,190
+And so then even the
+number of gluings
+
+1316
+01:11:25,190 --> 01:11:27,273
+you have to consider and
+check will be polynomial.
+
+1317
+01:11:27,273 --> 01:11:29,470
+So the whole thing will
+be polynomial time,
+
+1318
+01:11:29,470 --> 01:11:33,220
+that is this result
+and this result.
+
+1319
+01:11:33,220 --> 01:11:36,310
+
+1320
+01:11:36,310 --> 01:11:38,542
+So if your polygon is
+vaguely reasonable,
+
+1321
+01:11:38,542 --> 01:11:40,250
+this is actually a
+really good algorithm.
+
+1322
+01:11:40,250 --> 01:11:41,708
+This algorithm has
+been implemented
+
+1323
+01:11:41,708 --> 01:11:45,490
+by two groups, one
+[INAUDIBLE] in mathematica
+
+1324
+01:11:45,490 --> 01:11:48,452
+and another [INAUDIBLE],
+which sadly is not--
+
+1325
+01:11:48,452 --> 01:11:50,160
+his implementation
+used to be on the web,
+
+1326
+01:11:50,160 --> 01:11:52,900
+I can't find it anymore.
+
+1327
+01:11:52,900 --> 01:11:56,140
+But you get either
+implementation,
+
+1328
+01:11:56,140 --> 01:11:57,660
+plug-in your
+polygon, and it just
+
+1329
+01:11:57,660 --> 01:12:00,350
+lists all the possible gluings.
+
+1330
+01:12:00,350 --> 01:12:02,890
+So that's all the
+theory for today.
+
+1331
+01:12:02,890 --> 01:12:05,610
+Now I want to show you a whole
+bunch of gluings for fun.
+
+1332
+01:12:05,610 --> 01:12:08,310
+Once you have all the stuff,
+we have these programs,
+
+1333
+01:12:08,310 --> 01:12:10,170
+you get to play.
+
+1334
+01:12:10,170 --> 01:12:16,390
+So our first play is not that.
+
+1335
+01:12:16,390 --> 01:12:18,300
+That was the last play.
+
+1336
+01:12:18,300 --> 01:12:19,830
+First thing, we saw this before.
+
+1337
+01:12:19,830 --> 01:12:22,590
+I'll just remind you
+what it looks like
+
+1338
+01:12:22,590 --> 01:12:24,940
+and tell you a little bit
+about what's going on here.
+
+1339
+01:12:24,940 --> 01:12:28,160
+So this was the cube.
+
+1340
+01:12:28,160 --> 01:12:30,630
+And then it's eventually
+going to fold into a cross.
+
+1341
+01:12:30,630 --> 01:12:32,860
+The real study here is
+for the Latin Cross--
+
+1342
+01:12:32,860 --> 01:12:35,210
+which is the picture
+I keep drawing
+
+1343
+01:12:35,210 --> 01:12:39,290
+at the beginning of lecture and
+which will now be unfolded--
+
+1344
+01:12:39,290 --> 01:12:43,780
+what other convex polyhedra
+can you glue that polygon into?
+
+1345
+01:12:43,780 --> 01:12:47,170
+So it's like you're not
+told what the creases are.
+
+1346
+01:12:47,170 --> 01:12:50,440
+You just want to look at
+gluings, the resulting creases.
+
+1347
+01:12:50,440 --> 01:12:53,274
+This is one convex
+polyhedron you can make.
+
+1348
+01:12:53,274 --> 01:12:55,690
+This is something that can
+come from Alexandroff's theorem
+
+1349
+01:12:55,690 --> 01:12:59,280
+that you actually get a flat,
+doubly-covered convex polygon.
+
+1350
+01:12:59,280 --> 01:13:02,820
+It's technically a polyhedron,
+according to Alexandroff.
+
+1351
+01:13:02,820 --> 01:13:07,300
+These are all edge-to-edge
+gluings if the length two edges
+
+1352
+01:13:07,300 --> 01:13:10,570
+are actually subdivided
+into two length one edges.
+
+1353
+01:13:10,570 --> 01:13:13,900
+And this video only enumerates
+the edge-to-edge gluings,
+
+1354
+01:13:13,900 --> 01:13:16,855
+because at this point we only
+had the edge-to-edge algorithm.
+
+1355
+01:13:16,855 --> 01:13:19,590
+I forget, this video
+is '98, I think.
+
+1356
+01:13:19,590 --> 01:13:23,190
+This algorithm was in '96, so
+they had just implemented that.
+
+1357
+01:13:23,190 --> 01:13:24,636
+And then that's when I joined.
+
+1358
+01:13:24,636 --> 01:13:26,760
+I was just starting out as
+a grad student and said,
+
+1359
+01:13:26,760 --> 01:13:28,530
+OK let's make a video.
+
+1360
+01:13:28,530 --> 01:13:29,640
+That would be cool.
+
+1361
+01:13:29,640 --> 01:13:32,660
+So I think there's one more.
+
+1362
+01:13:32,660 --> 01:13:34,910
+And this is the only
+one where we actually
+
+1363
+01:13:34,910 --> 01:13:36,880
+have the animations.
+
+1364
+01:13:36,880 --> 01:13:39,005
+This octahedron, this
+was tricky to find,
+
+1365
+01:13:39,005 --> 01:13:40,380
+beceause at this
+point there were
+
+1366
+01:13:40,380 --> 01:13:42,420
+no algorithms for
+Alexandroff's theorem.
+
+1367
+01:13:42,420 --> 01:13:45,580
+So we found it by taking
+a piece of cardboard,
+
+1368
+01:13:45,580 --> 01:13:47,970
+gluing it up,
+getting a protractor,
+
+1369
+01:13:47,970 --> 01:13:49,850
+and measuring all
+the dihedral angles,
+
+1370
+01:13:49,850 --> 01:13:51,100
+and then typing them in.
+
+1371
+01:13:51,100 --> 01:13:53,670
+And Lo and behold,
+in that animation
+
+1372
+01:13:53,670 --> 01:13:57,590
+they don't perfectly close
+up, but it's very close,
+
+1373
+01:13:57,590 --> 01:13:59,610
+up to the measurement
+error of the protractor.
+
+1374
+01:13:59,610 --> 01:14:01,475
+So for edge-to-edge
+gluings, there
+
+1375
+01:14:01,475 --> 01:14:03,142
+are exactly five
+convex polyhedra
+
+1376
+01:14:03,142 --> 01:14:04,350
+you can make from that cross.
+
+1377
+01:14:04,350 --> 01:14:08,229
+
+1378
+01:14:08,229 --> 01:14:10,020
+But if you allow
+non-edge-to-edge gluings--
+
+1379
+01:14:10,020 --> 01:14:12,630
+and so some years later when
+we came up with that algorithm
+
+1380
+01:14:12,630 --> 01:14:16,210
+and implemented it, we
+discovered there are 85 gluings
+
+1381
+01:14:16,210 --> 01:14:17,370
+of the cross.
+
+1382
+01:14:17,370 --> 01:14:19,800
+This is only six of them.
+
+1383
+01:14:19,800 --> 01:14:21,760
+We're going to do it
+starting with the cube,
+
+1384
+01:14:21,760 --> 01:14:25,630
+and then we're going to go
+in increasing order of faces.
+
+1385
+01:14:25,630 --> 01:14:29,500
+So there's two flat,
+doubly-covered quadrilaterals.
+
+1386
+01:14:29,500 --> 01:14:32,230
+They're different.
+
+1387
+01:14:32,230 --> 01:14:34,530
+Then there is a bunch of
+tetrahedra that you can make.
+
+1388
+01:14:34,530 --> 01:14:35,571
+None of them are regular.
+
+1389
+01:14:35,571 --> 01:14:40,040
+One of them was edge-to-edge,
+I think it might be this one.
+
+1390
+01:14:40,040 --> 01:14:43,380
+I think there's some more
+tetrahedra at the top there.
+
+1391
+01:14:43,380 --> 01:14:45,890
+The blue labels here
+say what they are.
+
+1392
+01:14:45,890 --> 01:14:48,150
+For each one of
+these we taped up
+
+1393
+01:14:48,150 --> 01:14:49,970
+the-- we knew what
+the gluing was.
+
+1394
+01:14:49,970 --> 01:14:53,012
+We taped it up, and
+then we played with it
+
+1395
+01:14:53,012 --> 01:14:54,970
+until we figured out,
+this must be the creases.
+
+1396
+01:14:54,970 --> 01:14:56,844
+Then we actually drew
+in that create pattern,
+
+1397
+01:14:56,844 --> 01:14:59,692
+folded it up, and verified
+that is the right answer.
+
+1398
+01:14:59,692 --> 01:15:01,400
+Because again, at this
+point no algorithm
+
+1399
+01:15:01,400 --> 01:15:03,760
+for Alexandroff's theorem.
+
+1400
+01:15:03,760 --> 01:15:04,700
+More tetrahedra.
+
+1401
+01:15:04,700 --> 01:15:07,110
+Here we get to the
+five-sided polyhedra.
+
+1402
+01:15:07,110 --> 01:15:10,230
+I think this one is edge-to-edge
+and is in the video.
+
+1403
+01:15:10,230 --> 01:15:13,619
+It's a little hard to
+tell from the-- actually,
+
+1404
+01:15:13,619 --> 01:15:14,910
+you can tell from the pictures.
+
+1405
+01:15:14,910 --> 01:15:16,740
+Here there's two sevens.
+
+1406
+01:15:16,740 --> 01:15:18,080
+That means seven glued to seven.
+
+1407
+01:15:18,080 --> 01:15:20,000
+That means this is a
+fold point, this edge
+
+1408
+01:15:20,000 --> 01:15:21,130
+is glued to that edge.
+
+1409
+01:15:21,130 --> 01:15:23,550
+Over here, every edge
+has only one label,
+
+1410
+01:15:23,550 --> 01:15:25,500
+where again this is
+considered two edges.
+
+1411
+01:15:25,500 --> 01:15:27,000
+So this was the
+edge-to-edge gluing.
+
+1412
+01:15:27,000 --> 01:15:31,990
+
+1413
+01:15:31,990 --> 01:15:33,850
+I think a couple more slides.
+
+1414
+01:15:33,850 --> 01:15:36,090
+We get another
+pentahedron and then
+
+1415
+01:15:36,090 --> 01:15:42,490
+starting to get hexahedra other
+than the cube, lots of them.
+
+1416
+01:15:42,490 --> 01:15:43,840
+Then we start getting octahedra.
+
+1417
+01:15:43,840 --> 01:15:46,440
+The last one in the
+video was octahedron.
+
+1418
+01:15:46,440 --> 01:15:50,641
+It's not this one, this
+one has some fold points.
+
+1419
+01:15:50,641 --> 01:15:53,550
+It must be-- these
+are all octahedra,
+
+1420
+01:15:53,550 --> 01:15:55,772
+so it's one of these.
+
+1421
+01:15:55,772 --> 01:15:58,140
+This guy.
+
+1422
+01:15:58,140 --> 01:16:00,720
+Of course, it's hard to
+tell from a static image,
+
+1423
+01:16:00,720 --> 01:16:04,410
+but yeah, obviously that was
+the octahedron from the video.
+
+1424
+01:16:04,410 --> 01:16:05,475
+And that is all.
+
+1425
+01:16:05,475 --> 01:16:08,240
+So actually, there's only
+23 distinct polyhedra
+
+1426
+01:16:08,240 --> 01:16:12,180
+you can make, but you can
+make them out of 85 gluings.
+
+1427
+01:16:12,180 --> 01:16:13,760
+So 85 gluings.
+
+1428
+01:16:13,760 --> 01:16:17,830
+If one of them is symmetric,
+the cube is symmetric.
+
+1429
+01:16:17,830 --> 01:16:19,150
+So that's one.
+
+1430
+01:16:19,150 --> 01:16:22,000
+And then the other
+84, there's everything
+
+1431
+01:16:22,000 --> 01:16:24,670
+and its reflectional
+inverse, because this polygon
+
+1432
+01:16:24,670 --> 01:16:26,160
+is symmetric.
+
+1433
+01:16:26,160 --> 01:16:31,360
+So it's 84 divided by 2,
+which is 42, a good number.
+
+1434
+01:16:31,360 --> 01:16:37,180
+42 actual honest
+gluings plus the cube.
+
+1435
+01:16:37,180 --> 01:16:39,776
+But those 42 gluings,
+a lot of them
+
+1436
+01:16:39,776 --> 01:16:41,650
+generate the same
+polyhedron, because there's
+
+1437
+01:16:41,650 --> 01:16:44,210
+only 23 distinct
+polyhedra in the end.
+
+1438
+01:16:44,210 --> 01:16:45,990
+I don't have it here,
+it's on my web page.
+
+1439
+01:16:45,990 --> 01:16:47,790
+You could look up
+all 85, and it says
+
+1440
+01:16:47,790 --> 01:16:49,500
+which ones are the
+same as which ones.
+
+1441
+01:16:49,500 --> 01:16:51,000
+And it was a real surprise
+when we were building them.
+
+1442
+01:16:51,000 --> 01:16:52,630
+It was like, wait
+this looks identical
+
+1443
+01:16:52,630 --> 01:16:54,046
+to this other
+polyhedron, and it's
+
+1444
+01:16:54,046 --> 01:16:55,780
+glued in a very different way.
+
+1445
+01:16:55,780 --> 01:16:58,050
+Sort of an extrasymmetry
+of that polyhedron,
+
+1446
+01:16:58,050 --> 01:16:59,460
+as opposed to the cross itself.
+
+1447
+01:16:59,460 --> 01:17:00,380
+It was pretty cool.
+
+1448
+01:17:00,380 --> 01:17:03,010
+
+1449
+01:17:03,010 --> 01:17:06,240
+An interesting
+thing to note here
+
+1450
+01:17:06,240 --> 01:17:13,310
+is that we only bisect
+the edges, right?
+
+1451
+01:17:13,310 --> 01:17:15,690
+There's a lot of
+edge-to-edge stuff,
+
+1452
+01:17:15,690 --> 01:17:18,390
+and then some of the
+edges get cut in half.
+
+1453
+01:17:18,390 --> 01:17:21,210
+And in this case actually, they
+look mostly like fold points,
+
+1454
+01:17:21,210 --> 01:17:23,670
+but that's not always the case.
+
+1455
+01:17:23,670 --> 01:17:28,470
+It turns out, if you have a
+polygon were all the edge links
+
+1456
+01:17:28,470 --> 01:17:33,100
+are the same like this and
+you look at non-edge-to-edge
+
+1457
+01:17:33,100 --> 01:17:34,996
+gluings, and there
+are no rolling belts--
+
+1458
+01:17:34,996 --> 01:17:36,370
+because if there's
+rolling belts,
+
+1459
+01:17:36,370 --> 01:17:38,870
+it's infinite because you're
+not going to have anything like
+
+1460
+01:17:38,870 --> 01:17:39,530
+this.
+
+1461
+01:17:39,530 --> 01:17:46,390
+Then it suffices to
+subdivide every edge in half.
+
+1462
+01:17:46,390 --> 01:17:48,570
+And then every non-edge-to-edge
+gluing will become
+
+1463
+01:17:48,570 --> 01:17:50,040
+an edge-to-edge gluing.
+
+1464
+01:17:50,040 --> 01:17:55,240
+This is called the [INAUDIBLE]
+half-length theorem
+
+1465
+01:17:55,240 --> 01:17:56,187
+in our book.
+
+1466
+01:17:56,187 --> 01:17:57,770
+It was proved by
+this guy [INAUDIBLE],
+
+1467
+01:17:57,770 --> 01:18:00,570
+who was one of the
+implementers of the algorithms
+
+1468
+01:18:00,570 --> 01:18:02,570
+for enumerating
+all these gluings.
+
+1469
+01:18:02,570 --> 01:18:03,730
+And he proved it afterward.
+
+1470
+01:18:03,730 --> 01:18:05,600
+The code doesn't actually
+exploit that fact,
+
+1471
+01:18:05,600 --> 01:18:06,700
+but it's kind of neat.
+
+1472
+01:18:06,700 --> 01:18:08,830
+All you have to worry
+about are half edges
+
+1473
+01:18:08,830 --> 01:18:12,400
+in this case where all the
+edge links are the same.
+
+1474
+01:18:12,400 --> 01:18:13,490
+All right, that's a cross.
+
+1475
+01:18:13,490 --> 01:18:15,205
+And it's kind of
+maybe even surprising
+
+1476
+01:18:15,205 --> 01:18:18,310
+that there's only finitely
+many different gluings,
+
+1477
+01:18:18,310 --> 01:18:21,470
+but there's no way to
+get a rolling belt here.
+
+1478
+01:18:21,470 --> 01:18:24,295
+Let's look at-- oh, here
+are all the polyhedra
+
+1479
+01:18:24,295 --> 01:18:28,180
+in a pretty 3D form.
+
+1480
+01:18:28,180 --> 01:18:30,740
+Here is a polygon
+which is convex.
+
+1481
+01:18:30,740 --> 01:18:32,770
+It is the equilateral triangle.
+
+1482
+01:18:32,770 --> 01:18:35,400
+And so, no surprise, there
+a rolling belts here.
+
+1483
+01:18:35,400 --> 01:18:37,950
+But here's the picture of
+how all the rolling belts fit
+
+1484
+01:18:37,950 --> 01:18:38,540
+together.
+
+1485
+01:18:38,540 --> 01:18:40,900
+In principle, you can
+extract this picture
+
+1486
+01:18:40,900 --> 01:18:43,660
+from this algorithm.
+
+1487
+01:18:43,660 --> 01:18:46,570
+Although combined with an
+algorithm for Alexandroff's
+
+1488
+01:18:46,570 --> 01:18:48,109
+theorem, that's the tricky part.
+
+1489
+01:18:48,109 --> 01:18:49,650
+So you have some
+very simple gluings,
+
+1490
+01:18:49,650 --> 01:18:50,990
+like could could fold
+the triangle in half,
+
+1491
+01:18:50,990 --> 01:18:52,640
+get this doubly-covered
+triangle,
+
+1492
+01:18:52,640 --> 01:18:54,180
+you can make a
+regular tetrahedron,
+
+1493
+01:18:54,180 --> 01:18:56,730
+or you can fold the triangle
+into a flat doubly-covered
+
+1494
+01:18:56,730 --> 01:18:58,652
+rectangle like at the top.
+
+1495
+01:18:58,652 --> 01:19:00,485
+And then there are
+rolling belts in between.
+
+1496
+01:19:00,485 --> 01:19:02,670
+So this is one
+rolling belt, this
+
+1497
+01:19:02,670 --> 01:19:04,210
+is another possible
+rolling belt,
+
+1498
+01:19:04,210 --> 01:19:06,460
+another possible rolling
+belt each with a gluing tree.
+
+1499
+01:19:06,460 --> 01:19:08,230
+They're not all drawn here.
+
+1500
+01:19:08,230 --> 01:19:10,790
+And this is sort of
+the topology of all
+
+1501
+01:19:10,790 --> 01:19:15,220
+of the possible gluings you
+could make, which is nice.
+
+1502
+01:19:15,220 --> 01:19:19,500
+So a triangle is
+relatively simple.
+
+1503
+01:19:19,500 --> 01:19:24,240
+The square is a little messier.
+
+1504
+01:19:24,240 --> 01:19:27,900
+There's again a bunch of
+particularly nice gluings
+
+1505
+01:19:27,900 --> 01:19:33,890
+like the [INAUDIBLE], the
+folding in half one way,
+
+1506
+01:19:33,890 --> 01:19:38,320
+folding in half the other
+way, making a letter,
+
+1507
+01:19:38,320 --> 01:19:41,840
+and some tetrahedra that
+are just drawn here.
+
+1508
+01:19:41,840 --> 01:19:43,721
+They're in the middle.
+
+1509
+01:19:43,721 --> 01:19:45,470
+And then there's these
+crazy rolling belts
+
+1510
+01:19:45,470 --> 01:19:46,620
+for how they fit together.
+
+1511
+01:19:46,620 --> 01:19:50,600
+So this is in unit square
+all the different gluings.
+
+1512
+01:19:50,600 --> 01:19:54,550
+And one of the fun things,
+some of them are octahedra,
+
+1513
+01:19:54,550 --> 01:19:59,430
+I have a list here.
+
+1514
+01:19:59,430 --> 01:20:02,520
+But I don't know actually
+which one of these belts
+
+1515
+01:20:02,520 --> 01:20:03,330
+has the octahedra.
+
+1516
+01:20:03,330 --> 01:20:05,040
+It might be a couple of them.
+
+1517
+01:20:05,040 --> 01:20:09,800
+And it turns out, for octahedra
+they actually figured out
+
+1518
+01:20:09,800 --> 01:20:12,970
+an algorithm just for octahedra
+to solve Alexandroff's theorem.
+
+1519
+01:20:12,970 --> 01:20:16,540
+This is again before
+Alexandroff theorem algorithms.
+
+1520
+01:20:16,540 --> 01:20:19,210
+And they wanted to compute, well
+if I take all these polyhdra,
+
+1521
+01:20:19,210 --> 01:20:21,160
+which one has the
+maximum volume?
+
+1522
+01:20:21,160 --> 01:20:23,130
+So if I take a
+square paper, what's
+
+1523
+01:20:23,130 --> 01:20:26,060
+the maximum volume
+shape you can make?
+
+1524
+01:20:26,060 --> 01:20:30,400
+And there it is.
+
+1525
+01:20:30,400 --> 01:20:33,450
+It's kind of fun.
+
+1526
+01:20:33,450 --> 01:20:35,320
+One of those octahedra.
+
+1527
+01:20:35,320 --> 01:20:40,510
+And this is a prettier picture
+of-- so here they actually
+
+1528
+01:20:40,510 --> 01:20:42,580
+computed all the polyhedra.
+
+1529
+01:20:42,580 --> 01:20:44,600
+Obviously not all
+infinitely many of them,
+
+1530
+01:20:44,600 --> 01:20:47,860
+but various snapshots
+along each rolling belt.
+
+1531
+01:20:47,860 --> 01:20:50,050
+And each of these
+rolling belts corresponds
+
+1532
+01:20:50,050 --> 01:20:52,460
+to one of the circles over here.
+
+1533
+01:20:52,460 --> 01:20:55,900
+
+1534
+01:20:55,900 --> 01:20:57,290
+And that's it.
+
+1535
+01:20:57,290 --> 01:20:59,870
+Any questions?
+
+1536
+01:20:59,870 --> 01:21:02,750
+So that's the end
+of fun with gluings.
+
+1537
+01:21:02,750 --> 01:21:06,270
+We'll look at other kinds of
+gluing problems next class.
+

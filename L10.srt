@@ -1,0 +1,7206 @@
+1
+0-1:59:59,500 --> 00:00:03,510
+
+2
+00:00:03,510 --> 00:00:05,160
+PROFESSOR: All
+right before we get
+
+3
+00:00:05,160 --> 00:00:09,340
+started, I just
+wanted to say goodbye
+
+4
+00:00:09,340 --> 00:00:14,410
+to Eric Joisel, who
+died on Sunday, sadly.
+
+5
+00:00:14,410 --> 00:00:17,640
+He's a master origami creator,
+and I encourage you all
+
+6
+00:00:17,640 --> 00:00:20,920
+to come see "Between
+the Folds" on Tuesday,
+
+7
+00:00:20,920 --> 00:00:24,680
+showing Tuesday
+evening, because there's
+
+8
+00:00:24,680 --> 00:00:27,960
+a great interview with him, and
+it really captures his spirit.
+
+9
+00:00:27,960 --> 00:00:31,290
+And sadly, I never
+met him in person.
+
+10
+00:00:31,290 --> 00:00:33,540
+The last I corresponded with
+him was to get permission
+
+11
+00:00:33,540 --> 00:00:37,250
+to show these photos in class.
+
+12
+00:00:37,250 --> 00:00:40,650
+So that sucks.
+
+13
+00:00:40,650 --> 00:00:43,420
+Today is about rigidity again.
+
+14
+00:00:43,420 --> 00:00:52,510
+
+15
+00:00:52,510 --> 00:00:55,005
+And in particular, something
+called infinitesimal rigidity.
+
+16
+00:00:55,005 --> 00:00:57,790
+
+17
+00:00:57,790 --> 00:01:00,815
+So last class was mostly
+about generic rigidity.
+
+18
+00:01:00,815 --> 00:01:05,240
+
+19
+00:01:05,240 --> 00:01:08,470
+Today we're going to
+talk about a variation,
+
+20
+00:01:08,470 --> 00:01:10,510
+although related to
+generic rigidity.
+
+21
+00:01:10,510 --> 00:01:12,350
+And this is going to
+be a very useful tool.
+
+22
+00:01:12,350 --> 00:01:15,250
+It's a lot easier to work
+with algorithmically.
+
+23
+00:01:15,250 --> 00:01:17,570
+It still captures
+essentially generic rigidity,
+
+24
+00:01:17,570 --> 00:01:19,900
+but in a different
+way-- in a linear way.
+
+25
+00:01:19,900 --> 00:01:22,390
+And it's going to
+be super useful.
+
+26
+00:01:22,390 --> 00:01:30,220
+So the idea is we think about
+rigidity-- does a linkage
+
+27
+00:01:30,220 --> 00:01:32,470
+move or not-- to
+the first order.
+
+28
+00:01:32,470 --> 00:01:37,180
+
+29
+00:01:37,180 --> 00:01:40,830
+First order means
+first derivative.
+
+30
+00:01:40,830 --> 00:01:48,089
+OK, so I'm going to do some
+analysis stuff-- calculus,
+
+31
+00:01:48,089 --> 00:01:50,130
+which you should all know,
+because is the General
+
+32
+00:01:50,130 --> 00:01:52,840
+Institute Requirement.
+
+33
+00:01:52,840 --> 00:01:55,530
+Don't worry, you don't
+need to know much.
+
+34
+00:01:55,530 --> 00:01:57,470
+So in particular
+rigidity, is really
+
+35
+00:01:57,470 --> 00:01:58,630
+about the lack of motion.
+
+36
+00:01:58,630 --> 00:02:02,040
+So let's define the idea
+of infinitesimal motion,
+
+37
+00:02:02,040 --> 00:02:03,990
+or first-order motion.
+
+38
+00:02:03,990 --> 00:02:07,550
+This is, again, suppose
+we start somewhere.
+
+39
+00:02:07,550 --> 00:02:09,524
+And somewhere would be
+a linkage configuration.
+
+40
+00:02:09,524 --> 00:02:12,900
+
+41
+00:02:12,900 --> 00:02:14,060
+There's a linkage.
+
+42
+00:02:14,060 --> 00:02:15,850
+There's a graph,
+with edge lengths
+
+43
+00:02:15,850 --> 00:02:21,400
+plus configuration maps
+every vertex to a point.
+
+44
+00:02:21,400 --> 00:02:23,780
+I'm going to assume we're
+working in the plane for now.
+
+45
+00:02:23,780 --> 00:02:26,050
+But really this works in--
+I'll say d dimensions.
+
+46
+00:02:26,050 --> 00:02:32,110
+
+47
+00:02:32,110 --> 00:02:35,590
+So this is what
+I want to define.
+
+48
+00:02:35,590 --> 00:02:42,360
+I'm going to say that
+it is a valid-- this
+
+49
+00:02:42,360 --> 00:02:47,000
+is sort of an informal notion--
+a valid first derivative
+
+50
+00:02:47,000 --> 00:02:48,365
+of a motion.
+
+51
+00:02:48,365 --> 00:02:49,615
+We've already defined motions.
+
+52
+00:02:49,615 --> 00:02:54,040
+
+53
+00:02:54,040 --> 00:02:57,280
+I want to take such a
+motion, essentially,
+
+54
+00:02:57,280 --> 00:03:02,960
+take its derivative
+with respect to time,
+
+55
+00:03:02,960 --> 00:03:07,000
+And evaluate that
+derivative at time 0.
+
+56
+00:03:07,000 --> 00:03:10,470
+This is a fancy way of saying
+the following picture-- I'd
+
+57
+00:03:10,470 --> 00:03:13,380
+like a motion, which is some
+path in the configuration
+
+58
+00:03:13,380 --> 00:03:14,995
+space-- remember,
+configuration space
+
+59
+00:03:14,995 --> 00:03:17,540
+is some hugely
+dimensional object,
+
+60
+00:03:17,540 --> 00:03:21,389
+d n dimensions-- and
+a point in that space
+
+61
+00:03:21,389 --> 00:03:22,680
+corresponds to a configuration.
+
+62
+00:03:22,680 --> 00:03:26,560
+We have a motion is
+some path in that space.
+
+63
+00:03:26,560 --> 00:03:28,380
+And motions are
+hard to think about.
+
+64
+00:03:28,380 --> 00:03:30,100
+They can be really complicated.
+
+65
+00:03:30,100 --> 00:03:32,760
+So I just want to say, well,
+how do you get started moving?
+
+66
+00:03:32,760 --> 00:03:35,369
+What direction do you
+go in in a linear sense,
+
+67
+00:03:35,369 --> 00:03:36,160
+to the first order?
+
+68
+00:03:36,160 --> 00:03:37,076
+What's the derivative?
+
+69
+00:03:37,076 --> 00:03:39,690
+What's the tangent
+right at the beginning?
+
+70
+00:03:39,690 --> 00:03:42,590
+And then this
+notion will, stated
+
+71
+00:03:42,590 --> 00:03:44,070
+in terms of motions--
+you can think
+
+72
+00:03:44,070 --> 00:03:46,630
+about this in the
+absence of a motion.
+
+73
+00:03:46,630 --> 00:03:49,560
+Say, well, yeah, I don't really
+know whether this curve exists,
+
+74
+00:03:49,560 --> 00:03:52,490
+but let's just see, does this
+initial starting direction
+
+75
+00:03:52,490 --> 00:03:53,156
+exist?
+
+76
+00:03:53,156 --> 00:03:55,530
+And that's actually a little
+weaker than the whole motion
+
+77
+00:03:55,530 --> 00:03:56,126
+existing.
+
+78
+00:03:56,126 --> 00:03:58,500
+If the motion exists, surely
+you can take this derivative
+
+79
+00:03:58,500 --> 00:03:59,690
+and evaluate it.
+
+80
+00:03:59,690 --> 00:04:01,860
+It's not totally
+obvious, but it's true.
+
+81
+00:04:01,860 --> 00:04:04,689
+You need some smoothness.
+
+82
+00:04:04,689 --> 00:04:06,480
+But if there's a way
+to get started moving,
+
+83
+00:04:06,480 --> 00:04:08,604
+that doesn't actually mean
+you could actually move.
+
+84
+00:04:08,604 --> 00:04:13,540
+
+85
+00:04:13,540 --> 00:04:17,470
+Why don't I give a more formal
+definition, and a more useful
+
+86
+00:04:17,470 --> 00:04:19,259
+one-- but that's the intuition.
+
+87
+00:04:19,259 --> 00:04:22,570
+
+88
+00:04:22,570 --> 00:04:25,050
+So another way to think
+of an infinitesimal motion
+
+89
+00:04:25,050 --> 00:04:30,550
+is, instead of saying how each
+vertex moves in d dimensions,
+
+90
+00:04:30,550 --> 00:04:32,820
+you just give a velocity
+vector for each vertex.
+
+91
+00:04:32,820 --> 00:04:40,590
+
+92
+00:04:40,590 --> 00:04:43,640
+For every vertex v, we're going
+to get some velocity vector
+
+93
+00:04:43,640 --> 00:04:48,510
+d of v-- that's direction
+or derivative of v.
+
+94
+00:04:48,510 --> 00:04:52,480
+And with motions,
+we were supposed
+
+95
+00:04:52,480 --> 00:04:54,570
+to preserve edge lengths.
+
+96
+00:04:54,570 --> 00:04:56,450
+So here we'd like to
+preserve edge lengths,
+
+97
+00:04:56,450 --> 00:05:01,290
+but that's actually
+kind of hard to do.
+
+98
+00:05:01,290 --> 00:05:06,980
+If you take an edge--
+so I have two vertices,
+
+99
+00:05:06,980 --> 00:05:13,555
+and I assign some velocity
+vectors, something like this--
+
+100
+00:05:13,555 --> 00:05:15,680
+as soon as you move a little
+bit in that direction,
+
+101
+00:05:15,680 --> 00:05:18,120
+the edge length won't
+be quite the same.
+
+102
+00:05:18,120 --> 00:05:21,280
+But it'll be the same
+to the first order,
+
+103
+00:05:21,280 --> 00:05:24,050
+so this is going to
+be a little subtle.
+
+104
+00:05:24,050 --> 00:05:28,100
+
+105
+00:05:28,100 --> 00:05:31,370
+And in the book, we
+take the derivatives.
+
+106
+00:05:31,370 --> 00:05:32,720
+We work out all the details.
+
+107
+00:05:32,720 --> 00:05:38,820
+But I'll just tell you
+what the condition is,
+
+108
+00:05:38,820 --> 00:05:42,050
+because ultimately all we
+need is this condition.
+
+109
+00:05:42,050 --> 00:05:49,340
+
+110
+00:05:49,340 --> 00:05:51,440
+I'm just defining an
+infinitesimal motion
+
+111
+00:05:51,440 --> 00:05:54,090
+to be a velocity vector
+for every vertex,
+
+112
+00:05:54,090 --> 00:05:55,340
+such that this property holds.
+
+113
+00:05:55,340 --> 00:05:58,410
+This is a dot product
+between two vectors.
+
+114
+00:05:58,410 --> 00:06:05,010
+If you have two vectors, a and
+b, you take their dot product,
+
+115
+00:06:05,010 --> 00:06:07,046
+this is just
+something like this.
+
+116
+00:06:07,046 --> 00:06:08,170
+You take the x-coordinates.
+
+117
+00:06:08,170 --> 00:06:09,294
+You multiply them together.
+
+118
+00:06:09,294 --> 00:06:10,930
+You take the y-coordinates.
+
+119
+00:06:10,930 --> 00:06:14,100
+You multiply them
+together, and so on.
+
+120
+00:06:14,100 --> 00:06:14,630
+Add them up.
+
+121
+00:06:14,630 --> 00:06:17,740
+
+122
+00:06:17,740 --> 00:06:20,230
+And we're going to need
+some linear algebra.
+
+123
+00:06:20,230 --> 00:06:23,450
+That's one useful
+linearity thing.
+
+124
+00:06:23,450 --> 00:06:27,860
+So these are where
+the configuration
+
+125
+00:06:27,860 --> 00:06:30,400
+places vertex v and vertex w.
+
+126
+00:06:30,400 --> 00:06:37,905
+So this should be true for
+each edge v w on the graph.
+
+127
+00:06:37,905 --> 00:06:41,010
+
+128
+00:06:41,010 --> 00:06:46,070
+This is a vector C
+of v minus C of w.
+
+129
+00:06:46,070 --> 00:06:47,970
+Let me give some labels.
+
+130
+00:06:47,970 --> 00:06:52,360
+Let's say this is
+w, and this is v.
+
+131
+00:06:52,360 --> 00:06:56,130
+Let's say these are the points
+that the configuration places
+
+132
+00:06:56,130 --> 00:06:57,990
+w and v at.
+
+133
+00:06:57,990 --> 00:07:02,710
+Then C of v minus C
+of w is this vector.
+
+134
+00:07:02,710 --> 00:07:06,960
+
+135
+00:07:06,960 --> 00:07:07,586
+It's a vector.
+
+136
+00:07:07,586 --> 00:07:08,960
+It doesn't really
+have any space.
+
+137
+00:07:08,960 --> 00:07:11,530
+It's just been
+translated around.
+
+138
+00:07:11,530 --> 00:07:13,620
+It's a vector that
+would point from w
+
+139
+00:07:13,620 --> 00:07:16,230
+to v in the configuration.
+
+140
+00:07:16,230 --> 00:07:17,730
+That's the left part.
+
+141
+00:07:17,730 --> 00:07:22,790
+The right part has no
+real intuitive meaning,
+
+142
+00:07:22,790 --> 00:07:28,360
+but it involves this thing--
+some velocity vector for w--
+
+143
+00:07:28,360 --> 00:07:30,890
+and the velocity
+vector for v. So this
+
+144
+00:07:30,890 --> 00:07:36,264
+is some relation on this
+vector and these two vectors.
+
+145
+00:07:36,264 --> 00:07:37,930
+It's actually a very
+intuitive relation.
+
+146
+00:07:37,930 --> 00:07:40,680
+Let me tell you what it means.
+
+147
+00:07:40,680 --> 00:07:42,390
+Basically, we want
+to understand how
+
+148
+00:07:42,390 --> 00:07:44,990
+this length changes
+to the first order.
+
+149
+00:07:44,990 --> 00:07:47,630
+So this guy's moving to first
+order in this direction.
+
+150
+00:07:47,630 --> 00:07:50,000
+In fact, it's moving
+on some curve,
+
+151
+00:07:50,000 --> 00:07:53,110
+and the initial tangent
+is that direction.
+
+152
+00:07:53,110 --> 00:07:56,480
+And to understand how that
+motion changes this edge
+
+153
+00:07:56,480 --> 00:07:58,290
+length, turns out
+the right thing
+
+154
+00:07:58,290 --> 00:08:05,550
+to do is to project this
+vector onto this one.
+
+155
+00:08:05,550 --> 00:08:07,220
+Makes sense.
+
+156
+00:08:07,220 --> 00:08:10,110
+So as this guy moves
+in that direction,
+
+157
+00:08:10,110 --> 00:08:11,720
+This is the first-order change.
+
+158
+00:08:11,720 --> 00:08:14,030
+This distance here is
+the first-order change
+
+159
+00:08:14,030 --> 00:08:18,500
+of this length as caused
+by this vertex moving.
+
+160
+00:08:18,500 --> 00:08:22,240
+OK, that projected length
+is actually very simple.
+
+161
+00:08:22,240 --> 00:08:25,740
+This is again, some
+linear algebra stuff
+
+162
+00:08:25,740 --> 00:08:26,860
+interpreted geometrically.
+
+163
+00:08:26,860 --> 00:08:30,550
+This is a dot
+product in d of w--
+
+164
+00:08:30,550 --> 00:08:35,344
+that vector-- dot product
+with C of v minus C of w.
+
+165
+00:08:35,344 --> 00:08:40,459
+
+166
+00:08:40,459 --> 00:08:42,584
+It turns out dot product
+corresponds to projection.
+
+167
+00:08:42,584 --> 00:08:43,890
+So I'm taking this vector.
+
+168
+00:08:43,890 --> 00:08:45,850
+I'm projecting onto this one.
+
+169
+00:08:45,850 --> 00:08:47,830
+That's how you'd write
+it algebraically.
+
+170
+00:08:47,830 --> 00:08:49,110
+And same deal over here.
+
+171
+00:08:49,110 --> 00:08:53,560
+If I project this
+vector onto this one,
+
+172
+00:08:53,560 --> 00:08:56,910
+that's going to be the
+first-order change to this edge
+
+173
+00:08:56,910 --> 00:09:00,896
+length caused by this vertex
+moving in that direction.
+
+174
+00:09:00,896 --> 00:09:10,910
+So this is d of v dot
+C of v, minus C of w.
+
+175
+00:09:10,910 --> 00:09:13,740
+
+176
+00:09:13,740 --> 00:09:15,415
+So if I want this
+edge length not
+
+177
+00:09:15,415 --> 00:09:18,060
+to change at all
+to the first order,
+
+178
+00:09:18,060 --> 00:09:20,720
+then this projected length
+should equal this projected
+
+179
+00:09:20,720 --> 00:09:21,220
+length.
+
+180
+00:09:21,220 --> 00:09:23,040
+And that's why I
+drew it this way.
+
+181
+00:09:23,040 --> 00:09:26,270
+So it turns out this is a valid
+motion, because that projected
+
+182
+00:09:26,270 --> 00:09:29,490
+length equals that one.
+
+183
+00:09:29,490 --> 00:09:32,680
+And in general, we want this
+thing to equal that thing.
+
+184
+00:09:32,680 --> 00:09:34,250
+And if you rearrange
+terms, that's
+
+185
+00:09:34,250 --> 00:09:37,590
+the same thing as this property.
+
+186
+00:09:37,590 --> 00:09:42,680
+I just take this one minus this
+one, and set it equal to zero,
+
+187
+00:09:42,680 --> 00:09:46,070
+and you get that.
+
+188
+00:09:46,070 --> 00:09:48,417
+OK, so this is some intuition.
+
+189
+00:09:48,417 --> 00:09:49,750
+Maybe it makes sense, maybe not.
+
+190
+00:09:49,750 --> 00:09:54,180
+In the end, this is
+all I care about.
+
+191
+00:09:54,180 --> 00:09:57,780
+And it's useful to
+realize that it's
+
+192
+00:09:57,780 --> 00:10:02,810
+a first derivative of a motion,
+because what that implies
+
+193
+00:10:02,810 --> 00:10:08,480
+is that if there's
+a motion-- a real,
+
+194
+00:10:08,480 --> 00:10:12,445
+honest to goodness
+motion-- then there's
+
+195
+00:10:12,445 --> 00:10:13,445
+an infinitesimal motion.
+
+196
+00:10:13,445 --> 00:10:17,630
+
+197
+00:10:17,630 --> 00:10:21,360
+I'm going to abbreviate
+that "inf motion."
+
+198
+00:10:21,360 --> 00:10:22,620
+Infinitesimal is pretty long.
+
+199
+00:10:22,620 --> 00:10:26,630
+Infinitesimal means
+smaller-- very tiny-- smaller
+
+200
+00:10:26,630 --> 00:10:31,370
+than anything, I think
+is the literal meaning.
+
+201
+00:10:31,370 --> 00:10:37,450
+So this is useful to us,
+because the contrapositive
+
+202
+00:10:37,450 --> 00:10:43,550
+says if a linkage is
+infinitesimally rigid-- which
+
+203
+00:10:43,550 --> 00:10:46,510
+just means if there is no
+infinitesimal motion-- then
+
+204
+00:10:46,510 --> 00:10:47,030
+it's rigid.
+
+205
+00:10:47,030 --> 00:10:50,195
+
+206
+00:10:50,195 --> 00:10:51,570
+So these are the
+same statements.
+
+207
+00:10:51,570 --> 00:10:53,153
+This you prove just
+by taking a motion
+
+208
+00:10:53,153 --> 00:10:55,090
+and taking its derivative.
+
+209
+00:10:55,090 --> 00:10:57,450
+This is identical to that.
+
+210
+00:10:57,450 --> 00:10:59,150
+So this is useful
+because if we can ever
+
+211
+00:10:59,150 --> 00:11:02,210
+find something and show that
+it's infinitesimally rigid,
+
+212
+00:11:02,210 --> 00:11:03,860
+then we've determined
+that it's rigid.
+
+213
+00:11:03,860 --> 00:11:05,804
+Question?
+
+214
+00:11:05,804 --> 00:11:11,282
+STUDENT: [INAUDIBLE]
+dot product [INAUDIBLE]
+
+215
+00:11:11,282 --> 00:11:16,096
+at a left right turn is
+0, or that the terms are
+
+216
+00:11:16,096 --> 00:11:18,189
+at 90 degrees to each other?
+
+217
+00:11:18,189 --> 00:11:19,980
+PROFESSOR: Yeah, this
+dot product basically
+
+218
+00:11:19,980 --> 00:11:23,490
+means these two vectors are
+at 90 degrees to each other.
+
+219
+00:11:23,490 --> 00:11:25,610
+That's another
+geometric meaning.
+
+220
+00:11:25,610 --> 00:11:29,970
+I don't have a
+geometric picture.
+
+221
+00:11:29,970 --> 00:11:32,180
+Maybe there is one,
+but I have trouble
+
+222
+00:11:32,180 --> 00:11:34,770
+thinking about d
+of v minus d of w.
+
+223
+00:11:34,770 --> 00:11:40,790
+That's not an intuitive thing
+to me, but it's something.
+
+224
+00:11:40,790 --> 00:11:42,510
+And we're saying that
+that vector should
+
+225
+00:11:42,510 --> 00:11:46,354
+be perpendicular to
+C of v minus C of w.
+
+226
+00:11:46,354 --> 00:11:47,770
+However you want
+to think about, I
+
+227
+00:11:47,770 --> 00:11:50,460
+like to think about it this
+way, but they're equivalent.
+
+228
+00:11:50,460 --> 00:11:52,880
+
+229
+00:11:52,880 --> 00:11:54,880
+All right, so how do we
+tell whether something's
+
+230
+00:11:54,880 --> 00:11:56,280
+infinitesimally rigid?
+
+231
+00:11:56,280 --> 00:11:58,060
+Because somehow
+that's useful to us.
+
+232
+00:11:58,060 --> 00:12:01,790
+
+233
+00:12:01,790 --> 00:12:04,490
+Well, there's a
+saying that everything
+
+234
+00:12:04,490 --> 00:12:09,720
+is linear to the first
+order-- sort of a tautology.
+
+235
+00:12:09,720 --> 00:12:12,830
+And all you need to observe
+is that this constraint
+
+236
+00:12:12,830 --> 00:12:15,150
+is linear in what we don't know.
+
+237
+00:12:15,150 --> 00:12:18,510
+So I want to know is there
+some set of velocity vectors
+
+238
+00:12:18,510 --> 00:12:21,720
+d of v, and d of w,
+for all the vertices,
+
+239
+00:12:21,720 --> 00:12:23,920
+so that these constraints hold.
+
+240
+00:12:23,920 --> 00:12:26,200
+But I already know C of
+v, and I know C of w.
+
+241
+00:12:26,200 --> 00:12:29,550
+This is just where are
+these vertices currently.
+
+242
+00:12:29,550 --> 00:12:31,930
+And I want to know can
+I get started moving?
+
+243
+00:12:31,930 --> 00:12:34,020
+So these are my
+known quantities,
+
+244
+00:12:34,020 --> 00:12:35,729
+and these are my
+unknown quantities.
+
+245
+00:12:35,729 --> 00:12:37,020
+This is just some linear thing.
+
+246
+00:12:37,020 --> 00:12:38,910
+And the dot product-- I mean,
+this is all just constant.
+
+247
+00:12:38,910 --> 00:12:40,030
+I know what they are.
+
+248
+00:12:40,030 --> 00:12:42,320
+So this is a linear equation.
+
+249
+00:12:42,320 --> 00:12:45,330
+The fancy way to write this
+is as a matrix equation,
+
+250
+00:12:45,330 --> 00:12:47,730
+if you want.
+
+251
+00:12:47,730 --> 00:12:51,220
+So this is the idea
+of a rigidity matrix.
+
+252
+00:12:51,220 --> 00:12:57,010
+
+253
+00:12:57,010 --> 00:12:59,040
+So we have a whole bunch
+of these constraints,
+
+254
+00:12:59,040 --> 00:13:00,880
+one for every edge.
+
+255
+00:13:00,880 --> 00:13:03,180
+And whenever you have a
+bunch of linear constraints,
+
+256
+00:13:03,180 --> 00:13:07,360
+you can write them as
+R-- some big matrix--
+
+257
+00:13:07,360 --> 00:13:17,030
+times the velocity, or
+call them d's equals 0.
+
+258
+00:13:17,030 --> 00:13:20,380
+
+259
+00:13:20,380 --> 00:13:22,030
+So I can absorb
+this into a matrix.
+
+260
+00:13:22,030 --> 00:13:24,040
+If you're used to that, great.
+
+261
+00:13:24,040 --> 00:13:27,600
+Otherwise, this is
+what it looks like.
+
+262
+00:13:27,600 --> 00:13:31,760
+My matrix R is going
+to have a row that
+
+263
+00:13:31,760 --> 00:13:34,040
+has a whole bunch of zeroes.
+
+264
+00:13:34,040 --> 00:13:39,890
+And then at some point, it
+has basically various versions
+
+265
+00:13:39,890 --> 00:13:41,410
+of this vector.
+
+266
+00:13:41,410 --> 00:13:46,530
+But because this
+is one equation,
+
+267
+00:13:46,530 --> 00:13:53,175
+but in two dimensions, there's
+two parts to all these vectors.
+
+268
+00:13:53,175 --> 00:14:09,190
+
+269
+00:14:09,190 --> 00:14:12,975
+Two dimensions that'll
+look something like this--
+
+270
+00:14:12,975 --> 00:14:14,100
+why did I change the order?
+
+271
+00:14:14,100 --> 00:14:18,579
+
+272
+00:14:18,579 --> 00:14:19,370
+I think it's right.
+
+273
+00:14:19,370 --> 00:14:34,940
+
+274
+00:14:34,940 --> 00:14:38,080
+OK, this is not very amazing.
+
+275
+00:14:38,080 --> 00:14:42,130
+It's just there are going
+to be four terms in two
+
+276
+00:14:42,130 --> 00:14:44,880
+dimensions in this
+equation, because we've
+
+277
+00:14:44,880 --> 00:14:49,506
+got d of v times this vector.
+
+278
+00:14:49,506 --> 00:14:50,880
+So there's a
+x-coordinate vector,
+
+279
+00:14:50,880 --> 00:14:52,921
+and the y-coordinate
+vector, and in d dimensions,
+
+280
+00:14:52,921 --> 00:14:54,010
+there will be d of them.
+
+281
+00:14:54,010 --> 00:14:56,520
+Here in two dimensions, I've got
+the x-coordinate of the vector,
+
+282
+00:14:56,520 --> 00:14:57,978
+and the y-coordinate
+of the vector.
+
+283
+00:14:57,978 --> 00:15:04,520
+So this will end up getting
+multiplied on the right hand
+
+284
+00:15:04,520 --> 00:15:10,559
+side by d of v.
+So the two v rows,
+
+285
+00:15:10,559 --> 00:15:12,850
+and this part will end up
+getting multiplied by d of w.
+
+286
+00:15:12,850 --> 00:15:16,462
+
+287
+00:15:16,462 --> 00:15:17,920
+yes, so these guys
+switched around.
+
+288
+00:15:17,920 --> 00:15:21,560
+It's now w minus v in order
+to implement that minus sign.
+
+289
+00:15:21,560 --> 00:15:24,460
+
+290
+00:15:24,460 --> 00:15:27,860
+So whatever-- the point
+is you get a matrix.
+
+291
+00:15:27,860 --> 00:15:31,600
+And what we care about, what
+we're trying to solve for,
+
+292
+00:15:31,600 --> 00:15:32,480
+is d.
+
+293
+00:15:32,480 --> 00:15:34,650
+We know this entire
+matrix, because we know c.
+
+294
+00:15:34,650 --> 00:15:36,420
+We know the configuration.
+
+295
+00:15:36,420 --> 00:15:39,410
+We just want to know is there
+some set of velocity vectors
+
+296
+00:15:39,410 --> 00:15:43,220
+such that the rigidity matrix
+times this is equal to zero?
+
+297
+00:15:43,220 --> 00:15:45,680
+This is called the set
+of d's i for which this
+
+298
+00:15:45,680 --> 00:15:50,780
+is possible is called
+the-- anyone know?
+
+299
+00:15:50,780 --> 00:15:53,060
+Good old linear
+algebra-- it's called
+
+300
+00:15:53,060 --> 00:15:57,240
+the null space of
+this rigidity--
+
+301
+00:15:57,240 --> 00:16:02,005
+null referring to
+that 0, or the kernel.
+
+302
+00:16:02,005 --> 00:16:05,520
+
+303
+00:16:05,520 --> 00:16:14,340
+So the set of all
+infinitesimal motions
+
+304
+00:16:14,340 --> 00:16:19,699
+is the null space of
+that matrix, also known
+
+305
+00:16:19,699 --> 00:16:20,865
+as the kernel of the matrix.
+
+306
+00:16:20,865 --> 00:16:23,810
+
+307
+00:16:23,810 --> 00:16:25,180
+And so what?
+
+308
+00:16:25,180 --> 00:16:29,090
+Well this lets us use a bunch
+of theorems in linear algebra.
+
+309
+00:16:29,090 --> 00:16:36,922
+So one fun fact is
+that the dimension
+
+310
+00:16:36,922 --> 00:16:41,944
+of this space-- the space of
+all infinitesimal motions--
+
+311
+00:16:41,944 --> 00:16:43,360
+seems like a useful
+thing to know.
+
+312
+00:16:43,360 --> 00:16:45,200
+We want to know how
+many-- this is basically
+
+313
+00:16:45,200 --> 00:16:48,360
+the number of degrees of freedom
+in infinitesimal land, which
+
+314
+00:16:48,360 --> 00:16:51,350
+is not quite reality,
+but it's close.
+
+315
+00:16:51,350 --> 00:16:53,805
+This is called the
+nullity of the matrix.
+
+316
+00:16:53,805 --> 00:16:56,640
+
+317
+00:16:56,640 --> 00:16:59,560
+That's just the
+definition, but there's
+
+318
+00:16:59,560 --> 00:17:03,980
+a fun theorem called
+the rank nullity
+
+319
+00:17:03,980 --> 00:17:07,319
+theorem from linear algebra.
+
+320
+00:17:07,319 --> 00:17:18,250
+
+321
+00:17:18,250 --> 00:17:20,960
+Which says if you
+have a matrix, you
+
+322
+00:17:20,960 --> 00:17:24,240
+take its rank-- which is
+another quantity-- you take
+
+323
+00:17:24,240 --> 00:17:27,390
+its nullity, and you
+add them together,
+
+324
+00:17:27,390 --> 00:17:31,550
+it will be the number of
+columns in your matrix.
+
+325
+00:17:31,550 --> 00:17:41,100
+Now in our case, the number
+of columns is d times n.
+
+326
+00:17:41,100 --> 00:17:45,260
+We have n vertices down
+here, and each of them
+
+327
+00:17:45,260 --> 00:17:47,640
+has d coordinates.
+
+328
+00:17:47,640 --> 00:17:49,270
+So for us, this is d times n.
+
+329
+00:17:49,270 --> 00:17:53,280
+
+330
+00:17:53,280 --> 00:17:56,490
+So this is like a
+conserved quantity.
+
+331
+00:17:56,490 --> 00:17:58,410
+What we care about
+is the nullity.
+
+332
+00:17:58,410 --> 00:18:03,820
+This is the space of motions--
+infinitesimal motions.
+
+333
+00:18:03,820 --> 00:18:07,190
+And so consequently, we
+care about this thing
+
+334
+00:18:07,190 --> 00:18:07,960
+called the rank.
+
+335
+00:18:07,960 --> 00:18:10,180
+And if you've ever seen
+linear algebra, especially
+
+336
+00:18:10,180 --> 00:18:14,710
+linear algebra algorithms,
+the bread and butter business
+
+337
+00:18:14,710 --> 00:18:16,500
+is computing the
+rank of a matrix.
+
+338
+00:18:16,500 --> 00:18:18,905
+This can be done
+in polynomial time.
+
+339
+00:18:18,905 --> 00:18:19,780
+So this is good news.
+
+340
+00:18:19,780 --> 00:18:21,950
+And intuitively what
+it corresponds to
+
+341
+00:18:21,950 --> 00:18:23,870
+is the number of useful edges.
+
+342
+00:18:23,870 --> 00:18:28,910
+
+343
+00:18:28,910 --> 00:18:31,680
+And this thing is the number
+of degrees of freedom.
+
+344
+00:18:31,680 --> 00:18:39,260
+
+345
+00:18:39,260 --> 00:18:42,784
+So it turns out these will
+always be equal to d times n
+
+346
+00:18:42,784 --> 00:18:43,325
+in summation.
+
+347
+00:18:43,325 --> 00:18:46,150
+
+348
+00:18:46,150 --> 00:18:55,510
+And what we care about,
+infinitesimal rigidity,
+
+349
+00:18:55,510 --> 00:18:59,280
+means that-- or let's say
+it's infinitesimally rigid if
+
+350
+00:18:59,280 --> 00:19:06,650
+and only if the
+nullity of the matrix
+
+351
+00:19:06,650 --> 00:19:11,750
+is the space of rigid motions,
+which I have to look up.
+
+352
+00:19:11,750 --> 00:19:17,570
+
+353
+00:19:17,570 --> 00:19:21,910
+In general, in d dimensions,
+it's this-- d plus 1 choose 2.
+
+354
+00:19:21,910 --> 00:19:24,370
+In two dimensions, there's
+three rigid motions.
+
+355
+00:19:24,370 --> 00:19:26,550
+You've got the two
+translations and the rotation.
+
+356
+00:19:26,550 --> 00:19:28,170
+Those we're not getting rid of.
+
+357
+00:19:28,170 --> 00:19:30,740
+They still exist in
+infinitesimal land.
+
+358
+00:19:30,740 --> 00:19:33,450
+So in two dimensions,
+ideally your nullity
+
+359
+00:19:33,450 --> 00:19:38,160
+is-- if you want rigidity,
+your nullity should be 3.
+
+360
+00:19:38,160 --> 00:19:44,640
+And what this is telling us
+is then the rank of the matrix
+
+361
+00:19:44,640 --> 00:19:47,170
+should be d n minus that.
+
+362
+00:19:47,170 --> 00:19:50,950
+
+363
+00:19:50,950 --> 00:19:53,320
+In two dimensions,
+that is 2n minus 3.
+
+364
+00:19:53,320 --> 00:19:55,070
+So this is telling us
+something we already
+
+365
+00:19:55,070 --> 00:19:58,560
+knew, but essentially for
+free, which is kind of fun,
+
+366
+00:19:58,560 --> 00:20:00,060
+if you know all
+this linear algebra.
+
+367
+00:20:00,060 --> 00:20:02,760
+Which admittedly, even if you've
+learned linear algebra, that
+
+368
+00:20:02,760 --> 00:20:05,420
+may not be the first thing you
+care about in that context,
+
+369
+00:20:05,420 --> 00:20:09,680
+but for rigidity, this
+is a really useful way
+
+370
+00:20:09,680 --> 00:20:11,230
+of thinking about things.
+
+371
+00:20:11,230 --> 00:20:13,454
+You've got all these
+columns-- d times n of them.
+
+372
+00:20:13,454 --> 00:20:15,870
+You want to obliterate all the
+degrees of freedom you can,
+
+373
+00:20:15,870 --> 00:20:19,150
+and leave just three of
+them in two dimensions--
+
+374
+00:20:19,150 --> 00:20:21,640
+d times d plus 1 over
+2 in d dimensions,
+
+375
+00:20:21,640 --> 00:20:23,820
+and you do that by
+adding useful edges.
+
+376
+00:20:23,820 --> 00:20:26,100
+And useful edges here means
+that the rank is high,
+
+377
+00:20:26,100 --> 00:20:29,440
+which essentially means none
+of the rows in this matrix
+
+378
+00:20:29,440 --> 00:20:31,530
+cancel out with each other.
+
+379
+00:20:31,530 --> 00:20:33,740
+So it's another way of
+thinking about essentially
+
+380
+00:20:33,740 --> 00:20:35,030
+everything we've seen.
+
+381
+00:20:35,030 --> 00:20:36,863
+And if you know linear
+algebra, it's useful.
+
+382
+00:20:36,863 --> 00:20:39,620
+Otherwise, I'll tell
+you how we can use it.
+
+383
+00:20:39,620 --> 00:20:45,340
+
+384
+00:20:45,340 --> 00:20:49,890
+OK, one mathematical
+thing we can do
+
+385
+00:20:49,890 --> 00:20:52,480
+is give another definition
+of a generic point set.
+
+386
+00:20:52,480 --> 00:20:55,620
+
+387
+00:20:55,620 --> 00:20:57,800
+Last class we talked
+about one definition
+
+388
+00:20:57,800 --> 00:20:59,900
+of generic, which
+was that you forbid
+
+389
+00:20:59,900 --> 00:21:07,130
+all non-trivial polynomial or
+algebraic rational equations
+
+390
+00:21:07,130 --> 00:21:11,680
+on your points, which is very
+messy and infinite and hard
+
+391
+00:21:11,680 --> 00:21:12,730
+to think about.
+
+392
+00:21:12,730 --> 00:21:15,000
+This definition will
+be easy to think about
+
+393
+00:21:15,000 --> 00:21:17,020
+if you're used to
+linear algebra.
+
+394
+00:21:17,020 --> 00:21:19,580
+So for some, it's
+an improvement.
+
+395
+00:21:19,580 --> 00:21:23,450
+For others, it might be
+the reverse-- whatever.
+
+396
+00:21:23,450 --> 00:21:31,760
+
+397
+00:21:31,760 --> 00:21:34,200
+But at least this definition
+is finite, which I like.
+
+398
+00:21:34,200 --> 00:22:26,525
+
+399
+00:22:26,525 --> 00:22:28,775
+OK, for this definition we
+need the notion of a minor.
+
+400
+00:22:28,775 --> 00:22:31,780
+
+401
+00:22:31,780 --> 00:22:33,630
+So we have some matrix.
+
+402
+00:22:33,630 --> 00:22:37,150
+Actually, our matrices
+are pretty rectangular.
+
+403
+00:22:37,150 --> 00:22:41,370
+And I just choose, let's say
+k columns from the matrix--
+
+404
+00:22:41,370 --> 00:22:47,490
+let's say 3, and
+I choose k rows--
+
+405
+00:22:47,490 --> 00:22:49,460
+the same number of
+rows and columns.
+
+406
+00:22:49,460 --> 00:22:52,990
+I look at those elements
+in the intersection.
+
+407
+00:22:52,990 --> 00:22:54,105
+That's a square matrix.
+
+408
+00:22:54,105 --> 00:22:56,640
+
+409
+00:22:56,640 --> 00:23:00,650
+That's a minor-- that
+3 by 3 square submatrix
+
+410
+00:23:00,650 --> 00:23:02,120
+is called a minor.
+
+411
+00:23:02,120 --> 00:23:03,774
+So there's a whole
+bunch of minors,
+
+412
+00:23:03,774 --> 00:23:04,940
+but it's only finitely many.
+
+413
+00:23:04,940 --> 00:23:06,640
+It's exponential.
+
+414
+00:23:06,640 --> 00:23:09,420
+It's not easy to check.
+
+415
+00:23:09,420 --> 00:23:12,780
+You take all the minors
+of your rigidity matrix.
+
+416
+00:23:12,780 --> 00:23:14,530
+And here I'm imagining
+the complete graph,
+
+417
+00:23:14,530 --> 00:23:15,850
+so there's tons of edges.
+
+418
+00:23:15,850 --> 00:23:18,890
+There's n choose two edges.
+
+419
+00:23:18,890 --> 00:23:20,400
+So this'll be
+independent linkage.
+
+420
+00:23:20,400 --> 00:23:22,066
+You could do it
+specific to the linkage,
+
+421
+00:23:22,066 --> 00:23:24,800
+but it's better to do it
+for the complete graph.
+
+422
+00:23:24,800 --> 00:23:27,415
+Then we take the
+determinant of that matrix,
+
+423
+00:23:27,415 --> 00:23:28,290
+which I won't define.
+
+424
+00:23:28,290 --> 00:23:31,300
+It's a number associated
+with that matrix.
+
+425
+00:23:31,300 --> 00:23:33,460
+And if it's non-zero--
+now remember,
+
+426
+00:23:33,460 --> 00:23:35,800
+rigidity matrix is
+defined as a function
+
+427
+00:23:35,800 --> 00:23:39,070
+of C. It depends where
+you put the vertices.
+
+428
+00:23:39,070 --> 00:23:42,570
+So what I'm saying is if it's
+non-zero for some choice of C,
+
+429
+00:23:42,570 --> 00:23:45,860
+then it should be non-zero
+for this choice of C.
+
+430
+00:23:45,860 --> 00:23:47,850
+And if you find
+such a configuration
+
+431
+00:23:47,850 --> 00:23:50,940
+C-- or I guess we call
+this a realization C--
+
+432
+00:23:50,940 --> 00:23:52,970
+then that C is generic.
+
+433
+00:23:52,970 --> 00:23:54,870
+So if I gave you a
+specific configuration,
+
+434
+00:23:54,870 --> 00:23:57,035
+you could, in principle,
+in finite time-- it
+
+435
+00:23:57,035 --> 00:23:59,770
+won't be efficient-- you could
+check all of these things.
+
+436
+00:23:59,770 --> 00:24:02,440
+And say, oh, I compute
+out, I work out
+
+437
+00:24:02,440 --> 00:24:06,480
+what the determinant of that
+submatrix is, that minor.
+
+438
+00:24:06,480 --> 00:24:07,970
+It's some algebraic function.
+
+439
+00:24:07,970 --> 00:24:09,560
+If it doesn't
+cancel out entirely,
+
+440
+00:24:09,560 --> 00:24:12,690
+if it's not zero trivially,
+it's not zero always,
+
+441
+00:24:12,690 --> 00:24:15,660
+then I just evaluate it
+at this configuration.
+
+442
+00:24:15,660 --> 00:24:18,220
+And if it's non-zero
+there, good.
+
+443
+00:24:18,220 --> 00:24:20,730
+That's generic.
+
+444
+00:24:20,730 --> 00:24:25,420
+So it's not useful
+in a computable way,
+
+445
+00:24:25,420 --> 00:24:26,671
+but it's a definition.
+
+446
+00:24:26,671 --> 00:24:27,670
+It's a little bit nicer.
+
+447
+00:24:27,670 --> 00:24:32,470
+
+448
+00:24:32,470 --> 00:24:34,100
+And now there's a
+bunch of fun facts
+
+449
+00:24:34,100 --> 00:24:44,240
+about infinitesimal
+motions and rigidity,
+
+450
+00:24:44,240 --> 00:24:46,070
+and the relation to
+the generic case.
+
+451
+00:24:46,070 --> 00:24:54,110
+
+452
+00:24:54,110 --> 00:24:59,149
+So there as we have
+before, this definition
+
+453
+00:24:59,149 --> 00:25:00,940
+is not quite the same,
+but it's effectively
+
+454
+00:25:00,940 --> 00:25:02,500
+the same as the last one.
+
+455
+00:25:02,500 --> 00:25:06,455
+Almost every
+configuration is generic.
+
+456
+00:25:06,455 --> 00:25:09,660
+
+457
+00:25:09,660 --> 00:25:14,700
+So maybe I should say
+realization-- whatever.
+
+458
+00:25:14,700 --> 00:25:20,960
+I take some point set--
+I take some vertex set.
+
+459
+00:25:20,960 --> 00:25:23,810
+I assign random
+points to each vertex.
+
+460
+00:25:23,810 --> 00:25:25,922
+Then with probability
+1, it will be generic
+
+461
+00:25:25,922 --> 00:25:27,130
+according to this definition.
+
+462
+00:25:27,130 --> 00:25:29,780
+That's really obvious if
+you know linear algebra.
+
+463
+00:25:29,780 --> 00:25:32,360
+That's a good thing.
+
+464
+00:25:32,360 --> 00:25:35,380
+But here's what's
+really cool-- if we
+
+465
+00:25:35,380 --> 00:25:38,110
+take any of these
+generic configurations--
+
+466
+00:25:38,110 --> 00:25:47,510
+so just fix one--
+rigidity is the same thing
+
+467
+00:25:47,510 --> 00:25:53,550
+as infinitesimal rigidity,
+is the same thing
+
+468
+00:25:53,550 --> 00:25:55,630
+as generic rigidity
+from last class.
+
+469
+00:25:55,630 --> 00:26:00,120
+
+470
+00:26:00,120 --> 00:26:03,820
+Wow, this is cool,
+because if I care
+
+471
+00:26:03,820 --> 00:26:06,710
+about any one of
+these three things,
+
+472
+00:26:06,710 --> 00:26:09,770
+I just have to pick my
+favorite generic point, which
+
+473
+00:26:09,770 --> 00:26:10,620
+I can do randomly.
+
+474
+00:26:10,620 --> 00:26:13,030
+I can just take a
+random point, and if I
+
+475
+00:26:13,030 --> 00:26:14,940
+can evaluate any one
+of these three things,
+
+476
+00:26:14,940 --> 00:26:17,440
+I learn about all the others.
+
+477
+00:26:17,440 --> 00:26:22,450
+So if you want to tell whether
+a 3D graph is generically rigid,
+
+478
+00:26:22,450 --> 00:26:26,060
+you take a random
+realization in 3D.
+
+479
+00:26:26,060 --> 00:26:28,420
+You compute the rank of
+this matrix generalized
+
+480
+00:26:28,420 --> 00:26:30,380
+to the 3D case.
+
+481
+00:26:30,380 --> 00:26:34,850
+You see is it 3 n minus
+6, and that will tell you
+
+482
+00:26:34,850 --> 00:26:39,890
+whether that generic realization
+is infinitesimally rigid.
+
+483
+00:26:39,890 --> 00:26:44,600
+And if you chose it right, which
+you will do at probability 1,
+
+484
+00:26:44,600 --> 00:26:47,350
+then that will tell you whether
+the graph is generically rigid.
+
+485
+00:26:47,350 --> 00:26:50,520
+So when I said last class
+generic rigidity in 3D is hard,
+
+486
+00:26:50,520 --> 00:26:53,390
+it's hard in the sense we don't
+have a deterministic algorithm,
+
+487
+00:26:53,390 --> 00:26:55,340
+but randomized-- super easy.
+
+488
+00:26:55,340 --> 00:26:57,235
+Choose a random
+configuration, check
+
+489
+00:26:57,235 --> 00:26:58,860
+the rank of the
+rigidity matrix-- done.
+
+490
+00:26:58,860 --> 00:27:01,370
+
+491
+00:27:01,370 --> 00:27:03,080
+So that's kind of cool.
+
+492
+00:27:03,080 --> 00:27:05,810
+And that's why this
+infinitesimal rigidity stuff
+
+493
+00:27:05,810 --> 00:27:09,820
+is so important, because
+it's so easy algorithmically.
+
+494
+00:27:09,820 --> 00:27:12,480
+Things become a lot easier.
+
+495
+00:27:12,480 --> 00:27:16,100
+Let me draw you one
+example just to show
+
+496
+00:27:16,100 --> 00:27:17,890
+what happens at
+non-generic points.
+
+497
+00:27:17,890 --> 00:27:19,910
+I've actually drawn
+this example before.
+
+498
+00:27:19,910 --> 00:27:23,620
+
+499
+00:27:23,620 --> 00:27:24,870
+So here's a non-generic point.
+
+500
+00:27:24,870 --> 00:27:26,664
+These three points
+are collinear.
+
+501
+00:27:26,664 --> 00:27:28,330
+And you can work out
+there is some minor
+
+502
+00:27:28,330 --> 00:27:30,979
+that is 0, but shouldn't be.
+
+503
+00:27:30,979 --> 00:27:33,520
+And this thing is rigid, because
+we have rigid triangle here.
+
+504
+00:27:33,520 --> 00:27:35,630
+We have a rigid triangle here.
+
+505
+00:27:35,630 --> 00:27:38,230
+So these two points are
+pinned relative to each other.
+
+506
+00:27:38,230 --> 00:27:40,830
+And then this thing is
+taut, so it can't move.
+
+507
+00:27:40,830 --> 00:27:43,700
+But to the first
+order, it can move.
+
+508
+00:27:43,700 --> 00:27:47,830
+And it's allowed to move
+straight up or down--
+
+509
+00:27:47,830 --> 00:27:50,549
+anything perpendicular
+to this segment.
+
+510
+00:27:50,549 --> 00:27:51,340
+That's always true.
+
+511
+00:27:51,340 --> 00:27:56,070
+If you take a segment, and
+you move one vertex but not
+
+512
+00:27:56,070 --> 00:27:57,830
+the other perpendicular
+to the segment,
+
+513
+00:27:57,830 --> 00:28:00,641
+that's a valid
+infinitesimal motion.
+
+514
+00:28:00,641 --> 00:28:01,140
+Why?
+
+515
+00:28:01,140 --> 00:28:04,680
+Because if I project this
+onto the segment, I get 0.
+
+516
+00:28:04,680 --> 00:28:07,670
+So this length is not
+changing to the first order.
+
+517
+00:28:07,670 --> 00:28:09,210
+And this is really necessary.
+
+518
+00:28:09,210 --> 00:28:11,792
+To the first order, you can't
+really distinguish this guy
+
+519
+00:28:11,792 --> 00:28:13,500
+actually moving up,
+and therefore getting
+
+520
+00:28:13,500 --> 00:28:20,520
+slightly longer versus this guy
+moving along a circle centered
+
+521
+00:28:20,520 --> 00:28:22,580
+at that point, which
+is a valid motion.
+
+522
+00:28:22,580 --> 00:28:24,400
+To the first order,
+they look the same,
+
+523
+00:28:24,400 --> 00:28:28,440
+because you're going straight
+up or down in first derivative.
+
+524
+00:28:28,440 --> 00:28:31,280
+OK, here, to the
+first order, you
+
+525
+00:28:31,280 --> 00:28:32,989
+can't realize the
+fact that if you're
+
+526
+00:28:32,989 --> 00:28:34,530
+going to go on this
+circle and you're
+
+527
+00:28:34,530 --> 00:28:37,380
+going to go on this circle,
+you get a contradiction.
+
+528
+00:28:37,380 --> 00:28:38,920
+But it's pretty accurate.
+
+529
+00:28:38,920 --> 00:28:41,740
+And if you perturb this
+example, infinitesimal rigidity
+
+530
+00:28:41,740 --> 00:28:43,200
+will give you the right answer.
+
+531
+00:28:43,200 --> 00:28:45,750
+This is an example where
+infinitesimal rigidity is
+
+532
+00:28:45,750 --> 00:28:51,879
+a little bit weaker than--
+no, infinitesimal flexibility
+
+533
+00:28:51,879 --> 00:28:54,295
+having infinitesimal motion
+is a little weaker than having
+
+534
+00:28:54,295 --> 00:28:58,671
+a motion, but the reverse holds.
+
+535
+00:28:58,671 --> 00:29:01,170
+If there's a motion, there's
+always an infinitesimal motion.
+
+536
+00:29:01,170 --> 00:29:03,800
+If you're infinitesimally
+rigid, you're always rigid.
+
+537
+00:29:03,800 --> 00:29:07,670
+That example is rigid, but
+not infinitesimally rigid,
+
+538
+00:29:07,670 --> 00:29:10,940
+so it's sort of strict.
+
+539
+00:29:10,940 --> 00:29:13,254
+OK so far?
+
+540
+00:29:13,254 --> 00:29:15,170
+That's the more technical
+part of the lecture.
+
+541
+00:29:15,170 --> 00:29:17,700
+
+542
+00:29:17,700 --> 00:29:18,590
+Question?
+
+543
+00:29:18,590 --> 00:29:21,470
+STUDENT: Will [INAUDIBLE]
+be square matricies?
+
+544
+00:29:21,470 --> 00:29:24,390
+PROFESSOR: The rigidity matrices
+are almost never square.
+
+545
+00:29:24,390 --> 00:29:25,834
+Good question.
+
+546
+00:29:25,834 --> 00:29:27,250
+The minors are
+going to be square,
+
+547
+00:29:27,250 --> 00:29:28,880
+because we told them to be.
+
+548
+00:29:28,880 --> 00:29:33,200
+But I think typically,
+in the ideal setting,
+
+549
+00:29:33,200 --> 00:29:35,000
+we're going to
+have d n columns--
+
+550
+00:29:35,000 --> 00:29:39,490
+so let's say 2 times n
+columns in two dimensions.
+
+551
+00:29:39,490 --> 00:29:43,560
+And we're supposed to
+have 2n minus 3 rows.
+
+552
+00:29:43,560 --> 00:29:45,620
+So it's close, but
+in general, they
+
+553
+00:29:45,620 --> 00:29:48,570
+should differ by
+about this much.
+
+554
+00:29:48,570 --> 00:29:51,470
+So they're almost
+square, actually.
+
+555
+00:29:51,470 --> 00:29:53,250
+Glad you asked.
+
+556
+00:29:53,250 --> 00:29:54,625
+STUDENT: You can
+add [INAUDIBLE].
+
+557
+00:29:54,625 --> 00:29:57,099
+
+558
+00:29:57,099 --> 00:29:58,890
+PROFESSOR: You could
+always add extra edges
+
+559
+00:29:58,890 --> 00:29:59,956
+and make it square, yeah.
+
+560
+00:29:59,956 --> 00:30:01,580
+STUDENT: [INAUDIBLE].
+
+561
+00:30:01,580 --> 00:30:03,690
+PROFESSOR: Well, no.
+
+562
+00:30:03,690 --> 00:30:06,130
+So that's another good question.
+
+563
+00:30:06,130 --> 00:30:08,860
+What happens if I add
+more edges than this many?
+
+564
+00:30:08,860 --> 00:30:10,970
+The rank just won't go up.
+
+565
+00:30:10,970 --> 00:30:14,470
+Any edges you add will
+add redundant constraints,
+
+566
+00:30:14,470 --> 00:30:18,042
+and so the rank can never
+go above this value.
+
+567
+00:30:18,042 --> 00:30:20,000
+You need at least this
+many edges to get there,
+
+568
+00:30:20,000 --> 00:30:22,150
+and we know we can get
+there with that many edges,
+
+569
+00:30:22,150 --> 00:30:25,690
+but only in the
+minimal rigid case.
+
+570
+00:30:25,690 --> 00:30:26,850
+You could add more edges.
+
+571
+00:30:26,850 --> 00:30:29,910
+You could make it a
+super-tall matrix if you want,
+
+572
+00:30:29,910 --> 00:30:33,610
+but you're not going
+to increase the rank.
+
+573
+00:30:33,610 --> 00:30:38,510
+All right, let's use this
+for something more fun.
+
+574
+00:30:38,510 --> 00:30:45,750
+So maybe go over here.
+
+575
+00:30:45,750 --> 00:30:52,069
+
+576
+00:30:52,069 --> 00:30:53,818
+I don't need the
+rigidity matrix any more.
+
+577
+00:30:53,818 --> 00:31:12,400
+
+578
+00:31:12,400 --> 00:31:19,000
+Tensegrity-- so this
+is in some sense
+
+579
+00:31:19,000 --> 00:31:24,120
+an extension of rigidity
+theory to a whole other theory
+
+580
+00:31:24,120 --> 00:31:25,370
+called tensegrity theory.
+
+581
+00:31:25,370 --> 00:31:27,890
+
+582
+00:31:27,890 --> 00:31:31,710
+The word tensegrity comes from
+tensional integrity, which
+
+583
+00:31:31,710 --> 00:31:34,726
+is a very Buckminster Fuller
+term, and he invented it.
+
+584
+00:31:34,726 --> 00:31:36,350
+I don't think he
+invented tensegrities,
+
+585
+00:31:36,350 --> 00:31:39,830
+but he invented the word.
+
+586
+00:31:39,830 --> 00:31:45,040
+And they are things
+like this-- here's
+
+587
+00:31:45,040 --> 00:31:49,260
+a tensegrity built and
+given to me by Bob Connolly.
+
+588
+00:31:49,260 --> 00:31:52,070
+And it has well,
+I guess, there are
+
+589
+00:31:52,070 --> 00:31:55,050
+three kinds of edges physically.
+
+590
+00:31:55,050 --> 00:31:56,880
+There are the springs.
+
+591
+00:31:56,880 --> 00:32:03,150
+There are these struts, and
+there are these wire cables.
+
+592
+00:32:03,150 --> 00:32:05,570
+And its rigid.
+
+593
+00:32:05,570 --> 00:32:07,570
+It's a little flexible,
+just because the springs
+
+594
+00:32:07,570 --> 00:32:11,590
+aren't perfectly stiff,
+like all springs.
+
+595
+00:32:11,590 --> 00:32:13,270
+But there are three
+kinds of edges here,
+
+596
+00:32:13,270 --> 00:32:15,353
+and we're going to model
+the three kinds of edges.
+
+597
+00:32:15,353 --> 00:32:17,140
+The edges that
+we've modeled so far
+
+598
+00:32:17,140 --> 00:32:19,850
+are most closely related
+to these springs,
+
+599
+00:32:19,850 --> 00:32:22,320
+so that's not quite the
+right physical analogy.
+
+600
+00:32:22,320 --> 00:32:25,980
+What I would call the
+edges and linkages is bars.
+
+601
+00:32:25,980 --> 00:32:29,520
+Bars are, like,
+solid attachments,
+
+602
+00:32:29,520 --> 00:32:31,570
+like steel rods
+that are permanently
+
+603
+00:32:31,570 --> 00:32:33,680
+attached to the two endpoints.
+
+604
+00:32:33,680 --> 00:32:36,640
+The lengths of these
+edges should never change.
+
+605
+00:32:36,640 --> 00:32:39,560
+That's been the world
+we live in, at least
+
+606
+00:32:39,560 --> 00:32:41,130
+to the first order, whatever.
+
+607
+00:32:41,130 --> 00:32:43,600
+Edge lengths of bars
+should never change.
+
+608
+00:32:43,600 --> 00:32:44,970
+Now we have these cables.
+
+609
+00:32:44,970 --> 00:32:48,210
+Now cables really
+can get shorter.
+
+610
+00:32:48,210 --> 00:32:50,690
+This cable is perfectly
+happy to get shorter.
+
+611
+00:32:50,690 --> 00:32:53,695
+I can pull those two
+vertices together.
+
+612
+00:32:53,695 --> 00:32:55,320
+But what it prevents
+is getting longer.
+
+613
+00:32:55,320 --> 00:32:57,430
+If I pull-- you
+can't tell, but I'm
+
+614
+00:32:57,430 --> 00:33:00,240
+pulling really hard on
+these vertices apart.
+
+615
+00:33:00,240 --> 00:33:03,360
+Nothing happens, because this
+cable can't get any longer.
+
+616
+00:33:03,360 --> 00:33:06,350
+So cables prevent
+extension, but they do not
+
+617
+00:33:06,350 --> 00:33:07,810
+prevent compression.
+
+618
+00:33:07,810 --> 00:33:10,442
+Struts, on the other hand--
+they prevent compression.
+
+619
+00:33:10,442 --> 00:33:12,900
+If I push on these two vertices,
+they don't get any closer.
+
+620
+00:33:12,900 --> 00:33:15,400
+If I pull, it comes right out.
+
+621
+00:33:15,400 --> 00:33:19,410
+And you have to realize
+that these are eye hooks,
+
+622
+00:33:19,410 --> 00:33:21,510
+and so really, those
+could come apart.
+
+623
+00:33:21,510 --> 00:33:24,660
+All these struts are
+preventing is compression.
+
+624
+00:33:24,660 --> 00:33:26,510
+They don't prevent expansion.
+
+625
+00:33:26,510 --> 00:33:29,650
+So that's the thing
+we want to model.
+
+626
+00:33:29,650 --> 00:33:32,420
+
+627
+00:33:32,420 --> 00:33:34,300
+This is a tensegrity.
+
+628
+00:33:34,300 --> 00:33:39,080
+It's a generalization
+of a linkage
+
+629
+00:33:39,080 --> 00:33:42,045
+and where we allow
+three kinds of edges.
+
+630
+00:33:42,045 --> 00:33:46,450
+
+631
+00:33:46,450 --> 00:33:54,040
+It can be a bar-- and
+this is the old case,
+
+632
+00:33:54,040 --> 00:33:55,505
+which is that the
+length is fixed.
+
+633
+00:33:55,505 --> 00:33:59,650
+
+634
+00:33:59,650 --> 00:34:07,818
+We can have cables, which
+is the length can decrease,
+
+635
+00:34:07,818 --> 00:34:08,734
+but it can't increase.
+
+636
+00:34:08,734 --> 00:34:14,389
+
+637
+00:34:14,389 --> 00:34:18,309
+And there are struts,
+which are the reverse--
+
+638
+00:34:18,309 --> 00:34:21,724
+you can increase
+but not decrease.
+
+639
+00:34:21,724 --> 00:34:28,250
+
+640
+00:34:28,250 --> 00:34:29,750
+Seems like a useful
+generalization,
+
+641
+00:34:29,750 --> 00:34:31,889
+especially because
+people build things
+
+642
+00:34:31,889 --> 00:34:34,280
+they actually use
+struts and cables.
+
+643
+00:34:34,280 --> 00:34:37,210
+Like you look at most bridges--
+tons of cables around.
+
+644
+00:34:37,210 --> 00:34:41,489
+I think I have an example here.
+
+645
+00:34:41,489 --> 00:34:44,070
+There's this guy,
+Ken Snelson, who
+
+646
+00:34:44,070 --> 00:34:47,440
+makes a whole bunch of
+cool tensegrity sculptures.
+
+647
+00:34:47,440 --> 00:34:50,300
+This is a particularly
+tall one in Washington, DC
+
+648
+00:34:50,300 --> 00:34:53,120
+that I saw a couple years ago.
+
+649
+00:34:53,120 --> 00:34:55,315
+That's to give you
+an idea of height.
+
+650
+00:34:55,315 --> 00:34:56,690
+And there's this
+really cool view
+
+651
+00:34:56,690 --> 00:34:58,730
+if you stand-- here's a person.
+
+652
+00:34:58,730 --> 00:35:01,600
+You stand in the
+center, and you look up.
+
+653
+00:35:01,600 --> 00:35:05,750
+It has this really
+cool, sixfold rotational
+
+654
+00:35:05,750 --> 00:35:08,200
+reflectional symmetry.
+
+655
+00:35:08,200 --> 00:35:09,630
+I could stare at this for hours.
+
+656
+00:35:09,630 --> 00:35:12,440
+I think that's just
+the [? zoom ?].
+
+657
+00:35:12,440 --> 00:35:15,750
+So we want to understand
+those structures.
+
+658
+00:35:15,750 --> 00:35:17,470
+This one's also
+rigid, hopefully.
+
+659
+00:35:17,470 --> 00:35:21,820
+It's been standing for 40 years.
+
+660
+00:35:21,820 --> 00:35:25,000
+So what can we define in
+this generalized setting
+
+661
+00:35:25,000 --> 00:35:26,560
+of tensegrity?
+
+662
+00:35:26,560 --> 00:35:27,710
+We want motions.
+
+663
+00:35:27,710 --> 00:35:29,200
+We want rigidity.
+
+664
+00:35:29,200 --> 00:35:31,290
+We want generic rigidity.
+
+665
+00:35:31,290 --> 00:35:32,760
+We want infinitesimal rigidity.
+
+666
+00:35:32,760 --> 00:35:34,410
+All the good things
+we've defined,
+
+667
+00:35:34,410 --> 00:35:36,370
+hopefully, carry over to this.
+
+668
+00:35:36,370 --> 00:35:38,290
+Well, all but one of
+them carry over to this.
+
+669
+00:35:38,290 --> 00:35:48,430
+
+670
+00:35:48,430 --> 00:35:50,970
+OK, we can define a
+configuration space.
+
+671
+00:35:50,970 --> 00:35:54,320
+It's going to be a little
+smaller, or a little different
+
+672
+00:35:54,320 --> 00:35:57,355
+from our old
+configuration space.
+
+673
+00:35:57,355 --> 00:35:59,680
+It's a space of all possible
+configurations where
+
+674
+00:35:59,680 --> 00:36:02,310
+these three things
+hold-- give you
+
+675
+00:36:02,310 --> 00:36:04,130
+desired lengths for
+each of these things.
+
+676
+00:36:04,130 --> 00:36:05,960
+As long as these
+constraints hold,
+
+677
+00:36:05,960 --> 00:36:07,960
+that the lengths stay the
+same here, get smaller
+
+678
+00:36:07,960 --> 00:36:11,042
+here or the same, or stay
+the same or get larger here--
+
+679
+00:36:11,042 --> 00:36:12,250
+that's a valid configuration.
+
+680
+00:36:12,250 --> 00:36:14,210
+So it's actually a slightly
+larger configuration space
+
+681
+00:36:14,210 --> 00:36:14,974
+than what we had.
+
+682
+00:36:14,974 --> 00:36:16,390
+A path through
+that space is going
+
+683
+00:36:16,390 --> 00:36:18,800
+to be a motion,
+just like before.
+
+684
+00:36:18,800 --> 00:36:22,670
+Configuration is just
+a bunch of points
+
+685
+00:36:22,670 --> 00:36:26,550
+where this holds--
+blah, blah, blah.
+
+686
+00:36:26,550 --> 00:36:30,775
+The problem is, there's no
+notion of generic rigidity.
+
+687
+00:36:30,775 --> 00:36:39,060
+
+688
+00:36:39,060 --> 00:36:52,600
+For example, this is a
+generically flexible linkage.
+
+689
+00:36:52,600 --> 00:36:54,298
+We all know it.
+
+690
+00:36:54,298 --> 00:36:58,690
+
+691
+00:36:58,690 --> 00:37:01,625
+Now I take my yellow
+chalk and add struts.
+
+692
+00:37:01,625 --> 00:37:04,900
+
+693
+00:37:04,900 --> 00:37:08,380
+Maybe I'll put some arrows on
+it to make it more obvious.
+
+694
+00:37:08,380 --> 00:37:14,175
+These are things they can
+expand, but cannot contract.
+
+695
+00:37:14,175 --> 00:37:16,780
+
+696
+00:37:16,780 --> 00:37:21,270
+Then this configuration
+is rigid or flexible?
+
+697
+00:37:21,270 --> 00:37:24,270
+
+698
+00:37:24,270 --> 00:37:28,227
+Flexible, yeah-- this is a
+one degree of freedom linkage.
+
+699
+00:37:28,227 --> 00:37:30,310
+The white part is a one
+degree of freedom linkage,
+
+700
+00:37:30,310 --> 00:37:33,600
+and if you move this thing
+in a particular direction,
+
+701
+00:37:33,600 --> 00:37:38,210
+indeed, this increases
+and that increases.
+
+702
+00:37:38,210 --> 00:37:39,270
+Check it.
+
+703
+00:37:39,270 --> 00:37:41,500
+This one is rigid.
+
+704
+00:37:41,500 --> 00:37:43,860
+The only way to move
+the square-- or in fact,
+
+705
+00:37:43,860 --> 00:37:46,650
+any generic convex
+configuration--
+
+706
+00:37:46,650 --> 00:37:49,944
+is one of these pairs
+has to get shorter.
+
+707
+00:37:49,944 --> 00:37:51,860
+The other one will get
+longer, but one of them
+
+708
+00:37:51,860 --> 00:37:54,350
+will get shorter.
+
+709
+00:37:54,350 --> 00:37:59,500
+So this is the same graph,
+and the same labeling
+
+710
+00:37:59,500 --> 00:38:01,876
+of which edges are bars
+and which are struts,
+
+711
+00:38:01,876 --> 00:38:03,500
+but in one configuration
+it's flexible.
+
+712
+00:38:03,500 --> 00:38:04,375
+The other it's rigid.
+
+713
+00:38:04,375 --> 00:38:06,050
+So we lose generic rigidity.
+
+714
+00:38:06,050 --> 00:38:08,620
+But infinitesimal
+rigidity still works,
+
+715
+00:38:08,620 --> 00:38:11,340
+and generic configurations
+are still meaningful.
+
+716
+00:38:11,340 --> 00:38:13,710
+It's just that they're
+not all the same.
+
+717
+00:38:13,710 --> 00:38:15,610
+There's not, in this
+case, for four vertices,
+
+718
+00:38:15,610 --> 00:38:18,500
+there's two kinds of
+generic configurations.
+
+719
+00:38:18,500 --> 00:38:20,750
+So it makes life
+a little harder.
+
+720
+00:38:20,750 --> 00:38:25,550
+But let's say this
+part will work well.
+
+721
+00:38:25,550 --> 00:38:31,161
+So why don't I be
+clever, erase this part.
+
+722
+00:38:31,161 --> 00:38:38,380
+
+723
+00:38:38,380 --> 00:38:40,915
+So this is the idea of
+an infinitesimal motion.
+
+724
+00:38:40,915 --> 00:38:45,414
+
+725
+00:38:45,414 --> 00:38:46,080
+of a tensegrity.
+
+726
+00:38:46,080 --> 00:38:54,140
+
+727
+00:38:54,140 --> 00:38:56,880
+Well, I want to take
+the same dot product,
+
+728
+00:38:56,880 --> 00:38:59,360
+and I claim this is really
+measuring-- it's a number,
+
+729
+00:38:59,360 --> 00:39:03,464
+and it's measuring the sign's
+change in length of that edge.
+
+730
+00:39:03,464 --> 00:39:10,790
+So if C of v minus
+C of w dot product
+
+731
+00:39:10,790 --> 00:39:17,480
+with d of v minus d of w is
+greater than or equal to 0,
+
+732
+00:39:17,480 --> 00:39:20,490
+that's the property
+I want for struts.
+
+733
+00:39:20,490 --> 00:39:22,240
+That says it gets
+longer or stays
+
+734
+00:39:22,240 --> 00:39:24,487
+the same to the first order.
+
+735
+00:39:24,487 --> 00:39:26,820
+Now of course, in reality it
+might get slightly shorter,
+
+736
+00:39:26,820 --> 00:39:29,470
+but not in the first derivative.
+
+737
+00:39:29,470 --> 00:39:35,750
+And it should be less than
+or equal to 0 for cables,
+
+738
+00:39:35,750 --> 00:39:39,260
+and should be equal
+to 0 for bars.
+
+739
+00:39:39,260 --> 00:39:42,880
+
+740
+00:39:42,880 --> 00:39:44,950
+So that's the new notion
+of infinitesimal motion.
+
+741
+00:39:44,950 --> 00:39:50,420
+Now, this is no longer a linear
+system of linear equations.
+
+742
+00:39:50,420 --> 00:39:55,100
+I can no longer write this as a
+matrix times a vector equals 0.
+
+743
+00:39:55,100 --> 00:39:56,920
+But this is this
+more general thing
+
+744
+00:39:56,920 --> 00:40:02,980
+called a linear program,
+where I have linear equations.
+
+745
+00:40:02,980 --> 00:40:05,520
+I also have linear inequalities.
+
+746
+00:40:05,520 --> 00:40:08,920
+So in fact, I can write it
+as some other matrix R prime.
+
+747
+00:40:08,920 --> 00:40:11,500
+Actually, it's the same matrix.
+
+748
+00:40:11,500 --> 00:40:18,720
+R prime times d is greater
+than or equal to 0.
+
+749
+00:40:18,720 --> 00:40:21,170
+This is the general form
+of a linear program.
+
+750
+00:40:21,170 --> 00:40:24,280
+And you can write an equality
+constraint in this world
+
+751
+00:40:24,280 --> 00:40:26,299
+just by taking it
+and its negation,
+
+752
+00:40:26,299 --> 00:40:28,090
+setting both of them
+greater or equal to 0.
+
+753
+00:40:28,090 --> 00:40:31,460
+That forces them to
+be equal to zero.
+
+754
+00:40:31,460 --> 00:40:33,610
+All you need to know
+is it there are fast
+
+755
+00:40:33,610 --> 00:40:35,690
+algorithms to solve this, also.
+
+756
+00:40:35,690 --> 00:40:38,800
+So if I give you a tensegrity
+in polynomial time,
+
+757
+00:40:38,800 --> 00:40:46,860
+you can tell whether there is a
+valid infinitesimal motion that
+
+758
+00:40:46,860 --> 00:40:49,570
+does all things you want on
+the struts, cables, and bars.
+
+759
+00:40:49,570 --> 00:40:54,530
+
+760
+00:40:54,530 --> 00:40:56,910
+Cool, questions?
+
+761
+00:40:56,910 --> 00:40:58,910
+STUDENT: [INAUDIBLE]
+
+762
+00:40:58,910 --> 00:41:01,000
+PROFESSOR: This R--
+this is some matrix,
+
+763
+00:41:01,000 --> 00:41:04,165
+and this is your
+vector of all the d's.
+
+764
+00:41:04,165 --> 00:41:04,790
+STUDENT: Right.
+
+765
+00:41:04,790 --> 00:41:09,280
+And saying that it's greater
+than or equal to 0 [INAUDIBLE].
+
+766
+00:41:09,280 --> 00:41:11,350
+PROFESSOR: Oh, that means
+element lines, sorry.
+
+767
+00:41:11,350 --> 00:41:12,725
+You take a matrix
+times a vector.
+
+768
+00:41:12,725 --> 00:41:13,790
+You get a big vector.
+
+769
+00:41:13,790 --> 00:41:14,950
+This is a vector of zeroes.
+
+770
+00:41:14,950 --> 00:41:15,800
+I should have said that.
+
+771
+00:41:15,800 --> 00:41:17,800
+And it's just saying every
+element in the vector
+
+772
+00:41:17,800 --> 00:41:20,980
+is greater than
+or equal to zero.
+
+773
+00:41:20,980 --> 00:41:25,340
+So it's just a fancy way of
+rewriting this stuff again.
+
+774
+00:41:25,340 --> 00:41:27,890
+But this is what we
+call linear programs,
+
+775
+00:41:27,890 --> 00:41:29,414
+and that's what's solvable.
+
+776
+00:41:29,414 --> 00:41:32,140
+STUDENT: And that's
+just for struts, then?
+
+777
+00:41:32,140 --> 00:41:33,940
+PROFESSOR: Well, for
+cables you could just
+
+778
+00:41:33,940 --> 00:41:35,464
+negate the left-hand side.
+
+779
+00:41:35,464 --> 00:41:37,380
+And then that's greater
+than or equal to zero.
+
+780
+00:41:37,380 --> 00:41:40,100
+For bars you have to include
+the same left-hand side
+
+781
+00:41:40,100 --> 00:41:41,790
+and its negation.
+
+782
+00:41:41,790 --> 00:41:44,150
+Yeah, I'm skipping some steps.
+
+783
+00:41:44,150 --> 00:41:45,855
+That's why I had
+to write R prime--
+
+784
+00:41:45,855 --> 00:41:47,105
+it changes a little bit.
+
+785
+00:41:47,105 --> 00:41:51,410
+
+786
+00:41:51,410 --> 00:41:54,170
+How many people know
+about linear programming?
+
+787
+00:41:54,170 --> 00:41:58,140
+OK, about 2/3, so for
+you guys, you also
+
+788
+00:41:58,140 --> 00:42:00,520
+know that there's this thing
+called linear programming
+
+789
+00:42:00,520 --> 00:42:02,990
+duality.
+
+790
+00:42:02,990 --> 00:42:05,240
+If you have a linear program,
+the first thing everyone
+
+791
+00:42:05,240 --> 00:42:07,760
+should do when they have a
+linear program is take the dual
+
+792
+00:42:07,760 --> 00:42:08,830
+and see what you get.
+
+793
+00:42:08,830 --> 00:42:10,750
+I'm just going to
+tell you what you get.
+
+794
+00:42:10,750 --> 00:42:14,520
+
+795
+00:42:14,520 --> 00:42:17,150
+But that's the next
+trick I want to pull.
+
+796
+00:42:17,150 --> 00:42:20,940
+
+797
+00:42:20,940 --> 00:42:26,370
+So dual notion-- essentially
+what prevents you
+
+798
+00:42:26,370 --> 00:42:30,080
+from solving that system--
+in other words, what
+
+799
+00:42:30,080 --> 00:42:32,480
+makes something
+rigid-- is something
+
+800
+00:42:32,480 --> 00:42:34,030
+called equilibrium stress.
+
+801
+00:42:34,030 --> 00:42:39,910
+
+802
+00:42:39,910 --> 00:42:43,940
+So stress, for me,
+is just a real number
+
+803
+00:42:43,940 --> 00:42:45,364
+assigned to every edge.
+
+804
+00:42:45,364 --> 00:42:46,780
+And here I'm going
+to use the word
+
+805
+00:42:46,780 --> 00:42:48,960
+edge to mean bar,
+strut, or cable.
+
+806
+00:42:48,960 --> 00:42:52,050
+
+807
+00:42:52,050 --> 00:43:02,430
+So a real number s
+of e for each edge e,
+
+808
+00:43:02,430 --> 00:43:05,560
+and have to have
+three properties.
+
+809
+00:43:05,560 --> 00:43:10,520
+
+810
+00:43:10,520 --> 00:43:21,110
+If I have a cable, then that
+number should be non-negative.
+
+811
+00:43:21,110 --> 00:43:24,460
+If I have a strut, it
+should be non-positive.
+
+812
+00:43:24,460 --> 00:43:29,370
+
+813
+00:43:29,370 --> 00:43:32,120
+If I have a bar, I don't care--
+could be positive, or negative,
+
+814
+00:43:32,120 --> 00:43:34,010
+or zero.
+
+815
+00:43:34,010 --> 00:43:36,810
+And then there's the
+equilibrium condition,
+
+816
+00:43:36,810 --> 00:43:43,820
+which is that if I take the
+sum over all vertices w, where
+
+817
+00:43:43,820 --> 00:43:54,530
+v w is an edge,
+the weighted vector
+
+818
+00:43:54,530 --> 00:43:57,095
+C of v minus C of
+w-- so I forgot
+
+819
+00:43:57,095 --> 00:43:58,470
+to mention we're
+assuming we have
+
+820
+00:43:58,470 --> 00:44:03,100
+some configuration
+of our tensegrity.
+
+821
+00:44:03,100 --> 00:44:07,690
+This is the zero
+vector for all vertices
+
+822
+00:44:07,690 --> 00:44:11,440
+v. Let me draw a picture.
+
+823
+00:44:11,440 --> 00:44:20,600
+
+824
+00:44:20,600 --> 00:44:22,430
+I'll draw a real
+example, how's that?
+
+825
+00:44:22,430 --> 00:44:31,030
+
+826
+00:44:31,030 --> 00:44:35,840
+Here's a rigid linkage.
+
+827
+00:44:35,840 --> 00:44:39,110
+I'm not going to say yet which
+edges are struts and cables.
+
+828
+00:44:39,110 --> 00:44:41,810
+In some sense, I
+can do that later.
+
+829
+00:44:41,810 --> 00:44:46,920
+And I'm going to put numbers
+1 along all the outside edges
+
+830
+00:44:46,920 --> 00:44:52,930
+and the numbers 3 along all
+the inside edges-- sorry,
+
+831
+00:44:52,930 --> 00:44:59,220
+negative 1 and positive 3.
+
+832
+00:44:59,220 --> 00:45:02,740
+And then if you work
+out what this is saying,
+
+833
+00:45:02,740 --> 00:45:05,190
+I'm taking the
+vectors-- so I'm looking
+
+834
+00:45:05,190 --> 00:45:08,620
+at each vertex like this
+one, and saying OK, well, I
+
+835
+00:45:08,620 --> 00:45:13,770
+take all of the
+incoming, whatever.
+
+836
+00:45:13,770 --> 00:45:18,950
+Let's think of all the edges
+incident to that vertex.
+
+837
+00:45:18,950 --> 00:45:20,445
+I weight them by this number.
+
+838
+00:45:20,445 --> 00:45:22,664
+In this case, they're
+all multiplied by 3.
+
+839
+00:45:22,664 --> 00:45:23,580
+So I take this vector.
+
+840
+00:45:23,580 --> 00:45:24,550
+I multiply it by 3.
+
+841
+00:45:24,550 --> 00:45:25,930
+It gets three times as long.
+
+842
+00:45:25,930 --> 00:45:28,540
+Take this vector, multiply by
+3, this vector multiplied by 3.
+
+843
+00:45:28,540 --> 00:45:29,420
+I add them up.
+
+844
+00:45:29,420 --> 00:45:30,844
+I should get the zero vector.
+
+845
+00:45:30,844 --> 00:45:32,760
+And if this is really
+an equilateral triangle,
+
+846
+00:45:32,760 --> 00:45:35,650
+I will get the zero
+vector, so that's good.
+
+847
+00:45:35,650 --> 00:45:39,040
+And I'm going to
+draw arrows here
+
+848
+00:45:39,040 --> 00:45:42,830
+to signify what this
+means intuitively
+
+849
+00:45:42,830 --> 00:45:46,980
+is that this edge is pushing
+with a really big arrow.
+
+850
+00:45:46,980 --> 00:45:48,450
+This is an arrowhead of size 3.
+
+851
+00:45:48,450 --> 00:45:51,400
+
+852
+00:45:51,400 --> 00:45:53,770
+Try to draw it to scale.
+
+853
+00:45:53,770 --> 00:45:55,340
+Then, of course,
+this vertex will not
+
+854
+00:45:55,340 --> 00:45:57,970
+move subject to those forces.
+
+855
+00:45:57,970 --> 00:46:00,110
+These forces balance out.
+
+856
+00:46:00,110 --> 00:46:02,130
+On the other hand,
+this guy, I have
+
+857
+00:46:02,130 --> 00:46:04,260
+these edges of
+weight negative 1.
+
+858
+00:46:04,260 --> 00:46:07,050
+That means it's going
+to pull, and it's
+
+859
+00:46:07,050 --> 00:46:09,780
+going to pull with the
+arrowhead of size 1.
+
+860
+00:46:09,780 --> 00:46:22,270
+
+861
+00:46:22,270 --> 00:46:27,360
+OK, and I claim also that
+these vertices do not
+
+862
+00:46:27,360 --> 00:46:29,890
+move subject to
+those three forces.
+
+863
+00:46:29,890 --> 00:46:31,250
+How do you check that?
+
+864
+00:46:31,250 --> 00:46:32,830
+The proper way to
+check it is to draw
+
+865
+00:46:32,830 --> 00:46:34,090
+what's called a force polygon.
+
+866
+00:46:34,090 --> 00:46:36,970
+Those who have done structural
+engineering know this.
+
+867
+00:46:36,970 --> 00:46:41,360
+So I take, let's see, there's
+this vector, which is length
+
+868
+00:46:41,360 --> 00:46:45,130
+3 times that, so it would
+be something like that long.
+
+869
+00:46:45,130 --> 00:46:50,460
+And let's say I'm pushing in
+that direction, so I go there.
+
+870
+00:46:50,460 --> 00:46:54,790
+Then I follow this thing
+with the weight of 1,
+
+871
+00:46:54,790 --> 00:46:56,410
+but in sort of the
+opposite direction,
+
+872
+00:46:56,410 --> 00:46:59,220
+so it will be like this.
+
+873
+00:46:59,220 --> 00:47:01,510
+This is my attempt at
+copying that edge length
+
+874
+00:47:01,510 --> 00:47:03,020
+and getting what I want.
+
+875
+00:47:03,020 --> 00:47:05,190
+And then the other
+force is this one.
+
+876
+00:47:05,190 --> 00:47:08,280
+It doesn't actually matter
+which order I do these in.
+
+877
+00:47:08,280 --> 00:47:10,430
+And if I end up back
+where I started,
+
+878
+00:47:10,430 --> 00:47:14,541
+that means the total
+force is 0 as a vector,
+
+879
+00:47:14,541 --> 00:47:15,915
+and so this vertex
+is stationary.
+
+880
+00:47:15,915 --> 00:47:18,610
+
+881
+00:47:18,610 --> 00:47:21,770
+That's the force polygon.
+
+882
+00:47:21,770 --> 00:47:22,900
+So you can just check this.
+
+883
+00:47:22,900 --> 00:47:26,089
+It's a geometric
+condition, if you will,
+
+884
+00:47:26,089 --> 00:47:27,380
+that each vertex is stationary.
+
+885
+00:47:27,380 --> 00:47:30,050
+That is the notion of
+being in equilibrium.
+
+886
+00:47:30,050 --> 00:47:32,860
+And this is just the
+algebra to write that down.
+
+887
+00:47:32,860 --> 00:47:36,140
+Now what the heck does this
+thing mean intuitively?
+
+888
+00:47:36,140 --> 00:47:41,370
+If your tensegrity
+is going to be rigid,
+
+889
+00:47:41,370 --> 00:47:47,600
+somehow the edges
+can prevent a motion.
+
+890
+00:47:47,600 --> 00:47:49,635
+And intuitively,
+what that means--
+
+891
+00:47:49,635 --> 00:47:55,820
+I'm going to say this right--
+so this is like an edge pushing
+
+892
+00:47:55,820 --> 00:48:02,120
+really hard away from
+itself, against the vertices.
+
+893
+00:48:02,120 --> 00:48:03,990
+That's like a strut.
+
+894
+00:48:03,990 --> 00:48:06,180
+A strut prevents compression.
+
+895
+00:48:06,180 --> 00:48:09,240
+So that the force that it
+can actuate effectively
+
+896
+00:48:09,240 --> 00:48:11,740
+is an outward force.
+
+897
+00:48:11,740 --> 00:48:14,570
+Whereas cables
+prevent extension,
+
+898
+00:48:14,570 --> 00:48:17,030
+so they can sort of
+pull back, say, no,
+
+899
+00:48:17,030 --> 00:48:18,570
+you can't get any longer.
+
+900
+00:48:18,570 --> 00:48:20,780
+I'm going to pull towards me.
+
+901
+00:48:20,780 --> 00:48:22,320
+So this is like a cable.
+
+902
+00:48:22,320 --> 00:48:23,790
+This is like a strut.
+
+903
+00:48:23,790 --> 00:48:25,180
+Now bars can do both.
+
+904
+00:48:25,180 --> 00:48:27,670
+That's why there's no
+constraint on bars.
+
+905
+00:48:27,670 --> 00:48:30,135
+But assuming I've got
+this right-- and I didn't.
+
+906
+00:48:30,135 --> 00:48:31,550
+I got it backwards.
+
+907
+00:48:31,550 --> 00:48:34,060
+
+908
+00:48:34,060 --> 00:48:41,160
+Minus 3 plus 1-- it's
+symmetric so it doesn't matter
+
+909
+00:48:41,160 --> 00:48:46,940
+in some sense, but the intuition
+matches when cables can pull,
+
+910
+00:48:46,940 --> 00:48:54,850
+and struts can push,
+and bars can do both,
+
+911
+00:48:54,850 --> 00:48:57,840
+because they prevent
+motion in both directions.
+
+912
+00:48:57,840 --> 00:49:00,179
+All right, now, it would be
+nice to say you're rigid if
+
+913
+00:49:00,179 --> 00:49:01,970
+and only if you have
+an equilibrium stress.
+
+914
+00:49:01,970 --> 00:49:03,232
+But that's not true.
+
+915
+00:49:03,232 --> 00:49:04,440
+Let me tell you what is true.
+
+916
+00:49:04,440 --> 00:49:20,540
+
+917
+00:49:20,540 --> 00:49:21,420
+So this is duality.
+
+918
+00:49:21,420 --> 00:49:24,370
+
+919
+00:49:24,370 --> 00:49:32,350
+This goes back to Roth and
+Whiteley, 1981-- good year.
+
+920
+00:49:32,350 --> 00:49:42,270
+So let's see,
+here's what's true--
+
+921
+00:49:42,270 --> 00:49:45,770
+if I look at all the
+equilibrium stresses,
+
+922
+00:49:45,770 --> 00:49:54,310
+and I find some stress
+that is non-zero
+
+923
+00:49:54,310 --> 00:50:00,480
+on a particular structure
+or cable-- I should mention
+
+924
+00:50:00,480 --> 00:50:02,220
+there's always a
+trivial stress, which
+
+925
+00:50:02,220 --> 00:50:05,020
+is you set all of
+these S's to zero.
+
+926
+00:50:05,020 --> 00:50:06,910
+Then everything will hold.
+
+927
+00:50:06,910 --> 00:50:10,287
+So what we're interested
+in are nontrivial stresses,
+
+928
+00:50:10,287 --> 00:50:12,620
+where you're nonzero somewhere,
+and the interesting case
+
+929
+00:50:12,620 --> 00:50:18,250
+is when you're nonzero on some
+strut or cable, let's say.
+
+930
+00:50:18,250 --> 00:50:21,190
+So if there is such
+an equilibrium stress,
+
+931
+00:50:21,190 --> 00:50:24,460
+then it's not quite the
+case that you're rigid,
+
+932
+00:50:24,460 --> 00:50:25,945
+but you're rigid on that edge.
+
+933
+00:50:25,945 --> 00:50:28,910
+
+934
+00:50:28,910 --> 00:50:38,960
+Every infinitesimal motion holds
+the length of that edge fixed.
+
+935
+00:50:38,960 --> 00:50:42,660
+
+936
+00:50:42,660 --> 00:50:44,420
+So this is a strut or a cable.
+
+937
+00:50:44,420 --> 00:50:46,480
+It could get longer or
+it could get smaller,
+
+938
+00:50:46,480 --> 00:50:47,896
+depending which case we're in.
+
+939
+00:50:47,896 --> 00:50:50,270
+But if there's a stress that's
+nonzero on that edge, then
+
+940
+00:50:50,270 --> 00:50:51,980
+in fact, it can't
+change length at all.
+
+941
+00:50:51,980 --> 00:50:55,360
+It effectively acts like a
+bar in this configuration.
+
+942
+00:50:55,360 --> 00:50:56,610
+That's what this theorem says.
+
+943
+00:50:56,610 --> 00:50:57,694
+And these are equivalent.
+
+944
+00:50:57,694 --> 00:50:59,110
+If you want to
+know can I possibly
+
+945
+00:50:59,110 --> 00:51:00,790
+make the strut any longer?
+
+946
+00:51:00,790 --> 00:51:02,724
+You just see can I find
+an equilibrium stress
+
+947
+00:51:02,724 --> 00:51:04,015
+for that thing that's non-zero?
+
+948
+00:51:04,015 --> 00:51:06,570
+
+949
+00:51:06,570 --> 00:51:10,920
+Another thing you can say--
+almost equivalent to this
+
+950
+00:51:10,920 --> 00:51:15,230
+or a consequence of that--
+if I have some tensegrity,
+
+951
+00:51:15,230 --> 00:51:21,420
+and I want to know is it
+infinitesimally rigid,
+
+952
+00:51:21,420 --> 00:51:25,950
+that is the case if and
+only if two conditions hold.
+
+953
+00:51:25,950 --> 00:51:34,900
+One is that every strut
+or cable is nonzero
+
+954
+00:51:34,900 --> 00:51:47,900
+in some stress-- in some
+equilibrium stress--
+
+955
+00:51:47,900 --> 00:52:03,240
+and I'll say the corresponding
+linkage is rigid.
+
+956
+00:52:03,240 --> 00:52:06,930
+
+957
+00:52:06,930 --> 00:52:09,820
+So all this is saying is if
+you can find a stress that
+
+958
+00:52:09,820 --> 00:52:12,934
+is nonzero on every
+particular strut or cable,
+
+959
+00:52:12,934 --> 00:52:14,850
+then all of those things
+are effectively bars.
+
+960
+00:52:14,850 --> 00:52:17,880
+So you can convert your
+tensegrity into a linkage
+
+961
+00:52:17,880 --> 00:52:19,457
+where all the edges are bars.
+
+962
+00:52:19,457 --> 00:52:21,040
+And then it's just
+a matter of testing
+
+963
+00:52:21,040 --> 00:52:24,140
+rigidity or infinitesimal
+rigidity of that linkage, which
+
+964
+00:52:24,140 --> 00:52:27,210
+is something we
+already know how to do.
+
+965
+00:52:27,210 --> 00:52:31,120
+So in some sense, we already
+know how to do all of this,
+
+966
+00:52:31,120 --> 00:52:32,750
+because this is just
+a linear program.
+
+967
+00:52:32,750 --> 00:52:33,510
+We can solve it.
+
+968
+00:52:33,510 --> 00:52:35,852
+But this is a more intuitive
+way of proving this.
+
+969
+00:52:35,852 --> 00:52:37,810
+If you want to prove to
+someone that tensegrity
+
+970
+00:52:37,810 --> 00:52:40,840
+is infinitesimally rigid, you
+give them a bunch of stresses,
+
+971
+00:52:40,840 --> 00:52:43,390
+one for each strut
+or cable, or maybe
+
+972
+00:52:43,390 --> 00:52:45,592
+you just need one stress
+to hit all of them.
+
+973
+00:52:45,592 --> 00:52:47,800
+And then you show that the
+linkage is infinitesimally
+
+974
+00:52:47,800 --> 00:52:49,130
+rigid, which you
+could do by computing
+
+975
+00:52:49,130 --> 00:52:50,463
+the rank of the rigidity matrix.
+
+976
+00:52:50,463 --> 00:52:54,630
+
+977
+00:52:54,630 --> 00:52:59,350
+Strut can have zero
+stress-- the weight is zero.
+
+978
+00:52:59,350 --> 00:53:02,300
+
+979
+00:53:02,300 --> 00:53:05,930
+OK, let's keep going.
+
+980
+00:53:05,930 --> 00:53:09,100
+Lots of a cool things to
+talk about, maybe over here.
+
+981
+00:53:09,100 --> 00:53:16,880
+
+982
+00:53:16,880 --> 00:53:22,730
+I want to do a little
+diversion for fun,
+
+983
+00:53:22,730 --> 00:53:34,252
+something called
+spider webs, like this.
+
+984
+00:53:34,252 --> 00:53:35,585
+You might have seen them before.
+
+985
+00:53:35,585 --> 00:53:40,395
+A spiderweb is something
+where every edge is basically
+
+986
+00:53:40,395 --> 00:53:41,630
+a cable.
+
+987
+00:53:41,630 --> 00:53:44,750
+You can see under
+wind and tension,
+
+988
+00:53:44,750 --> 00:53:47,580
+they get a little bit shorter
+than they're supposed to be.
+
+989
+00:53:47,580 --> 00:53:48,955
+But they can't
+really get longer.
+
+990
+00:53:48,955 --> 00:53:52,640
+They are pretty strong
+at preventing expansion.
+
+991
+00:53:52,640 --> 00:53:54,460
+So a spiderweb is
+something that can
+
+992
+00:53:54,460 --> 00:53:57,310
+be stressed with all
+positive weights.
+
+993
+00:53:57,310 --> 00:54:00,220
+And the reason it holds
+in tension-- positive,
+
+994
+00:54:00,220 --> 00:54:03,970
+yeah, cables-- all of the edges
+can have a positive stress,
+
+995
+00:54:03,970 --> 00:54:06,620
+and it will be in equilibrium.
+
+996
+00:54:06,620 --> 00:54:09,420
+And in spiderwebs, in
+fact, this is the same--
+
+997
+00:54:09,420 --> 00:54:12,579
+these two-- rigidity
+and positive stresses
+
+998
+00:54:12,579 --> 00:54:13,370
+are the same thing.
+
+999
+00:54:13,370 --> 00:54:19,800
+
+1000
+00:54:19,800 --> 00:54:25,630
+This is sort of a special
+case, and Connolly
+
+1001
+00:54:25,630 --> 00:54:30,130
+studied these in 1982.
+
+1002
+00:54:30,130 --> 00:54:36,920
+There's some special
+points in a spiderweb.
+
+1003
+00:54:36,920 --> 00:54:38,476
+Here they're kind
+of off the page.
+
+1004
+00:54:38,476 --> 00:54:40,850
+There's a point down here
+where it attaches to something,
+
+1005
+00:54:40,850 --> 00:54:42,190
+and up there, and up there.
+
+1006
+00:54:42,190 --> 00:54:43,940
+Those guys do not
+satisfy equilibrium,
+
+1007
+00:54:43,940 --> 00:54:48,320
+or you can say those edges
+have some negative stresses.
+
+1008
+00:54:48,320 --> 00:54:50,810
+Or another way to
+think of it is there's
+
+1009
+00:54:50,810 --> 00:54:53,442
+a point off to infinity,
+which is how this is drawn,
+
+1010
+00:54:53,442 --> 00:54:54,900
+and you can have
+a positive stress.
+
+1011
+00:54:54,900 --> 00:54:57,570
+And at infinity, you don't
+have to satisfy equilibrium.
+
+1012
+00:54:57,570 --> 00:54:59,910
+So there's a little something
+special at the boundary,
+
+1013
+00:54:59,910 --> 00:55:02,370
+but everywhere else-- interior
+and all these vertices
+
+1014
+00:55:02,370 --> 00:55:06,320
+in here-- you have equilibrium,
+and all the stresses
+
+1015
+00:55:06,320 --> 00:55:08,280
+are positive.
+
+1016
+00:55:08,280 --> 00:55:10,790
+And it turns out in
+this case, you're
+
+1017
+00:55:10,790 --> 00:55:13,610
+automatically
+infinitesimally rigid.
+
+1018
+00:55:13,610 --> 00:55:16,284
+That tensegrity is
+infinitesimally rigid.
+
+1019
+00:55:16,284 --> 00:55:18,200
+Normally, we need to
+also check the underlying
+
+1020
+00:55:18,200 --> 00:55:22,330
+linkage is rigid, but for
+spiderwebs, you don't have to.
+
+1021
+00:55:22,330 --> 00:55:24,300
+Why do I care about spiderwebs?
+
+1022
+00:55:24,300 --> 00:55:29,990
+Because they give us something
+called origami tesselations.
+
+1023
+00:55:29,990 --> 00:55:31,970
+This is a brand-new
+result from this summer
+
+1024
+00:55:31,970 --> 00:55:35,230
+at [? OSMI ?] by Robert
+Lang and Alex Bateman.
+
+1025
+00:55:35,230 --> 00:55:38,760
+Here's a little example of an
+origami tessellation, this fold
+
+1026
+00:55:38,760 --> 00:55:41,490
+by Jenny [? Ramsier ?],
+just the one
+
+1027
+00:55:41,490 --> 00:55:42,960
+I had hanging
+around in my office.
+
+1028
+00:55:42,960 --> 00:55:44,590
+It looks a little
+cooler that way.
+
+1029
+00:55:44,590 --> 00:55:47,560
+Let me hold it up to the light.
+
+1030
+00:55:47,560 --> 00:55:48,900
+I can see it great.
+
+1031
+00:55:48,900 --> 00:55:50,120
+You don't see the light.
+
+1032
+00:55:50,120 --> 00:55:51,290
+It looks pretty cool.
+
+1033
+00:55:51,290 --> 00:55:55,077
+It's folded from
+one square, and it's
+
+1034
+00:55:55,077 --> 00:55:56,910
+folded in some sense
+with a regular pattern.
+
+1035
+00:55:56,910 --> 00:56:01,250
+You can see regular
+hexagons, hexagonal pattern.
+
+1036
+00:56:01,250 --> 00:56:03,875
+And these guys have been around
+for a long time, probably
+
+1037
+00:56:03,875 --> 00:56:06,840
+at least the '60s,
+maybe earlier--
+
+1038
+00:56:06,840 --> 00:56:10,580
+a lot of Japanese artists,
+lot of American artists.
+
+1039
+00:56:10,580 --> 00:56:12,080
+And there's been a
+lot of excitement
+
+1040
+00:56:12,080 --> 00:56:15,220
+about origami tesselations
+since the mid '90s.
+
+1041
+00:56:15,220 --> 00:56:18,410
+I think Chris Palmer revitalized
+them, and then tons of people
+
+1042
+00:56:18,410 --> 00:56:19,530
+are looking at them.
+
+1043
+00:56:19,530 --> 00:56:22,720
+And there's this cool
+algorithm for building them.
+
+1044
+00:56:22,720 --> 00:56:29,900
+
+1045
+00:56:29,900 --> 00:56:33,000
+So you take some tessellation
+like these squares,
+
+1046
+00:56:33,000 --> 00:56:36,960
+and triangles, and hexagons--
+some collection of polygons.
+
+1047
+00:56:36,960 --> 00:56:39,720
+You shrink all of
+them a little bit,
+
+1048
+00:56:39,720 --> 00:56:41,650
+but all by the same amount.
+
+1049
+00:56:41,650 --> 00:56:46,080
+And then you twist them a
+little bit, all the same amount.
+
+1050
+00:56:46,080 --> 00:56:48,040
+So here they are twisted.
+
+1051
+00:56:48,040 --> 00:56:50,650
+And then you just
+connect the dots.
+
+1052
+00:56:50,650 --> 00:56:52,972
+So these two edges used to
+be joined to each other.
+
+1053
+00:56:52,972 --> 00:56:55,430
+So I'm going to connect these
+guys, and connect these guys.
+
+1054
+00:56:55,430 --> 00:56:56,690
+That's the green edges.
+
+1055
+00:56:56,690 --> 00:56:57,981
+And that's your crease pattern.
+
+1056
+00:56:57,981 --> 00:57:01,830
+You erase the red stuff, and
+you get your crease pattern,
+
+1057
+00:57:01,830 --> 00:57:05,960
+and you fold it, and you get
+this cool tessellation-- magic.
+
+1058
+00:57:05,960 --> 00:57:09,130
+Now the question is,
+when does this work?
+
+1059
+00:57:09,130 --> 00:57:11,620
+This algorithm has been around
+forever, as far as I know.
+
+1060
+00:57:11,620 --> 00:57:15,920
+I don't know exactly how old
+it is, or who invented it,
+
+1061
+00:57:15,920 --> 00:57:18,010
+but it's pretty natural.
+
+1062
+00:57:18,010 --> 00:57:20,020
+It's how most
+tesselations are folded.
+
+1063
+00:57:20,020 --> 00:57:22,260
+But when does it work?
+
+1064
+00:57:22,260 --> 00:57:27,530
+And there is a brand-new
+result from the summer
+
+1065
+00:57:27,530 --> 00:57:31,700
+that it works for some
+choice of those angles.
+
+1066
+00:57:31,700 --> 00:57:33,730
+So I had some flexibility--
+how much do I shrink
+
+1067
+00:57:33,730 --> 00:57:35,380
+and how much do I turn?
+
+1068
+00:57:35,380 --> 00:57:37,710
+But this will work for
+some choice of turn
+
+1069
+00:57:37,710 --> 00:57:41,530
+and shrink amount, if
+and only if your graph
+
+1070
+00:57:41,530 --> 00:57:48,460
+or your initial
+tessellation is a spiderweb.
+
+1071
+00:57:48,460 --> 00:57:51,850
+Pretty cool-- spiderwebs
+have this neat property
+
+1072
+00:57:51,850 --> 00:57:55,690
+that you can do the shrink and
+twist tessellation algorithm,
+
+1073
+00:57:55,690 --> 00:57:56,620
+and it works.
+
+1074
+00:57:56,620 --> 00:58:01,300
+And here is an example of
+that-- a spiderweb, so to speak,
+
+1075
+00:58:01,300 --> 00:58:03,210
+but drawn visually.
+
+1076
+00:58:03,210 --> 00:58:05,830
+And this is actually a proof
+that-- these are basically
+
+1077
+00:58:05,830 --> 00:58:07,680
+all the force polygons
+showing that you
+
+1078
+00:58:07,680 --> 00:58:10,800
+can get a positive
+equilibrium stress.
+
+1079
+00:58:10,800 --> 00:58:13,930
+And you turn it into a
+crease pattern, fold it flat,
+
+1080
+00:58:13,930 --> 00:58:14,774
+and it works.
+
+1081
+00:58:14,774 --> 00:58:16,190
+This is, of course,
+in simulation,
+
+1082
+00:58:16,190 --> 00:58:21,010
+but you can really fold
+these things, and they work.
+
+1083
+00:58:21,010 --> 00:58:23,900
+So that's kind of fun--
+a little bit origami out
+
+1084
+00:58:23,900 --> 00:58:27,135
+of linkages and tensegrities.
+
+1085
+00:58:27,135 --> 00:58:27,635
+Questions?
+
+1086
+00:58:27,635 --> 00:58:30,750
+
+1087
+00:58:30,750 --> 00:58:33,370
+All right, then we move on.
+
+1088
+00:58:33,370 --> 00:58:36,510
+I want to tell you one more
+cool thing about stresses
+
+1089
+00:58:36,510 --> 00:58:51,927
+and tensegrities-- yet another
+characterization of stresses,
+
+1090
+00:58:51,927 --> 00:58:53,135
+which is polyhedral liftings.
+
+1091
+00:58:53,135 --> 00:59:06,950
+
+1092
+00:59:06,950 --> 00:59:09,490
+A polyhedral lifting
+is going to work
+
+1093
+00:59:09,490 --> 00:59:13,030
+if I have a non-crossing
+configuration.
+
+1094
+00:59:13,030 --> 00:59:21,120
+
+1095
+00:59:21,120 --> 00:59:26,950
+So I don't want
+to have this-- two
+
+1096
+00:59:26,950 --> 00:59:30,510
+edges that cross each other.
+
+1097
+00:59:30,510 --> 00:59:32,682
+I only want to have
+pictures like this,
+
+1098
+00:59:32,682 --> 00:59:34,140
+where edges don't
+cross each other.
+
+1099
+00:59:34,140 --> 00:59:37,350
+They only share endpoints.
+
+1100
+00:59:37,350 --> 00:59:40,050
+Then I can define what's
+called a polyhedral lifting.
+
+1101
+00:59:40,050 --> 00:59:44,470
+So this is a
+planograph, if you will.
+
+1102
+00:59:44,470 --> 00:59:46,900
+Polyhedral lifting
+is going to be
+
+1103
+00:59:46,900 --> 00:59:55,770
+an assignment of
+z-coordinates to the vertices.
+
+1104
+00:59:55,770 --> 01:00:00,830
+So it's going to be
+a z-coordinate z of v
+
+1105
+01:00:00,830 --> 01:00:13,870
+for each vertex v such that
+each face remains planar.
+
+1106
+01:00:13,870 --> 01:00:23,160
+
+1107
+01:00:23,160 --> 01:00:25,750
+Because I forbid
+crossings, I end up
+
+1108
+01:00:25,750 --> 01:00:31,325
+decomposing space-- the
+plane here-- this only works
+
+1109
+01:00:31,325 --> 01:00:32,075
+in two dimensions.
+
+1110
+01:00:32,075 --> 01:00:34,811
+
+1111
+01:00:34,811 --> 01:00:36,560
+This is one thing that
+does not generalize
+
+1112
+01:00:36,560 --> 01:00:38,640
+to arbitrary dimension.
+
+1113
+01:00:38,640 --> 01:00:41,410
+So I get a bunch
+of triangles here.
+
+1114
+01:00:41,410 --> 01:00:42,390
+And so I want to lift.
+
+1115
+01:00:42,390 --> 01:00:43,880
+I want to assign
+some z-coordinate
+
+1116
+01:00:43,880 --> 01:00:47,160
+to each of these vertices, such
+that each of these triangles
+
+1117
+01:00:47,160 --> 01:00:47,850
+remains planar.
+
+1118
+01:00:47,850 --> 01:00:49,266
+Well, actually,
+that always holds.
+
+1119
+01:00:49,266 --> 01:00:50,549
+Triangles are always planar.
+
+1120
+01:00:50,549 --> 01:00:53,090
+But there's another face, which
+is the outside face out here.
+
+1121
+01:00:53,090 --> 01:00:54,820
+That's a quadrilateral.
+
+1122
+01:00:54,820 --> 01:00:56,450
+That one also has
+to remain planar.
+
+1123
+01:00:56,450 --> 01:01:02,590
+So these four vertices have
+to be lifted onto some plane.
+
+1124
+01:01:02,590 --> 01:01:03,985
+This guy can be
+lifted however it
+
+1125
+01:01:03,985 --> 01:01:05,360
+wants in this
+particular picture.
+
+1126
+01:01:05,360 --> 01:01:07,790
+In general, you're going to
+have a lot of non-triangles.
+
+1127
+01:01:07,790 --> 01:01:11,112
+Those should all remain planar.
+
+1128
+01:01:11,112 --> 01:01:11,820
+That's a lifting.
+
+1129
+01:01:11,820 --> 01:01:14,760
+
+1130
+01:01:14,760 --> 01:01:17,790
+One thing you can do--
+there's some freedom here.
+
+1131
+01:01:17,790 --> 01:01:19,529
+If you have any lifting
+or, for example,
+
+1132
+01:01:19,529 --> 01:01:20,820
+you could not lift them at all.
+
+1133
+01:01:20,820 --> 01:01:22,930
+Set all the
+z-coordinates to zero.
+
+1134
+01:01:22,930 --> 01:01:24,110
+That's fine.
+
+1135
+01:01:24,110 --> 01:01:25,990
+You could also just
+lift everything
+
+1136
+01:01:25,990 --> 01:01:28,760
+onto some other
+plane, and generally
+
+1137
+01:01:28,760 --> 01:01:30,585
+have a rigid motion of freedom.
+
+1138
+01:01:30,585 --> 01:01:33,152
+
+1139
+01:01:33,152 --> 01:01:34,610
+You can't translate
+around, but you
+
+1140
+01:01:34,610 --> 01:01:37,850
+have one two-degree
+two-rotational freedoms,
+
+1141
+01:01:37,850 --> 01:01:40,340
+I think.
+
+1142
+01:01:40,340 --> 01:01:43,060
+And so we would just
+like to get rid of those.
+
+1143
+01:01:43,060 --> 01:02:03,280
+So say remove rigid motions
+by forcing the outside face
+
+1144
+01:02:03,280 --> 01:02:09,570
+to lie in z equals 0.
+
+1145
+01:02:09,570 --> 01:02:13,230
+So let's say these
+guys all stay at 0.
+
+1146
+01:02:13,230 --> 01:02:14,950
+So in this particular
+example, this guy
+
+1147
+01:02:14,950 --> 01:02:19,410
+can go to any value, positive
+or negative, but that's it.
+
+1148
+01:02:19,410 --> 01:02:23,970
+Now, this is a lot like
+stresses-- in fact,
+
+1149
+01:02:23,970 --> 01:02:27,600
+it's identical to stresses.
+
+1150
+01:02:27,600 --> 01:02:29,070
+It's probably not
+obvious, but just
+
+1151
+01:02:29,070 --> 01:02:31,153
+like stresses where you
+could set everything to 0,
+
+1152
+01:02:31,153 --> 01:02:33,020
+here you can also
+set everything to 0.
+
+1153
+01:02:33,020 --> 01:02:36,220
+
+1154
+01:02:36,220 --> 01:02:38,500
+It's not a big connection,
+but it turns out
+
+1155
+01:02:38,500 --> 01:02:41,634
+they really are
+the same thing for
+
+1156
+01:02:41,634 --> 01:02:42,800
+non-crossing configurations.
+
+1157
+01:02:42,800 --> 01:02:52,060
+
+1158
+01:02:52,060 --> 01:02:55,365
+This is called
+Maxwell-Cremona Theorem.
+
+1159
+01:02:55,365 --> 01:02:59,230
+
+1160
+01:02:59,230 --> 01:03:01,050
+This is probably one
+of the oldest theorems
+
+1161
+01:03:01,050 --> 01:03:06,170
+we will cover here--
+I guess anywhere.
+
+1162
+01:03:06,170 --> 01:03:08,970
+Well, it's not that old-- 1864.
+
+1163
+01:03:08,970 --> 01:03:10,500
+That might be the oldest.
+
+1164
+01:03:10,500 --> 01:03:18,880
+Maxwell proved this,
+or claimed it in 1864.
+
+1165
+01:03:18,880 --> 01:03:26,920
+Theorem is there's a
+one-to-one correspondence
+
+1166
+01:03:26,920 --> 01:03:37,620
+between the equilibrium stresses
+and polyhedral liftings.
+
+1167
+01:03:37,620 --> 01:03:46,490
+
+1168
+01:03:46,490 --> 01:03:56,030
+And fun fact-- negative
+stresses correspond to valleys.
+
+1169
+01:03:56,030 --> 01:03:59,800
+
+1170
+01:03:59,800 --> 01:04:05,250
+So valley is
+something like this.
+
+1171
+01:04:05,250 --> 01:04:08,082
+You know what valleys are, but
+it's maybe a little bit subtle.
+
+1172
+01:04:08,082 --> 01:04:09,540
+We're not folding
+all the way here,
+
+1173
+01:04:09,540 --> 01:04:11,840
+so this would also be
+considered a valley,
+
+1174
+01:04:11,840 --> 01:04:16,670
+because it has sort of
+negative dihedral triangle.
+
+1175
+01:04:16,670 --> 01:04:18,349
+It's really hard to see.
+
+1176
+01:04:18,349 --> 01:04:19,890
+What I meant was
+something like this.
+
+1177
+01:04:19,890 --> 01:04:29,530
+
+1178
+01:04:29,530 --> 01:04:32,620
+That's a valley edge here.
+
+1179
+01:04:32,620 --> 01:04:37,670
+This is another valley
+edge here-- whatever.
+
+1180
+01:04:37,670 --> 01:04:41,070
+A positive stress
+corresponds to a mountain,
+
+1181
+01:04:41,070 --> 01:04:45,030
+which is the same
+picture upside down.
+
+1182
+01:04:45,030 --> 01:04:52,040
+A zero stress corresponds
+to a flat angle--
+
+1183
+01:04:52,040 --> 01:04:54,810
+doesn't have to be horizontal,
+but it has to be flat.
+
+1184
+01:04:54,810 --> 01:04:57,490
+So it could be like this.
+
+1185
+01:04:57,490 --> 01:05:02,260
+
+1186
+01:05:02,260 --> 01:05:05,750
+I'm going to need this in a
+moment proving the next thing.
+
+1187
+01:05:05,750 --> 01:05:09,230
+
+1188
+01:05:09,230 --> 01:05:11,740
+I'm not going to
+prove this theorem,
+
+1189
+01:05:11,740 --> 01:05:13,890
+but it would be fun to
+actually see it in action.
+
+1190
+01:05:13,890 --> 01:05:18,320
+I've never seen it implemented,
+so another fun project.
+
+1191
+01:05:18,320 --> 01:05:20,714
+I give you tensegrity.
+
+1192
+01:05:20,714 --> 01:05:22,380
+You compute an
+equilibrium stress, which
+
+1193
+01:05:22,380 --> 01:05:28,070
+is easy to do by linear
+programming, and draw-- you
+
+1194
+01:05:28,070 --> 01:05:31,359
+can directly construct
+from that the 3D lifting,
+
+1195
+01:05:31,359 --> 01:05:32,525
+which would be kind of cool.
+
+1196
+01:05:32,525 --> 01:05:36,010
+
+1197
+01:05:36,010 --> 01:05:37,635
+I'm going to use
+basically everything I
+
+1198
+01:05:37,635 --> 01:05:40,952
+proved today to
+prove a big theorem--
+
+1199
+01:05:40,952 --> 01:05:42,160
+the Carpenter's Rule Theorem.
+
+1200
+01:05:42,160 --> 01:05:44,084
+It's why I'm wearing
+this t-shirt that
+
+1201
+01:05:44,084 --> 01:05:46,250
+has nothing to do with the
+Carpenter's Rule Theorem.
+
+1202
+01:05:46,250 --> 01:05:48,780
+
+1203
+01:05:48,780 --> 01:05:51,890
+And it's about
+non-crossing linkages.
+
+1204
+01:05:51,890 --> 01:05:53,140
+So this is the beginning.
+
+1205
+01:05:53,140 --> 01:05:56,294
+So far we've been
+allowing crossings,
+
+1206
+01:05:56,294 --> 01:05:57,710
+except for this
+very last theorem.
+
+1207
+01:05:57,710 --> 01:06:00,370
+
+1208
+01:06:00,370 --> 01:06:02,740
+Now we begin this section
+where I forbid crossings
+
+1209
+01:06:02,740 --> 01:06:08,590
+between the edges, just
+like what that picture was.
+
+1210
+01:06:08,590 --> 01:06:13,870
+Prevent this, and this is a
+constraint on the configuration
+
+1211
+01:06:13,870 --> 01:06:14,629
+space now.
+
+1212
+01:06:14,629 --> 01:06:16,420
+I'm going to look at
+all the configurations
+
+1213
+01:06:16,420 --> 01:06:17,950
+where no two edges cross.
+
+1214
+01:06:17,950 --> 01:06:20,970
+This is a smaller version of
+our old configuration space.
+
+1215
+01:06:20,970 --> 01:06:22,470
+I'm not going to
+define it formally.
+
+1216
+01:06:22,470 --> 01:06:23,870
+It's a bit messy.
+
+1217
+01:06:23,870 --> 01:06:26,110
+It's not too nasty.
+
+1218
+01:06:26,110 --> 01:06:28,470
+It's still defined by
+polynomial inequalities.
+
+1219
+01:06:28,470 --> 01:06:29,300
+Question?
+
+1220
+01:06:29,300 --> 01:06:31,300
+STUDENT: What if you have
+one of those diagonals
+
+1221
+01:06:31,300 --> 01:06:37,580
+and switch it to be in relation
+to each other [INAUDIBLE]?
+
+1222
+01:06:37,580 --> 01:06:39,472
+PROFESSOR: You want
+this picture and--
+
+1223
+01:06:39,472 --> 01:06:41,080
+STUDENT: Either one.
+
+1224
+01:06:41,080 --> 01:06:43,440
+PROFESSOR: And you
+want to add this?
+
+1225
+01:06:43,440 --> 01:06:48,500
+Or-- that's crossing--
+not allowed.
+
+1226
+01:06:48,500 --> 01:06:50,400
+Whatever you're
+saying is not allowed.
+
+1227
+01:06:50,400 --> 01:06:51,720
+That's the easy answer.
+
+1228
+01:06:51,720 --> 01:06:55,474
+I don't quite know what
+it is, but what we allow--
+
+1229
+01:06:55,474 --> 01:06:56,890
+and in this case
+I'm just thinking
+
+1230
+01:06:56,890 --> 01:06:58,930
+about linkages for the moment.
+
+1231
+01:06:58,930 --> 01:07:02,920
+It's just you can hinge
+at common vertices.
+
+1232
+01:07:02,920 --> 01:07:06,430
+Two edges either
+share a vertex or not.
+
+1233
+01:07:06,430 --> 01:07:09,170
+And that's it.
+
+1234
+01:07:09,170 --> 01:07:11,570
+But they're not allowed
+to touch anywhere else.
+
+1235
+01:07:11,570 --> 01:07:14,720
+
+1236
+01:07:14,720 --> 01:07:17,570
+And now what we care
+about is something
+
+1237
+01:07:17,570 --> 01:07:18,635
+called a locked linkage.
+
+1238
+01:07:18,635 --> 01:07:24,200
+
+1239
+01:07:24,200 --> 01:07:30,470
+And a linkage is locked
+if its configuration
+
+1240
+01:07:30,470 --> 01:07:35,665
+space is disconnected.
+
+1241
+01:07:35,665 --> 01:07:40,220
+
+1242
+01:07:40,220 --> 01:07:44,150
+So the configuration space
+would look something like this.
+
+1243
+01:07:44,150 --> 01:07:45,910
+Maybe it has three components.
+
+1244
+01:07:45,910 --> 01:07:47,500
+If I have some
+configuration here,
+
+1245
+01:07:47,500 --> 01:07:49,900
+I can move to any other
+configuration here,
+
+1246
+01:07:49,900 --> 01:07:51,772
+and same over here,
+but there's no way
+
+1247
+01:07:51,772 --> 01:07:53,980
+to get from this configuration
+to that configuration.
+
+1248
+01:07:53,980 --> 01:07:56,860
+They're disconnected
+from each other.
+
+1249
+01:07:56,860 --> 01:07:58,430
+So this would be
+kind of sad news
+
+1250
+01:07:58,430 --> 01:07:59,460
+if you're looking for motions.
+
+1251
+01:07:59,460 --> 01:08:01,710
+It means you cannot get from
+everywhere to everywhere.
+
+1252
+01:08:01,710 --> 01:08:04,320
+There are some locked
+configurations that cannot get
+
+1253
+01:08:04,320 --> 01:08:06,520
+back to start.
+
+1254
+01:08:06,520 --> 01:08:08,900
+However you define start
+and locked doesn't matter,
+
+1255
+01:08:08,900 --> 01:08:11,562
+but the linkage is locked when
+there's two things that cannot
+
+1256
+01:08:11,562 --> 01:08:12,270
+reach each other.
+
+1257
+01:08:12,270 --> 01:08:15,520
+
+1258
+01:08:15,520 --> 01:08:31,350
+And the Carpenter's Rule Theorem
+is about one case of that.
+
+1259
+01:08:31,350 --> 01:08:38,380
+
+1260
+01:08:38,380 --> 01:08:41,020
+So this was essentially
+my Ph.D. thesis,
+
+1261
+01:08:41,020 --> 01:08:46,149
+so paper in 2000 by Bob Connolly
+who made that tensegrity,
+
+1262
+01:08:46,149 --> 01:08:48,069
+[? Gunta ?] [? Rota ?] and me.
+
+1263
+01:08:48,069 --> 01:08:56,770
+And it says that if
+we have a linkage,
+
+1264
+01:08:56,770 --> 01:08:59,790
+and say we take a configuration
+of that linkage, and let's
+
+1265
+01:08:59,790 --> 01:09:06,710
+say it's of maximum degree
+2, so every vertex has
+
+1266
+01:09:06,710 --> 01:09:10,420
+at most two edges
+coming out of it.
+
+1267
+01:09:10,420 --> 01:09:24,600
+Then there's a motion of that
+linkage that straightens out--
+
+1268
+01:09:24,600 --> 01:09:28,410
+so if you have maximum
+degree 2, you have paths,
+
+1269
+01:09:28,410 --> 01:09:30,384
+and you might have some cycles.
+
+1270
+01:09:30,384 --> 01:09:31,550
+You might have many of them.
+
+1271
+01:09:31,550 --> 01:09:39,060
+
+1272
+01:09:39,060 --> 01:09:40,930
+And it's going to
+straighten all the paths
+
+1273
+01:09:40,930 --> 01:09:42,249
+and convexify all the cycles.
+
+1274
+01:09:42,249 --> 01:09:54,660
+
+1275
+01:09:54,660 --> 01:09:57,770
+And it's also expansive.
+
+1276
+01:09:57,770 --> 01:10:01,920
+
+1277
+01:10:01,920 --> 01:10:03,940
+But before I get to
+that, this is essentially
+
+1278
+01:10:03,940 --> 01:10:05,760
+showing that these
+configuration's bases
+
+1279
+01:10:05,760 --> 01:10:06,619
+are connected.
+
+1280
+01:10:06,619 --> 01:10:08,660
+It doesn't quite imply it
+the way I've worded it.
+
+1281
+01:10:08,660 --> 01:10:13,159
+But for example, for
+paths, I take some path.
+
+1282
+01:10:13,159 --> 01:10:15,200
+I want to know, can I get
+from this configuration
+
+1283
+01:10:15,200 --> 01:10:16,366
+to some other configuration?
+
+1284
+01:10:16,366 --> 01:10:18,820
+
+1285
+01:10:18,820 --> 01:10:20,390
+Well, I could take
+this one, find
+
+1286
+01:10:20,390 --> 01:10:22,386
+a motion that
+straightens the chain.
+
+1287
+01:10:22,386 --> 01:10:23,886
+I could take this
+one, find a motion
+
+1288
+01:10:23,886 --> 01:10:25,610
+that straightens the chain.
+
+1289
+01:10:25,610 --> 01:10:28,680
+So here I've drawn it straight.
+
+1290
+01:10:28,680 --> 01:10:29,500
+I take this motion.
+
+1291
+01:10:29,500 --> 01:10:30,340
+I apply it forwards.
+
+1292
+01:10:30,340 --> 01:10:31,131
+I take this motion.
+
+1293
+01:10:31,131 --> 01:10:33,930
+I apply it backwards, and
+I get from here to here.
+
+1294
+01:10:33,930 --> 01:10:36,800
+So if I can straighten
+all the paths,
+
+1295
+01:10:36,800 --> 01:10:41,830
+I can definitely get from
+anywhere to anywhere.
+
+1296
+01:10:41,830 --> 01:10:44,300
+For convex cycles, it's
+a little less obvious,
+
+1297
+01:10:44,300 --> 01:10:45,760
+but it's also true.
+
+1298
+01:10:45,760 --> 01:10:48,490
+There's one catch which
+I didn't say here.
+
+1299
+01:10:48,490 --> 01:10:50,345
+I need to add outermost.
+
+1300
+01:10:50,345 --> 01:10:54,130
+
+1301
+01:10:54,130 --> 01:10:57,250
+When you have nesting like
+this, you're in trouble.
+
+1302
+01:10:57,250 --> 01:10:59,550
+This guy is not going
+to get straightened out.
+
+1303
+01:10:59,550 --> 01:11:00,510
+It could be super long.
+
+1304
+01:11:00,510 --> 01:11:02,520
+It may not have room
+to straighten out
+
+1305
+01:11:02,520 --> 01:11:05,339
+inside that convex chamber.
+
+1306
+01:11:05,339 --> 01:11:07,130
+So these guys will come
+along for the ride,
+
+1307
+01:11:07,130 --> 01:11:08,838
+but they won't actually
+get straightened.
+
+1308
+01:11:08,838 --> 01:11:14,200
+The outermost guys will get
+straightened and convexified.
+
+1309
+01:11:14,200 --> 01:11:15,946
+The other fun
+property-- and this
+
+1310
+01:11:15,946 --> 01:11:17,570
+is how we actually
+proved the theorem--
+
+1311
+01:11:17,570 --> 01:11:18,945
+so this was open
+for a long time.
+
+1312
+01:11:18,945 --> 01:11:20,530
+People thought this was true.
+
+1313
+01:11:20,530 --> 01:11:28,190
+And the key to proving it is
+by making the theorem stronger,
+
+1314
+01:11:28,190 --> 01:11:38,910
+which is that all pairwise
+distances between vertices
+
+1315
+01:11:38,910 --> 01:11:43,510
+increase or stay the same.
+
+1316
+01:11:43,510 --> 01:11:46,504
+
+1317
+01:11:46,504 --> 01:11:48,920
+Some of them have to stay the
+same, because they're edges.
+
+1318
+01:11:48,920 --> 01:11:50,060
+They are bars in there.
+
+1319
+01:11:50,060 --> 01:11:52,390
+They can't change in length.
+
+1320
+01:11:52,390 --> 01:11:55,500
+But everything
+else will increase.
+
+1321
+01:11:55,500 --> 01:11:58,690
+Now there's a couple
+reasons why this is useful.
+
+1322
+01:11:58,690 --> 01:12:04,380
+One is that it says you don't
+have to worry about crossings.
+
+1323
+01:12:04,380 --> 01:12:07,940
+If I have some edges that
+initially don't cross,
+
+1324
+01:12:07,940 --> 01:12:11,290
+and I'm worried
+about them crossing,
+
+1325
+01:12:11,290 --> 01:12:12,990
+that can't happen
+if you're expansive.
+
+1326
+01:12:12,990 --> 01:12:16,300
+If I say, well, this
+distance has to increase,
+
+1327
+01:12:16,300 --> 01:12:17,874
+and this distance
+has to increase,
+
+1328
+01:12:17,874 --> 01:12:19,290
+there's no way
+that this vertex is
+
+1329
+01:12:19,290 --> 01:12:21,670
+going to cross over that edge.
+
+1330
+01:12:21,670 --> 01:12:23,830
+One of them would
+have to get shorter.
+
+1331
+01:12:23,830 --> 01:12:25,470
+So this essentially
+says, everything's
+
+1332
+01:12:25,470 --> 01:12:26,440
+flying away from each other.
+
+1333
+01:12:26,440 --> 01:12:27,940
+So if initially
+you're non-crossing,
+
+1334
+01:12:27,940 --> 01:12:29,900
+you will be
+non-crossing forever.
+
+1335
+01:12:29,900 --> 01:12:31,900
+That really makes life
+easier, because crossings
+
+1336
+01:12:31,900 --> 01:12:33,540
+are hard to think about.
+
+1337
+01:12:33,540 --> 01:12:35,380
+This lets you not
+worry about crossings.
+
+1338
+01:12:35,380 --> 01:12:37,030
+You just have to
+worry about distances.
+
+1339
+01:12:37,030 --> 01:12:38,780
+How do I worry about
+distances increasing?
+
+1340
+01:12:38,780 --> 01:12:48,920
+
+1341
+01:12:48,920 --> 01:12:55,320
+Tensegrities--
+struts-- struts will
+
+1342
+01:12:55,320 --> 01:12:57,710
+force things to be expansive.
+
+1343
+01:12:57,710 --> 01:13:02,770
+If I want to model this
+picture, all I need to do
+
+1344
+01:13:02,770 --> 01:13:05,810
+is add a whole of struts.
+
+1345
+01:13:05,810 --> 01:13:07,150
+Let's go over here.
+
+1346
+01:13:07,150 --> 01:13:09,124
+
+1347
+01:13:09,124 --> 01:13:11,040
+So we're going to prove
+this theorem in, like,
+
+1348
+01:13:11,040 --> 01:13:13,050
+five minutes-- easy.
+
+1349
+01:13:13,050 --> 01:13:17,800
+Once you build all this
+technology, which was existing,
+
+1350
+01:13:17,800 --> 01:13:19,430
+you can prove this
+theorem, once you
+
+1351
+01:13:19,430 --> 01:13:20,700
+realize this is the
+theorem you want
+
+1352
+01:13:20,700 --> 01:13:21,949
+to prove-- this expansiveness.
+
+1353
+01:13:21,949 --> 01:13:26,791
+
+1354
+01:13:26,791 --> 01:13:28,790
+So what we're going to
+do is build a tensegrity.
+
+1355
+01:13:28,790 --> 01:13:35,080
+
+1356
+01:13:35,080 --> 01:13:43,086
+And it's going to have a bar
+for every edge of the given
+
+1357
+01:13:43,086 --> 01:13:43,585
+linkage.
+
+1358
+01:13:43,585 --> 01:13:47,410
+
+1359
+01:13:47,410 --> 01:13:50,030
+So that's just the same
+thing as we had given.
+
+1360
+01:13:50,030 --> 01:13:53,250
+
+1361
+01:13:53,250 --> 01:13:56,875
+It's also going to have a
+strut between every other pair
+
+1362
+01:13:56,875 --> 01:14:00,915
+of vertices-- heck,
+every pair of vertices.
+
+1363
+01:14:00,915 --> 01:14:03,440
+It's kind of redundant
+for the bars,
+
+1364
+01:14:03,440 --> 01:14:07,270
+but every pair of vertices.
+
+1365
+01:14:07,270 --> 01:14:11,270
+That says that all pairwise
+distances must increase or stay
+
+1366
+01:14:11,270 --> 01:14:13,650
+the same.
+
+1367
+01:14:13,650 --> 01:14:14,670
+So this is a tensegrity.
+
+1368
+01:14:14,670 --> 01:14:17,720
+What I want to prove is that
+this tensegrity is flexible.
+
+1369
+01:14:17,720 --> 01:14:20,294
+If I can prove that
+it's always flexible--
+
+1370
+01:14:20,294 --> 01:14:22,585
+well, until the end, which
+is when everybody's straight
+
+1371
+01:14:22,585 --> 01:14:24,543
+or convex-- all the
+outermost guys are straight
+
+1372
+01:14:24,543 --> 01:14:28,990
+or convex-- then I'll
+have proved this theorem.
+
+1373
+01:14:28,990 --> 01:14:31,480
+So while this theorem is
+about actual connectivity
+
+1374
+01:14:31,480 --> 01:14:34,370
+of configuration spaces,
+it says paths and cycles
+
+1375
+01:14:34,370 --> 01:14:35,870
+have connected
+configuration spaces.
+
+1376
+01:14:35,870 --> 01:14:37,290
+You get from everywhere
+to everywhere.
+
+1377
+01:14:37,290 --> 01:14:38,956
+It even gives you an
+algorithm for doing
+
+1378
+01:14:38,956 --> 01:14:41,080
+that, which we'll
+talk about next class.
+
+1379
+01:14:41,080 --> 01:14:45,420
+We use just, is this thing
+rigid or flexible at all?
+
+1380
+01:14:45,420 --> 01:14:48,960
+And that's the power of all this
+rigidity stuff, just telling
+
+1381
+01:14:48,960 --> 01:14:51,290
+whether something can
+move a little bit,
+
+1382
+01:14:51,290 --> 01:14:53,990
+and then just doing that
+over and over again,
+
+1383
+01:14:53,990 --> 01:14:56,130
+you will be able to find
+that you can actually
+
+1384
+01:14:56,130 --> 01:14:59,944
+go all the way, and get
+to straight or convex.
+
+1385
+01:14:59,944 --> 01:15:01,610
+But how do we actually
+prove this thing?
+
+1386
+01:15:01,610 --> 01:15:05,540
+
+1387
+01:15:05,540 --> 01:15:14,690
+So the point is, claim this
+tensegrity is infinitesimally
+
+1388
+01:15:14,690 --> 01:15:20,300
+flexible, meaning it is
+not infinitesimally rigid.
+
+1389
+01:15:20,300 --> 01:15:23,360
+
+1390
+01:15:23,360 --> 01:15:25,950
+And that will imply
+that there's at least
+
+1391
+01:15:25,950 --> 01:15:27,700
+an infinitesimal
+expansive motion.
+
+1392
+01:15:27,700 --> 01:15:31,426
+And then you have to use some
+fancy tricks-- not fancy,
+
+1393
+01:15:31,426 --> 01:15:33,050
+some tricks I don't
+want to talk about.
+
+1394
+01:15:33,050 --> 01:15:35,840
+You basically integrate
+that vector field,
+
+1395
+01:15:35,840 --> 01:15:39,500
+and that will give you an
+actual expansive motion.
+
+1396
+01:15:39,500 --> 01:15:40,840
+Let's not worry about that.
+
+1397
+01:15:40,840 --> 01:15:43,760
+The interesting part is show
+that at least infinitesimally,
+
+1398
+01:15:43,760 --> 01:15:47,830
+this tensegrity
+moves a little bit.
+
+1399
+01:15:47,830 --> 01:15:50,140
+So what do know?
+
+1400
+01:15:50,140 --> 01:15:55,309
+Duality-- if I want to
+show not that it's rigid--
+
+1401
+01:15:55,309 --> 01:15:56,725
+I want to show
+that it's flexible.
+
+1402
+01:15:56,725 --> 01:15:59,690
+
+1403
+01:15:59,690 --> 01:16:05,280
+But it's rigid if and only if
+this is true and this is true.
+
+1404
+01:16:05,280 --> 01:16:07,090
+This will actually
+always be true--
+
+1405
+01:16:07,090 --> 01:16:08,950
+the corresponding
+linkage is rigid--
+
+1406
+01:16:08,950 --> 01:16:11,580
+because I put in every
+edge is in there.
+
+1407
+01:16:11,580 --> 01:16:14,760
+If I turn them all into bars,
+this thing's not moving at all.
+
+1408
+01:16:14,760 --> 01:16:17,670
+So fact, this second condition
+doesn't really matter.
+
+1409
+01:16:17,670 --> 01:16:20,360
+What matters is the stresses.
+
+1410
+01:16:20,360 --> 01:16:23,736
+If I want to show that
+it's flexible, not rigid.
+
+1411
+01:16:23,736 --> 01:16:25,485
+I want to show these
+stresses don't exist.
+
+1412
+01:16:25,485 --> 01:16:27,330
+Now stresses always exist.
+
+1413
+01:16:27,330 --> 01:16:28,880
+I could set all the
+stresses to be 0.
+
+1414
+01:16:28,880 --> 01:16:31,810
+But I claim actually
+pretty much all the
+
+1415
+01:16:31,810 --> 01:16:34,970
+stresses have to be 0, at least
+on the cables and the struts,
+
+1416
+01:16:34,970 --> 01:16:37,260
+which is what I care about here.
+
+1417
+01:16:37,260 --> 01:16:39,890
+They have to be 0.
+
+1418
+01:16:39,890 --> 01:16:47,540
+So this will be implied
+by every equilibrium
+
+1419
+01:16:47,540 --> 01:16:58,700
+stress is 0 on all
+struts and cables.
+
+1420
+01:16:58,700 --> 01:17:01,500
+
+1421
+01:17:01,500 --> 01:17:03,790
+So you can never get
+this thing to hold
+
+1422
+01:17:03,790 --> 01:17:06,150
+for any of the struts
+and the cables.
+
+1423
+01:17:06,150 --> 01:17:09,070
+And therefore, in some sense,
+none of them are fixed,
+
+1424
+01:17:09,070 --> 01:17:12,230
+and therefore, you're
+actually flexible.
+
+1425
+01:17:12,230 --> 01:17:16,350
+That's implied by this
+duality statement.
+
+1426
+01:17:16,350 --> 01:17:19,550
+OK, stresses are a little
+hard to think about.
+
+1427
+01:17:19,550 --> 01:17:23,900
+I prefer to think about
+polyhedral liftings, let's say.
+
+1428
+01:17:23,900 --> 01:17:27,130
+OK, the key here is to plug
+together all the right results.
+
+1429
+01:17:27,130 --> 01:17:30,550
+
+1430
+01:17:30,550 --> 01:17:37,590
+This will be true if and only
+if every polyhedron lifting
+
+1431
+01:17:37,590 --> 01:17:38,100
+is flat.
+
+1432
+01:17:38,100 --> 01:17:45,680
+
+1433
+01:17:45,680 --> 01:17:47,570
+So I guess in our
+case, it will be 0,
+
+1434
+01:17:47,570 --> 01:17:50,840
+because the outside face sets
+all the z-coordinates to 0,
+
+1435
+01:17:50,840 --> 01:17:53,410
+so everything else will
+have to be in that plane.
+
+1436
+01:17:53,410 --> 01:17:58,162
+So all the
+z-coordinates will be 0.
+
+1437
+01:17:58,162 --> 01:17:59,620
+So these are
+equivalent statements.
+
+1438
+01:17:59,620 --> 01:18:02,670
+All I need to prove is that
+every polyhedral lifting
+
+1439
+01:18:02,670 --> 01:18:03,185
+is flat.
+
+1440
+01:18:03,185 --> 01:18:05,441
+
+1441
+01:18:05,441 --> 01:18:07,690
+So we're going to prove this
+theorem by contradiction.
+
+1442
+01:18:07,690 --> 01:18:20,170
+
+1443
+01:18:20,170 --> 01:18:24,070
+Suppose there was a
+non-flat polyhedron lifting.
+
+1444
+01:18:24,070 --> 01:18:25,070
+What could it look like?
+
+1445
+01:18:25,070 --> 01:18:30,890
+
+1446
+01:18:30,890 --> 01:18:32,620
+Did I just erase what I wanted?
+
+1447
+01:18:32,620 --> 01:18:34,460
+Probably.
+
+1448
+01:18:34,460 --> 01:18:39,872
+Greater than or equal to
+0 for cables, less than
+
+1449
+01:18:39,872 --> 01:18:41,214
+or equal to 0 for struts.
+
+1450
+01:18:41,214 --> 01:18:42,380
+That's the one I care about.
+
+1451
+01:18:42,380 --> 01:18:43,338
+Who cares about cables?
+
+1452
+01:18:43,338 --> 01:18:47,520
+
+1453
+01:18:47,520 --> 01:18:50,080
+All right, so this
+is the stress.
+
+1454
+01:18:50,080 --> 01:18:52,670
+And equilibrium stress
+has to be less than
+
+1455
+01:18:52,670 --> 01:18:55,630
+or equal to 0 for every strut.
+
+1456
+01:18:55,630 --> 01:18:58,250
+Less than or equal
+to 0 corresponds
+
+1457
+01:18:58,250 --> 01:19:02,170
+to a valley edge or flat edge.
+
+1458
+01:19:02,170 --> 01:19:05,840
+Now in this linkage, almost
+all the edges are struts.
+
+1459
+01:19:05,840 --> 01:19:07,740
+There's a few that
+are bars, this,
+
+1460
+01:19:07,740 --> 01:19:09,690
+like, little path is a bar.
+
+1461
+01:19:09,690 --> 01:19:11,190
+Those could be
+valleys or mountains.
+
+1462
+01:19:11,190 --> 01:19:12,480
+We don't know.
+
+1463
+01:19:12,480 --> 01:19:15,570
+But everything else has
+to be a valley or flat.
+
+1464
+01:19:15,570 --> 01:19:16,630
+For flat, we're good.
+
+1465
+01:19:16,630 --> 01:19:17,140
+We're happy.
+
+1466
+01:19:17,140 --> 01:19:19,030
+We want all the
+edges to be flat.
+
+1467
+01:19:19,030 --> 01:19:23,200
+So how could it be that almost
+every edge in this picture
+
+1468
+01:19:23,200 --> 01:19:25,970
+is a valley?
+
+1469
+01:19:25,970 --> 01:19:29,040
+That seems a little tricky.
+
+1470
+01:19:29,040 --> 01:19:32,270
+And we're going to
+show it can't happen.
+
+1471
+01:19:32,270 --> 01:19:35,140
+If everything's a
+valley, something's
+
+1472
+01:19:35,140 --> 01:19:37,520
+going to go wrong
+at the top picture,
+
+1473
+01:19:37,520 --> 01:19:40,860
+because you've got to have
+mountains, like, turn around.
+
+1474
+01:19:40,860 --> 01:19:43,160
+So let's look at the top.
+
+1475
+01:19:43,160 --> 01:19:44,870
+Look at the maximum
+z-coordinate.
+
+1476
+01:19:44,870 --> 01:19:48,497
+
+1477
+01:19:48,497 --> 01:19:50,830
+Now this could actually look
+like many different things,
+
+1478
+01:19:50,830 --> 01:19:54,190
+but I'm going to consider one
+case-- the easy case-- where
+
+1479
+01:19:54,190 --> 01:19:56,440
+you have, in the
+maximum z-coordinate,
+
+1480
+01:19:56,440 --> 01:19:58,140
+you have one point.
+
+1481
+01:19:58,140 --> 01:20:01,750
+And then around that,
+everything descends.
+
+1482
+01:20:01,750 --> 01:20:04,110
+OK, these are all the edges
+incident to that point.
+
+1483
+01:20:04,110 --> 01:20:13,080
+You form some kind of--
+OK, so this is maximum z.
+
+1484
+01:20:13,080 --> 01:20:14,020
+This is another plane.
+
+1485
+01:20:14,020 --> 01:20:19,230
+I'm going to slice that, which
+is maximum z minus epsilon--
+
+1486
+01:20:19,230 --> 01:20:22,440
+slightly below the
+maximum z-coordinate.
+
+1487
+01:20:22,440 --> 01:20:27,050
+And in a sort of typical case,
+we're going to get a polygon.
+
+1488
+01:20:27,050 --> 01:20:30,230
+Now note that this polygon
+has this nice property,
+
+1489
+01:20:30,230 --> 01:20:34,550
+that wherever it has a convex
+angle, you get a mountain here.
+
+1490
+01:20:34,550 --> 01:20:37,270
+Wherever you have a reflex
+angle, like this one,
+
+1491
+01:20:37,270 --> 01:20:38,860
+you get a valley edge here.
+
+1492
+01:20:38,860 --> 01:20:42,420
+You can see that
+3-dimensional picture.
+
+1493
+01:20:42,420 --> 01:20:46,760
+Every polygon has at least
+three convex vertices.
+
+1494
+01:20:46,760 --> 01:20:49,210
+That means there are at least
+three mountains incident
+
+1495
+01:20:49,210 --> 01:20:53,150
+to this maximum
+z-coordinate But mountains
+
+1496
+01:20:53,150 --> 01:20:55,460
+have to correspond
+to positive stresses.
+
+1497
+01:20:55,460 --> 01:20:58,950
+Positive stresses have
+to correspond to bars,
+
+1498
+01:20:58,950 --> 01:21:02,780
+because struts can't
+carry positive stresses.
+
+1499
+01:21:02,780 --> 01:21:05,910
+So that means you have
+at least three bars
+
+1500
+01:21:05,910 --> 01:21:07,500
+incident to that edge.
+
+1501
+01:21:07,500 --> 01:21:12,860
+But I assumed I was maximum
+degree 2-- contradiction.
+
+1502
+01:21:12,860 --> 01:21:14,929
+Isn't that cool?
+
+1503
+01:21:14,929 --> 01:21:16,595
+It's very easy when
+you set it up right.
+
+1504
+01:21:16,595 --> 01:21:20,320
+
+1505
+01:21:20,320 --> 01:21:24,250
+This works almost always, but
+there is another situation
+
+1506
+01:21:24,250 --> 01:21:26,770
+which can happen, which
+is, like, you have--
+
+1507
+01:21:26,770 --> 01:21:29,060
+in the maximum
+z-coordinate you might
+
+1508
+01:21:29,060 --> 01:21:31,900
+have a couple of
+bars at the top.
+
+1509
+01:21:31,900 --> 01:21:32,710
+That's a worry.
+
+1510
+01:21:32,710 --> 01:21:34,902
+This is all in maximum z.
+
+1511
+01:21:34,902 --> 01:21:36,860
+And so when you slice
+below, you don't actually
+
+1512
+01:21:36,860 --> 01:21:38,290
+get a whole polygon.
+
+1513
+01:21:38,290 --> 01:21:44,030
+You might actually only
+get something around here.
+
+1514
+01:21:44,030 --> 01:21:45,700
+But again, you
+can't get from here
+
+1515
+01:21:45,700 --> 01:21:49,270
+to around there
+without some mountain.
+
+1516
+01:21:49,270 --> 01:21:51,510
+It's hard to even imagine,
+because it can't happen.
+
+1517
+01:21:51,510 --> 01:21:53,468
+But this is a mountain,
+and this is a mountain,
+
+1518
+01:21:53,468 --> 01:21:56,810
+and you want to somehow slope
+a surface below this plane,
+
+1519
+01:21:56,810 --> 01:22:01,730
+and get around to over here with
+only valleys-- ain't happening.
+
+1520
+01:22:01,730 --> 01:22:04,520
+You've got to have
+another mountain in here.
+
+1521
+01:22:04,520 --> 01:22:08,770
+And so that's the
+general picture.
+
+1522
+01:22:08,770 --> 01:22:11,550
+And the only thing
+that can happen
+
+1523
+01:22:11,550 --> 01:22:15,250
+is you actually prove that all
+of this stuff has to be flat.
+
+1524
+01:22:15,250 --> 01:22:16,750
+So that's the one
+way it can happen.
+
+1525
+01:22:16,750 --> 01:22:20,480
+You can't have strict valleys,
+but you could have them all 0.
+
+1526
+01:22:20,480 --> 01:22:25,400
+So in fact, the one case
+where you can have stress
+
+1527
+01:22:25,400 --> 01:22:29,100
+is when you have all of
+this outside stuff flat.
+
+1528
+01:22:29,100 --> 01:22:31,140
+And then inside you don't know.
+
+1529
+01:22:31,140 --> 01:22:33,780
+I can prove, using
+this generalized lemma,
+
+1530
+01:22:33,780 --> 01:22:35,731
+that all of these
+regions are locally flat.
+
+1531
+01:22:35,731 --> 01:22:37,980
+And therefore, this whole
+outside face has to be flat.
+
+1532
+01:22:37,980 --> 01:22:39,063
+Therefore, I'm particular.
+
+1533
+01:22:39,063 --> 01:22:42,719
+I can't have a reflex vertex,
+because then this side
+
+1534
+01:22:42,719 --> 01:22:44,010
+would have to all be flattened.
+
+1535
+01:22:44,010 --> 01:22:45,660
+So then the whole
+thing is flattened.
+
+1536
+01:22:45,660 --> 01:22:47,520
+The only way the whole
+thing can't be flat
+
+1537
+01:22:47,520 --> 01:22:52,070
+is if your polygon is already
+convex, and then we're done.
+
+1538
+01:22:52,070 --> 01:22:54,820
+Also straight this can happen.
+
+1539
+01:22:54,820 --> 01:22:57,230
+I think with straight,
+you don't get any stress.
+
+1540
+01:22:57,230 --> 01:22:59,017
+Here you can actually
+have a lifting.
+
+1541
+01:22:59,017 --> 01:23:01,100
+Actually, all these guys
+would be below the plane,
+
+1542
+01:23:01,100 --> 01:23:02,700
+because everything's a valley.
+
+1543
+01:23:02,700 --> 01:23:07,760
+This would be like
+an actual valley,
+
+1544
+01:23:07,760 --> 01:23:10,144
+where you have a
+village or whatever.
+
+1545
+01:23:10,144 --> 01:23:12,560
+That can happen, but only when
+the boundary of your valley
+
+1546
+01:23:12,560 --> 01:23:13,220
+is convex.
+
+1547
+01:23:13,220 --> 01:23:15,830
+
+1548
+01:23:15,830 --> 01:23:17,680
+And so that proves the theorem.
+
+1549
+01:23:17,680 --> 01:23:19,760
+And that is the
+Carpenter's Rule Theorem.
+
+1550
+01:23:19,760 --> 01:23:22,176
+Next time, we're going to talk
+about the other situations.
+
+1551
+01:23:22,176 --> 01:23:26,520
+This was two dimensions,
+and maximum degree 2.
+
+1552
+01:23:26,520 --> 01:23:28,439
+We can think about what
+happens with degree 3.
+
+1553
+01:23:28,439 --> 01:23:29,730
+Then you can get locked things.
+
+1554
+01:23:29,730 --> 01:23:30,840
+What happens in
+three dimensions?
+
+1555
+01:23:30,840 --> 01:23:31,710
+Then you can get locked things.
+
+1556
+01:23:31,710 --> 01:23:33,420
+What happens in four dimensions?
+
+1557
+01:23:33,420 --> 01:23:35,790
+Then you can't get locked
+things, and other fun things
+
+1558
+01:23:35,790 --> 01:23:36,290
+like that.
+
+1559
+01:23:36,290 --> 01:23:38,630
+
+1560
+01:23:38,630 --> 01:23:42,880
+Oh, and why is it called the
+Carpenter's Rule Theorem?
+
+1561
+01:23:42,880 --> 01:23:45,990
+Because this is a
+carpenter's rule.
+
+1562
+01:23:45,990 --> 01:23:48,760
+And in a carpenter's rule,
+actually, all the edge lengths
+
+1563
+01:23:48,760 --> 01:23:49,524
+are the same.
+
+1564
+01:23:49,524 --> 01:23:50,940
+But as far as we
+know that doesn't
+
+1565
+01:23:50,940 --> 01:23:53,050
+make this theorem
+any easier to prove.
+
+1566
+01:23:53,050 --> 01:23:55,450
+And also in the carpenter's
+rule, you can have crossings,
+
+1567
+01:23:55,450 --> 01:23:59,410
+but other than that, it's
+just like a carpenter's rule.
+
+1568
+01:23:59,410 --> 01:24:01,490
+So there you go.
+
+1569
+01:24:01,490 --> 01:24:03,120
+So if you've never
+played with one,
+
+1570
+01:24:03,120 --> 01:24:07,577
+this is what people used
+before flexible measuring tape.
+
+1571
+01:24:07,577 --> 01:24:09,410
+They still use them a
+lot in Europe, but not
+
+1572
+01:24:09,410 --> 01:24:10,940
+so much in the US,
+but you can still
+
+1573
+01:24:10,940 --> 01:24:13,350
+buy them at the hardware store.
+
+1574
+01:24:13,350 --> 01:24:15,040
+That's it.
+

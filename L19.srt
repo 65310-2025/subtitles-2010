@@ -1,0 +1,6830 @@
+1
+0-1:59:59,500 --> 00:00:03,790
+
+2
+00:00:03,790 --> 00:00:05,442
+PROFESSOR: Today,
+we continue-- we're
+
+3
+00:00:05,442 --> 00:00:06,650
+going to do two things today.
+
+4
+00:00:06,650 --> 00:00:11,410
+One is protein folding and the
+other is interlocked chains.
+
+5
+00:00:11,410 --> 00:00:13,110
+So protein folding,
+we're continuing
+
+6
+00:00:13,110 --> 00:00:15,430
+on where we left off last
+time, which was essentially
+
+7
+00:00:15,430 --> 00:00:18,200
+looking at the mechanics, the
+mechanical models of protein
+
+8
+00:00:18,200 --> 00:00:20,380
+folding, which was
+fixed angle chains.
+
+9
+00:00:20,380 --> 00:00:23,200
+
+10
+00:00:23,200 --> 00:00:26,690
+But basically ignoring
+all the forces that
+
+11
+00:00:26,690 --> 00:00:28,370
+go into actual protein folding.
+
+12
+00:00:28,370 --> 00:00:30,330
+Today, we're going
+to look at some
+
+13
+00:00:30,330 --> 00:00:35,180
+of the very theoretical
+work on what
+
+14
+00:00:35,180 --> 00:00:37,950
+forces cause proteins
+to fold and what
+
+15
+00:00:37,950 --> 00:00:42,750
+you can say about algorithms and
+complexities of those problems.
+
+16
+00:00:42,750 --> 00:00:47,000
+So obviously, a lot of people
+work on protein folding.
+
+17
+00:00:47,000 --> 00:00:49,960
+
+18
+00:00:49,960 --> 00:00:52,980
+On the practical side,
+people look a lot
+
+19
+00:00:52,980 --> 00:00:57,790
+at defining energy functions
+that you minimize in order
+
+20
+00:00:57,790 --> 00:01:01,100
+to find what we believe would
+be the right protein folding.
+
+21
+00:01:01,100 --> 00:01:02,820
+There's a lot of energy
+functions around,
+
+22
+00:01:02,820 --> 00:01:06,290
+and the key energies that--
+forces people look at
+
+23
+00:01:06,290 --> 00:01:09,020
+are torsion angles potentials,
+van der Waal interactions,
+
+24
+00:01:09,020 --> 00:01:13,170
+hydrogen bonds, hydrophobicity,
+secondary structure propensity,
+
+25
+00:01:13,170 --> 00:01:15,044
+and paralyze specific
+interactions.
+
+26
+00:01:15,044 --> 00:01:17,710
+And then they take some weighted
+combination of all those things
+
+27
+00:01:17,710 --> 00:01:19,280
+and try to find
+one that matches up
+
+28
+00:01:19,280 --> 00:01:20,774
+with what we see in real life.
+
+29
+00:01:20,774 --> 00:01:22,190
+The things we see
+in real life, we
+
+30
+00:01:22,190 --> 00:01:23,690
+get by crystallizing
+proteins, which
+
+31
+00:01:23,690 --> 00:01:26,920
+can take a really long time,
+like years of research.
+
+32
+00:01:26,920 --> 00:01:28,204
+Then you get one 3D image.
+
+33
+00:01:28,204 --> 00:01:30,620
+And that's what protein data
+bank collects is all those 3D
+
+34
+00:01:30,620 --> 00:01:31,750
+images.
+
+35
+00:01:31,750 --> 00:01:33,886
+People try to train against
+that data, but I say,
+
+36
+00:01:33,886 --> 00:01:35,760
+we really don't know
+what the right objective
+
+37
+00:01:35,760 --> 00:01:37,900
+is for real protein folding.
+
+38
+00:01:37,900 --> 00:01:40,480
+Given that, because
+I'm a theoretician,
+
+39
+00:01:40,480 --> 00:01:43,640
+we're going to look at
+a super simple model
+
+40
+00:01:43,640 --> 00:01:46,330
+that just models one of those
+features that I mentioned,
+
+41
+00:01:46,330 --> 00:01:48,240
+which is hydrophobicity.
+
+42
+00:01:48,240 --> 00:01:53,660
+Hydrophobia is fear of water.
+
+43
+00:01:53,660 --> 00:01:56,700
+And remember we have
+this back on the protein,
+
+44
+00:01:56,700 --> 00:01:59,690
+the various amino acids hanging
+off, some of those amino acids
+
+45
+00:01:59,690 --> 00:02:04,430
+are hydrophobic, meaning
+they like to hide from water.
+
+46
+00:02:04,430 --> 00:02:08,729
+Now usually, your proteins live
+in a big bath of fluid, mostly
+
+47
+00:02:08,729 --> 00:02:12,160
+water, and so they're trying
+to hide from the surroundings,
+
+48
+00:02:12,160 --> 00:02:15,450
+try to cluster on the
+inside of the folded shape,
+
+49
+00:02:15,450 --> 00:02:19,530
+whereas other hydrophilic amino
+acids that like water, they
+
+50
+00:02:19,530 --> 00:02:21,306
+tend to go around the outside.
+
+51
+00:02:21,306 --> 00:02:22,680
+You can't always
+do this, but you
+
+52
+00:02:22,680 --> 00:02:25,720
+try to minimize the amount to
+which the hydrophobic guys are
+
+53
+00:02:25,720 --> 00:02:28,350
+on the outside and maximize
+the hydrophilic guys are
+
+54
+00:02:28,350 --> 00:02:29,470
+on the outside.
+
+55
+00:02:29,470 --> 00:02:33,140
+In the HP model, there are
+hydrophobic and hydrophilic
+
+56
+00:02:33,140 --> 00:02:33,640
+guys.
+
+57
+00:02:33,640 --> 00:02:40,240
+And actually, we'll
+call h the hydrophobic
+
+58
+00:02:40,240 --> 00:02:41,483
+and P the hydrophilic.
+
+59
+00:02:41,483 --> 00:02:44,724
+
+60
+00:02:44,724 --> 00:02:46,390
+It's very confusing
+because both of them
+
+61
+00:02:46,390 --> 00:02:49,840
+have h and p in the acronym,
+but p also apparently stands
+
+62
+00:02:49,840 --> 00:02:54,670
+for polar, polar opposite
+of the hydrophobic guys.
+
+63
+00:02:54,670 --> 00:02:56,920
+Anyway, we just have
+these two kinds of nodes,
+
+64
+00:02:56,920 --> 00:02:58,850
+and we just try
+to model that one
+
+65
+00:02:58,850 --> 00:03:01,190
+feature, plus the bonds
+that link together,
+
+66
+00:03:01,190 --> 00:03:03,520
+the backbone of the chain.
+
+67
+00:03:03,520 --> 00:03:05,170
+And so we're going
+to model a chain
+
+68
+00:03:05,170 --> 00:03:11,010
+as just a sequence of nodes.
+
+69
+00:03:11,010 --> 00:03:12,940
+We're going to fold
+that chain on a lattice.
+
+70
+00:03:12,940 --> 00:03:15,590
+
+71
+00:03:15,590 --> 00:03:16,610
+Something like this.
+
+72
+00:03:16,610 --> 00:03:17,210
+Is it five?
+
+73
+00:03:17,210 --> 00:03:18,110
+Yeah.
+
+74
+00:03:18,110 --> 00:03:23,170
+And different of these nodes
+could be marked h or p.
+
+75
+00:03:23,170 --> 00:03:26,780
+And we usually could use
+two colors to denote that.
+
+76
+00:03:26,780 --> 00:03:32,580
+In this case, I made this guy
+h, this guy h, this guy h.
+
+77
+00:03:32,580 --> 00:03:37,000
+The score of a fold--
+so this is a folding.
+
+78
+00:03:37,000 --> 00:03:39,540
+We're always going to
+fold on the square lattice
+
+79
+00:03:39,540 --> 00:03:41,980
+today although people have
+looked at other lattices,
+
+80
+00:03:41,980 --> 00:03:44,930
+in particular 3D cubic
+lattice and a little bit
+
+81
+00:03:44,930 --> 00:03:46,990
+on the triangular lattice.
+
+82
+00:03:46,990 --> 00:03:49,810
+I'll mention some reasons
+why the square lattice is
+
+83
+00:03:49,810 --> 00:03:53,260
+a little bit artificial,
+but in general, conjectures,
+
+84
+00:03:53,260 --> 00:03:55,387
+it doesn't really matter
+which lattice you fold on.
+
+85
+00:03:55,387 --> 00:03:56,970
+But you really want
+to follow lattices
+
+86
+00:03:56,970 --> 00:03:59,620
+because we're going to
+define the score in terms
+
+87
+00:03:59,620 --> 00:04:04,860
+of how many adjacent H nodes
+there are on the lattice.
+
+88
+00:04:04,860 --> 00:04:12,210
+Score is the number of
+call them H-H bonds.
+
+89
+00:04:12,210 --> 00:04:15,876
+The intuition is if you have
+two hydrophobic nodes that
+
+90
+00:04:15,876 --> 00:04:17,750
+are next to each other
+that means they're not
+
+91
+00:04:17,750 --> 00:04:22,066
+next to the boundary,
+and so they're happier.
+
+92
+00:04:22,066 --> 00:04:23,690
+There's a more formal
+argument of that,
+
+93
+00:04:23,690 --> 00:04:26,660
+but this is an easy
+definition of score.
+
+94
+00:04:26,660 --> 00:04:30,010
+You want to maximize
+the number of H-H nodes
+
+95
+00:04:30,010 --> 00:04:32,290
+that are adjacent
+on the lattice.
+
+96
+00:04:32,290 --> 00:04:35,247
+Usually, there are some that
+are adjacent along the chain.
+
+97
+00:04:35,247 --> 00:04:37,330
+Those we don't care about
+because they will always
+
+98
+00:04:37,330 --> 00:04:38,100
+be adjacent.
+
+99
+00:04:38,100 --> 00:04:41,300
+You have to fold this thing
+so that consecutive nodes
+
+100
+00:04:41,300 --> 00:04:45,680
+in the chain appear
+adjacent in the lattice.
+
+101
+00:04:45,680 --> 00:04:55,726
+So we usually ignore what I
+would call H-H edges which
+
+102
+00:04:55,726 --> 00:04:57,350
+are four, so you can
+count them or not.
+
+103
+00:04:57,350 --> 00:05:00,166
+It doesn't really matter.
+
+104
+00:05:00,166 --> 00:05:02,040
+We want to maximize the
+number of these guys.
+
+105
+00:05:02,040 --> 00:05:05,360
+For this chain, that's probably
+the maximum you can get.
+
+106
+00:05:05,360 --> 00:05:10,370
+In general, a typical node
+has two edge neighbors,
+
+107
+00:05:10,370 --> 00:05:13,130
+and it has two other neighbors.
+
+108
+00:05:13,130 --> 00:05:17,240
+And so at most, every
+guy has-- every H node
+
+109
+00:05:17,240 --> 00:05:19,730
+has two bonds next
+to it, which means
+
+110
+00:05:19,730 --> 00:05:23,660
+on average at most
+one bond per H node
+
+111
+00:05:23,660 --> 00:05:26,377
+because we're double counting.
+
+112
+00:05:26,377 --> 00:05:27,210
+So that's the model.
+
+113
+00:05:27,210 --> 00:05:30,030
+
+114
+00:05:30,030 --> 00:05:36,090
+The optimal folding
+has the maximum score.
+
+115
+00:05:36,090 --> 00:05:41,140
+
+116
+00:05:41,140 --> 00:05:43,650
+And I'm going to
+talk about the theory
+
+117
+00:05:43,650 --> 00:05:46,080
+of this model in a moment.
+
+118
+00:05:46,080 --> 00:05:50,520
+Some practice you might
+say is this picture.
+
+119
+00:05:50,520 --> 00:05:55,570
+This is heuristic or local
+optimization of maximizing.
+
+120
+00:05:55,570 --> 00:05:59,800
+Here, red nodes are H nodes that
+will be throughout the slides.
+
+121
+00:05:59,800 --> 00:06:00,750
+Red nodes are H nodes.
+
+122
+00:06:00,750 --> 00:06:02,060
+Blue nodes are P nodes.
+
+123
+00:06:02,060 --> 00:06:03,840
+That's a universal standard.
+
+124
+00:06:03,840 --> 00:06:05,670
+You can see, in this
+case conveniently--
+
+125
+00:06:05,670 --> 00:06:08,341
+it may look like some random
+pattern of reds and blues,
+
+126
+00:06:08,341 --> 00:06:10,590
+but you end up with all the
+blues pretty much covering
+
+127
+00:06:10,590 --> 00:06:12,840
+the outside, and so the
+reds cluster together,
+
+128
+00:06:12,840 --> 00:06:14,800
+and there's lots of H-H bonds.
+
+129
+00:06:14,800 --> 00:06:18,840
+They are not drawn here,
+but-- So that's nice.
+
+130
+00:06:18,840 --> 00:06:22,010
+And this looks like
+a typical protein
+
+131
+00:06:22,010 --> 00:06:24,692
+in that it globs together.
+
+132
+00:06:24,692 --> 00:06:26,650
+But of course, it's not
+capturing every feature
+
+133
+00:06:26,650 --> 00:06:30,540
+of protein folding, just
+trying to capture one of them.
+
+134
+00:06:30,540 --> 00:06:35,190
+But pretending this
+is the whole story,
+
+135
+00:06:35,190 --> 00:06:40,380
+what can you say about optimal
+folding in the HP model?
+
+136
+00:06:40,380 --> 00:06:42,480
+Well sadly, it's NP-hard.
+
+137
+00:06:42,480 --> 00:06:46,560
+
+138
+00:06:46,560 --> 00:06:49,500
+So to find the actual
+optimal folding of a given
+
+139
+00:06:49,500 --> 00:06:52,490
+string of red and
+blue nodes is NP-hard.
+
+140
+00:06:52,490 --> 00:06:54,510
+It's NP-hard in the
+3D cubic lattice.
+
+141
+00:06:54,510 --> 00:06:58,720
+That was by two MIT professors,
+Bonnie Berger and Tom Leighton
+
+142
+00:06:58,720 --> 00:07:01,680
+And then it was proved
+NP-hard hard in two dimensions
+
+143
+00:07:01,680 --> 00:07:05,050
+by whole bunch of people,
+I guess, from Berkeley.
+
+144
+00:07:05,050 --> 00:07:08,030
+
+145
+00:07:08,030 --> 00:07:09,870
+So that's bad news.
+
+146
+00:07:09,870 --> 00:07:13,810
+And to me, that's a sign
+that nature probably
+
+147
+00:07:13,810 --> 00:07:15,797
+does not find the
+optimal folding.
+
+148
+00:07:15,797 --> 00:07:17,380
+There are a couple
+possibilities here.
+
+149
+00:07:17,380 --> 00:07:20,740
+Maybe they're extra forces
+beyond hydrophobicity
+
+150
+00:07:20,740 --> 00:07:23,660
+that make it easier to
+find the optimal solution
+
+151
+00:07:23,660 --> 00:07:26,450
+or maybe nature's just
+finding a local optimum, not
+
+152
+00:07:26,450 --> 00:07:29,090
+a global optimum.
+
+153
+00:07:29,090 --> 00:07:31,860
+Or maybe the proteins that
+exist in real life that
+
+154
+00:07:31,860 --> 00:07:35,110
+have been evolved are designed
+so that local optima equal
+
+155
+00:07:35,110 --> 00:07:36,165
+global optima.
+
+156
+00:07:36,165 --> 00:07:37,750
+That's somewhat related.
+
+157
+00:07:37,750 --> 00:07:40,980
+Somehow nature gets around this
+NP-hardness, I would think,
+
+158
+00:07:40,980 --> 00:07:42,610
+because I believe
+nature's a computer.
+
+159
+00:07:42,610 --> 00:07:44,610
+Maybe not everyone does.
+
+160
+00:07:44,610 --> 00:07:49,080
+But it should be bounded by
+polynomial time computation.
+
+161
+00:07:49,080 --> 00:07:52,820
+So unless P equals NP-- that's
+another possibility I guess.
+
+162
+00:07:52,820 --> 00:07:56,399
+It's unlikely that, to
+me, nature is doing this.
+
+163
+00:07:56,399 --> 00:07:57,940
+But maybe it's
+finding local optimum.
+
+164
+00:07:57,940 --> 00:08:00,273
+That seems to do pretty well
+in this particular example.
+
+165
+00:08:00,273 --> 00:08:02,650
+
+166
+00:08:02,650 --> 00:08:03,590
+AUDIENCE: Hey Erik?
+
+167
+00:08:03,590 --> 00:08:03,820
+PROFESSOR: Yeah.?
+
+168
+00:08:03,820 --> 00:08:05,080
+AUDIENCE: Are there
+approximation algorithms?
+
+169
+00:08:05,080 --> 00:08:06,630
+PROFESSOR: Good question.
+
+170
+00:08:06,630 --> 00:08:08,088
+Are there approximation
+algorithms,
+
+171
+00:08:08,088 --> 00:08:09,600
+that's exactly where
+I wanted to go.
+
+172
+00:08:09,600 --> 00:08:13,570
+There are lots of constant
+factor approximations,
+
+173
+00:08:13,570 --> 00:08:16,350
+and I will show you one of them.
+
+174
+00:08:16,350 --> 00:08:18,660
+So I'm not going to show
+you these hardness proofs
+
+175
+00:08:18,660 --> 00:08:20,410
+because they're a
+bit complicated.
+
+176
+00:08:20,410 --> 00:08:23,720
+I don't have free
+diagrams of them.
+
+177
+00:08:23,720 --> 00:08:28,339
+But the constant factor
+approximations, I do.
+
+178
+00:08:28,339 --> 00:08:29,130
+Where are we going?
+
+179
+00:08:29,130 --> 00:08:31,780
+Here.
+
+180
+00:08:31,780 --> 00:08:35,720
+And so, in particular, the
+best approximation that's known
+
+181
+00:08:35,720 --> 00:08:37,519
+is a 1/3 approximation.
+
+182
+00:08:37,519 --> 00:08:42,260
+
+183
+00:08:42,260 --> 00:08:47,440
+This is by MIT Ph.D.
+student [INAUDIBLE],
+
+184
+00:08:47,440 --> 00:08:51,990
+and from several years
+ago-- eight years ago.
+
+185
+00:08:51,990 --> 00:08:53,910
+I believe it's still the best.
+
+186
+00:08:53,910 --> 00:08:56,270
+It's pretty simple,
+but quite elegant,
+
+187
+00:08:56,270 --> 00:08:58,322
+looks like protein folding.
+
+188
+00:08:58,322 --> 00:09:00,280
+So this is going to be
+within a factor of three
+
+189
+00:09:00,280 --> 00:09:01,910
+of the best you could hope for.
+
+190
+00:09:01,910 --> 00:09:04,830
+We write 1/3 because we're
+always getting fewer bonds
+
+191
+00:09:04,830 --> 00:09:08,110
+than you might want in
+a maximization problem.
+
+192
+00:09:08,110 --> 00:09:10,190
+Some people call this
+three approximation.
+
+193
+00:09:10,190 --> 00:09:14,220
+I call it one of the other
+depending on the day the week.
+
+194
+00:09:14,220 --> 00:09:19,435
+So how could we achieve
+1/3 approximation?
+
+195
+00:09:19,435 --> 00:09:24,740
+
+196
+00:09:24,740 --> 00:09:31,275
+Well, before I get to this
+image, let me tell you.
+
+197
+00:09:31,275 --> 00:09:33,150
+In general, when-- we
+haven't talked too much
+
+198
+00:09:33,150 --> 00:09:34,900
+about approximation
+algorithms in this class,
+
+199
+00:09:34,900 --> 00:09:37,360
+but a typical technique in
+approximation algorithms is you
+
+200
+00:09:37,360 --> 00:09:40,510
+get some bound on what
+the optimal might be.
+
+201
+00:09:40,510 --> 00:09:44,710
+I already told you there's at
+most one bond for each H node.
+
+202
+00:09:44,710 --> 00:09:48,840
+And that is indeed-- that's
+roughly what we'll say.
+
+203
+00:09:48,840 --> 00:09:51,450
+Just because of the
+degree argument,
+
+204
+00:09:51,450 --> 00:09:56,080
+every guy has bond
+degree at most two.
+
+205
+00:09:56,080 --> 00:09:59,920
+So that means, at most,
+one edge per H node.
+
+206
+00:09:59,920 --> 00:10:02,880
+But we can be a little more
+precise on the square grid
+
+207
+00:10:02,880 --> 00:10:05,450
+because there are
+two types of nodes.
+
+208
+00:10:05,450 --> 00:10:07,920
+If you checkerboard
+color the square grid,
+
+209
+00:10:07,920 --> 00:10:10,940
+there's even nodes
+and odd nodes.
+
+210
+00:10:10,940 --> 00:10:14,430
+So in fact, we claim that
+the optimal solution,
+
+211
+00:10:14,430 --> 00:10:21,050
+which we call OPT, is
+always at most twice the min
+
+212
+00:10:21,050 --> 00:10:26,596
+of the number of even H's
+and the number of odd H's.
+
+213
+00:10:26,596 --> 00:10:31,160
+
+214
+00:10:31,160 --> 00:10:34,600
+This is slightly smaller
+than the number of H's.
+
+215
+00:10:34,600 --> 00:10:37,560
+If a number of H's
+and not H's are equal,
+
+216
+00:10:37,560 --> 00:10:39,400
+then this will just
+be the number of H's.
+
+217
+00:10:39,400 --> 00:10:40,941
+But if one is smaller
+than the other,
+
+218
+00:10:40,941 --> 00:10:42,822
+this will be a
+little bit smaller
+
+219
+00:10:42,822 --> 00:10:44,030
+or it could be a lot smaller.
+
+220
+00:10:44,030 --> 00:10:46,140
+They're saying, no even H's.
+
+221
+00:10:46,140 --> 00:10:49,410
+The point is if you
+have an even parity H,
+
+222
+00:10:49,410 --> 00:10:52,800
+and it somehow has a
+bond with some other H,
+
+223
+00:10:52,800 --> 00:10:56,910
+well obviously, that h has
+different parity from this one.
+
+224
+00:10:56,910 --> 00:11:02,860
+So only even and odd H's
+could possibly bond together.
+
+225
+00:11:02,860 --> 00:11:06,360
+And then this is pretty obvious.
+
+226
+00:11:06,360 --> 00:11:08,260
+Let's see if I can formalize it.
+
+227
+00:11:08,260 --> 00:11:13,440
+So you have every bond
+defines and even and an odd.
+
+228
+00:11:13,440 --> 00:11:17,220
+Every even and odd can
+only get hit up to twice.
+
+229
+00:11:17,220 --> 00:11:19,810
+If there's more evens and odds,
+it's not going to help you.
+
+230
+00:11:19,810 --> 00:11:22,620
+In the best case, you pair
+them up or alternate even odd,
+
+231
+00:11:22,620 --> 00:11:23,950
+even odd, even odd.
+
+232
+00:11:23,950 --> 00:11:28,660
+So you'll never be able to
+use more evens than odds,
+
+233
+00:11:28,660 --> 00:11:32,650
+maybe one more, not really.
+
+234
+00:11:32,650 --> 00:11:35,219
+And I think the best case is
+you do a cycle of even odd,
+
+235
+00:11:35,219 --> 00:11:36,010
+even odd, even odd.
+
+236
+00:11:36,010 --> 00:11:38,880
+Then, there's an even
+number of them-- each,
+
+237
+00:11:38,880 --> 00:11:40,420
+an equal number of each.
+
+238
+00:11:40,420 --> 00:11:42,670
+And so you throw
+away the excess.
+
+239
+00:11:42,670 --> 00:11:44,950
+You end up with
+a min of the two.
+
+240
+00:11:44,950 --> 00:11:50,950
+But you get a factor of two
+because every even guy has
+
+241
+00:11:50,950 --> 00:11:55,552
+two incident bonds
+in the best case,
+
+242
+00:11:55,552 --> 00:11:57,010
+and then you're
+not double counting
+
+243
+00:11:57,010 --> 00:12:00,640
+because you count this even guy,
+maybe you count this even guy,
+
+244
+00:12:00,640 --> 00:12:02,859
+and they have disjoint bonds.
+
+245
+00:12:02,859 --> 00:12:04,650
+So it's twice the number
+of evens or number
+
+246
+00:12:04,650 --> 00:12:07,300
+of odds, whichever is smaller.
+
+247
+00:12:07,300 --> 00:12:09,550
+So this is useful.
+
+248
+00:12:09,550 --> 00:12:12,400
+It's just what is the best
+case you could hope for OPT?
+
+249
+00:12:12,400 --> 00:12:15,250
+Now, what this 1/3
+approximation will get
+
+250
+00:12:15,250 --> 00:12:17,620
+is at least 1/3 this amount.
+
+251
+00:12:17,620 --> 00:12:19,540
+If you know you get at
+least 1/3 this amount,
+
+252
+00:12:19,540 --> 00:12:21,670
+you know you get at
+least 1/3 the optimal
+
+253
+00:12:21,670 --> 00:12:25,000
+because this is an upper
+bound on the optimal.
+
+254
+00:12:25,000 --> 00:12:27,280
+So that's with the
+algorithm will do.
+
+255
+00:12:27,280 --> 00:12:31,420
+
+256
+00:12:31,420 --> 00:12:33,640
+And so the general
+idea of the algorithm
+
+257
+00:12:33,640 --> 00:12:36,520
+is to proceed in stages.
+
+258
+00:12:36,520 --> 00:12:42,445
+At a typical stage--
+So you pick some edge.
+
+259
+00:12:42,445 --> 00:12:45,190
+I don't think it'll
+matter too much.
+
+260
+00:12:45,190 --> 00:12:47,330
+Pick some edge of the
+chain, and then you
+
+261
+00:12:47,330 --> 00:12:49,720
+start working your way down.
+
+262
+00:12:49,720 --> 00:12:54,420
+And general idea is you can
+make big loops off to the sides
+
+263
+00:12:54,420 --> 00:13:00,280
+so that when you get back to
+the center, these are H nodes.
+
+264
+00:13:00,280 --> 00:13:01,530
+So you get a bond there.
+
+265
+00:13:01,530 --> 00:13:02,880
+That's the general idea.
+
+266
+00:13:02,880 --> 00:13:06,820
+With that basic idea, you
+probably get about 1/4
+
+267
+00:13:06,820 --> 00:13:07,830
+of this amount.
+
+268
+00:13:07,830 --> 00:13:11,810
+But we want to get 1/3,
+which is a little better.
+
+269
+00:13:11,810 --> 00:13:14,750
+I won't try to
+analyze that formally.
+
+270
+00:13:14,750 --> 00:13:16,500
+But there's a lot
+of flexibility here
+
+271
+00:13:16,500 --> 00:13:19,140
+when we-- how long
+we make this branch.
+
+272
+00:13:19,140 --> 00:13:20,950
+In order to make
+this work out, what
+
+273
+00:13:20,950 --> 00:13:28,610
+I like is that the left branch
+has a lot of-- pick one-- a lot
+
+274
+00:13:28,610 --> 00:13:33,400
+of even H's, and the right
+branch has a lot of odd H's,
+
+275
+00:13:33,400 --> 00:13:35,740
+or vice versa
+because then we'll be
+
+276
+00:13:35,740 --> 00:13:37,290
+able to make lots
+of the even guys
+
+277
+00:13:37,290 --> 00:13:38,770
+match up with the odd guys.
+
+278
+00:13:38,770 --> 00:13:40,560
+Here, we're fighting the parity.
+
+279
+00:13:40,560 --> 00:13:42,200
+And parity is one
+of the reasons why
+
+280
+00:13:42,200 --> 00:13:44,492
+I think the square grid is
+a little bit artificial.
+
+281
+00:13:44,492 --> 00:13:46,950
+Let's say with the triangular
+grid, you wouldn't have that.
+
+282
+00:13:46,950 --> 00:13:49,990
+There aren't just two classes.
+
+283
+00:13:49,990 --> 00:13:51,470
+But here, we can
+get around parity
+
+284
+00:13:51,470 --> 00:13:54,810
+by finding a break
+point, this edge,
+
+285
+00:13:54,810 --> 00:13:58,000
+so that the number of
+even guys in the left
+
+286
+00:13:58,000 --> 00:14:00,850
+is about the number of
+odd guys on the right.
+
+287
+00:14:00,850 --> 00:14:03,490
+I won't prove that, but it's
+just an intermediate value
+
+288
+00:14:03,490 --> 00:14:04,730
+argument.
+
+289
+00:14:04,730 --> 00:14:07,520
+See, you get that as you
+walk counterclockwise
+
+290
+00:14:07,520 --> 00:14:10,540
+along the chain, you
+have more even guys,
+
+291
+00:14:10,540 --> 00:14:14,860
+and walk clockwise around the
+chain, you get more odd guys.
+
+292
+00:14:14,860 --> 00:14:17,580
+Once you have that set up,
+you fall into four cases.
+
+293
+00:14:17,580 --> 00:14:21,950
+
+294
+00:14:21,950 --> 00:14:25,302
+So we're supposing at the
+top-- let me get to a case,
+
+295
+00:14:25,302 --> 00:14:26,010
+that I can reach.
+
+296
+00:14:26,010 --> 00:14:28,670
+Here's a typical case.
+
+297
+00:14:28,670 --> 00:14:31,130
+Suppose you just
+succeeded in making
+
+298
+00:14:31,130 --> 00:14:32,360
+two H nodes join together.
+
+299
+00:14:32,360 --> 00:14:34,350
+Maybe that was your
+first edge, whatever.
+
+300
+00:14:34,350 --> 00:14:37,530
+So it might not be H-H. But
+now, we're proceeding down,
+
+301
+00:14:37,530 --> 00:14:40,295
+and we want to align
+a bunch of H nodes.
+
+302
+00:14:40,295 --> 00:14:42,670
+And we're going to do better
+than the picture I drew over
+
+303
+00:14:42,670 --> 00:14:45,090
+here, which was just getting
+two H nodes to come together.
+
+304
+00:14:45,090 --> 00:14:47,520
+I actually want to
+get four H nodes
+
+305
+00:14:47,520 --> 00:14:49,350
+to come together
+with three bonds.
+
+306
+00:14:49,350 --> 00:14:52,400
+That's what I will always
+achieve, at least that.
+
+307
+00:14:52,400 --> 00:14:53,090
+Is that right?
+
+308
+00:14:53,090 --> 00:14:54,590
+Actually, no, this
+is the good case.
+
+309
+00:14:54,590 --> 00:14:57,470
+I won't always achieve quite
+that well, quite that good.
+
+310
+00:14:57,470 --> 00:14:58,560
+But here's the idea.
+
+311
+00:14:58,560 --> 00:15:04,220
+Suppose there's some reasonably
+large distance between this H
+
+312
+00:15:04,220 --> 00:15:06,060
+node and the next one.
+
+313
+00:15:06,060 --> 00:15:10,460
+I'm going to go down two steps
+and then go around however
+
+314
+00:15:10,460 --> 00:15:14,620
+long it takes so that when I
+come back, I get to an H node,
+
+315
+00:15:14,620 --> 00:15:15,720
+and same on the left side.
+
+316
+00:15:15,720 --> 00:15:17,636
+So these two chains may
+have different lengths
+
+317
+00:15:17,636 --> 00:15:19,609
+depending on when
+the next H node is.
+
+318
+00:15:19,609 --> 00:15:21,400
+Now, when I say the
+next H node, I actually
+
+319
+00:15:21,400 --> 00:15:23,110
+mean the next odd
+H node on this side
+
+320
+00:15:23,110 --> 00:15:26,710
+and the next even H node on this
+side so that they will line up.
+
+321
+00:15:26,710 --> 00:15:29,370
+This is assuming that
+the distance from this H
+
+322
+00:15:29,370 --> 00:15:31,690
+node to the next one
+is greater than 1,
+
+323
+00:15:31,690 --> 00:15:34,150
+by parity that means
+it's at least three.
+
+324
+00:15:34,150 --> 00:15:36,720
+So if it's three, it's
+going to be one, two, three.
+
+325
+00:15:36,720 --> 00:15:39,500
+And that's it.
+
+326
+00:15:39,500 --> 00:15:40,776
+And so go straight down.
+
+327
+00:15:40,776 --> 00:15:42,150
+If it's more than
+three, you just
+
+328
+00:15:42,150 --> 00:15:44,483
+divide that distance in half,
+and you go back and forth.
+
+329
+00:15:44,483 --> 00:15:46,690
+And this sets the parity right.
+
+330
+00:15:46,690 --> 00:15:48,770
+So that's the set up.
+
+331
+00:15:48,770 --> 00:15:50,750
+Now, we have these two H nodes.
+
+332
+00:15:50,750 --> 00:15:52,480
+Now, when are the next H nodes?
+
+333
+00:15:52,480 --> 00:15:54,940
+Well, there's at
+least one blue node
+
+334
+00:15:54,940 --> 00:15:58,460
+in between because of parity
+because we're looking again
+
+335
+00:15:58,460 --> 00:15:59,860
+at odd H nodes on
+the right side,
+
+336
+00:15:59,860 --> 00:16:02,450
+even H nodes on the left side.
+
+337
+00:16:02,450 --> 00:16:04,180
+So maybe it's just
+one blue node,
+
+338
+00:16:04,180 --> 00:16:07,592
+and we would go like this, and
+here we would go like that.
+
+339
+00:16:07,592 --> 00:16:09,050
+Or if it's more
+than one blue node,
+
+340
+00:16:09,050 --> 00:16:10,715
+we just lay them out like this.
+
+341
+00:16:10,715 --> 00:16:12,090
+Goes to the
+appropriate distance,
+
+342
+00:16:12,090 --> 00:16:14,440
+so that when we come
+back, we get a red.
+
+343
+00:16:14,440 --> 00:16:16,170
+So we have two red H nodes here.
+
+344
+00:16:16,170 --> 00:16:19,000
+I want to make two red H
+nodes here no matter what.
+
+345
+00:16:19,000 --> 00:16:21,440
+If it's just gap of one,
+we would go straight, make
+
+346
+00:16:21,440 --> 00:16:25,150
+a corner, otherwise,
+we do these big loops.
+
+347
+00:16:25,150 --> 00:16:27,070
+And the result is I
+get these four H nodes
+
+348
+00:16:27,070 --> 00:16:32,310
+in this pattern, just three
+bonds for four H nodes.
+
+349
+00:16:32,310 --> 00:16:34,820
+And before we analyze
+what exactly that means,
+
+350
+00:16:34,820 --> 00:16:37,110
+let me just tell you
+about the other cases.
+
+351
+00:16:37,110 --> 00:16:41,380
+So this is the case when there
+is more than one blue node
+
+352
+00:16:41,380 --> 00:16:44,270
+in between two H nodes.
+
+353
+00:16:44,270 --> 00:16:46,540
+The other rows and
+columns are when
+
+354
+00:16:46,540 --> 00:16:48,100
+the left side or
+the right side has
+
+355
+00:16:48,100 --> 00:16:51,280
+just one blue node
+from that red guy.
+
+356
+00:16:51,280 --> 00:16:53,040
+So let's go to this
+one for example.
+
+357
+00:16:53,040 --> 00:16:56,070
+Here the left side has only one
+blue node to the next red guy.
+
+358
+00:16:56,070 --> 00:16:58,100
+The right side has
+at least three.
+
+359
+00:16:58,100 --> 00:17:01,960
+So then we'd go one, two,
+three, and we get there.
+
+360
+00:17:01,960 --> 00:17:03,696
+If it's a more than
+three, then we go
+
+361
+00:17:03,696 --> 00:17:05,346
+and we make that big loop.
+
+362
+00:17:05,346 --> 00:17:06,720
+Now we have these
+two read nodes.
+
+363
+00:17:06,720 --> 00:17:08,569
+My goal now is to
+put a red node here.
+
+364
+00:17:08,569 --> 00:17:13,349
+If this chain only has one blue
+node, I would make a corner.
+
+365
+00:17:13,349 --> 00:17:18,760
+Otherwise, I'd loop around, and
+then I go onto the next step.
+
+366
+00:17:18,760 --> 00:17:21,390
+Here, I only got two
+bonds for three nodes,
+
+367
+00:17:21,390 --> 00:17:24,360
+so it's actually a
+little worse in ratio.
+
+368
+00:17:24,360 --> 00:17:26,109
+In the case where
+they're both length one,
+
+369
+00:17:26,109 --> 00:17:28,670
+I just go straight down,
+make those two H nodes,
+
+370
+00:17:28,670 --> 00:17:30,810
+and then I use the
+same trick as over here
+
+371
+00:17:30,810 --> 00:17:33,820
+to get that nice
+zig-zag pattern.
+
+372
+00:17:33,820 --> 00:17:37,120
+And this case is symmetric
+to this one, just flipped.
+
+373
+00:17:37,120 --> 00:17:40,010
+
+374
+00:17:40,010 --> 00:17:49,960
+So in all cases, I
+didn't skip anything.
+
+375
+00:17:49,960 --> 00:17:53,250
+I did all of the even H
+nodes on the right side.
+
+376
+00:17:53,250 --> 00:17:55,580
+I did all of the odd nodes,
+H nodes, on the left side.
+
+377
+00:17:55,580 --> 00:17:59,070
+
+378
+00:17:59,070 --> 00:18:00,074
+So I did skip something.
+
+379
+00:18:00,074 --> 00:18:01,990
+I skipped all of the odd
+guys on the left side
+
+380
+00:18:01,990 --> 00:18:03,970
+and all the even guys
+on the right side.
+
+381
+00:18:03,970 --> 00:18:06,900
+So I skipped half
+of the H nodes.
+
+382
+00:18:06,900 --> 00:18:12,020
+So I get at least two
+bonds-- I'm calling them
+
+383
+00:18:12,020 --> 00:18:25,330
+H-H bonds-- for every
+three interesting H nodes.
+
+384
+00:18:25,330 --> 00:18:28,100
+
+385
+00:18:28,100 --> 00:18:30,160
+By interesting, I just
+mean even on the left,
+
+386
+00:18:30,160 --> 00:18:36,000
+odd on the right, which is
+really for every six H nodes.
+
+387
+00:18:36,000 --> 00:18:40,940
+And so we get a factor of
+2/6, also known as 1/3.
+
+388
+00:18:40,940 --> 00:18:45,700
+
+389
+00:18:45,700 --> 00:18:49,840
+Really here I mean
+6 even H nodes.
+
+390
+00:18:49,840 --> 00:18:51,110
+Let's say.
+
+391
+00:18:51,110 --> 00:18:53,840
+We used the same number
+of even and odds.
+
+392
+00:18:53,840 --> 00:18:56,840
+And we had-- Is that right?
+
+393
+00:18:56,840 --> 00:18:57,340
+Sorry.
+
+394
+00:18:57,340 --> 00:19:00,155
+No, I guess I actually
+made H nodes here.
+
+395
+00:19:00,155 --> 00:19:02,280
+I always get a little
+confused here because there's
+
+396
+00:19:02,280 --> 00:19:03,863
+a factor of two, a
+factor of two here.
+
+397
+00:19:03,863 --> 00:19:07,100
+But in the end we get 1/3 bound.
+
+398
+00:19:07,100 --> 00:19:10,530
+
+399
+00:19:10,530 --> 00:19:13,039
+So that's the
+approximation algorithm,
+
+400
+00:19:13,039 --> 00:19:14,080
+and that's the best node.
+
+401
+00:19:14,080 --> 00:19:14,955
+It looks pretty nice.
+
+402
+00:19:14,955 --> 00:19:19,360
+It's like beta sheets, if
+you've seen proteins folding.
+
+403
+00:19:19,360 --> 00:19:21,934
+it depends, of course, on
+the spacing of the H nodes,
+
+404
+00:19:21,934 --> 00:19:24,100
+but you get-- in particular,
+you get all the H nodes
+
+405
+00:19:24,100 --> 00:19:25,590
+on the inside pretty much.
+
+406
+00:19:25,590 --> 00:19:29,060
+I guess here is one exposed end.
+
+407
+00:19:29,060 --> 00:19:30,950
+And here there's
+one exposed end.
+
+408
+00:19:30,950 --> 00:19:33,290
+These two cases, we're
+doing especially well.
+
+409
+00:19:33,290 --> 00:19:36,924
+Maybe in real proteins, the
+gaps are always more than one.
+
+410
+00:19:36,924 --> 00:19:37,840
+I don't actually know.
+
+411
+00:19:37,840 --> 00:19:40,159
+
+412
+00:19:40,159 --> 00:19:41,950
+I think in reality
+there's different levels
+
+413
+00:19:41,950 --> 00:19:45,580
+of hydrophobicity, so that's
+maybe not so well defined.
+
+414
+00:19:45,580 --> 00:19:47,654
+But any questions?
+
+415
+00:19:47,654 --> 00:19:52,127
+AUDIENCE: Is the exposed end
+considered the [INAUDIBLE]
+
+416
+00:19:52,127 --> 00:19:53,694
+above the dashed line or is it--
+
+417
+00:19:53,694 --> 00:19:54,360
+PROFESSOR: Yeah.
+
+418
+00:19:54,360 --> 00:19:55,920
+When I say exposed
+end, I mean here.
+
+419
+00:19:55,920 --> 00:19:59,767
+There's an adjacency
+to the outside water.
+
+420
+00:19:59,767 --> 00:20:01,850
+Now of course, there might
+actually be nodes here.
+
+421
+00:20:01,850 --> 00:20:03,474
+Then, that would not
+be an exposed end.
+
+422
+00:20:03,474 --> 00:20:05,220
+But if this just
+went straight up,
+
+423
+00:20:05,220 --> 00:20:08,110
+which it might in this
+picture, then that
+
+424
+00:20:08,110 --> 00:20:09,160
+would be an exposed end.
+
+425
+00:20:09,160 --> 00:20:11,470
+I guess that might also be.
+
+426
+00:20:11,470 --> 00:20:12,800
+No, probably not.
+
+427
+00:20:12,800 --> 00:20:14,800
+Actually, interesting.
+
+428
+00:20:14,800 --> 00:20:16,231
+If these two guys
+are red, there's
+
+429
+00:20:16,231 --> 00:20:18,230
+always a blue node to the
+left and right of them
+
+430
+00:20:18,230 --> 00:20:20,210
+in this construction,
+so actually, I
+
+431
+00:20:20,210 --> 00:20:23,080
+think that would not be exposed.
+
+432
+00:20:23,080 --> 00:20:25,020
+That's cool.
+
+433
+00:20:25,020 --> 00:20:27,160
+So actually, I think
+there are no exposed
+
+434
+00:20:27,160 --> 00:20:29,260
+ends in this folding,
+except maybe at the very top
+
+435
+00:20:29,260 --> 00:20:31,210
+and bottom.
+
+436
+00:20:31,210 --> 00:20:33,660
+Except, we're only considering
+half of the H nodes,
+
+437
+00:20:33,660 --> 00:20:37,120
+so there's the other half
+we have no idea about.
+
+438
+00:20:37,120 --> 00:20:40,580
+So hopefully, nature
+chose the parity right.
+
+439
+00:20:40,580 --> 00:20:43,909
+Or, if you think about this is
+in the triangular case, which
+
+440
+00:20:43,909 --> 00:20:45,450
+I don't think anyone's
+tried to adapt
+
+441
+00:20:45,450 --> 00:20:47,290
+this algorithm to
+the triangular grid,
+
+442
+00:20:47,290 --> 00:20:48,720
+maybe you can get
+no exposed node.
+
+443
+00:20:48,720 --> 00:20:51,030
+So that would be pretty neat.
+
+444
+00:20:51,030 --> 00:20:53,627
+Of course reality, it probably
+does not fold on a lattice,
+
+445
+00:20:53,627 --> 00:20:54,710
+but it's an approximation.
+
+446
+00:20:54,710 --> 00:21:03,430
+
+447
+00:21:03,430 --> 00:21:09,970
+Now, one of the observed
+features in protein folding
+
+448
+00:21:09,970 --> 00:21:12,940
+is they tend to fold
+to the same shape.
+
+449
+00:21:12,940 --> 00:21:14,540
+It's actually a hard
+thing to measure,
+
+450
+00:21:14,540 --> 00:21:17,410
+but that's the
+general consensus,
+
+451
+00:21:17,410 --> 00:21:21,340
+that at least most proteins
+in a non diseased organism
+
+452
+00:21:21,340 --> 00:21:24,500
+fold always to the
+same shape, at least
+
+453
+00:21:24,500 --> 00:21:26,150
+in the same environment.
+
+454
+00:21:26,150 --> 00:21:29,070
+So if you want to model
+that in the HP model,
+
+455
+00:21:29,070 --> 00:21:32,921
+and you pretend that, really, we
+are finding optimal solutions--
+
+456
+00:21:32,921 --> 00:21:34,420
+because it's a
+little hard to define
+
+457
+00:21:34,420 --> 00:21:36,359
+what locally optimal means.
+
+458
+00:21:36,359 --> 00:21:38,150
+But that would be an
+interesting direction.
+
+459
+00:21:38,150 --> 00:21:39,890
+It would be nice
+to find proteins
+
+460
+00:21:39,890 --> 00:21:42,880
+where locally optimal
+equals globally optimal,
+
+461
+00:21:42,880 --> 00:21:45,560
+but lacking definitions
+of those terms,
+
+462
+00:21:45,560 --> 00:21:47,050
+no one has tried to prove that.
+
+463
+00:21:47,050 --> 00:21:48,750
+It could pick a good direction.
+
+464
+00:21:48,750 --> 00:21:52,030
+But if you believe in
+optimality, then at least
+
+465
+00:21:52,030 --> 00:21:55,635
+you hope that the
+optimal are unique.
+
+466
+00:21:55,635 --> 00:21:57,510
+So you take a typical
+example of the optimal,
+
+467
+00:21:57,510 --> 00:22:01,330
+like if they're all blue,
+then every folding is optimal.
+
+468
+00:22:01,330 --> 00:22:03,710
+So there's exponentially
+many of them.
+
+469
+00:22:03,710 --> 00:22:06,470
+But if you have any hope
+of getting unique folding,
+
+470
+00:22:06,470 --> 00:22:10,900
+you'd really like
+unique optimal foldings.
+
+471
+00:22:10,900 --> 00:22:12,105
+The theorem is these exist.
+
+472
+00:22:12,105 --> 00:22:14,830
+
+473
+00:22:14,830 --> 00:22:18,690
+And the 2D squared
+grid, they exist
+
+474
+00:22:18,690 --> 00:22:28,909
+for all even n, for
+closed chains-- mostly,
+
+475
+00:22:28,909 --> 00:22:30,950
+we care about open chains,
+but for closed chains,
+
+476
+00:22:30,950 --> 00:22:33,710
+you could prove these
+exist for all even n--
+
+477
+00:22:33,710 --> 00:22:42,117
+and for open chains, they
+exist for all doubly even n.
+
+478
+00:22:42,117 --> 00:22:49,750
+
+479
+00:22:49,750 --> 00:22:53,180
+This is a theorem by
+a bunch of people.
+
+480
+00:22:53,180 --> 00:22:55,990
+Oswin Aicholzer, David
+Bremner, me, Hank Meijer,
+
+481
+00:22:55,990 --> 00:22:58,690
+Vera Sacristan,
+and Michael Soss,
+
+482
+00:22:58,690 --> 00:23:02,140
+we talked about last time.
+
+483
+00:23:02,140 --> 00:23:04,080
+So here they are
+for closed chains.
+
+484
+00:23:04,080 --> 00:23:08,450
+It's a pretty simple example,
+basically alternating red blue,
+
+485
+00:23:08,450 --> 00:23:15,400
+but at the end, you have two
+blue nodes to make the corner.
+
+486
+00:23:15,400 --> 00:23:16,910
+That is not the optimal folding.
+
+487
+00:23:16,910 --> 00:23:18,250
+The optimal folding is this.
+
+488
+00:23:18,250 --> 00:23:22,110
+
+489
+00:23:22,110 --> 00:23:25,210
+So there's only
+two exposed ends.
+
+490
+00:23:25,210 --> 00:23:27,870
+There's one down here,
+and one on the top.
+
+491
+00:23:27,870 --> 00:23:30,260
+So there's no surprises that
+it's optimal, a little less
+
+492
+00:23:30,260 --> 00:23:33,770
+obvious that it's
+uniquely optimal.
+
+493
+00:23:33,770 --> 00:23:34,810
+But there it is.
+
+494
+00:23:34,810 --> 00:23:37,105
+And this works for any even n.
+
+495
+00:23:37,105 --> 00:23:42,770
+In general, it depends a little
+bit on your the n mod four, so
+
+496
+00:23:42,770 --> 00:23:44,625
+that's why we are drawing
+two pictures here,
+
+497
+00:23:44,625 --> 00:23:48,830
+to check that it works for
+both congruences mod four.
+
+498
+00:23:48,830 --> 00:23:50,490
+It has to be even
+for closed chain
+
+499
+00:23:50,490 --> 00:23:53,010
+and must be even, so
+this is really for all m
+
+500
+00:23:53,010 --> 00:23:54,740
+that there's closed
+chains, there
+
+501
+00:23:54,740 --> 00:23:59,150
+are unique-- there are
+examples of HP chains
+
+502
+00:23:59,150 --> 00:24:01,820
+that have unique
+optimal foldings.
+
+503
+00:24:01,820 --> 00:24:04,780
+Here, it's just to do you end
+going horizontal or n going
+
+504
+00:24:04,780 --> 00:24:06,860
+vertical?
+
+505
+00:24:06,860 --> 00:24:09,140
+Not a big difference.
+
+506
+00:24:09,140 --> 00:24:16,470
+I have a proof by picture that
+this is the optimal folding.
+
+507
+00:24:16,470 --> 00:24:19,480
+So remember there
+are two-- we talk
+
+508
+00:24:19,480 --> 00:24:22,690
+about H-H edges and H-H bonds.
+
+509
+00:24:22,690 --> 00:24:26,970
+These are what we
+call P-P edges.
+
+510
+00:24:26,970 --> 00:24:30,140
+And I remember when writing this
+paper, one of the co-authors,
+
+511
+00:24:30,140 --> 00:24:32,530
+I won't say which one,
+saying call me juvenile,
+
+512
+00:24:32,530 --> 00:24:35,340
+but I don't want to have a paper
+that talks about P-P edges.
+
+513
+00:24:35,340 --> 00:24:37,320
+And I convinced him to keep it.
+
+514
+00:24:37,320 --> 00:24:40,320
+So we have-- it's
+really only obvious
+
+515
+00:24:40,320 --> 00:24:43,590
+when you say it out loud,
+which sadly I have to do here.
+
+516
+00:24:43,590 --> 00:24:46,220
+But you have two of those
+edges, all blue edges,
+
+517
+00:24:46,220 --> 00:24:48,430
+we might also call them.
+
+518
+00:24:48,430 --> 00:24:52,620
+And they really should
+be on the boundary
+
+519
+00:24:52,620 --> 00:24:55,900
+because you have to have
+exposed ends on the boundary,
+
+520
+00:24:55,900 --> 00:24:58,540
+on the bounding
+box is what I mean.
+
+521
+00:24:58,540 --> 00:25:01,372
+So if you put too many red
+guys on the bounding box,
+
+522
+00:25:01,372 --> 00:25:02,830
+you're going to
+lose lots of bonds.
+
+523
+00:25:02,830 --> 00:25:05,650
+So those two blue guys
+should be on the boundary.
+
+524
+00:25:05,650 --> 00:25:07,400
+Some two edges have
+to be on the boundary,
+
+525
+00:25:07,400 --> 00:25:09,830
+so it's best to have
+the two blue ones.
+
+526
+00:25:09,830 --> 00:25:13,210
+So we could show you in optimal
+solutions, that is the case.
+
+527
+00:25:13,210 --> 00:25:15,390
+Now, you decompose
+into two chains
+
+528
+00:25:15,390 --> 00:25:16,560
+that connect the two ends.
+
+529
+00:25:16,560 --> 00:25:18,980
+There's connecting
+this end to the left
+
+530
+00:25:18,980 --> 00:25:22,950
+and connecting this end up and
+around to the other blue node
+
+531
+00:25:22,950 --> 00:25:23,850
+at the end.
+
+532
+00:25:23,850 --> 00:25:27,990
+And if you check all of
+the red notes on this side
+
+533
+00:25:27,990 --> 00:25:30,726
+have even parity, let's say,
+and all the red nodes on this
+
+534
+00:25:30,726 --> 00:25:33,160
+die have odd parity
+because it alternates.
+
+535
+00:25:33,160 --> 00:25:36,820
+So there's no way
+that you could have
+
+536
+00:25:36,820 --> 00:25:38,490
+bonds within one
+of those chains.
+
+537
+00:25:38,490 --> 00:25:40,295
+That's not drawn here.
+
+538
+00:25:40,295 --> 00:25:42,420
+The other thing is because
+these two blue edges are
+
+539
+00:25:42,420 --> 00:25:47,486
+on the boundary, you cannot
+have a bond on the outside
+
+540
+00:25:47,486 --> 00:25:48,860
+because there's
+no hope for that.
+
+541
+00:25:48,860 --> 00:25:53,060
+You can only have bonds on the
+inside of that closed loop.
+
+542
+00:25:53,060 --> 00:25:56,980
+Here, we're using that
+it's a closed loop.
+
+543
+00:25:56,980 --> 00:25:59,500
+So you have bonds on the inside,
+and then you argue, well,
+
+544
+00:25:59,500 --> 00:26:02,480
+because it's bipartite graph
+and because it's planar,
+
+545
+00:26:02,480 --> 00:26:04,660
+you can't have any
+crossings in these bonds
+
+546
+00:26:04,660 --> 00:26:07,670
+because you're embedding
+this thing in the plane,
+
+547
+00:26:07,670 --> 00:26:11,070
+really you basically
+have to alternate.
+
+548
+00:26:11,070 --> 00:26:13,720
+There's actually two ways
+you could try to alternate.
+
+549
+00:26:13,720 --> 00:26:16,270
+You start on this side or
+if you start on this side.
+
+550
+00:26:16,270 --> 00:26:18,230
+You try to realize
+them geometrically.
+
+551
+00:26:18,230 --> 00:26:20,480
+When you do this alternation,
+you decompose your thing
+
+552
+00:26:20,480 --> 00:26:22,370
+into squares.
+
+553
+00:26:22,370 --> 00:26:25,340
+Only in one case does it work,
+and you get this picture.
+
+554
+00:26:25,340 --> 00:26:26,980
+And then once you
+have the squares,
+
+555
+00:26:26,980 --> 00:26:29,192
+there's a unique way
+to glue them together.
+
+556
+00:26:29,192 --> 00:26:30,400
+So that's how the proof goes.
+
+557
+00:26:30,400 --> 00:26:34,890
+It's pretty easy once you
+get the right limits in place
+
+558
+00:26:34,890 --> 00:26:36,230
+for closed chains.
+
+559
+00:26:36,230 --> 00:26:39,610
+Let me show you what
+happens for open chains.
+
+560
+00:26:39,610 --> 00:26:44,430
+Take the same example for open
+chains, and it's almost unique.
+
+561
+00:26:44,430 --> 00:26:49,230
+In the double even case,
+like 16, it is unique.
+
+562
+00:26:49,230 --> 00:26:53,810
+In the only singlely even,
+so two mod four case,
+
+563
+00:26:53,810 --> 00:26:58,500
+like 18, you have this issue.
+
+564
+00:26:58,500 --> 00:27:00,240
+So the way we set
+up is we do not
+
+565
+00:27:00,240 --> 00:27:05,060
+have the blue blue at
+the end to turn around.
+
+566
+00:27:05,060 --> 00:27:08,330
+That is the best
+we know how to do.
+
+567
+00:27:08,330 --> 00:27:12,660
+And there are
+these two-foldings,
+
+568
+00:27:12,660 --> 00:27:14,690
+how you might achieve it.
+
+569
+00:27:14,690 --> 00:27:20,420
+So here, we wrap around and get
+a little triad of blues here.
+
+570
+00:27:20,420 --> 00:27:22,410
+Because we have
+a red n point, we
+
+571
+00:27:22,410 --> 00:27:24,760
+can actually get
+three bonds into it.
+
+572
+00:27:24,760 --> 00:27:27,095
+Or, we can do the
+intended folding.
+
+573
+00:27:27,095 --> 00:27:31,420
+Now, it's a pretty small change,
+so it's approximately unique,
+
+574
+00:27:31,420 --> 00:27:36,100
+but that's the best we know for
+open chains, only singly even
+
+575
+00:27:36,100 --> 00:27:36,670
+length.
+
+576
+00:27:36,670 --> 00:27:39,150
+Or for odd length, we also don't
+know anything that's optimal.
+
+577
+00:27:39,150 --> 00:27:40,700
+Of course there are things
+that are almost optimal.
+
+578
+00:27:40,700 --> 00:27:41,990
+You just add a little end.
+
+579
+00:27:41,990 --> 00:27:48,290
+Won't make a big difference,
+but interesting open problem.
+
+580
+00:27:48,290 --> 00:27:50,860
+Also open, whether any
+of these unique results--
+
+581
+00:27:50,860 --> 00:27:52,920
+uniqueness results
+extend to other grids,
+
+582
+00:27:52,920 --> 00:27:53,910
+like triangular grid.
+
+583
+00:27:53,910 --> 00:27:56,534
+That would be nice because here
+we're really exploiting parity,
+
+584
+00:27:56,534 --> 00:27:57,830
+and that's kind of cheating.
+
+585
+00:27:57,830 --> 00:28:00,080
+Certainly, parity is not
+such a big deal in real life,
+
+586
+00:28:00,080 --> 00:28:01,300
+but I don't know.
+
+587
+00:28:01,300 --> 00:28:03,530
+Could be.
+
+588
+00:28:03,530 --> 00:28:06,570
+The approximation algorithm's
+generalized to other grids,
+
+589
+00:28:06,570 --> 00:28:09,890
+not necessarily this one,
+but some constant factor
+
+590
+00:28:09,890 --> 00:28:12,680
+approximation have
+been obtained.
+
+591
+00:28:12,680 --> 00:28:13,970
+Uniqueness is open.
+
+592
+00:28:13,970 --> 00:28:16,070
+The really cool open
+question here, I think,
+
+593
+00:28:16,070 --> 00:28:18,520
+is protein design.
+
+594
+00:28:18,520 --> 00:28:20,890
+HP model is simple enough
+we can think about it.
+
+595
+00:28:20,890 --> 00:28:24,930
+And while folding-- finding
+the optimal folding of a given
+
+596
+00:28:24,930 --> 00:28:28,260
+protein is NP-hard, if I
+get to design the protein,
+
+597
+00:28:28,260 --> 00:28:31,670
+and say, well, I'd really like
+to fold into-- I don't know.
+
+598
+00:28:31,670 --> 00:28:35,540
+The letter m-- how do I make a
+protein fold into the letter m,
+
+599
+00:28:35,540 --> 00:28:37,300
+at least approximately?
+
+600
+00:28:37,300 --> 00:28:40,580
+So ideally, it should still
+have a unique optimal folding,
+
+601
+00:28:40,580 --> 00:28:42,590
+so we generalize
+this result, but it
+
+602
+00:28:42,590 --> 00:28:44,760
+can match any target shape.
+
+603
+00:28:44,760 --> 00:28:46,990
+Here, we're matching
+a diagonal line
+
+604
+00:28:46,990 --> 00:28:48,890
+up to some constant
+factor resolution.
+
+605
+00:28:48,890 --> 00:28:51,070
+Can we match any shape up
+to some constant factor
+
+606
+00:28:51,070 --> 00:28:51,620
+resolution?
+
+607
+00:28:51,620 --> 00:28:53,234
+I think the answer
+should be yes.
+
+608
+00:28:53,234 --> 00:28:55,650
+And then you should be able
+to solve that polynomial time.
+
+609
+00:28:55,650 --> 00:28:57,850
+In the same way that origami
+design is a lot easier
+
+610
+00:28:57,850 --> 00:28:59,769
+than origami
+foldability, here, I
+
+611
+00:28:59,769 --> 00:29:01,560
+think protein design
+should be a lot easier
+
+612
+00:29:01,560 --> 00:29:04,460
+than protein folding.
+
+613
+00:29:04,460 --> 00:29:05,960
+But no one has worked on that.
+
+614
+00:29:05,960 --> 00:29:08,119
+I think it's a
+really cool problem.
+
+615
+00:29:08,119 --> 00:29:10,160
+To bad I'm mentioning it
+so late in the semester,
+
+616
+00:29:10,160 --> 00:29:12,035
+but we can work on it
+in the problem session.
+
+617
+00:29:12,035 --> 00:29:15,300
+
+618
+00:29:15,300 --> 00:29:18,250
+So ends my coverage
+of protein folding.
+
+619
+00:29:18,250 --> 00:29:20,362
+Obviously, there's tons
+of work I'm not covering,
+
+620
+00:29:20,362 --> 00:29:22,320
+but I'm focusing on the
+very algorithmic stuff.
+
+621
+00:29:22,320 --> 00:29:24,490
+Any questions before we go?
+
+622
+00:29:24,490 --> 00:29:25,278
+Yeah?
+
+623
+00:29:25,278 --> 00:29:27,270
+AUDIENCE: In these models
+you have, are these
+
+624
+00:29:27,270 --> 00:29:30,820
+supposed to equal
+number of P and H,
+
+625
+00:29:30,820 --> 00:29:33,660
+can you get in situations
+where you're way
+
+626
+00:29:33,660 --> 00:29:36,842
+overbeared with P
+or H, and then it's
+
+627
+00:29:36,842 --> 00:29:39,200
+going to be harder to
+find an optimal folding.
+
+628
+00:29:39,200 --> 00:29:42,445
+Or, is it not
+realistic because these
+
+629
+00:29:42,445 --> 00:29:46,594
+are such-- these are small
+sets of the entire protein?
+
+630
+00:29:46,594 --> 00:29:47,260
+PROFESSOR: Yeah.
+
+631
+00:29:47,260 --> 00:29:49,690
+So the question
+is whether-- Does
+
+632
+00:29:49,690 --> 00:29:52,680
+it matter the ratio between the
+number of H nodes and P nodes.
+
+633
+00:29:52,680 --> 00:29:57,224
+I think the easy-- A sure
+thing is I don't know.
+
+634
+00:29:57,224 --> 00:29:58,890
+My guess is, in
+reality, the number of H
+
+635
+00:29:58,890 --> 00:30:01,810
+and P's are within a constant
+factor of each other,
+
+636
+00:30:01,810 --> 00:30:02,670
+for some constant.
+
+637
+00:30:02,670 --> 00:30:04,520
+I don't think the
+constant matters too much.
+
+638
+00:30:04,520 --> 00:30:06,353
+Although if there's an
+overwhelming majority
+
+639
+00:30:06,353 --> 00:30:09,182
+of H's or P's, the problem
+might become easier.
+
+640
+00:30:09,182 --> 00:30:10,890
+My guess also is in
+the NP-hardness proof
+
+641
+00:30:10,890 --> 00:30:13,300
+although it's been a
+while since I read it.
+
+642
+00:30:13,300 --> 00:30:16,467
+There's probably a
+constant factor again.
+
+643
+00:30:16,467 --> 00:30:18,550
+But maybe you could show
+if there's-- for example,
+
+644
+00:30:18,550 --> 00:30:20,856
+if there's a constant
+number of h nodes,
+
+645
+00:30:20,856 --> 00:30:22,730
+I'll bet you can solve
+it in polynomial time.
+
+646
+00:30:22,730 --> 00:30:24,930
+That's maybe-- That's
+a new open problem.
+
+647
+00:30:24,930 --> 00:30:26,070
+I should write it down.
+
+648
+00:30:26,070 --> 00:30:27,210
+Good question.
+
+649
+00:30:27,210 --> 00:30:31,186
+AUDIENCE: If there is a
+wrong factor between them,
+
+650
+00:30:31,186 --> 00:30:33,671
+wouldn't we see
+that at the model
+
+651
+00:30:33,671 --> 00:30:36,520
+because it just wouldn't work?
+
+652
+00:30:36,520 --> 00:30:39,920
+PROFESSOR: No, this model makes
+sense for any number of reds
+
+653
+00:30:39,920 --> 00:30:44,020
+and H's and P's, but uniqueness
+is probably hard to obtain
+
+654
+00:30:44,020 --> 00:30:47,150
+if you have a small number
+of H's or if you have a huge
+
+655
+00:30:47,150 --> 00:30:48,090
+number of H's.
+
+656
+00:30:48,090 --> 00:30:50,096
+If you don't have enough--
+
+657
+00:30:50,096 --> 00:30:54,170
+AUDIENCE: What if you have
+H's on the order of the square
+
+658
+00:30:54,170 --> 00:30:57,392
+of the P's, then there
+are at least two H's?
+
+659
+00:30:57,392 --> 00:30:59,260
+PROFESSOR: All right.
+
+660
+00:30:59,260 --> 00:31:01,440
+AUDIENCE: Kind of
+makes sense, right?
+
+661
+00:31:01,440 --> 00:31:04,190
+PROFESSOR: Yeah,
+actually we have
+
+662
+00:31:04,190 --> 00:31:07,460
+a theorem along those lines,
+which is not published
+
+663
+00:31:07,460 --> 00:31:10,200
+so that's why I'm
+not talking about it.
+
+664
+00:31:10,200 --> 00:31:13,200
+You can achieve the number
+of H's as square the number
+
+665
+00:31:13,200 --> 00:31:14,510
+of P's.
+
+666
+00:31:14,510 --> 00:31:16,760
+I imagine that's the limit--
+and still get uniqueness.
+
+667
+00:31:16,760 --> 00:31:17,950
+I imagine that's the limit.
+
+668
+00:31:17,950 --> 00:31:19,449
+We really ought to
+write that result
+
+669
+00:31:19,449 --> 00:31:23,899
+that it's from seven years
+ago, so unlikely at this point.
+
+670
+00:31:23,899 --> 00:31:24,565
+Other questions?
+
+671
+00:31:24,565 --> 00:31:30,620
+
+672
+00:31:30,620 --> 00:31:43,280
+So we go onto
+interlocked 3D chains,
+
+673
+00:31:43,280 --> 00:31:46,560
+which is related in that
+it's in 3D and its chains.
+
+674
+00:31:46,560 --> 00:31:49,780
+So related to the
+mechanical protein folding
+
+675
+00:31:49,780 --> 00:31:52,310
+we did last class,
+except here, mostly,
+
+676
+00:31:52,310 --> 00:31:54,310
+I'm going to think about
+universal joints again,
+
+677
+00:31:54,310 --> 00:31:55,667
+so I can do whatever I want.
+
+678
+00:31:55,667 --> 00:31:57,250
+I don't have to hold
+the angles fixed.
+
+679
+00:31:57,250 --> 00:31:58,708
+At the end, I'll
+mention how things
+
+680
+00:31:58,708 --> 00:32:02,015
+change a little bit for when
+you have fixed angle chains.
+
+681
+00:32:02,015 --> 00:32:04,840
+
+682
+00:32:04,840 --> 00:32:06,680
+But universals more fun.
+
+683
+00:32:06,680 --> 00:32:09,040
+So the motivation
+here is we have
+
+684
+00:32:09,040 --> 00:32:12,370
+our good friend the
+knitting needles example,
+
+685
+00:32:12,370 --> 00:32:14,060
+or maybe our mortal
+enemy, depending
+
+686
+00:32:14,060 --> 00:32:15,630
+on how you like
+to think of that.
+
+687
+00:32:15,630 --> 00:32:19,540
+One, two, three, four, five.
+
+688
+00:32:19,540 --> 00:32:21,810
+And remember-- never
+mind the edge lengths.
+
+689
+00:32:21,810 --> 00:32:23,830
+I'm not going to worry
+about edge links here.
+
+690
+00:32:23,830 --> 00:32:26,365
+With five bars, you
+can lock the chain.
+
+691
+00:32:26,365 --> 00:32:30,260
+
+692
+00:32:30,260 --> 00:32:33,130
+So an interesting
+question is what
+
+693
+00:32:33,130 --> 00:32:38,830
+if I had less than five
+chains, say length 4 chains,
+
+694
+00:32:38,830 --> 00:32:41,810
+but I had more than one of them.
+
+695
+00:32:41,810 --> 00:32:44,550
+Now certainly, each
+chain will be unlocked.
+
+696
+00:32:44,550 --> 00:32:49,030
+That's a known result by
+Cantrell and Johnson '96.
+
+697
+00:32:49,030 --> 00:32:50,110
+'96, '98?
+
+698
+00:32:50,110 --> 00:32:51,850
+'96.
+
+699
+00:32:51,850 --> 00:32:56,730
+But what if I have two four
+chains, can they interlock?
+
+700
+00:32:56,730 --> 00:32:59,290
+The answer turns out to be yes.
+
+701
+00:32:59,290 --> 00:33:01,780
+The original motivation
+for this proble,--
+
+702
+00:33:01,780 --> 00:33:07,060
+it's a neat question by itself,
+but the original motivation is
+
+703
+00:33:07,060 --> 00:33:10,250
+something called
+Lubiw's problem.
+
+704
+00:33:10,250 --> 00:33:15,300
+Many of you met Anna Lubiw,
+she's one of my Ph.D. Advisors.
+
+705
+00:33:15,300 --> 00:33:18,860
+Last year, she was
+here on sabbatical.
+
+706
+00:33:18,860 --> 00:33:20,920
+And the question
+is the following--
+
+707
+00:33:20,920 --> 00:33:24,600
+so she posed this back
+in 2000, a long time ago.
+
+708
+00:33:24,600 --> 00:33:28,500
+What is the minimum
+number of cuts
+
+709
+00:33:28,500 --> 00:33:33,500
+you have to make in a 3D
+chain in order to unlock it?
+
+710
+00:33:33,500 --> 00:33:49,190
+
+711
+00:33:49,190 --> 00:33:55,220
+I say unlocked meaning we
+know they are locked chains.
+
+712
+00:33:55,220 --> 00:33:57,920
+Suppose I want to make the
+configuration space connected,
+
+713
+00:33:57,920 --> 00:34:00,110
+but I allow cheating and
+I allow cutting vertices.
+
+714
+00:34:00,110 --> 00:34:01,740
+How many do I have to cut?
+
+715
+00:34:01,740 --> 00:34:05,570
+And say the chain has n bars.
+
+716
+00:34:05,570 --> 00:34:08,409
+Then, as a function of n,
+how many cuts do I need?
+
+717
+00:34:08,409 --> 00:34:12,230
+
+718
+00:34:12,230 --> 00:34:15,130
+And the answer at this
+point, in the worst case,
+
+719
+00:34:15,130 --> 00:34:19,370
+we know is between about
+n over 2 and n over 4.
+
+720
+00:34:19,370 --> 00:34:29,690
+So it's at least 4
+over n minus 1 over 4.
+
+721
+00:34:29,690 --> 00:34:36,710
+And it's at most 4
+n minus 3 over 2.
+
+722
+00:34:36,710 --> 00:34:38,850
+And I'll prove to you
+both of those results.
+
+723
+00:34:38,850 --> 00:34:41,377
+So we know roughly its theta n.
+
+724
+00:34:41,377 --> 00:34:42,960
+It's in a constant
+factor of n, but we
+
+725
+00:34:42,960 --> 00:34:44,980
+don't know exactly
+what the constant is,
+
+726
+00:34:44,980 --> 00:34:46,800
+still a neat problem.
+
+727
+00:34:46,800 --> 00:34:50,030
+Originally this motivation
+here is, well, maybe-- there's
+
+728
+00:34:50,030 --> 00:34:52,469
+some theories that
+in real proteins,
+
+729
+00:34:52,469 --> 00:34:55,550
+maybe they disconnect their
+bonds for a little while
+
+730
+00:34:55,550 --> 00:34:58,585
+so they can pass through
+and make things cross.
+
+731
+00:34:58,585 --> 00:34:59,960
+How many disconnections
+would you
+
+732
+00:34:59,960 --> 00:35:02,870
+need because that might
+require a lot of energy?
+
+733
+00:35:02,870 --> 00:35:07,100
+The answer is a lot if
+you have a long protein.
+
+734
+00:35:07,100 --> 00:35:09,080
+in the worst case of course.
+
+735
+00:35:09,080 --> 00:35:11,940
+Real proteins have unit edge
+lengths almost equal angles,
+
+736
+00:35:11,940 --> 00:35:14,284
+so maybe the answers
+change in that case,
+
+737
+00:35:14,284 --> 00:35:16,200
+but given that we don't
+even know whether it's
+
+738
+00:35:16,200 --> 00:35:18,570
+a locked chain, in
+those situations,
+
+739
+00:35:18,570 --> 00:35:20,440
+it's pretty hard
+for us to answer
+
+740
+00:35:20,440 --> 00:35:23,590
+something more
+complicated like this.
+
+741
+00:35:23,590 --> 00:35:25,740
+So let me start with
+the lower bound.
+
+742
+00:35:25,740 --> 00:35:28,745
+You need to make at least
+n over 4 cuts almost.
+
+743
+00:35:28,745 --> 00:35:31,270
+
+744
+00:35:31,270 --> 00:35:33,810
+Any ideas how to do that
+before I show you the answer?
+
+745
+00:35:33,810 --> 00:35:38,180
+
+746
+00:35:38,180 --> 00:35:41,201
+Given the one tool we have,
+which is the knitting needles.
+
+747
+00:35:41,201 --> 00:35:44,174
+AUDIENCE: Yeah, I mean
+if you [INAUDIBLE].
+
+748
+00:35:44,174 --> 00:35:45,715
+PROFESSOR: Just
+connect a whole bunch
+
+749
+00:35:45,715 --> 00:35:46,600
+of knitting needles together.
+
+750
+00:35:46,600 --> 00:35:47,270
+Yeah.
+
+751
+00:35:47,270 --> 00:35:48,997
+Now, knitting needles
+has five edges,
+
+752
+00:35:48,997 --> 00:35:50,580
+so that would naturally
+give n over 5.
+
+753
+00:35:50,580 --> 00:35:53,724
+But if you're a little bit
+clever, you can share edges.
+
+754
+00:35:53,724 --> 00:35:55,890
+If you share the long edges
+from one knitting needle
+
+755
+00:35:55,890 --> 00:36:02,280
+to the next, and you get about
+4 bars per knitting needle,
+
+756
+00:36:02,280 --> 00:36:05,240
+except the very first bar which
+have to count extra, and so
+
+757
+00:36:05,240 --> 00:36:07,980
+that's the n minus
+1 divided by 4.
+
+758
+00:36:07,980 --> 00:36:13,040
+Now if you don't cut
+one of the vertices--
+
+759
+00:36:13,040 --> 00:36:15,924
+and here, we're
+considering vertex cuts--
+
+760
+00:36:15,924 --> 00:36:17,340
+if you don't cut
+one of those four
+
+761
+00:36:17,340 --> 00:36:18,950
+vertices of that
+knitting needle,
+
+762
+00:36:18,950 --> 00:36:20,320
+the whole thing will be
+locked because that's
+
+763
+00:36:20,320 --> 00:36:21,220
+a knitting needle.
+
+764
+00:36:21,220 --> 00:36:23,720
+So you have to cut one of those
+four, and one of those four,
+
+765
+00:36:23,720 --> 00:36:27,620
+and one of those four just for
+the pieces to not be locked.
+
+766
+00:36:27,620 --> 00:36:30,570
+The trouble is-- so the natural
+algorithm, if I give you
+
+767
+00:36:30,570 --> 00:36:35,440
+some big complicated chain,
+is cut every fourth vertex.
+
+768
+00:36:35,440 --> 00:36:38,540
+That we know does not work.
+
+769
+00:36:38,540 --> 00:36:43,850
+I think I have to
+wait to see that one.
+
+770
+00:36:43,850 --> 00:36:45,910
+Let me tell you what's
+known about interlocking,
+
+771
+00:36:45,910 --> 00:36:48,070
+and then we'll get back
+to Lubiw's problem.
+
+772
+00:36:48,070 --> 00:36:50,600
+But at least we've
+proved this part.
+
+773
+00:36:50,600 --> 00:36:53,170
+And next thing I want to
+do is prove this part.
+
+774
+00:36:53,170 --> 00:36:57,190
+And to show you how
+we might do that, I
+
+775
+00:36:57,190 --> 00:36:58,330
+think I need a whole board.
+
+776
+00:36:58,330 --> 00:37:13,640
+
+777
+00:37:13,640 --> 00:37:21,242
+We're going to think about
+an open chain of length 2--
+
+778
+00:37:21,242 --> 00:37:23,710
+let me make a little
+more room-- 2,
+
+779
+00:37:23,710 --> 00:37:40,720
+3, 4 interlocking with-- start
+with an open chain of length 2,
+
+780
+00:37:40,720 --> 00:37:42,120
+3, or 4.
+
+781
+00:37:42,120 --> 00:37:45,020
+There's going to be other
+results, but it's a good start.
+
+782
+00:37:45,020 --> 00:37:47,810
+
+783
+00:37:47,810 --> 00:37:54,627
+So for 2, 2 chains, I
+claim are always separable.
+
+784
+00:37:54,627 --> 00:37:56,210
+And I'm going to put
+a little asterisk
+
+785
+00:37:56,210 --> 00:37:58,150
+to mean another thing is true.
+
+786
+00:37:58,150 --> 00:38:00,530
+A 2 chain and a 3 chain
+is always separable.
+
+787
+00:38:00,530 --> 00:38:03,390
+A 2 chain and a 4 chain
+is always separable.
+
+788
+00:38:03,390 --> 00:38:05,020
+This matrix is symmetric.
+
+789
+00:38:05,020 --> 00:38:10,636
+
+790
+00:38:10,636 --> 00:38:14,580
+A 3 chain versus a 3
+chain also is separable.
+
+791
+00:38:14,580 --> 00:38:17,680
+
+792
+00:38:17,680 --> 00:38:19,305
+But everything else,
+you can interlock.
+
+793
+00:38:19,305 --> 00:38:24,110
+
+794
+00:38:24,110 --> 00:38:26,420
+I guess I haven't
+defined interlock.
+
+795
+00:38:26,420 --> 00:38:28,160
+Be a good idea.
+
+796
+00:38:28,160 --> 00:38:30,720
+I call a bunch of-- a
+collection of chains
+
+797
+00:38:30,720 --> 00:38:33,776
+separable if they can all fly to
+infinity away from each other.
+
+798
+00:38:33,776 --> 00:38:35,150
+So the distances
+between them can
+
+799
+00:38:35,150 --> 00:38:37,358
+get arbitrarily large,
+otherwise they're interlocked.
+
+800
+00:38:37,358 --> 00:38:40,500
+
+801
+00:38:40,500 --> 00:38:42,500
+And usually, that will
+mean that no pair of them
+
+802
+00:38:42,500 --> 00:38:43,830
+can fly away from each other.
+
+803
+00:38:43,830 --> 00:38:44,850
+Here, we're just
+thinking about two
+
+804
+00:38:44,850 --> 00:38:46,891
+at once, so it's either
+separable or interlocked.
+
+805
+00:38:46,891 --> 00:38:49,620
+
+806
+00:38:49,620 --> 00:38:52,730
+So this is a worry
+if you're thinking
+
+807
+00:38:52,730 --> 00:38:54,200
+about cutting this apart.
+
+808
+00:38:54,200 --> 00:38:57,075
+You cut every fourth
+bar-- fourth vertex,
+
+809
+00:38:57,075 --> 00:38:58,880
+if I get the counting
+right, I think
+
+810
+00:38:58,880 --> 00:39:02,220
+that means you have length
+4 chains connecting them.
+
+811
+00:39:02,220 --> 00:39:04,670
+Now, we know length 4
+chains can't be locked,
+
+812
+00:39:04,670 --> 00:39:06,380
+but they could be interlocked.
+
+813
+00:39:06,380 --> 00:39:08,670
+And so you could
+actually build an example
+
+814
+00:39:08,670 --> 00:39:11,920
+where if you do the simple
+pattern of every fourth cut,
+
+815
+00:39:11,920 --> 00:39:13,395
+you will get interlocking.
+
+816
+00:39:13,395 --> 00:39:16,760
+It's still open whether you
+could be clever and still
+
+817
+00:39:16,760 --> 00:39:19,300
+only make about n over 4
+cuts and get everything
+
+818
+00:39:19,300 --> 00:39:22,240
+to separate, but to solve
+that, you'd have to get around
+
+819
+00:39:22,240 --> 00:39:25,830
+this boundary, this annoying
+situation, which we don't fully
+
+820
+00:39:25,830 --> 00:39:26,650
+have characterized.
+
+821
+00:39:26,650 --> 00:39:28,920
+We just have examples.
+
+822
+00:39:28,920 --> 00:39:30,800
+And we also thought
+about-- and we'll
+
+823
+00:39:30,800 --> 00:39:34,180
+get to this later--
+if you try interlock
+
+824
+00:39:34,180 --> 00:39:36,150
+an open chain with
+a closed chain.
+
+825
+00:39:36,150 --> 00:39:37,850
+With two closed
+chains, it's trivial.
+
+826
+00:39:37,850 --> 00:39:42,300
+You can just make a
+knot, or make a link.
+
+827
+00:39:42,300 --> 00:39:44,490
+I guess is the proper term.
+
+828
+00:39:44,490 --> 00:39:48,415
+But an open versus a closed is
+more interesting, especially
+
+829
+00:39:48,415 --> 00:39:52,210
+if that closed guy
+is not itself a knot.
+
+830
+00:39:52,210 --> 00:39:56,140
+I think up to length 5.
+
+831
+00:39:56,140 --> 00:39:58,430
+Yeah, I think the
+smallest, locked,
+
+832
+00:39:58,430 --> 00:40:00,850
+closed chain is of length 6.
+
+833
+00:40:00,850 --> 00:40:05,550
+Never showed it to you,
+but that is a known fact.
+
+834
+00:40:05,550 --> 00:40:08,790
+So up to 5, we know this
+thing is not by itself locked,
+
+835
+00:40:08,790 --> 00:40:11,650
+so it's not really cheating
+compared to an open chain.
+
+836
+00:40:11,650 --> 00:40:16,250
+Then, the answer is separable,
+separable, separable.
+
+837
+00:40:16,250 --> 00:40:19,420
+It's really hard to lock
+things with a 2 chain.
+
+838
+00:40:19,420 --> 00:40:22,662
+2 chains, we call hairpins.
+
+839
+00:40:22,662 --> 00:40:23,670
+That's a 2 chain.
+
+840
+00:40:23,670 --> 00:40:32,149
+
+841
+00:40:32,149 --> 00:40:33,440
+Everything else is interlocked.
+
+842
+00:40:33,440 --> 00:40:38,370
+
+843
+00:40:38,370 --> 00:40:41,095
+Basically, the same results
+hold whether one of your chains
+
+844
+00:40:41,095 --> 00:40:46,772
+is opened or closed because
+notice there's a shift here.
+
+845
+00:40:46,772 --> 00:40:48,480
+The smallest closed
+chains have length 3,
+
+846
+00:40:48,480 --> 00:40:50,350
+and the smallest open chain
+is really of length 2.
+
+847
+00:40:50,350 --> 00:40:52,010
+I guess you could
+consider single bars,
+
+848
+00:40:52,010 --> 00:40:53,670
+but they don't usually do much.
+
+849
+00:40:53,670 --> 00:40:56,750
+You're can just slide them
+out parallel to themselves.
+
+850
+00:40:56,750 --> 00:40:58,270
+So there's a shift
+in the indices
+
+851
+00:40:58,270 --> 00:41:01,285
+here, and that's why there's
+a shift in the matrix.
+
+852
+00:41:01,285 --> 00:41:01,910
+Sounds ominous.
+
+853
+00:41:01,910 --> 00:41:06,060
+A shift in the matrix,
+what will we do?
+
+854
+00:41:06,060 --> 00:41:07,910
+But they're basically the same.
+
+855
+00:41:07,910 --> 00:41:10,930
+So I'm going to show most
+of these results to you.
+
+856
+00:41:10,930 --> 00:41:15,350
+The stars mean that even if
+I give you-- get this right--
+
+857
+00:41:15,350 --> 00:41:18,430
+even if I give you a whole
+bunch more hairpins-- so
+
+858
+00:41:18,430 --> 00:41:20,360
+for this result, it's
+the most interesting.
+
+859
+00:41:20,360 --> 00:41:25,140
+I take a 3 chain, a 3 chain,
+and then a millionaire hairpins,
+
+860
+00:41:25,140 --> 00:41:26,740
+a million 2 chains.
+
+861
+00:41:26,740 --> 00:41:28,962
+Still, they can separate.
+
+862
+00:41:28,962 --> 00:41:30,420
+And all the results
+with stars, you
+
+863
+00:41:30,420 --> 00:41:31,836
+can add arbitrarily
+many hairpins.
+
+864
+00:41:31,836 --> 00:41:35,450
+
+865
+00:41:35,450 --> 00:41:37,500
+These two are the most
+interesting, a 4 chain
+
+866
+00:41:37,500 --> 00:41:39,360
+with any number
+of hairpins, a 2,
+
+867
+00:41:39,360 --> 00:41:41,530
+3 chain with any
+number of hairpins.
+
+868
+00:41:41,530 --> 00:41:43,994
+These results do
+not hold or we don't
+
+869
+00:41:43,994 --> 00:41:45,160
+know how to prove it anyway.
+
+870
+00:41:45,160 --> 00:41:48,314
+
+871
+00:41:48,314 --> 00:41:49,105
+That's the summary.
+
+872
+00:41:49,105 --> 00:41:52,060
+
+873
+00:41:52,060 --> 00:41:56,450
+There's one question that's
+not answered by this table
+
+874
+00:41:56,450 --> 00:41:58,920
+because it's how low can
+you go and get interlocking.
+
+875
+00:41:58,920 --> 00:42:01,800
+This is saying, well, once you
+get to a 3 chain and a 4 chain,
+
+876
+00:42:01,800 --> 00:42:02,550
+you can interlock.
+
+877
+00:42:02,550 --> 00:42:04,080
+It's the minimum.
+
+878
+00:42:04,080 --> 00:42:08,790
+But what if you have a bunch
+of 2 chains or even just one?
+
+879
+00:42:08,790 --> 00:42:12,110
+Can I interlock it with
+some chain of some length?
+
+880
+00:42:12,110 --> 00:42:14,390
+Let's say, I mean up to
+4 is the most interesting
+
+881
+00:42:14,390 --> 00:42:16,764
+because once you get to 5,
+you can have knitting needles.
+
+882
+00:42:16,764 --> 00:42:21,430
+But suppose I take longer
+open chains down here,
+
+883
+00:42:21,430 --> 00:42:23,680
+but I require that they're
+not themselves locked.
+
+884
+00:42:23,680 --> 00:42:27,570
+Can I interlock
+it with a hairpin?
+
+885
+00:42:27,570 --> 00:42:31,055
+It has practical
+applications to hair I guess.
+
+886
+00:42:31,055 --> 00:42:33,590
+
+887
+00:42:33,590 --> 00:42:35,910
+And the answer is yes.
+
+888
+00:42:35,910 --> 00:42:40,790
+So this first example
+is a 16 chain.
+
+889
+00:42:40,790 --> 00:42:44,081
+That's the gray part.
+
+890
+00:42:44,081 --> 00:42:44,580
+Wow!
+
+891
+00:42:44,580 --> 00:42:46,240
+It's hard to even
+follow the ends.
+
+892
+00:42:46,240 --> 00:42:47,360
+Here's one end.
+
+893
+00:42:47,360 --> 00:42:51,190
+And here's another end
+and 16 bars in the middle.
+
+894
+00:42:51,190 --> 00:42:54,240
+And then the red
+thing is a 2 chain,
+
+895
+00:42:54,240 --> 00:42:58,710
+and this is a model of
+that thing, physical model.
+
+896
+00:42:58,710 --> 00:43:00,330
+And it's locked.
+
+897
+00:43:00,330 --> 00:43:02,400
+Sorry, it's interlocked,
+I should say.
+
+898
+00:43:02,400 --> 00:43:05,140
+I'm pretty sure you take
+either of the chains,
+
+899
+00:43:05,140 --> 00:43:06,910
+obviously with the
+hairpin, but also
+
+900
+00:43:06,910 --> 00:43:09,480
+for the really
+complicated 16 chain,
+
+901
+00:43:09,480 --> 00:43:10,630
+it will unfold by itself.
+
+902
+00:43:10,630 --> 00:43:13,810
+But with a hairpin, it is
+held open at that angle
+
+903
+00:43:13,810 --> 00:43:16,350
+and can't unfold.
+
+904
+00:43:16,350 --> 00:43:19,210
+
+905
+00:43:19,210 --> 00:43:25,320
+The best bound so far is an
+11 chain versus a 2 chain.
+
+906
+00:43:25,320 --> 00:43:27,275
+It's conjectured to be optimal.
+
+907
+00:43:27,275 --> 00:43:28,930
+There's various
+reasons to believe
+
+908
+00:43:28,930 --> 00:43:32,040
+at least this interlocking
+trick where you-- basically,
+
+909
+00:43:32,040 --> 00:43:36,850
+all the hairpin can do is
+hold an angle open or try to.
+
+910
+00:43:36,850 --> 00:43:41,010
+And this seems to be the
+smallest way to interlock it
+
+911
+00:43:41,010 --> 00:43:44,490
+up there and the smallest way
+to interlock it on either side.
+
+912
+00:43:44,490 --> 00:43:45,610
+And these are zooms.
+
+913
+00:43:45,610 --> 00:43:46,990
+This is of one of these corners.
+
+914
+00:43:46,990 --> 00:43:48,314
+This is of the top part.
+
+915
+00:43:48,314 --> 00:43:49,730
+So those, by
+themselves, if you're
+
+916
+00:43:49,730 --> 00:43:52,480
+trying to do these
+three interlock tricks,
+
+917
+00:43:52,480 --> 00:43:55,110
+these are minimal, we think.
+
+918
+00:43:55,110 --> 00:43:58,080
+But as an assembly, it's
+conjectured to be optimal,
+
+919
+00:43:58,080 --> 00:43:59,580
+but we don't know
+how to prove that.
+
+920
+00:43:59,580 --> 00:44:01,246
+But at least these
+guys are interlocked,
+
+921
+00:44:01,246 --> 00:44:03,170
+so 11 chain with a 2 chain.
+
+922
+00:44:03,170 --> 00:44:08,200
+
+923
+00:44:08,200 --> 00:44:11,530
+So those don't fit on the
+table because the table's not
+
+924
+00:44:11,530 --> 00:44:13,150
+large enough.
+
+925
+00:44:13,150 --> 00:44:17,950
+But let me start
+with this result.
+
+926
+00:44:17,950 --> 00:44:22,290
+So the easiest
+thing to do is show
+
+927
+00:44:22,290 --> 00:44:32,650
+that if I have any finite
+set of hairpins, 2 chains,
+
+928
+00:44:32,650 --> 00:44:33,695
+they never interlock.
+
+929
+00:44:33,695 --> 00:44:37,994
+
+930
+00:44:37,994 --> 00:44:40,160
+This is actually an old
+result although it was never
+
+931
+00:44:40,160 --> 00:44:44,930
+phrased this way until
+earlier this decade,
+
+932
+00:44:44,930 --> 00:44:54,530
+I guess, by de Brujin, a famous
+Dutch mathematician from 1954.
+
+933
+00:44:54,530 --> 00:44:57,860
+He proved essentially this.
+
+934
+00:44:57,860 --> 00:45:00,000
+He proved a simpler
+version which was then
+
+935
+00:45:00,000 --> 00:45:04,080
+generalized in 1984 by
+Robert Dawson in Canada.
+
+936
+00:45:04,080 --> 00:45:08,220
+And they proved
+something more general.
+
+937
+00:45:08,220 --> 00:45:12,750
+They said, well-- I will say
+a hairpin is star-shaped,
+
+938
+00:45:12,750 --> 00:45:17,050
+meaning if you were right here,
+here's your eye at this point,
+
+939
+00:45:17,050 --> 00:45:19,190
+you can see the entire
+interior of the shape
+
+940
+00:45:19,190 --> 00:45:20,770
+without leaving the shape.
+
+941
+00:45:20,770 --> 00:45:23,620
+So that's a star-shaped figure.
+
+942
+00:45:23,620 --> 00:45:26,480
+And these guys proved that
+for star-shaped figures,
+
+943
+00:45:26,480 --> 00:45:28,480
+there's a way to
+always separate them
+
+944
+00:45:28,480 --> 00:45:30,900
+without even changing
+any of the angles.
+
+945
+00:45:30,900 --> 00:45:32,990
+There's no folding involved.
+
+946
+00:45:32,990 --> 00:45:34,990
+You could think
+of rigid 2 chains.
+
+947
+00:45:34,990 --> 00:45:37,260
+They can all fly
+apart from each other.
+
+948
+00:45:37,260 --> 00:45:38,900
+How do you do it?
+
+949
+00:45:38,900 --> 00:45:40,110
+Some fun geometry.
+
+950
+00:45:40,110 --> 00:45:47,482
+You say, I have my favorite
+0, 0, 0 in three space.
+
+951
+00:45:47,482 --> 00:45:49,440
+I just want to scale
+everything from the point,
+
+952
+00:45:49,440 --> 00:45:52,040
+make space bigger.
+
+953
+00:45:52,040 --> 00:45:55,190
+What will happen to
+these poor little chains?
+
+954
+00:45:55,190 --> 00:45:56,444
+They get bigger.
+
+955
+00:45:56,444 --> 00:45:57,235
+They'll get longer.
+
+956
+00:45:57,235 --> 00:46:00,120
+
+957
+00:46:00,120 --> 00:46:04,010
+As they get longer,
+just cut them off again.
+
+958
+00:46:04,010 --> 00:46:05,840
+But the result is
+that these points
+
+959
+00:46:05,840 --> 00:46:08,190
+will fly away from each other.
+
+960
+00:46:08,190 --> 00:46:10,474
+And so all of these two
+chains are going to separate.
+
+961
+00:46:10,474 --> 00:46:12,890
+The lengths get longer, but I
+can always cut them shorter.
+
+962
+00:46:12,890 --> 00:46:14,715
+And if I scale
+space, obviously if I
+
+963
+00:46:14,715 --> 00:46:16,256
+didn't have
+self-intersection before,
+
+964
+00:46:16,256 --> 00:46:18,130
+I still won't have
+self-intersection.
+
+965
+00:46:18,130 --> 00:46:19,430
+So it's a fun motion.
+
+966
+00:46:19,430 --> 00:46:21,810
+We tried to draw it in the book.
+
+967
+00:46:21,810 --> 00:46:23,940
+It's a little hard to draw.
+
+968
+00:46:23,940 --> 00:46:26,430
+So we have the red, green,
+and, blue-- hopefully,
+
+969
+00:46:26,430 --> 00:46:30,830
+you're not colorblind--
+hairpins hanging out.
+
+970
+00:46:30,830 --> 00:46:32,730
+They're not hitting each other.
+
+971
+00:46:32,730 --> 00:46:33,860
+Here's the origin.
+
+972
+00:46:33,860 --> 00:46:36,870
+We scale everything, so the blue
+guy goes to the dashed blue.
+
+973
+00:46:36,870 --> 00:46:38,890
+Green goes to the dashed green.
+
+974
+00:46:38,890 --> 00:46:40,290
+It looks weird.
+
+975
+00:46:40,290 --> 00:46:41,910
+It's all over the place.
+
+976
+00:46:41,910 --> 00:46:43,660
+And you're stretching
+for this point,
+
+977
+00:46:43,660 --> 00:46:46,730
+so as you go farther
+away, it's bigger.
+
+978
+00:46:46,730 --> 00:46:49,190
+Red guy expands to
+the dashed red guy.
+
+979
+00:46:49,190 --> 00:46:51,872
+What's not shown here is
+then you clip the red things.
+
+980
+00:46:51,872 --> 00:46:53,330
+Because everything
+gets longer, you
+
+981
+00:46:53,330 --> 00:46:55,080
+can always clip to
+the original lengths.
+
+982
+00:46:55,080 --> 00:46:57,010
+And that's a motion
+of these chains.
+
+983
+00:46:57,010 --> 00:46:58,260
+You're not changing the angle.
+
+984
+00:46:58,260 --> 00:47:00,430
+Scaling preserves angles.
+
+985
+00:47:00,430 --> 00:47:03,330
+And everything flies
+way for each other.
+
+986
+00:47:03,330 --> 00:47:06,560
+So a very nice trick
+from a long time ago.
+
+987
+00:47:06,560 --> 00:47:10,260
+
+988
+00:47:10,260 --> 00:47:14,140
+Once you get to 3 chains,
+this doesn't work.
+
+989
+00:47:14,140 --> 00:47:19,260
+And so if we want to
+prove this result, which
+
+990
+00:47:19,260 --> 00:47:23,350
+would subsume these guys, we
+need to do a little more work.
+
+991
+00:47:23,350 --> 00:47:26,020
+Although a very
+similar trick works.
+
+992
+00:47:26,020 --> 00:47:34,125
+So let me show you why two
+open 3 chains separate.
+
+993
+00:47:34,125 --> 00:47:38,830
+
+994
+00:47:38,830 --> 00:47:43,660
+Even if you add arbitrarily
+many extra hairpins-- that's
+
+995
+00:47:43,660 --> 00:47:47,140
+the star-- Two 3
+chains always separate.
+
+996
+00:47:47,140 --> 00:47:56,810
+
+997
+00:47:56,810 --> 00:47:58,770
+I guess suppose we're
+in a generic situation.
+
+998
+00:47:58,770 --> 00:48:00,710
+Nothing aligns that shouldn't.
+
+999
+00:48:00,710 --> 00:48:04,730
+I have one 3 chain, or
+something like this.
+
+1000
+00:48:04,730 --> 00:48:06,092
+And I have another one.
+
+1001
+00:48:06,092 --> 00:48:07,175
+Let's make it interesting.
+
+1002
+00:48:07,175 --> 00:48:12,170
+
+1003
+00:48:12,170 --> 00:48:13,550
+Is that possible?
+
+1004
+00:48:13,550 --> 00:48:14,520
+Maybe.
+
+1005
+00:48:14,520 --> 00:48:15,630
+Something like that.
+
+1006
+00:48:15,630 --> 00:48:18,386
+Probably you want these
+guys to be pretty long.
+
+1007
+00:48:18,386 --> 00:48:20,700
+Do some crazy whatever.
+
+1008
+00:48:20,700 --> 00:48:25,180
+That is two 3 chains
+if I drew it right.
+
+1009
+00:48:25,180 --> 00:48:27,280
+And the claim is you can
+always separate them.
+
+1010
+00:48:27,280 --> 00:48:37,400
+
+1011
+00:48:37,400 --> 00:48:39,570
+So here's the deal.
+
+1012
+00:48:39,570 --> 00:48:41,850
+I have this middle bar.
+
+1013
+00:48:41,850 --> 00:48:45,790
+There's a whole family of planes
+that are parallel to that bar,
+
+1014
+00:48:45,790 --> 00:48:47,190
+in fact, a lot of planes.
+
+1015
+00:48:47,190 --> 00:48:47,780
+There's what?
+
+1016
+00:48:47,780 --> 00:48:49,050
+Three dimensions of planes.
+
+1017
+00:48:49,050 --> 00:48:50,800
+There's a two dimensional
+family of planes
+
+1018
+00:48:50,800 --> 00:48:52,280
+that are parallel to that bar.
+
+1019
+00:48:52,280 --> 00:48:54,780
+There's a two dimensional family
+of planes that are parallel
+
+1020
+00:48:54,780 --> 00:48:56,580
+to that bar, meaning
+if you extend it,
+
+1021
+00:48:56,580 --> 00:49:01,330
+it doesn't hit the plane
+or lies in the plane.
+
+1022
+00:49:01,330 --> 00:49:04,922
+So there's actually a plane
+that is parallel to both bars.
+
+1023
+00:49:04,922 --> 00:49:06,880
+In fact, there's a whole
+one dimensional family
+
+1024
+00:49:06,880 --> 00:49:08,610
+of that, if I
+figured it out right.
+
+1025
+00:49:08,610 --> 00:49:12,370
+So you can actually find a
+plane that bisects the two bars.
+
+1026
+00:49:12,370 --> 00:49:15,640
+So there's one on one side,
+one on the other side.
+
+1027
+00:49:15,640 --> 00:49:19,500
+And even if the bars extended,
+it would not hit the plane.
+
+1028
+00:49:19,500 --> 00:49:23,200
+So there's some plane
+in the middle here.
+
+1029
+00:49:23,200 --> 00:49:26,772
+Really hard to draw in 3D.
+
+1030
+00:49:26,772 --> 00:49:28,230
+Actually, I think
+I have a picture.
+
+1031
+00:49:28,230 --> 00:49:31,490
+It might be a little
+easier to see.
+
+1032
+00:49:31,490 --> 00:49:32,870
+So it looks something like this.
+
+1033
+00:49:32,870 --> 00:49:33,430
+You have to believe me.
+
+1034
+00:49:33,430 --> 00:49:34,380
+This is general case.
+
+1035
+00:49:34,380 --> 00:49:36,710
+You have the red chain
+and the blue chain.
+
+1036
+00:49:36,710 --> 00:49:39,090
+The middle bars are on
+opposite sides of the plane,
+
+1037
+00:49:39,090 --> 00:49:41,160
+and they're parallel
+to the plane.
+
+1038
+00:49:41,160 --> 00:49:44,390
+Now what we do is
+scale, but we only
+
+1039
+00:49:44,390 --> 00:49:47,491
+scale in z, so
+non-uniform scaling.
+
+1040
+00:49:47,491 --> 00:49:48,740
+This will not preserve angles.
+
+1041
+00:49:48,740 --> 00:49:50,560
+Here, we're going to fold.
+
+1042
+00:49:50,560 --> 00:49:52,940
+So the result, we scale
+from z equals zero,
+
+1043
+00:49:52,940 --> 00:49:54,610
+so these guys get pushed down.
+
+1044
+00:49:54,610 --> 00:49:56,230
+Those guys get pushed up.
+
+1045
+00:49:56,230 --> 00:49:59,840
+Scaling in z, again, does not
+cause any self-intersection.
+
+1046
+00:49:59,840 --> 00:50:01,680
+And because we made
+these guys parallel,
+
+1047
+00:50:01,680 --> 00:50:03,890
+these edge lengths
+will be preserved.
+
+1048
+00:50:03,890 --> 00:50:05,350
+That's the key.
+
+1049
+00:50:05,350 --> 00:50:06,910
+The end bars will
+get longer, but I
+
+1050
+00:50:06,910 --> 00:50:08,160
+don't care if they get longer.
+
+1051
+00:50:08,160 --> 00:50:10,317
+I can always cut them shorter.
+
+1052
+00:50:10,317 --> 00:50:11,150
+So that's the trick.
+
+1053
+00:50:11,150 --> 00:50:13,369
+
+1054
+00:50:13,369 --> 00:50:14,910
+Yeah, they'll always
+get longer, even
+
+1055
+00:50:14,910 --> 00:50:17,310
+if they don't go
+to the other side.
+
+1056
+00:50:17,310 --> 00:50:19,340
+So that's how you can
+just pull them apart.
+
+1057
+00:50:19,340 --> 00:50:21,260
+And also, if there
+are 2 chains in here,
+
+1058
+00:50:21,260 --> 00:50:23,320
+they will also just fly
+away from each other.
+
+1059
+00:50:23,320 --> 00:50:24,520
+So eventually,
+everything will get
+
+1060
+00:50:24,520 --> 00:50:26,936
+far away unless they happen
+to have the same z-coordinate,
+
+1061
+00:50:26,936 --> 00:50:28,830
+but then it's degenerate.
+
+1062
+00:50:28,830 --> 00:50:30,090
+Just perturbed a little bit.
+
+1063
+00:50:30,090 --> 00:50:30,590
+Jason?
+
+1064
+00:50:30,590 --> 00:50:33,778
+AUDIENCE: Is this the
+case where the two
+
+1065
+00:50:33,778 --> 00:50:37,760
+bars are coplanar and parallel?
+
+1066
+00:50:37,760 --> 00:50:39,210
+PROFESSOR: Yeah.
+
+1067
+00:50:39,210 --> 00:50:41,650
+I said at the beginning
+generic, so in particular,
+
+1068
+00:50:41,650 --> 00:50:44,477
+I want to assume that these
+guys are not coplanar,
+
+1069
+00:50:44,477 --> 00:50:46,560
+otherwise, you could just
+perturb it a little bit.
+
+1070
+00:50:46,560 --> 00:50:49,905
+As long as they're not touching,
+you can wiggle everybody.
+
+1071
+00:50:49,905 --> 00:50:52,420
+Good point.
+
+1072
+00:50:52,420 --> 00:50:54,000
+That's two 3 chains.
+
+1073
+00:50:54,000 --> 00:50:55,860
+There's one more result
+in the separability.
+
+1074
+00:50:55,860 --> 00:50:59,430
+We've done all of these
+separability results here.
+
+1075
+00:50:59,430 --> 00:51:02,950
+The next one would be this,
+which is the same as this.
+
+1076
+00:51:02,950 --> 00:51:06,980
+So here we have a 4
+chain versus a 2 chain.
+
+1077
+00:51:06,980 --> 00:51:08,970
+Basically, the same trick works.
+
+1078
+00:51:08,970 --> 00:51:13,680
+I just have reorient to put
+middle bars in the xy plane.
+
+1079
+00:51:13,680 --> 00:51:16,780
+So in other words,
+there's two middle bars.
+
+1080
+00:51:16,780 --> 00:51:19,640
+They live in a plane
+because they share a vertex.
+
+1081
+00:51:19,640 --> 00:51:22,070
+So think of that as the plane
+and then scale perpendicular
+
+1082
+00:51:22,070 --> 00:51:23,030
+to the that.
+
+1083
+00:51:23,030 --> 00:51:25,650
+Same trick works.
+
+1084
+00:51:25,650 --> 00:51:28,662
+So 4 chains versus
+various 2 chains.
+
+1085
+00:51:28,662 --> 00:51:30,870
+Again, we preserve the
+lengths of the two middle bars
+
+1086
+00:51:30,870 --> 00:51:32,240
+because they lie on the plane.
+
+1087
+00:51:32,240 --> 00:51:33,980
+So there's no scaling
+that happens in the plane,
+
+1088
+00:51:33,980 --> 00:51:35,410
+and in the generic
+case, everybody
+
+1089
+00:51:35,410 --> 00:51:36,909
+will be off the
+plane, and they fly.
+
+1090
+00:51:36,909 --> 00:51:39,180
+
+1091
+00:51:39,180 --> 00:51:40,509
+Cool.
+
+1092
+00:51:40,509 --> 00:51:42,550
+So that proves all of
+these separability results.
+
+1093
+00:51:42,550 --> 00:51:45,667
+I'm not going to do these
+closed chain ones here.
+
+1094
+00:51:45,667 --> 00:51:47,500
+You can read the paper
+if you're interested.
+
+1095
+00:51:47,500 --> 00:51:49,780
+At this point, we can go
+back to Lubiw's problem
+
+1096
+00:51:49,780 --> 00:51:54,020
+and prove this result.
+
+1097
+00:51:54,020 --> 00:51:58,069
+So basic algorithm is
+cut every other vertex.
+
+1098
+00:51:58,069 --> 00:51:59,610
+You'll get a whole
+bunch of hairpins.
+
+1099
+00:51:59,610 --> 00:52:01,630
+Hairpins, we know, separate.
+
+1100
+00:52:01,630 --> 00:52:03,880
+But we can be slightly
+more efficient
+
+1101
+00:52:03,880 --> 00:52:08,905
+by leaving an initial segment
+of 4 chain or two 3 chains.
+
+1102
+00:52:08,905 --> 00:52:12,400
+I think it comes out
+to the same number.
+
+1103
+00:52:12,400 --> 00:52:18,355
+And you end up saving three
+if we computed this right.
+
+1104
+00:52:18,355 --> 00:52:21,330
+So you get n minus 3 over 2.
+
+1105
+00:52:21,330 --> 00:52:23,990
+I think our first bound on this
+problem was n minus 1 over 2,
+
+1106
+00:52:23,990 --> 00:52:26,750
+and then we improved by 1
+although I have to n minus 3
+
+1107
+00:52:26,750 --> 00:52:27,700
+over 2.
+
+1108
+00:52:27,700 --> 00:52:31,590
+That has stood the
+best bound since.
+
+1109
+00:52:31,590 --> 00:52:34,610
+Basically, because with
+interlocked stuff-- after that,
+
+1110
+00:52:34,610 --> 00:52:35,810
+you get interlocked.
+
+1111
+00:52:35,810 --> 00:52:38,034
+And if you're going
+to avoid interlocking,
+
+1112
+00:52:38,034 --> 00:52:38,950
+you have to be clever.
+
+1113
+00:52:38,950 --> 00:52:42,000
+You can't just use the numbers.
+
+1114
+00:52:42,000 --> 00:52:44,220
+So that is all we know
+about Lubiw's problem.
+
+1115
+00:52:44,220 --> 00:52:48,970
+Now, I get to show you all
+the fun interlocked examples.
+
+1116
+00:52:48,970 --> 00:52:53,880
+We're going to do pretty
+much all of these.
+
+1117
+00:52:53,880 --> 00:52:59,080
+So we start with one of
+the prettiest examples,
+
+1118
+00:52:59,080 --> 00:53:00,110
+the threefold symmetric.
+
+1119
+00:53:00,110 --> 00:53:03,880
+This is three 3 chains.
+
+1120
+00:53:03,880 --> 00:53:07,690
+So that's not even drawn here.
+
+1121
+00:53:07,690 --> 00:53:10,880
+Because this table is about
+pairwise interactions.
+
+1122
+00:53:10,880 --> 00:53:13,980
+We know that two 3 chains-- we
+just proved two 3 chains cannot
+
+1123
+00:53:13,980 --> 00:53:17,900
+interlock, but
+three of them can.
+
+1124
+00:53:17,900 --> 00:53:20,265
+That's the only case where
+that question is interesting.
+
+1125
+00:53:20,265 --> 00:53:22,990
+So everybody else,
+you can interlock.
+
+1126
+00:53:22,990 --> 00:53:25,620
+Unless you have 2 chains,
+and we know those don't help.
+
+1127
+00:53:25,620 --> 00:53:28,034
+So three 3 chains interlock.
+
+1128
+00:53:28,034 --> 00:53:29,700
+I'm not going to try
+to prove that here.
+
+1129
+00:53:29,700 --> 00:53:31,670
+It's a pretty
+complicated argument
+
+1130
+00:53:31,670 --> 00:53:34,649
+where you look at
+the center edges.
+
+1131
+00:53:34,649 --> 00:53:36,440
+You look at the convex
+whole of those edges
+
+1132
+00:53:36,440 --> 00:53:38,481
+and argue these guys can't
+stick into the center.
+
+1133
+00:53:38,481 --> 00:53:40,215
+It's a geometric argument.
+
+1134
+00:53:40,215 --> 00:53:42,885
+If you're interested,
+check out this paper.
+
+1135
+00:53:42,885 --> 00:53:44,320
+It's a pretty cool example.
+
+1136
+00:53:44,320 --> 00:53:46,660
+This was a great-- finally,
+I had a good exercise
+
+1137
+00:53:46,660 --> 00:53:49,217
+for using Rhino yesterday
+and drawing this figure.
+
+1138
+00:53:49,217 --> 00:53:50,050
+It was a lot of fun.
+
+1139
+00:53:50,050 --> 00:53:53,870
+
+1140
+00:53:53,870 --> 00:53:57,010
+This is a 3 chain and 4 chain.
+
+1141
+00:53:57,010 --> 00:53:59,340
+One, two, three, four.
+
+1142
+00:53:59,340 --> 00:54:01,420
+Just two different
+views of the same thing.
+
+1143
+00:54:01,420 --> 00:54:06,500
+And that proves this result,
+which is this result.
+
+1144
+00:54:06,500 --> 00:54:11,280
+
+1145
+00:54:11,280 --> 00:54:14,850
+It's pretty close, pretty tight.
+
+1146
+00:54:14,850 --> 00:54:16,640
+Again, it's a
+geometric argument.
+
+1147
+00:54:16,640 --> 00:54:17,550
+It's tricky.
+
+1148
+00:54:17,550 --> 00:54:18,610
+I'll go into it here.
+
+1149
+00:54:18,610 --> 00:54:22,270
+
+1150
+00:54:22,270 --> 00:54:24,330
+We found these by building
+lots of straw models
+
+1151
+00:54:24,330 --> 00:54:26,340
+and jiggling them
+around with string
+
+1152
+00:54:26,340 --> 00:54:28,360
+connecting the straws together.
+
+1153
+00:54:28,360 --> 00:54:29,936
+But then we had to prove it.
+
+1154
+00:54:29,936 --> 00:54:31,935
+For a while, we weren't
+sure whether a 3 and a 4
+
+1155
+00:54:31,935 --> 00:54:32,840
+could interlock.
+
+1156
+00:54:32,840 --> 00:54:35,410
+I think first we had a 4
+and a 4 or maybe 4 and a 5,
+
+1157
+00:54:35,410 --> 00:54:36,990
+and we kept working
+our way down.
+
+1158
+00:54:36,990 --> 00:54:39,031
+And now we know this is
+the smallest you can get.
+
+1159
+00:54:39,031 --> 00:54:41,960
+
+1160
+00:54:41,960 --> 00:54:47,150
+And now we go into
+the closed results.
+
+1161
+00:54:47,150 --> 00:54:50,190
+Because 4 and 4, that's of
+course easier than 3 and 4.
+
+1162
+00:54:50,190 --> 00:54:52,540
+So that's done.
+
+1163
+00:54:52,540 --> 00:54:56,440
+This is contained
+in those results.
+
+1164
+00:54:56,440 --> 00:54:58,520
+Now, we look at the
+closed examples.
+
+1165
+00:54:58,520 --> 00:55:02,480
+So this is going to be a
+closed triangle interlocking
+
+1166
+00:55:02,480 --> 00:55:04,127
+with an open 4 chain.
+
+1167
+00:55:04,127 --> 00:55:06,210
+And here I'm going to give
+you some of the details
+
+1168
+00:55:06,210 --> 00:55:09,322
+because this proof-- it's
+relatively easy to prove
+
+1169
+00:55:09,322 --> 00:55:10,280
+that this is interlock.
+
+1170
+00:55:10,280 --> 00:55:11,990
+You can use a more
+topological argument,
+
+1171
+00:55:11,990 --> 00:55:14,240
+which is what we're used to
+from the knitting needles.
+
+1172
+00:55:14,240 --> 00:55:17,700
+Remember we took a ball that
+separated the interior vertices
+
+1173
+00:55:17,700 --> 00:55:19,730
+from the endpoints.
+
+1174
+00:55:19,730 --> 00:55:22,580
+We said the endpoints
+really can't get in
+
+1175
+00:55:22,580 --> 00:55:23,920
+if we set the ball right.
+
+1176
+00:55:23,920 --> 00:55:29,050
+And therefore, you could connect
+the endpoints by a big rope,
+
+1177
+00:55:29,050 --> 00:55:31,316
+and then you have
+an Trefoil knot,
+
+1178
+00:55:31,316 --> 00:55:33,440
+and there's no way you can
+untie the knot with that
+
+1179
+00:55:33,440 --> 00:55:34,740
+having intersection somewhere.
+
+1180
+00:55:34,740 --> 00:55:36,650
+You can argue the rope
+never self intersects,
+
+1181
+00:55:36,650 --> 00:55:39,890
+so it must be the chain.
+
+1182
+00:55:39,890 --> 00:55:42,010
+We can do the same
+thing with this example,
+
+1183
+00:55:42,010 --> 00:55:46,370
+with a 4 chain interlocked
+with a triangle.
+
+1184
+00:55:46,370 --> 00:55:52,660
+And we'll sketch that proof.
+
+1185
+00:55:52,660 --> 00:56:16,800
+
+1186
+00:56:16,800 --> 00:56:19,330
+So I want to prove that those
+two guys are interlocked,
+
+1187
+00:56:19,330 --> 00:56:22,710
+so suppose that somehow they
+separate from each other.
+
+1188
+00:56:22,710 --> 00:56:25,675
+If there's a separating
+motion, there's
+
+1189
+00:56:25,675 --> 00:56:28,470
+a motion where the triangle
+actually doesn't move at all.
+
+1190
+00:56:28,470 --> 00:56:30,480
+So triangle's rigid,
+except that it
+
+1191
+00:56:30,480 --> 00:56:34,170
+can move by rigid motion,
+translation and rotation.
+
+1192
+00:56:34,170 --> 00:56:38,920
+But any motion I have, I can
+recenter things by relativity
+
+1193
+00:56:38,920 --> 00:56:41,070
+so that the
+triangles stays fixed
+
+1194
+00:56:41,070 --> 00:56:44,614
+and just the
+quadrilateral moves.
+
+1195
+00:56:44,614 --> 00:56:46,780
+So that's nice because a
+triangle is a natural thing
+
+1196
+00:56:46,780 --> 00:56:48,730
+to draw a sphere
+around, and I want
+
+1197
+00:56:48,730 --> 00:56:52,410
+to argue if these bars
+are really, really long,
+
+1198
+00:56:52,410 --> 00:56:56,420
+the endpoints will be
+outside this big sphere.
+
+1199
+00:56:56,420 --> 00:56:57,700
+So let me tell you how long.
+
+1200
+00:56:57,700 --> 00:57:01,820
+
+1201
+00:57:01,820 --> 00:57:04,275
+I have my triangle
+I'm going to draw
+
+1202
+00:57:04,275 --> 00:57:06,850
+a sphere that
+contains the triangle.
+
+1203
+00:57:06,850 --> 00:57:09,330
+Say this sphere has
+radius little r.
+
+1204
+00:57:09,330 --> 00:57:12,180
+Big R is going to be
+little r plus the sum
+
+1205
+00:57:12,180 --> 00:57:15,710
+of the middle bars, which
+should sound familiar from what
+
+1206
+00:57:15,710 --> 00:57:17,680
+we did with knitting needles.
+
+1207
+00:57:17,680 --> 00:57:20,114
+This is of the 4 chain.
+
+1208
+00:57:20,114 --> 00:57:21,840
+There's two middle bars.
+
+1209
+00:57:21,840 --> 00:57:23,590
+Add up their lengths.
+
+1210
+00:57:23,590 --> 00:57:24,330
+Add on r.
+
+1211
+00:57:24,330 --> 00:57:27,120
+This is just a big
+number, capital R.
+
+1212
+00:57:27,120 --> 00:57:29,270
+I'm going to make it bigger.
+
+1213
+00:57:29,270 --> 00:57:31,530
+So I have my little triangle.
+
+1214
+00:57:31,530 --> 00:57:33,790
+It has a tiny ball around it.
+
+1215
+00:57:33,790 --> 00:57:37,630
+I'm going to draw a
+pretty big sphere here
+
+1216
+00:57:37,630 --> 00:57:46,289
+of radius 15 r, an even
+bigger sphere of radius 20 r.
+
+1217
+00:57:46,289 --> 00:57:48,830
+And I don't need to be precise
+about exactly where the center
+
+1218
+00:57:48,830 --> 00:57:50,996
+is, but I guess it would
+be the center of this ball.
+
+1219
+00:57:50,996 --> 00:57:55,130
+
+1220
+00:57:55,130 --> 00:57:57,430
+Here's what I want to say.
+
+1221
+00:57:57,430 --> 00:58:03,820
+I'm supposing the lengths of
+these edges is more than 20 r.
+
+1222
+00:58:03,820 --> 00:58:07,930
+So initially, those
+bars go outside the box.
+
+1223
+00:58:07,930 --> 00:58:10,000
+The endpoints are
+outside of the big ball.
+
+1224
+00:58:10,000 --> 00:58:12,560
+
+1225
+00:58:12,560 --> 00:58:18,530
+Now, here's the claim.
+
+1226
+00:58:18,530 --> 00:58:22,070
+As long as the endpoints of
+the really long-- the endpoints
+
+1227
+00:58:22,070 --> 00:58:34,780
+of the 4 chain stay outside this
+ball, then the interior bars--
+
+1228
+00:58:34,780 --> 00:58:42,260
+these two middle bars-- have
+to stay inside this ball.
+
+1229
+00:58:42,260 --> 00:58:44,260
+This is just like
+the knitting needles.
+
+1230
+00:58:44,260 --> 00:58:46,670
+As long as the super
+long bars, the endpoints,
+
+1231
+00:58:46,670 --> 00:58:49,230
+stay outside this
+ball, the middle bars
+
+1232
+00:58:49,230 --> 00:58:50,400
+have to stay inside.
+
+1233
+00:58:50,400 --> 00:58:53,980
+That's just because those
+bars are so darn long.
+
+1234
+00:58:53,980 --> 00:58:56,500
+And so for as long
+as that holds,
+
+1235
+00:58:56,500 --> 00:58:59,220
+you can compute the
+topology-- I'm not
+
+1236
+00:58:59,220 --> 00:59:05,420
+going to try to draw it-- the
+topology of-- in this picture,
+
+1237
+00:59:05,420 --> 00:59:07,700
+if you connect to the
+ends of the purple guys,
+
+1238
+00:59:07,700 --> 00:59:11,919
+because they're outside the
+big ball, the 15 r ball--
+
+1239
+00:59:11,919 --> 00:59:13,460
+not sure I really
+need the 20 r ball,
+
+1240
+00:59:13,460 --> 00:59:18,810
+but the 15 r ball is the key--
+topology you get is this.
+
+1241
+00:59:18,810 --> 00:59:21,690
+That is the link
+between the circle,
+
+1242
+00:59:21,690 --> 00:59:23,300
+which is this nice loop.
+
+1243
+00:59:23,300 --> 00:59:26,720
+And the purple guy
+is that red loop
+
+1244
+00:59:26,720 --> 00:59:28,990
+if you just figure out what
+it looks like currently.
+
+1245
+00:59:28,990 --> 00:59:33,210
+And as long as the endpoints
+of these guys don't go inside
+
+1246
+00:59:33,210 --> 00:59:34,920
+and those guys
+remain on the inside,
+
+1247
+00:59:34,920 --> 00:59:37,070
+basically until something
+interesting happens,
+
+1248
+00:59:37,070 --> 00:59:38,340
+the topology has to be that.
+
+1249
+00:59:38,340 --> 00:59:41,310
+
+1250
+00:59:41,310 --> 00:59:48,610
+So at some point-- sorry,
+I said that slightly wrong.
+
+1251
+00:59:48,610 --> 00:59:51,750
+As long as the middle
+bars stay inside the ball
+
+1252
+00:59:51,750 --> 00:59:55,420
+and the endpoint stay
+outside the ball, a 15 r,
+
+1253
+00:59:55,420 --> 00:59:56,449
+this will be the case.
+
+1254
+00:59:56,449 --> 00:59:58,490
+They are not saying nothing
+interesting happened.
+
+1255
+00:59:58,490 --> 01:00:00,990
+So violation, the
+only way to open
+
+1256
+01:00:00,990 --> 01:00:05,840
+this thing could be an endpoint
+goes inside or a middle bar
+
+1257
+01:00:05,840 --> 01:00:08,840
+goes outside the ball.
+
+1258
+01:00:08,840 --> 01:00:12,130
+Consider the moment
+when that happens.
+
+1259
+01:00:12,130 --> 01:00:16,310
+If a middle bar, one
+in the middle vertices
+
+1260
+01:00:16,310 --> 01:00:20,830
+is going to go outside
+this 15 r radius ball,
+
+1261
+01:00:20,830 --> 01:00:25,020
+then you know that
+all of the middle bars
+
+1262
+01:00:25,020 --> 01:00:28,890
+are far away from this
+triangle because those edges
+
+1263
+01:00:28,890 --> 01:00:32,170
+very small compared
+to capital R.
+
+1264
+01:00:32,170 --> 01:00:34,360
+So we're 15 away.
+
+1265
+01:00:34,360 --> 01:00:37,260
+If you have one middle vertex
+that's outside, all of them
+
+1266
+01:00:37,260 --> 01:00:38,500
+are pretty close to outside.
+
+1267
+01:00:38,500 --> 01:00:40,570
+They're all going to
+be in some smaller ball
+
+1268
+01:00:40,570 --> 01:00:45,220
+here-- outside
+that smaller ball.
+
+1269
+01:00:45,220 --> 01:00:48,030
+The alternative is that
+one of the end-- that's
+
+1270
+01:00:48,030 --> 01:00:50,227
+not a contradiction yet,
+but we'll come back to it--
+
+1271
+01:00:50,227 --> 01:00:52,560
+the alternative is that one
+of the endpoints of the bars
+
+1272
+01:00:52,560 --> 01:00:54,940
+goes inside this
+radius 15 r ball.
+
+1273
+01:00:54,940 --> 01:00:57,780
+
+1274
+01:00:57,780 --> 01:01:01,680
+When that happens, because
+this bar is so long,
+
+1275
+01:01:01,680 --> 01:01:05,750
+the other end of the bar will
+actually be outside the sphere.
+
+1276
+01:01:05,750 --> 01:01:08,075
+And so then, again,
+all the middle guys
+
+1277
+01:01:08,075 --> 01:01:09,890
+are outside the sphere.
+
+1278
+01:01:09,890 --> 01:01:11,600
+So either way, you violate.
+
+1279
+01:01:11,600 --> 01:01:13,230
+I assumed this
+before, but now, I'm
+
+1280
+01:01:13,230 --> 01:01:15,520
+saying if you try to
+take these guys out
+
+1281
+01:01:15,520 --> 01:01:17,320
+or if you try to
+push this guy in,
+
+1282
+01:01:17,320 --> 01:01:19,980
+the middle guys are
+outside the ball already.
+
+1283
+01:01:19,980 --> 01:01:23,370
+So consider a situation when
+the middle edges are all outside
+
+1284
+01:01:23,370 --> 01:01:25,990
+the ball of radius 15 r.
+
+1285
+01:01:25,990 --> 01:01:29,220
+The only thing that could
+penetrate some tiny sphere,
+
+1286
+01:01:29,220 --> 01:01:33,030
+like this one of little r,
+only parts of the 4 chain
+
+1287
+01:01:33,030 --> 01:01:35,300
+that could penetrate
+that are the long bars
+
+1288
+01:01:35,300 --> 01:01:37,950
+because the middle
+stuff is too far away.
+
+1289
+01:01:37,950 --> 01:01:41,300
+The long bars are super long,
+so they could conceivably
+
+1290
+01:01:41,300 --> 01:01:42,930
+penetrate the triangle.
+
+1291
+01:01:42,930 --> 01:01:45,010
+All we really care about
+is piercing the center
+
+1292
+01:01:45,010 --> 01:01:46,468
+of the triangle
+because that's when
+
+1293
+01:01:46,468 --> 01:01:47,960
+we get interesting topology.
+
+1294
+01:01:47,960 --> 01:01:51,870
+We want to get this
+topology, but sadly, you
+
+1295
+01:01:51,870 --> 01:01:53,550
+could only get these topologies.
+
+1296
+01:01:53,550 --> 01:01:54,304
+I guess luckily.
+
+1297
+01:01:54,304 --> 01:01:55,970
+You can only get those
+three topologies,
+
+1298
+01:01:55,970 --> 01:01:57,560
+which don't match this one.
+
+1299
+01:01:57,560 --> 01:01:59,280
+And so there's no way
+to get continuously
+
+1300
+01:01:59,280 --> 01:02:01,390
+from one of these to the other.
+
+1301
+01:02:01,390 --> 01:02:02,400
+That's the argument.
+
+1302
+01:02:02,400 --> 01:02:04,430
+Let me say a little
+more which is
+
+1303
+01:02:04,430 --> 01:02:07,860
+if neither of the two long
+bars hit the triangle,
+
+1304
+01:02:07,860 --> 01:02:10,270
+then you trivially get this.
+
+1305
+01:02:10,270 --> 01:02:12,360
+You don't get any linking.
+
+1306
+01:02:12,360 --> 01:02:16,330
+If one of them strikes a
+triangle, you always get this.
+
+1307
+01:02:16,330 --> 01:02:18,930
+
+1308
+01:02:18,930 --> 01:02:21,140
+If two of them
+strike the triangle,
+
+1309
+01:02:21,140 --> 01:02:23,010
+it's possible to
+get this or this
+
+1310
+01:02:23,010 --> 01:02:24,402
+depending on how you link it up.
+
+1311
+01:02:24,402 --> 01:02:25,860
+And I'm not going
+to prove it here,
+
+1312
+01:02:25,860 --> 01:02:27,410
+but that's all you can get.
+
+1313
+01:02:27,410 --> 01:02:31,375
+And so if you can't get
+this one, you're in trouble.
+
+1314
+01:02:31,375 --> 01:02:34,350
+There's no continuous
+motion from this to those
+
+1315
+01:02:34,350 --> 01:02:36,104
+without crossing.
+
+1316
+01:02:36,104 --> 01:02:37,020
+So that's how it goes.
+
+1317
+01:02:37,020 --> 01:02:40,350
+And this is an example of
+a topological argument.
+
+1318
+01:02:40,350 --> 01:02:42,210
+You can use the same
+kind of argument
+
+1319
+01:02:42,210 --> 01:02:47,810
+to prove this last
+result, which is this one.
+
+1320
+01:02:47,810 --> 01:02:50,720
+But now this is not necessarily
+symmetric because one's closed,
+
+1321
+01:02:50,720 --> 01:02:51,870
+one's open.
+
+1322
+01:02:51,870 --> 01:02:56,840
+So this is a closed 4 chain
+quadrilateral, in other words,
+
+1323
+01:02:56,840 --> 01:03:00,650
+with an open 3 chain,
+which can also lock.
+
+1324
+01:03:00,650 --> 01:03:02,840
+And again, you can use
+the topological arguments.
+
+1325
+01:03:02,840 --> 01:03:05,381
+A little messy because now this
+is like a tetrahedron instead
+
+1326
+01:03:05,381 --> 01:03:10,010
+of a triangle, but the same
+tricks work and topology,
+
+1327
+01:03:10,010 --> 01:03:13,090
+luckily, doesn't match between
+the inside and outside cases.
+
+1328
+01:03:13,090 --> 01:03:15,850
+
+1329
+01:03:15,850 --> 01:03:17,150
+Cool.
+
+1330
+01:03:17,150 --> 01:03:22,240
+So that is interlocking
+and pretty much
+
+1331
+01:03:22,240 --> 01:03:23,890
+the entirety of this table.
+
+1332
+01:03:23,890 --> 01:03:26,570
+Now, there's a way to
+generalize this table,
+
+1333
+01:03:26,570 --> 01:03:29,300
+which is instead of saying,
+oh, I have universal joints.
+
+1334
+01:03:29,300 --> 01:03:31,010
+Everything's nice.
+
+1335
+01:03:31,010 --> 01:03:32,430
+I start thinking
+back to proteins
+
+1336
+01:03:32,430 --> 01:03:34,941
+and say, well, what if
+I had some fixed angles.
+
+1337
+01:03:34,941 --> 01:03:37,190
+What if some of the chains
+are fixed angles and others
+
+1338
+01:03:37,190 --> 01:03:38,040
+are universal?
+
+1339
+01:03:38,040 --> 01:03:39,670
+What if some of the
+chains were ridge?
+
+1340
+01:03:39,670 --> 01:03:42,390
+Because we know that rigid
+hairpins can separate
+
+1341
+01:03:42,390 --> 01:03:45,110
+without any folding whatsoever,
+what if some of them are rigid
+
+1342
+01:03:45,110 --> 01:03:48,090
+and some of them are fixed angle
+and some of them are universal?
+
+1343
+01:03:48,090 --> 01:03:52,820
+Well, we haven't done all of
+those results, but most of them
+
+1344
+01:03:52,820 --> 01:03:57,570
+for pairs, we have got
+universal and rigid.
+
+1345
+01:03:57,570 --> 01:04:00,630
+I mean a fixed angle 2
+chain is a rigid 2 chain,
+
+1346
+01:04:00,630 --> 01:04:02,470
+so there's only
+two columns there.
+
+1347
+01:04:02,470 --> 01:04:03,660
+Universal fixed angle rigid.
+
+1348
+01:04:03,660 --> 01:04:05,220
+Universal fixed angle rigid.
+
+1349
+01:04:05,220 --> 01:04:07,150
+And here we only
+get up to rigid.
+
+1350
+01:04:07,150 --> 01:04:10,500
+
+1351
+01:04:10,500 --> 01:04:13,900
+Yeah, I'm not sure if it makes
+a huge difference out there.
+
+1352
+01:04:13,900 --> 01:04:16,620
+Again, this is not
+a complete story.
+
+1353
+01:04:16,620 --> 01:04:20,360
+There other results
+that might fit in here.
+
+1354
+01:04:20,360 --> 01:04:24,620
+How far down do those minuses go
+if you don't have rigid parts?
+
+1355
+01:04:24,620 --> 01:04:26,800
+But let's see.
+
+1356
+01:04:26,800 --> 01:04:28,390
+The plus means
+there's locked things.
+
+1357
+01:04:28,390 --> 01:04:31,570
+The minus means they
+always separate.
+
+1358
+01:04:31,570 --> 01:04:33,220
+It's a little more concise.
+
+1359
+01:04:33,220 --> 01:04:35,370
+And we've sorted
+the rows and columns
+
+1360
+01:04:35,370 --> 01:04:38,320
+so that you get nice--
+conveniently you
+
+1361
+01:04:38,320 --> 01:04:42,120
+get a nice diagonal pattern,
+not perfect diagonal,
+
+1362
+01:04:42,120 --> 01:04:44,930
+but it's at least monotone.
+
+1363
+01:04:44,930 --> 01:04:47,740
+It makes sense that a
+rigid-- obviously, rigid
+
+1364
+01:04:47,740 --> 01:04:52,190
+is more fixed than
+a fixed angle.
+
+1365
+01:04:52,190 --> 01:04:54,440
+But it's not obvious
+that a universal 4 chain
+
+1366
+01:04:54,440 --> 01:04:56,880
+is going to lock more than
+a fixed angle 3 chain,
+
+1367
+01:04:56,880 --> 01:05:01,130
+but turns out that is the
+case for these examples.
+
+1368
+01:05:01,130 --> 01:05:03,249
+Now, you could consider
+triples of them,
+
+1369
+01:05:03,249 --> 01:05:04,540
+each with different properties.
+
+1370
+01:05:04,540 --> 01:05:05,800
+Then, you get a three
+dimensional table.
+
+1371
+01:05:05,800 --> 01:05:07,060
+That gets a little messier.
+
+1372
+01:05:07,060 --> 01:05:08,430
+Probably not a huge
+number of results
+
+1373
+01:05:08,430 --> 01:05:09,790
+are necessary along those lines.
+
+1374
+01:05:09,790 --> 01:05:16,130
+Here, we just needed the 2
+chains plus the three 3 chains
+
+1375
+01:05:16,130 --> 01:05:17,850
+were interlocked.
+
+1376
+01:05:17,850 --> 01:05:19,830
+So there's more work
+to be done here,
+
+1377
+01:05:19,830 --> 01:05:22,290
+but this was a lot of fun.
+
+1378
+01:05:22,290 --> 01:05:23,790
+And if you want to
+see the examples,
+
+1379
+01:05:23,790 --> 01:05:25,520
+you should check out this paper.
+
+1380
+01:05:25,520 --> 01:05:30,030
+
+1381
+01:05:30,030 --> 01:05:32,460
+This was basically
+for fun and to see how
+
+1382
+01:05:32,460 --> 01:05:34,440
+low could you go in
+terms of number of edges
+
+1383
+01:05:34,440 --> 01:05:36,690
+and various combinations
+of different parts.
+
+1384
+01:05:36,690 --> 01:05:40,331
+But it turns out this interlock
+stuff does have applications.
+
+1385
+01:05:40,331 --> 01:05:41,830
+I'm not going to
+call them practical
+
+1386
+01:05:41,830 --> 01:05:44,180
+because it's about
+another theory result.
+
+1387
+01:05:44,180 --> 01:05:46,560
+And its result, I mentioned.
+
+1388
+01:05:46,560 --> 01:05:49,600
+If you have some 3
+chain-- oh sorry.
+
+1389
+01:05:49,600 --> 01:05:53,490
+Some three dimensional chain--
+let's say universal joints--
+
+1390
+01:05:53,490 --> 01:05:56,880
+and you have two
+configurations, configuration a
+
+1391
+01:05:56,880 --> 01:06:00,770
+and configuration
+b, and you want
+
+1392
+01:06:00,770 --> 01:06:02,915
+to know is there a
+motion from configuration
+
+1393
+01:06:02,915 --> 01:06:06,120
+a to configuration b.
+
+1394
+01:06:06,120 --> 01:06:16,300
+This is PSPACE-complete,
+result by a bunch of Berliners
+
+1395
+01:06:16,300 --> 01:06:17,620
+from a few years ago.
+
+1396
+01:06:17,620 --> 01:06:20,500
+And basically, what they
+do is build a computer.
+
+1397
+01:06:20,500 --> 01:06:24,180
+I don't have the gadgets
+here to show you.
+
+1398
+01:06:24,180 --> 01:06:27,000
+But they build a computer
+with various moving parts
+
+1399
+01:06:27,000 --> 01:06:28,280
+and what not.
+
+1400
+01:06:28,280 --> 01:06:30,730
+To build the infrastructure
+of that computer,
+
+1401
+01:06:30,730 --> 01:06:32,990
+the rigid part doesn't move.
+
+1402
+01:06:32,990 --> 01:06:35,110
+They use interlocked chains.
+
+1403
+01:06:35,110 --> 01:06:39,040
+Basically, if you want to
+build a nice, rigid framework,
+
+1404
+01:06:39,040 --> 01:06:43,997
+like a truss, you can do it
+because you just take chains.
+
+1405
+01:06:43,997 --> 01:06:45,330
+I'm only allowed to make chains.
+
+1406
+01:06:45,330 --> 01:06:46,621
+I'm not allowed to make graphs.
+
+1407
+01:06:46,621 --> 01:06:49,610
+But if I bring two
+parts of the chain
+
+1408
+01:06:49,610 --> 01:06:51,820
+really close to each
+other, I can basically
+
+1409
+01:06:51,820 --> 01:06:54,800
+tie a knot by making
+lots of little links
+
+1410
+01:06:54,800 --> 01:06:57,480
+and using say an
+interlocked 3, 4 chain,
+
+1411
+01:06:57,480 --> 01:06:59,422
+interlock 3 chain with
+an interlocked 4 chain.
+
+1412
+01:06:59,422 --> 01:07:00,880
+In the same way
+when we're building
+
+1413
+01:07:00,880 --> 01:07:06,140
+the locked 11 chain
+with the lock 2 chain,
+
+1414
+01:07:06,140 --> 01:07:08,862
+you're tying little knots
+around various points.
+
+1415
+01:07:08,862 --> 01:07:10,570
+Here, we don't even
+have to be efficient,
+
+1416
+01:07:10,570 --> 01:07:12,690
+just constant numbers are fine.
+
+1417
+01:07:12,690 --> 01:07:18,520
+So you can build some rigid
+structure like a tetrahedron
+
+1418
+01:07:18,520 --> 01:07:26,700
+by taking one path here,
+making an interlock structure,
+
+1419
+01:07:26,700 --> 01:07:30,790
+making interlock structure,
+interlock, interlock.
+
+1420
+01:07:30,790 --> 01:07:34,430
+Could double traverse, I guess.
+
+1421
+01:07:34,430 --> 01:07:37,600
+And you can interlock
+everything using a chain.
+
+1422
+01:07:37,600 --> 01:07:39,132
+Build a rigid structure.
+
+1423
+01:07:39,132 --> 01:07:40,840
+Then, you go and build
+the flexible part.
+
+1424
+01:07:40,840 --> 01:07:42,750
+And that's the fun computation.
+
+1425
+01:07:42,750 --> 01:07:45,090
+But just to get off
+the ground and to build
+
+1426
+01:07:45,090 --> 01:07:48,660
+some rigid infrastructure,
+to build gadgets basically
+
+1427
+01:07:48,660 --> 01:07:51,075
+in your hardness proof,
+they use interlocked chains,
+
+1428
+01:07:51,075 --> 01:07:51,950
+which is pretty cool.
+
+1429
+01:07:51,950 --> 01:07:56,810
+This is a really interesting
+result, a very negative one.
+
+1430
+01:07:56,810 --> 01:07:58,980
+It's really hard to fold
+from one shape to another,
+
+1431
+01:07:58,980 --> 01:08:00,790
+but it uses this.
+
+1432
+01:08:00,790 --> 01:08:03,270
+They also prove the same thing
+for trees in two dimensions.
+
+1433
+01:08:03,270 --> 01:08:04,770
+For that, they used
+the lock trees--
+
+1434
+01:08:04,770 --> 01:08:06,770
+which we covered way
+back, lecture three
+
+1435
+01:08:06,770 --> 01:08:11,220
+or whatever-- these lock trees
+to build-- to basically fill
+
+1436
+01:08:11,220 --> 01:08:15,170
+rigid angles, to force things
+to be at particular angles,
+
+1437
+01:08:15,170 --> 01:08:19,020
+and then they have flexible
+parts to do the computer stuff.
+
+1438
+01:08:19,020 --> 01:08:19,640
+So it's fun.
+
+1439
+01:08:19,640 --> 01:08:23,870
+They use our little examples
+to build big computers.
+
+1440
+01:08:23,870 --> 01:08:27,160
+Still open, of
+course, is can I start
+
+1441
+01:08:27,160 --> 01:08:31,620
+from a straight
+configuration of the chain
+
+1442
+01:08:31,620 --> 01:08:34,290
+and can I get it to this.
+
+1443
+01:08:34,290 --> 01:08:38,000
+So in other words, given
+a chain, can I unfold it.
+
+1444
+01:08:38,000 --> 01:08:40,410
+We'd like to know whether
+that's polynomially
+
+1445
+01:08:40,410 --> 01:08:41,700
+solvable or empty complete.
+
+1446
+01:08:41,700 --> 01:08:45,170
+It is about characterizing
+lock chains in some sense.
+
+1447
+01:08:45,170 --> 01:08:46,622
+This is about going
+from arbitrary
+
+1448
+01:08:46,622 --> 01:08:48,330
+configuration to
+arbitrary configuration.
+
+1449
+01:08:48,330 --> 01:08:50,149
+And here, you're
+allowed to build
+
+1450
+01:08:50,149 --> 01:08:52,609
+rigid infrastructure
+which never moves.
+
+1451
+01:08:52,609 --> 01:08:55,120
+Here, everything would
+have to fall apart somehow,
+
+1452
+01:08:55,120 --> 01:08:57,279
+so you can't use
+interlock chains.
+
+1453
+01:08:57,279 --> 01:09:00,290
+You can't use lock trees in 2D.
+
+1454
+01:09:00,290 --> 01:09:05,785
+So this problem is still open.
+
+1455
+01:09:05,785 --> 01:09:07,160
+Seems quite
+difficult because you
+
+1456
+01:09:07,160 --> 01:09:10,649
+can't build any infrastructure
+the stays around forever.
+
+1457
+01:09:10,649 --> 01:09:12,520
+Everything would
+have to fall apart
+
+1458
+01:09:12,520 --> 01:09:13,695
+if your machine terminates.
+
+1459
+01:09:13,695 --> 01:09:16,279
+
+1460
+01:09:16,279 --> 01:09:18,681
+Any questions?
+
+1461
+01:09:18,681 --> 01:09:20,430
+Wanted to talk about
+that for a long time.
+
+1462
+01:09:20,430 --> 01:09:21,846
+Now that we have
+interlock chains,
+
+1463
+01:09:21,846 --> 01:09:24,479
+you get to see a little bit
+behind the scenes of what's
+
+1464
+01:09:24,479 --> 01:09:25,189
+happening.
+
+1465
+01:09:25,189 --> 01:09:26,700
+If you want to see
+the full proof,
+
+1466
+01:09:26,700 --> 01:09:31,870
+check out that paper by
+[INAUDIBLE], [INAUDIBLE],
+
+1467
+01:09:31,870 --> 01:09:33,359
+and [INAUDIBLE].
+
+1468
+01:09:33,359 --> 01:09:37,790
+
+1469
+01:09:37,790 --> 01:09:38,310
+All right.
+
+1470
+01:09:38,310 --> 01:09:40,070
+That's it.
+

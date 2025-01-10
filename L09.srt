@@ -1,0 +1,7946 @@
+1
+0-1:59:59,500 --> 00:01:11,236
+
+2
+00:01:11,236 --> 00:01:12,110
+PROFESSOR: All right.
+
+3
+00:01:12,110 --> 00:01:14,550
+Let's get started.
+
+4
+00:01:14,550 --> 00:01:17,420
+So we're continuing on
+the theme of linkages.
+
+5
+00:01:17,420 --> 00:01:20,525
+And just a brief recollection
+from last time-- and also
+
+6
+00:01:20,525 --> 00:01:21,900
+changing definitions
+a little bit
+
+7
+00:01:21,900 --> 00:01:24,360
+and throwing away some
+details we won't need-- we
+
+8
+00:01:24,360 --> 00:01:28,230
+have the idea of a graph, which
+is just vertices and edges.
+
+9
+00:01:28,230 --> 00:01:31,040
+And then if we
+added edge lengths,
+
+10
+00:01:31,040 --> 00:01:33,090
+if we put a number
+on each of the edges,
+
+11
+00:01:33,090 --> 00:01:34,920
+we've got what we
+call the linkage.
+
+12
+00:01:34,920 --> 00:01:39,100
+And then if we actually embed
+that picture into the plane,
+
+13
+00:01:39,100 --> 00:01:41,910
+or into 3D, or whatever
+space we're working in,
+
+14
+00:01:41,910 --> 00:01:44,780
+into d-dimensional
+space, then we
+
+15
+00:01:44,780 --> 00:01:46,770
+call that a configuration
+of the linkage.
+
+16
+00:01:46,770 --> 00:01:49,450
+And in general, there might
+be many configurations
+
+17
+00:01:49,450 --> 00:01:50,540
+of one linkage.
+
+18
+00:01:50,540 --> 00:01:52,710
+If it's going to
+fold or move around,
+
+19
+00:01:52,710 --> 00:01:56,560
+there is infinitely many
+configurations of a linkage.
+
+20
+00:01:56,560 --> 00:01:59,080
+And what today is
+about is basically when
+
+21
+00:01:59,080 --> 00:02:02,060
+there's only one configuration,
+versus when there's many,
+
+22
+00:02:02,060 --> 00:02:04,110
+at least locally.
+
+23
+00:02:04,110 --> 00:02:06,075
+So this is the
+concept of rigidity.
+
+24
+00:02:06,075 --> 00:02:11,720
+
+25
+00:02:11,720 --> 00:02:18,670
+So if we have some
+linkage configuration--
+
+26
+00:02:18,670 --> 00:02:25,100
+some configuration
+of some linkage--
+
+27
+00:02:25,100 --> 00:02:29,510
+then we call it
+flexible if it can
+
+28
+00:02:29,510 --> 00:02:33,040
+move from that configuration
+in a non-trivial way.
+
+29
+00:02:33,040 --> 00:02:39,470
+
+30
+00:02:39,470 --> 00:02:44,430
+So we want a non-trivial
+motion starting
+
+31
+00:02:44,430 --> 00:02:45,430
+from that configuration.
+
+32
+00:02:45,430 --> 00:02:50,210
+
+33
+00:02:50,210 --> 00:02:53,880
+And you'll notice that in my
+definition of linkage here,
+
+34
+00:02:53,880 --> 00:02:56,050
+I did not specify that
+some of the vertices
+
+35
+00:02:56,050 --> 00:02:58,730
+could be pinned to the
+plane or pinned to 3D,
+
+36
+00:02:58,730 --> 00:03:00,740
+because we needed
+that a lot last time.
+
+37
+00:03:00,740 --> 00:03:07,440
+A bunch of our gadgets had fixed
+vertices-- pinned vertices.
+
+38
+00:03:07,440 --> 00:03:09,490
+I'm going to throw that
+away, and the price
+
+39
+00:03:09,490 --> 00:03:11,160
+I pay is that whatever
+linkage I build
+
+40
+00:03:11,160 --> 00:03:13,780
+can float around in my space.
+
+41
+00:03:13,780 --> 00:03:17,250
+And so I need to add this
+non-trivial specification
+
+42
+00:03:17,250 --> 00:03:23,520
+to say that it's not
+just a rigid motion.
+
+43
+00:03:23,520 --> 00:03:25,685
+It's not just a translation
+and/or rotation.
+
+44
+00:03:25,685 --> 00:03:29,740
+
+45
+00:03:29,740 --> 00:03:31,500
+That's rigid motion.
+
+46
+00:03:31,500 --> 00:03:34,130
+So you ignore translations
+and rotations, for example,
+
+47
+00:03:34,130 --> 00:03:35,101
+by pinning.
+
+48
+00:03:35,101 --> 00:03:36,600
+But you can also
+just see-- what are
+
+49
+00:03:36,600 --> 00:03:38,810
+all the motions I
+can do from here?
+
+50
+00:03:38,810 --> 00:03:42,820
+If it's just in 2D,
+if it's just the three
+
+51
+00:03:42,820 --> 00:03:45,520
+dimensions of I can
+translate in two ways,
+
+52
+00:03:45,520 --> 00:03:49,100
+and I can rotate in one way,
+then we don't call it flexible,
+
+53
+00:03:49,100 --> 00:03:49,990
+we call it rigid.
+
+54
+00:03:49,990 --> 00:03:59,450
+
+55
+00:03:59,450 --> 00:04:02,370
+And today is all about
+distinguishing rigid scenarios
+
+56
+00:04:02,370 --> 00:04:04,740
+from flexible scenarios.
+
+57
+00:04:04,740 --> 00:04:07,290
+And yesterday-- or
+last class-- was all
+
+58
+00:04:07,290 --> 00:04:09,729
+about making things
+flexible, and making
+
+59
+00:04:09,729 --> 00:04:11,270
+things flexible in
+an interesting way
+
+60
+00:04:11,270 --> 00:04:12,980
+so that we computed
+some polynomial.
+
+61
+00:04:12,980 --> 00:04:14,950
+Today, we're really
+interested in the case
+
+62
+00:04:14,950 --> 00:04:16,450
+where we can make things rigid.
+
+63
+00:04:16,450 --> 00:04:19,209
+There are some places,
+some situations,
+
+64
+00:04:19,209 --> 00:04:21,579
+where you want
+things to not move,
+
+65
+00:04:21,579 --> 00:04:23,260
+like you're building a building.
+
+66
+00:04:23,260 --> 00:04:24,760
+Unless you're really
+cool and you're
+
+67
+00:04:24,760 --> 00:04:26,320
+making a reconfigurable
+building,
+
+68
+00:04:26,320 --> 00:04:28,230
+you want it to not move.
+
+69
+00:04:28,230 --> 00:04:29,740
+You want it to be rigid.
+
+70
+00:04:29,740 --> 00:04:33,950
+And so some classic examples
+of this are the truss.
+
+71
+00:04:33,950 --> 00:04:38,290
+This is a standard planar
+truss of some nearby bridge.
+
+72
+00:04:38,290 --> 00:04:41,170
+I have another truss
+for the architects.
+
+73
+00:04:41,170 --> 00:04:47,920
+It's an octet truss-- or at
+least various sections of it
+
+74
+00:04:47,920 --> 00:04:49,030
+in the Brussels airport.
+
+75
+00:04:49,030 --> 00:04:51,363
+You see these a lot in airports,
+especially in ceilings.
+
+76
+00:04:51,363 --> 00:04:54,010
+And trusses all over the
+place, especially in bridges.
+
+77
+00:04:54,010 --> 00:04:56,590
+And they are rigid linkages.
+
+78
+00:04:56,590 --> 00:05:00,940
+You've got vertices,
+you've got edges.
+
+79
+00:05:00,940 --> 00:05:02,482
+In principle, they
+could hinge there,
+
+80
+00:05:02,482 --> 00:05:04,690
+though they're not usually
+designed to allow hinging.
+
+81
+00:05:04,690 --> 00:05:06,960
+But the point is even if
+they are allowed to hinge,
+
+82
+00:05:06,960 --> 00:05:11,210
+it will be a rigid 3D
+linkage configuration.
+
+83
+00:05:11,210 --> 00:05:13,080
+And these are very
+simple examples
+
+84
+00:05:13,080 --> 00:05:19,450
+we would like to generalize to
+understand the general picture.
+
+85
+00:05:19,450 --> 00:05:20,950
+Turns out, the
+general picture in 3D
+
+86
+00:05:20,950 --> 00:05:22,199
+is not really well understood.
+
+87
+00:05:22,199 --> 00:05:23,490
+It's quite complicated.
+
+88
+00:05:23,490 --> 00:05:26,510
+But in 2D, which is what
+we'll be working in today,
+
+89
+00:05:26,510 --> 00:05:28,510
+there's a very good answer,
+and it's very clean,
+
+90
+00:05:28,510 --> 00:05:31,380
+and you can characterize
+all the good rigid 2D
+
+91
+00:05:31,380 --> 00:05:33,200
+structures to some extent.
+
+92
+00:05:33,200 --> 00:05:37,600
+
+93
+00:05:37,600 --> 00:05:40,670
+Let me elaborate a little bit.
+
+94
+00:05:40,670 --> 00:05:43,750
+One annoying thing
+about rigidity
+
+95
+00:05:43,750 --> 00:05:54,730
+is that it depends on the
+configuration, not just
+
+96
+00:05:54,730 --> 00:05:56,205
+the linkage or the graph.
+
+97
+00:05:56,205 --> 00:06:00,440
+
+98
+00:06:00,440 --> 00:06:02,220
+So let me draw you a picture.
+
+99
+00:06:02,220 --> 00:06:05,150
+
+100
+00:06:05,150 --> 00:06:07,015
+Suppose we have a
+rigified square.
+
+101
+00:06:07,015 --> 00:06:10,240
+I'm going to work
+in two dimensions.
+
+102
+00:06:10,240 --> 00:06:11,100
+Add some triangles.
+
+103
+00:06:11,100 --> 00:06:12,080
+So this thing is rigid.
+
+104
+00:06:12,080 --> 00:06:14,350
+A bunch of triangles
+in the plane.
+
+105
+00:06:14,350 --> 00:06:20,420
+And let's say I do
+that, verses-- and I'm
+
+106
+00:06:20,420 --> 00:06:23,474
+going to allow crossings here.
+
+107
+00:06:23,474 --> 00:06:24,890
+It doesn't really
+matter too much.
+
+108
+00:06:24,890 --> 00:06:36,990
+
+109
+00:06:36,990 --> 00:06:39,930
+If I draw this right-- and
+I've done a little better.
+
+110
+00:06:39,930 --> 00:06:43,450
+It's easier when I have
+a grid-- my graph paper.
+
+111
+00:06:43,450 --> 00:06:45,150
+In this situation,
+the configuration
+
+112
+00:06:45,150 --> 00:06:47,850
+should be rigid, because
+this part is rigid,
+
+113
+00:06:47,850 --> 00:06:52,360
+and these three
+bars are held taut,
+
+114
+00:06:52,360 --> 00:06:54,020
+because these vertices
+are effectively
+
+115
+00:06:54,020 --> 00:06:56,100
+pinned to the rest
+of this framework.
+
+116
+00:06:56,100 --> 00:06:57,550
+And this is at full length.
+
+117
+00:06:57,550 --> 00:06:59,650
+You can't really hinge here.
+
+118
+00:06:59,650 --> 00:07:05,280
+Whereas if I flip this triangle
+through that vertical line,
+
+119
+00:07:05,280 --> 00:07:06,850
+flip that over, I
+get this triangle.
+
+120
+00:07:06,850 --> 00:07:08,850
+And I did the same thing
+for the other triangle.
+
+121
+00:07:08,850 --> 00:07:09,940
+I didn't have to.
+
+122
+00:07:09,940 --> 00:07:12,590
+But now, suddenly-- and you
+can't do that by a motion.
+
+123
+00:07:12,590 --> 00:07:14,410
+But if I consider this
+other configuration
+
+124
+00:07:14,410 --> 00:07:17,510
+where that's the case,
+then suddenly these guys,
+
+125
+00:07:17,510 --> 00:07:20,490
+which have exactly the same
+lengths as they did before,
+
+126
+00:07:20,490 --> 00:07:22,560
+have some slack, and
+now you can think
+
+127
+00:07:22,560 --> 00:07:26,380
+of this as a quadrilateral
+which can flex separately.
+
+128
+00:07:26,380 --> 00:07:29,860
+So this guy's flexible,
+and this guy's rigid.
+
+129
+00:07:29,860 --> 00:07:32,440
+
+130
+00:07:32,440 --> 00:07:36,140
+This is annoying,
+because we'd like
+
+131
+00:07:36,140 --> 00:07:42,586
+to-- think of a truss,
+or something like this.
+
+132
+00:07:42,586 --> 00:07:44,460
+You don't think about
+exactly how it's drawn.
+
+133
+00:07:44,460 --> 00:07:46,030
+You just think, oh, well,
+there's this structure.
+
+134
+00:07:46,030 --> 00:07:46,920
+It's got vertices.
+
+135
+00:07:46,920 --> 00:07:49,370
+It's like squares
+with diagonals.
+
+136
+00:07:49,370 --> 00:07:51,225
+Does it work if
+they're skewed squares?
+
+137
+00:07:51,225 --> 00:07:54,530
+
+138
+00:07:54,530 --> 00:07:56,560
+This presumably works.
+
+139
+00:07:56,560 --> 00:07:58,210
+We think, oh,
+triangles are rigid.
+
+140
+00:07:58,210 --> 00:08:00,262
+It shouldn't matter
+exactly how they're drawn.
+
+141
+00:08:00,262 --> 00:08:01,720
+And it turns out,
+most of the time,
+
+142
+00:08:01,720 --> 00:08:03,219
+it doesn't matter
+how they're drawn.
+
+143
+00:08:03,219 --> 00:08:05,210
+This is kind of a
+very special case,
+
+144
+00:08:05,210 --> 00:08:07,350
+and I want to
+formalize that notion
+
+145
+00:08:07,350 --> 00:08:10,740
+of "special case" and
+"most of the time."
+
+146
+00:08:10,740 --> 00:08:17,420
+Because in particular, if I
+gave you a particular linkage
+
+147
+00:08:17,420 --> 00:08:20,370
+configuration, and I
+ask you, is it rigid?
+
+148
+00:08:20,370 --> 00:08:30,750
+
+149
+00:08:30,750 --> 00:08:35,010
+As I mentioned in the last
+class, this is coNP-hard.
+
+150
+00:08:35,010 --> 00:08:37,570
+
+151
+00:08:37,570 --> 00:08:40,155
+So almost certainly
+there's no good algorithm
+
+152
+00:08:40,155 --> 00:08:42,130
+to tell you whether
+a given linkage
+
+153
+00:08:42,130 --> 00:08:46,090
+configuration like this--
+versus this-- is rigid.
+
+154
+00:08:46,090 --> 00:08:48,617
+That's disconcerting,
+because I want
+
+155
+00:08:48,617 --> 00:08:50,450
+to have a good
+characterization of rigidity.
+
+156
+00:08:50,450 --> 00:08:52,158
+And this is true, even
+in two dimensions.
+
+157
+00:08:52,158 --> 00:08:54,270
+
+158
+00:08:54,270 --> 00:08:57,310
+So we're going to change
+the problem a little bit
+
+159
+00:08:57,310 --> 00:09:00,317
+so suddenly it becomes easy.
+
+160
+00:09:00,317 --> 00:09:02,150
+We're going to be a
+little bit less precise.
+
+161
+00:09:02,150 --> 00:09:04,275
+We're not going be able to
+distinguish between this
+
+162
+00:09:04,275 --> 00:09:05,927
+and this, but almost
+all the time--
+
+163
+00:09:05,927 --> 00:09:08,010
+like if this thing just
+had a little bit of slack,
+
+164
+00:09:08,010 --> 00:09:09,235
+it would be flexible.
+
+165
+00:09:09,235 --> 00:09:11,360
+So we're going to ignore
+the fact that occasionally
+
+166
+00:09:11,360 --> 00:09:15,250
+this thing is taut, and most
+of the time, this picture
+
+167
+00:09:15,250 --> 00:09:17,910
+would be flexible most
+of the ways you draw it.
+
+168
+00:09:17,910 --> 00:09:22,310
+
+169
+00:09:22,310 --> 00:09:24,240
+All right.
+
+170
+00:09:24,240 --> 00:09:26,110
+This is the idea of
+generic rigidity.
+
+171
+00:09:26,110 --> 00:09:35,400
+
+172
+00:09:35,400 --> 00:09:37,210
+We've talked about
+generic situations
+
+173
+00:09:37,210 --> 00:09:39,930
+before in a single
+vertex piece patterns.
+
+174
+00:09:39,930 --> 00:09:42,230
+We said, well,
+generically, no two angles
+
+175
+00:09:42,230 --> 00:09:44,080
+are ever going to be
+the same if we just
+
+176
+00:09:44,080 --> 00:09:46,100
+sort of perturb
+everything a little bit.
+
+177
+00:09:46,100 --> 00:09:48,070
+We're going to take
+the same idea here.
+
+178
+00:09:48,070 --> 00:09:50,940
+And so, for example,
+no two edge lengths
+
+179
+00:09:50,940 --> 00:09:52,460
+are going to be
+the same, but we're
+
+180
+00:09:52,460 --> 00:09:55,190
+going to assume a lot more
+than that to make life easier.
+
+181
+00:09:55,190 --> 00:09:58,540
+
+182
+00:09:58,540 --> 00:10:03,310
+The general goal is to
+think about the graph-- not
+
+183
+00:10:03,310 --> 00:10:06,325
+the linkage, and not
+the configuration.
+
+184
+00:10:06,325 --> 00:10:10,490
+
+185
+00:10:10,490 --> 00:10:13,720
+I want to say that
+rigidity is usually
+
+186
+00:10:13,720 --> 00:10:14,790
+a property of the graph.
+
+187
+00:10:14,790 --> 00:10:22,230
+
+188
+00:10:22,230 --> 00:10:24,810
+Most the time, it doesn't matter
+what your edge lengths are,
+
+189
+00:10:24,810 --> 00:10:26,560
+it doesn't matter
+exactly how you draw it,
+
+190
+00:10:26,560 --> 00:10:28,420
+it just matters how
+things are connected.
+
+191
+00:10:28,420 --> 00:10:30,170
+Are they triangles?
+
+192
+00:10:30,170 --> 00:10:33,650
+What is that
+combinatorial structure?
+
+193
+00:10:33,650 --> 00:10:35,000
+The geometry falls out of it.
+
+194
+00:10:35,000 --> 00:10:40,650
+I need one term so I can talk
+about graphs in a realization.
+
+195
+00:10:40,650 --> 00:10:47,960
+
+196
+00:10:47,960 --> 00:10:49,975
+This is just shorthand.
+
+197
+00:10:49,975 --> 00:10:51,630
+It'll make my life a lot easier.
+
+198
+00:10:51,630 --> 00:10:55,630
+It's a configuration of
+a linkage of the graph.
+
+199
+00:10:55,630 --> 00:10:59,940
+
+200
+00:10:59,940 --> 00:11:01,334
+We have three levels.
+
+201
+00:11:01,334 --> 00:11:03,750
+The graph, which is just the
+combinatorial infrastructure,
+
+202
+00:11:03,750 --> 00:11:05,180
+linkage, where you add
+the edge lengths, and then
+
+203
+00:11:05,180 --> 00:11:06,910
+a configuration
+where you draw it.
+
+204
+00:11:06,910 --> 00:11:08,610
+I'm going to jump all
+the way to the end
+
+205
+00:11:08,610 --> 00:11:10,297
+and say, if I
+start with a graph,
+
+206
+00:11:10,297 --> 00:11:12,130
+I want to go all the
+way to a configuration.
+
+207
+00:11:12,130 --> 00:11:13,800
+That's a realization.
+
+208
+00:11:13,800 --> 00:11:16,510
+And so you can think
+of a realization
+
+209
+00:11:16,510 --> 00:11:18,100
+as just some mapping.
+
+210
+00:11:18,100 --> 00:11:21,270
+It looks exactly
+like a configuration.
+
+211
+00:11:21,270 --> 00:11:22,809
+Just forget about
+the edge lengths.
+
+212
+00:11:22,809 --> 00:11:24,600
+You can put the vertices
+wherever you want,
+
+213
+00:11:24,600 --> 00:11:26,183
+because you haven't
+said what the edge
+
+214
+00:11:26,183 --> 00:11:28,090
+lengths are supposed to be.
+
+215
+00:11:28,090 --> 00:11:30,710
+So by taking a graph and
+drawing it in the plane--
+
+216
+00:11:30,710 --> 00:11:33,169
+this is going to be our
+situation-- you can compute
+
+217
+00:11:33,169 --> 00:11:34,960
+what the edge lengths
+become, and then see,
+
+218
+00:11:34,960 --> 00:11:36,821
+does it flex given
+those edge lengths?
+
+219
+00:11:36,821 --> 00:11:38,320
+So as soon as you
+draw in the plane,
+
+220
+00:11:38,320 --> 00:11:39,570
+the edge lengths become fixed.
+
+221
+00:11:39,570 --> 00:11:42,070
+But before that, they're
+free to be whatever you want.
+
+222
+00:11:42,070 --> 00:11:43,960
+You just embed every
+vertex into the plane,
+
+223
+00:11:43,960 --> 00:11:46,550
+and you get a realization.
+
+224
+00:11:46,550 --> 00:11:48,120
+And now I want to
+define the notion
+
+225
+00:11:48,120 --> 00:11:52,300
+of a generic realization.
+
+226
+00:11:52,300 --> 00:11:57,970
+And this is a subtle notion, and
+it's a little tricky to define.
+
+227
+00:11:57,970 --> 00:11:59,622
+So I'm going to
+give the intuition.
+
+228
+00:11:59,622 --> 00:12:02,080
+And I will give a definition--
+we'll see another definition
+
+229
+00:12:02,080 --> 00:12:03,035
+next class, in fact.
+
+230
+00:12:03,035 --> 00:12:05,590
+
+231
+00:12:05,590 --> 00:12:12,030
+But it's a pretty intuitive
+notion, especially
+
+232
+00:12:12,030 --> 00:12:13,570
+the way I'll be using it.
+
+233
+00:12:13,570 --> 00:12:15,620
+I want to somehow
+avoid things that
+
+234
+00:12:15,620 --> 00:12:18,180
+are rare-- degenerate
+situations.
+
+235
+00:12:18,180 --> 00:12:21,620
+And mathematically, that means
+lower dimensional situations.
+
+236
+00:12:21,620 --> 00:12:24,930
+In general, a
+realization-- remember,
+
+237
+00:12:24,930 --> 00:12:34,220
+we can think of it as a point
+in d times n dimensional space.
+
+238
+00:12:34,220 --> 00:12:37,520
+If n is a number vertices,
+d is the dimension of space
+
+239
+00:12:37,520 --> 00:12:38,495
+that they live in.
+
+240
+00:12:38,495 --> 00:12:40,370
+Then we could just write
+down the coordinates
+
+241
+00:12:40,370 --> 00:12:41,840
+of every vertex separately.
+
+242
+00:12:41,840 --> 00:12:44,297
+And the realization
+space is just that.
+
+243
+00:12:44,297 --> 00:12:45,505
+You can do whatever you want.
+
+244
+00:12:45,505 --> 00:12:48,690
+
+245
+00:12:48,690 --> 00:12:53,240
+So we would like to throw away
+lower dimensional subspaces
+
+246
+00:12:53,240 --> 00:12:55,180
+of that that just
+make our life easier.
+
+247
+00:12:55,180 --> 00:13:00,500
+So for example, I'd like to say
+no three points are co-linear.
+
+248
+00:13:00,500 --> 00:13:05,390
+
+249
+00:13:05,390 --> 00:13:07,560
+So if I take three
+points in the plane,
+
+250
+00:13:07,560 --> 00:13:10,430
+it's pretty unlikely they
+lie on a common line.
+
+251
+00:13:10,430 --> 00:13:13,491
+It happens with probability
+zero if I had random points.
+
+252
+00:13:13,491 --> 00:13:14,990
+Even if I didn't
+have random points,
+
+253
+00:13:14,990 --> 00:13:16,865
+I just take arbitrary
+points and then perturb
+
+254
+00:13:16,865 --> 00:13:20,770
+them a tiny bit in a random
+neighborhood-- little epsilon
+
+255
+00:13:20,770 --> 00:13:24,730
+disk-- then with probability
+zero, they will be aligned.
+
+256
+00:13:24,730 --> 00:13:28,050
+So I can say a whole bunch of
+things like this, maybe no four
+
+257
+00:13:28,050 --> 00:13:34,500
+points con-cyclic, which
+means lies in a common circle.
+
+258
+00:13:34,500 --> 00:13:35,410
+You know, Latin.
+
+259
+00:13:35,410 --> 00:13:39,066
+
+260
+00:13:39,066 --> 00:13:42,500
+In 3D, you'd assume no
+four points are coplanar.
+
+261
+00:13:42,500 --> 00:13:43,720
+All these sorts of things.
+
+262
+00:13:43,720 --> 00:13:48,060
+In general, what
+we can throw away
+
+263
+00:13:48,060 --> 00:13:56,945
+is any non-trivial
+rational algebraic--
+
+264
+00:13:56,945 --> 00:13:59,065
+how many adjectives
+can I get in here?
+
+265
+00:13:59,065 --> 00:14:01,275
+I think that's all
+of them-- equation.
+
+266
+00:14:01,275 --> 00:14:08,730
+
+267
+00:14:08,730 --> 00:14:10,525
+You can, for example,
+write the fact
+
+268
+00:14:10,525 --> 00:14:12,240
+that three points
+lie in a common line
+
+269
+00:14:12,240 --> 00:14:15,380
+as a polynomial with
+integer coefficients--
+
+270
+00:14:15,380 --> 00:14:17,280
+or definitely
+rational coefficients.
+
+271
+00:14:17,280 --> 00:14:19,440
+And generally, you take
+any polynomial you want,
+
+272
+00:14:19,440 --> 00:14:21,720
+it explains some
+geometric property.
+
+273
+00:14:21,720 --> 00:14:24,510
+If it has rational coefficients,
+and it's nontrivial,
+
+274
+00:14:24,510 --> 00:14:27,800
+meaning that it's not always
+true-- so sometimes it's true,
+
+275
+00:14:27,800 --> 00:14:28,710
+sometimes it's false.
+
+276
+00:14:28,710 --> 00:14:31,550
+That's all I mean
+here-- then you
+
+277
+00:14:31,550 --> 00:14:34,660
+can just-- suppose
+that doesn't happen.
+
+278
+00:14:34,660 --> 00:14:36,560
+Because if you have
+an equation, that
+
+279
+00:14:36,560 --> 00:14:38,130
+describes a lower
+dimensional space.
+
+280
+00:14:38,130 --> 00:14:39,820
+You start with d
+times n dimensions.
+
+281
+00:14:39,820 --> 00:14:44,580
+If you add a constraint on the
+coordinates of some vertices--
+
+282
+00:14:44,580 --> 00:14:47,270
+over here we have
+all the coordinates
+
+283
+00:14:47,270 --> 00:14:48,310
+of all the vertices.
+
+284
+00:14:48,310 --> 00:14:49,560
+That's what we're thinking of.
+
+285
+00:14:49,560 --> 00:14:51,150
+You take any
+polynomial over those.
+
+286
+00:14:51,150 --> 00:14:52,870
+If that holds, then
+that was degenerate,
+
+287
+00:14:52,870 --> 00:14:54,644
+and you can throw that away.
+
+288
+00:14:54,644 --> 00:14:56,810
+And it may sound weird,
+because there are infinitely
+
+289
+00:14:56,810 --> 00:14:59,690
+many of these equations,
+but for the mathematicians,
+
+290
+00:14:59,690 --> 00:15:01,460
+they're only countably many.
+
+291
+00:15:01,460 --> 00:15:04,750
+So if you take these spaces,
+you take a whole bunch
+
+292
+00:15:04,750 --> 00:15:07,070
+of lower dimensional spaces
+times countable number,
+
+293
+00:15:07,070 --> 00:15:08,490
+it's still lower dimensional.
+
+294
+00:15:08,490 --> 00:15:10,614
+And so you can afford to
+throw away all this stuff.
+
+295
+00:15:10,614 --> 00:15:12,770
+If that doesn't make sense,
+don't worry about it.
+
+296
+00:15:12,770 --> 00:15:14,860
+I will tell you various
+times when we're just
+
+297
+00:15:14,860 --> 00:15:16,460
+assuming that we're generic.
+
+298
+00:15:16,460 --> 00:15:18,120
+It'll seem like magic,
+because whenever
+
+299
+00:15:18,120 --> 00:15:19,990
+I get into a situation I
+don't like, I'll just say, oh,
+
+300
+00:15:19,990 --> 00:15:20,948
+but that's not generic.
+
+301
+00:15:20,948 --> 00:15:22,060
+And we move on.
+
+302
+00:15:22,060 --> 00:15:25,490
+But this is the formal
+version that makes that safe.
+
+303
+00:15:25,490 --> 00:15:28,210
+We'll see another version
+that's a little more intuitive
+
+304
+00:15:28,210 --> 00:15:28,810
+next time.
+
+305
+00:15:28,810 --> 00:15:31,760
+But we need other concepts.
+
+306
+00:15:31,760 --> 00:15:34,924
+So this it implies that
+degenerate situations
+
+307
+00:15:34,924 --> 00:15:35,840
+are lower dimensional.
+
+308
+00:15:35,840 --> 00:15:40,360
+
+309
+00:15:40,360 --> 00:15:44,734
+And what other good
+facts do we have?
+
+310
+00:15:44,734 --> 00:15:46,150
+So lower dimensional
+means this is
+
+311
+00:15:46,150 --> 00:15:47,720
+going to happen with
+probability zero,
+
+312
+00:15:47,720 --> 00:15:49,470
+if you perturb your
+vertices a little bit.
+
+313
+00:15:49,470 --> 00:15:53,630
+
+314
+00:15:53,630 --> 00:15:56,570
+So in particular,
+this scenario-- this
+
+315
+00:15:56,570 --> 00:16:00,109
+is sort of the generic picture,
+where there's some slack here.
+
+316
+00:16:00,109 --> 00:16:02,150
+This is extremely rare,
+because in particular, we
+
+317
+00:16:02,150 --> 00:16:04,340
+have four points co-linear.
+
+318
+00:16:04,340 --> 00:16:06,710
+And that's not going to
+happen in a generic situation.
+
+319
+00:16:06,710 --> 00:16:09,380
+So we would say that this
+graph-- a bunch of triangles,
+
+320
+00:16:09,380 --> 00:16:12,090
+plus these three bars
+connecting the endpoints--
+
+321
+00:16:12,090 --> 00:16:14,470
+is generically flexible.
+
+322
+00:16:14,470 --> 00:16:17,540
+Most of the time,
+it will be flexible.
+
+323
+00:16:17,540 --> 00:16:29,232
+And fun fact is
+that for any graph--
+
+324
+00:16:29,232 --> 00:16:31,340
+and this is not
+obvious, but it's
+
+325
+00:16:31,340 --> 00:16:44,415
+true-- it's either generically
+rigid or generically flexible.
+
+326
+00:16:44,415 --> 00:16:54,080
+
+327
+00:16:54,080 --> 00:16:59,110
+Generically rigid means that all
+generic realizations are rigid.
+
+328
+00:16:59,110 --> 00:17:08,980
+
+329
+00:17:08,980 --> 00:17:15,649
+And generically flexible
+means all generic realizations
+
+330
+00:17:15,649 --> 00:17:17,190
+are flexible.
+
+331
+00:17:17,190 --> 00:17:19,790
+I'm going to start abbreviating,
+because these adjectives get
+
+332
+00:17:19,790 --> 00:17:25,380
+really long, especially
+with the adverb form.
+
+333
+00:17:25,380 --> 00:17:29,480
+So when I said
+rigidity is usually
+
+334
+00:17:29,480 --> 00:17:32,160
+a property of the graph,
+this is what I meant.
+
+335
+00:17:32,160 --> 00:17:35,055
+Either you take all the generic
+realizations of your graph,
+
+336
+00:17:35,055 --> 00:17:36,930
+and they're either all
+rigid or all flexible.
+
+337
+00:17:36,930 --> 00:17:39,221
+There's going to be the lower
+dimensional subsets where
+
+338
+00:17:39,221 --> 00:17:40,851
+maybe it's the other way around.
+
+339
+00:17:40,851 --> 00:17:42,350
+I'll give you some
+examples of that.
+
+340
+00:17:42,350 --> 00:17:45,550
+
+341
+00:17:45,550 --> 00:17:54,180
+So here-- what the
+heck did I draw?
+
+342
+00:17:54,180 --> 00:17:56,432
+That's funny.
+
+343
+00:17:56,432 --> 00:17:57,640
+One of the edges moved on me.
+
+344
+00:17:57,640 --> 00:18:00,280
+
+345
+00:18:00,280 --> 00:18:04,950
+If I take a picture
+like this-- OK,
+
+346
+00:18:04,950 --> 00:18:07,389
+this is flexible, because
+I have a quadrilateral here
+
+347
+00:18:07,389 --> 00:18:09,180
+that can flex independent
+of the triangles.
+
+348
+00:18:09,180 --> 00:18:13,330
+But suppose I add a bar between
+this vertex and this vertex
+
+349
+00:18:13,330 --> 00:18:17,710
+which somehow connects the two
+sides of that quadrilateral.
+
+350
+00:18:17,710 --> 00:18:20,445
+When this special
+case, the way I
+
+351
+00:18:20,445 --> 00:18:22,790
+drew, where these triangles
+are identical and this
+
+352
+00:18:22,790 --> 00:18:24,975
+is a nice rectangle,
+this thing is flexible.
+
+353
+00:18:24,975 --> 00:18:27,920
+
+354
+00:18:27,920 --> 00:18:33,790
+You take this triangle, and
+I want to flex the quad,
+
+355
+00:18:33,790 --> 00:18:39,430
+so if I rotate the whole thing
+like this-- I think it works.
+
+356
+00:18:39,430 --> 00:18:43,380
+
+357
+00:18:43,380 --> 00:18:45,617
+It twists at the same time.
+
+358
+00:18:45,617 --> 00:18:46,950
+Yeah, it's a little hard to see.
+
+359
+00:18:46,950 --> 00:18:49,000
+But because these
+guys are all parallel,
+
+360
+00:18:49,000 --> 00:18:52,211
+this thing can keep them
+all parallel, I think,
+
+361
+00:18:52,211 --> 00:18:53,710
+and keep all the
+distances the same.
+
+362
+00:18:53,710 --> 00:18:56,002
+AUDIENCE: All of them are
+parallel and the same length?
+
+363
+00:18:56,002 --> 00:18:57,834
+PROFESSOR: All parallel
+and the same length.
+
+364
+00:18:57,834 --> 00:18:59,200
+It's necessary for this to work.
+
+365
+00:18:59,200 --> 00:19:01,860
+But you take a generic drawing--
+if I perturb this at all,
+
+366
+00:19:01,860 --> 00:19:04,110
+it will be rigid.
+
+367
+00:19:04,110 --> 00:19:13,774
+so this is rarely flexible,
+but generically it's rigid.
+
+368
+00:19:13,774 --> 00:19:15,315
+And I have an example
+of the reverse.
+
+369
+00:19:15,315 --> 00:19:26,790
+
+370
+00:19:26,790 --> 00:19:30,960
+The way I've drawn this, where
+all these guys in extension
+
+371
+00:19:30,960 --> 00:19:34,700
+meet up, and all these guys
+are parallel, and so on,
+
+372
+00:19:34,700 --> 00:19:36,340
+you can check--
+it's a little hard
+
+373
+00:19:36,340 --> 00:19:40,160
+to see-- but it's rarely rigid.
+
+374
+00:19:40,160 --> 00:19:44,445
+In this case it's rigid, but
+generically, it's flexible.
+
+375
+00:19:44,445 --> 00:19:48,880
+
+376
+00:19:48,880 --> 00:19:50,430
+I wouldn't take this on faith.
+
+377
+00:19:50,430 --> 00:19:54,690
+For me to check this, I had
+to constructed in Cinderella,
+
+378
+00:19:54,690 --> 00:19:55,940
+and then see that it moves.
+
+379
+00:19:55,940 --> 00:19:57,690
+And when these things
+are almost parallel,
+
+380
+00:19:57,690 --> 00:19:58,950
+it moves just a little bit.
+
+381
+00:19:58,950 --> 00:20:00,575
+And you can see that
+in the limit, when
+
+382
+00:20:00,575 --> 00:20:04,660
+all these things line up
+nicely, it doesn't move at all.
+
+383
+00:20:04,660 --> 00:20:06,650
+The point is that there
+are these exceptions.
+
+384
+00:20:06,650 --> 00:20:08,580
+That's all you need to believe.
+
+385
+00:20:08,580 --> 00:20:11,495
+But most the time, we're
+going to get the right answer.
+
+386
+00:20:11,495 --> 00:20:12,870
+And so, the rest
+of this class is
+
+387
+00:20:12,870 --> 00:20:14,760
+about characterizing when
+a graph is generically
+
+388
+00:20:14,760 --> 00:20:16,110
+rigid or generically flexible.
+
+389
+00:20:16,110 --> 00:20:17,610
+It's a nice problem,
+because it just
+
+390
+00:20:17,610 --> 00:20:19,290
+depends on the
+combinatorial structure,
+
+391
+00:20:19,290 --> 00:20:21,290
+but occasionally, it will
+give the wrong answer.
+
+392
+00:20:21,290 --> 00:20:24,090
+If you've set things up
+with very special geometry,
+
+393
+00:20:24,090 --> 00:20:25,490
+it might be the
+other way around.
+
+394
+00:20:25,490 --> 00:20:25,989
+Question?
+
+395
+00:20:25,989 --> 00:20:30,422
+AUDIENCE: Is it fair to think
+the rigidity is happening right
+
+396
+00:20:30,422 --> 00:20:32,920
+before it no longer works?
+
+397
+00:20:32,920 --> 00:20:33,770
+PROFESSOR: Yeah.
+
+398
+00:20:33,770 --> 00:20:34,956
+Right.
+
+399
+00:20:34,956 --> 00:20:36,580
+The rigidity is kind
+of happening right
+
+400
+00:20:36,580 --> 00:20:37,420
+before it breaks.
+
+401
+00:20:37,420 --> 00:20:39,630
+In some sense, there is a
+nontrivial motion there,
+
+402
+00:20:39,630 --> 00:20:42,240
+it just happens
+to be super short.
+
+403
+00:20:42,240 --> 00:20:44,060
+It's hard to define
+that formally,
+
+404
+00:20:44,060 --> 00:20:46,080
+but intuitively, that's
+what's happening.
+
+405
+00:20:46,080 --> 00:20:51,210
+And you can think of this thing
+as being a little bit wobbly,
+
+406
+00:20:51,210 --> 00:20:53,410
+but not technically flexible.
+
+407
+00:20:53,410 --> 00:20:55,970
+There's actually a formal
+notion of wobbly in the rigidity
+
+408
+00:20:55,970 --> 00:21:02,040
+literature, which we probably
+will talk about next class.
+
+409
+00:21:02,040 --> 00:21:03,510
+Would this be wobbly?
+
+410
+00:21:03,510 --> 00:21:04,130
+Probably.
+
+411
+00:21:04,130 --> 00:21:06,820
+I'd have to think about it.
+
+412
+00:21:06,820 --> 00:21:08,410
+Wobbly is a computable notion.
+
+413
+00:21:08,410 --> 00:21:10,010
+It's nice.
+
+414
+00:21:10,010 --> 00:21:12,400
+So rigidity theory is
+actually pretty old.
+
+415
+00:21:12,400 --> 00:21:15,650
+In the mechanical, structural
+engineering worlds,
+
+416
+00:21:15,650 --> 00:21:21,410
+it goes back to Cremona
+In the 17th, 18th century.
+
+417
+00:21:21,410 --> 00:21:22,890
+The mathematics
+even is pretty old.
+
+418
+00:21:22,890 --> 00:21:28,020
+The next big theorem we'll
+talk about is from 1911.
+
+419
+00:21:28,020 --> 00:21:30,970
+It's probably one of the
+earliest formal mathematical
+
+420
+00:21:30,970 --> 00:21:34,780
+treatments, and it started to
+address exactly this issue.
+
+421
+00:21:34,780 --> 00:21:36,550
+In two dimensions,
+which graphs are rigid,
+
+422
+00:21:36,550 --> 00:21:39,920
+which are flexible
+in the generic sense?
+
+423
+00:21:39,920 --> 00:21:44,470
+It's become pretty popular and
+interesting in the last 10,
+
+424
+00:21:44,470 --> 00:21:49,230
+20 years, and a
+lot more action--
+
+425
+00:21:49,230 --> 00:21:50,900
+a lot more theorems and whatnot.
+
+426
+00:21:50,900 --> 00:21:55,060
+Today we're going to talk
+mostly about old things.
+
+427
+00:21:55,060 --> 00:21:59,130
+Next class we'll do some newer
+things in the rigidity world.
+
+428
+00:21:59,130 --> 00:22:01,370
+I got interested in rigidity
+because it turned out
+
+429
+00:22:01,370 --> 00:22:05,227
+to be really important
+for folding linkages.
+
+430
+00:22:05,227 --> 00:22:07,060
+Not just telling whether
+a linkage is rigid,
+
+431
+00:22:07,060 --> 00:22:10,670
+which is important for things
+like building rigid structures,
+
+432
+00:22:10,670 --> 00:22:13,320
+but for actually folding
+things and showing
+
+433
+00:22:13,320 --> 00:22:15,870
+that you can fold the linkage
+from any configuration
+
+434
+00:22:15,870 --> 00:22:16,890
+to any other.
+
+435
+00:22:16,890 --> 00:22:19,910
+Turns out rigidity is
+really useful for that.
+
+436
+00:22:19,910 --> 00:22:22,230
+And that's not at all obvious.
+
+437
+00:22:22,230 --> 00:22:26,180
+It's kind of a surprise,
+and a fun surprise.
+
+438
+00:22:26,180 --> 00:22:27,860
+We'll be talking
+about that next class.
+
+439
+00:22:27,860 --> 00:22:30,360
+Today, sort of classic
+stuff-- understanding
+
+440
+00:22:30,360 --> 00:22:33,320
+when 2D graphs are rigid.
+
+441
+00:22:33,320 --> 00:22:35,180
+I'll give you an idea
+why 3D is much harder.
+
+442
+00:22:35,180 --> 00:22:37,800
+
+443
+00:22:37,800 --> 00:22:41,770
+OK, we need one more notion.
+
+444
+00:22:41,770 --> 00:22:45,660
+This is a real long-winded
+thing-- minimally
+
+445
+00:22:45,660 --> 00:22:51,940
+generically rigid graph.
+
+446
+00:22:51,940 --> 00:22:54,850
+
+447
+00:22:54,850 --> 00:22:56,730
+So the new addition
+here is minimally.
+
+448
+00:22:56,730 --> 00:23:04,210
+This is going to be some
+generically rigid graph,
+
+449
+00:23:04,210 --> 00:23:05,890
+and it also has
+the property that
+
+450
+00:23:05,890 --> 00:23:12,720
+removing any edge makes the
+graph generically flexible.
+
+451
+00:23:12,720 --> 00:23:18,572
+
+452
+00:23:18,572 --> 00:23:20,030
+So it's minimal in
+the sense that I
+
+453
+00:23:20,030 --> 00:23:24,050
+can't get rid of any edges and
+still be generically rigid.
+
+454
+00:23:24,050 --> 00:23:26,140
+So the idea is,
+let's characterize
+
+455
+00:23:26,140 --> 00:23:27,650
+minimally generically
+rigid graphs.
+
+456
+00:23:27,650 --> 00:23:30,520
+If I can characterize those,
+then the generically rigid ones
+
+457
+00:23:30,520 --> 00:23:32,254
+are just those plus
+some more edges.
+
+458
+00:23:32,254 --> 00:23:33,920
+You could throw in
+extra edges-- it only
+
+459
+00:23:33,920 --> 00:23:34,919
+makes things more rigid.
+
+460
+00:23:34,919 --> 00:23:36,530
+It's more constraints.
+
+461
+00:23:36,530 --> 00:23:39,060
+But I'm really interested
+in the boundary
+
+462
+00:23:39,060 --> 00:23:41,680
+between generically region
+and generically flexible,
+
+463
+00:23:41,680 --> 00:23:44,240
+and this is exactly the
+boundary on the rigid side--
+
+464
+00:23:44,240 --> 00:23:45,180
+just barely rigid.
+
+465
+00:23:45,180 --> 00:23:48,480
+
+466
+00:23:48,480 --> 00:23:54,820
+So first thing-- if you've
+done structural engineering,
+
+467
+00:23:54,820 --> 00:23:59,500
+this will start to
+look familiar-- is
+
+468
+00:23:59,500 --> 00:24:03,450
+how many edges should a
+minimally generically rigid
+
+469
+00:24:03,450 --> 00:24:04,800
+graph have?
+
+470
+00:24:04,800 --> 00:24:08,480
+And we can think of this in
+a very intuitive way, which
+
+471
+00:24:08,480 --> 00:24:11,370
+is-- let's see.
+
+472
+00:24:11,370 --> 00:24:14,620
+If I don't have any
+edges, every vertex
+
+473
+00:24:14,620 --> 00:24:16,269
+can float around separately.
+
+474
+00:24:16,269 --> 00:24:17,810
+So the number of
+degrees of freedom--
+
+475
+00:24:17,810 --> 00:24:22,160
+the dimensionality of my
+realization space, in fact--
+
+476
+00:24:22,160 --> 00:24:24,750
+is in two dimensions
+two times m.
+
+477
+00:24:24,750 --> 00:24:27,590
+I'm going to do to 2D first.
+
+478
+00:24:27,590 --> 00:24:30,732
+Every vertex has two
+degrees of freedom.
+
+479
+00:24:30,732 --> 00:24:33,190
+Now I would like to reduce the
+number of degrees of freedom
+
+480
+00:24:33,190 --> 00:24:34,890
+to what number?
+
+481
+00:24:34,890 --> 00:24:37,740
+
+482
+00:24:37,740 --> 00:24:38,690
+AUDIENCE: Zero.
+
+483
+00:24:38,690 --> 00:24:39,460
+PROFESSOR: Zero.
+
+484
+00:24:39,460 --> 00:24:42,673
+It's often a good answer, but
+sadly not the right one here.
+
+485
+00:24:42,673 --> 00:24:43,345
+AUDIENCE: Two.
+
+486
+00:24:43,345 --> 00:24:43,970
+PROFESSOR: Two.
+
+487
+00:24:43,970 --> 00:24:45,440
+Close.
+
+488
+00:24:45,440 --> 00:24:46,220
+AUDIENCE: Three.
+
+489
+00:24:46,220 --> 00:24:47,060
+PROFESSOR: Three.
+
+490
+00:24:47,060 --> 00:24:47,889
+Right guess.
+
+491
+00:24:47,889 --> 00:24:49,555
+We'll just keep trying
+all the integers.
+
+492
+00:24:49,555 --> 00:24:52,217
+
+493
+00:24:52,217 --> 00:24:53,800
+I mentioned this at
+the very beginning
+
+494
+00:24:53,800 --> 00:24:55,389
+that if the best
+we could hope for
+
+495
+00:24:55,389 --> 00:24:57,180
+is that there are three
+degrees of freedom,
+
+496
+00:24:57,180 --> 00:24:59,388
+we'll never be able to get
+rid of the two translation
+
+497
+00:24:59,388 --> 00:25:02,530
+degrees and the one rotation
+degree in two dimensions.
+
+498
+00:25:02,530 --> 00:25:06,870
+In general, it is d
+times d plus 1 over 2
+
+499
+00:25:06,870 --> 00:25:11,630
+is the number of dimensions of
+rigid motions in d dimensions.
+
+500
+00:25:11,630 --> 00:25:14,250
+And here we start with dn.
+
+501
+00:25:14,250 --> 00:25:16,720
+So that's in d dimensions.
+
+502
+00:25:16,720 --> 00:25:19,060
+This is really how many
+edges you should have,
+
+503
+00:25:19,060 --> 00:25:22,650
+because if I have
+exactly 2n minus 3 edges,
+
+504
+00:25:22,650 --> 00:25:24,900
+I will have started with
+2n degrees of freedom.
+
+505
+00:25:24,900 --> 00:25:27,730
+Every edge that I
+add is one equation,
+
+506
+00:25:27,730 --> 00:25:30,160
+so it should reduce
+my dimension by one
+
+507
+00:25:30,160 --> 00:25:33,080
+in the generic sense--
+it's a generic case--
+
+508
+00:25:33,080 --> 00:25:35,420
+and the best I can hope for
+is to get down to three.
+
+509
+00:25:35,420 --> 00:25:37,810
+If you put in more edges,
+you won't get any more rigid.
+
+510
+00:25:37,810 --> 00:25:41,080
+I mean, you'll still be rigid,
+but if I want the minimal case,
+
+511
+00:25:41,080 --> 00:25:43,520
+this is really the
+best I should hope for.
+
+512
+00:25:43,520 --> 00:25:45,400
+And this is just a rough sketch.
+
+513
+00:25:45,400 --> 00:25:48,030
+This is proved more
+formally in the notes here,
+
+514
+00:25:48,030 --> 00:25:50,640
+but this really
+is a formal thing.
+
+515
+00:25:50,640 --> 00:25:53,300
+Again, if you take some
+polynomial equation,
+
+516
+00:25:53,300 --> 00:25:56,660
+most of the time
+it's going to define
+
+517
+00:25:56,660 --> 00:25:59,870
+a space that is one
+dimension lower.
+
+518
+00:25:59,870 --> 00:26:03,110
+So in the generic situation,
+every equation you add
+
+519
+00:26:03,110 --> 00:26:05,562
+will remove exactly
+one degree of freedom.
+
+520
+00:26:05,562 --> 00:26:07,770
+There are rare scenarios
+where it doesn't remove any,
+
+521
+00:26:07,770 --> 00:26:10,967
+and they're rare scenarios
+where it removes more than one,
+
+522
+00:26:10,967 --> 00:26:12,550
+and I have some
+pictures of them here.
+
+523
+00:26:12,550 --> 00:26:15,506
+But most of the
+time, this is right.
+
+524
+00:26:15,506 --> 00:26:17,130
+And we are in the
+generic case, so most
+
+525
+00:26:17,130 --> 00:26:19,950
+the time is all we need.
+
+526
+00:26:19,950 --> 00:26:21,500
+So this gives us an idea.
+
+527
+00:26:21,500 --> 00:26:25,190
+And about how many people have
+heard of 2n minus 3 before
+
+528
+00:26:25,190 --> 00:26:27,510
+in this structural
+engineering context?
+
+529
+00:26:27,510 --> 00:26:29,400
+A few.
+
+530
+00:26:29,400 --> 00:26:31,270
+And sometimes, people
+end the story there.
+
+531
+00:26:31,270 --> 00:26:33,904
+But this is not enough
+to be generically rigid.
+
+532
+00:26:33,904 --> 00:26:36,195
+This is a necessary condition,
+but it's not sufficient.
+
+533
+00:26:36,195 --> 00:26:38,700
+
+534
+00:26:38,700 --> 00:26:41,182
+And you can check
+all these examples.
+
+535
+00:26:41,182 --> 00:26:42,220
+It should match up.
+
+536
+00:26:42,220 --> 00:26:43,470
+I haven't checked them myself.
+
+537
+00:26:43,470 --> 00:26:57,330
+
+538
+00:26:57,330 --> 00:26:59,140
+All right.
+
+539
+00:26:59,140 --> 00:27:01,250
+Let's start
+characterizing this thing.
+
+540
+00:27:01,250 --> 00:27:11,140
+
+541
+00:27:11,140 --> 00:27:13,950
+We're going to see two
+characterizations of minimally
+
+542
+00:27:13,950 --> 00:27:17,120
+generically rigid graphs.
+
+543
+00:27:17,120 --> 00:27:20,690
+First one is very intuitive,
+nice to work with by hand,
+
+544
+00:27:20,690 --> 00:27:22,994
+but doesn't-- at least
+as far as I can tell,
+
+545
+00:27:22,994 --> 00:27:24,410
+it doesn't turn
+into an algorithm.
+
+546
+00:27:24,410 --> 00:27:29,870
+I think we've tried in
+past years, but it has not.
+
+547
+00:27:29,870 --> 00:27:33,160
+And the other one
+is more algorithmic,
+
+548
+00:27:33,160 --> 00:27:35,250
+but a little bit hard to intuit.
+
+549
+00:27:35,250 --> 00:27:52,880
+
+550
+00:27:52,880 --> 00:27:54,620
+So this is what both
+theorems look like.
+
+551
+00:27:54,620 --> 00:27:56,453
+A graph is minimally
+generically rigid in 2D
+
+552
+00:27:56,453 --> 00:28:04,620
+if and only if-- for Henneberg,
+this is from the 1911 result--
+
+553
+00:28:04,620 --> 00:28:08,040
+it can be built.
+
+554
+00:28:08,040 --> 00:28:24,776
+
+555
+00:28:24,776 --> 00:28:25,400
+Oh, by the way.
+
+556
+00:28:25,400 --> 00:28:27,535
+Maybe the reason people
+haven't seen 2n minus three
+
+557
+00:28:27,535 --> 00:28:29,160
+is because they're
+used to the 3D case.
+
+558
+00:28:29,160 --> 00:28:30,410
+There it's 2n minus 6.
+
+559
+00:28:30,410 --> 00:28:33,110
+How many people have
+seen 3n minus 6?
+
+560
+00:28:33,110 --> 00:28:33,790
+Same people.
+
+561
+00:28:33,790 --> 00:28:35,280
+All right.
+
+562
+00:28:35,280 --> 00:28:36,890
+Thought I'd try.
+
+563
+00:28:36,890 --> 00:28:38,737
+All right.
+
+564
+00:28:38,737 --> 00:28:40,570
+You guys should take
+structural engineering.
+
+565
+00:28:40,570 --> 00:28:47,870
+
+566
+00:28:47,870 --> 00:28:50,270
+So this is the form
+of the theorem.
+
+567
+00:28:50,270 --> 00:28:53,100
+The idea is we're starting
+with a single edge connecting
+
+568
+00:28:53,100 --> 00:28:56,110
+two vertices, which is
+minimally generically rigid.
+
+569
+00:28:56,110 --> 00:28:58,460
+All it can do is
+rotate and translate.
+
+570
+00:28:58,460 --> 00:29:00,840
+And the claim is whatever
+you want to build,
+
+571
+00:29:00,840 --> 00:29:06,490
+I can build it using just
+two types of operations.
+
+572
+00:29:06,490 --> 00:29:11,230
+First type is I take something
+that I've already built.
+
+573
+00:29:11,230 --> 00:29:14,340
+I add one new vertex,
+and I attach it
+
+574
+00:29:14,340 --> 00:29:18,030
+to two existing vertices.
+
+575
+00:29:18,030 --> 00:29:20,390
+So everything in
+the circle is old,
+
+576
+00:29:20,390 --> 00:29:24,714
+and the new thing is that
+vertex and those two guys.
+
+577
+00:29:24,714 --> 00:29:26,784
+AUDIENCE: Everything
+is old and rigid.
+
+578
+00:29:26,784 --> 00:29:27,450
+PROFESSOR: Yeah.
+
+579
+00:29:27,450 --> 00:29:29,116
+This is something
+that you could already
+
+580
+00:29:29,116 --> 00:29:31,322
+build from this-- I
+mean, in particular,
+
+581
+00:29:31,322 --> 00:29:33,030
+that will be minimally
+generically rigid.
+
+582
+00:29:33,030 --> 00:29:35,500
+But that's not what
+we're saying right now.
+
+583
+00:29:35,500 --> 00:29:37,800
+You start from the edge, and
+you just keep doing this.
+
+584
+00:29:37,800 --> 00:29:40,530
+So I can turn it into a
+triangle, for example.
+
+585
+00:29:40,530 --> 00:29:43,000
+Just keep taking things that
+I already know how to build,
+
+586
+00:29:43,000 --> 00:29:46,230
+add one vertex and two edges.
+
+587
+00:29:46,230 --> 00:29:48,100
+The other type of
+operation, I take
+
+588
+00:29:48,100 --> 00:29:50,160
+something I've already built.
+
+589
+00:29:50,160 --> 00:29:54,720
+I take three of the
+vertices in there,
+
+590
+00:29:54,720 --> 00:30:00,510
+and there's already an edge
+between them-- at least one.
+
+591
+00:30:00,510 --> 00:30:02,540
+There might be more.
+
+592
+00:30:02,540 --> 00:30:07,860
+And I add three edges
+connecting to a new vertex,
+
+593
+00:30:07,860 --> 00:30:12,300
+and I delete that old edge.
+
+594
+00:30:12,300 --> 00:30:16,630
+So I add three, I remove one.
+
+595
+00:30:16,630 --> 00:30:18,460
+Either I add two
+and remove zero,
+
+596
+00:30:18,460 --> 00:30:20,384
+or I add three and remove one.
+
+597
+00:30:20,384 --> 00:30:22,050
+This should make
+sense, because if we're
+
+598
+00:30:22,050 --> 00:30:25,350
+going to get about
+two edges per vertex,
+
+599
+00:30:25,350 --> 00:30:27,570
+this is just the starting case.
+
+600
+00:30:27,570 --> 00:30:29,820
+If I want two edges
+per vertex, I really
+
+601
+00:30:29,820 --> 00:30:33,739
+should only be adding two edges
+for every vertex that I add.
+
+602
+00:30:33,739 --> 00:30:35,280
+So these are two
+things you could do.
+
+603
+00:30:35,280 --> 00:30:37,154
+And you could imagine
+a more complicated ones
+
+604
+00:30:37,154 --> 00:30:38,910
+where I add four
+edges, remove two.
+
+605
+00:30:38,910 --> 00:30:40,520
+You don't have to
+worry about that.
+
+606
+00:30:40,520 --> 00:30:43,054
+You only have to worry
+about these two scenarios.
+
+607
+00:30:43,054 --> 00:30:44,470
+That's enough to
+build everything.
+
+608
+00:30:44,470 --> 00:30:47,960
+
+609
+00:30:47,960 --> 00:30:55,770
+Maybe we can do an example
+before we prove this theorem.
+
+610
+00:30:55,770 --> 00:30:58,026
+I'm not going to
+prove all the parts.
+
+611
+00:30:58,026 --> 00:30:59,150
+I'm going to give a sketch.
+
+612
+00:30:59,150 --> 00:31:03,460
+
+613
+00:31:03,460 --> 00:31:06,350
+In particular, to prove
+it, I need technology
+
+614
+00:31:06,350 --> 00:31:08,040
+that we'll develop next class.
+
+615
+00:31:08,040 --> 00:31:10,750
+So it's a little hard to
+do in a self-contained way.
+
+616
+00:31:10,750 --> 00:31:12,375
+But let's start with
+an easy example.
+
+617
+00:31:12,375 --> 00:31:18,137
+
+618
+00:31:18,137 --> 00:31:19,220
+You may remember this one.
+
+619
+00:31:19,220 --> 00:31:22,090
+When I drew everything
+parallel and the triangles
+
+620
+00:31:22,090 --> 00:31:24,860
+were identical, then
+this thing was flexible.
+
+621
+00:31:24,860 --> 00:31:27,440
+But most of the time,
+generically, this is rigid,
+
+622
+00:31:27,440 --> 00:31:30,865
+and we can prove that by
+doing these operations.
+
+623
+00:31:30,865 --> 00:31:34,180
+
+624
+00:31:34,180 --> 00:31:37,400
+So somehow I start with an edge.
+
+625
+00:31:37,400 --> 00:31:39,629
+I have to do operations
+to end up here.
+
+626
+00:31:39,629 --> 00:31:40,920
+That's a little hard to-- yeah.
+
+627
+00:31:40,920 --> 00:31:42,202
+Question.
+
+628
+00:31:42,202 --> 00:31:43,822
+AUDIENCE: Does the
+removed edge have
+
+629
+00:31:43,822 --> 00:31:46,829
+to be between two of
+the three vertices?
+
+630
+00:31:46,829 --> 00:31:49,120
+PROFESSOR: The removed edge
+has to be among those three
+
+631
+00:31:49,120 --> 00:31:49,965
+vertices.
+
+632
+00:31:49,965 --> 00:31:51,340
+And there might
+be more than one.
+
+633
+00:31:51,340 --> 00:31:52,756
+You would just
+remove one of them.
+
+634
+00:31:52,756 --> 00:31:54,890
+You get to remove
+whichever one you want.
+
+635
+00:31:54,890 --> 00:31:57,280
+Good question.
+
+636
+00:31:57,280 --> 00:32:02,040
+So if we were lucky
+and adventurous,
+
+637
+00:32:02,040 --> 00:32:05,710
+we could just try going here
+and hope that we end up there.
+
+638
+00:32:05,710 --> 00:32:08,554
+But we don't want to draw all
+the possible things we could
+
+639
+00:32:08,554 --> 00:32:09,970
+make, because
+that's all minimally
+
+640
+00:32:09,970 --> 00:32:11,420
+generically rigid graphs.
+
+641
+00:32:11,420 --> 00:32:14,330
+It's a lot easier
+to think backwards,
+
+642
+00:32:14,330 --> 00:32:17,350
+as often the case in puzzles.
+
+643
+00:32:17,350 --> 00:32:22,500
+If I want to make this, what was
+the last operation that I did?
+
+644
+00:32:22,500 --> 00:32:25,050
+It must have been
+one of these two.
+
+645
+00:32:25,050 --> 00:32:26,920
+And every vertex here
+has degree three,
+
+646
+00:32:26,920 --> 00:32:28,710
+has three incident edges.
+
+647
+00:32:28,710 --> 00:32:32,072
+So probably it was
+a Type II operation.
+
+648
+00:32:32,072 --> 00:32:34,030
+So there's going to be
+a Type II operation that
+
+649
+00:32:34,030 --> 00:32:35,440
+results in this thing.
+
+650
+00:32:35,440 --> 00:32:37,532
+Let's say, I don't
+know, this vertex.
+
+651
+00:32:37,532 --> 00:32:39,490
+And here I still have to
+be a little bit lucky,
+
+652
+00:32:39,490 --> 00:32:42,520
+but it's not quite as lucky.
+
+653
+00:32:42,520 --> 00:32:50,090
+OK so I'm going to
+try not to cheat here.
+
+654
+00:32:50,090 --> 00:32:52,850
+So we remove that
+vertex, and we also
+
+655
+00:32:52,850 --> 00:32:56,000
+remove some edge
+among these guys.
+
+656
+00:32:56,000 --> 00:33:01,031
+So I'm going to guess
+that I removed that edge.
+
+657
+00:33:01,031 --> 00:33:03,510
+I think that'll work.
+
+658
+00:33:03,510 --> 00:33:04,470
+I have to be careful.
+
+659
+00:33:04,470 --> 00:33:07,582
+I could have removed this edge.
+
+660
+00:33:07,582 --> 00:33:08,415
+There are two cases.
+
+661
+00:33:08,415 --> 00:33:11,190
+
+662
+00:33:11,190 --> 00:33:13,990
+I'll explain later what
+we need to check here.
+
+663
+00:33:13,990 --> 00:33:16,330
+Well, now I see a
+nice Type I operation.
+
+664
+00:33:16,330 --> 00:33:20,000
+I'll just get rid
+of that vertex.
+
+665
+00:33:20,000 --> 00:33:21,040
+Good.
+
+666
+00:33:21,040 --> 00:33:22,620
+So Type I operation.
+
+667
+00:33:22,620 --> 00:33:28,930
+I'm left with this, and I see
+two more Type I operations.
+
+668
+00:33:28,930 --> 00:33:30,280
+I'll do them one at a time.
+
+669
+00:33:30,280 --> 00:33:38,340
+
+670
+00:33:38,340 --> 00:33:40,645
+Ta da.
+
+671
+00:33:40,645 --> 00:33:41,520
+I think that's right.
+
+672
+00:33:41,520 --> 00:33:43,080
+We can play it forwards
+just to double check,
+
+673
+00:33:43,080 --> 00:33:44,204
+but I started with an edge.
+
+674
+00:33:44,204 --> 00:33:46,630
+I added one vertex connected
+to the existing two.
+
+675
+00:33:46,630 --> 00:33:49,580
+I added another vertex
+connecting to two existing.
+
+676
+00:33:49,580 --> 00:33:51,970
+I added another vertex
+connected to two existing.
+
+677
+00:33:51,970 --> 00:33:55,150
+And then the tricky one--
+I added this vertex here,
+
+678
+00:33:55,150 --> 00:33:59,330
+I connected it to these three,
+and I removed this edge.
+
+679
+00:33:59,330 --> 00:34:02,110
+So because this works
+forwards, this theorem
+
+680
+00:34:02,110 --> 00:34:04,380
+tells us that graph is
+minimally generically rigid.
+
+681
+00:34:04,380 --> 00:34:06,317
+Now we have a way to test.
+
+682
+00:34:06,317 --> 00:34:07,900
+Now, the algorithm
+is a little tricky,
+
+683
+00:34:07,900 --> 00:34:10,089
+because I had a choice here.
+
+684
+00:34:10,089 --> 00:34:11,380
+In this case, it didn't matter.
+
+685
+00:34:11,380 --> 00:34:12,963
+In the notes, there's
+an example where
+
+686
+00:34:12,963 --> 00:34:15,860
+if you do the wrong
+choice-- you go backwards
+
+687
+00:34:15,860 --> 00:34:18,844
+and you add in the wrong
+edge-- it doesn't work.
+
+688
+00:34:18,844 --> 00:34:21,219
+You don't become minimally
+generically rigid, essentially
+
+689
+00:34:21,219 --> 00:34:23,570
+because one part
+gets too many edges,
+
+690
+00:34:23,570 --> 00:34:25,270
+and another part has too few.
+
+691
+00:34:25,270 --> 00:34:27,300
+Here, I got it balanced,
+and it worked out.
+
+692
+00:34:27,300 --> 00:34:29,050
+And when you're good
+at visualizing these,
+
+693
+00:34:29,050 --> 00:34:31,670
+this is an easy way-- like
+on your problem set two--
+
+694
+00:34:31,670 --> 00:34:34,260
+this is an easy way to check,
+to prove to me that things
+
+695
+00:34:34,260 --> 00:34:36,120
+are minimally generically rigid.
+
+696
+00:34:36,120 --> 00:34:37,969
+Just have to be
+a little careful.
+
+697
+00:34:37,969 --> 00:34:42,690
+If you fail, and you fail to
+get back to start in this way,
+
+698
+00:34:42,690 --> 00:34:43,840
+that doesn't tell you much.
+
+699
+00:34:43,840 --> 00:34:45,330
+You just may have messed up.
+
+700
+00:34:45,330 --> 00:34:48,232
+You may have made the
+wrong choice along the way.
+
+701
+00:34:48,232 --> 00:34:49,690
+But when it works,
+you know that it
+
+702
+00:34:49,690 --> 00:34:52,314
+works, because you
+can play it forwards.
+
+703
+00:34:52,314 --> 00:34:53,298
+AUDIENCE: [INAUDIBLE]
+
+704
+00:34:53,298 --> 00:34:58,744
+
+705
+00:34:58,744 --> 00:34:59,410
+PROFESSOR: Yeah.
+
+706
+00:34:59,410 --> 00:35:01,780
+By forward, I mean starting
+from the single edge
+
+707
+00:35:01,780 --> 00:35:04,760
+and following the arrows in
+the way that they're pointing.
+
+708
+00:35:04,760 --> 00:35:08,000
+So going backwards is a little
+bit of a lucky black art,
+
+709
+00:35:08,000 --> 00:35:08,980
+whatever.
+
+710
+00:35:08,980 --> 00:35:11,610
+But once you succeed, you
+can play it forwards and say,
+
+711
+00:35:11,610 --> 00:35:13,335
+oh yeah, that clearly works.
+
+712
+00:35:13,335 --> 00:35:15,229
+Another question.
+
+713
+00:35:15,229 --> 00:35:17,603
+AUDIENCE: Do you know if it
+matters whether you do Type I
+
+714
+00:35:17,603 --> 00:35:20,040
+or Type II operations
+first, if you have choices?
+
+715
+00:35:20,040 --> 00:35:22,040
+PROFESSOR: Does it matter
+Type I versus Type II?
+
+716
+00:35:22,040 --> 00:35:25,030
+I don't think it matters in
+general, just with Type II,
+
+717
+00:35:25,030 --> 00:35:26,082
+you have to be careful.
+
+718
+00:35:26,082 --> 00:35:27,540
+Type one, I like
+to do immediately,
+
+719
+00:35:27,540 --> 00:35:29,360
+because there's no choice.
+
+720
+00:35:29,360 --> 00:35:30,920
+You just do them.
+
+721
+00:35:30,920 --> 00:35:31,930
+Type Is are always safe.
+
+722
+00:35:31,930 --> 00:35:34,280
+Type II, it depends which edge.
+
+723
+00:35:34,280 --> 00:35:36,510
+And I should call these
+anti-type II operations
+
+724
+00:35:36,510 --> 00:35:38,340
+when you go backwards.
+
+725
+00:35:38,340 --> 00:35:41,550
+Anti-Type II, it depends
+which edge you add.
+
+726
+00:35:41,550 --> 00:35:43,835
+So I like to do Type Is
+whenever I have the chance.
+
+727
+00:35:43,835 --> 00:35:47,030
+
+728
+00:35:47,030 --> 00:35:48,960
+All right.
+
+729
+00:35:48,960 --> 00:35:52,180
+Let me sketch a proof
+of this theorem.
+
+730
+00:35:52,180 --> 00:36:08,290
+
+731
+00:36:08,290 --> 00:36:11,000
+There are two directions
+we need to prove.
+
+732
+00:36:11,000 --> 00:36:14,740
+We need to prove that if
+we build such a thing,
+
+733
+00:36:14,740 --> 00:36:16,190
+it is minimally
+generically rigid.
+
+734
+00:36:16,190 --> 00:36:17,180
+I'm going to start with that.
+
+735
+00:36:17,180 --> 00:36:18,554
+And the other one
+we need to show
+
+736
+00:36:18,554 --> 00:36:21,680
+is that everything can
+be built in this way.
+
+737
+00:36:21,680 --> 00:36:23,490
+The first direction
+is not too hard,
+
+738
+00:36:23,490 --> 00:36:26,830
+although it's still not trivial.
+
+739
+00:36:26,830 --> 00:36:30,677
+And this direction works
+in any dimension, in fact.
+
+740
+00:36:30,677 --> 00:36:32,260
+It doesn't need to
+be two dimensional.
+
+741
+00:36:32,260 --> 00:36:35,295
+It's the other
+direction that's harder.
+
+742
+00:36:35,295 --> 00:36:44,180
+
+743
+00:36:44,180 --> 00:36:49,650
+So let's suppose I have a
+generically rigid graph,
+
+744
+00:36:49,650 --> 00:36:51,395
+and I do a Type I operation.
+
+745
+00:36:51,395 --> 00:36:54,620
+
+746
+00:36:54,620 --> 00:36:56,390
+And I get a graph call G prime.
+
+747
+00:36:56,390 --> 00:37:03,700
+
+748
+00:37:03,700 --> 00:37:06,660
+I claim that the resulting
+graph will also be generically
+
+749
+00:37:06,660 --> 00:37:09,990
+rigid and vice versa.
+
+750
+00:37:09,990 --> 00:37:14,410
+So doing a Type I operation does
+not affect generic rigidity.
+
+751
+00:37:14,410 --> 00:37:20,880
+This may be obvious, but
+let me explain it to you.
+
+752
+00:37:20,880 --> 00:37:23,970
+There's again two directions
+you need to prove.
+
+753
+00:37:23,970 --> 00:37:27,980
+And let's start with-- which
+one do I start with?-- this way.
+
+754
+00:37:27,980 --> 00:37:32,190
+
+755
+00:37:32,190 --> 00:37:35,730
+So I want to show that if
+the new graph is rigid,
+
+756
+00:37:35,730 --> 00:37:38,010
+than the old graph is rigid.
+
+757
+00:37:38,010 --> 00:37:39,510
+An easier way to
+think about that
+
+758
+00:37:39,510 --> 00:37:42,870
+is if the old graph
+is flexible, then
+
+759
+00:37:42,870 --> 00:37:45,006
+the new graph
+should be flexible.
+
+760
+00:37:45,006 --> 00:37:45,505
+Hm.
+
+761
+00:37:45,505 --> 00:37:46,910
+That sounds all right.
+
+762
+00:37:46,910 --> 00:37:52,760
+So I have G flexible
+generically.
+
+763
+00:37:52,760 --> 00:37:57,060
+I want to show that
+G prime is flexible.
+
+764
+00:37:57,060 --> 00:38:03,390
+So here's G-- what I called old
+before-- and it flexes somehow.
+
+765
+00:38:03,390 --> 00:38:07,230
+And now I have this
+guy that I add on.
+
+766
+00:38:07,230 --> 00:38:11,400
+These bars are rigid, but it
+can come along for the ride.
+
+767
+00:38:11,400 --> 00:38:14,740
+If I move these two
+points somewhat,
+
+768
+00:38:14,740 --> 00:38:16,620
+I'll still be able
+to draw this guy.
+
+769
+00:38:16,620 --> 00:38:19,740
+It is defined by the
+intersection of two circles,
+
+770
+00:38:19,740 --> 00:38:25,155
+one circle centered here,
+another circle centered here.
+
+771
+00:38:25,155 --> 00:38:27,280
+Those two circles actually
+intersect in two points.
+
+772
+00:38:27,280 --> 00:38:30,260
+But if I move these
+guys continuously,
+
+773
+00:38:30,260 --> 00:38:33,620
+this guy can track continuously
+along the intersection
+
+774
+00:38:33,620 --> 00:38:39,160
+of those two circles, except
+in one special case, which
+
+775
+00:38:39,160 --> 00:38:41,860
+is when the three
+points are collinear.
+
+776
+00:38:41,860 --> 00:38:44,910
+So if this is the old,
+and here's my new guy,
+
+777
+00:38:44,910 --> 00:38:48,610
+and this is taut, and these
+guys move away from each other,
+
+778
+00:38:48,610 --> 00:38:50,570
+then this guy fails to exist.
+
+779
+00:38:50,570 --> 00:38:51,390
+Boom.
+
+780
+00:38:51,390 --> 00:38:53,450
+But that's not generic.
+
+781
+00:38:53,450 --> 00:38:56,100
+So here's where I
+get these genericity.
+
+782
+00:38:56,100 --> 00:38:58,380
+This in particular would
+have three points collinear.
+
+783
+00:38:58,380 --> 00:38:59,460
+So that's forbidden.
+
+784
+00:38:59,460 --> 00:39:03,810
+So in a generic situation-- and
+I should be putting generically
+
+785
+00:39:03,810 --> 00:39:07,657
+here-- if I can generically
+flex the original graph,
+
+786
+00:39:07,657 --> 00:39:09,240
+I'll still be able
+to generically flex
+
+787
+00:39:09,240 --> 00:39:11,180
+after I add the vertex.
+
+788
+00:39:11,180 --> 00:39:12,740
+Cool.
+
+789
+00:39:12,740 --> 00:39:13,600
+That's pretty easy.
+
+790
+00:39:13,600 --> 00:39:15,855
+
+791
+00:39:15,855 --> 00:39:17,980
+The other direction-- I
+mean, it's almost the same.
+
+792
+00:39:17,980 --> 00:39:22,110
+So now if I have
+G rigid, I claim
+
+793
+00:39:22,110 --> 00:39:26,750
+that G prime is generically
+rigid-- I should be putting
+
+794
+00:39:26,750 --> 00:39:31,560
+generic everywhere here-- for
+essentially the same reason.
+
+795
+00:39:31,560 --> 00:39:34,264
+If I can't move these
+vertices-- this vertex
+
+796
+00:39:34,264 --> 00:39:36,430
+is again defined by the
+intersection of two circles.
+
+797
+00:39:36,430 --> 00:39:38,200
+It could be here or
+here, but we're only
+
+798
+00:39:38,200 --> 00:39:40,150
+thinking about
+continuous motions.
+
+799
+00:39:40,150 --> 00:39:41,570
+Motion means continuous.
+
+800
+00:39:41,570 --> 00:39:43,760
+I can't instantaneously
+jump over here.
+
+801
+00:39:43,760 --> 00:39:45,440
+I have to stay right there.
+
+802
+00:39:45,440 --> 00:39:48,400
+These guys don't move-- and I
+mean that in a relative sense.
+
+803
+00:39:48,400 --> 00:39:50,390
+Of course, they can
+translate and rotate--
+
+804
+00:39:50,390 --> 00:39:53,790
+but if they don't move
+away from each other,
+
+805
+00:39:53,790 --> 00:39:57,470
+this guy can't do
+anything interesting.
+
+806
+00:39:57,470 --> 00:40:00,420
+So if the original thing is
+rigid, the new thing is rigid.
+
+807
+00:40:00,420 --> 00:40:05,690
+I'll start going a little
+faster, but that's the idea.
+
+808
+00:40:05,690 --> 00:40:08,120
+This is a start, but
+what we really care about
+
+809
+00:40:08,120 --> 00:40:09,295
+is minimal generic rigidity.
+
+810
+00:40:09,295 --> 00:40:29,150
+
+811
+00:40:29,150 --> 00:40:33,430
+And this is also if and only if.
+
+812
+00:40:33,430 --> 00:40:36,150
+If your original graph is
+minimally generically rigid,
+
+813
+00:40:36,150 --> 00:40:39,112
+then your new graph
+from a Type I operation
+
+814
+00:40:39,112 --> 00:40:40,820
+will also be minimally
+generically rigid,
+
+815
+00:40:40,820 --> 00:40:41,830
+and vice versa.
+
+816
+00:40:41,830 --> 00:40:43,700
+So minimality is also preserved.
+
+817
+00:40:43,700 --> 00:40:47,910
+So this is a super
+safe operation.
+
+818
+00:40:47,910 --> 00:40:48,750
+I won't prove this.
+
+819
+00:40:48,750 --> 00:40:50,990
+But it's almost the same
+proof, except instead
+
+820
+00:40:50,990 --> 00:40:54,159
+of thinking about G, you
+think about G minus 1 edge,
+
+821
+00:40:54,159 --> 00:40:56,700
+because that's what you worry
+about in the minimal situation.
+
+822
+00:40:56,700 --> 00:40:58,574
+We've already shown that
+the generic rigidity
+
+823
+00:40:58,574 --> 00:41:01,210
+part is preserved
+in either direction,
+
+824
+00:41:01,210 --> 00:41:07,810
+doing Type I or anti-Type I.
+But for minimality right here,
+
+825
+00:41:07,810 --> 00:41:09,589
+we want to think about
+removing any edge,
+
+826
+00:41:09,589 --> 00:41:11,380
+and whether that gives
+generic flexibility.
+
+827
+00:41:11,380 --> 00:41:15,230
+So we just do the same thing,
+but with G minus e, and G prime
+
+828
+00:41:15,230 --> 00:41:18,130
+minus e, where e is
+somewhere in the old part.
+
+829
+00:41:18,130 --> 00:41:19,380
+And it's the same argument.
+
+830
+00:41:19,380 --> 00:41:23,610
+
+831
+00:41:23,610 --> 00:41:26,870
+And so you'd write
+substitute all instances of G
+
+832
+00:41:26,870 --> 00:41:30,510
+with G minus e.
+
+833
+00:41:30,510 --> 00:41:32,560
+That's pretty old and geeky.
+
+834
+00:41:32,560 --> 00:41:38,095
+Probably no one knows what that
+means, but you get the idea.
+
+835
+00:41:38,095 --> 00:41:40,000
+All right.
+
+836
+00:41:40,000 --> 00:41:43,480
+Now, we get to
+Type II operations.
+
+837
+00:41:43,480 --> 00:41:44,900
+It's a little more subtle.
+
+838
+00:41:44,900 --> 00:41:47,720
+if I said this with Type
+II, it would be false.
+
+839
+00:41:47,720 --> 00:41:49,610
+So life it's harder.
+
+840
+00:41:49,610 --> 00:41:52,250
+And this is all about the fact
+that anti-Type II operations
+
+841
+00:41:52,250 --> 00:41:56,081
+are not unique, and you've got
+to be careful in how you do it.
+
+842
+00:41:56,081 --> 00:41:57,330
+It does work in one direction.
+
+843
+00:41:57,330 --> 00:42:02,660
+
+844
+00:42:02,660 --> 00:42:04,980
+If the input is minimally
+generically rigid,
+
+845
+00:42:04,980 --> 00:42:06,240
+then the new one will be.
+
+846
+00:42:06,240 --> 00:42:19,570
+
+847
+00:42:19,570 --> 00:42:21,602
+But it doesn't work in
+the other direction.
+
+848
+00:42:21,602 --> 00:42:23,560
+Now at this point, I'm
+not going to prove this.
+
+849
+00:42:23,560 --> 00:42:25,990
+This is actually a
+lot harder to prove.
+
+850
+00:42:25,990 --> 00:42:28,470
+At least, I don't know of a
+simple, straightforward proof
+
+851
+00:42:28,470 --> 00:42:30,590
+like this one, where
+you just construct it.
+
+852
+00:42:30,590 --> 00:42:35,110
+The easy way I know how to
+prove it uses next class.
+
+853
+00:42:35,110 --> 00:42:37,690
+So we're not going
+to bother proving it.
+
+854
+00:42:37,690 --> 00:42:39,120
+It should be intuitive enough.
+
+855
+00:42:39,120 --> 00:42:41,220
+Certainly in thinking
+about degrees of freedom
+
+856
+00:42:41,220 --> 00:42:44,285
+it's correct, but you've got
+to be more careful than that.
+
+857
+00:42:44,285 --> 00:42:46,781
+
+858
+00:42:46,781 --> 00:42:48,780
+I want to talk more about
+the reverse direction.
+
+859
+00:42:48,780 --> 00:42:52,554
+
+860
+00:42:52,554 --> 00:42:53,970
+At this point, by
+the way, we have
+
+861
+00:42:53,970 --> 00:42:58,102
+proved one direction
+of our big theorem.
+
+862
+00:42:58,102 --> 00:43:00,560
+We've proved that if you can
+build something with these two
+
+863
+00:43:00,560 --> 00:43:03,570
+operations, it is minimally
+generically rigid,
+
+864
+00:43:03,570 --> 00:43:06,745
+because when we start
+out with an edge,
+
+865
+00:43:06,745 --> 00:43:08,970
+this is the base case
+of our induction.
+
+866
+00:43:08,970 --> 00:43:11,400
+This guy is minimally
+generically rigid.
+
+867
+00:43:11,400 --> 00:43:14,060
+And then every operation
+I do, I know I'm safe,
+
+868
+00:43:14,060 --> 00:43:16,810
+because I start with G being
+minimally generically rigid.
+
+869
+00:43:16,810 --> 00:43:18,920
+If I do a Type I
+operation, it will still
+
+870
+00:43:18,920 --> 00:43:21,920
+be minimally generically rigid,
+and same thing for Type II
+
+871
+00:43:21,920 --> 00:43:22,530
+operations.
+
+872
+00:43:22,530 --> 00:43:25,440
+So in that direction,
+we're golden.
+
+873
+00:43:25,440 --> 00:43:29,410
+But I'd really like
+to know, is there
+
+874
+00:43:29,410 --> 00:43:33,120
+some converse of three,
+this third property?
+
+875
+00:43:33,120 --> 00:43:36,950
+And I will tell you a converse
+of the third property.
+
+876
+00:43:36,950 --> 00:43:45,140
+Suppose I have a minimally
+generically rigid graph G
+
+877
+00:43:45,140 --> 00:43:46,151
+prime.
+
+878
+00:43:46,151 --> 00:43:48,650
+And I'm not assuming that it's
+made from a Type II operation
+
+879
+00:43:48,650 --> 00:43:50,960
+yet.
+
+880
+00:43:50,960 --> 00:43:55,050
+But suppose it has
+a degree-3 vertex--
+
+881
+00:43:55,050 --> 00:43:56,675
+vertex with three
+incident edges.
+
+882
+00:43:56,675 --> 00:44:01,790
+
+883
+00:44:01,790 --> 00:44:17,830
+Then G prime is the result
+of a Type II operation
+
+884
+00:44:17,830 --> 00:44:33,420
+of some minimally generically
+rigid graph G. So this is
+
+885
+00:44:33,420 --> 00:44:38,950
+saying that there is hope
+in working backwards.
+
+886
+00:44:38,950 --> 00:44:41,080
+Here I had two choices
+of Type II operations.
+
+887
+00:44:41,080 --> 00:44:43,079
+I think in this case, it
+didn't actually matter,
+
+888
+00:44:43,079 --> 00:44:45,830
+but in general, it matters
+which one you choose.
+
+889
+00:44:45,830 --> 00:44:50,830
+And this is saying
+there is a choice,
+
+890
+00:44:50,830 --> 00:44:53,640
+there is an anti-Type II
+operation, a backwards II
+
+891
+00:44:53,640 --> 00:44:56,490
+operation, that
+results in something
+
+892
+00:44:56,490 --> 00:44:58,144
+that is minimally
+generically rigid.
+
+893
+00:44:58,144 --> 00:44:59,810
+And if it's minimally
+generically rigid,
+
+894
+00:44:59,810 --> 00:45:02,060
+by induction, I
+can keep going on.
+
+895
+00:45:02,060 --> 00:45:04,510
+And so eventually I
+will get back to start.
+
+896
+00:45:04,510 --> 00:45:07,280
+And this is what we
+need to show in order
+
+897
+00:45:07,280 --> 00:45:09,060
+to believe one half
+of this theorem
+
+898
+00:45:09,060 --> 00:45:11,550
+that if your thing is
+minimally generically rigid,
+
+899
+00:45:11,550 --> 00:45:15,530
+there is a way to
+build it like this.
+
+900
+00:45:15,530 --> 00:45:18,440
+And the way you build it is if
+there's a Type I operation--
+
+901
+00:45:18,440 --> 00:45:19,980
+anti-Type I operation do that.
+
+902
+00:45:19,980 --> 00:45:24,820
+If there's an anti-Type II
+operation, do the right one.
+
+903
+00:45:24,820 --> 00:45:26,050
+Let the right one in.
+
+904
+00:45:26,050 --> 00:45:29,929
+Do the right instance of an
+anti-Type II operation that
+
+905
+00:45:29,929 --> 00:45:32,220
+gives you something that's
+minimally generically rigid.
+
+906
+00:45:32,220 --> 00:45:34,059
+If you preserve minimal
+generic rigidity,
+
+907
+00:45:34,059 --> 00:45:36,350
+you know you can keep going,
+because you have a smaller
+
+908
+00:45:36,350 --> 00:45:39,030
+graph And so by induction
+you can keep going.
+
+909
+00:45:39,030 --> 00:45:42,500
+
+910
+00:45:42,500 --> 00:45:44,350
+I'm not going to
+prove four either,
+
+911
+00:45:44,350 --> 00:45:48,575
+because it again uses technology
+we haven't yet developed.
+
+912
+00:45:48,575 --> 00:45:51,110
+
+913
+00:45:51,110 --> 00:45:53,320
+But there's one more
+part of this theorem
+
+914
+00:45:53,320 --> 00:45:56,320
+that we haven't proved.
+
+915
+00:45:56,320 --> 00:45:57,360
+This sounds great.
+
+916
+00:45:57,360 --> 00:46:00,960
+We do anti-type I operations.
+
+917
+00:46:00,960 --> 00:46:02,090
+When can we do those?
+
+918
+00:46:02,090 --> 00:46:05,700
+We can do those when we
+have a vertex of degree-2.
+
+919
+00:46:05,700 --> 00:46:08,030
+Then we can get rid of it.
+
+920
+00:46:08,030 --> 00:46:10,090
+And what property
+four over there
+
+921
+00:46:10,090 --> 00:46:13,750
+says that if I have a vertex of
+degree-3, I can get rid of it,
+
+922
+00:46:13,750 --> 00:46:16,430
+and add some edge to compensate.
+
+923
+00:46:16,430 --> 00:46:20,120
+But what if I don't have any
+vertices of degree-2 or 3?
+
+924
+00:46:20,120 --> 00:46:21,180
+That would suck.
+
+925
+00:46:21,180 --> 00:46:32,650
+
+926
+00:46:32,650 --> 00:46:37,250
+So this is now the other
+half of this theorem.
+
+927
+00:46:37,250 --> 00:46:41,810
+
+928
+00:46:41,810 --> 00:46:42,420
+All right.
+
+929
+00:46:42,420 --> 00:46:44,610
+Well, we know by
+the thing I just
+
+930
+00:46:44,610 --> 00:46:50,080
+erased that the number
+of edges is 2n minus 3.
+
+931
+00:46:50,080 --> 00:46:51,860
+So just to recall,
+we're assuming now
+
+932
+00:46:51,860 --> 00:46:54,470
+we have something that's
+minimally generically rigid.
+
+933
+00:46:54,470 --> 00:46:56,720
+We already did a degree
+of freedom analysis
+
+934
+00:46:56,720 --> 00:47:00,190
+to show the number edges
+must be 2n minus 3.
+
+935
+00:47:00,190 --> 00:47:02,966
+Now, we need to somehow find
+either an anti-Type I operation
+
+936
+00:47:02,966 --> 00:47:04,590
+or an anti-Type II
+operation so that we
+
+937
+00:47:04,590 --> 00:47:06,929
+can go all the way
+to a single edge
+
+938
+00:47:06,929 --> 00:47:08,345
+and find a Henneberg
+construction.
+
+939
+00:47:08,345 --> 00:47:15,219
+
+940
+00:47:15,219 --> 00:47:15,885
+Any suggestions?
+
+941
+00:47:15,885 --> 00:47:18,389
+
+942
+00:47:18,389 --> 00:47:19,430
+People know graph theory?
+
+943
+00:47:19,430 --> 00:47:25,878
+
+944
+00:47:25,878 --> 00:47:26,380
+All right.
+
+945
+00:47:26,380 --> 00:47:27,838
+On the one hand,
+we have the number
+
+946
+00:47:27,838 --> 00:47:30,680
+of edges, and the
+other hand, we care
+
+947
+00:47:30,680 --> 00:47:32,870
+about the degrees of vertices.
+
+948
+00:47:32,870 --> 00:47:34,870
+Anyone know a relation
+between those two things?
+
+949
+00:47:34,870 --> 00:47:38,330
+
+950
+00:47:38,330 --> 00:47:39,339
+Yeah.
+
+951
+00:47:39,339 --> 00:47:40,746
+AUDIENCE: Two.
+
+952
+00:47:40,746 --> 00:47:44,029
+Every edge contributes
+two to the total Henneberg
+
+953
+00:47:44,029 --> 00:47:45,440
+[INAUDIBLE].
+
+954
+00:47:45,440 --> 00:47:48,570
+PROFESSOR: If I take
+the sum of the degrees
+
+955
+00:47:48,570 --> 00:47:54,020
+of the vertices-- sum
+over all vertices--
+
+956
+00:47:54,020 --> 00:47:55,760
+this is really intuitive.
+
+957
+00:47:55,760 --> 00:47:58,400
+I add up how many edges are
+incident to this vertex,
+
+958
+00:47:58,400 --> 00:48:01,310
+then I add up how many edges
+are incident to this vertex,
+
+959
+00:48:01,310 --> 00:48:04,110
+then I add up how many edges
+are incident to this vertex.
+
+960
+00:48:04,110 --> 00:48:07,060
+I count every edge twice,
+because it has two ends.
+
+961
+00:48:07,060 --> 00:48:10,220
+So some of the degrees is
+twice the number of edges.
+
+962
+00:48:10,220 --> 00:48:11,930
+I'll write that this way.
+
+963
+00:48:11,930 --> 00:48:15,440
+E is the set of edges
+that's the size of that.
+
+964
+00:48:15,440 --> 00:48:17,110
+This is called the
+handshaking lemma.
+
+965
+00:48:17,110 --> 00:48:20,040
+It says if everyone in this
+room shakes hands with everyone
+
+966
+00:48:20,040 --> 00:48:22,532
+else-- if I go around and
+shake hands with everybody--
+
+967
+00:48:22,532 --> 00:48:23,990
+the total number
+of handshakes will
+
+968
+00:48:23,990 --> 00:48:31,000
+be twice the number of pairs
+of people that shook hands.
+
+969
+00:48:31,000 --> 00:48:32,360
+No.
+
+970
+00:48:32,360 --> 00:48:35,610
+If we do some set
+of handshakes--
+
+971
+00:48:35,610 --> 00:48:37,040
+so that's the graph scenario.
+
+972
+00:48:37,040 --> 00:48:40,720
+So some of us shake
+hands, and I count
+
+973
+00:48:40,720 --> 00:48:42,940
+how many handshakes
+I did, and everybody
+
+974
+00:48:42,940 --> 00:48:45,547
+counts how many handshakes
+they did, we add them all up,
+
+975
+00:48:45,547 --> 00:48:47,880
+it will be exactly twice the
+number of actual handshakes
+
+976
+00:48:47,880 --> 00:48:49,100
+that took place.
+
+977
+00:48:49,100 --> 00:48:50,720
+That's this statement.
+
+978
+00:48:50,720 --> 00:48:54,420
+That's why it's called
+the handshaking lemma.
+
+979
+00:48:54,420 --> 00:48:59,660
+This is good news, because we
+know this number is 4n minus 6
+
+980
+00:48:59,660 --> 00:49:02,300
+here.
+
+981
+00:49:02,300 --> 00:49:04,910
+So what could these
+degrees look like?
+
+982
+00:49:04,910 --> 00:49:06,820
+There's n of them.
+
+983
+00:49:06,820 --> 00:49:08,540
+Number of vertices is n.
+
+984
+00:49:08,540 --> 00:49:11,430
+That's the neat definition of n.
+
+985
+00:49:11,430 --> 00:49:14,730
+So on average what
+could these degrees be?
+
+986
+00:49:14,730 --> 00:49:16,896
+They have to be less than four.
+
+987
+00:49:16,896 --> 00:49:22,580
+The average degree has
+to be at least a little
+
+988
+00:49:22,580 --> 00:49:25,000
+bit less than four,
+because in summation, you
+
+989
+00:49:25,000 --> 00:49:28,037
+get 4n minus a little bit.
+
+990
+00:49:28,037 --> 00:49:29,620
+So the average degree
+in the summation
+
+991
+00:49:29,620 --> 00:49:30,960
+must be a little
+bit less than four.
+
+992
+00:49:30,960 --> 00:49:33,360
+Now, some of them are bigger,
+some of them are smaller.
+
+993
+00:49:33,360 --> 00:49:35,735
+But if the average is less
+than four, then in particular,
+
+994
+00:49:35,735 --> 00:49:39,070
+there must be one
+guy less than four.
+
+995
+00:49:39,070 --> 00:49:47,160
+Some vertex has
+degree less than four.
+
+996
+00:49:47,160 --> 00:49:50,850
+So it could either be
+zero, one, two, or three.
+
+997
+00:49:50,850 --> 00:49:53,140
+Two and three, we're OK.
+
+998
+00:49:53,140 --> 00:49:56,560
+One can't happen,
+because we are supposed
+
+999
+00:49:56,560 --> 00:49:58,200
+to be minimally
+generically rigid.
+
+1000
+00:49:58,200 --> 00:50:01,320
+If I have a degree1
+vertex and some stuff,
+
+1001
+00:50:01,320 --> 00:50:02,540
+this guy can spin around.
+
+1002
+00:50:02,540 --> 00:50:04,100
+It's not minimally
+generically rigid.
+
+1003
+00:50:04,100 --> 00:50:06,540
+If I have a degree-0
+vertex, it can float around.
+
+1004
+00:50:06,540 --> 00:50:08,460
+It's not minimally
+generically rigid,
+
+1005
+00:50:08,460 --> 00:50:10,660
+assuming you have
+more than one vertex.
+
+1006
+00:50:10,660 --> 00:50:13,740
+So I guess this is
+the situation where
+
+1007
+00:50:13,740 --> 00:50:15,870
+you have more than
+one vertex, otherwise
+
+1008
+00:50:15,870 --> 00:50:18,240
+you can't build it
+from a single edge.
+
+1009
+00:50:18,240 --> 00:50:21,930
+Assuming you have-- so I should
+put n greater than one here.
+
+1010
+00:50:21,930 --> 00:50:25,090
+
+1011
+00:50:25,090 --> 00:50:28,160
+So then you get a degree2
+vertex or a degree-3 vertex.
+
+1012
+00:50:28,160 --> 00:50:33,950
+You use either property
+two or property four
+
+1013
+00:50:33,950 --> 00:50:38,050
+to make an anti-Type I or
+anti-Type II operation.
+
+1014
+00:50:38,050 --> 00:50:40,330
+You'll still have a minimally
+generically rigid graph.
+
+1015
+00:50:40,330 --> 00:50:41,310
+You keep going.
+
+1016
+00:50:41,310 --> 00:50:44,250
+By the end, you'll
+have a single edge.
+
+1017
+00:50:44,250 --> 00:50:46,250
+That's the only case
+when you get stuck,
+
+1018
+00:50:46,250 --> 00:50:48,120
+because actually-- see, I lied.
+
+1019
+00:50:48,120 --> 00:50:50,310
+Here, I have two
+degree-1 vertices.
+
+1020
+00:50:50,310 --> 00:50:54,900
+That's the only situation where
+you can have degree-1 vertices.
+
+1021
+00:50:54,900 --> 00:50:58,077
+And that's when you get stuck.
+
+1022
+00:50:58,077 --> 00:51:00,410
+You have two degree-1 vertices,
+but then I have an edge.
+
+1023
+00:51:00,410 --> 00:51:00,960
+I'm done.
+
+1024
+00:51:00,960 --> 00:51:04,680
+
+1025
+00:51:04,680 --> 00:51:07,130
+Questions?
+
+1026
+00:51:07,130 --> 00:51:10,560
+Obviously, I elided a
+couple of key details here,
+
+1027
+00:51:10,560 --> 00:51:13,301
+but other than that, it's
+pretty straightforward.
+
+1028
+00:51:13,301 --> 00:51:13,800
+Yeah.
+
+1029
+00:51:13,800 --> 00:51:17,814
+AUDIENCE: What if you have
+more edges than you need?
+
+1030
+00:51:17,814 --> 00:51:19,730
+PROFESSOR: If I have
+more edges than you need,
+
+1031
+00:51:19,730 --> 00:51:23,570
+then this does not
+capture such structures.
+
+1032
+00:51:23,570 --> 00:51:27,660
+This is just about
+minimal generic rigidity.
+
+1033
+00:51:27,660 --> 00:51:31,610
+But if I have some graph
+that is generically rigid,
+
+1034
+00:51:31,610 --> 00:51:35,330
+it will be a graph I can build
+this way, plus more edges.
+
+1035
+00:51:35,330 --> 00:51:38,260
+Now, how to identify what edges
+I should remove so that I could
+
+1036
+00:51:38,260 --> 00:51:42,550
+do this Henneberg construction
+is unclear at this point,
+
+1037
+00:51:42,550 --> 00:51:45,960
+and that's the purpose
+of the next theorem.
+
+1038
+00:51:45,960 --> 00:51:46,950
+So good question.
+
+1039
+00:51:46,950 --> 00:52:01,050
+
+1040
+00:52:01,050 --> 00:52:03,400
+It turns out there's
+an algorithm, which
+
+1041
+00:52:03,400 --> 00:52:05,990
+given a generically rigid
+graph, will tell you
+
+1042
+00:52:05,990 --> 00:52:08,760
+which edges you can
+throw away, so that you
+
+1043
+00:52:08,760 --> 00:52:11,290
+get a minimally
+generically rigid graph.
+
+1044
+00:52:11,290 --> 00:52:15,690
+And that algorithm uses
+the following theorem.
+
+1045
+00:52:15,690 --> 00:52:28,590
+This one is from the '70s
+by a guy named Laman.
+
+1046
+00:52:28,590 --> 00:52:33,470
+It starts the same
+as Henneberg above.
+
+1047
+00:52:33,470 --> 00:52:43,450
+Graph is minimally
+generically rigid in 2D
+
+1048
+00:52:43,450 --> 00:52:53,344
+if and only if it
+has 2n minus 3 edges.
+
+1049
+00:52:53,344 --> 00:52:55,260
+And again, I'm assuming
+the number of vertices
+
+1050
+00:52:55,260 --> 00:52:56,090
+is bigger than one.
+
+1051
+00:52:56,090 --> 00:52:59,621
+
+1052
+00:52:59,621 --> 00:53:02,120
+So far, this is just our regular
+degree or freedom analysis.
+
+1053
+00:53:02,120 --> 00:53:03,590
+But I said this wasn't enough.
+
+1054
+00:53:03,590 --> 00:53:04,762
+You something else.
+
+1055
+00:53:04,762 --> 00:53:05,845
+Here's the something else.
+
+1056
+00:53:05,845 --> 00:53:09,796
+
+1057
+00:53:09,796 --> 00:53:12,460
+If I take a subset of
+vertices-- and let's say
+
+1058
+00:53:12,460 --> 00:53:22,860
+there's k of them--
+then that induces
+
+1059
+00:53:22,860 --> 00:53:25,330
+at most 2k minus 3 edges.
+
+1060
+00:53:25,330 --> 00:53:28,571
+
+1061
+00:53:28,571 --> 00:53:30,320
+So this-- again, minimal
+generic rigidity.
+
+1062
+00:53:30,320 --> 00:53:32,765
+I'm still not directly
+talking about the bigger case.
+
+1063
+00:53:32,765 --> 00:53:34,669
+We'll worry about that later.
+
+1064
+00:53:34,669 --> 00:53:36,210
+So there's the fewest
+possible edges.
+
+1065
+00:53:36,210 --> 00:53:38,720
+That means 2n minus 3.
+
+1066
+00:53:38,720 --> 00:53:40,590
+But now, essentially
+what I want to say
+
+1067
+00:53:40,590 --> 00:53:43,720
+is that there aren't too
+many edges in any one place,
+
+1068
+00:53:43,720 --> 00:53:46,330
+and therefore the edges
+are well distributed.
+
+1069
+00:53:46,330 --> 00:53:50,340
+So if I take some subset of the
+vertices-- so here's my graph,
+
+1070
+00:53:50,340 --> 00:53:54,830
+and I take some crazy subset--
+any blob the vertices I want,
+
+1071
+00:53:54,830 --> 00:53:57,330
+I look at what are
+all the edges inside
+
+1072
+00:53:57,330 --> 00:54:00,770
+between vertices in that set?
+
+1073
+00:54:00,770 --> 00:54:02,800
+I don't want to have too many.
+
+1074
+00:54:02,800 --> 00:54:05,230
+I don't want to have more than
+what I should-- 2k minus 3
+
+1075
+00:54:05,230 --> 00:54:07,110
+if there's k vertices in here.
+
+1076
+00:54:07,110 --> 00:54:11,414
+If I had more--
+for example, that's
+
+1077
+00:54:11,414 --> 00:54:12,580
+minimally generically rigid.
+
+1078
+00:54:12,580 --> 00:54:16,310
+If I did that anywhere
+in the graph--
+
+1079
+00:54:16,310 --> 00:54:18,740
+this has 2n minus 2 edges.
+
+1080
+00:54:18,740 --> 00:54:20,370
+It's too many.
+
+1081
+00:54:20,370 --> 00:54:21,970
+Or 2k minus 2 edges.
+
+1082
+00:54:21,970 --> 00:54:23,370
+K is four here.
+
+1083
+00:54:23,370 --> 00:54:25,720
+If I put that in some bigger
+graph and the bigger graph
+
+1084
+00:54:25,720 --> 00:54:28,300
+has 2n minus 3, and I
+wasted an edge here,
+
+1085
+00:54:28,300 --> 00:54:30,930
+that means somewhere
+else, it will be flexible.
+
+1086
+00:54:30,930 --> 00:54:33,020
+So it's a bit of
+a weird condition.
+
+1087
+00:54:33,020 --> 00:54:34,880
+You might think this should say
+greater than or equal to be.
+
+1088
+00:54:34,880 --> 00:54:35,838
+It'd be more intuitive.
+
+1089
+00:54:35,838 --> 00:54:36,845
+That would be wrong.
+
+1090
+00:54:36,845 --> 00:54:39,965
+The theorem isn't true when you
+put greater than or equal to,
+
+1091
+00:54:39,965 --> 00:54:41,340
+because you could
+choose vertices
+
+1092
+00:54:41,340 --> 00:54:43,000
+that have no edges between them.
+
+1093
+00:54:43,000 --> 00:54:45,090
+There's going to
+be a lot of them.
+
+1094
+00:54:45,090 --> 00:54:47,600
+But if you make sure there
+aren't too many anywhere,
+
+1095
+00:54:47,600 --> 00:54:50,936
+then it turns out it will
+be just right everywhere.
+
+1096
+00:54:50,936 --> 00:54:54,540
+It's like three little
+bears or something.
+
+1097
+00:54:54,540 --> 00:54:57,870
+So some generalized version
+of three little bears.
+
+1098
+00:54:57,870 --> 00:54:59,294
+K little bears.
+
+1099
+00:54:59,294 --> 00:55:01,921
+[LAUGHTER]
+
+1100
+00:55:01,921 --> 00:55:02,420
+All right.
+
+1101
+00:55:02,420 --> 00:55:04,130
+So this is a very cool theorem.
+
+1102
+00:55:04,130 --> 00:55:07,330
+It's not obviously algorithmic,
+because it says, oh, you just
+
+1103
+00:55:07,330 --> 00:55:10,580
+check every subset of k
+vertices for all values of k.
+
+1104
+00:55:10,580 --> 00:55:12,090
+There's exponentially
+many subsets.
+
+1105
+00:55:12,090 --> 00:55:14,040
+It's not a good
+algorithm by itself,
+
+1106
+00:55:14,040 --> 00:55:16,720
+but it turns out you can
+make it into an algorithm.
+
+1107
+00:55:16,720 --> 00:55:18,124
+I'll talk about
+that in a moment.
+
+1108
+00:55:18,124 --> 00:55:19,790
+First, we're going
+to prove the theorem.
+
+1109
+00:55:19,790 --> 00:55:23,269
+
+1110
+00:55:23,269 --> 00:55:26,970
+OK, I have to speed up a little.
+
+1111
+00:55:26,970 --> 00:55:28,270
+All right.
+
+1112
+00:55:28,270 --> 00:55:29,480
+Let me sketch this proof.
+
+1113
+00:55:29,480 --> 00:55:31,470
+It's really easy,
+because we already
+
+1114
+00:55:31,470 --> 00:55:34,150
+have this great characterization
+of minimally generically
+
+1115
+00:55:34,150 --> 00:55:35,164
+rigid graphs.
+
+1116
+00:55:35,164 --> 00:55:37,330
+It's just things you can
+build by Type I and Type II
+
+1117
+00:55:37,330 --> 00:55:39,240
+operations.
+
+1118
+00:55:39,240 --> 00:55:43,430
+So if I want to show
+the forward direction,
+
+1119
+00:55:43,430 --> 00:55:45,860
+that if I have a minimally
+generic thing-- i.e.
+
+1120
+00:55:45,860 --> 00:55:50,750
+It can be built this way--
+then it has 2n minus 3 edges.
+
+1121
+00:55:50,750 --> 00:55:52,930
+Well, that we already know.
+
+1122
+00:55:52,930 --> 00:55:55,920
+And then the other thing is
+that every subset of k vertices
+
+1123
+00:55:55,920 --> 00:56:00,460
+has at most 2k minus
+3 edges among them.
+
+1124
+00:56:00,460 --> 00:56:04,270
+So think about it here.
+
+1125
+00:56:04,270 --> 00:56:06,510
+So maybe this is my graph.
+
+1126
+00:56:06,510 --> 00:56:10,710
+It's produced by a Type
+I operation at the end.
+
+1127
+00:56:10,710 --> 00:56:14,080
+Well, it takes some
+subset of the vertices.
+
+1128
+00:56:14,080 --> 00:56:17,220
+Either the subset contains
+this vertex, or it doesn't.
+
+1129
+00:56:17,220 --> 00:56:19,580
+If it doesn't
+contain this vertex,
+
+1130
+00:56:19,580 --> 00:56:21,710
+then it's a subset
+just in the old graph.
+
+1131
+00:56:21,710 --> 00:56:23,436
+And by induction,
+my theorem will
+
+1132
+00:56:23,436 --> 00:56:25,420
+hold, because that's
+a smaller graph.
+
+1133
+00:56:25,420 --> 00:56:29,080
+If it's a subset that
+includes this guy,
+
+1134
+00:56:29,080 --> 00:56:32,830
+then it's whatever the
+subset contains over here,
+
+1135
+00:56:32,830 --> 00:56:36,110
+plus 2 edges minus 1 vertex.
+
+1136
+00:56:36,110 --> 00:56:37,280
+And that just works out.
+
+1137
+00:56:37,280 --> 00:56:39,800
+Over here, there's going
+to be k minus 1 vertices,
+
+1138
+00:56:39,800 --> 00:56:42,930
+so it'll be two times k
+minus 1 minus 3 at most.
+
+1139
+00:56:42,930 --> 00:56:45,140
+We add two edges,
+we add one vertex.
+
+1140
+00:56:45,140 --> 00:56:46,650
+That's exactly
+what this predicts.
+
+1141
+00:56:46,650 --> 00:56:49,320
+You should add two
+edges for every vertex.
+
+1142
+00:56:49,320 --> 00:56:50,330
+So that's fine.
+
+1143
+00:56:50,330 --> 00:56:53,390
+The Type II, same deal.
+
+1144
+00:56:53,390 --> 00:56:55,980
+But in general, I'm
+adding three edges,
+
+1145
+00:56:55,980 --> 00:56:58,850
+removing one, and
+adding one vertex.
+
+1146
+00:56:58,850 --> 00:57:02,870
+And that's again true in the
+subsets, not just overall.
+
+1147
+00:57:02,870 --> 00:57:05,841
+I take a subset containing
+this guy or not.
+
+1148
+00:57:05,841 --> 00:57:07,590
+You have to check all
+the cases, depending
+
+1149
+00:57:07,590 --> 00:57:08,980
+on whether it contains
+this guy or this guy
+
+1150
+00:57:08,980 --> 00:57:10,030
+or this guy, or not.
+
+1151
+00:57:10,030 --> 00:57:14,930
+But in all cases, this
+inequality still holds.
+
+1152
+00:57:14,930 --> 00:57:15,430
+How's that?
+
+1153
+00:57:15,430 --> 00:57:20,730
+
+1154
+00:57:20,730 --> 00:57:25,530
+It's a bunch of case work, but
+all really straightforward, so
+
+1155
+00:57:25,530 --> 00:57:27,030
+believe me.
+
+1156
+00:57:27,030 --> 00:57:29,840
+The hard part is
+the other direction.
+
+1157
+00:57:29,840 --> 00:57:34,240
+If I'm told that this is true--
+all the subsets don't have
+
+1158
+00:57:34,240 --> 00:57:37,750
+too many edges-- then I claim I
+can actually build it this way,
+
+1159
+00:57:37,750 --> 00:57:41,360
+or I claim that somehow it's
+minimally generically rigid.
+
+1160
+00:57:41,360 --> 00:57:44,784
+And we are, in fact, going
+to build it using Henneberg
+
+1161
+00:57:44,784 --> 00:57:46,325
+constructions, using
+these properties
+
+1162
+00:57:46,325 --> 00:57:50,171
+that we proved-- one,
+two, three, four.
+
+1163
+00:57:50,171 --> 00:57:50,670
+All right.
+
+1164
+00:57:50,670 --> 00:57:52,340
+So what do we know?
+
+1165
+00:57:52,340 --> 00:57:54,750
+We know that there
+are 2n minus 3 edges.
+
+1166
+00:57:54,750 --> 00:57:56,750
+Hey, I already have
+a great argument
+
+1167
+00:57:56,750 --> 00:57:58,542
+for when the number of
+edges is 2n minus 3.
+
+1168
+00:57:58,542 --> 00:58:01,125
+I do the handshaking lemma, and
+I know that the sum of degrees
+
+1169
+00:58:01,125 --> 00:58:01,840
+is 4n minus 6.
+
+1170
+00:58:01,840 --> 00:58:04,290
+Therefore, I know the average
+degree is less than four.
+
+1171
+00:58:04,290 --> 00:58:06,176
+Great.
+
+1172
+00:58:06,176 --> 00:58:06,800
+Problem solved.
+
+1173
+00:58:06,800 --> 00:58:13,880
+Therefore, I know
+there's a vertex
+
+1174
+00:58:13,880 --> 00:58:17,130
+of degree less than four.
+
+1175
+00:58:17,130 --> 00:58:20,000
+It could be zero,
+one two, or three.
+
+1176
+00:58:20,000 --> 00:58:20,625
+Can it be zero?
+
+1177
+00:58:20,625 --> 00:58:24,510
+
+1178
+00:58:24,510 --> 00:58:26,545
+Hope not.
+
+1179
+00:58:26,545 --> 00:58:28,210
+How do I prove it's not zero?
+
+1180
+00:58:28,210 --> 00:58:31,815
+I know how to prove
+it's not one, think.
+
+1181
+00:58:31,815 --> 00:58:37,070
+
+1182
+00:58:37,070 --> 00:58:39,320
+I have to cheat here.
+
+1183
+00:58:39,320 --> 00:58:39,820
+Aha.
+
+1184
+00:58:39,820 --> 00:58:40,510
+Right, right.
+
+1185
+00:58:40,510 --> 00:58:41,714
+OK, good.
+
+1186
+00:58:41,714 --> 00:58:43,470
+Duh.
+
+1187
+00:58:43,470 --> 00:58:43,970
+All right.
+
+1188
+00:58:43,970 --> 00:58:46,010
+Number of edges is 2n minus 3.
+
+1189
+00:58:46,010 --> 00:58:48,687
+Suppose my graph
+looked like this,
+
+1190
+00:58:48,687 --> 00:58:50,520
+where there's no edges
+incident to this guy.
+
+1191
+00:58:50,520 --> 00:58:53,310
+Well, how many edges
+does this have?
+
+1192
+00:58:53,310 --> 00:58:54,230
+2n minus 3 still.
+
+1193
+00:58:54,230 --> 00:58:55,980
+I didn't remove any.
+
+1194
+00:58:55,980 --> 00:58:59,090
+So I've got n minus 1 vertices,
+yet I have 2n minus 3 edges?
+
+1195
+00:58:59,090 --> 00:59:00,670
+That ain't right.
+
+1196
+00:59:00,670 --> 00:59:01,940
+So that can't happen.
+
+1197
+00:59:01,940 --> 00:59:07,130
+Similarly here, if I
+have one edge here,
+
+1198
+00:59:07,130 --> 00:59:10,250
+then the number of
+edges inside this blob--
+
+1199
+00:59:10,250 --> 00:59:13,470
+everything except that one
+vertex-- would be 2n minus 2,
+
+1200
+00:59:13,470 --> 00:59:15,510
+I guess.
+
+1201
+00:59:15,510 --> 00:59:21,540
+But it should really have at
+most 2 times n minus 1 minus 3,
+
+1202
+00:59:21,540 --> 00:59:26,110
+which is 2n minus 4.
+
+1203
+00:59:26,110 --> 00:59:28,960
+Sorry, I did this wrong.
+
+1204
+00:59:28,960 --> 00:59:30,620
+2n minus 3.
+
+1205
+00:59:30,620 --> 00:59:31,510
+This should be 4.
+
+1206
+00:59:31,510 --> 00:59:33,346
+This should be 5.
+
+1207
+00:59:33,346 --> 00:59:35,950
+I'll get it right eventually.
+
+1208
+00:59:35,950 --> 00:59:38,720
+So if I remove one edge from
+2n minus 3, I get 2n minus 4.
+
+1209
+00:59:38,720 --> 00:59:41,090
+I had the sign error.
+
+1210
+00:59:41,090 --> 00:59:43,360
+But I'm supposed to have
+2 times n minus 1-- that's
+
+1211
+00:59:43,360 --> 00:59:47,390
+the number vertices over here--
+minus 3, which is 2n minus 5.
+
+1212
+00:59:47,390 --> 00:59:49,240
+So I have the wrong
+number of edges.
+
+1213
+00:59:49,240 --> 00:59:51,370
+In fact, it should equal.
+
+1214
+00:59:51,370 --> 00:59:51,870
+Whatever.
+
+1215
+00:59:51,870 --> 00:59:54,322
+At most, at most.
+
+1216
+00:59:54,322 --> 00:59:55,780
+We know in every
+subset-- here, I'm
+
+1217
+00:59:55,780 --> 00:59:57,520
+taking a subset of
+n minus 1 vertices.
+
+1218
+00:59:57,520 --> 00:59:59,150
+I have at most 2k minus 3.
+
+1219
+00:59:59,150 --> 01:00:00,880
+Here k is n minus 1.
+
+1220
+01:00:00,880 --> 01:00:02,880
+So I can't have degree-1,
+I can't have degree-0.
+
+1221
+01:00:02,880 --> 01:00:07,540
+Therefore, in fact, it's
+either degree2 or 3.
+
+1222
+01:00:07,540 --> 01:00:10,990
+
+1223
+01:00:10,990 --> 01:00:15,630
+If it's degree-2, I'm done.
+
+1224
+01:00:15,630 --> 01:00:16,890
+I'm happy.
+
+1225
+01:00:16,890 --> 01:00:23,285
+If it's degree--2, then I
+do an anti-Type I operation.
+
+1226
+01:00:23,285 --> 01:00:29,180
+
+1227
+01:00:29,180 --> 01:00:32,000
+So that's this scenario.
+
+1228
+01:00:32,000 --> 01:00:34,570
+If I have any degree-2
+Vertex, I remove it.
+
+1229
+01:00:34,570 --> 01:00:37,850
+
+1230
+01:00:37,850 --> 01:00:39,421
+And I want to
+induct on the rest.
+
+1231
+01:00:39,421 --> 01:00:40,670
+Now, what do I need to induct?
+
+1232
+01:00:40,670 --> 01:00:44,700
+I need to know that
+this property still
+
+1233
+01:00:44,700 --> 01:00:47,070
+holds on my smaller graph.
+
+1234
+01:00:47,070 --> 01:00:50,010
+When I remove this vertex,
+I want the remaining graph
+
+1235
+01:00:50,010 --> 01:00:52,470
+to still have this property.
+
+1236
+01:00:52,470 --> 01:00:54,760
+Does it have 2n minus 3
+edges, for the new value
+
+1237
+01:00:54,760 --> 01:00:57,344
+of n, n being n minus 1 now?
+
+1238
+01:00:57,344 --> 01:00:58,760
+Yeah, because I
+removed two edges.
+
+1239
+01:00:58,760 --> 01:00:59,680
+I removed one vertex.
+
+1240
+01:00:59,680 --> 01:01:01,760
+So it still has the
+right number of edges.
+
+1241
+01:01:01,760 --> 01:01:03,430
+We've already checked that.
+
+1242
+01:01:03,430 --> 01:01:06,030
+And I need to check that
+every subset of the vertices
+
+1243
+01:01:06,030 --> 01:01:09,450
+over here has at most
+2k minus 3 edges.
+
+1244
+01:01:09,450 --> 01:01:11,220
+That's still true,
+because before I
+
+1245
+01:01:11,220 --> 01:01:13,850
+had to consider all subsets
+containing this one or not.
+
+1246
+01:01:13,850 --> 01:01:16,650
+Now I'm just looking at
+subsets that don't contain it.
+
+1247
+01:01:16,650 --> 01:01:20,960
+So I still have the
+Laman conditions
+
+1248
+01:01:20,960 --> 01:01:25,430
+holding for the
+smaller graph in here.
+
+1249
+01:01:25,430 --> 01:01:32,600
+Therefore, I can
+induct, and we're done.
+
+1250
+01:01:32,600 --> 01:01:34,939
+And we're done because then
+we conclude that the smaller
+
+1251
+01:01:34,939 --> 01:01:36,480
+graph is minimally
+generically rigid.
+
+1252
+01:01:36,480 --> 01:01:40,526
+And then property two tells
+us that this thing's minimally
+
+1253
+01:01:40,526 --> 01:01:42,900
+generically rigid, and then
+I add this vertex, two edges,
+
+1254
+01:01:42,900 --> 01:01:44,870
+it'll still be minimally
+generically rigid.
+
+1255
+01:01:44,870 --> 01:01:47,000
+And that's what I
+wanted to conclude
+
+1256
+01:01:47,000 --> 01:01:50,390
+in the left
+implication direction.
+
+1257
+01:01:50,390 --> 01:01:52,230
+The hard case is degree three.
+
+1258
+01:01:52,230 --> 01:01:55,310
+
+1259
+01:01:55,310 --> 01:01:58,110
+Again, there's more than
+one Type II operation.
+
+1260
+01:01:58,110 --> 01:02:00,460
+I already wave my
+hands, claiming
+
+1261
+01:02:00,460 --> 01:02:05,630
+that there is an operation you
+can do so that the result is
+
+1262
+01:02:05,630 --> 01:02:06,910
+minimally generically rigid.
+
+1263
+01:02:06,910 --> 01:02:12,080
+
+1264
+01:02:12,080 --> 01:02:13,140
+But is that enough?
+
+1265
+01:02:13,140 --> 01:02:15,900
+I have to think about
+it for a second.
+
+1266
+01:02:15,900 --> 01:02:17,545
+It's minimally
+generically rigid.
+
+1267
+01:02:17,545 --> 01:02:23,380
+
+1268
+01:02:23,380 --> 01:02:24,335
+Ah, it's not enough.
+
+1269
+01:02:24,335 --> 01:02:26,540
+It's annoying.
+
+1270
+01:02:26,540 --> 01:02:28,470
+That's what I thought.
+
+1271
+01:02:28,470 --> 01:02:30,160
+I'm not surprised,
+but I'm re-surprised.
+
+1272
+01:02:30,160 --> 01:02:30,660
+Whatever.
+
+1273
+01:02:30,660 --> 01:02:33,280
+
+1274
+01:02:33,280 --> 01:02:35,190
+For this theory
+property to hold,
+
+1275
+01:02:35,190 --> 01:02:38,550
+I need that the graph I have
+is minimally generically rigid.
+
+1276
+01:02:38,550 --> 01:02:40,170
+That's what I want to prove.
+
+1277
+01:02:40,170 --> 01:02:42,390
+I don't know that that's true.
+
+1278
+01:02:42,390 --> 01:02:44,290
+So I can't use property four.
+
+1279
+01:02:44,290 --> 01:02:45,020
+Sucks to be me.
+
+1280
+01:02:45,020 --> 01:02:47,919
+
+1281
+01:02:47,919 --> 01:02:50,460
+I'm trying to prove the graph
+is minimally generically rigid.
+
+1282
+01:02:50,460 --> 01:02:53,610
+All I have is degree-3 vertex,
+and I have Laman's condition.
+
+1283
+01:02:53,610 --> 01:02:58,140
+I don't know whether property
+four applies to my scenario.
+
+1284
+01:02:58,140 --> 01:03:01,530
+So we've got to do work.
+
+1285
+01:03:01,530 --> 01:03:03,620
+And wow.
+
+1286
+01:03:03,620 --> 01:03:10,980
+
+1287
+01:03:10,980 --> 01:03:13,020
+See what I can do to this proof.
+
+1288
+01:03:13,020 --> 01:03:34,550
+
+1289
+01:03:34,550 --> 01:03:37,835
+In the degree-3 case, I want to
+find an anti-Type II operation.
+
+1290
+01:03:37,835 --> 01:03:40,670
+
+1291
+01:03:40,670 --> 01:03:43,890
+Presumably they're out
+there, but I need a good one.
+
+1292
+01:03:43,890 --> 01:03:47,550
+For me, good means it should
+preserve the Laman condition.
+
+1293
+01:03:47,550 --> 01:03:50,260
+So after I do the anti-Type
+II, after I delete those three
+
+1294
+01:03:50,260 --> 01:03:54,190
+edges, delete the vertex,
+add one edge back,
+
+1295
+01:03:54,190 --> 01:03:55,560
+I want this to still hold.
+
+1296
+01:03:55,560 --> 01:03:58,792
+
+1297
+01:03:58,792 --> 01:04:00,250
+Now, there's
+essentially two things
+
+1298
+01:04:00,250 --> 01:04:02,970
+that could go wrong
+for this to still hold.
+
+1299
+01:04:02,970 --> 01:04:06,740
+One is you go to add an
+edge, and it's already there.
+
+1300
+01:04:06,740 --> 01:04:10,150
+If it's already there, you
+can't really add it again,
+
+1301
+01:04:10,150 --> 01:04:12,180
+and then the number of
+edges will be wrong.
+
+1302
+01:04:12,180 --> 01:04:14,980
+You always want to have
+2n minus 3 as you go down.
+
+1303
+01:04:14,980 --> 01:04:17,060
+If I try to add an edge
+and it doesn't work out--
+
+1304
+01:04:17,060 --> 01:04:18,730
+because the whole point is
+I'm supposed to remove three,
+
+1305
+01:04:18,730 --> 01:04:19,430
+add one.
+
+1306
+01:04:19,430 --> 01:04:21,180
+If I don't actually
+succeed in adding one,
+
+1307
+01:04:21,180 --> 01:04:23,200
+it'll be the wrong number.
+
+1308
+01:04:23,200 --> 01:04:25,200
+So first thing you
+need to check is
+
+1309
+01:04:25,200 --> 01:04:28,490
+that-- so I take
+this degree-3 vertex.
+
+1310
+01:04:28,490 --> 01:04:30,540
+Here it is.
+
+1311
+01:04:30,540 --> 01:04:33,910
+Now it's all about its
+neighbors, these three guys.
+
+1312
+01:04:33,910 --> 01:04:38,010
+If all three of those exist,
+I would be in trouble.
+
+1313
+01:04:38,010 --> 01:04:40,044
+Fortunately, that can't happen.
+
+1314
+01:04:40,044 --> 01:04:41,960
+This is the picture I
+drew that cannot happen.
+
+1315
+01:04:41,960 --> 01:04:42,820
+This is over-braced.
+
+1316
+01:04:42,820 --> 01:04:44,010
+There's too many edges here.
+
+1317
+01:04:44,010 --> 01:04:45,860
+This is a subset
+of four vertices.
+
+1318
+01:04:45,860 --> 01:04:48,630
+It has more than
+2k minus 3 edges.
+
+1319
+01:04:48,630 --> 01:04:50,370
+So by Laman's condition,
+this can't hold.
+
+1320
+01:04:50,370 --> 01:04:52,990
+Some edge must be missing.
+
+1321
+01:04:52,990 --> 01:04:55,010
+That's the one we'll target.
+
+1322
+01:04:55,010 --> 01:04:57,065
+So at least there's an
+edge that's missing.
+
+1323
+01:04:57,065 --> 01:04:59,560
+That's property one.
+
+1324
+01:04:59,560 --> 01:05:02,340
+There's another thing that
+could go wrong, though,
+
+1325
+01:05:02,340 --> 01:05:05,050
+which is I go to
+add in this edge,
+
+1326
+01:05:05,050 --> 01:05:08,070
+and somehow the other part
+of the condition-- the subset
+
+1327
+01:05:08,070 --> 01:05:10,710
+property-- doesn't hold.
+
+1328
+01:05:10,710 --> 01:05:13,247
+Now, what could that
+possibly look like?
+
+1329
+01:05:13,247 --> 01:05:14,955
+It would have to be
+a subset of vertices.
+
+1330
+01:05:14,955 --> 01:05:19,620
+
+1331
+01:05:19,620 --> 01:05:23,190
+It should at least contain
+these two vertices.
+
+1332
+01:05:23,190 --> 01:05:27,530
+Actually, it probably
+shouldn't contain this one.
+
+1333
+01:05:27,530 --> 01:05:30,686
+This requires some thinking.
+
+1334
+01:05:30,686 --> 01:05:32,810
+I mean, if it contained
+this one, it's no big deal.
+
+1335
+01:05:32,810 --> 01:05:36,035
+I mean, it's got do one
+more vertex, two more edges.
+
+1336
+01:05:36,035 --> 01:05:36,535
+Who cares.
+
+1337
+01:05:36,535 --> 01:05:39,750
+
+1338
+01:05:39,750 --> 01:05:43,340
+But if you just look at
+one of these subsets,
+
+1339
+01:05:43,340 --> 01:05:45,640
+then in this subset,
+you're adding an edge.
+
+1340
+01:05:45,640 --> 01:05:48,900
+That's in general a bad idea,
+because if it had exactly 2k
+
+1341
+01:05:48,900 --> 01:05:51,400
+minus 3 before and
+now I add an edge,
+
+1342
+01:05:51,400 --> 01:05:53,081
+it'll have too many edges.
+
+1343
+01:05:53,081 --> 01:05:53,830
+That would be bad.
+
+1344
+01:05:53,830 --> 01:05:55,900
+So somehow I want to
+say there's some place I
+
+1345
+01:05:55,900 --> 01:06:00,440
+can add an edge where there
+was slack, where there
+
+1346
+01:06:00,440 --> 01:06:03,450
+were less than 2k minus 3 edges.
+
+1347
+01:06:03,450 --> 01:06:07,870
+And so when I add
+this in, I'm OK.
+
+1348
+01:06:07,870 --> 01:06:09,640
+It's a little tricky to argue.
+
+1349
+01:06:09,640 --> 01:06:13,200
+What we do is
+suppose-- we're going
+
+1350
+01:06:13,200 --> 01:06:15,200
+to argue by contradiction.
+
+1351
+01:06:15,200 --> 01:06:17,720
+If this is impossible-- so
+I'm going to try for these two
+
+1352
+01:06:17,720 --> 01:06:19,803
+vertices, then I'll try
+it for these two vertices,
+
+1353
+01:06:19,803 --> 01:06:22,390
+then I'll try for these
+two-- three choices.
+
+1354
+01:06:22,390 --> 01:06:26,810
+If they all fail, I claim
+there's a contradiction.
+
+1355
+01:06:26,810 --> 01:06:29,390
+And I will try to
+sketch this for you.
+
+1356
+01:06:29,390 --> 01:06:33,670
+So let's say there are Si-- I
+have some subset of vertices
+
+1357
+01:06:33,670 --> 01:06:39,380
+Si-- and i is one,
+two, or three.
+
+1358
+01:06:39,380 --> 01:06:44,040
+And this will turn out
+to be the bad case.
+
+1359
+01:06:44,040 --> 01:06:48,400
+Suppose that it contains--
+I didn't give these labels.
+
+1360
+01:06:48,400 --> 01:06:54,010
+This is V, V1, V2, V3.
+
+1361
+01:06:54,010 --> 01:06:57,690
+So it's going to
+contain Vi plus 1 and Vi
+
+1362
+01:06:57,690 --> 01:07:04,530
+plus 2-- those are the
+other two vertices from i--
+
+1363
+01:07:04,530 --> 01:07:09,440
+but not V. Not the vertex that
+I added, because that turns out
+
+1364
+01:07:09,440 --> 01:07:10,630
+not to matter.
+
+1365
+01:07:10,630 --> 01:07:17,670
+And suppose that it induces
+exactly 2k-- what's k here?
+
+1366
+01:07:17,670 --> 01:07:27,385
+Size of Si-- minus 3 edges.
+
+1367
+01:07:27,385 --> 01:07:29,130
+It has Si edges.
+
+1368
+01:07:29,130 --> 01:07:32,980
+If it has exactly 2Si minus 3
+edges, I can't add another one.
+
+1369
+01:07:32,980 --> 01:07:35,860
+And if this is true for
+this pair and for this pair
+
+1370
+01:07:35,860 --> 01:07:38,100
+and for this pair,
+then I'm screwed.
+
+1371
+01:07:38,100 --> 01:07:40,990
+So suppose that it's true for
+all three pairs of these Sis.
+
+1372
+01:07:40,990 --> 01:07:45,160
+
+1373
+01:07:45,160 --> 01:07:46,020
+Fun fact.
+
+1374
+01:07:46,020 --> 01:07:51,325
+Let's look at all of the
+edges among S1 and S2.
+
+1375
+01:07:51,325 --> 01:07:53,450
+Let's start combining these
+sets in different ways.
+
+1376
+01:07:53,450 --> 01:07:59,614
+
+1377
+01:07:59,614 --> 01:08:00,780
+Speed through this a little.
+
+1378
+01:08:00,780 --> 01:08:04,880
+
+1379
+01:08:04,880 --> 01:08:07,830
+Something called
+inclusion-exclusion principle,
+
+1380
+01:08:07,830 --> 01:08:11,260
+which is I have these
+two sets S1 and S2.
+
+1381
+01:08:11,260 --> 01:08:13,700
+They might overlap, who knows.
+
+1382
+01:08:13,700 --> 01:08:18,479
+But if I count all the edges
+in both of them together,
+
+1383
+01:08:18,479 --> 01:08:22,529
+that's kind of like counting all
+the edges in here-- all of Si--
+
+1384
+01:08:22,529 --> 01:08:24,087
+and counting all
+the edges in S2--
+
+1385
+01:08:24,087 --> 01:08:25,920
+and then removing the
+intersection because I
+
+1386
+01:08:25,920 --> 01:08:27,174
+double-counted there.
+
+1387
+01:08:27,174 --> 01:08:28,910
+AUDIENCE: It's like probability.
+
+1388
+01:08:28,910 --> 01:08:29,800
+PROFESSOR: It's
+like probability.
+
+1389
+01:08:29,800 --> 01:08:30,966
+This is inclusion-exclusion.
+
+1390
+01:08:30,966 --> 01:08:32,510
+It exists all over the place.
+
+1391
+01:08:32,510 --> 01:08:33,635
+Usually it's combinatorics.
+
+1392
+01:08:33,635 --> 01:08:36,160
+
+1393
+01:08:36,160 --> 01:08:39,017
+But it's not quite
+accurate here,
+
+1394
+01:08:39,017 --> 01:08:41,100
+and that's why there's a
+greater than or equal to.
+
+1395
+01:08:41,100 --> 01:08:42,349
+Because we're counting
+edges not vertices,
+
+1396
+01:08:42,349 --> 01:08:44,020
+it's a little messier,
+because there's
+
+1397
+01:08:44,020 --> 01:08:46,750
+some edges you miss, like
+an edge from this vertex
+
+1398
+01:08:46,750 --> 01:08:48,649
+over to this vertex.
+
+1399
+01:08:48,649 --> 01:08:50,880
+You'll still count twice.
+
+1400
+01:08:50,880 --> 01:08:52,350
+But hey, it's close enough.
+
+1401
+01:08:52,350 --> 01:08:54,210
+Greater than or equal to.
+
+1402
+01:08:54,210 --> 01:08:55,040
+OK?
+
+1403
+01:08:55,040 --> 01:09:02,254
+Now, I claim this thing should
+only have one vertex in it.
+
+1404
+01:09:02,254 --> 01:09:03,710
+How the heck could I claim that?
+
+1405
+01:09:03,710 --> 01:09:05,960
+Well, let's suppose that it
+has at least two vertices.
+
+1406
+01:09:05,960 --> 01:09:08,450
+
+1407
+01:09:08,450 --> 01:09:10,430
+And then I'm going to
+get a contradiction.
+
+1408
+01:09:10,430 --> 01:09:17,500
+So I guess I really mean
+this-- that Si intersects S2.
+
+1409
+01:09:17,500 --> 01:09:19,890
+I claim these intersections
+have to be pretty tiny.
+
+1410
+01:09:19,890 --> 01:09:22,350
+The reason is, if
+it weren't, what
+
+1411
+01:09:22,350 --> 01:09:24,899
+do I know about the
+edges induced by S1?
+
+1412
+01:09:24,899 --> 01:09:27,630
+Well, it's a subset, so it
+satisfies the 2K minus 3
+
+1413
+01:09:27,630 --> 01:09:29,050
+property.
+
+1414
+01:09:29,050 --> 01:09:31,883
+So it's going to be greater
+than or equal to, right?
+
+1415
+01:09:31,883 --> 01:09:34,399
+
+1416
+01:09:34,399 --> 01:09:38,100
+Actually, I'd already assumed
+the number of edges induced
+
+1417
+01:09:38,100 --> 01:09:40,670
+here is exactly twice
+the Sis minus 3.
+
+1418
+01:09:40,670 --> 01:09:46,160
+So this will be exactly
+equal to 2 times S1 minus 3.
+
+1419
+01:09:46,160 --> 01:09:51,960
+It's 2 times S2 minus 3, and
+then the same thing there.
+
+1420
+01:09:51,960 --> 01:09:52,460
+OK?
+
+1421
+01:09:52,460 --> 01:09:56,160
+But this is some subset.
+
+1422
+01:09:56,160 --> 01:09:59,370
+As long as it has at
+least two vertices-- yeah,
+
+1423
+01:09:59,370 --> 01:10:01,764
+this should be k
+greater than or one.
+
+1424
+01:10:01,764 --> 01:10:03,430
+Things don't quite
+work with one vertex,
+
+1425
+01:10:03,430 --> 01:10:05,080
+because then it says
+2 times 1 minus 3.
+
+1426
+01:10:05,080 --> 01:10:07,050
+It should have negative 1 edges.
+
+1427
+01:10:07,050 --> 01:10:07,710
+Ain't so.
+
+1428
+01:10:07,710 --> 01:10:09,680
+It's got zero edges.
+
+1429
+01:10:09,680 --> 01:10:13,130
+So you need more than one
+vertex for this to apply.
+
+1430
+01:10:13,130 --> 01:10:14,340
+But now I have some subset.
+
+1431
+01:10:14,340 --> 01:10:16,760
+It has at least two
+vertices, let's say.
+
+1432
+01:10:16,760 --> 01:10:19,740
+So it has at most
+2k minus 3 edges.
+
+1433
+01:10:19,740 --> 01:10:25,287
+So this is going to
+be at most-- it's
+
+1434
+01:10:25,287 --> 01:10:26,995
+confusing because
+everything's backwards.
+
+1435
+01:10:26,995 --> 01:10:30,240
+
+1436
+01:10:30,240 --> 01:10:32,810
+Well, it's going to be
+another two times the size
+
+1437
+01:10:32,810 --> 01:10:33,772
+of this thing minus 3.
+
+1438
+01:10:33,772 --> 01:10:35,730
+So I'm just going to
+collect them all together.
+
+1439
+01:10:35,730 --> 01:10:40,550
+We have S1, we have S2, and
+the one that we just added
+
+1440
+01:10:40,550 --> 01:10:46,280
+was S1 intersect S2 minus 9.
+
+1441
+01:10:46,280 --> 01:10:47,340
+It's three 3s.
+
+1442
+01:10:47,340 --> 01:10:51,678
+
+1443
+01:10:51,678 --> 01:10:55,700
+But this thing--
+and I got it wrong.
+
+1444
+01:10:55,700 --> 01:10:56,985
+There's a sign error.
+
+1445
+01:10:56,985 --> 01:10:58,660
+I got two sign errors.
+
+1446
+01:10:58,660 --> 01:11:00,520
+There's a minus here.
+
+1447
+01:11:00,520 --> 01:11:02,780
+There's 2k minus 3.
+
+1448
+01:11:02,780 --> 01:11:05,840
+And so this is going
+to be two negative 3s,
+
+1449
+01:11:05,840 --> 01:11:08,390
+then there's going to be
+a negative negative 3.
+
+1450
+01:11:08,390 --> 01:11:09,777
+2 wrongs make a right.
+
+1451
+01:11:09,777 --> 01:11:10,860
+It should be 3 in the end.
+
+1452
+01:11:10,860 --> 01:11:14,210
+
+1453
+01:11:14,210 --> 01:11:15,150
+OK.
+
+1454
+01:11:15,150 --> 01:11:17,630
+Now, this thing.
+
+1455
+01:11:17,630 --> 01:11:18,220
+What's that?
+
+1456
+01:11:18,220 --> 01:11:21,428
+
+1457
+01:11:21,428 --> 01:11:22,390
+AUDIENCE: The union.
+
+1458
+01:11:22,390 --> 01:11:24,150
+PROFESSOR: It's the
+size of the union.
+
+1459
+01:11:24,150 --> 01:11:25,775
+Here it's exact,
+because we're counting
+
+1460
+01:11:25,775 --> 01:11:29,150
+vertices instead of edges.
+
+1461
+01:11:29,150 --> 01:11:31,310
+It's this plus this
+minus the intersection
+
+1462
+01:11:31,310 --> 01:11:33,090
+from double counting.
+
+1463
+01:11:33,090 --> 01:11:33,590
+Huh.
+
+1464
+01:11:33,590 --> 01:11:37,582
+So two times that size minus 3.
+
+1465
+01:11:37,582 --> 01:11:39,430
+Hmm.
+
+1466
+01:11:39,430 --> 01:11:42,560
+So I looked at the edges
+induced by the union.
+
+1467
+01:11:42,560 --> 01:11:45,440
+I got those at
+least to k minus 3.
+
+1468
+01:11:45,440 --> 01:11:45,960
+So what--?
+
+1469
+01:11:45,960 --> 01:11:48,950
+
+1470
+01:11:48,950 --> 01:11:50,650
+Right.
+
+1471
+01:11:50,650 --> 01:11:53,240
+It doesn't sound like
+a contradiction yet.
+
+1472
+01:11:53,240 --> 01:11:55,518
+We want it to be
+at most 2k minus 3
+
+1473
+01:11:55,518 --> 01:12:01,170
+but I think there's a
+property I didn't prove yet.
+
+1474
+01:12:01,170 --> 01:12:01,990
+Great.
+
+1475
+01:12:01,990 --> 01:12:02,490
+All right.
+
+1476
+01:12:02,490 --> 01:12:04,137
+So what.
+
+1477
+01:12:04,137 --> 01:12:05,470
+Let's look back at this picture.
+
+1478
+01:12:05,470 --> 01:12:14,980
+
+1479
+01:12:14,980 --> 01:12:20,790
+So if I take S1 union S2,
+S1 hits these two guys-- 2
+
+1480
+01:12:20,790 --> 01:12:25,150
+and 3-- S2 hits these
+two guys-- 1 and 3.
+
+1481
+01:12:25,150 --> 01:12:27,790
+In their union, they're
+going to hit all three.
+
+1482
+01:12:27,790 --> 01:12:30,650
+So the set is going
+to look like this.
+
+1483
+01:12:30,650 --> 01:12:36,555
+It's going to contain V1, V2,
+V3, but not V. Interesting.
+
+1484
+01:12:36,555 --> 01:12:39,280
+
+1485
+01:12:39,280 --> 01:12:42,080
+I know that if I
+put V in, I still
+
+1486
+01:12:42,080 --> 01:12:44,220
+have at most 2k minus 3 edges.
+
+1487
+01:12:44,220 --> 01:12:48,190
+If I remove V, I remove
+one vertex and three edges.
+
+1488
+01:12:48,190 --> 01:12:50,050
+Three edges for
+the price of one.
+
+1489
+01:12:50,050 --> 01:12:52,110
+Or for the price
+of two, I guess.
+
+1490
+01:12:52,110 --> 01:12:54,910
+Normally if I remove a vertex,
+I should remove only two edges.
+
+1491
+01:12:54,910 --> 01:12:57,680
+If I cut out V, I
+remove three edges.
+
+1492
+01:12:57,680 --> 01:12:59,760
+Therefore, this
+set that includes
+
+1493
+01:12:59,760 --> 01:13:03,070
+V1, V2, V3 has to have slack.
+
+1494
+01:13:03,070 --> 01:13:08,280
+It can't have 2k minus 3 edges,
+because-- this should be OK.
+
+1495
+01:13:08,280 --> 01:13:11,350
+The bigger set should
+be at most 2k minus 3.
+
+1496
+01:13:11,350 --> 01:13:14,080
+When I remove a vertex
+and remove three edges,
+
+1497
+01:13:14,080 --> 01:13:16,160
+there's going to be too
+few edges over here.
+
+1498
+01:13:16,160 --> 01:13:17,890
+Two few edges is OK.
+
+1499
+01:13:17,890 --> 01:13:20,010
+It would be strictly
+less than 2k minus 3,
+
+1500
+01:13:20,010 --> 01:13:22,482
+and here I'm claiming
+it's at least 2k minus 3.
+
+1501
+01:13:22,482 --> 01:13:23,440
+That's a contradiction.
+
+1502
+01:13:23,440 --> 01:13:30,170
+
+1503
+01:13:30,170 --> 01:13:31,960
+Now, it turns out, I'm
+not done, because I
+
+1504
+01:13:31,960 --> 01:13:34,320
+was in two levels
+of contradiction.
+
+1505
+01:13:34,320 --> 01:13:37,086
+So what this contradicts
+is this assumption
+
+1506
+01:13:37,086 --> 01:13:39,460
+that there are at least two
+vertices in the intersection.
+
+1507
+01:13:39,460 --> 01:13:41,959
+Now, I know there can't be two
+vertices in the intersection.
+
+1508
+01:13:41,959 --> 01:13:43,070
+It's got to be fewer.
+
+1509
+01:13:43,070 --> 01:13:46,080
+Could be zero, but
+it can't really
+
+1510
+01:13:46,080 --> 01:13:52,260
+be zero, because S2
+and S2 both contain V3.
+
+1511
+01:13:52,260 --> 01:13:54,260
+So it's got to be exactly one.
+
+1512
+01:13:54,260 --> 01:13:57,620
+In fact-- it's the crazy proof.
+
+1513
+01:13:57,620 --> 01:14:00,326
+When I read this,
+I was like, really?
+
+1514
+01:14:00,326 --> 01:14:02,390
+It works, though.
+
+1515
+01:14:02,390 --> 01:14:03,740
+You can do all of them.
+
+1516
+01:14:03,740 --> 01:14:09,472
+This is going to equal exactly
+V1 and S1 intersect S3.
+
+1517
+01:14:09,472 --> 01:14:10,680
+You can do this for any pair.
+
+1518
+01:14:10,680 --> 01:14:13,430
+So this is going to be V2.
+
+1519
+01:14:13,430 --> 01:14:15,540
+So all these intersections
+have size one,
+
+1520
+01:14:15,540 --> 01:14:17,280
+and we know what it is.
+
+1521
+01:14:17,280 --> 01:14:17,890
+So what?
+
+1522
+01:14:17,890 --> 01:14:26,140
+
+1523
+01:14:26,140 --> 01:14:37,730
+Well, now if I take the
+union of all of them--
+
+1524
+01:14:37,730 --> 01:14:39,080
+there's only this sharing.
+
+1525
+01:14:39,080 --> 01:14:40,940
+There's only three shared guys.
+
+1526
+01:14:40,940 --> 01:14:44,860
+So I get twice the
+size of all them, which
+
+1527
+01:14:44,860 --> 01:14:52,805
+is S1 plus S2 plus S3 minus 3.
+
+1528
+01:14:52,805 --> 01:14:55,860
+
+1529
+01:14:55,860 --> 01:14:56,950
+Not twice.
+
+1530
+01:14:56,950 --> 01:15:00,020
+Sorry, just that.
+
+1531
+01:15:00,020 --> 01:15:02,357
+Who cares.
+
+1532
+01:15:02,357 --> 01:15:04,065
+Take all the edges
+induced by those guys.
+
+1533
+01:15:04,065 --> 01:15:08,790
+
+1534
+01:15:08,790 --> 01:15:15,750
+At the very least, that's
+going to be-- good.
+
+1535
+01:15:15,750 --> 01:15:16,250
+Now I see.
+
+1536
+01:15:16,250 --> 01:15:20,640
+
+1537
+01:15:20,640 --> 01:15:22,650
+I think that'd
+actually be equal.
+
+1538
+01:15:22,650 --> 01:15:24,810
+But the point is they
+don't share any edges.
+
+1539
+01:15:24,810 --> 01:15:26,476
+Because they only
+share a single vertex,
+
+1540
+01:15:26,476 --> 01:15:28,440
+there's no room to
+share any edges.
+
+1541
+01:15:28,440 --> 01:15:32,030
+So these guys should be
+probably equal to each other.
+
+1542
+01:15:32,030 --> 01:15:33,830
+Edges induced by all
+of them versus edges
+
+1543
+01:15:33,830 --> 01:15:35,660
+induced by each of
+them individually.
+
+1544
+01:15:35,660 --> 01:15:39,550
+Here the whole is equal
+to the sum of the parts.
+
+1545
+01:15:39,550 --> 01:15:43,940
+And this is going to be
+2 times number of S1s
+
+1546
+01:15:43,940 --> 01:15:48,885
+plus number of S2s plus
+number of S3s minus 9.
+
+1547
+01:15:48,885 --> 01:15:53,260
+
+1548
+01:15:53,260 --> 01:15:54,630
+This should be equal.
+
+1549
+01:15:54,630 --> 01:15:57,312
+We assumed that
+they were exactly
+
+1550
+01:15:57,312 --> 01:15:58,395
+the right number of edges.
+
+1551
+01:15:58,395 --> 01:16:01,030
+
+1552
+01:16:01,030 --> 01:16:03,460
+So this is the usual problem.
+
+1553
+01:16:03,460 --> 01:16:07,070
+
+1554
+01:16:07,070 --> 01:16:10,440
+This can't happen by the
+same argument we did here.
+
+1555
+01:16:10,440 --> 01:16:13,670
+If we include V1, V2, V3
+and we don't include V,
+
+1556
+01:16:13,670 --> 01:16:15,450
+we've got to have too few edges.
+
+1557
+01:16:15,450 --> 01:16:18,410
+And here we're saying we have
+exactly the right number.
+
+1558
+01:16:18,410 --> 01:16:21,205
+Can't happen.
+
+1559
+01:16:21,205 --> 01:16:24,190
+AUDIENCE: [INAUDIBLE]
+
+1560
+01:16:24,190 --> 01:16:25,690
+PROFESSOR: It's a
+slight discrepancy
+
+1561
+01:16:25,690 --> 01:16:27,700
+between the 9 and the 3.
+
+1562
+01:16:27,700 --> 01:16:28,380
+Sorry, question?
+
+1563
+01:16:28,380 --> 01:16:31,210
+AUDIENCE: [INAUDIBLE].
+
+1564
+01:16:31,210 --> 01:16:32,460
+PROFESSOR: There's no 2 here.
+
+1565
+01:16:32,460 --> 01:16:35,400
+Here I'm counting vertices,
+here I'm counting edges.
+
+1566
+01:16:35,400 --> 01:16:38,710
+So I get a 2 here.
+
+1567
+01:16:38,710 --> 01:16:46,700
+This thing is equal
+to this thing plus 3.
+
+1568
+01:16:46,700 --> 01:16:52,900
+
+1569
+01:16:52,900 --> 01:16:54,500
+Ah, algebra.
+
+1570
+01:16:54,500 --> 01:16:55,740
+I multiply the 2 by the 3.
+
+1571
+01:16:55,740 --> 01:16:56,310
+I get 6.
+
+1572
+01:16:56,310 --> 01:16:57,530
+It cancels with the 9.
+
+1573
+01:16:57,530 --> 01:16:58,742
+I get minus 3.
+
+1574
+01:16:58,742 --> 01:17:00,950
+So this says I should have
+exactly the right number--
+
+1575
+01:17:00,950 --> 01:17:03,161
+twice the size of
+the set minus 3.
+
+1576
+01:17:03,161 --> 01:17:03,910
+That can't happen.
+
+1577
+01:17:03,910 --> 01:17:05,410
+I have to have at
+least one fewer.
+
+1578
+01:17:05,410 --> 01:17:07,280
+That's what we argued.
+
+1579
+01:17:07,280 --> 01:17:07,800
+It's messy.
+
+1580
+01:17:07,800 --> 01:17:08,960
+You should read the notes.
+
+1581
+01:17:08,960 --> 01:17:12,400
+But that proves Laman's theorem.
+
+1582
+01:17:12,400 --> 01:17:14,685
+Now, in the remaining
+four minutes,
+
+1583
+01:17:14,685 --> 01:17:18,122
+I want to tell you
+two more cool things.
+
+1584
+01:17:18,122 --> 01:17:19,080
+Three more cool things.
+
+1585
+01:17:19,080 --> 01:17:21,460
+Great.
+
+1586
+01:17:21,460 --> 01:17:22,270
+All right.
+
+1587
+01:17:22,270 --> 01:17:26,860
+First thing is you can turn
+this into an algorithm.
+
+1588
+01:17:26,860 --> 01:17:28,855
+How do you turn it
+into an algorithm?
+
+1589
+01:17:28,855 --> 01:17:30,380
+It's a crazy idea.
+
+1590
+01:17:30,380 --> 01:17:32,890
+Roughly speaking,
+in every vertex,
+
+1591
+01:17:32,890 --> 01:17:36,730
+you imagine there's two little
+pebbles sitting on the vertex.
+
+1592
+01:17:36,730 --> 01:17:40,170
+And then there's a bunch of
+edges incident to that vertex.
+
+1593
+01:17:40,170 --> 01:17:44,260
+You can assign each of these
+pebbles to one of those edges.
+
+1594
+01:17:44,260 --> 01:17:46,330
+Something like that.
+
+1595
+01:17:46,330 --> 01:17:49,550
+You get to choose each, but
+I only have two of them.
+
+1596
+01:17:49,550 --> 01:17:53,410
+I do that for every vertex.
+
+1597
+01:17:53,410 --> 01:17:56,690
+So something like that.
+
+1598
+01:17:56,690 --> 01:17:58,355
+If I can cover all
+the edges-- there's
+
+1599
+01:17:58,355 --> 01:18:00,800
+a slight extra
+condition-- but if I
+
+1600
+01:18:00,800 --> 01:18:06,240
+can cover all the edge in
+this way, I claim I'm rigid.
+
+1601
+01:18:06,240 --> 01:18:08,170
+Well, not cover all the edges.
+
+1602
+01:18:08,170 --> 01:18:10,790
+If I can get all the
+pebbles off the vertices
+
+1603
+01:18:10,790 --> 01:18:15,530
+without them hitting each
+other, then I'm rigid.
+
+1604
+01:18:15,530 --> 01:18:17,720
+I might have more extra
+edges that aren't covered.
+
+1605
+01:18:17,720 --> 01:18:18,860
+Those are the extra edges.
+
+1606
+01:18:18,860 --> 01:18:20,030
+You should throw them away.
+
+1607
+01:18:20,030 --> 01:18:21,010
+That's over-bracing.
+
+1608
+01:18:21,010 --> 01:18:22,755
+It's too much to be rigid.
+
+1609
+01:18:22,755 --> 01:18:26,270
+But if I can get all
+these pebbles off somehow,
+
+1610
+01:18:26,270 --> 01:18:29,840
+then I have roughly the right
+number of edges for vertices.
+
+1611
+01:18:29,840 --> 01:18:31,610
+And while it's not
+obvious, it turns out
+
+1612
+01:18:31,610 --> 01:18:34,550
+you will satisfy Laman's
+condition in that situation.
+
+1613
+01:18:34,550 --> 01:18:37,100
+And so it turns out to just
+be a graph searching problem.
+
+1614
+01:18:37,100 --> 01:18:38,870
+You have to push
+the pebbles around
+
+1615
+01:18:38,870 --> 01:18:41,850
+in order to get them
+off the vertices.
+
+1616
+01:18:41,850 --> 01:18:44,900
+You don't have a lot of choices
+where the pebbles can go.
+
+1617
+01:18:44,900 --> 01:18:54,100
+And it turns out to be basically
+m calls to path connectivity
+
+1618
+01:18:54,100 --> 01:18:55,590
+operations.
+
+1619
+01:18:55,590 --> 01:18:57,240
+So I've just given two graphs.
+
+1620
+01:18:57,240 --> 01:18:59,640
+So I'm given a
+connected graph, which
+
+1621
+01:18:59,640 --> 01:19:02,060
+is the ways that I can
+move the pebbles around.
+
+1622
+01:19:02,060 --> 01:19:04,830
+I just want to know, can
+I do a chain reaction
+
+1623
+01:19:04,830 --> 01:19:09,740
+of pebble twitches till I
+get this one moved away?
+
+1624
+01:19:09,740 --> 01:19:11,420
+So it's just a
+depth first search.
+
+1625
+01:19:11,420 --> 01:19:12,010
+Whatever.
+
+1626
+01:19:12,010 --> 01:19:15,360
+So this cost linear time.
+
+1627
+01:19:15,360 --> 01:19:17,820
+I think we could probably
+get away with n operations
+
+1628
+01:19:17,820 --> 01:19:22,504
+each linear time
+in number of edges.
+
+1629
+01:19:22,504 --> 01:19:24,045
+So the total amount
+of time is number
+
+1630
+01:19:24,045 --> 01:19:26,050
+of vertices times
+number of edges.
+
+1631
+01:19:26,050 --> 01:19:29,050
+M is the number of edges.
+
+1632
+01:19:29,050 --> 01:19:30,250
+Polynomial time.
+
+1633
+01:19:30,250 --> 01:19:31,240
+Life is good.
+
+1634
+01:19:31,240 --> 01:19:31,900
+Open problem.
+
+1635
+01:19:31,900 --> 01:19:32,835
+Can you do better?
+
+1636
+01:19:32,835 --> 01:19:34,460
+But that's been around
+for a long time.
+
+1637
+01:19:34,460 --> 01:19:35,900
+We've tried it before.
+
+1638
+01:19:35,900 --> 01:19:38,260
+Seems quite challenging.
+
+1639
+01:19:38,260 --> 01:19:39,690
+Bigger open problem.
+
+1640
+01:19:39,690 --> 01:19:41,740
+What about 3D?
+
+1641
+01:19:41,740 --> 01:19:46,950
+In 3D, there these annoying
+situations, like this one.
+
+1642
+01:19:46,950 --> 01:19:51,960
+
+1643
+01:19:51,960 --> 01:19:53,530
+Two tetrahedra
+glued along a face.
+
+1644
+01:19:53,530 --> 01:20:02,010
+
+1645
+01:20:02,010 --> 01:20:05,420
+Take two-- we call this a
+banana-- take two bananas.
+
+1646
+01:20:05,420 --> 01:20:08,800
+Joined them at vertices,
+the opposing vertices.
+
+1647
+01:20:08,800 --> 01:20:11,400
+This thing is flexible, right?
+
+1648
+01:20:11,400 --> 01:20:13,400
+You just rotate through here.
+
+1649
+01:20:13,400 --> 01:20:14,610
+It's generically flexible.
+
+1650
+01:20:14,610 --> 01:20:15,943
+It doesn't matter how I draw it.
+
+1651
+01:20:15,943 --> 01:20:17,370
+You can rotate
+through that axis.
+
+1652
+01:20:17,370 --> 01:20:20,580
+But it has 2n minus 6
+edges, and every subset
+
+1653
+01:20:20,580 --> 01:20:22,480
+has at most 3n minus 6 edges.
+
+1654
+01:20:22,480 --> 01:20:24,520
+So Laman doesn't hold.
+
+1655
+01:20:24,520 --> 01:20:27,240
+Does the generalized version
+of Henneberg's theorem hold?
+
+1656
+01:20:27,240 --> 01:20:28,740
+We don't know.
+
+1657
+01:20:28,740 --> 01:20:30,351
+I think maybe yes.
+
+1658
+01:20:30,351 --> 01:20:32,100
+If you want to work
+on 3D rigidity-- which
+
+1659
+01:20:32,100 --> 01:20:35,580
+is a little scary, because a
+lot of people worked on it--
+
+1660
+01:20:35,580 --> 01:20:37,540
+I think Henneberg might
+be a good way to go.
+
+1661
+01:20:37,540 --> 01:20:38,710
+It might not lead
+to an algorithm,
+
+1662
+01:20:38,710 --> 01:20:40,835
+but at least you might get
+a nice characterization.
+
+1663
+01:20:40,835 --> 01:20:44,080
+
+1664
+01:20:44,080 --> 01:20:44,580
+It'd be fun.
+
+1665
+01:20:44,580 --> 01:20:47,010
+I think Henneberg would
+make a great puzzle.
+
+1666
+01:20:47,010 --> 01:20:50,620
+By working forward not backward,
+it's quite challenging.
+
+1667
+01:20:50,620 --> 01:20:51,900
+Other fun things.
+
+1668
+01:20:51,900 --> 01:20:54,660
+
+1669
+01:20:54,660 --> 01:20:58,340
+Let me tell you briefly
+about polyhedra.
+
+1670
+01:20:58,340 --> 01:21:02,900
+Polyhedra are fun, and they
+exist in three dimensions.
+
+1671
+01:21:02,900 --> 01:21:04,440
+Here's a polyhedron.
+
+1672
+01:21:04,440 --> 01:21:08,930
+It's a convex polygon-- it's
+Buckminster Fuller Geodesic
+
+1673
+01:21:08,930 --> 01:21:16,440
+Dome in Montreal--
+and it's convex.
+
+1674
+01:21:16,440 --> 01:21:18,280
+It's made of triangles.
+
+1675
+01:21:18,280 --> 01:21:19,300
+Is that rigid?
+
+1676
+01:21:19,300 --> 01:21:20,570
+It looks like it.
+
+1677
+01:21:20,570 --> 01:21:25,790
+Hasn't fallen down yet-- it's
+been there for 40 years now.
+
+1678
+01:21:25,790 --> 01:21:27,790
+Indeed, you can prove
+that thing is rigid,
+
+1679
+01:21:27,790 --> 01:21:31,710
+and this is the basis
+for geodesic domes.
+
+1680
+01:21:31,710 --> 01:21:35,760
+Turns out, if you have a convex
+polyhedron-- so 3D I said
+
+1681
+01:21:35,760 --> 01:21:36,440
+is really hard.
+
+1682
+01:21:36,440 --> 01:21:38,440
+But this does not look
+like a convex polyhedron.
+
+1683
+01:21:38,440 --> 01:21:43,970
+So what if you had a 3D linkage
+that is the surface of a convex
+
+1684
+01:21:43,970 --> 01:21:46,370
+polyhedron and every
+face is a triangle?
+
+1685
+01:21:46,370 --> 01:21:49,360
+
+1686
+01:21:49,360 --> 01:21:51,249
+I mean, ignoring the
+floor for a little bit,
+
+1687
+01:21:51,249 --> 01:21:52,540
+but you can deal with that too.
+
+1688
+01:21:52,540 --> 01:21:55,030
+Every face here is a triangle.
+
+1689
+01:21:55,030 --> 01:21:58,960
+It may be easier to
+see in this diagram.
+
+1690
+01:21:58,960 --> 01:21:59,790
+So it's a linkage.
+
+1691
+01:21:59,790 --> 01:22:02,160
+It's a bunch of triangles.
+
+1692
+01:22:02,160 --> 01:22:04,610
+That thing willl be
+generically rigid.
+
+1693
+01:22:04,610 --> 01:22:07,600
+And even rigid-- never
+mind generically.
+
+1694
+01:22:07,600 --> 01:22:10,500
+You can prove this
+thing is rigid,
+
+1695
+01:22:10,500 --> 01:22:16,390
+and it was proved, roughly
+speaking, by Alexandrov,
+
+1696
+01:22:16,390 --> 01:22:23,810
+let's say, or Den--
+the early to mid 1900s.
+
+1697
+01:22:23,810 --> 01:22:25,720
+That's cool.
+
+1698
+01:22:25,720 --> 01:22:30,270
+And that doesn't mean that there
+aren't other configurations.
+
+1699
+01:22:30,270 --> 01:22:32,500
+So here's a convex
+polyhedron, and you
+
+1700
+01:22:32,500 --> 01:22:34,580
+could triangulate
+the sides also.
+
+1701
+01:22:34,580 --> 01:22:38,380
+And there's a non-convex
+realization of that.
+
+1702
+01:22:38,380 --> 01:22:41,480
+But as long as you stay
+convex, and if you move--
+
+1703
+01:22:41,480 --> 01:22:42,720
+this requires a big jump.
+
+1704
+01:22:42,720 --> 01:22:45,200
+And you can show that if you
+have a convex polyhedron,
+
+1705
+01:22:45,200 --> 01:22:48,900
+in order for it to flex
+continuously, well, it can't.
+
+1706
+01:22:48,900 --> 01:22:51,350
+In order to flex at
+all, it has to jump
+
+1707
+01:22:51,350 --> 01:22:52,870
+into a non-convex state.
+
+1708
+01:22:52,870 --> 01:22:54,860
+But there's a fun
+thing that happens
+
+1709
+01:22:54,860 --> 01:22:56,781
+when you look at
+non-convex polyhedra.
+
+1710
+01:22:56,781 --> 01:22:59,030
+And it's really hard to see
+this polyhedron, this dent
+
+1711
+01:22:59,030 --> 01:23:03,090
+on the backside, but you can
+cut this out and make one.
+
+1712
+01:23:03,090 --> 01:23:06,340
+And it's a non-convex
+polyhedron,
+
+1713
+01:23:06,340 --> 01:23:08,320
+and it does have
+a continuous flex.
+
+1714
+01:23:08,320 --> 01:23:11,440
+It's a flexible linkage.
+
+1715
+01:23:11,440 --> 01:23:14,430
+It's triangulated,
+but it's not convex,
+
+1716
+01:23:14,430 --> 01:23:16,790
+and so Alexandrov's
+theorem doesn't apply.
+
+1717
+01:23:16,790 --> 01:23:21,160
+And you can move
+it continuously.
+
+1718
+01:23:21,160 --> 01:23:23,050
+It's a flexible linkage.
+
+1719
+01:23:23,050 --> 01:23:27,100
+Fun fact-- when it moves,
+the volume stays constant.
+
+1720
+01:23:27,100 --> 01:23:28,516
+It's called the
+bellow's theorem--
+
+1721
+01:23:28,516 --> 01:23:32,730
+it was open for many years--
+by Connelly and others.
+
+1722
+01:23:32,730 --> 01:23:37,300
+And so in fact, you take any--
+not just this polyhedron--
+
+1723
+01:23:37,300 --> 01:23:39,415
+you take any polyhedron
+that can flex--
+
+1724
+01:23:39,415 --> 01:23:42,550
+it has to be non-convex--
+its volume will stay constant
+
+1725
+01:23:42,550 --> 01:23:44,290
+throughout the whole motion.
+
+1726
+01:23:44,290 --> 01:23:46,970
+So if you've ever
+played with the bellows,
+
+1727
+01:23:46,970 --> 01:23:50,890
+you may think this is not
+true, because bellows pump air
+
+1728
+01:23:50,890 --> 01:23:53,250
+in and out somehow.
+
+1729
+01:23:53,250 --> 01:23:55,880
+And the theorem is well, you
+can't build a bellows out
+
+1730
+01:23:55,880 --> 01:23:56,380
+of linkages.
+
+1731
+01:23:56,380 --> 01:23:58,900
+
+1732
+01:23:58,900 --> 01:24:01,992
+You could maybe build
+bellows out a paper,
+
+1733
+01:24:01,992 --> 01:24:06,060
+or a flexible material, but
+if you cannot triangulate that
+
+1734
+01:24:06,060 --> 01:24:08,650
+surface, you cannot
+make it a metal bellows.
+
+1735
+01:24:08,650 --> 01:24:10,770
+Never mind if they
+exist in reality.
+
+1736
+01:24:10,770 --> 01:24:15,050
+They are theoretically
+impossible to build.
+
+1737
+01:24:15,050 --> 01:24:17,760
+I don't know-- are
+there metal bellows?
+
+1738
+01:24:17,760 --> 01:24:18,460
+That's it.
+
+1739
+01:24:18,460 --> 01:24:22,390
+And next time, we will talk
+about more rigidity and things
+
+1740
+01:24:22,390 --> 01:24:24,510
+called tensegrities,
+which even more exciting.
+
+1741
+01:24:24,510 --> 01:24:26,843
+And we'll see how this ties
+into actually getting things
+
+1742
+01:24:26,843 --> 01:24:30,410
+to fold from point A to point
+B, not just do they fold at all.
+
+1743
+01:24:30,410 --> 01:24:32,290
+It's all related.
+

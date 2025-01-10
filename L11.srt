@@ -1,0 +1,7727 @@
+1
+0-1:59:59,500 --> 00:00:35,870
+
+2
+00:00:35,870 --> 00:00:38,700
+PROFESSOR: All right,
+let's get started.
+
+3
+00:00:38,700 --> 00:00:42,620
+So today we're continuing
+the theme of locked linkages.
+
+4
+00:00:42,620 --> 00:00:45,470
+Last time we talked about the
+Carpenter's Rule Theorem, which
+
+5
+00:00:45,470 --> 00:00:47,920
+brought together all of the
+rigidity theory and tensegrity
+
+6
+00:00:47,920 --> 00:00:50,120
+theory we had
+built, essentially,
+
+7
+00:00:50,120 --> 00:00:54,590
+and showed that there
+were no locked 2D
+
+8
+00:00:54,590 --> 00:00:58,540
+chains, paths or
+cycles, as graphs.
+
+9
+00:00:58,540 --> 00:01:06,630
+And in general you can think
+in 2D, you can think in 3D,
+
+10
+00:01:06,630 --> 00:01:09,710
+and you can think
+in 4D and higher.
+
+11
+00:01:09,710 --> 00:01:14,060
+I drew this table way at
+the beginning of class.
+
+12
+00:01:14,060 --> 00:01:18,060
+And you can think
+about chains, which
+
+13
+00:01:18,060 --> 00:01:23,970
+are-- these are so-called open
+chains, like robotic arms.
+
+14
+00:01:23,970 --> 00:01:26,190
+Paths is a graph.
+
+15
+00:01:26,190 --> 00:01:32,130
+And polygons are closed chains.
+
+16
+00:01:32,130 --> 00:01:34,460
+And then another case it's
+interesting to think about,
+
+17
+00:01:34,460 --> 00:01:37,320
+and there's been a lot of
+work on, are trees where
+
+18
+00:01:37,320 --> 00:01:39,690
+you don't have any
+cycles in your graph,
+
+19
+00:01:39,690 --> 00:01:44,390
+but you could have branching
+points with degree more than 2.
+
+20
+00:01:44,390 --> 00:01:47,170
+You may recall Carpenter's
+Rule Theorem worked whenever
+
+21
+00:01:47,170 --> 00:01:50,550
+you had a graph of
+maximum degree 2.
+
+22
+00:01:50,550 --> 00:01:53,440
+So it allowed even
+multiple chains
+
+23
+00:01:53,440 --> 00:01:56,480
+in one graph that
+could be disconnected.
+
+24
+00:01:56,480 --> 00:02:01,520
+But it forbade any kind
+of tree branching stuff.
+
+25
+00:02:01,520 --> 00:02:03,420
+So Carpenter's Rule
+Theorem is that there's
+
+26
+00:02:03,420 --> 00:02:07,490
+no locked chains in 2D.
+
+27
+00:02:07,490 --> 00:02:11,140
+So we did that.
+
+28
+00:02:11,140 --> 00:02:15,520
+But trees, there are
+locked trees in 2D.
+
+29
+00:02:15,520 --> 00:02:19,640
+3D there are locked chains.
+
+30
+00:02:19,640 --> 00:02:21,220
+And these are two
+results that we
+
+31
+00:02:21,220 --> 00:02:25,880
+will talk about in
+today's lecture.
+
+32
+00:02:25,880 --> 00:02:30,690
+And that implies that there are
+locked trees, sort of obvious.
+
+33
+00:02:30,690 --> 00:02:34,120
+Trees are more general
+than open chains.
+
+34
+00:02:34,120 --> 00:02:36,200
+And because there's a
+locked open chain in 3D,
+
+35
+00:02:36,200 --> 00:02:38,760
+there's also a locked tree.
+
+36
+00:02:38,760 --> 00:02:41,950
+In 4D, though, it switches.
+
+37
+00:02:41,950 --> 00:02:44,200
+So none of these
+things are locked.
+
+38
+00:02:44,200 --> 00:02:47,500
+Of course, there are
+locked graphs in general.
+
+39
+00:02:47,500 --> 00:02:50,570
+But if you look at trees, or
+paths, or cycles, none of them
+
+40
+00:02:50,570 --> 00:02:51,260
+can lock.
+
+41
+00:02:51,260 --> 00:02:53,557
+We won't have time to talk
+about that today, maybe
+
+42
+00:02:53,557 --> 00:02:54,140
+another class.
+
+43
+00:02:54,140 --> 00:02:56,666
+
+44
+00:02:56,666 --> 00:02:58,040
+Essentially we're
+always thinking
+
+45
+00:02:58,040 --> 00:03:00,390
+about an intrinsically
+one dimensional structure.
+
+46
+00:03:00,390 --> 00:03:03,760
+These edges, bars, are
+always one dimensional.
+
+47
+00:03:03,760 --> 00:03:07,480
+In 2D, where the
+space are living in,
+
+48
+00:03:07,480 --> 00:03:10,220
+the ambient dimension is just
+one more than the dimension
+
+49
+00:03:10,220 --> 00:03:12,200
+of your edges, it's
+really interesting.
+
+50
+00:03:12,200 --> 00:03:14,570
+And that's what
+we saw for chains
+
+51
+00:03:14,570 --> 00:03:16,870
+and what we'll see for trees.
+
+52
+00:03:16,870 --> 00:03:19,240
+In 3D it gets tricky.
+
+53
+00:03:19,240 --> 00:03:21,980
+This mismatch of
+two in dimension
+
+54
+00:03:21,980 --> 00:03:24,840
+allows you to lock things,
+kind of like knots.
+
+55
+00:03:24,840 --> 00:03:27,980
+And in 4D there's such--
+there's so much freedom
+
+56
+00:03:27,980 --> 00:03:30,040
+in the way you move,
+somehow, nothing
+
+57
+00:03:30,040 --> 00:03:32,625
+can lock, in the same way
+that there are no knots in 4D.
+
+58
+00:03:32,625 --> 00:03:35,340
+
+59
+00:03:35,340 --> 00:03:36,840
+Cool.
+
+60
+00:03:36,840 --> 00:03:39,810
+So that's the reminder
+summary about locked linkages,
+
+61
+00:03:39,810 --> 00:03:43,420
+what they are, and
+what's known about them.
+
+62
+00:03:43,420 --> 00:03:46,190
+Now we've seen that
+chains aren't locked.
+
+63
+00:03:46,190 --> 00:03:48,860
+But before I get trees I
+want to talk about algorithms
+
+64
+00:03:48,860 --> 00:03:49,915
+for actually doing this.
+
+65
+00:03:49,915 --> 00:03:52,930
+This is, after all,
+geometric folding algorithms.
+
+66
+00:03:52,930 --> 00:03:55,366
+We've seen a proof
+that they exist,
+
+67
+00:03:55,366 --> 00:03:56,990
+that in fact if we
+had a chain, there's
+
+68
+00:03:56,990 --> 00:03:59,990
+an expansive motion
+increases all the distances
+
+69
+00:03:59,990 --> 00:04:03,800
+and therefore doesn't
+collide with itself,
+
+70
+00:04:03,800 --> 00:04:08,050
+and eventually straightens
+all the outermost open chains
+
+71
+00:04:08,050 --> 00:04:11,760
+and convexifies all the closed
+chains that are outermost,
+
+72
+00:04:11,760 --> 00:04:15,280
+not containing anything.
+
+73
+00:04:15,280 --> 00:04:19,070
+But how do we actually
+find such a motion?
+
+74
+00:04:19,070 --> 00:04:20,930
+And this has been the
+subject of some study.
+
+75
+00:04:20,930 --> 00:04:22,596
+There are three
+algorithms for doing it.
+
+76
+00:04:22,596 --> 00:04:28,090
+
+77
+00:04:28,090 --> 00:04:35,440
+So we'll call this
+unfolding 2D chains,
+
+78
+00:04:35,440 --> 00:04:41,540
+unfolding being the goal of
+straightening or convexifying.
+
+79
+00:04:41,540 --> 00:04:45,330
+And the first algorithm is just
+to mimic the proof that we saw.
+
+80
+00:04:45,330 --> 00:04:59,200
+
+81
+00:04:59,200 --> 00:05:02,560
+I call that proof CDR, because
+it's Connelly-Demain-Rote.
+
+82
+00:05:02,560 --> 00:05:06,600
+And if you think
+about what we proved,
+
+83
+00:05:06,600 --> 00:05:09,150
+we just looked at the sort
+of infinitesimal case.
+
+84
+00:05:09,150 --> 00:05:12,390
+We said, if we're at some
+position then at least,
+
+85
+00:05:12,390 --> 00:05:14,414
+for an infinitesimal
+amount of time,
+
+86
+00:05:14,414 --> 00:05:15,830
+we can increase
+all the distances.
+
+87
+00:05:15,830 --> 00:05:17,820
+All the struts can
+increase in length,
+
+88
+00:05:17,820 --> 00:05:20,500
+and the bars stay
+the same length.
+
+89
+00:05:20,500 --> 00:05:23,050
+That's really only specifying
+the first derivative
+
+90
+00:05:23,050 --> 00:05:23,910
+of a motion.
+
+91
+00:05:23,910 --> 00:05:26,670
+So if you think of motion
+as being, I don't know,
+
+92
+00:05:26,670 --> 00:05:29,930
+some configuration C
+that's a function of time,
+
+93
+00:05:29,930 --> 00:05:33,510
+and you take the derivative
+with respect to t,
+
+94
+00:05:33,510 --> 00:05:35,607
+then we computed what
+that derivative should be.
+
+95
+00:05:35,607 --> 00:05:36,940
+That was the first order motion.
+
+96
+00:05:36,940 --> 00:05:41,770
+I think we called it d,
+which is a little confusing.
+
+97
+00:05:41,770 --> 00:05:44,880
+This is the d that we computed.
+
+98
+00:05:44,880 --> 00:05:49,210
+And we said, well that's
+an infinitesimal motion
+
+99
+00:05:49,210 --> 00:05:50,655
+of some tensegrity.
+
+100
+00:05:50,655 --> 00:05:52,280
+We can find it with
+linear programming.
+
+101
+00:05:52,280 --> 00:05:54,550
+So at any moment in
+time we can figure out
+
+102
+00:05:54,550 --> 00:05:57,710
+what our derivative should be.
+
+103
+00:05:57,710 --> 00:06:00,220
+This is what's called an
+ordinary differential equation,
+
+104
+00:06:00,220 --> 00:06:03,150
+for those who have
+taking 1803 or whatever.
+
+105
+00:06:03,150 --> 00:06:04,974
+You just solve it.
+
+106
+00:06:04,974 --> 00:06:06,390
+And a very easy
+way to solve it is
+
+107
+00:06:06,390 --> 00:06:10,110
+if you imagine configuration
+space, you start somewhere,
+
+108
+00:06:10,110 --> 00:06:11,849
+you compute which
+way to go, you move
+
+109
+00:06:11,849 --> 00:06:13,140
+a little bit in that direction.
+
+110
+00:06:13,140 --> 00:06:15,431
+You're only supposed to go
+for an infinitesimal amount.
+
+111
+00:06:15,431 --> 00:06:17,570
+But it goes some
+positive epsilon.
+
+112
+00:06:17,570 --> 00:06:19,520
+Then recompute
+your new direction,
+
+113
+00:06:19,520 --> 00:06:21,670
+follow that, recompute
+your new direction,
+
+114
+00:06:21,670 --> 00:06:24,000
+follow that for a little
+bit, and keep going.
+
+115
+00:06:24,000 --> 00:06:26,460
+And you're almost tracking
+the intended curve.
+
+116
+00:06:26,460 --> 00:06:28,010
+It's not quite perfect.
+
+117
+00:06:28,010 --> 00:06:30,940
+But as your step
+size, this epsilon,
+
+118
+00:06:30,940 --> 00:06:35,470
+goes to 0 you approximate
+the intended path.
+
+119
+00:06:35,470 --> 00:06:38,014
+And that's, I mean how
+close you approximate
+
+120
+00:06:38,014 --> 00:06:39,180
+is computed in the textbook.
+
+121
+00:06:39,180 --> 00:06:40,880
+You can see that for details.
+
+122
+00:06:40,880 --> 00:06:42,850
+This is a method
+called forward Euler.
+
+123
+00:06:42,850 --> 00:06:46,310
+It's like the simplest way to
+solve an ordinary differential
+
+124
+00:06:46,310 --> 00:06:46,810
+equation.
+
+125
+00:06:46,810 --> 00:06:48,350
+There are much better ways.
+
+126
+00:06:48,350 --> 00:06:51,310
+But it's easiest to think
+about, and reason about.
+
+127
+00:06:51,310 --> 00:06:54,335
+And so it gives you some
+approximate solution.
+
+128
+00:06:54,335 --> 00:06:57,170
+
+129
+00:06:57,170 --> 00:06:58,260
+Let me show it to you.
+
+130
+00:06:58,260 --> 00:07:02,630
+
+131
+00:07:02,630 --> 00:07:04,250
+I'm going to show
+you three methods.
+
+132
+00:07:04,250 --> 00:07:06,300
+The top one is the
+one I'm talking about.
+
+133
+00:07:06,300 --> 00:07:07,925
+So we're starting
+with the same polygon
+
+134
+00:07:07,925 --> 00:07:11,137
+on the left, simple
+little v shape.
+
+135
+00:07:11,137 --> 00:07:13,095
+A second method is called
+pseudo-triangulation.
+
+136
+00:07:13,095 --> 00:07:14,340
+We'll talk about that next.
+
+137
+00:07:14,340 --> 00:07:15,810
+The third method's
+called energy.
+
+138
+00:07:15,810 --> 00:07:17,470
+That one's one you've seen.
+
+139
+00:07:17,470 --> 00:07:19,310
+Let's start with
+the first method,
+
+140
+00:07:19,310 --> 00:07:24,580
+where we take some example
+like this teeth example,
+
+141
+00:07:24,580 --> 00:07:28,350
+and we, at each
+step, compute what
+
+142
+00:07:28,350 --> 00:07:31,460
+is the, in some
+sense, the biggest
+
+143
+00:07:31,460 --> 00:07:32,859
+expanse of motion you could do.
+
+144
+00:07:32,859 --> 00:07:34,400
+We go a little bit
+in that direction.
+
+145
+00:07:34,400 --> 00:07:36,060
+So in these animations,
+the edge links
+
+146
+00:07:36,060 --> 00:07:37,457
+are changing a little bit.
+
+147
+00:07:37,457 --> 00:07:39,790
+And I've chosen the step size
+so the edge lengths change
+
+148
+00:07:39,790 --> 00:07:42,340
+by, at most, 10%,
+something like that.
+
+149
+00:07:42,340 --> 00:07:43,890
+And here, this one,
+left side we're
+
+150
+00:07:43,890 --> 00:07:46,620
+zooming, right side
+we're not zooming.
+
+151
+00:07:46,620 --> 00:07:48,120
+These are somewhat
+older animations.
+
+152
+00:07:48,120 --> 00:07:51,080
+So apologies for the frame rate.
+
+153
+00:07:51,080 --> 00:07:52,510
+What else do I want to say?
+
+154
+00:07:52,510 --> 00:07:54,430
+This is an example--
+well, notice
+
+155
+00:07:54,430 --> 00:07:57,150
+it's pulling the teeth
+off sort of from the end.
+
+156
+00:07:57,150 --> 00:07:59,760
+If you want to be expensive you
+cannot pull the teeth apart.
+
+157
+00:07:59,760 --> 00:08:02,202
+We're going to see other ways
+to do the teeth in a moment.
+
+158
+00:08:02,202 --> 00:08:03,160
+Here's another example.
+
+159
+00:08:03,160 --> 00:08:05,230
+Both of these
+examples at some point
+
+160
+00:08:05,230 --> 00:08:07,930
+we're conjectured to be locked.
+
+161
+00:08:07,930 --> 00:08:09,920
+Before the Carpenter's
+Rule Theorem was proved,
+
+162
+00:08:09,920 --> 00:08:13,362
+a lot of people were trying
+to find counter examples.
+
+163
+00:08:13,362 --> 00:08:14,070
+There aren't any.
+
+164
+00:08:14,070 --> 00:08:17,580
+
+165
+00:08:17,580 --> 00:08:18,275
+So this is nice.
+
+166
+00:08:18,275 --> 00:08:22,060
+It preserve five-fold
+rotational symmetry.
+
+167
+00:08:22,060 --> 00:08:26,070
+And you can do it for
+multiple shapes as well.
+
+168
+00:08:26,070 --> 00:08:29,390
+So here we have one polygon
+in the center, four arcs,
+
+169
+00:08:29,390 --> 00:08:33,440
+four paths on the outside.
+
+170
+00:08:33,440 --> 00:08:35,880
+In this case, the simulation
+stopped when one of them
+
+171
+00:08:35,880 --> 00:08:40,564
+convexified because I didn't
+implement all of the algorithm.
+
+172
+00:08:40,564 --> 00:08:42,730
+At that point you just have
+to rigidify that polygon
+
+173
+00:08:42,730 --> 00:08:46,100
+and expand the rest.
+
+174
+00:08:46,100 --> 00:08:48,640
+So that gives you an
+idea sort of visually
+
+175
+00:08:48,640 --> 00:08:50,700
+what this looks like.
+
+176
+00:08:50,700 --> 00:08:53,280
+Qualitatively, we can say
+a bunch of cool things
+
+177
+00:08:53,280 --> 00:08:54,570
+about this method.
+
+178
+00:08:54,570 --> 00:08:58,180
+One is that's it's the
+only method that's strictly
+
+179
+00:08:58,180 --> 00:09:05,600
+expansive, strictly meaning not
+only do the struts not decrease
+
+180
+00:09:05,600 --> 00:09:07,490
+in length, but they
+also don't stay the same
+
+181
+00:09:07,490 --> 00:09:09,030
+whenever that's possible.
+
+182
+00:09:09,030 --> 00:09:10,650
+They strictly increase.
+
+183
+00:09:10,650 --> 00:09:12,010
+Now, there are some exceptions.
+
+184
+00:09:12,010 --> 00:09:16,250
+If I have a bar, obviously,
+if I add a strut here
+
+185
+00:09:16,250 --> 00:09:18,180
+it's not going to strictly
+increase in length.
+
+186
+00:09:18,180 --> 00:09:21,520
+Also, if I have a bunch
+of bars that are collinear
+
+187
+00:09:21,520 --> 00:09:23,656
+and I add a strut
+from here to here,
+
+188
+00:09:23,656 --> 00:09:25,280
+that's not going to
+increase in length.
+
+189
+00:09:25,280 --> 00:09:26,590
+It's not possible.
+
+190
+00:09:26,590 --> 00:09:29,817
+But all other struts will
+strictly increase in length.
+
+191
+00:09:29,817 --> 00:09:30,400
+You can check.
+
+192
+00:09:30,400 --> 00:09:34,650
+That's what we proved here.
+
+193
+00:09:34,650 --> 00:09:37,690
+So that's nice.
+
+194
+00:09:37,690 --> 00:09:42,360
+Another fun fact, I
+didn't write it here,
+
+195
+00:09:42,360 --> 00:09:47,240
+but it preserves symmetry
+if you do it right.
+
+196
+00:09:47,240 --> 00:09:50,850
+
+197
+00:09:50,850 --> 00:09:52,985
+You may notice in
+this example actually,
+
+198
+00:09:52,985 --> 00:09:55,110
+it was originally four-fold
+rotationally symmetric.
+
+199
+00:09:55,110 --> 00:09:57,860
+It does rotate a little bit.
+
+200
+00:09:57,860 --> 00:09:59,720
+That's from computational error.
+
+201
+00:09:59,720 --> 00:10:01,160
+And you could correct for that.
+
+202
+00:10:01,160 --> 00:10:04,550
+I didn't correct for it.
+
+203
+00:10:04,550 --> 00:10:11,200
+It should, in theory, preserve
+the four-fold symmetry there.
+
+204
+00:10:11,200 --> 00:10:12,160
+Good.
+
+205
+00:10:12,160 --> 00:10:14,140
+We can compute one step.
+
+206
+00:10:14,140 --> 00:10:17,810
+So how fast can you
+compute this thing?
+
+207
+00:10:17,810 --> 00:10:19,750
+We can compute one step
+in polynomial time.
+
+208
+00:10:19,750 --> 00:10:22,762
+That's finding an infinitesimal
+motion of a tensegrity.
+
+209
+00:10:22,762 --> 00:10:23,845
+That's linear programming.
+
+210
+00:10:23,845 --> 00:10:27,470
+
+211
+00:10:27,470 --> 00:10:31,320
+But how many steps does it make?
+
+212
+00:10:31,320 --> 00:10:32,350
+We don't really know.
+
+213
+00:10:32,350 --> 00:10:34,680
+There is a bound
+in the textbook.
+
+214
+00:10:34,680 --> 00:10:37,890
+It's not very small.
+
+215
+00:10:37,890 --> 00:10:44,460
+It's also-- with forward Euler
+you lose a bit of accuracy.
+
+216
+00:10:44,460 --> 00:10:46,600
+Now you could
+correct for accuracy,
+
+217
+00:10:46,600 --> 00:10:48,350
+force all the edge
+lengths to be the same,
+
+218
+00:10:48,350 --> 00:10:49,580
+then you won't
+preserve the symmetry.
+
+219
+00:10:49,580 --> 00:10:51,220
+There's a bit of trade off here.
+
+220
+00:10:51,220 --> 00:10:52,969
+I don't want to spend
+too much time on it.
+
+221
+00:10:52,969 --> 00:10:54,580
+This is the first algorithm.
+
+222
+00:10:54,580 --> 00:10:57,780
+Although it's the only one
+that's strictly expensive,
+
+223
+00:10:57,780 --> 00:10:59,050
+to me it's not the nicest.
+
+224
+00:10:59,050 --> 00:11:06,476
+So I'm going to move on
+to the next method which
+
+225
+00:11:06,476 --> 00:11:07,850
+is pointed
+pseudo-triangulations.
+
+226
+00:11:07,850 --> 00:11:13,470
+
+227
+00:11:13,470 --> 00:11:15,860
+This is a method
+by Ileana Streinu,
+
+228
+00:11:15,860 --> 00:11:19,850
+basically at the same
+time as the original
+
+229
+00:11:19,850 --> 00:11:22,330
+Carpenter's Rule Theorem.
+
+230
+00:11:22,330 --> 00:11:23,780
+And these are
+examples of what are
+
+231
+00:11:23,780 --> 00:11:26,470
+called pointed
+pseudo-triangulations
+
+232
+00:11:26,470 --> 00:11:28,330
+for a given set of points.
+
+233
+00:11:28,330 --> 00:11:33,540
+So in general, a
+pseudo-triangle is a polygon
+
+234
+00:11:33,540 --> 00:11:36,480
+that has three convex vertices.
+
+235
+00:11:36,480 --> 00:11:39,520
+So a triangle has three
+convex vertices and that's it.
+
+236
+00:11:39,520 --> 00:11:44,170
+A pseudo-triangle, I allow
+a bunch of reflex vertices
+
+237
+00:11:44,170 --> 00:11:46,760
+in between those guys.
+
+238
+00:11:46,760 --> 00:11:48,050
+So this should be a polygon.
+
+239
+00:11:48,050 --> 00:11:50,700
+I've drawn it curved.
+
+240
+00:11:50,700 --> 00:11:54,930
+And if you check in this
+figure, all of the faces
+
+241
+00:11:54,930 --> 00:11:55,960
+are pseudo-triangles.
+
+242
+00:11:55,960 --> 00:11:58,680
+Most of them here are
+actually quadrilaterals.
+
+243
+00:11:58,680 --> 00:12:00,590
+But in particular,
+that's a pseudo-triangle.
+
+244
+00:12:00,590 --> 00:12:04,110
+Sometimes there's
+actual triangles.
+
+245
+00:12:04,110 --> 00:12:06,630
+Here they're all
+quads or triangles.
+
+246
+00:12:06,630 --> 00:12:09,540
+And a pointed
+pseudo-triangulation
+
+247
+00:12:09,540 --> 00:12:14,130
+has the property
+that at every vertex
+
+248
+00:12:14,130 --> 00:12:18,910
+all of the edges incident
+to it lie in a half plane.
+
+249
+00:12:18,910 --> 00:12:20,840
+They all lie on that side.
+
+250
+00:12:20,840 --> 00:12:25,815
+In other words, there's an angle
+that's bigger than 180 degrees.
+
+251
+00:12:25,815 --> 00:12:31,650
+So this was a pseudo-triangle,
+and this is pointed.
+
+252
+00:12:31,650 --> 00:12:34,370
+
+253
+00:12:34,370 --> 00:12:37,830
+And if you check this
+example, every vertex
+
+254
+00:12:37,830 --> 00:12:39,775
+has an angle that's
+bigger than 180 degrees.
+
+255
+00:12:39,775 --> 00:12:44,010
+
+256
+00:12:44,010 --> 00:12:46,350
+Obviously the ones on
+the outside have to.
+
+257
+00:12:46,350 --> 00:12:48,790
+They're always convex.
+
+258
+00:12:48,790 --> 00:12:50,740
+And pointed
+pseudo-triangulations
+
+259
+00:12:50,740 --> 00:12:55,350
+are-- they're not only supposed
+to have these two properties,
+
+260
+00:12:55,350 --> 00:12:57,846
+but you're also supposed to
+have as many edges as possible,
+
+261
+00:12:57,846 --> 00:12:59,470
+subject to having
+these two properties.
+
+262
+00:12:59,470 --> 00:13:03,400
+If you tried to add any edge
+to either of these examples,
+
+263
+00:13:03,400 --> 00:13:06,480
+you would violate
+the pointed property.
+
+264
+00:13:06,480 --> 00:13:11,130
+If I added this edge, then I'd
+destroy this 180 degree angle.
+
+265
+00:13:11,130 --> 00:13:12,580
+Any edge you
+consider, either you
+
+266
+00:13:12,580 --> 00:13:14,490
+get a crossing--
+which is not allowed--
+
+267
+00:13:14,490 --> 00:13:20,750
+or one of the vertices
+loses a 180 degree angle.
+
+268
+00:13:20,750 --> 00:13:22,980
+So this is actually a
+really powerful concept.
+
+269
+00:13:22,980 --> 00:13:26,970
+And it was introduced by this
+paper by Streinu in 2000.
+
+270
+00:13:26,970 --> 00:13:29,664
+It has lots of theory
+built around it by now.
+
+271
+00:13:29,664 --> 00:13:31,330
+I'm not going to talk
+about that theory.
+
+272
+00:13:31,330 --> 00:13:33,966
+I want to talk about how it
+applies to Carpenter's Rule
+
+273
+00:13:33,966 --> 00:13:34,465
+problem.
+
+274
+00:13:34,465 --> 00:13:39,046
+
+275
+00:13:39,046 --> 00:13:40,420
+I guess the first
+thing to say is
+
+276
+00:13:40,420 --> 00:13:48,090
+that if you have,
+say, a polygon-- maybe
+
+277
+00:13:48,090 --> 00:13:50,790
+I should do a real example,
+so I'll make it not so giant.
+
+278
+00:13:50,790 --> 00:13:55,730
+
+279
+00:13:55,730 --> 00:13:57,830
+OK, you take a polygon.
+
+280
+00:13:57,830 --> 00:13:59,450
+So far it's pointed, right?
+
+281
+00:13:59,450 --> 00:14:01,480
+Every vertex-- one
+of the two sides
+
+282
+00:14:01,480 --> 00:14:04,590
+has an angle bigger than 180.
+
+283
+00:14:04,590 --> 00:14:09,985
+So just add as many edges as you
+can while still being pointed.
+
+284
+00:14:09,985 --> 00:14:11,700
+Do, do, do.
+
+285
+00:14:11,700 --> 00:14:15,070
+This one, that looks OK.
+
+286
+00:14:15,070 --> 00:14:18,980
+
+287
+00:14:18,980 --> 00:14:20,090
+I think that's it.
+
+288
+00:14:20,090 --> 00:14:22,034
+I think this is a
+pseudo-triangulation.
+
+289
+00:14:22,034 --> 00:14:24,450
+I've added as many edges as I
+can while still being point.
+
+290
+00:14:24,450 --> 00:14:26,560
+It turns out if you start
+with something that's pointed,
+
+291
+00:14:26,560 --> 00:14:28,770
+you'll be able to keep adding
+edges, keep it pointed.
+
+292
+00:14:28,770 --> 00:14:32,430
+And in the end all of the
+faces will be pseudo-triangles.
+
+293
+00:14:32,430 --> 00:14:33,847
+So mission accomplished.
+
+294
+00:14:33,847 --> 00:14:35,430
+This is a pointed
+pseudo-triangulation
+
+295
+00:14:35,430 --> 00:14:39,660
+that contains, as a subgraph,
+my original polygon.
+
+296
+00:14:39,660 --> 00:14:42,690
+
+297
+00:14:42,690 --> 00:14:45,620
+So these are the edge
+lengths I want to preserve.
+
+298
+00:14:45,620 --> 00:14:47,220
+Those should stay rigid.
+
+299
+00:14:47,220 --> 00:14:49,840
+I'm going to be kind of
+crazy and also preserve
+
+300
+00:14:49,840 --> 00:14:52,570
+the lengths of all
+of these edges.
+
+301
+00:14:52,570 --> 00:14:55,410
+Now if you did that, this
+thing would be rigid,
+
+302
+00:14:55,410 --> 00:14:56,790
+which is not so exciting.
+
+303
+00:14:56,790 --> 00:15:00,800
+All you need to do to fix that
+is remove one of these added
+
+304
+00:15:00,800 --> 00:15:05,030
+edges that's on the convex hull
+on the outer boundary here.
+
+305
+00:15:05,030 --> 00:15:07,569
+Then it will have one
+degree of freedom.
+
+306
+00:15:07,569 --> 00:15:09,110
+So there will be
+two ways to move it.
+
+307
+00:15:09,110 --> 00:15:12,190
+One is to expand this distance,
+the other is to contract it.
+
+308
+00:15:12,190 --> 00:15:14,750
+And the one that
+expands that distance
+
+309
+00:15:14,750 --> 00:15:17,270
+will expand all distances.
+
+310
+00:15:17,270 --> 00:15:22,230
+So if you look at some
+other pair, like this guy,
+
+311
+00:15:22,230 --> 00:15:27,290
+every other pair of distances
+will expand or stay the same.
+
+312
+00:15:27,290 --> 00:15:30,190
+So this thing is expansive.
+
+313
+00:15:30,190 --> 00:15:33,430
+
+314
+00:15:33,430 --> 00:15:35,170
+But not strictly
+expensive, because we're
+
+315
+00:15:35,170 --> 00:15:36,750
+preserving these lengths.
+
+316
+00:15:36,750 --> 00:15:39,220
+These ones will stay the same.
+
+317
+00:15:39,220 --> 00:15:43,490
+So let me show you some of
+the things that can happen.
+
+318
+00:15:43,490 --> 00:15:46,242
+So this is sort of at the
+heart of the algorithm.
+
+319
+00:15:46,242 --> 00:15:47,950
+I'm not going to go
+into all the details.
+
+320
+00:15:47,950 --> 00:15:51,730
+This can happen like n
+cubed times, where you say,
+
+321
+00:15:51,730 --> 00:15:53,362
+OK I've added in
+all these edges.
+
+322
+00:15:53,362 --> 00:15:54,820
+Here's a nice
+pseudo-triangle here.
+
+323
+00:15:54,820 --> 00:15:56,970
+It happens to be a triangle with
+some stuff on the bottom, stuff
+
+324
+00:15:56,970 --> 00:15:57,730
+on the top.
+
+325
+00:15:57,730 --> 00:15:59,825
+As I flex this to
+expand the distances
+
+326
+00:15:59,825 --> 00:16:01,366
+this is going to move like that.
+
+327
+00:16:01,366 --> 00:16:02,740
+At some point,
+those three points
+
+328
+00:16:02,740 --> 00:16:06,220
+will become collinear,
+got to deal with that.
+
+329
+00:16:06,220 --> 00:16:09,730
+And the way you deal with it
+is as you continue moving,
+
+330
+00:16:09,730 --> 00:16:12,980
+it's no longer the case
+that those two blue edges
+
+331
+00:16:12,980 --> 00:16:15,030
+are the edges in the
+pseudo-triangulation.
+
+332
+00:16:15,030 --> 00:16:17,074
+Now it's this one red edge.
+
+333
+00:16:17,074 --> 00:16:17,990
+This is called a flip.
+
+334
+00:16:17,990 --> 00:16:19,823
+And you see, we used
+to have a quadrilateral
+
+335
+00:16:19,823 --> 00:16:21,680
+up here an a triangle down here.
+
+336
+00:16:21,680 --> 00:16:25,530
+Now we have a triangle up here
+and a quadrilateral over here.
+
+337
+00:16:25,530 --> 00:16:27,155
+That's pretty intuitive.
+
+338
+00:16:27,155 --> 00:16:29,030
+You preserve that it's
+a pseudo-triangulation
+
+339
+00:16:29,030 --> 00:16:32,110
+as you move this.
+
+340
+00:16:32,110 --> 00:16:35,160
+If you tried to go
+too far here you
+
+341
+00:16:35,160 --> 00:16:37,630
+would actually get a
+convex quadrilateral.
+
+342
+00:16:37,630 --> 00:16:40,397
+If this kept going
+then this would
+
+343
+00:16:40,397 --> 00:16:41,480
+be a convex quadrilateral.
+
+344
+00:16:41,480 --> 00:16:42,896
+That's not a
+pseudo-triangulation,
+
+345
+00:16:42,896 --> 00:16:43,765
+that's bad.
+
+346
+00:16:43,765 --> 00:16:45,140
+But you can always
+do these flips
+
+347
+00:16:45,140 --> 00:16:46,224
+to fix it as you go along.
+
+348
+00:16:46,224 --> 00:16:47,806
+And it turns out
+this will only happen
+
+349
+00:16:47,806 --> 00:16:49,020
+a polynomial number of times.
+
+350
+00:16:49,020 --> 00:16:51,330
+AUDIENCE: [INAUDIBLE].
+
+351
+00:16:51,330 --> 00:16:53,551
+PROFESSOR: Like shown,
+is how I flipped it.
+
+352
+00:16:53,551 --> 00:16:55,910
+AUDIENCE: Is it
+[INAUDIBLE] to a red?
+
+353
+00:16:55,910 --> 00:17:01,810
+PROFESSOR: Yeah, the red edge
+now goes from here to there.
+
+354
+00:17:01,810 --> 00:17:03,780
+Whereas before there
+were two segments that
+
+355
+00:17:03,780 --> 00:17:05,363
+went from here to
+there, now I'm going
+
+356
+00:17:05,363 --> 00:17:07,560
+to go straight from
+there to there.
+
+357
+00:17:07,560 --> 00:17:10,730
+That's the difference.
+
+358
+00:17:10,730 --> 00:17:13,980
+This is the general picture,
+you have to believe me,
+
+359
+00:17:13,980 --> 00:17:16,810
+because I want to talk
+about other things.
+
+360
+00:17:16,810 --> 00:17:18,119
+And, cool.
+
+361
+00:17:18,119 --> 00:17:21,390
+So here's an example
+of it actually running.
+
+362
+00:17:21,390 --> 00:17:25,010
+So we have some polygon
+in the top left.
+
+363
+00:17:25,010 --> 00:17:28,250
+We've deleted the
+edge that's cyan.
+
+364
+00:17:28,250 --> 00:17:31,430
+So that one's going to expand.
+
+365
+00:17:31,430 --> 00:17:34,440
+And we move a little bit.
+
+366
+00:17:34,440 --> 00:17:36,310
+This is moving a little bit.
+
+367
+00:17:36,310 --> 00:17:38,270
+This is moving a
+little bit more.
+
+368
+00:17:38,270 --> 00:17:40,270
+At this point, these three
+points are collinear.
+
+369
+00:17:40,270 --> 00:17:42,561
+Actually, the way it's drawn
+it looks like a little bit
+
+370
+00:17:42,561 --> 00:17:43,510
+too far.
+
+371
+00:17:43,510 --> 00:17:44,826
+But they should be collinear.
+
+372
+00:17:44,826 --> 00:17:46,450
+That would be a
+violation, because this
+
+373
+00:17:46,450 --> 00:17:48,010
+would be-- if we go
+any farther-- that
+
+374
+00:17:48,010 --> 00:17:49,600
+would be a violation because
+this would be a convex
+
+375
+00:17:49,600 --> 00:17:50,680
+quadrilateral.
+
+376
+00:17:50,680 --> 00:17:54,857
+So we do a flip here, and we
+end up with that edge instead.
+
+377
+00:17:54,857 --> 00:17:56,440
+So now everything's
+a pseudo-triangle,
+
+378
+00:17:56,440 --> 00:17:59,200
+everything's pointed,
+everything's happy.
+
+379
+00:17:59,200 --> 00:18:02,470
+You keep going, then these
+three points become collinear.
+
+380
+00:18:02,470 --> 00:18:04,460
+So you end up getting that edge.
+
+381
+00:18:04,460 --> 00:18:06,300
+And you keep going.
+
+382
+00:18:06,300 --> 00:18:10,540
+And all throughout this
+motion all pairwise distances
+
+383
+00:18:10,540 --> 00:18:11,750
+are not decreasing.
+
+384
+00:18:11,750 --> 00:18:14,300
+Everything's expanding
+or staying the same.
+
+385
+00:18:14,300 --> 00:18:17,030
+And then the wrap
+up looks like this.
+
+386
+00:18:17,030 --> 00:18:19,214
+In the end, you get
+a convex polygon.
+
+387
+00:18:19,214 --> 00:18:20,630
+Then you're stuck,
+because there's
+
+388
+00:18:20,630 --> 00:18:23,317
+no edge to remove
+on the outside.
+
+389
+00:18:23,317 --> 00:18:24,900
+You've got to keep
+all of those edges.
+
+390
+00:18:24,900 --> 00:18:27,470
+
+391
+00:18:27,470 --> 00:18:30,250
+So that is the
+pseudo-triangulation method
+
+392
+00:18:30,250 --> 00:18:31,170
+in a nutshell.
+
+393
+00:18:31,170 --> 00:18:33,900
+And it's expansive.
+
+394
+00:18:33,900 --> 00:18:40,650
+It has a polynomial
+in n number of moves.
+
+395
+00:18:40,650 --> 00:18:48,140
+
+396
+00:18:48,140 --> 00:18:52,420
+It's not clear how quickly
+you can compute the moves.
+
+397
+00:18:52,420 --> 00:18:57,250
+
+398
+00:18:57,250 --> 00:18:58,920
+I know an exponential
+time algorithm.
+
+399
+00:18:58,920 --> 00:19:00,570
+There might be faster one.
+
+400
+00:19:00,570 --> 00:19:02,120
+I don't think this
+has been resolved.
+
+401
+00:19:02,120 --> 00:19:05,430
+Let me just check my notes here.
+
+402
+00:19:05,430 --> 00:19:07,790
+It says best algorithm
+is exponential to compute
+
+403
+00:19:07,790 --> 00:19:08,290
+one move.
+
+404
+00:19:08,290 --> 00:19:09,840
+In these examples,
+where they're all
+
+405
+00:19:09,840 --> 00:19:12,090
+quadrilaterals or
+triangles, it's
+
+406
+00:19:12,090 --> 00:19:13,690
+really easy to compute them.
+
+407
+00:19:13,690 --> 00:19:16,450
+In general, if you get
+complicated things,
+
+408
+00:19:16,450 --> 00:19:16,994
+it's unclear.
+
+409
+00:19:16,994 --> 00:19:19,410
+Pseudo-triangulations though
+have a lot of nice structure.
+
+410
+00:19:19,410 --> 00:19:24,160
+So maybe it's easier than
+general linkage folding.
+
+411
+00:19:24,160 --> 00:19:26,550
+This, I have here,
+implementing this algorithm
+
+412
+00:19:26,550 --> 00:19:29,930
+would be a cool project.
+
+413
+00:19:29,930 --> 00:19:32,710
+Oh, another open problem
+is how many steps
+
+414
+00:19:32,710 --> 00:19:34,490
+does this algorithm really need?
+
+415
+00:19:34,490 --> 00:19:36,545
+Can you prove a
+pseudo-polynomial bound?
+
+416
+00:19:36,545 --> 00:19:38,380
+I'm not sure.
+
+417
+00:19:38,380 --> 00:19:42,650
+But let me tell you about my
+personal favorite algorithm,
+
+418
+00:19:42,650 --> 00:19:45,840
+the energy method.
+
+419
+00:19:45,840 --> 00:19:52,480
+This is also the
+most recent, in 2004.
+
+420
+00:19:52,480 --> 00:19:53,980
+The weird thing
+about this algorithm
+
+421
+00:19:53,980 --> 00:19:55,245
+is that it is not expansive.
+
+422
+00:19:55,245 --> 00:20:01,086
+
+423
+00:20:01,086 --> 00:20:03,335
+It's really easy to compute
+one step of the algorithm.
+
+424
+00:20:03,335 --> 00:20:05,920
+
+425
+00:20:05,920 --> 00:20:10,200
+I can do it in quadratic
+time, even exactly.
+
+426
+00:20:10,200 --> 00:20:14,380
+
+427
+00:20:14,380 --> 00:20:17,190
+This one you have to specify
+some error tolerance epsilon.
+
+428
+00:20:17,190 --> 00:20:19,660
+This one you have to specify
+some error tolerance epsilon.
+
+429
+00:20:19,660 --> 00:20:23,980
+Here you can do it perfectly
+if you have exact square roots.
+
+430
+00:20:23,980 --> 00:20:27,300
+And the number of
+steps is also small.
+
+431
+00:20:27,300 --> 00:20:38,070
+
+432
+00:20:38,070 --> 00:20:40,750
+It has a pseudo-polynomial
+number of steps.
+
+433
+00:20:40,750 --> 00:20:43,570
+Have I talked about
+pseudo-polynomial yet?
+
+434
+00:20:43,570 --> 00:20:45,010
+Maybe, briefly at some point.
+
+435
+00:20:45,010 --> 00:20:49,390
+Let me tell you what I mean.
+
+436
+00:20:49,390 --> 00:20:51,790
+I want to be polynomial
+in the number vertices
+
+437
+00:20:51,790 --> 00:20:55,172
+n and another parameter r.
+
+438
+00:20:55,172 --> 00:20:58,870
+r is going to be, basically,
+the maximum distance
+
+439
+00:20:58,870 --> 00:21:01,280
+in your initial
+configuration divided
+
+440
+00:21:01,280 --> 00:21:03,550
+by the minimum distance.
+
+441
+00:21:03,550 --> 00:21:06,540
+Exactly how you define
+distance, don't worry about it.
+
+442
+00:21:06,540 --> 00:21:08,100
+Not a big deal.
+
+443
+00:21:08,100 --> 00:21:10,310
+So this is a geometric
+feature of the input.
+
+444
+00:21:10,310 --> 00:21:11,616
+It has nothing to do with n.
+
+445
+00:21:11,616 --> 00:21:13,240
+n could stay fixed
+and you could change
+
+446
+00:21:13,240 --> 00:21:15,280
+this to whatever
+you want by making
+
+447
+00:21:15,280 --> 00:21:17,120
+nastier and nastier examples.
+
+448
+00:21:17,120 --> 00:21:21,400
+Nastiness is measured here by
+how big your linkages versus
+
+449
+00:21:21,400 --> 00:21:23,630
+how tight things get.
+
+450
+00:21:23,630 --> 00:21:25,390
+So as long as that's
+reasonable, this
+
+451
+00:21:25,390 --> 00:21:27,590
+is going to be a
+polynomial number of moves.
+
+452
+00:21:27,590 --> 00:21:28,610
+So this is a good bound.
+
+453
+00:21:28,610 --> 00:21:32,440
+It's better than all the others
+that's been proved anyway.
+
+454
+00:21:32,440 --> 00:21:35,480
+It might hold for some
+of the other methods.
+
+455
+00:21:35,480 --> 00:21:37,870
+Here, of course, we have a
+better bound on the number
+
+456
+00:21:37,870 --> 00:21:38,370
+moves.
+
+457
+00:21:38,370 --> 00:21:39,970
+But each move is
+kind of complicated.
+
+458
+00:21:39,970 --> 00:21:42,590
+It's pseudo-triangulation.
+
+459
+00:21:42,590 --> 00:21:44,340
+So there is a trade
+off between complexity
+
+460
+00:21:44,340 --> 00:21:46,237
+of move and number of moves.
+
+461
+00:21:46,237 --> 00:21:48,070
+But this gets a decent
+bound for everything.
+
+462
+00:21:48,070 --> 00:21:51,701
+
+463
+00:21:51,701 --> 00:21:52,700
+You've seen this method.
+
+464
+00:21:52,700 --> 00:21:55,190
+I showed it in lecture one.
+
+465
+00:21:55,190 --> 00:22:00,950
+But it's interesting to contrast
+it with the CDR method, which
+
+466
+00:22:00,950 --> 00:22:03,630
+sort of unrolled the
+teeth from the end.
+
+467
+00:22:03,630 --> 00:22:07,990
+Here, this method basically
+pulls the teeth right apart.
+
+468
+00:22:07,990 --> 00:22:12,440
+And that's possible because it's
+not required to be expansive.
+
+469
+00:22:12,440 --> 00:22:16,350
+And we have the double tree.
+
+470
+00:22:16,350 --> 00:22:19,029
+
+471
+00:22:19,029 --> 00:22:20,570
+This one looks more
+or less the same.
+
+472
+00:22:20,570 --> 00:22:23,072
+It's a little smoother, I would
+say, than the other method.
+
+473
+00:22:23,072 --> 00:22:24,280
+I don't have it side by side.
+
+474
+00:22:24,280 --> 00:22:27,174
+So it's a little hard to guess.
+
+475
+00:22:27,174 --> 00:22:29,340
+And what's really exciting
+about this method, to me,
+
+476
+00:22:29,340 --> 00:22:32,730
+is that you can run it
+for really large examples
+
+477
+00:22:32,730 --> 00:22:34,410
+in like a minute or so.
+
+478
+00:22:34,410 --> 00:22:37,120
+500 vertices, no big deal.
+
+479
+00:22:37,120 --> 00:22:39,320
+Whereas, because each
+step is pretty easy
+
+480
+00:22:39,320 --> 00:22:41,920
+to compute in quadratic
+time, with this method
+
+481
+00:22:41,920 --> 00:22:45,970
+you need it to solve
+a convex program.
+
+482
+00:22:45,970 --> 00:22:49,155
+And that's a little
+costly for large examples.
+
+483
+00:22:49,155 --> 00:22:52,700
+
+484
+00:22:52,700 --> 00:22:53,870
+Cool.
+
+485
+00:22:53,870 --> 00:22:55,430
+So that's the energy method.
+
+486
+00:22:55,430 --> 00:22:57,430
+Now I'm going to actually
+tell you how it works.
+
+487
+00:22:57,430 --> 00:23:01,434
+
+488
+00:23:01,434 --> 00:23:02,975
+Big difference is
+it's not expansive.
+
+489
+00:23:02,975 --> 00:23:09,010
+
+490
+00:23:09,010 --> 00:23:11,740
+And the idea is,
+well, being expansive
+
+491
+00:23:11,740 --> 00:23:14,210
+on every edge,
+that's kind of hard.
+
+492
+00:23:14,210 --> 00:23:15,280
+How do I figure that out?
+
+493
+00:23:15,280 --> 00:23:16,600
+Oh, it makes my brain hurt.
+
+494
+00:23:16,600 --> 00:23:18,430
+I've got to solve
+this tensegrity.
+
+495
+00:23:18,430 --> 00:23:22,300
+But if I was just
+expansive on average,
+
+496
+00:23:22,300 --> 00:23:24,070
+maybe that would be good enough.
+
+497
+00:23:24,070 --> 00:23:26,650
+That's the crazy idea.
+
+498
+00:23:26,650 --> 00:23:38,110
+So we define this energy
+function that does just that.
+
+499
+00:23:38,110 --> 00:23:39,656
+It's a function
+on configurations.
+
+500
+00:23:39,656 --> 00:23:46,790
+
+501
+00:23:46,790 --> 00:23:53,730
+So I'm going to write E of
+C. No M in this equation.
+
+502
+00:23:53,730 --> 00:23:59,890
+We're going to sum over all
+edges Ew, and then sum over all
+
+503
+00:23:59,890 --> 00:24:05,800
+vertices U different
+from V and W.
+
+504
+00:24:05,800 --> 00:24:11,100
+And we're going to take 1
+over the distance from U
+
+505
+00:24:11,100 --> 00:24:13,490
+to the edge.
+
+506
+00:24:13,490 --> 00:24:17,110
+This is just saying sum over
+all non-incident vertices
+
+507
+00:24:17,110 --> 00:24:20,284
+and edges, take their
+distance-- there's
+
+508
+00:24:20,284 --> 00:24:22,700
+many ways you could define
+that, like the minimum distance
+
+509
+00:24:22,700 --> 00:24:25,470
+between them would be
+fine-- take the reciprocal,
+
+510
+00:24:25,470 --> 00:24:26,950
+add them all up.
+
+511
+00:24:26,950 --> 00:24:29,400
+This is my energy function.
+
+512
+00:24:29,400 --> 00:24:30,420
+Kind of weird.
+
+513
+00:24:30,420 --> 00:24:34,060
+But it's averaging
+not of distances,
+
+514
+00:24:34,060 --> 00:24:36,140
+but 1 over distances.
+
+515
+00:24:36,140 --> 00:24:37,650
+So why is that so interesting?
+
+516
+00:24:37,650 --> 00:24:40,610
+Because distances
+are always positive.
+
+517
+00:24:40,610 --> 00:24:42,290
+So I only have to go over here.
+
+518
+00:24:42,290 --> 00:24:45,090
+If I write distance
+in the x-axis,
+
+519
+00:24:45,090 --> 00:24:49,440
+and 1 over the
+distance in the y-axis,
+
+520
+00:24:49,440 --> 00:24:52,050
+the plot of that
+function looks like this.
+
+521
+00:24:52,050 --> 00:24:55,690
+It has this vertical
+asymptote at 0.
+
+522
+00:24:55,690 --> 00:24:59,240
+So if the distance were to
+go to 0, which is bad for me
+
+523
+00:24:59,240 --> 00:25:02,120
+because that's one thing start
+crossing-- they will start
+
+524
+00:25:02,120 --> 00:25:05,260
+touching at d equals 0, and
+after that they might cross--
+
+525
+00:25:05,260 --> 00:25:08,860
+the energy shoots to
+positive infinity.
+
+526
+00:25:08,860 --> 00:25:12,130
+So if I take the sum over all
+these, if any of the distances
+
+527
+00:25:12,130 --> 00:25:17,390
+decrease to 0 then the energy
+will shoot to infinity.
+
+528
+00:25:17,390 --> 00:25:20,460
+What if my distances increase?
+
+529
+00:25:20,460 --> 00:25:24,217
+Because I know
+expansive motions exist.
+
+530
+00:25:24,217 --> 00:25:25,550
+That's what we proved last time.
+
+531
+00:25:25,550 --> 00:25:28,060
+
+532
+00:25:28,060 --> 00:25:29,890
+I'm not going to compute them.
+
+533
+00:25:29,890 --> 00:25:32,740
+But I know they're
+out there somewhere.
+
+534
+00:25:32,740 --> 00:25:35,580
+If I had an expansive motion,
+all of these distances
+
+535
+00:25:35,580 --> 00:25:37,710
+increase.
+
+536
+00:25:37,710 --> 00:25:41,310
+So that means this
+reciprocal decreases.
+
+537
+00:25:41,310 --> 00:25:42,820
+So I have-- it's
+hard to imagine--
+
+538
+00:25:42,820 --> 00:25:45,650
+I have this giant dimensional
+configuration space.
+
+539
+00:25:45,650 --> 00:25:47,795
+It has d times n
+dimensions, whatever.
+
+540
+00:25:47,795 --> 00:25:48,640
+A lot of stuff.
+
+541
+00:25:48,640 --> 00:25:51,160
+
+542
+00:25:51,160 --> 00:25:53,410
+I'm somewhere.
+
+543
+00:25:53,410 --> 00:25:56,780
+But if I now plotted--
+imagine that's
+
+544
+00:25:56,780 --> 00:25:59,690
+in two dimensions,
+in the plane here,
+
+545
+00:25:59,690 --> 00:26:02,080
+so that's there-- and then
+in the third dimension I
+
+546
+00:26:02,080 --> 00:26:03,930
+plot what is this
+energy landscape.
+
+547
+00:26:03,930 --> 00:26:06,340
+For each of these configurations
+I compute some height.
+
+548
+00:26:06,340 --> 00:26:07,580
+What is my energy?
+
+549
+00:26:07,580 --> 00:26:10,190
+I get some 3D surface here.
+
+550
+00:26:10,190 --> 00:26:14,550
+In general, it's going to be
+d times n plus 1 dimensions.
+
+551
+00:26:14,550 --> 00:26:15,850
+Here's the configuration space.
+
+552
+00:26:15,850 --> 00:26:18,040
+We plot over that.
+
+553
+00:26:18,040 --> 00:26:21,380
+What I'm saying is, because
+expansive motions exist,
+
+554
+00:26:21,380 --> 00:26:23,530
+there has to be a motion
+for every point that
+
+555
+00:26:23,530 --> 00:26:25,466
+decreases energy.
+
+556
+00:26:25,466 --> 00:26:27,090
+Because if you decrease
+every distance,
+
+557
+00:26:27,090 --> 00:26:30,810
+you also decrease them
+on average in this sense.
+
+558
+00:26:30,810 --> 00:26:34,240
+If every term decreases,
+then of course, the sum will.
+
+559
+00:26:34,240 --> 00:26:44,730
+So this means energy
+decreasing motions exist.
+
+560
+00:26:44,730 --> 00:26:49,116
+
+561
+00:26:49,116 --> 00:26:51,450
+Now energy decreasing
+feels like a good thing.
+
+562
+00:26:51,450 --> 00:26:56,980
+Because I start somewhere, it
+has some energy, not infinity.
+
+563
+00:26:56,980 --> 00:26:59,490
+If I decrease the energy,
+it's really hard for my energy
+
+564
+00:26:59,490 --> 00:27:01,412
+to go to plus infinity.
+
+565
+00:27:01,412 --> 00:27:03,380
+It can't happen.
+
+566
+00:27:03,380 --> 00:27:12,390
+So all I need to do is follow
+any energy decreasing motion.
+
+567
+00:27:12,390 --> 00:27:18,330
+
+568
+00:27:18,330 --> 00:27:21,290
+It might be an expansive
+one, but probably not.
+
+569
+00:27:21,290 --> 00:27:23,290
+We know that there are
+energy decreasing motions
+
+570
+00:27:23,290 --> 00:27:25,232
+because there are
+expansive motions.
+
+571
+00:27:25,232 --> 00:27:26,940
+But let's just take
+any energy decreasing
+
+572
+00:27:26,940 --> 00:27:30,460
+motion, sort of
+expansive on average.
+
+573
+00:27:30,460 --> 00:27:37,762
+Then it won't self-intersect
+because if energy decreases
+
+574
+00:27:37,762 --> 00:27:39,220
+it will never get
+to plus infinity.
+
+575
+00:27:39,220 --> 00:27:41,261
+And therefore none of the
+distances will go to 0.
+
+576
+00:27:41,261 --> 00:27:44,000
+
+577
+00:27:44,000 --> 00:27:48,320
+So what this algorithm does
+is follow the gradient.
+
+578
+00:27:48,320 --> 00:27:57,000
+
+579
+00:27:57,000 --> 00:28:00,000
+So I should say something
+about what this notation is.
+
+580
+00:28:00,000 --> 00:28:02,360
+This is whatever,
+higher order calculus.
+
+581
+00:28:02,360 --> 00:28:05,840
+
+582
+00:28:05,840 --> 00:28:08,620
+You live in some space.
+
+583
+00:28:08,620 --> 00:28:10,440
+You're on like some
+hill, or whatever.
+
+584
+00:28:10,440 --> 00:28:12,880
+You're on some surface.
+
+585
+00:28:12,880 --> 00:28:15,822
+And you say well I'd really
+like to go downhill from here.
+
+586
+00:28:15,822 --> 00:28:17,530
+And there might be
+many downhill options.
+
+587
+00:28:17,530 --> 00:28:18,988
+There might be many
+uphill options.
+
+588
+00:28:18,988 --> 00:28:21,460
+This is some crazy high
+dimensional choice.
+
+589
+00:28:21,460 --> 00:28:24,290
+Just take the option
+that decreases energy
+
+590
+00:28:24,290 --> 00:28:26,710
+the fastest, the most downhill.
+
+591
+00:28:26,710 --> 00:28:31,760
+That is negative gradient of
+E. Believe me that it exists.
+
+592
+00:28:31,760 --> 00:28:34,490
+It exists because this
+energy function is smooth,
+
+593
+00:28:34,490 --> 00:28:35,290
+in some sense.
+
+594
+00:28:35,290 --> 00:28:37,680
+
+595
+00:28:37,680 --> 00:28:39,430
+You're basically taking
+first derivatives.
+
+596
+00:28:39,430 --> 00:28:41,410
+That gives you the
+highest chain--
+
+597
+00:28:41,410 --> 00:28:43,890
+or you take the place that has
+the highest change and boom.
+
+598
+00:28:43,890 --> 00:28:44,764
+That gives it to you.
+
+599
+00:28:44,764 --> 00:28:47,010
+It's very easy to compute
+because this function has
+
+600
+00:28:47,010 --> 00:28:48,190
+quadratically many terms.
+
+601
+00:28:48,190 --> 00:28:51,430
+It takes about n
+squared time to find it.
+
+602
+00:28:51,430 --> 00:28:56,050
+And that gives you some
+energy decrease in motion.
+
+603
+00:28:56,050 --> 00:28:57,490
+It's just an easy one to find.
+
+604
+00:28:57,490 --> 00:28:59,980
+And that's what we're
+animating all the time.
+
+605
+00:28:59,980 --> 00:29:02,070
+So we just find energy
+decreasing motion,
+
+606
+00:29:02,070 --> 00:29:03,730
+move a little bit
+in that direction.
+
+607
+00:29:03,730 --> 00:29:05,540
+Not too much,
+because if you go--
+
+608
+00:29:05,540 --> 00:29:07,460
+it's again a first derivative.
+
+609
+00:29:07,460 --> 00:29:09,210
+This is only an
+infinitesimal motion.
+
+610
+00:29:09,210 --> 00:29:11,830
+But we're actually going
+to move in that direction
+
+611
+00:29:11,830 --> 00:29:13,240
+for a positive amount of time.
+
+612
+00:29:13,240 --> 00:29:15,510
+As long as we don't go too
+far, and we can find how
+
+613
+00:29:15,510 --> 00:29:18,870
+far by binary search,
+we won't self-intersect.
+
+614
+00:29:18,870 --> 00:29:20,850
+Because we know locally
+it's decreasing energy.
+
+615
+00:29:20,850 --> 00:29:24,640
+If we go small enough step it
+really will decrease energy,
+
+616
+00:29:24,640 --> 00:29:26,160
+and then life is good.
+
+617
+00:29:26,160 --> 00:29:30,100
+So it's really easy to do this.
+
+618
+00:29:30,100 --> 00:29:32,670
+Super simple algorithm.
+
+619
+00:29:32,670 --> 00:29:34,650
+Good.
+
+620
+00:29:34,650 --> 00:29:36,960
+It's non-expansive
+because we're only
+
+621
+00:29:36,960 --> 00:29:41,432
+decreasing the average,
+not each of the terms.
+
+622
+00:29:41,432 --> 00:29:44,230
+Do, do, do, do, do.
+
+623
+00:29:44,230 --> 00:29:46,970
+You can prove the
+number of steps--
+
+624
+00:29:46,970 --> 00:29:52,630
+this is the part I'm most proud
+of here-- is pseudo-polynomial,
+
+625
+00:29:52,630 --> 00:29:57,720
+polynomial in n and r.
+
+626
+00:29:57,720 --> 00:29:59,920
+What is the polynomial?
+
+627
+00:29:59,920 --> 00:30:05,510
+n to the 123 times r to the 81.
+
+628
+00:30:05,510 --> 00:30:07,380
+This is the largest
+polynomial bound
+
+629
+00:30:07,380 --> 00:30:11,460
+I know of that's not
+dependent on dimension.
+
+630
+00:30:11,460 --> 00:30:12,210
+So I'm very proud.
+
+631
+00:30:12,210 --> 00:30:14,770
+In practice, the number of
+steps is much, much smaller
+
+632
+00:30:14,770 --> 00:30:15,270
+than this.
+
+633
+00:30:15,270 --> 00:30:17,370
+This is what we could
+prove in an easy way.
+
+634
+00:30:17,370 --> 00:30:19,500
+If you want a project,
+it's a little tedious,
+
+635
+00:30:19,500 --> 00:30:21,200
+but it would be easy,
+I'm pretty sure.
+
+636
+00:30:21,200 --> 00:30:23,570
+You could decrease
+this to, I don't know,
+
+637
+00:30:23,570 --> 00:30:26,170
+at least n to the
+20 or something
+
+638
+00:30:26,170 --> 00:30:28,220
+by being a little more
+careful on the analysis.
+
+639
+00:30:28,220 --> 00:30:30,386
+But once we got something
+that was pseudo-polynomial
+
+640
+00:30:30,386 --> 00:30:31,510
+we were happy.
+
+641
+00:30:31,510 --> 00:30:34,322
+So we could leave others to
+figure out the right bound.
+
+642
+00:30:34,322 --> 00:30:36,780
+It's a little tricky with these
+gradient descent algorithms
+
+643
+00:30:36,780 --> 00:30:38,234
+to get good bounds.
+
+644
+00:30:38,234 --> 00:30:39,650
+In practice they
+work really well,
+
+645
+00:30:39,650 --> 00:30:41,330
+because the gradient
+is not as nasty
+
+646
+00:30:41,330 --> 00:30:44,140
+as you might imagine it
+to be in the worst case.
+
+647
+00:30:44,140 --> 00:30:47,170
+But the worst case bound,
+hey, it's pseudo-polynomial.
+
+648
+00:30:47,170 --> 00:30:48,790
+It's a nice
+theoretical guarantee.
+
+649
+00:30:48,790 --> 00:30:50,850
+And in practice it
+also happens to work.
+
+650
+00:30:50,850 --> 00:30:52,730
+Like these examples
+only take, I don't know,
+
+651
+00:30:52,730 --> 00:30:55,450
+a few hundred steps,
+1,000 steps, whatever.
+
+652
+00:30:55,450 --> 00:30:58,010
+AUDIENCE: Where do
+those numbers come from?
+
+653
+00:30:58,010 --> 00:30:59,870
+PROFESSOR: Where
+does 123 come from?
+
+654
+00:30:59,870 --> 00:31:01,640
+We really wanted
+it to be 1, 2, 3.
+
+655
+00:31:01,640 --> 00:31:03,296
+81 is my birth year.
+
+656
+00:31:03,296 --> 00:31:04,904
+[LAUGHTER]
+
+657
+00:31:04,904 --> 00:31:06,945
+PROFESSOR: That's why I
+like this number so much.
+
+658
+00:31:06,945 --> 00:31:09,260
+Oh, actually here
+I have 41 written.
+
+659
+00:31:09,260 --> 00:31:10,580
+I'm pretty sure it's 81 though.
+
+660
+00:31:10,580 --> 00:31:14,862
+I should correct the notes,
+double check, something.
+
+661
+00:31:14,862 --> 00:31:18,230
+It's really you're just adding
+up twos and threes a lot,
+
+662
+00:31:18,230 --> 00:31:20,810
+and fours, and things like
+that a whole bunch of times.
+
+663
+00:31:20,810 --> 00:31:23,590
+And then just luckily it
+came out to a nice number.
+
+664
+00:31:23,590 --> 00:31:26,394
+As far as I know,
+not intentional.
+
+665
+00:31:26,394 --> 00:31:28,310
+There are few authors
+though, so I don't know.
+
+666
+00:31:28,310 --> 00:31:31,370
+Maybe one of them increased
+a bound to make it a little
+
+667
+00:31:31,370 --> 00:31:34,980
+cooler number in the end.
+
+668
+00:31:34,980 --> 00:31:37,267
+Good.
+
+669
+00:31:37,267 --> 00:31:39,100
+So that's pseudo-polynomial
+number of steps.
+
+670
+00:31:39,100 --> 00:31:40,500
+It's interesting,
+each of the steps
+
+671
+00:31:40,500 --> 00:31:41,791
+is actually a very nice motion.
+
+672
+00:31:41,791 --> 00:31:43,580
+It just moves along
+a straight line
+
+673
+00:31:43,580 --> 00:31:45,080
+in the configuration space.
+
+674
+00:31:45,080 --> 00:31:47,080
+I would be nice to know
+whether you can actually
+
+675
+00:31:47,080 --> 00:31:50,300
+achieve a polynomial number
+of steps independent of r.
+
+676
+00:31:50,300 --> 00:31:51,720
+I think the answer
+is no, it's not
+
+677
+00:31:51,720 --> 00:31:55,129
+possible for some linkages
+that are really tight.
+
+678
+00:31:55,129 --> 00:31:57,420
+I think you need a dependence,
+a polynomial dependence,
+
+679
+00:31:57,420 --> 00:31:59,575
+on r-- at least a
+linear dependence on r.
+
+680
+00:31:59,575 --> 00:32:01,050
+But I don't know
+how to prove that.
+
+681
+00:32:01,050 --> 00:32:03,330
+It's a nice open problem.
+
+682
+00:32:03,330 --> 00:32:06,710
+Another fun problem, these
+examples with polygons
+
+683
+00:32:06,710 --> 00:32:11,710
+end up with a particular
+convex shape in the end.
+
+684
+00:32:11,710 --> 00:32:13,150
+Is that shape unique?
+
+685
+00:32:13,150 --> 00:32:15,150
+If I gave you the sequence
+of edge lengths here,
+
+686
+00:32:15,150 --> 00:32:17,690
+they're all 1, or
+they're almost 1.
+
+687
+00:32:17,690 --> 00:32:18,696
+Not quite the same.
+
+688
+00:32:18,696 --> 00:32:20,820
+No, sorry, they get tinier
+as you go to the center.
+
+689
+00:32:20,820 --> 00:32:22,403
+But for that sequence
+of edge lengths,
+
+690
+00:32:22,403 --> 00:32:24,890
+is there a unique minimum
+energy configuration?
+
+691
+00:32:24,890 --> 00:32:25,930
+I think so.
+
+692
+00:32:25,930 --> 00:32:28,890
+But I don't know.
+
+693
+00:32:28,890 --> 00:32:31,140
+We know that this method
+will get to convex,
+
+694
+00:32:31,140 --> 00:32:33,430
+because only at the
+convex configuration
+
+695
+00:32:33,430 --> 00:32:35,140
+do you no longer have
+an expansive motion
+
+696
+00:32:35,140 --> 00:32:39,820
+and no longer have a decreasing
+energy motion, maybe.
+
+697
+00:32:39,820 --> 00:32:40,320
+Cool.
+
+698
+00:32:40,320 --> 00:32:41,650
+Those are the three algorithms.
+
+699
+00:32:41,650 --> 00:32:42,800
+Any questions about them?
+
+700
+00:32:42,800 --> 00:32:48,730
+
+701
+00:32:48,730 --> 00:32:52,215
+Before we go to trees, again,
+tell you a cool application
+
+702
+00:32:52,215 --> 00:33:02,405
+to origami, which
+is to rigid origami.
+
+703
+00:33:02,405 --> 00:33:06,540
+
+704
+00:33:06,540 --> 00:33:10,400
+Remember, rigid origami, we're
+not allowed to add any creases.
+
+705
+00:33:10,400 --> 00:33:14,870
+And all of the faces between
+creases have to stay flat.
+
+706
+00:33:14,870 --> 00:33:16,630
+They're like made
+of-- imagine you
+
+707
+00:33:16,630 --> 00:33:19,420
+have pieces of metal
+representing the faces.
+
+708
+00:33:19,420 --> 00:33:22,230
+You have piano hinges
+making the edges.
+
+709
+00:33:22,230 --> 00:33:23,510
+That's rigid origami.
+
+710
+00:33:23,510 --> 00:33:24,770
+That's kind of like a linkage.
+
+711
+00:33:24,770 --> 00:33:27,100
+In particular, when you
+have a single vertex
+
+712
+00:33:27,100 --> 00:33:34,560
+origami-- say that's five
+foldable, I don't know.
+
+713
+00:33:34,560 --> 00:33:36,520
+And if you say each
+of these wedges
+
+714
+00:33:36,520 --> 00:33:41,060
+is a rigid piece of
+metal, well we already
+
+715
+00:33:41,060 --> 00:33:45,880
+know this kind of set up can
+be modeled by its boundary.
+
+716
+00:33:45,880 --> 00:33:47,480
+Ignore the interior.
+
+717
+00:33:47,480 --> 00:33:50,760
+Just think of there
+being hinges of this one
+
+718
+00:33:50,760 --> 00:33:55,540
+dimensional structure like that.
+
+719
+00:33:55,540 --> 00:33:58,610
+So that looks a
+lot like a linkage.
+
+720
+00:33:58,610 --> 00:34:00,670
+These have to stay rigid.
+
+721
+00:34:00,670 --> 00:34:01,900
+They're not straight lines.
+
+722
+00:34:01,900 --> 00:34:03,280
+It's a little different.
+
+723
+00:34:03,280 --> 00:34:04,900
+It's almost the same.
+
+724
+00:34:04,900 --> 00:34:07,727
+If you think about how you're
+allowed to fold these things--
+
+725
+00:34:07,727 --> 00:34:09,310
+really you should
+think about it here,
+
+726
+00:34:09,310 --> 00:34:13,810
+I guess-- what happens, by
+a continuous motion what
+
+727
+00:34:13,810 --> 00:34:17,100
+happens is that you're
+living on a sphere.
+
+728
+00:34:17,100 --> 00:34:21,790
+So you start out on the
+equator of the sphere.
+
+729
+00:34:21,790 --> 00:34:23,540
+This thing, just plop
+it down the equator.
+
+730
+00:34:23,540 --> 00:34:25,639
+The boundary lies on the
+boundary of the sphere.
+
+731
+00:34:25,639 --> 00:34:28,159
+The interior of the paper
+is inside the sphere,
+
+732
+00:34:28,159 --> 00:34:31,159
+right along the flat part there.
+
+733
+00:34:31,159 --> 00:34:35,409
+As you fold, these points
+will stay on the sphere.
+
+734
+00:34:35,409 --> 00:34:38,090
+And these edge links
+will be preserved,
+
+735
+00:34:38,090 --> 00:34:39,440
+their arcs on the spheres.
+
+736
+00:34:39,440 --> 00:34:42,080
+There will be great
+circular arcs at all times.
+
+737
+00:34:42,080 --> 00:34:44,210
+So folding this
+thing in three space
+
+738
+00:34:44,210 --> 00:34:49,650
+is really equivalent to folding
+this linkage on the sphere.
+
+739
+00:34:49,650 --> 00:34:52,150
+And that looks an awful lot
+like a polygon on a sphere.
+
+740
+00:34:52,150 --> 00:34:55,159
+What we really want is a
+spherical Carpenter's Rule
+
+741
+00:34:55,159 --> 00:34:55,659
+Theorem.
+
+742
+00:34:55,659 --> 00:35:02,480
+
+743
+00:35:02,480 --> 00:35:04,930
+And there is.
+
+744
+00:35:04,930 --> 00:35:06,690
+This is by Streinu and Whiteley.
+
+745
+00:35:06,690 --> 00:35:10,440
+
+746
+00:35:10,440 --> 00:35:21,870
+So if you have a closed chain,
+a polygon, of total length
+
+747
+00:35:21,870 --> 00:35:31,790
+at most 2 pi on a
+unit sphere then you
+
+748
+00:35:31,790 --> 00:35:34,695
+have a connected
+configuration space.
+
+749
+00:35:34,695 --> 00:35:40,820
+
+750
+00:35:40,820 --> 00:35:43,921
+So in the plane,
+closed chain always
+
+751
+00:35:43,921 --> 00:35:45,420
+had a connected
+configuration space.
+
+752
+00:35:45,420 --> 00:35:49,502
+On the sphere you need that
+the chain is not too long,
+
+753
+00:35:49,502 --> 00:35:51,710
+because there's only sort
+of a bounded amount of room
+
+754
+00:35:51,710 --> 00:35:52,810
+on the sphere.
+
+755
+00:35:52,810 --> 00:36:03,220
+The equator has total length 2
+pi, perimeter of the equator.
+
+756
+00:36:03,220 --> 00:36:05,730
+For unit sphere it's 2 pi.
+
+757
+00:36:05,730 --> 00:36:08,040
+So we're just canonically
+making it a unit sphere.
+
+758
+00:36:08,040 --> 00:36:10,440
+And 2 pi really corresponds
+to this situation,
+
+759
+00:36:10,440 --> 00:36:12,020
+which is 360 degrees.
+
+760
+00:36:12,020 --> 00:36:13,690
+That's how much
+total length we have.
+
+761
+00:36:13,690 --> 00:36:16,129
+So it just fits in the
+equator, life is good.
+
+762
+00:36:16,129 --> 00:36:17,670
+The reason you want
+it to have length
+
+763
+00:36:17,670 --> 00:36:20,200
+at most 2 pi is because
+then you actually do
+
+764
+00:36:20,200 --> 00:36:22,380
+have a convex configuration.
+
+765
+00:36:22,380 --> 00:36:24,540
+In the case of 2 pi, it
+lies along the equator.
+
+766
+00:36:24,540 --> 00:36:28,480
+If it's smaller than 2 pi it'll
+be like some smaller portion.
+
+767
+00:36:28,480 --> 00:36:31,600
+This would be less than
+2 pi on the sphere.
+
+768
+00:36:31,600 --> 00:36:35,100
+
+769
+00:36:35,100 --> 00:36:38,417
+If it's greater than 2 pi,
+you can't draw it convexly
+
+770
+00:36:38,417 --> 00:36:39,000
+on the sphere.
+
+771
+00:36:39,000 --> 00:36:39,980
+You can draw something.
+
+772
+00:36:39,980 --> 00:36:41,910
+Like I could draw
+something like this,
+
+773
+00:36:41,910 --> 00:36:45,590
+that'll have really long
+length on the sphere.
+
+774
+00:36:45,590 --> 00:36:47,660
+But there will be no
+way to convexify it.
+
+775
+00:36:47,660 --> 00:36:49,980
+You get stuck at some point.
+
+776
+00:36:49,980 --> 00:36:52,170
+And as long as you don't
+have that situation,
+
+777
+00:36:52,170 --> 00:36:54,710
+you can take this--
+what this actually
+
+778
+00:36:54,710 --> 00:36:56,800
+implies is that your
+polygon at all times
+
+779
+00:36:56,800 --> 00:36:58,440
+will lie in a hemisphere.
+
+780
+00:36:58,440 --> 00:37:00,900
+You take that hemisphere
+and you sort of unroll it,
+
+781
+00:37:00,900 --> 00:37:03,510
+you splay it out, you
+project it to the plane.
+
+782
+00:37:03,510 --> 00:37:06,130
+You apply the planar
+Carpenter's Rule Theorem.
+
+783
+00:37:06,130 --> 00:37:09,270
+You apply the fact that
+unrolling operation,
+
+784
+00:37:09,270 --> 00:37:11,470
+or that projection
+if you will-- I
+
+785
+00:37:11,470 --> 00:37:16,700
+think it's like
+projection from some point
+
+786
+00:37:16,700 --> 00:37:21,230
+here out to the plane--
+that projection preserves
+
+787
+00:37:21,230 --> 00:37:26,020
+infinitesimal flexibility
+of tensegrities.
+
+788
+00:37:26,020 --> 00:37:29,130
+So it'll still have the
+expensive motion in the plane.
+
+789
+00:37:29,130 --> 00:37:33,090
+And then you could turn in to an
+expansive motion on the sphere.
+
+790
+00:37:33,090 --> 00:37:36,120
+And eventually you'll
+get a convex polygon.
+
+791
+00:37:36,120 --> 00:37:38,350
+So that's sort of
+how this is proved.
+
+792
+00:37:38,350 --> 00:37:40,520
+Then you can apply
+it to rigid origami,
+
+793
+00:37:40,520 --> 00:37:42,370
+and say for single
+vertex origami,
+
+794
+00:37:42,370 --> 00:37:44,420
+it's always rigidly foldable.
+
+795
+00:37:44,420 --> 00:37:46,450
+Any state you want
+to reach can be
+
+796
+00:37:46,450 --> 00:37:49,832
+reached by continuous
+motion, without bending
+
+797
+00:37:49,832 --> 00:37:50,540
+any of the faces.
+
+798
+00:37:50,540 --> 00:37:53,390
+
+799
+00:37:53,390 --> 00:37:54,690
+So a fun little application.
+
+800
+00:37:54,690 --> 00:38:00,820
+
+801
+00:38:00,820 --> 00:38:03,750
+And one of the few things
+we know about rigid origami,
+
+802
+00:38:03,750 --> 00:38:07,670
+for multiple vertices
+it gets a lot harder.
+
+803
+00:38:07,670 --> 00:38:11,027
+Not always possible,
+and we don't
+
+804
+00:38:11,027 --> 00:38:12,235
+have a nice characterization.
+
+805
+00:38:12,235 --> 00:38:23,980
+
+806
+00:38:23,980 --> 00:38:29,400
+So finally, let's move onto
+locked trees in the plane.
+
+807
+00:38:29,400 --> 00:38:34,410
+
+808
+00:38:34,410 --> 00:38:37,600
+So these are sort of
+the classic examples.
+
+809
+00:38:37,600 --> 00:38:41,020
+The top two were
+in a 1998 paper.
+
+810
+00:38:41,020 --> 00:38:45,510
+This was when I started
+working on folding stuff, very
+
+811
+00:38:45,510 --> 00:38:46,866
+beginning.
+
+812
+00:38:46,866 --> 00:38:51,620
+A whole bunch of people
+from a big workshop.
+
+813
+00:38:51,620 --> 00:38:53,470
+First example is this one.
+
+814
+00:38:53,470 --> 00:38:59,580
+And it's a bunch of sort of
+arms tucked into their armpits,
+
+815
+00:38:59,580 --> 00:39:02,050
+and in a cyclic way.
+
+816
+00:39:02,050 --> 00:39:06,180
+And the dotted circles
+mean objects in this mirror
+
+817
+00:39:06,180 --> 00:39:08,030
+are closer than they appear.
+
+818
+00:39:08,030 --> 00:39:12,770
+So imagine that
+all of these points
+
+819
+00:39:12,770 --> 00:39:16,550
+are actually really, really
+close and tight in here.
+
+820
+00:39:16,550 --> 00:39:18,640
+And this guy's actually
+really close and tight
+
+821
+00:39:18,640 --> 00:39:20,712
+against this edge.
+
+822
+00:39:20,712 --> 00:39:22,170
+So I've drawn it
+with lots of slack
+
+823
+00:39:22,170 --> 00:39:23,961
+so you can see the
+combinatorial structure.
+
+824
+00:39:23,961 --> 00:39:26,570
+But geometrically
+it's much tighter.
+
+825
+00:39:26,570 --> 00:39:29,230
+Then the intuition is that you
+can't get any of these arms
+
+826
+00:39:29,230 --> 00:39:34,930
+open unless you could somehow
+expand one of these wedges.
+
+827
+00:39:34,930 --> 00:39:37,660
+It's like, if you could
+expand this angle then
+
+828
+00:39:37,660 --> 00:39:39,659
+this guy would have
+room to come out.
+
+829
+00:39:39,659 --> 00:39:40,950
+But how do I expand that angle?
+
+830
+00:39:40,950 --> 00:39:43,033
+Well I'd have to compress
+the other angles because
+
+831
+00:39:43,033 --> 00:39:43,970
+of the cyclic picture.
+
+832
+00:39:43,970 --> 00:39:46,950
+And I can't, if I look at some
+other angle like this one,
+
+833
+00:39:46,950 --> 00:39:50,330
+I can't compress it because
+the arm is in the way.
+
+834
+00:39:50,330 --> 00:39:54,462
+So I can't open an arm until
+I've closed some other arm.
+
+835
+00:39:54,462 --> 00:39:56,420
+And I can't close an arm
+before I've opened it.
+
+836
+00:39:56,420 --> 00:39:57,590
+And so nothing can happen.
+
+837
+00:39:57,590 --> 00:39:59,890
+That's the intuition
+behind the proof.
+
+838
+00:39:59,890 --> 00:40:01,550
+The details are very
+messy, because you
+
+839
+00:40:01,550 --> 00:40:04,710
+have to define open
+and closed, and what
+
+840
+00:40:04,710 --> 00:40:07,640
+things must happen
+before what things.
+
+841
+00:40:07,640 --> 00:40:09,050
+This example should
+look familiar
+
+842
+00:40:09,050 --> 00:40:11,910
+because if you double it, if
+you replace every edge with two
+
+843
+00:40:11,910 --> 00:40:13,800
+edges, we get one
+of the examples that
+
+844
+00:40:13,800 --> 00:40:18,760
+was expanding with the
+five-fold symmetry.
+
+845
+00:40:18,760 --> 00:40:22,270
+So people have sort
+of known for a while,
+
+846
+00:40:22,270 --> 00:40:26,050
+and then we finally proved,
+that this is locked.
+
+847
+00:40:26,050 --> 00:40:28,750
+If you double it, people thought
+well maybe it's still locked.
+
+848
+00:40:28,750 --> 00:40:34,230
+Turns out no, because the center
+vertex can expand in a polygon,
+
+849
+00:40:34,230 --> 00:40:36,100
+but with a tree it can't.
+
+850
+00:40:36,100 --> 00:40:38,400
+OK, big deal.
+
+851
+00:40:38,400 --> 00:40:42,410
+These examples, this is just
+yet another way to do that.
+
+852
+00:40:42,410 --> 00:40:46,560
+But what's interesting is if
+you double some of the edges
+
+853
+00:40:46,560 --> 00:40:48,200
+you get this tree.
+
+854
+00:40:48,200 --> 00:40:51,110
+So you have 1 degree 3
+vertex in the center.
+
+855
+00:40:51,110 --> 00:40:53,660
+And you go around,
+you visit this arm.
+
+856
+00:40:53,660 --> 00:40:55,540
+You go back, you visit this arm.
+
+857
+00:40:55,540 --> 00:40:58,360
+Turns out this really
+does simulate this tree,
+
+858
+00:40:58,360 --> 00:41:01,220
+because we haven't touched
+the central degree 3 vertex.
+
+859
+00:41:01,220 --> 00:41:04,800
+And this is nice because
+it has one degree 3 vertex.
+
+860
+00:41:04,800 --> 00:41:07,390
+Everything else
+is degree 2 or 1.
+
+861
+00:41:07,390 --> 00:41:08,920
+So in the Carpenter's
+Rule theorem
+
+862
+00:41:08,920 --> 00:41:11,830
+where we said maximum
+degree 2, it's really tight.
+
+863
+00:41:11,830 --> 00:41:14,310
+And as soon as you add
+one vertex of degree 3
+
+864
+00:41:14,310 --> 00:41:16,300
+you can be locked.
+
+865
+00:41:16,300 --> 00:41:19,500
+That was the point
+of this example.
+
+866
+00:41:19,500 --> 00:41:21,510
+What other fun things
+can you do with trees?
+
+867
+00:41:21,510 --> 00:41:24,110
+Well, three years
+ago in this class
+
+868
+00:41:24,110 --> 00:41:26,860
+we started thinking
+about other locked trees.
+
+869
+00:41:26,860 --> 00:41:29,010
+How low could you go?
+
+870
+00:41:29,010 --> 00:41:31,480
+How many edges do
+need to get locked?
+
+871
+00:41:31,480 --> 00:41:36,079
+This example-- no I guess
+this example would be minimum.
+
+872
+00:41:36,079 --> 00:41:37,620
+Here I've drawn it
+with eight petals.
+
+873
+00:41:37,620 --> 00:41:40,270
+You can get away
+with five petals,
+
+874
+00:41:40,270 --> 00:41:42,700
+or are five arms,
+each of length 3.
+
+875
+00:41:42,700 --> 00:41:44,000
+So that's 15 edges.
+
+876
+00:41:44,000 --> 00:41:45,670
+That was the state of the art.
+
+877
+00:41:45,670 --> 00:41:50,150
+And then we had this crazy
+idea in a problem session
+
+878
+00:41:50,150 --> 00:41:54,510
+of this locked
+chain, locked tree.
+
+879
+00:41:54,510 --> 00:41:57,030
+It has two degree 3 vertices.
+
+880
+00:41:57,030 --> 00:41:58,860
+And it kind of just
+winds in there.
+
+881
+00:41:58,860 --> 00:42:00,860
+We're going to see why
+these things are locked.
+
+882
+00:42:00,860 --> 00:42:01,670
+But OK, that's kind of neat.
+
+883
+00:42:01,670 --> 00:42:03,240
+11, that's much better than 15.
+
+884
+00:42:03,240 --> 00:42:04,320
+Can we do better?
+
+885
+00:42:04,320 --> 00:42:08,390
+And every week we improved
+it, for a few weeks.
+
+886
+00:42:08,390 --> 00:42:12,640
+This one looks messier,
+but it has one fewer edge.
+
+887
+00:42:12,640 --> 00:42:16,430
+And then this one came
+along, and we're like whoa.
+
+888
+00:42:16,430 --> 00:42:20,360
+So symmetric, so beautiful.
+
+889
+00:42:20,360 --> 00:42:25,080
+What's interesting is it doesn't
+have the cyclic structure.
+
+890
+00:42:25,080 --> 00:42:26,922
+It's almost flat, in fact.
+
+891
+00:42:26,922 --> 00:42:29,130
+You could think of all these
+guys being in one point.
+
+892
+00:42:29,130 --> 00:42:30,530
+All these guys
+being in one point.
+
+893
+00:42:30,530 --> 00:42:31,946
+All those guys
+being in one point.
+
+894
+00:42:31,946 --> 00:42:33,960
+It's like they're,
+all three, collinear.
+
+895
+00:42:33,960 --> 00:42:35,860
+So it's a very different
+kind of example.
+
+896
+00:42:35,860 --> 00:42:38,170
+Before we thought
+locked trees required
+
+897
+00:42:38,170 --> 00:42:39,925
+this kind of cyclic condition.
+
+898
+00:42:39,925 --> 00:42:42,670
+
+899
+00:42:42,670 --> 00:42:46,450
+And so, for example,
+we conjectured--
+
+900
+00:42:46,450 --> 00:42:48,310
+or I guess Poon,
+one of the authors
+
+901
+00:42:48,310 --> 00:42:51,016
+here-- conjectured that
+there would be no way
+
+902
+00:42:51,016 --> 00:42:52,640
+to lock something if
+all the edges were
+
+903
+00:42:52,640 --> 00:42:54,250
+horizontal and vertical.
+
+904
+00:42:54,250 --> 00:42:57,270
+Because if you have
+that you couldn't
+
+905
+00:42:57,270 --> 00:42:59,270
+have five things in a circle.
+
+906
+00:42:59,270 --> 00:43:01,530
+Now suddenly we think,
+oh, this is interesting.
+
+907
+00:43:01,530 --> 00:43:05,470
+Because it has two
+degree 3 vertices.
+
+908
+00:43:05,470 --> 00:43:06,640
+It's so symmetric.
+
+909
+00:43:06,640 --> 00:43:08,720
+Surely this is the
+fewest possible edges
+
+910
+00:43:08,720 --> 00:43:11,340
+we could get away with.
+
+911
+00:43:11,340 --> 00:43:16,050
+But no, then we found
+the eight edge example.
+
+912
+00:43:16,050 --> 00:43:18,080
+And this is kind of funny.
+
+913
+00:43:18,080 --> 00:43:22,440
+It's like instead of
+being nice and symmetric,
+
+914
+00:43:22,440 --> 00:43:24,610
+essentially, what we're
+doing is removing this edge.
+
+915
+00:43:24,610 --> 00:43:26,729
+And we want to instead
+attach it in here.
+
+916
+00:43:26,729 --> 00:43:28,770
+But then we have to futz
+around with the vertices
+
+917
+00:43:28,770 --> 00:43:30,570
+to make it work
+out and be a tree.
+
+918
+00:43:30,570 --> 00:43:34,520
+And now has only
+one degree 3 vertex.
+
+919
+00:43:34,520 --> 00:43:36,251
+So it also has
+that nice property.
+
+920
+00:43:36,251 --> 00:43:37,250
+It only has eight edges.
+
+921
+00:43:37,250 --> 00:43:38,624
+And this, we
+believe, is optimal.
+
+922
+00:43:38,624 --> 00:43:42,640
+
+923
+00:43:42,640 --> 00:43:46,620
+And we can actually prove
+something along those lines.
+
+924
+00:43:46,620 --> 00:43:59,370
+So a linear tree is one where
+all the vertices lie nearly
+
+925
+00:43:59,370 --> 00:43:59,870
+on the line.
+
+926
+00:43:59,870 --> 00:44:04,430
+
+927
+00:44:04,430 --> 00:44:06,860
+So this is a linear locked tree.
+
+928
+00:44:06,860 --> 00:44:09,140
+And we can prove that among
+all linear locked trees,
+
+929
+00:44:09,140 --> 00:44:11,320
+they must have at
+least eight edges.
+
+930
+00:44:11,320 --> 00:44:15,452
+
+931
+00:44:15,452 --> 00:44:23,630
+Locked linear tree has
+at least eight edges.
+
+932
+00:44:23,630 --> 00:44:27,890
+So at least among linear locked
+trees that example is optimal.
+
+933
+00:44:27,890 --> 00:44:31,990
+But maybe you could use
+the second dimension
+
+934
+00:44:31,990 --> 00:44:34,900
+to do something better
+than eight edges.
+
+935
+00:44:34,900 --> 00:44:36,340
+But I don't think so.
+
+936
+00:44:36,340 --> 00:44:38,730
+That's an open problem.
+
+937
+00:44:38,730 --> 00:44:40,610
+What other good
+things can we do?
+
+938
+00:44:40,610 --> 00:44:42,610
+You can make it orthogonal.
+
+939
+00:44:42,610 --> 00:44:45,070
+You can mimic exactly
+this structure
+
+940
+00:44:45,070 --> 00:44:46,940
+with an orthogonal
+structure, all the edges
+
+941
+00:44:46,940 --> 00:44:48,340
+horizontal and vertical.
+
+942
+00:44:48,340 --> 00:44:51,670
+Just expand each of these
+vertices into very tiny,
+
+943
+00:44:51,670 --> 00:44:53,620
+and if this is drawn
+really squished,
+
+944
+00:44:53,620 --> 00:44:54,950
+these are super short edges.
+
+945
+00:44:54,950 --> 00:44:58,050
+So they really don't change
+the motion space hardly at all.
+
+946
+00:44:58,050 --> 00:44:59,410
+You can actually prove that.
+
+947
+00:44:59,410 --> 00:45:00,722
+And this is also locked.
+
+948
+00:45:00,722 --> 00:45:02,930
+That's one of the nice things
+you do once you get out
+
+949
+00:45:02,930 --> 00:45:04,310
+of the cyclic kind of structure.
+
+950
+00:45:04,310 --> 00:45:07,040
+
+951
+00:45:07,040 --> 00:45:09,610
+I think I have
+something else, no.
+
+952
+00:45:09,610 --> 00:45:10,800
+OK, stay there.
+
+953
+00:45:10,800 --> 00:45:14,680
+
+954
+00:45:14,680 --> 00:45:16,630
+Yeah, actually maybe
+I do want to go there.
+
+955
+00:45:16,630 --> 00:45:21,370
+
+956
+00:45:21,370 --> 00:45:24,480
+This is an example, it has
+a cyclic structure again.
+
+957
+00:45:24,480 --> 00:45:29,520
+Same paper, last year.
+
+958
+00:45:29,520 --> 00:45:30,914
+This is a newer example.
+
+959
+00:45:30,914 --> 00:45:33,080
+And it has the property
+that all of the edge lengths
+
+960
+00:45:33,080 --> 00:45:38,460
+are the same, and
+nothing touches.
+
+961
+00:45:38,460 --> 00:45:42,660
+Now you'll appreciate this in
+a little while, how crazy this
+
+962
+00:45:42,660 --> 00:45:43,230
+is.
+
+963
+00:45:43,230 --> 00:45:46,690
+Because all of the
+previous examples
+
+964
+00:45:46,690 --> 00:45:49,060
+required things to be
+very close and tight.
+
+965
+00:45:49,060 --> 00:45:53,730
+And we crucially use
+very tight proximity
+
+966
+00:45:53,730 --> 00:45:56,650
+in order to prove
+things are locked.
+
+967
+00:45:56,650 --> 00:46:04,870
+And if you take the example
+that looks like this, with six
+
+968
+00:46:04,870 --> 00:46:13,750
+arms-- I didn't
+draw it very well.
+
+969
+00:46:13,750 --> 00:46:15,200
+But if you draw
+it with six arms,
+
+970
+00:46:15,200 --> 00:46:17,290
+these are like
+equilateral triangles,
+
+971
+00:46:17,290 --> 00:46:19,402
+the edge lengths will
+be almost all the same.
+
+972
+00:46:19,402 --> 00:46:20,860
+In fact, if you
+allow them to touch
+
+973
+00:46:20,860 --> 00:46:22,747
+they will be exactly the same.
+
+974
+00:46:22,747 --> 00:46:24,330
+So there was this
+open question, well,
+
+975
+00:46:24,330 --> 00:46:27,240
+if I want them to be exactly
+the same but not touch,
+
+976
+00:46:27,240 --> 00:46:28,680
+can you still lock?
+
+977
+00:46:28,680 --> 00:46:31,440
+We thought no, but in
+fact you can do it.
+
+978
+00:46:31,440 --> 00:46:33,210
+And this is very
+tricky to prove locked
+
+979
+00:46:33,210 --> 00:46:36,145
+because we can't make
+these arbitrarily tight.
+
+980
+00:46:36,145 --> 00:46:38,520
+It really has to look like
+this, because the edge lengths
+
+981
+00:46:38,520 --> 00:46:39,850
+are all the same.
+
+982
+00:46:39,850 --> 00:46:42,775
+Now this has
+seven-fold symmetry.
+
+983
+00:46:42,775 --> 00:46:45,530
+
+984
+00:46:45,530 --> 00:46:47,681
+Because sixfold they
+would all touch.
+
+985
+00:46:47,681 --> 00:46:48,180
+It's tricky.
+
+986
+00:46:48,180 --> 00:46:51,670
+
+987
+00:46:51,670 --> 00:46:52,170
+Cool.
+
+988
+00:46:52,170 --> 00:46:55,370
+
+989
+00:46:55,370 --> 00:46:56,870
+A big open question
+here, of course,
+
+990
+00:46:56,870 --> 00:46:58,800
+is to characterize locked trees.
+
+991
+00:46:58,800 --> 00:47:01,649
+I think that's quite hard,
+because in particular,
+
+992
+00:47:01,649 --> 00:47:03,440
+if you're given a tree
+and you want to know
+
+993
+00:47:03,440 --> 00:47:04,940
+does that go from
+this configuration
+
+994
+00:47:04,940 --> 00:47:07,270
+to this configuration,
+that's known to be p space
+
+995
+00:47:07,270 --> 00:47:09,900
+complete, which is
+really, really hard.
+
+996
+00:47:09,900 --> 00:47:11,680
+But all of those
+examples are locked.
+
+997
+00:47:11,680 --> 00:47:15,020
+So maybe unlocked trees
+have some special structure
+
+998
+00:47:15,020 --> 00:47:16,520
+that's easy to find.
+
+999
+00:47:16,520 --> 00:47:17,590
+I guess not.
+
+1000
+00:47:17,590 --> 00:47:19,700
+But who knows?
+
+1001
+00:47:19,700 --> 00:47:21,200
+What I do think has
+a nice structure
+
+1002
+00:47:21,200 --> 00:47:23,384
+are these linear locked trees.
+
+1003
+00:47:23,384 --> 00:47:24,300
+They're pretty simple.
+
+1004
+00:47:24,300 --> 00:47:25,730
+They're basically
+one dimensional.
+
+1005
+00:47:25,730 --> 00:47:28,290
+And I think we could
+characterize linear lock trees
+
+1006
+00:47:28,290 --> 00:47:29,670
+in polynomial time.
+
+1007
+00:47:29,670 --> 00:47:32,930
+Maybe we'll work on
+that this afternoon.
+
+1008
+00:47:32,930 --> 00:47:36,090
+But that is open.
+
+1009
+00:47:36,090 --> 00:47:37,960
+All right, next thing
+I want to talk about
+
+1010
+00:47:37,960 --> 00:47:40,864
+is how the heck do you prove
+that these things are locked?
+
+1011
+00:47:40,864 --> 00:47:43,280
+Now historically there have
+been lots of different proofs.
+
+1012
+00:47:43,280 --> 00:47:46,360
+And this tree still does
+not have a nice proof
+
+1013
+00:47:46,360 --> 00:47:47,500
+that it's locked.
+
+1014
+00:47:47,500 --> 00:47:49,920
+But all the other trees I
+can give you very succinct
+
+1015
+00:47:49,920 --> 00:47:51,682
+proofs that they're locked.
+
+1016
+00:47:51,682 --> 00:47:53,390
+And so I want to tell
+you how we do that.
+
+1017
+00:47:53,390 --> 00:48:02,730
+
+1018
+00:48:02,730 --> 00:48:06,480
+Because it uses tensegrity
+theory, our good friend.
+
+1019
+00:48:06,480 --> 00:48:13,620
+
+1020
+00:48:13,620 --> 00:48:17,865
+This is the idea of
+infinitesimally locked
+
+1021
+00:48:17,865 --> 00:48:18,365
+linkages.
+
+1022
+00:48:18,365 --> 00:48:37,699
+
+1023
+00:48:37,699 --> 00:48:39,490
+So ignore this part of
+the picture for now.
+
+1024
+00:48:39,490 --> 00:48:42,740
+If we take some tree,
+most of the examples
+
+1025
+00:48:42,740 --> 00:48:44,870
+I drew these little
+scion circles to say,
+
+1026
+00:48:44,870 --> 00:48:47,200
+well, these guys
+are really tight.
+
+1027
+00:48:47,200 --> 00:48:48,850
+And the intuition
+is the tighter you
+
+1028
+00:48:48,850 --> 00:48:52,006
+make it, the less that
+configuration can move.
+
+1029
+00:48:52,006 --> 00:48:53,880
+If you look, we're
+claiming the configuration
+
+1030
+00:48:53,880 --> 00:48:54,960
+space is disconnected.
+
+1031
+00:48:54,960 --> 00:48:56,835
+But not only that, we
+have this configuration
+
+1032
+00:48:56,835 --> 00:48:59,765
+and we say there's a
+small ball of motions
+
+1033
+00:48:59,765 --> 00:49:00,890
+that you could possibly do.
+
+1034
+00:49:00,890 --> 00:49:03,167
+It does wiggle a little bit.
+
+1035
+00:49:03,167 --> 00:49:04,750
+And then there's
+other stuff over here
+
+1036
+00:49:04,750 --> 00:49:07,290
+that you can never reach because
+this can't move very much.
+
+1037
+00:49:07,290 --> 00:49:11,770
+
+1038
+00:49:11,770 --> 00:49:17,560
+Well in fact, if you make these
+circles tighter and tighter,
+
+1039
+00:49:17,560 --> 00:49:21,330
+the claim is that this,
+in the space of motions,
+
+1040
+00:49:21,330 --> 00:49:24,250
+you get less and less freedom.
+
+1041
+00:49:24,250 --> 00:49:26,450
+How could we formalize that?
+
+1042
+00:49:26,450 --> 00:49:29,540
+As you draw the thing tighter
+you get less and less motion.
+
+1043
+00:49:29,540 --> 00:49:32,230
+
+1044
+00:49:32,230 --> 00:49:35,040
+Well, let's go to the limit.
+
+1045
+00:49:35,040 --> 00:49:37,040
+Suppose we went all
+the way to the point
+
+1046
+00:49:37,040 --> 00:49:40,390
+that these things are touching.
+
+1047
+00:49:40,390 --> 00:49:43,170
+Now this is going to be a
+little tricky mathematically,
+
+1048
+00:49:43,170 --> 00:49:46,270
+because we have to remember that
+this vertex is in this wedge,
+
+1049
+00:49:46,270 --> 00:49:48,830
+even though it's actually
+right on top of this point.
+
+1050
+00:49:48,830 --> 00:49:52,690
+So we have to remember, sort
+of, how things look locally.
+
+1051
+00:49:52,690 --> 00:50:03,890
+But geometrically the picture
+is going to look like that.
+
+1052
+00:50:03,890 --> 00:50:06,240
+If you look from
+afar, you won't be
+
+1053
+00:50:06,240 --> 00:50:08,790
+able to tell that there's
+three edges along here,
+
+1054
+00:50:08,790 --> 00:50:11,130
+because they're right
+on top of each other.
+
+1055
+00:50:11,130 --> 00:50:14,360
+But if you, sort of, imagine
+zooming in infinitesimally
+
+1056
+00:50:14,360 --> 00:50:15,920
+in each of these
+vertices, it's going
+
+1057
+00:50:15,920 --> 00:50:18,220
+to be whatever the heck it is.
+
+1058
+00:50:18,220 --> 00:50:24,004
+
+1059
+00:50:24,004 --> 00:50:25,920
+So you remember the fact
+that right here there
+
+1060
+00:50:25,920 --> 00:50:26,940
+are four vertices.
+
+1061
+00:50:26,940 --> 00:50:29,106
+And this is how they're
+connected to incident edges.
+
+1062
+00:50:29,106 --> 00:50:32,250
+There's actually three edges
+here, and two edges here,
+
+1063
+00:50:32,250 --> 00:50:32,750
+and so on.
+
+1064
+00:50:32,750 --> 00:50:35,580
+
+1065
+00:50:35,580 --> 00:50:37,640
+So that's how you
+describe one of these,
+
+1066
+00:50:37,640 --> 00:50:44,390
+we call them,
+self-touching linkages.
+
+1067
+00:50:44,390 --> 00:50:47,322
+Because the edges are
+touching each other.
+
+1068
+00:50:47,322 --> 00:50:50,670
+They're right on
+top of each other.
+
+1069
+00:50:50,670 --> 00:50:55,830
+Now normally, if you wanted to
+capture this notion of wiggling
+
+1070
+00:50:55,830 --> 00:50:58,600
+a little bit, we
+could define the idea
+
+1071
+00:50:58,600 --> 00:51:01,140
+of being locked within epsilon.
+
+1072
+00:51:01,140 --> 00:51:05,380
+
+1073
+00:51:05,380 --> 00:51:10,020
+So a configuration is
+locked within epsilon
+
+1074
+00:51:10,020 --> 00:51:22,940
+if it's impossible
+to get farther
+
+1075
+00:51:22,940 --> 00:51:27,110
+than epsilon in
+configuration space.
+
+1076
+00:51:27,110 --> 00:51:32,790
+
+1077
+00:51:32,790 --> 00:51:36,410
+So that's this little ball,
+thinking about radius epsilon
+
+1078
+00:51:36,410 --> 00:51:37,576
+here.
+
+1079
+00:51:37,576 --> 00:51:39,200
+And if you can't get
+outside that ball,
+
+1080
+00:51:39,200 --> 00:51:40,940
+you have some weird
+space you can get to.
+
+1081
+00:51:40,940 --> 00:51:43,980
+But if it's bounded by
+a ball of radius epsilon
+
+1082
+00:51:43,980 --> 00:51:46,932
+then I say you're
+locked within epsilon.
+
+1083
+00:51:46,932 --> 00:51:48,390
+And if epsilon is
+small that really
+
+1084
+00:51:48,390 --> 00:51:51,150
+means there are other
+things you can't get to.
+
+1085
+00:51:51,150 --> 00:51:53,210
+Well as soon as I
+get to self-touching
+
+1086
+00:51:53,210 --> 00:51:56,590
+I can actually think about
+being locked within epsilon
+
+1087
+00:51:56,590 --> 00:52:04,750
+for epsilon equals 0,
+also known as being rigid.
+
+1088
+00:52:04,750 --> 00:52:07,339
+
+1089
+00:52:07,339 --> 00:52:09,380
+We've already talked about
+being locked within 0.
+
+1090
+00:52:09,380 --> 00:52:12,060
+If you can't move it
+all, that's rigid.
+
+1091
+00:52:12,060 --> 00:52:14,130
+So this thing could
+actually be rigid.
+
+1092
+00:52:14,130 --> 00:52:15,814
+Whereas all the
+locked trees, they
+
+1093
+00:52:15,814 --> 00:52:17,230
+can never be rigid
+because I don't
+
+1094
+00:52:17,230 --> 00:52:18,410
+want them to really touch.
+
+1095
+00:52:18,410 --> 00:52:19,470
+This is an analysis tool.
+
+1096
+00:52:19,470 --> 00:52:21,220
+I don't like trees
+that are self-touching.
+
+1097
+00:52:21,220 --> 00:52:23,260
+It's kind of ugly and cheating.
+
+1098
+00:52:23,260 --> 00:52:26,250
+
+1099
+00:52:26,250 --> 00:52:28,870
+And so real trees,
+non-self-touching touching
+
+1100
+00:52:28,870 --> 00:52:31,900
+trees could only be locked
+within some positive epsilon.
+
+1101
+00:52:31,900 --> 00:52:33,860
+But if we consider
+for the moment
+
+1102
+00:52:33,860 --> 00:52:36,350
+the extreme when
+they're touching then
+
+1103
+00:52:36,350 --> 00:52:37,610
+we could hope for rigidity.
+
+1104
+00:52:37,610 --> 00:52:40,234
+Rigidity is good because we know
+how to prove things are rigid.
+
+1105
+00:52:40,234 --> 00:52:42,570
+We know how to test things
+are rigid in two dimensions.
+
+1106
+00:52:42,570 --> 00:52:44,090
+It's pretty easy.
+
+1107
+00:52:44,090 --> 00:52:46,120
+We could test is it
+infinitesimally rigid?
+
+1108
+00:52:46,120 --> 00:52:50,270
+If it's infinitesimally
+rigid we know it's rigid.
+
+1109
+00:52:50,270 --> 00:52:54,780
+It's a little bit
+trickier because we
+
+1110
+00:52:54,780 --> 00:52:57,600
+have to represent the
+non-crossing constraints.
+
+1111
+00:52:57,600 --> 00:53:00,150
+And that's what these
+purple edges do.
+
+1112
+00:53:00,150 --> 00:53:04,330
+So the idea is,
+well I definitely
+
+1113
+00:53:04,330 --> 00:53:06,280
+want to preserve the
+lengths of these edges.
+
+1114
+00:53:06,280 --> 00:53:07,990
+I'm not interested
+in expansive motions,
+
+1115
+00:53:07,990 --> 00:53:10,270
+because that's a subset
+of possible motions.
+
+1116
+00:53:10,270 --> 00:53:14,360
+But I do know that this
+vertex should move away
+
+1117
+00:53:14,360 --> 00:53:16,030
+from this edge, or
+stay on the edge.
+
+1118
+00:53:16,030 --> 00:53:19,110
+It's not allowed to go to
+the other side of the edge.
+
+1119
+00:53:19,110 --> 00:53:21,350
+So I imagine there's a
+little tiny strut here.
+
+1120
+00:53:21,350 --> 00:53:23,340
+It's of infinitesimal
+length right now.
+
+1121
+00:53:23,340 --> 00:53:26,390
+It can get longer, but it has
+to get longer in that direction.
+
+1122
+00:53:26,390 --> 00:53:28,090
+You have to move
+away-- you have to stay
+
+1123
+00:53:28,090 --> 00:53:29,925
+on the right side of this edge.
+
+1124
+00:53:29,925 --> 00:53:32,050
+And you have to stay on
+the left side of this edge.
+
+1125
+00:53:32,050 --> 00:53:35,670
+It turns out you really can
+represent that by a strut.
+
+1126
+00:53:35,670 --> 00:53:37,650
+It's now a strut between
+a vertex and an edge,
+
+1127
+00:53:37,650 --> 00:53:41,230
+because this guy can slide along
+the edge, or move away from it.
+
+1128
+00:53:41,230 --> 00:53:43,180
+But it's a strut.
+
+1129
+00:53:43,180 --> 00:53:45,340
+And you can think of
+this as a tensegrity,
+
+1130
+00:53:45,340 --> 00:53:47,670
+all the usual tensegrity
+theory applies.
+
+1131
+00:53:47,670 --> 00:53:52,190
+You can define equilibrium
+stresses, polyhedral liftings,
+
+1132
+00:53:52,190 --> 00:53:54,090
+infinitesimal rigidity.
+
+1133
+00:53:54,090 --> 00:53:58,426
+And so what's
+actually drawn here--
+
+1134
+00:53:58,426 --> 00:54:00,300
+you should look at the
+book for more details.
+
+1135
+00:54:00,300 --> 00:54:01,966
+I don't want to go
+into details on this.
+
+1136
+00:54:01,966 --> 00:54:04,970
+But originally the state of
+the art for proving something
+
+1137
+00:54:04,970 --> 00:54:07,590
+like this is locked
+is you basically
+
+1138
+00:54:07,590 --> 00:54:10,630
+give-- you show an
+equilibrium stress that
+
+1139
+00:54:10,630 --> 00:54:13,214
+is positive on all the struts.
+
+1140
+00:54:13,214 --> 00:54:14,880
+We know that if you
+find a stress that's
+
+1141
+00:54:14,880 --> 00:54:17,140
+positive on all struts
+than all the struts in fact
+
+1142
+00:54:17,140 --> 00:54:19,170
+must act as bars.
+
+1143
+00:54:19,170 --> 00:54:23,850
+What that means is that this
+length, which is currently 0,
+
+1144
+00:54:23,850 --> 00:54:25,870
+must stay 0.
+
+1145
+00:54:25,870 --> 00:54:27,390
+Therefore this
+vertex is actually
+
+1146
+00:54:27,390 --> 00:54:30,560
+pinned because it has
+to both be on this edge
+
+1147
+00:54:30,560 --> 00:54:31,520
+and be on this edge.
+
+1148
+00:54:31,520 --> 00:54:34,459
+That's what a 0 length bar
+here and here would mean.
+
+1149
+00:54:34,459 --> 00:54:35,750
+It really has to be right here.
+
+1150
+00:54:35,750 --> 00:54:37,080
+It can't move it all.
+
+1151
+00:54:37,080 --> 00:54:40,290
+And therefore this whole thing
+is rigid, and nothing moves.
+
+1152
+00:54:40,290 --> 00:54:46,980
+
+1153
+00:54:46,980 --> 00:54:48,230
+Clear?
+
+1154
+00:54:48,230 --> 00:54:50,310
+So we can use all
+the tensegrity stuff
+
+1155
+00:54:50,310 --> 00:54:52,920
+to prove that when this thing
+is actually self-touching,
+
+1156
+00:54:52,920 --> 00:54:56,520
+and all these distances
+are 0, it is rigid.
+
+1157
+00:54:56,520 --> 00:54:58,010
+But so what?
+
+1158
+00:54:58,010 --> 00:55:00,060
+Who cares about the
+self-touching thing
+
+1159
+00:55:00,060 --> 00:55:01,390
+being rigid?
+
+1160
+00:55:01,390 --> 00:55:03,290
+It's nice, but what
+I really care about
+
+1161
+00:55:03,290 --> 00:55:05,650
+is the non-self-touching
+configurations
+
+1162
+00:55:05,650 --> 00:55:09,040
+are locked within epsilon,
+for some tiny epsilon.
+
+1163
+00:55:09,040 --> 00:55:09,785
+Well good news.
+
+1164
+00:55:09,785 --> 00:55:15,300
+
+1165
+00:55:15,300 --> 00:55:20,620
+Rigidity of the
+self-touching configuration
+
+1166
+00:55:20,620 --> 00:55:28,120
+implies what's called
+strongly locked,
+
+1167
+00:55:28,120 --> 00:55:32,190
+yet another term which
+I need to define.
+
+1168
+00:55:32,190 --> 00:55:44,740
+Strongly locked means
+that sufficiently small,
+
+1169
+00:55:44,740 --> 00:56:01,255
+sufficiently small
+perturbations of the linkage,
+
+1170
+00:56:01,255 --> 00:56:14,640
+or I should say of the
+linkage configuration,
+
+1171
+00:56:14,640 --> 00:56:21,480
+are locked within
+epsilon for any epsilon.
+
+1172
+00:56:21,480 --> 00:56:25,670
+
+1173
+00:56:25,670 --> 00:56:29,920
+This is exactly the property
+I wanted to formalize,
+
+1174
+00:56:29,920 --> 00:56:34,210
+saying that if you draw
+the example tighter
+
+1175
+00:56:34,210 --> 00:56:36,160
+it can move less.
+
+1176
+00:56:36,160 --> 00:56:38,890
+For any epsilon, we
+want to say you can only
+
+1177
+00:56:38,890 --> 00:56:42,650
+move within epsilon,
+there's some notion
+
+1178
+00:56:42,650 --> 00:56:47,140
+of sufficiently small such
+that if I take this example
+
+1179
+00:56:47,140 --> 00:56:49,070
+and imagine currently
+all the vertices are
+
+1180
+00:56:49,070 --> 00:56:50,354
+on top of each other.
+
+1181
+00:56:50,354 --> 00:56:51,770
+But now I perturb
+it a little bit,
+
+1182
+00:56:51,770 --> 00:56:54,220
+which involves changing not
+only the vertex coordinates,
+
+1183
+00:56:54,220 --> 00:56:58,230
+but also the edge lengths--
+but a tiny amount, some delta
+
+1184
+00:56:58,230 --> 00:57:01,240
+that's a function of epsilon.
+
+1185
+00:57:01,240 --> 00:57:02,860
+Whatever epsilon
+you choose, there's
+
+1186
+00:57:02,860 --> 00:57:05,370
+a very small disk I
+can draw like this,
+
+1187
+00:57:05,370 --> 00:57:09,100
+such that as long as all the
+vertices stay within that disk
+
+1188
+00:57:09,100 --> 00:57:12,650
+your example will be
+locked within epsilon.
+
+1189
+00:57:12,650 --> 00:57:15,370
+This is great because it lets
+us analyze rigidity, which
+
+1190
+00:57:15,370 --> 00:57:18,440
+is easy for self-touching
+configurations, which are not
+
+1191
+00:57:18,440 --> 00:57:20,440
+interesting in some sense.
+
+1192
+00:57:20,440 --> 00:57:23,970
+But we get to conclude something
+about the perturbations which
+
+1193
+00:57:23,970 --> 00:57:26,107
+are not self-touching
+and therefore nice.
+
+1194
+00:57:26,107 --> 00:57:27,940
+And we get the property
+we want, that you're
+
+1195
+00:57:27,940 --> 00:57:30,220
+locked within epsilon
+for any epsilon you want.
+
+1196
+00:57:30,220 --> 00:57:32,247
+You just draw it
+tighter you'll be
+
+1197
+00:57:32,247 --> 00:57:33,580
+locked within a smaller epsilon.
+
+1198
+00:57:33,580 --> 00:57:37,040
+
+1199
+00:57:37,040 --> 00:57:38,900
+So this is pretty cool.
+
+1200
+00:57:38,900 --> 00:57:41,400
+And I didn't defined
+perturbation.
+
+1201
+00:57:41,400 --> 00:57:54,191
+But I just mean every vertex
+stays within a radius delta
+
+1202
+00:57:54,191 --> 00:57:54,690
+disk.
+
+1203
+00:57:54,690 --> 00:57:59,020
+
+1204
+00:57:59,020 --> 00:58:02,869
+And sufficiently
+small here is delta,
+
+1205
+00:58:02,869 --> 00:58:04,160
+which is a function of epsilon.
+
+1206
+00:58:04,160 --> 00:58:09,390
+
+1207
+00:58:09,390 --> 00:58:11,630
+So this is pretty cool.
+
+1208
+00:58:11,630 --> 00:58:14,470
+And it turns out also--
+this is proved much later--
+
+1209
+00:58:14,470 --> 00:58:16,070
+these results are like 2002.
+
+1210
+00:58:16,070 --> 00:58:20,820
+And then 2006 proved
+that if you take
+
+1211
+00:58:20,820 --> 00:58:23,400
+any self-touching configuration,
+which is like this,
+
+1212
+00:58:23,400 --> 00:58:25,910
+you specify the geometry
+where things are all
+
+1213
+00:58:25,910 --> 00:58:27,080
+on top of each other.
+
+1214
+00:58:27,080 --> 00:58:30,630
+And then you'd say what you
+want every vertex to look like.
+
+1215
+00:58:30,630 --> 00:58:35,480
+It turns out there really
+is a valid perturbation that
+
+1216
+00:58:35,480 --> 00:58:37,540
+preserves that
+combinatorial structure
+
+1217
+00:58:37,540 --> 00:58:39,321
+and is arbitrarily small.
+
+1218
+00:58:39,321 --> 00:58:41,320
+So here, of course, I've
+drawn it so it's clear.
+
+1219
+00:58:41,320 --> 00:58:42,957
+You can perturb things.
+
+1220
+00:58:42,957 --> 00:58:44,790
+And I changed the edge
+lengths a little bit.
+
+1221
+00:58:44,790 --> 00:58:49,070
+But I can actually realize
+this combinatorial structure.
+
+1222
+00:58:49,070 --> 00:58:51,860
+It turns out that's
+always possible.
+
+1223
+00:58:51,860 --> 00:58:53,610
+So you can take any
+self-touching linkage,
+
+1224
+00:58:53,610 --> 00:58:55,540
+you can perturb it so
+it's not self-touching,
+
+1225
+00:58:55,540 --> 00:58:58,450
+and it is arbitrarily
+locked within epsilon.
+
+1226
+00:58:58,450 --> 00:59:02,180
+
+1227
+00:59:02,180 --> 00:59:05,800
+And the way you
+prove it, or one way
+
+1228
+00:59:05,800 --> 00:59:07,740
+to prove that
+something is rigid,
+
+1229
+00:59:07,740 --> 00:59:09,820
+is to say well this
+proof is infinitesimally
+
+1230
+00:59:09,820 --> 00:59:12,620
+rigid by constructing an
+equilibrium stress that's
+
+1231
+00:59:12,620 --> 00:59:14,845
+positive on all these
+0 length struts.
+
+1232
+00:59:14,845 --> 00:59:16,770
+As long as it's positive
+all those 0 length
+
+1233
+00:59:16,770 --> 00:59:21,360
+struts you know that
+they're effectively bars.
+
+1234
+00:59:21,360 --> 00:59:23,810
+Usually once they're
+bars it's really obvious
+
+1235
+00:59:23,810 --> 00:59:27,640
+that the thing is rigid because
+it pins vertices into corners.
+
+1236
+00:59:27,640 --> 00:59:30,140
+Then you know that the whole
+thing is infinitesimally rigid,
+
+1237
+00:59:30,140 --> 00:59:33,350
+therefore it's rigid,
+therefore it's strongly locked.
+
+1238
+00:59:33,350 --> 00:59:35,839
+And you could see some examples
+of doing that in the book.
+
+1239
+00:59:35,839 --> 00:59:37,630
+But this is no longer
+the state of the art.
+
+1240
+00:59:37,630 --> 00:59:39,046
+There are now
+easier ways to prove
+
+1241
+00:59:39,046 --> 00:59:40,505
+that trees are
+locked-- some trees.
+
+1242
+00:59:40,505 --> 00:59:41,462
+It doesn't always work.
+
+1243
+00:59:41,462 --> 00:59:43,560
+Of course, it might be
+infinitesimally flexible.
+
+1244
+00:59:43,560 --> 00:59:45,860
+Lots of things could fail.
+
+1245
+00:59:45,860 --> 00:59:48,464
+But if it succeeds in
+proving something is rigid,
+
+1246
+00:59:48,464 --> 00:59:50,630
+then you know it's strongly
+locked and you're happy.
+
+1247
+00:59:50,630 --> 00:59:53,850
+
+1248
+00:59:53,850 --> 00:59:55,800
+So it's a conservative
+test, you might say.
+
+1249
+00:59:55,800 --> 00:59:57,210
+It would be a cool
+thing to implement.
+
+1250
+00:59:57,210 --> 00:59:59,168
+This is not hard, it's
+just linear programming.
+
+1251
+00:59:59,168 --> 01:00:01,650
+
+1252
+01:00:01,650 --> 01:00:06,610
+But there's a cooler way
+that's even more-- like one
+
+1253
+01:00:06,610 --> 01:00:08,480
+where I can really
+draw the pictures here,
+
+1254
+01:00:08,480 --> 01:00:10,600
+you know we had to
+draw all these diagrams
+
+1255
+01:00:10,600 --> 01:00:13,030
+and figure out that stress
+positive numbers worked on all
+
+1256
+01:00:13,030 --> 01:00:16,535
+these edges, and
+eh, it's tedious.
+
+1257
+01:00:16,535 --> 01:00:20,580
+
+1258
+01:00:20,580 --> 01:00:21,730
+There's a much slicker way.
+
+1259
+01:00:21,730 --> 01:00:32,770
+
+1260
+01:00:32,770 --> 01:00:38,280
+And for whatever reason, they
+have become known as the rules.
+
+1261
+01:00:38,280 --> 01:00:39,660
+There are two of them.
+
+1262
+01:00:39,660 --> 01:00:43,980
+Although we've tried to come
+up with various rule threes,
+
+1263
+01:00:43,980 --> 01:00:46,370
+the ones that have been
+tried and tested and used
+
+1264
+01:00:46,370 --> 01:00:48,860
+all over the place are
+rule one and rule two.
+
+1265
+01:00:48,860 --> 01:00:52,920
+
+1266
+01:00:52,920 --> 01:00:56,212
+So rule one.
+
+1267
+01:00:56,212 --> 01:00:58,170
+You'll see why this is
+interesting in a moment.
+
+1268
+01:00:58,170 --> 01:01:00,920
+
+1269
+01:01:00,920 --> 01:01:04,310
+I have some linkage,
+self-touching linkage.
+
+1270
+01:01:04,310 --> 01:01:06,000
+We're in the same framework.
+
+1271
+01:01:06,000 --> 01:01:10,190
+Suppose these two edges
+have the same length.
+
+1272
+01:01:10,190 --> 01:01:12,300
+I'm drawing this
+one slightly smaller
+
+1273
+01:01:12,300 --> 01:01:15,707
+just so I can show you,
+which is on which side.
+
+1274
+01:01:15,707 --> 01:01:17,290
+But suppose they
+have the same length.
+
+1275
+01:01:17,290 --> 01:01:21,070
+And suppose that
+both of these angles
+
+1276
+01:01:21,070 --> 01:01:24,990
+are acute, strictly,
+less than 90.
+
+1277
+01:01:24,990 --> 01:01:27,680
+
+1278
+01:01:27,680 --> 01:01:29,430
+What do you think
+happens in this picture?
+
+1279
+01:01:29,430 --> 01:01:30,950
+I have this bar floating around.
+
+1280
+01:01:30,950 --> 01:01:33,200
+And I have these three bars.
+
+1281
+01:01:33,200 --> 01:01:35,904
+What happens to this bar?
+
+1282
+01:01:35,904 --> 01:01:38,070
+AUDIENCE: It's confined to
+be against the other bar.
+
+1283
+01:01:38,070 --> 01:01:40,361
+PROFESSOR: It's confined to
+be right against this edge.
+
+1284
+01:01:40,361 --> 01:01:45,720
+It can't move at all until
+this angle-- both of these,
+
+1285
+01:01:45,720 --> 01:01:48,230
+and I guess at least one of
+them would have to get to 90,
+
+1286
+01:01:48,230 --> 01:01:50,320
+then you could try
+to slide it out.
+
+1287
+01:01:50,320 --> 01:01:54,220
+Like if this one goes beyond
+90 then you can slide out.
+
+1288
+01:01:54,220 --> 01:02:01,170
+As long as they're both less
+than 90 it's pinned there.
+
+1289
+01:02:01,170 --> 01:02:07,960
+So what I'm going to do
+is redraw this diagram as
+
+1290
+01:02:07,960 --> 01:02:12,792
+with two edges there, which
+I mean, you can just ignore.
+
+1291
+01:02:12,792 --> 01:02:14,750
+The point is if there's
+something attached here
+
+1292
+01:02:14,750 --> 01:02:18,890
+and here-- maybe many things,
+it's a tree, who knows?--
+
+1293
+01:02:18,890 --> 01:02:22,270
+you can just attach
+them right there.
+
+1294
+01:02:22,270 --> 01:02:23,940
+This is a simplification
+to the linkage.
+
+1295
+01:02:23,940 --> 01:02:25,690
+It does not behave the same.
+
+1296
+01:02:25,690 --> 01:02:28,760
+But it has the same rigidity.
+
+1297
+01:02:28,760 --> 01:02:31,140
+Because if all I care
+about is rigidity,
+
+1298
+01:02:31,140 --> 01:02:33,790
+I care about can I move at all?
+
+1299
+01:02:33,790 --> 01:02:36,280
+So in order for this
+guy to move and all,
+
+1300
+01:02:36,280 --> 01:02:38,370
+these guys would
+first have to move
+
+1301
+01:02:38,370 --> 01:02:41,210
+for quite a while, a
+positive amount of time.
+
+1302
+01:02:41,210 --> 01:02:44,140
+I just want to know can
+I move 0 or more than 0?
+
+1303
+01:02:44,140 --> 01:02:47,330
+If I can move more than 0 I
+could move this guy more than 0
+
+1304
+01:02:47,330 --> 01:02:49,260
+without this guy moving at all.
+
+1305
+01:02:49,260 --> 01:02:51,260
+So really I don't care
+about how this guy moves.
+
+1306
+01:02:51,260 --> 01:02:54,740
+He's effectively pinned for at
+least a small amount of time.
+
+1307
+01:02:54,740 --> 01:02:56,980
+I really care about can
+the rest move it all?
+
+1308
+01:02:56,980 --> 01:02:59,260
+So you can simplify
+your linkage like this,
+
+1309
+01:02:59,260 --> 01:03:01,680
+and the rigidity
+will be preserved.
+
+1310
+01:03:01,680 --> 01:03:05,284
+This is awesome because it's
+easy to see when this applies.
+
+1311
+01:03:05,284 --> 01:03:06,700
+And you just
+simplify your linkage
+
+1312
+01:03:06,700 --> 01:03:10,020
+until you can just tell
+whether it's rigid.
+
+1313
+01:03:10,020 --> 01:03:13,810
+All right rule two is
+sort of a special case.
+
+1314
+01:03:13,810 --> 01:03:16,260
+It looks like this.
+
+1315
+01:03:16,260 --> 01:03:20,780
+So here, this bar and this bar
+actually share an endpoint.
+
+1316
+01:03:20,780 --> 01:03:23,480
+And again, I need that
+this angle is acute.
+
+1317
+01:03:23,480 --> 01:03:26,490
+And I need that these
+two have the same length.
+
+1318
+01:03:26,490 --> 01:03:30,560
+
+1319
+01:03:30,560 --> 01:03:37,540
+And I can simplify
+to that, where
+
+1320
+01:03:37,540 --> 01:03:40,530
+if anything was attached here
+it just gets attached there.
+
+1321
+01:03:40,530 --> 01:03:43,090
+
+1322
+01:03:43,090 --> 01:03:43,890
+Let's try it out.
+
+1323
+01:03:43,890 --> 01:03:49,645
+
+1324
+01:03:49,645 --> 01:03:51,270
+Actually, I could
+use some more boards.
+
+1325
+01:03:51,270 --> 01:04:12,450
+
+1326
+01:04:12,450 --> 01:04:18,880
+So I'm just going to copy the
+example we had from before.
+
+1327
+01:04:18,880 --> 01:04:20,880
+And this will work on
+basically all the examples
+
+1328
+01:04:20,880 --> 01:04:22,630
+I've shown you except
+the equilateral one.
+
+1329
+01:04:22,630 --> 01:04:38,500
+
+1330
+01:04:38,500 --> 01:04:42,996
+This is the one, two, three,
+four, five, six, seven,
+
+1331
+01:04:42,996 --> 01:04:44,200
+eight bar example.
+
+1332
+01:04:44,200 --> 01:04:47,522
+This is conjectured minimum.
+
+1333
+01:04:47,522 --> 01:04:48,730
+Let's prove that it's locked.
+
+1334
+01:04:48,730 --> 01:04:51,660
+
+1335
+01:04:51,660 --> 01:04:53,140
+See any rule one's
+we could apply?
+
+1336
+01:04:53,140 --> 01:04:56,800
+
+1337
+01:04:56,800 --> 01:04:59,540
+Do you see any edges
+that are effectively
+
+1338
+01:04:59,540 --> 01:05:01,310
+wedged against another edge?
+
+1339
+01:05:01,310 --> 01:05:04,750
+Remember, all of these
+vertices are actually
+
+1340
+01:05:04,750 --> 01:05:07,647
+on top of each
+other, we're thinking
+
+1341
+01:05:07,647 --> 01:05:08,980
+about the self-touching version.
+
+1342
+01:05:08,980 --> 01:05:10,780
+These guys are
+actually touching,
+
+1343
+01:05:10,780 --> 01:05:13,062
+and these guys are
+actually touching.
+
+1344
+01:05:13,062 --> 01:05:16,010
+AUDIENCE: This rule
+one [INAUDIBLE].
+
+1345
+01:05:16,010 --> 01:05:18,977
+PROFESSOR: There's a rule one--
+
+1346
+01:05:18,977 --> 01:05:20,060
+AUDIENCE: That one, there.
+
+1347
+01:05:20,060 --> 01:05:20,950
+PROFESSOR: --here?
+
+1348
+01:05:20,950 --> 01:05:22,100
+Yeah, good.
+
+1349
+01:05:22,100 --> 01:05:25,460
+This edge is pinned
+against this edge.
+
+1350
+01:05:25,460 --> 01:05:29,600
+Because look, we have acute
+angles here, namely 0.
+
+1351
+01:05:29,600 --> 01:05:32,160
+There's an acute
+angle here, that's 0.
+
+1352
+01:05:32,160 --> 01:05:34,410
+And this edge, if these guys
+are on top of each other,
+
+1353
+01:05:34,410 --> 01:05:35,410
+and these guys aer
+on top of each other,
+
+1354
+01:05:35,410 --> 01:05:37,220
+these two edges have
+the same length.
+
+1355
+01:05:37,220 --> 01:05:41,260
+Therefore these are
+pinned together.
+
+1356
+01:05:41,260 --> 01:05:45,440
+So let me redraw it when
+they're pinned together.
+
+1357
+01:05:45,440 --> 01:05:57,972
+
+1358
+01:05:57,972 --> 01:06:00,430
+I'm drawing things with curves
+just so it's easier to draw,
+
+1359
+01:06:00,430 --> 01:06:04,120
+but you understand this
+is also basically flat.
+
+1360
+01:06:04,120 --> 01:06:07,880
+Again these guys are all
+on top of each other,
+
+1361
+01:06:07,880 --> 01:06:12,230
+these are on top of each other,
+these are on top of each other.
+
+1362
+01:06:12,230 --> 01:06:13,700
+Did I do that right?
+
+1363
+01:06:13,700 --> 01:06:15,180
+I think so, yep.
+
+1364
+01:06:15,180 --> 01:06:16,494
+Anymore?
+
+1365
+01:06:16,494 --> 01:06:17,410
+AUDIENCE: [INAUDIBLE].
+
+1366
+01:06:17,410 --> 01:06:19,200
+PROFESSOR: Yes,
+on the right side.
+
+1367
+01:06:19,200 --> 01:06:21,390
+It's another rule one.
+
+1368
+01:06:21,390 --> 01:06:24,790
+Here it's actually
+pretty symmetric.
+
+1369
+01:06:24,790 --> 01:06:25,560
+Is this locked?
+
+1370
+01:06:25,560 --> 01:06:26,270
+Is this rigid?
+
+1371
+01:06:26,270 --> 01:06:27,311
+It's kind of hard to say.
+
+1372
+01:06:27,311 --> 01:06:29,910
+But now it's going
+to be pretty obvious.
+
+1373
+01:06:29,910 --> 01:06:31,940
+Because when these
+guys join together
+
+1374
+01:06:31,940 --> 01:06:33,440
+that means these
+two vertices really
+
+1375
+01:06:33,440 --> 01:06:35,231
+are on top of each
+other for positive time.
+
+1376
+01:06:35,231 --> 01:06:36,500
+Same for these.
+
+1377
+01:06:36,500 --> 01:06:40,730
+So a new example looks
+like two triangles
+
+1378
+01:06:40,730 --> 01:06:43,327
+with an edge floating there.
+
+1379
+01:06:43,327 --> 01:06:44,910
+Now it's pretty
+obvious this is rigid.
+
+1380
+01:06:44,910 --> 01:06:47,080
+But if you really want
+to make it obvious
+
+1381
+01:06:47,080 --> 01:06:52,580
+you can apply rule
+two to this guy.
+
+1382
+01:06:52,580 --> 01:06:55,270
+And then these guys
+are pinned together.
+
+1383
+01:06:55,270 --> 01:07:02,060
+And then you have two triangles.
+
+1384
+01:07:02,060 --> 01:07:05,140
+Two triangles are rigid.
+
+1385
+01:07:05,140 --> 01:07:06,454
+I think that's pretty obvious.
+
+1386
+01:07:06,454 --> 01:07:08,870
+You could check it, whether
+they're infinitesimally rigid,
+
+1387
+01:07:08,870 --> 01:07:10,080
+whatever you feel like.
+
+1388
+01:07:10,080 --> 01:07:13,345
+But because that's rigid,
+this is rigid, this is rigid,
+
+1389
+01:07:13,345 --> 01:07:13,970
+this is ridged.
+
+1390
+01:07:13,970 --> 01:07:15,620
+Because these operations
+preserve rigidity.
+
+1391
+01:07:15,620 --> 01:07:17,244
+They don't preserve
+locked or whatever,
+
+1392
+01:07:17,244 --> 01:07:18,601
+but they preserve rigidity.
+
+1393
+01:07:18,601 --> 01:07:20,100
+Once you know that
+this is rigid you
+
+1394
+01:07:20,100 --> 01:07:21,360
+know that it's strongly locked.
+
+1395
+01:07:21,360 --> 01:07:23,193
+So when you perturb it
+so these guys are not
+
+1396
+01:07:23,193 --> 01:07:25,785
+on top of each other, but
+they're slightly spread out,
+
+1397
+01:07:25,785 --> 01:07:27,160
+it will be locked
+within epsilon,
+
+1398
+01:07:27,160 --> 01:07:29,460
+for any epsilon you want.
+
+1399
+01:07:29,460 --> 01:07:30,716
+Now this is super easy.
+
+1400
+01:07:30,716 --> 01:07:32,340
+And this is how we
+were able to iterate
+
+1401
+01:07:32,340 --> 01:07:35,150
+through all those locked
+trees, and say, oh yeah,
+
+1402
+01:07:35,150 --> 01:07:38,450
+this is still rigid, so
+it's still strongly locked.
+
+1403
+01:07:38,450 --> 01:07:40,720
+Now this doesn't always work.
+
+1404
+01:07:40,720 --> 01:07:42,104
+But it seems pretty good.
+
+1405
+01:07:42,104 --> 01:07:43,770
+And one of the
+conjectures on the tables
+
+1406
+01:07:43,770 --> 01:07:47,370
+is that for linear
+trees rules one and two
+
+1407
+01:07:47,370 --> 01:07:49,030
+are kind of almost enough.
+
+1408
+01:07:49,030 --> 01:07:50,520
+It's not literally true.
+
+1409
+01:07:50,520 --> 01:07:52,322
+But it's hopefully mostly true.
+
+1410
+01:07:52,322 --> 01:07:54,690
+AUDIENCE: It seems that
+that argument would
+
+1411
+01:07:54,690 --> 01:08:00,220
+mean you wouldn't need
+one of the n's on--
+
+1412
+01:08:00,220 --> 01:08:02,760
+PROFESSOR: Right, so we could
+think about this example.
+
+1413
+01:08:02,760 --> 01:08:06,290
+And you're asking do you need--
+does this need to be that long
+
+1414
+01:08:06,290 --> 01:08:09,510
+or could we throw
+away the last bar?
+
+1415
+01:08:09,510 --> 01:08:11,170
+Right, it looks
+like that's good.
+
+1416
+01:08:11,170 --> 01:08:13,520
+If you throw away this
+bar it's still the case
+
+1417
+01:08:13,520 --> 01:08:18,220
+that this edge you
+can apply rule one,
+
+1418
+01:08:18,220 --> 01:08:21,080
+and say that it's pinned
+against this edge.
+
+1419
+01:08:21,080 --> 01:08:23,560
+And once those are there,
+this thing basically
+
+1420
+01:08:23,560 --> 01:08:26,479
+acts as a single triangle,
+and life is good.
+
+1421
+01:08:26,479 --> 01:08:29,080
+Yeah, so you can
+remove this one edge.
+
+1422
+01:08:29,080 --> 01:08:33,590
+You could not remove both of
+the edges, at least for rule one
+
+1423
+01:08:33,590 --> 01:08:36,319
+to apply, because then this
+guy's not wedged into anything.
+
+1424
+01:08:36,319 --> 01:08:39,520
+He's wedged on this side but
+he's not wedged on that side.
+
+1425
+01:08:39,520 --> 01:08:41,110
+But you can remove this edge.
+
+1426
+01:08:41,110 --> 01:08:42,610
+And that's a super
+easy way to prove
+
+1427
+01:08:42,610 --> 01:08:43,460
+that this thing is locked.
+
+1428
+01:08:43,460 --> 01:08:45,418
+We didn't know this when
+we wrote the textbook,
+
+1429
+01:08:45,418 --> 01:08:47,240
+otherwise we would
+have given that proof.
+
+1430
+01:08:47,240 --> 01:08:50,240
+There's one based on
+stresses in the textbook.
+
+1431
+01:08:50,240 --> 01:08:53,200
+But here, yeah, you can make
+very easy judgments like that.
+
+1432
+01:08:53,200 --> 01:08:55,330
+Now it doesn't
+mean that it's not
+
+1433
+01:08:55,330 --> 01:08:57,029
+locked when you remove
+two of the edges.
+
+1434
+01:08:57,029 --> 01:09:00,109
+
+1435
+01:09:00,109 --> 01:09:02,590
+I'm not sure, no I
+think it's not locked.
+
+1436
+01:09:02,590 --> 01:09:04,460
+But just because the
+rules don't apply
+
+1437
+01:09:04,460 --> 01:09:06,229
+doesn't tell you
+that's not locked.
+
+1438
+01:09:06,229 --> 01:09:08,684
+But it at least makes
+it hard to prove.
+
+1439
+01:09:08,684 --> 01:09:10,100
+And it's a good
+sort of guideline.
+
+1440
+01:09:10,100 --> 01:09:14,470
+
+1441
+01:09:14,470 --> 01:09:15,734
+Questions?
+
+1442
+01:09:15,734 --> 01:09:16,702
+Yeah.
+
+1443
+01:09:16,702 --> 01:09:20,033
+AUDIENCE: Did the perturbations
+that are positive and finite
+
+1444
+01:09:20,033 --> 01:09:20,574
+have numbers?
+
+1445
+01:09:20,574 --> 01:09:23,625
+Like, what's-- it's sort of
+disturbing that they get very,
+
+1446
+01:09:23,625 --> 01:09:26,319
+very small-- what are they?
+
+1447
+01:09:26,319 --> 01:09:29,660
+PROFESSOR: So you want
+to know how big is delta?
+
+1448
+01:09:29,660 --> 01:09:30,649
+How big is epsilon?
+
+1449
+01:09:30,649 --> 01:09:36,510
+Well it depends, of course, how
+much motion you want to allow,
+
+1450
+01:09:36,510 --> 01:09:38,810
+how small the
+perturbations have to be.
+
+1451
+01:09:38,810 --> 01:09:40,260
+And I don't have a great answer.
+
+1452
+01:09:40,260 --> 01:09:44,210
+I do recall that we computed
+a bound, probably in terms
+
+1453
+01:09:44,210 --> 01:09:48,140
+of something like r, the
+maximum distance divided
+
+1454
+01:09:48,140 --> 01:09:51,100
+by the smallest non 0 distance.
+
+1455
+01:09:51,100 --> 01:09:55,459
+So it depends how close to
+tight you are in other places.
+
+1456
+01:09:55,459 --> 01:09:56,750
+And it depends on your epsilon.
+
+1457
+01:09:56,750 --> 01:09:58,417
+There is an explicit bound.
+
+1458
+01:09:58,417 --> 01:10:00,250
+I think it's polynomial
+on those two things.
+
+1459
+01:10:00,250 --> 01:10:02,470
+But I don't quite remember.
+
+1460
+01:10:02,470 --> 01:10:04,610
+So you can actually compute
+how much perturbation
+
+1461
+01:10:04,610 --> 01:10:07,560
+will give you locked
+within epsilon.
+
+1462
+01:10:07,560 --> 01:10:10,370
+But it's certainly not clean.
+
+1463
+01:10:10,370 --> 01:10:13,350
+It's actually not too hard
+to prove this statement
+
+1464
+01:10:13,350 --> 01:10:14,200
+just using topology.
+
+1465
+01:10:14,200 --> 01:10:20,640
+
+1466
+01:10:20,640 --> 01:10:22,400
+Should I try to remember
+how to prove it?
+
+1467
+01:10:22,400 --> 01:10:27,230
+
+1468
+01:10:27,230 --> 01:10:34,110
+Basically, yeah, so
+there's this fun fact.
+
+1469
+01:10:34,110 --> 01:10:36,780
+Suppose you have
+some tensegrity.
+
+1470
+01:10:36,780 --> 01:10:38,870
+So tensegrities
+are kind of hard.
+
+1471
+01:10:38,870 --> 01:10:43,557
+They say, look, a bar has
+this length, ain't changing.
+
+1472
+01:10:43,557 --> 01:10:44,890
+Let's be a little more flexible.
+
+1473
+01:10:44,890 --> 01:10:47,944
+What if you said, oh, this
+bar can change within epsilon?
+
+1474
+01:10:47,944 --> 01:10:50,110
+Because in reality you could
+probably pull the metal
+
+1475
+01:10:50,110 --> 01:10:53,470
+a little bit, just
+not very much.
+
+1476
+01:10:53,470 --> 01:10:55,830
+Struts, it's not
+supposed to get smaller.
+
+1477
+01:10:55,830 --> 01:10:59,550
+Let's say it can get epsilon
+smaller than it's supposed to.
+
+1478
+01:10:59,550 --> 01:11:02,400
+It turns out if you take
+some tensegrity that's rigid,
+
+1479
+01:11:02,400 --> 01:11:04,420
+and then you add this
+little bit of flexibility
+
+1480
+01:11:04,420 --> 01:11:07,710
+so the edges can change
+in length a tiny amount,
+
+1481
+01:11:07,710 --> 01:11:12,887
+then before you made this change
+your configuration was a point,
+
+1482
+01:11:12,887 --> 01:11:14,470
+and there might have
+been other stuff.
+
+1483
+01:11:14,470 --> 01:11:16,570
+But locally you
+couldn't move at all.
+
+1484
+01:11:16,570 --> 01:11:20,590
+If you add this
+flexibility, the new picture
+
+1485
+01:11:20,590 --> 01:11:24,000
+is a point with a
+tiny ball around it.
+
+1486
+01:11:24,000 --> 01:11:27,567
+And whatever, I mean this
+might change a little bit also.
+
+1487
+01:11:27,567 --> 01:11:29,900
+But the point is this point
+doesn't get much bigger when
+
+1488
+01:11:29,900 --> 01:11:31,670
+you add just a little
+bit of flexibility.
+
+1489
+01:11:31,670 --> 01:11:34,280
+This is a fact that was
+known in rigidity theory.
+
+1490
+01:11:34,280 --> 01:11:36,420
+It's called sloppy rigidity.
+
+1491
+01:11:36,420 --> 01:11:38,670
+And it's essentially what's
+going on here-- that we're
+
+1492
+01:11:38,670 --> 01:11:40,170
+adding a little bit
+of perturbation.
+
+1493
+01:11:40,170 --> 01:11:41,530
+Before you couldn't move at all.
+
+1494
+01:11:41,530 --> 01:11:42,460
+Now you can move a little bit.
+
+1495
+01:11:42,460 --> 01:11:44,501
+We just had to generalize
+from regular tensegrity
+
+1496
+01:11:44,501 --> 01:11:49,120
+so these weird tensegrities
+with sliding struts.
+
+1497
+01:11:49,120 --> 01:11:51,660
+And this is kind of intuitive.
+
+1498
+01:11:51,660 --> 01:11:54,020
+To really check it
+you just need to check
+
+1499
+01:11:54,020 --> 01:11:57,150
+that the constraints on edges
+and struts are closed sets,
+
+1500
+01:11:57,150 --> 01:11:59,340
+and then the have
+to behave this way.
+
+1501
+01:11:59,340 --> 01:12:02,500
+But you can actually compute
+how quickly they change.
+
+1502
+01:12:02,500 --> 01:12:04,970
+It's just messy.
+
+1503
+01:12:04,970 --> 01:12:06,590
+So I'll leave it at that.
+
+1504
+01:12:06,590 --> 01:12:09,295
+Hey, there's a little
+proof addition,
+
+1505
+01:12:09,295 --> 01:12:11,584
+glad I still remember it.
+
+1506
+01:12:11,584 --> 01:12:12,250
+Other questions?
+
+1507
+01:12:12,250 --> 01:12:14,470
+This is the end of 2D trees.
+
+1508
+01:12:14,470 --> 01:12:19,420
+And now I want to talk
+briefly about 3D chains.
+
+1509
+01:12:19,420 --> 01:12:22,938
+So we did this one, now
+I want to do this one.
+
+1510
+01:12:22,938 --> 01:12:39,730
+
+1511
+01:12:39,730 --> 01:12:43,360
+Actually this is one of the
+oldest results, from 1998.
+
+1512
+01:12:43,360 --> 01:12:45,610
+So right around the same
+time as the locked trees.
+
+1513
+01:12:45,610 --> 01:13:03,690
+
+1514
+01:13:03,690 --> 01:13:06,540
+I may have shown this example
+last time, or in lecture one.
+
+1515
+01:13:06,540 --> 01:13:08,540
+But here it is again.
+
+1516
+01:13:08,540 --> 01:13:11,270
+Three bars in the
+center, and two
+
+1517
+01:13:11,270 --> 01:13:12,710
+really long bars in the ends.
+
+1518
+01:13:12,710 --> 01:13:25,930
+We call this knitting needles,
+because it's like two knitting
+
+1519
+01:13:25,930 --> 01:13:28,120
+needles with a short
+string connecting them,
+
+1520
+01:13:28,120 --> 01:13:29,900
+tied in a knot, sort of.
+
+1521
+01:13:29,900 --> 01:13:31,480
+Topologically this
+is not knotted.
+
+1522
+01:13:31,480 --> 01:13:33,910
+If you could add
+extra creases here
+
+1523
+01:13:33,910 --> 01:13:36,140
+you could pull that
+through, no problem.
+
+1524
+01:13:36,140 --> 01:13:39,590
+But if this is rigid,
+like a linkage,
+
+1525
+01:13:39,590 --> 01:13:50,560
+then this thing
+is locked provided
+
+1526
+01:13:50,560 --> 01:14:02,050
+each end bar has
+length strictly greater
+
+1527
+01:14:02,050 --> 01:14:04,320
+than the sum of the middle bars.
+
+1528
+01:14:04,320 --> 01:14:11,230
+
+1529
+01:14:11,230 --> 01:14:14,730
+So there's three middle bars
+here, add up their lengths,
+
+1530
+01:14:14,730 --> 01:14:16,180
+it should be shorter
+than this one
+
+1531
+01:14:16,180 --> 01:14:18,550
+and it should be
+shorter than this one.
+
+1532
+01:14:18,550 --> 01:14:20,070
+That's the cutoff.
+
+1533
+01:14:20,070 --> 01:14:22,930
+And I believe once it's
+the other way around,
+
+1534
+01:14:22,930 --> 01:14:23,790
+this is not locked.
+
+1535
+01:14:23,790 --> 01:14:35,870
+
+1536
+01:14:35,870 --> 01:14:39,400
+Sadly, rules one and do not
+prove this thing is locked.
+
+1537
+01:14:39,400 --> 01:14:41,420
+They only work in
+two dimensions.
+
+1538
+01:14:41,420 --> 01:14:44,840
+But for this one example--
+and to tell you the truth,
+
+1539
+01:14:44,840 --> 01:14:48,040
+this is pretty much the only
+example of a locked open chain
+
+1540
+01:14:48,040 --> 01:14:53,680
+that we have-- there's a
+really simple, nice proof.
+
+1541
+01:14:53,680 --> 01:14:55,496
+Let me draw the picture again.
+
+1542
+01:14:55,496 --> 01:14:58,691
+AUDIENCE: Do you
+need the bottom one?
+
+1543
+01:14:58,691 --> 01:15:01,190
+PROFESSOR: You're asking do I
+need three bars in the center,
+
+1544
+01:15:01,190 --> 01:15:03,510
+or could I get away with two?
+
+1545
+01:15:03,510 --> 01:15:07,280
+In fact, to draw this in
+3D you need three bars.
+
+1546
+01:15:07,280 --> 01:15:08,440
+That's maybe not obvious.
+
+1547
+01:15:08,440 --> 01:15:12,870
+
+1548
+01:15:12,870 --> 01:15:16,490
+But if you tried to draw
+it would just four bars,
+
+1549
+01:15:16,490 --> 01:15:22,280
+like this, it's
+not really possible
+
+1550
+01:15:22,280 --> 01:15:24,790
+because these three
+points are coplanar,
+
+1551
+01:15:24,790 --> 01:15:29,172
+as all three points
+are, and then yeah.
+
+1552
+01:15:29,172 --> 01:15:30,699
+You can't get this
+weaving pattern.
+
+1553
+01:15:30,699 --> 01:15:32,990
+This guy's going to be either
+above or below the plane.
+
+1554
+01:15:32,990 --> 01:15:35,156
+And this guy's going to be
+above or below the plane.
+
+1555
+01:15:35,156 --> 01:15:38,530
+And in all cases, you
+don't get this weaving.
+
+1556
+01:15:38,530 --> 01:15:40,907
+So you really need the five.
+
+1557
+01:15:40,907 --> 01:15:41,740
+This is the minimum.
+
+1558
+01:15:41,740 --> 01:15:45,870
+You can prove all four
+bar 3D chains to not lock.
+
+1559
+01:15:45,870 --> 01:15:47,260
+But with five you can do it.
+
+1560
+01:15:47,260 --> 01:15:49,820
+
+1561
+01:15:49,820 --> 01:15:51,764
+Good question.
+
+1562
+01:15:51,764 --> 01:15:53,180
+So here's how we're
+going to prove
+
+1563
+01:15:53,180 --> 01:15:54,263
+that this thing is locked.
+
+1564
+01:15:54,263 --> 01:15:58,134
+
+1565
+01:15:58,134 --> 01:16:00,550
+So there are these three edges,
+they have various lengths,
+
+1566
+01:16:00,550 --> 01:16:01,480
+who knows?
+
+1567
+01:16:01,480 --> 01:16:05,630
+But add up the lengths, divide
+by 2, and measure out that far.
+
+1568
+01:16:05,630 --> 01:16:08,015
+So I'm going to call that
+the midpoint of those three
+
+1569
+01:16:08,015 --> 01:16:08,515
+segments.
+
+1570
+01:16:08,515 --> 01:16:11,890
+
+1571
+01:16:11,890 --> 01:16:15,250
+I want to center a ball here.
+
+1572
+01:16:15,250 --> 01:16:22,280
+It's going to look
+something like that.
+
+1573
+01:16:22,280 --> 01:16:25,400
+It's a 3D ball centered there.
+
+1574
+01:16:25,400 --> 01:16:37,510
+So it's a ball, diameter equal
+to the sum of the middle bars.
+
+1575
+01:16:37,510 --> 01:16:41,690
+
+1576
+01:16:41,690 --> 01:16:43,140
+So radius is half that.
+
+1577
+01:16:43,140 --> 01:16:54,715
+And the center is the midpoint
+of the sum of the middle bars,
+
+1578
+01:16:54,715 --> 01:16:55,215
+whatever.
+
+1579
+01:16:55,215 --> 01:16:59,470
+
+1580
+01:16:59,470 --> 01:17:01,920
+So the radius is half the
+sum of the middle bars.
+
+1581
+01:17:01,920 --> 01:17:04,550
+And this is at half the
+sum of the middle bars.
+
+1582
+01:17:04,550 --> 01:17:10,790
+Therefore these middle
+bars stay inside the ball.
+
+1583
+01:17:10,790 --> 01:17:12,780
+Maybe they touch the boundary.
+
+1584
+01:17:12,780 --> 01:17:16,070
+But they're inside or on
+the boundary of the ball.
+
+1585
+01:17:16,070 --> 01:17:22,055
+So that means the middle
+bars are in the ball.
+
+1586
+01:17:22,055 --> 01:17:26,140
+
+1587
+01:17:26,140 --> 01:17:29,840
+Maybe just barely, but no
+matter how you move this thing--
+
+1588
+01:17:29,840 --> 01:17:33,370
+I mean if you move this point
+then the ball moves with it.
+
+1589
+01:17:33,370 --> 01:17:35,140
+So no matter how
+this thing folds,
+
+1590
+01:17:35,140 --> 01:17:36,890
+those three bar stay
+inside the ball.
+
+1591
+01:17:36,890 --> 01:17:37,970
+What about these bars?
+
+1592
+01:17:37,970 --> 01:17:40,437
+Or what about the endpoints?
+
+1593
+01:17:40,437 --> 01:17:42,270
+Well if this point is
+inside the ball, which
+
+1594
+01:17:42,270 --> 01:17:45,000
+it is, and this point is
+inside the ball, which it is,
+
+1595
+01:17:45,000 --> 01:17:50,030
+then this thing is longer
+than the diameter of the ball.
+
+1596
+01:17:50,030 --> 01:17:52,380
+This thing is greater than
+the sum of the middle bars.
+
+1597
+01:17:52,380 --> 01:17:54,671
+The diameter of the ball is
+the sum of the middle bars.
+
+1598
+01:17:54,671 --> 01:17:56,320
+So if I take any
+point inside the ball
+
+1599
+01:17:56,320 --> 01:18:01,670
+and move straight from there
+by the radius of the-- more
+
+1600
+01:18:01,670 --> 01:18:06,000
+than the diameter of the ball,
+I must go outside the ball.
+
+1601
+01:18:06,000 --> 01:18:12,615
+So the endpoints are
+outside the ball.
+
+1602
+01:18:12,615 --> 01:18:15,994
+
+1603
+01:18:15,994 --> 01:18:17,910
+How the heck are you
+going untie that not when
+
+1604
+01:18:17,910 --> 01:18:20,620
+all of the interior vertices
+stay inside of the ball,
+
+1605
+01:18:20,620 --> 01:18:22,420
+and these guys stay
+outside the ball?
+
+1606
+01:18:22,420 --> 01:18:27,825
+To formalize how the
+heck, you can say well
+
+1607
+01:18:27,825 --> 01:18:30,370
+if you ignore what's inside the
+ball-- something's happening
+
+1608
+01:18:30,370 --> 01:18:31,460
+there, who knows?
+
+1609
+01:18:31,460 --> 01:18:33,100
+But outside it's
+like there's a ball
+
+1610
+01:18:33,100 --> 01:18:35,750
+and there's two sticks
+coming out of it.
+
+1611
+01:18:35,750 --> 01:18:38,810
+So you can just
+imagine, for example,
+
+1612
+01:18:38,810 --> 01:18:43,140
+tying a string
+between the two ends.
+
+1613
+01:18:43,140 --> 01:18:45,660
+And something happens
+in the inside.
+
+1614
+01:18:45,660 --> 01:18:48,100
+But if you think of just
+from the outside perspective,
+
+1615
+01:18:48,100 --> 01:18:49,350
+these sticks just move around.
+
+1616
+01:18:49,350 --> 01:18:53,080
+It's really easy to
+not tangle this cord
+
+1617
+01:18:53,080 --> 01:18:55,620
+when these sticks move around.
+
+1618
+01:18:55,620 --> 01:18:58,760
+So now, in order for
+this thing to become
+
+1619
+01:18:58,760 --> 01:19:02,190
+unlocked, to straighten
+out for example,
+
+1620
+01:19:02,190 --> 01:19:05,550
+somehow inside you
+have to do some magic
+
+1621
+01:19:05,550 --> 01:19:07,620
+to get rid of this topology.
+
+1622
+01:19:07,620 --> 01:19:08,690
+Well what do I mean?
+
+1623
+01:19:08,690 --> 01:19:13,620
+Well if you could do it inside,
+you could do that motion even
+
+1624
+01:19:13,620 --> 01:19:15,710
+when there's a
+string tied out here.
+
+1625
+01:19:15,710 --> 01:19:17,830
+But when I tie the string
+out here, it is a knot.
+
+1626
+01:19:17,830 --> 01:19:19,330
+It's a trefoil know.
+
+1627
+01:19:19,330 --> 01:19:22,570
+There's no way to untie a
+trefoil know without crossing.
+
+1628
+01:19:22,570 --> 01:19:24,432
+So either there's
+crossing in here--
+
+1629
+01:19:24,432 --> 01:19:26,390
+which better be-- or
+there's crossing out here.
+
+1630
+01:19:26,390 --> 01:19:27,765
+There can't be
+crossing out here.
+
+1631
+01:19:27,765 --> 01:19:29,552
+It's just two
+sticks and a string.
+
+1632
+01:19:29,552 --> 01:19:31,510
+You can easily arrange
+the motion of the string
+
+1633
+01:19:31,510 --> 01:19:34,630
+to not cross the two sticks.
+
+1634
+01:19:34,630 --> 01:19:38,320
+Therefore this thing
+in fact cannot untie.
+
+1635
+01:19:38,320 --> 01:19:43,380
+Therefore this thing is
+locked, cannot straighten out.
+
+1636
+01:19:43,380 --> 01:19:46,560
+So that's locked 3D chains.
+
+1637
+01:19:46,560 --> 01:19:48,990
+Let me tell you a bunch
+of cool open problems.
+
+1638
+01:19:48,990 --> 01:19:51,620
+This is really the only good
+example of a locked 3D chain
+
+1639
+01:19:51,620 --> 01:19:52,650
+we have.
+
+1640
+01:19:52,650 --> 01:19:55,540
+And it has length ratios,
+the best you could do
+
+1641
+01:19:55,540 --> 01:19:58,540
+is like 1 to 3 plus epsilon.
+
+1642
+01:19:58,540 --> 01:20:00,300
+If each of these
+is length 1, these
+
+1643
+01:20:00,300 --> 01:20:02,080
+have to be 3 plus epsilon.
+
+1644
+01:20:02,080 --> 01:20:03,830
+Is that the best?
+
+1645
+01:20:03,830 --> 01:20:06,900
+Or could it be, for
+example, that all the edges
+
+1646
+01:20:06,900 --> 01:20:10,090
+or between length 1 and 2,
+and the chain is locked?
+
+1647
+01:20:10,090 --> 01:20:11,420
+We don't know.
+
+1648
+01:20:11,420 --> 01:20:14,330
+In the extreme case, what if all
+the edge lengths of the same,
+
+1649
+01:20:14,330 --> 01:20:16,050
+all length 1?
+
+1650
+01:20:16,050 --> 01:20:17,620
+Is there a locked 3D chain?
+
+1651
+01:20:17,620 --> 01:20:20,760
+We now know there's
+a locked 2D tree,
+
+1652
+01:20:20,760 --> 01:20:23,100
+but for chains it's tricky.
+
+1653
+01:20:23,100 --> 01:20:25,670
+It's even open if
+you add thickness.
+
+1654
+01:20:25,670 --> 01:20:30,470
+You say, hey, let's
+think about a 3D chain,
+
+1655
+01:20:30,470 --> 01:20:32,130
+all the edge lengths
+are the same,
+
+1656
+01:20:32,130 --> 01:20:35,687
+and you get to specify
+some radius of the bars.
+
+1657
+01:20:35,687 --> 01:20:37,520
+For a while I thought
+maybe this was locked.
+
+1658
+01:20:37,520 --> 01:20:40,490
+I don't think it is.
+
+1659
+01:20:40,490 --> 01:20:42,420
+We can unfold.
+
+1660
+01:20:42,420 --> 01:20:45,630
+All of these questions are
+open, and pretty fascinating.
+
+1661
+01:20:45,630 --> 01:20:49,800
+Especially because proteins
+are a lot like equilateral--
+
+1662
+01:20:49,800 --> 01:20:53,340
+like all the edge lengths
+the same-- 3D chains.
+
+1663
+01:20:53,340 --> 01:20:57,080
+It's even open for
+equilateral 3D trees.
+
+1664
+01:20:57,080 --> 01:20:59,090
+So we know 2D equilateral
+trees can lock.
+
+1665
+01:20:59,090 --> 01:21:02,640
+But 3D, it's open.
+
+1666
+01:21:02,640 --> 01:21:04,140
+I think that's
+enough open problems.
+
+1667
+01:21:04,140 --> 01:21:05,956
+Lots of cool questions here.
+
+1668
+01:21:05,956 --> 01:21:07,080
+All right, I have one more.
+
+1669
+01:21:07,080 --> 01:21:08,300
+It's just fun.
+
+1670
+01:21:08,300 --> 01:21:15,390
+Even if you have a 3D chain
+where all the edges are
+
+1671
+01:21:15,390 --> 01:21:17,290
+on top of each other
+on a line segment--
+
+1672
+01:21:17,290 --> 01:21:18,870
+it's like a linear
+tree but now it's
+
+1673
+01:21:18,870 --> 01:21:24,380
+a linear 3D chain-- it's
+like a bundle of segments.
+
+1674
+01:21:24,380 --> 01:21:26,280
+Is that locked?
+
+1675
+01:21:26,280 --> 01:21:27,080
+I don't think so.
+
+1676
+01:21:27,080 --> 01:21:29,580
+But even that is tricky
+to come up with algorithm.
+
+1677
+01:21:29,580 --> 01:21:32,440
+Maybe we'll work on some of
+these in the problem session.
+
+1678
+01:21:32,440 --> 01:21:34,500
+That's it.
+

@@ -1,0 +1,8346 @@
+1
+00:00:02,738 --> 00:00:05,754
+[Welcome] to 6.849:
+Geometric Folding Algorithms
+
+2
+00:00:05,779 --> 00:00:07,480
+First thing you
+should know
+
+3
+00:00:07,505 --> 00:00:08,948
+is this class is
+being video recorded
+
+4
+00:00:08,973 --> 00:00:11,468
+mostly for OCW but I'll
+also put the lectures on
+
+5
+00:00:11,493 --> 00:00:12,956
+through the semester
+assuming
+
+6
+00:00:12,981 --> 00:00:14,167
+I don't fail.
+
+7
+00:00:14,192 --> 00:00:17,163
+And so a few of
+the seats in front
+
+8
+00:00:17,188 --> 00:00:18,670
+the backs of your
+heads may be visible.
+
+9
+00:00:18,695 --> 00:00:20,615
+Just to warn you,
+if you care.
+
+10
+00:00:20,640 --> 00:00:23,413
+Yeah, there's a cone. And some
+of the people right in the center--
+
+11
+00:00:23,438 --> 00:00:26,170
+So if you don't mind, it's cool.
+Otherwise, you are signing away
+
+12
+00:00:26,195 --> 00:00:31,369
+your rights implicitly
+by sitting where you are.
+
+13
+00:00:31,394 --> 00:00:32,385
+This is--
+
+14
+00:00:32,410 --> 00:00:33,485
+I'm Erik Demaine.
+
+15
+00:00:33,510 --> 00:00:34,655
+You can call me Erik.
+
+16
+00:00:34,680 --> 00:00:36,512
+This is the web
+page for the class.
+
+17
+00:00:36,537 --> 00:00:39,738
+You should all go there if you
+haven't already, and sign up
+
+18
+00:00:39,763 --> 00:00:42,463
+on this sheet if you want
+to be on the mailing list.
+
+19
+00:00:42,488 --> 00:00:46,233
+Even if you are on the mailing list,
+you might as well put your name there.
+
+20
+00:00:46,258 --> 00:00:48,475
+So I know whether you are
+for credit or for listener
+
+21
+00:00:48,500 --> 00:00:52,066
+Are those sheets still
+circulating somewhere?
+
+22
+00:00:52,111 --> 00:00:53,673
+And not yet full?
+
+23
+00:00:53,698 --> 00:00:56,704
+So, raise your hand if you
+haven't filled it out?
+
+24
+00:00:56,729 --> 00:00:58,256
+Please circulate.
+
+25
+00:00:58,281 --> 00:01:01,530
+Just put another one.
+
+26
+00:01:01,555 --> 00:01:04,550
+Alright.
+
+27
+00:01:04,575 --> 00:01:06,642
+Good.
+
+28
+00:01:06,667 --> 00:01:11,010
+So, maybe I'll tell you a little
+bit what this class about.
+
+29
+00:01:11,010 --> 00:01:13,570
+Then I'll tell you about
+how the class works,
+
+30
+00:01:13,570 --> 00:01:16,150
+and then we'll do more
+about what it's about.
+
+31
+00:01:16,150 --> 00:01:18,780
+The idea of lecture 1 is
+to cover the entire class
+
+32
+00:01:18,780 --> 00:01:19,960
+in one lecture.
+
+33
+00:01:19,960 --> 00:01:23,490
+Obviously, I will omit
+a few of the details
+
+34
+00:01:23,490 --> 00:01:25,212
+because we have a
+lot to cover, but I
+
+35
+00:01:25,212 --> 00:01:26,670
+thought it would
+be fun to give you
+
+36
+00:01:26,670 --> 00:01:29,770
+a picture what the whole class
+is, what the sort of content
+
+37
+00:01:29,770 --> 00:01:33,040
+is, so you know whether
+you want to be here.
+
+38
+00:01:33,040 --> 00:01:36,530
+And my chalk.
+
+39
+00:01:36,530 --> 00:01:40,450
+So this class is about geometry.
+
+40
+00:01:40,450 --> 00:01:41,610
+It's about folding.
+
+41
+00:01:41,610 --> 00:01:43,290
+It's about algorithms.
+
+42
+00:01:43,290 --> 00:01:52,660
+In general, we are interested in
+the mathematics and algorithms
+
+43
+00:01:52,660 --> 00:01:53,980
+behind folding things.
+
+44
+00:01:53,980 --> 00:02:07,760
+
+
+45
+00:02:07,760 --> 00:02:10,510
+And also unfolding things,
+because that turns out
+
+46
+00:02:10,510 --> 00:02:12,880
+to be pretty interesting.
+
+47
+00:02:12,880 --> 00:02:16,105
+And the formal term for
+things is geometric objects.
+
+48
+00:02:16,105 --> 00:02:18,700
+
+
+49
+00:02:18,700 --> 00:02:22,250
+And you think of things
+like your arm folds.
+
+50
+00:02:22,250 --> 00:02:25,960
+Pieces of paper fold.
+
+51
+00:02:25,960 --> 00:02:27,710
+All sorts of things
+fold in the world.
+
+52
+00:02:27,710 --> 00:02:31,110
+A lot of the-- if there's
+any sheet metal objects
+
+53
+00:02:31,110 --> 00:02:34,350
+in this room, maybe
+some of these parts
+
+54
+00:02:34,350 --> 00:02:36,890
+are folded out of sheet.
+
+55
+00:02:36,890 --> 00:02:38,460
+I would guess so.
+
+56
+00:02:38,460 --> 00:02:41,000
+So folding is everywhere,
+and this class
+
+57
+00:02:41,000 --> 00:02:43,450
+is all about how that
+works mathematically.
+
+58
+00:02:43,450 --> 00:02:45,430
+And I'm a theoretical
+computer scientist.
+
+59
+00:02:45,430 --> 00:02:47,990
+I do algorithms, so my
+slant is towards algorithms,
+
+60
+00:02:47,990 --> 00:02:51,440
+which is getting computers
+to do all this for you.
+
+61
+00:02:51,440 --> 00:02:54,530
+How many people here
+are computer scientists?
+
+62
+00:02:54,530 --> 00:02:58,650
+How many people are-- you've got
+to pick one-- mathematicians?
+
+63
+00:02:58,650 --> 00:03:01,660
+How many people are
+neither of the above?
+
+64
+00:03:01,660 --> 00:03:02,960
+Wow, cool.
+
+65
+00:03:02,960 --> 00:03:06,205
+It's like not a lot of
+mathematicians only,
+
+66
+00:03:06,205 --> 00:03:07,580
+but a lot of
+computer scientists,
+
+67
+00:03:07,580 --> 00:03:08,990
+a lot of everyone else.
+
+68
+00:03:08,990 --> 00:03:13,060
+So I'll go around later
+maybe and find out
+
+69
+00:03:13,060 --> 00:03:15,780
+what your background is.
+
+70
+00:03:15,780 --> 00:03:17,830
+You may be interested
+less in the mathematics
+
+71
+00:03:17,830 --> 00:03:19,680
+and more in the
+applications, so let
+
+72
+00:03:19,680 --> 00:03:21,260
+me tell you a little
+bit about those.
+
+73
+00:03:21,260 --> 00:03:30,620
+
+
+74
+00:03:30,620 --> 00:03:33,156
+I have a long list of
+applications, some of which
+
+75
+00:03:33,156 --> 00:03:34,530
+have been realized,
+some of which
+
+76
+00:03:34,530 --> 00:03:37,890
+are still in progress
+or just ideas.
+
+77
+00:03:37,890 --> 00:03:41,520
+Robotics is a big one,
+folding robotic arms.
+
+78
+00:03:41,520 --> 00:03:45,960
+And I'll show later different
+kinds of transforming robots,
+
+79
+00:03:45,960 --> 00:03:50,090
+like Transformers or
+Terminator 2-style, where
+
+80
+00:03:50,090 --> 00:03:53,045
+you want one robot to take on
+many different forms, this idea
+
+81
+00:03:53,045 --> 00:03:54,920
+of programmable matter,
+where you can program
+
+82
+00:03:54,920 --> 00:03:57,130
+the geometry of your
+object as well as you
+
+83
+00:03:57,130 --> 00:03:59,660
+could program the software.
+
+84
+00:03:59,660 --> 00:04:01,939
+So next time when you
+buy the new iPhone,
+
+85
+00:04:01,939 --> 00:04:03,480
+you download the
+hardware in addition
+
+86
+00:04:03,480 --> 00:04:04,480
+to downloading software.
+
+87
+00:04:04,480 --> 00:04:07,310
+That would be the crazy idea.
+
+88
+00:04:07,310 --> 00:04:09,150
+That, of course,
+doesn't exist yet.
+
+89
+00:04:09,150 --> 00:04:12,400
+But it exists in
+some simple forms.
+
+90
+00:04:12,400 --> 00:04:14,300
+Computer graphics.
+
+91
+00:04:14,300 --> 00:04:18,929
+If you're making
+Toy Story 4, and you
+
+92
+00:04:18,929 --> 00:04:21,470
+want to animate your characters
+from one position to another,
+
+93
+00:04:21,470 --> 00:04:24,840
+you have some skeleton
+which is a foldable object,
+
+94
+00:04:24,840 --> 00:04:27,570
+and you'd like to interpolate
+between two key frames
+
+95
+00:04:27,570 --> 00:04:30,110
+that the animator
+draws automatically.
+
+96
+00:04:30,110 --> 00:04:33,030
+That's a morphing problem,
+and it's a folding morphing
+
+97
+00:04:33,030 --> 00:04:35,310
+problem.
+
+98
+00:04:35,310 --> 00:04:38,690
+We have mechanics.
+
+99
+00:04:38,690 --> 00:04:44,420
+A lot of the early folding
+work is in like 17, 1800s,
+
+100
+00:04:44,420 --> 00:04:47,130
+and is motivated by
+building mechanical linkages
+
+101
+00:04:47,130 --> 00:04:48,500
+to do useful things.
+
+102
+00:04:48,500 --> 00:04:50,960
+This is back before
+electrical computers,
+
+103
+00:04:50,960 --> 00:04:54,580
+we had mechanical
+computers of sorts.
+
+104
+00:04:54,580 --> 00:04:59,242
+Things like you could sign
+your name in triplicate
+
+105
+00:04:59,242 --> 00:05:01,200
+by just signing once,
+and having a linkage that
+
+106
+00:05:01,200 --> 00:05:04,869
+made many copies of it.
+
+107
+00:05:04,869 --> 00:05:08,119
+I think Jefferson
+used such a linkage.
+
+108
+00:05:08,119 --> 00:05:13,300
+We have manufacturing, which
+is a pretty broad term--
+
+109
+00:05:13,300 --> 00:05:16,860
+things like sheet metal bending.
+
+110
+00:05:16,860 --> 00:05:20,430
+Nano manufacturing, I think,
+is an exciting context,
+
+111
+00:05:20,430 --> 00:05:23,120
+where you can-- we're
+really good at building
+
+112
+00:05:23,120 --> 00:05:27,260
+flat nano-scale
+objects like CPUs.
+
+113
+00:05:27,260 --> 00:05:28,860
+And if you could
+get them to fold up,
+
+114
+00:05:28,860 --> 00:05:34,930
+then you could manufacture
+3D nano-scale objects.
+
+115
+00:05:34,930 --> 00:05:38,340
+I have optics here, Jason.
+
+116
+00:05:38,340 --> 00:05:39,330
+Sure.
+
+117
+00:05:39,330 --> 00:05:43,480
+George [INAUDIBLE] group
+does some optical devices
+
+118
+00:05:43,480 --> 00:05:46,350
+through folding here at MIT.
+
+119
+00:05:46,350 --> 00:05:48,050
+Medical is a big one.
+
+120
+00:05:48,050 --> 00:05:50,790
+
+
+121
+00:05:50,790 --> 00:05:53,670
+Imagine folding a
+stent really small,
+
+122
+00:05:53,670 --> 00:05:55,427
+so it can fit through
+small blood vessels
+
+123
+00:05:55,427 --> 00:05:57,260
+until it gets to where
+you want in your body
+
+124
+00:05:57,260 --> 00:06:00,060
+and expands-- do
+non-intrusive heart surgery.
+
+125
+00:06:00,060 --> 00:06:01,510
+Drug delivery is another one.
+
+126
+00:06:01,510 --> 00:06:05,600
+You have some object you want
+to deliver, your cancer drug,
+
+127
+00:06:05,600 --> 00:06:10,380
+so it follows through your body
+until it detects the cancer,
+
+128
+00:06:10,380 --> 00:06:12,979
+and then it releases
+the drug, for example.
+
+129
+00:06:12,979 --> 00:06:14,520
+Something we just
+started looking at.
+
+130
+00:06:14,520 --> 00:06:17,060
+
+
+131
+00:06:17,060 --> 00:06:19,380
+Aero-astro.
+
+132
+00:06:19,380 --> 00:06:21,380
+You want to deploy something
+out in outer space.
+
+133
+00:06:21,380 --> 00:06:23,796
+You've got to get it there
+first within the space shuttle.
+
+134
+00:06:23,796 --> 00:06:25,640
+So how do you fold
+it down small so it
+
+135
+00:06:25,640 --> 00:06:27,800
+fits in your space
+shuttle, and then expands
+
+136
+00:06:27,800 --> 00:06:29,770
+when it gets there?
+
+137
+00:06:29,770 --> 00:06:31,460
+Biology.
+
+138
+00:06:31,460 --> 00:06:32,730
+Big one.
+
+139
+00:06:32,730 --> 00:06:34,420
+I'm interested in
+protein folding.
+
+140
+00:06:34,420 --> 00:06:38,050
+Proteins are the building block
+of all life forms we know,
+
+141
+00:06:38,050 --> 00:06:39,980
+and we'd like to
+know how they fold.
+
+142
+00:06:39,980 --> 00:06:41,901
+I'll show you some
+pictures of them later.
+
+143
+00:06:41,901 --> 00:06:43,400
+We'll talk more
+about it, obviously,
+
+144
+00:06:43,400 --> 00:06:45,190
+in the rest of the class.
+
+145
+00:06:45,190 --> 00:06:47,490
+And the goal is to use
+this mathematics of folding
+
+146
+00:06:47,490 --> 00:06:49,780
+to try to figure out what
+biology might be doing
+
+147
+00:06:49,780 --> 00:06:53,990
+in real life, though that's
+still obviously very difficult.
+
+148
+00:06:53,990 --> 00:06:57,390
+Sculpture, sort
+of an obvious one.
+
+149
+00:06:57,390 --> 00:07:00,220
+Designing cooler
+origami is possible,
+
+150
+00:07:00,220 --> 00:07:01,990
+thanks to mathematics
+and algorithms.
+
+151
+00:07:01,990 --> 00:07:04,690
+Hopefully Jason agrees.
+
+152
+00:07:04,690 --> 00:07:08,370
+Jason Ku is, I guess, the top
+origami designer currently
+
+153
+00:07:08,370 --> 00:07:08,870
+at MIT.
+
+154
+00:07:08,870 --> 00:07:10,220
+That's a safe bet.
+
+155
+00:07:10,220 --> 00:07:11,860
+You could make
+some broader claim.
+
+156
+00:07:11,860 --> 00:07:14,070
+And we'll get him to
+give a guest lecture
+
+157
+00:07:14,070 --> 00:07:16,420
+on the more artistic
+side of origami,
+
+158
+00:07:16,420 --> 00:07:19,080
+and I'll talk about the
+mathematics-- some of which
+
+159
+00:07:19,080 --> 00:07:20,720
+is currently used
+in origami design
+
+160
+00:07:20,720 --> 00:07:23,600
+today, either implicitly or
+explicitly, some of which
+
+161
+00:07:23,600 --> 00:07:29,470
+is yet to be used, but hopefully
+will make cooler sculpture.
+
+162
+00:07:29,470 --> 00:07:31,750
+You could also imagine
+building interactive sculpture.
+
+163
+00:07:31,750 --> 00:07:34,870
+Interactive buildings'
+architecture
+
+164
+00:07:34,870 --> 00:07:36,160
+is another big one.
+
+165
+00:07:36,160 --> 00:07:38,550
+How many people
+here are architects?
+
+166
+00:07:38,550 --> 00:07:39,050
+Cool.
+
+167
+00:07:39,050 --> 00:07:40,830
+A bunch.
+
+168
+00:07:40,830 --> 00:07:43,100
+So I think this is really
+exciting and underexploited
+
+169
+00:07:43,100 --> 00:07:45,110
+at the moment,
+reconfigurable buildings.
+
+170
+00:07:45,110 --> 00:07:47,850
+Hoberman is one
+example of somebody
+
+171
+00:07:47,850 --> 00:07:50,466
+exploring this, getting the
+building to fold from one shape
+
+172
+00:07:50,466 --> 00:07:52,840
+to another, or getting your
+shades to fold from one shape
+
+173
+00:07:52,840 --> 00:07:54,880
+to another, all sorts of things.
+
+174
+00:07:54,880 --> 00:07:56,080
+That's all I have.
+
+175
+00:07:56,080 --> 00:07:57,646
+Maybe there are more.
+
+176
+00:07:57,646 --> 00:08:00,670
+You're welcome to tell me.
+
+177
+00:08:00,670 --> 00:08:02,340
+But this is somehow
+why you might
+
+178
+00:08:02,340 --> 00:08:07,050
+care about the mathematics
+of folding things.
+
+179
+00:08:07,050 --> 00:08:11,240
+And what else do I have?
+
+180
+00:08:11,240 --> 00:08:13,780
+Yeah, let me tell you a
+little bit about the field.
+
+181
+00:08:13,780 --> 00:08:15,990
+It's, in some sense, old.
+
+182
+00:08:15,990 --> 00:08:19,530
+There are some problems in
+this world of geometric folding
+
+183
+00:08:19,530 --> 00:08:23,050
+that go back four
+or five centuries.
+
+184
+00:08:23,050 --> 00:08:25,610
+And some of those problems
+are still unsolved,
+
+185
+00:08:25,610 --> 00:08:27,490
+but a lot of the
+action in the field
+
+186
+00:08:27,490 --> 00:08:32,060
+has been in the
+last 12 years or so.
+
+187
+00:08:32,060 --> 00:08:33,490
+And it's been really exciting.
+
+188
+00:08:33,490 --> 00:08:35,290
+A lot of theorems
+have been proved.
+
+189
+00:08:35,290 --> 00:08:36,790
+In fact, a lot of
+theorems have been
+
+190
+00:08:36,790 --> 00:08:38,710
+proved in the context
+of previous iterations
+
+191
+00:08:38,710 --> 00:08:39,910
+of this class.
+
+192
+00:08:39,910 --> 00:08:41,970
+And so I always have
+to update things,
+
+193
+00:08:41,970 --> 00:08:44,790
+because we keep
+getting new results.
+
+194
+00:08:44,790 --> 00:08:47,480
+And the idea of this class
+is to cover the bleeding
+
+195
+00:08:47,480 --> 00:08:51,510
+edge, whatever the
+frontiers of what's known,
+
+196
+00:08:51,510 --> 00:08:53,880
+and also to push
+that edge further.
+
+197
+00:08:53,880 --> 00:08:56,640
+So there is an open problem
+session, which is optional.
+
+198
+00:08:56,640 --> 00:08:59,430
+But if you want to come solve
+new problems that haven't been
+
+199
+00:08:59,430 --> 00:09:01,750
+solved before,
+every week probably
+
+200
+00:09:01,750 --> 00:09:04,810
+we'll work on a problem related
+to what I cover in class.
+
+201
+00:09:04,810 --> 00:09:07,980
+So you know what's
+known, and then we
+
+202
+00:09:07,980 --> 00:09:09,810
+try to prove what's unknown.
+
+203
+00:09:09,810 --> 00:09:10,810
+That's the idea.
+
+204
+00:09:10,810 --> 00:09:12,560
+And that's worked
+pretty well in the past.
+
+205
+00:09:12,560 --> 00:09:15,360
+
+
+206
+00:09:15,360 --> 00:09:17,935
+Let's dive a little
+bit into the sort
+
+207
+00:09:17,935 --> 00:09:19,060
+of mathematical structures.
+
+208
+00:09:19,060 --> 00:09:21,970
+
+
+209
+00:09:21,970 --> 00:09:24,790
+So say geometric objects.
+
+210
+00:09:24,790 --> 00:09:32,390
+
+
+211
+00:09:32,390 --> 00:09:35,830
+There are three main
+things that we typically
+
+212
+00:09:35,830 --> 00:09:44,705
+think about, linkages, pieces
+of paper, and polyhedra.
+
+213
+00:09:44,705 --> 00:09:51,130
+
+
+214
+00:09:51,130 --> 00:09:54,850
+A linkage is something like
+your arm or a robotic arm.
+
+215
+00:09:54,850 --> 00:09:59,030
+You have one-dimensional
+straight links like bones,
+
+216
+00:09:59,030 --> 00:10:01,480
+and hinges that
+connect them together.
+
+217
+00:10:01,480 --> 00:10:04,330
+And you'd like to know
+how that thing can fold.
+
+218
+00:10:04,330 --> 00:10:07,740
+So this is like in the graphics
+world or mechanical linkage
+
+219
+00:10:07,740 --> 00:10:08,240
+world.
+
+220
+00:10:08,240 --> 00:10:10,840
+
+
+221
+00:10:10,840 --> 00:10:13,540
+The typical way we
+think about linkages
+
+222
+00:10:13,540 --> 00:10:17,260
+is that they have rigid bars.
+
+223
+00:10:17,260 --> 00:10:21,170
+As opposed to a string,
+which is really floppy,
+
+224
+00:10:21,170 --> 00:10:24,130
+here you have these rigid,
+like maybe metal, parts,
+
+225
+00:10:24,130 --> 00:10:26,030
+and you can only
+fold at the hinges.
+
+226
+00:10:26,030 --> 00:10:29,300
+That's typical
+thinking on linkages.
+
+227
+00:10:29,300 --> 00:10:30,430
+Makes it interesting.
+
+228
+00:10:30,430 --> 00:10:35,150
+And sometimes we also
+require no crossing.
+
+229
+00:10:35,150 --> 00:10:38,260
+I'm trying to take a physical
+thing you have intuition for,
+
+230
+00:10:38,260 --> 00:10:40,630
+and write some of the
+mathematical constraints.
+
+231
+00:10:40,630 --> 00:10:43,780
+No crossing means you
+can't intersect yourself.
+
+232
+00:10:43,780 --> 00:10:46,039
+Sometimes that's important.
+
+233
+00:10:46,039 --> 00:10:46,830
+Sometimes it's not.
+
+234
+00:10:46,830 --> 00:10:49,230
+In a lot of the
+mechanical linkage world
+
+235
+00:10:49,230 --> 00:10:52,170
+you can have crossing
+bars, but just
+
+236
+00:10:52,170 --> 00:10:55,010
+because they're in different
+planes in real life,
+
+237
+00:10:55,010 --> 00:10:58,170
+if you're making a
+two-dimensional linkage.
+
+238
+00:10:58,170 --> 00:10:58,670
+Paper.
+
+239
+00:10:58,670 --> 00:11:01,270
+
+
+240
+00:11:01,270 --> 00:11:04,720
+This is my drawing
+of a piece of paper.
+
+241
+00:11:04,720 --> 00:11:08,800
+The rules are you
+are not allowed
+
+242
+00:11:08,800 --> 00:11:13,370
+to stretch the
+material, and you're not
+
+243
+00:11:13,370 --> 00:11:15,650
+allowed to tear or cut.
+
+244
+00:11:15,650 --> 00:11:18,520
+
+
+245
+00:11:18,520 --> 00:11:19,946
+So all you can do is fold.
+
+246
+00:11:19,946 --> 00:11:21,320
+And so intuitively
+this is saying
+
+247
+00:11:21,320 --> 00:11:23,030
+you can't make paper any longer.
+
+248
+00:11:23,030 --> 00:11:24,620
+You can't really
+make it shorter.
+
+249
+00:11:24,620 --> 00:11:30,710
+The only thing you can do
+is change its 3D geometry.
+
+250
+00:11:30,710 --> 00:11:33,640
+But if you look really closely,
+the geometry is the same.
+
+251
+00:11:33,640 --> 00:11:35,890
+It has a fixed
+intrinsic geometry.
+
+252
+00:11:35,890 --> 00:11:38,760
+All the distances on the
+surface are staying the same.
+
+253
+00:11:38,760 --> 00:11:40,880
+And usually in modern
+origami, you're
+
+254
+00:11:40,880 --> 00:11:42,840
+not allowed to cut the
+paper, because that
+
+255
+00:11:42,840 --> 00:11:44,790
+makes things too
+easy, basically.
+
+256
+00:11:44,790 --> 00:11:47,449
+And I guess also
+no crossing here.
+
+257
+00:11:47,449 --> 00:11:48,240
+It's a requirement.
+
+258
+00:11:48,240 --> 00:11:52,030
+
+
+259
+00:11:52,030 --> 00:11:54,080
+This is a pretty informal
+description of paper.
+
+260
+00:11:54,080 --> 00:11:55,090
+You can formalize it.
+
+261
+00:11:55,090 --> 00:11:56,360
+We will do that at some point.
+
+262
+00:11:56,360 --> 00:11:58,480
+But it's pretty intuitive.
+
+263
+00:11:58,480 --> 00:12:01,170
+You've all done it before.
+
+264
+00:12:01,170 --> 00:12:04,151
+Polyhedron is something
+more three-dimensional.
+
+265
+00:12:04,151 --> 00:12:06,400
+So here we had one-dimensional
+things we were folding.
+
+266
+00:12:06,400 --> 00:12:07,740
+Two-dimensional things
+we were folding.
+
+267
+00:12:07,740 --> 00:12:10,406
+A three-dimensional thing, or at
+least a two-dimensional surface
+
+268
+00:12:10,406 --> 00:12:12,720
+in three dimensions,
+a typical thing
+
+269
+00:12:12,720 --> 00:12:15,860
+you might want to do with
+a polyhedron is build it.
+
+270
+00:12:15,860 --> 00:12:18,250
+And often you want to
+build something out
+
+271
+00:12:18,250 --> 00:12:22,670
+of flat material, something
+like-- you've probably
+
+272
+00:12:22,670 --> 00:12:27,030
+made a cube by building a
+cross, and then folding it up
+
+273
+00:12:27,030 --> 00:12:28,076
+into that thing.
+
+274
+00:12:28,076 --> 00:12:29,200
+That's the folding problem.
+
+275
+00:12:29,200 --> 00:12:31,140
+The unfolding problem
+is, where do I
+
+276
+00:12:31,140 --> 00:12:35,470
+cut along this surface
+in order to make
+
+277
+00:12:35,470 --> 00:12:37,750
+one of these nice unfoldings?
+
+278
+00:12:37,750 --> 00:12:41,590
+I think there's one more
+cut here in the back.
+
+279
+00:12:41,590 --> 00:12:44,230
+If I did it right, that
+will unfold into the cross.
+
+280
+00:12:44,230 --> 00:12:48,260
+So if I have some complicated
+3D shape, what 2D shape
+
+281
+00:12:48,260 --> 00:12:50,760
+do I cut out in order to
+bend it into that 3D shape?
+
+282
+00:12:50,760 --> 00:12:52,271
+That's the unfolding problem.
+
+283
+00:12:52,271 --> 00:12:54,020
+There are actually
+lots of different kinds
+
+284
+00:12:54,020 --> 00:12:56,500
+of polyhedron folding
+problems, but here it
+
+285
+00:12:56,500 --> 00:13:00,010
+is you want to cut the surface.
+
+286
+00:13:00,010 --> 00:13:04,040
+You want one piece-- it's
+a little harder to assemble
+
+287
+00:13:04,040 --> 00:13:11,560
+multiple pieces-- and you'd like
+no overlap in that unfolding.
+
+288
+00:13:11,560 --> 00:13:13,490
+Because if, when you
+unfold, it overlaps,
+
+289
+00:13:13,490 --> 00:13:14,948
+then you can't
+actually make it out
+
+290
+00:13:14,948 --> 00:13:18,740
+of one piece of sheet material.
+
+291
+00:13:18,740 --> 00:13:22,070
+So these are the sorts
+of things we study.
+
+292
+00:13:22,070 --> 00:13:23,620
+And I think the
+plan in the class
+
+293
+00:13:23,620 --> 00:13:27,330
+is I will start with paper,
+because it's kind of the most
+
+294
+00:13:27,330 --> 00:13:30,640
+fun, origami design,
+computational origami design.
+
+295
+00:13:30,640 --> 00:13:33,010
+And then we'll talk about
+linkages and polyhedra.
+
+296
+00:13:33,010 --> 00:13:36,140
+And I'll probably jump around
+from week to week, just
+
+297
+00:13:36,140 --> 00:13:38,640
+to keep it exciting, because
+they're all interesting.
+
+298
+00:13:38,640 --> 00:13:40,990
+You might each have
+your favorite one.
+
+299
+00:13:40,990 --> 00:13:43,150
+And so that we can talk
+about all of them at once.
+
+300
+00:13:43,150 --> 00:13:49,747
+
+
+301
+00:13:49,747 --> 00:13:51,330
+So what kind of
+mathematical questions
+
+302
+00:13:51,330 --> 00:13:54,680
+would you ask about
+these structures?
+
+303
+00:13:54,680 --> 00:13:59,970
+Well, there are two main
+types I like to characterize.
+
+304
+00:13:59,970 --> 00:14:05,430
+On the one hand, we have what
+I call foldability questions,
+
+305
+00:14:05,430 --> 00:14:11,190
+where you're given some existing
+structure like a linkage,
+
+306
+00:14:11,190 --> 00:14:15,259
+or a piece of paper with
+some creases on it maybe,
+
+307
+00:14:15,259 --> 00:14:17,300
+and you'd like to know,
+how does that thing fold?
+
+308
+00:14:17,300 --> 00:14:25,090
+
+
+309
+00:14:25,090 --> 00:14:29,280
+So I give you some structure,
+and you'd like to know,
+
+310
+00:14:29,280 --> 00:14:30,850
+does it fold?
+
+311
+00:14:30,850 --> 00:14:33,820
+Maybe just does it fold at all?
+
+312
+00:14:33,820 --> 00:14:37,190
+Or, in some particular
+way, can you
+
+313
+00:14:37,190 --> 00:14:39,850
+make it fold into
+something interesting?
+
+314
+00:14:39,850 --> 00:14:41,320
+Or some notion of interesting?
+
+315
+00:14:41,320 --> 00:14:43,300
+I'm going to be generic
+here, because there's
+
+316
+00:14:43,300 --> 00:14:45,420
+a lot of different
+questions obviously.
+
+317
+00:14:45,420 --> 00:14:48,830
+And this is in contrast
+to a design question,
+
+318
+00:14:48,830 --> 00:14:52,330
+where you're given-- what
+you start with is a goal.
+
+319
+00:14:52,330 --> 00:14:55,577
+Like I want to make a butterfly.
+
+320
+00:14:55,577 --> 00:14:57,910
+And then the question is, how
+do I fold a piece of paper
+
+321
+00:14:57,910 --> 00:14:59,210
+to make that butterfly?
+
+322
+00:14:59,210 --> 00:15:01,240
+So here you're given
+maybe a crease pattern
+
+323
+00:15:01,240 --> 00:15:02,510
+and given some structure.
+
+324
+00:15:02,510 --> 00:15:06,040
+You want to see how it folds.
+
+325
+00:15:06,040 --> 00:15:07,942
+In design, you're
+given the goal and you
+
+326
+00:15:07,942 --> 00:15:09,650
+want to figure out
+what you should build,
+
+327
+00:15:09,650 --> 00:15:11,504
+what folding structure
+should I make
+
+328
+00:15:11,504 --> 00:15:12,670
+that will achieve this goal?
+
+329
+00:15:12,670 --> 00:15:15,240
+
+
+330
+00:15:15,240 --> 00:15:19,250
+So what shapes?
+
+331
+00:15:19,250 --> 00:15:23,330
+Shape is one thing
+you might want.
+
+332
+00:15:23,330 --> 00:15:27,545
+But in general, you have some
+property you want to achieve.
+
+333
+00:15:27,545 --> 00:15:33,650
+
+
+334
+00:15:33,650 --> 00:15:34,670
+Can you fold it?
+
+335
+00:15:34,670 --> 00:15:37,790
+
+
+336
+00:15:37,790 --> 00:15:42,570
+And of course if you
+can, how do you do it?
+
+337
+00:15:42,570 --> 00:15:44,305
+So this tends-- in
+general you could
+
+338
+00:15:44,305 --> 00:15:46,430
+think of this as a more
+mathematical question, this
+
+339
+00:15:46,430 --> 00:15:47,610
+as a more algorithmic question.
+
+340
+00:15:47,610 --> 00:15:48,984
+But usually actually
+both of them
+
+341
+00:15:48,984 --> 00:15:51,560
+are addressed with
+algorithms to some extent.
+
+342
+00:15:51,560 --> 00:15:54,320
+
+
+343
+00:15:54,320 --> 00:15:56,140
+Of course design
+is somehow cooler,
+
+344
+00:15:56,140 --> 00:15:58,060
+but often we need to
+understand foldability
+
+345
+00:15:58,060 --> 00:16:00,240
+before we can solve design.
+
+346
+00:16:00,240 --> 00:16:01,520
+But not always.
+
+347
+00:16:01,520 --> 00:16:03,730
+It depends.
+
+348
+00:16:03,730 --> 00:16:06,040
+And just to give
+you like-- I mean
+
+349
+00:16:06,040 --> 00:16:08,530
+if you looked at the entire
+set of results, the questions
+
+350
+00:16:08,530 --> 00:16:11,530
+and answers, that we consider,
+and you filter them down,
+
+351
+00:16:11,530 --> 00:16:13,240
+there would be three
+kinds of things
+
+352
+00:16:13,240 --> 00:16:15,670
+that we prove in this class.
+
+353
+00:16:15,670 --> 00:16:17,140
+These are the results.
+
+354
+00:16:17,140 --> 00:16:19,520
+All the results
+in three bullets.
+
+355
+00:16:19,520 --> 00:16:22,093
+It could be either
+you get universality.
+
+356
+00:16:22,093 --> 00:16:26,432
+
+
+357
+00:16:26,432 --> 00:16:27,890
+This is the coolest
+kind of result,
+
+358
+00:16:27,890 --> 00:16:29,690
+and it's surprisingly common.
+
+359
+00:16:29,690 --> 00:16:34,177
+Everything can be folded, for
+some notion of everything.
+
+360
+00:16:34,177 --> 00:16:35,260
+That's always a challenge.
+
+361
+00:16:35,260 --> 00:16:40,140
+
+
+362
+00:16:40,140 --> 00:16:44,180
+And you get an
+algorithm to do it.
+
+363
+00:16:44,180 --> 00:16:46,412
+So if you say I want
+to fold a butterfly,
+
+364
+00:16:46,412 --> 00:16:48,120
+you put the butterfly
+into the algorithm,
+
+365
+00:16:48,120 --> 00:16:50,680
+out come your design
+for folding a butterfly.
+
+366
+00:16:50,680 --> 00:16:57,370
+That's the ideal picture when
+you get a universality result.
+
+367
+00:16:57,370 --> 00:17:00,000
+The next best thing
+you could hope for
+
+368
+00:17:00,000 --> 00:17:02,900
+is a sort of decision
+result, which
+
+369
+00:17:02,900 --> 00:17:06,735
+is that there's a fast
+algorithm that will tell you
+
+370
+00:17:06,735 --> 00:17:07,985
+whether something is foldable.
+
+371
+00:17:07,985 --> 00:17:18,180
+
+
+372
+00:17:18,180 --> 00:17:20,260
+So we say it
+decides foldability.
+
+373
+00:17:20,260 --> 00:17:24,266
+
+
+374
+00:17:24,266 --> 00:17:25,390
+So you give it a butterfly.
+
+375
+00:17:25,390 --> 00:17:27,270
+It says, oh, that's impossible.
+
+376
+00:17:27,270 --> 00:17:28,070
+That's not true.
+
+377
+00:17:28,070 --> 00:17:30,024
+But you could imagine that.
+
+378
+00:17:30,024 --> 00:17:31,940
+Or maybe you give it a
+butterfly, it says yes.
+
+379
+00:17:31,940 --> 00:17:34,870
+You give it the
+skyline of New York,
+
+380
+00:17:34,870 --> 00:17:36,870
+and it says no, you
+can't fold that.
+
+381
+00:17:36,870 --> 00:17:37,630
+That's not true.
+
+382
+00:17:37,630 --> 00:17:42,432
+But if it's not the case
+that everything is foldable,
+
+383
+00:17:42,432 --> 00:17:44,640
+the next best thing is you
+could at least distinguish
+
+384
+00:17:44,640 --> 00:17:46,790
+which things are foldable
+from which things are not.
+
+385
+00:17:46,790 --> 00:17:48,498
+And then, of course,
+the worst thing that
+
+386
+00:17:48,498 --> 00:17:52,750
+could happen, in some sense,
+is you get a hardness results
+
+387
+00:17:52,750 --> 00:17:56,929
+which says, there's no good
+way to even distinguish
+
+388
+00:17:56,929 --> 00:17:58,740
+foldable things from
+unfoldable things.
+
+389
+00:17:58,740 --> 00:18:07,721
+
+
+390
+00:18:07,721 --> 00:18:09,179
+So I'm going to
+say computationally
+
+391
+00:18:09,179 --> 00:18:12,060
+intractable to mean generically
+that there's no good algorithm
+
+392
+00:18:12,060 --> 00:18:13,529
+to solve a problem.
+
+393
+00:18:13,529 --> 00:18:15,820
+We're going to be more formal
+about that in the future.
+
+394
+00:18:15,820 --> 00:18:21,260
+
+
+395
+00:18:21,260 --> 00:18:23,760
+Because different people
+have different backgrounds,
+
+396
+00:18:23,760 --> 00:18:25,510
+you may know about
+competition complexity.
+
+397
+00:18:25,510 --> 00:18:26,460
+Many of you don't.
+
+398
+00:18:26,460 --> 00:18:27,510
+That's cool.
+
+399
+00:18:27,510 --> 00:18:31,060
+We're going to talk
+about all that here.
+
+400
+00:18:31,060 --> 00:18:32,290
+All right.
+
+401
+00:18:32,290 --> 00:18:33,710
+That's the class in a nutshell.
+
+402
+00:18:33,710 --> 00:18:34,750
+Totally generic.
+
+403
+00:18:34,750 --> 00:18:36,930
+Any questions so far?
+
+404
+00:18:36,930 --> 00:18:37,730
+Probably not.
+
+405
+00:18:37,730 --> 00:18:40,400
+
+
+406
+00:18:40,400 --> 00:18:43,600
+I thought now I would tell you
+a little bit about the class
+
+407
+00:18:43,600 --> 00:18:46,020
+structure.
+
+408
+00:18:46,020 --> 00:18:49,440
+The main part of the
+class are these lectures,
+
+409
+00:18:49,440 --> 00:18:52,570
+and attendance is
+mandatory for classes,
+
+410
+00:18:52,570 --> 00:18:55,370
+because you're not going to
+learn it unless you come here.
+
+411
+00:18:55,370 --> 00:18:56,370
+You can have exceptions.
+
+412
+00:18:56,370 --> 00:18:58,870
+Just email me and
+watch the videos later.
+
+413
+00:18:58,870 --> 00:19:01,800
+That's one of the fun
+features of the videos,
+
+414
+00:19:01,800 --> 00:19:06,220
+although the videos are mainly
+to reach the world for fun.
+
+415
+00:19:06,220 --> 00:19:10,240
+There will be a few problem sets
+in this class, not too many.
+
+416
+00:19:10,240 --> 00:19:14,270
+And the other main thing that
+you turn in is the project.
+
+417
+00:19:14,270 --> 00:19:17,390
+So sort of a
+project-focused class.
+
+418
+00:19:17,390 --> 00:19:19,590
+You will hand in some write up.
+
+419
+00:19:19,590 --> 00:19:22,140
+You will give some presentation
+in the last few lectures
+
+420
+00:19:22,140 --> 00:19:24,140
+of class, if you're taking
+the class for credit.
+
+421
+00:19:24,140 --> 00:19:25,780
+If you're listening, you
+don't have to do this.
+
+422
+00:19:25,780 --> 00:19:26,520
+You can, if you want.
+
+423
+00:19:26,520 --> 00:19:27,686
+You can do the problem sets.
+
+424
+00:19:27,686 --> 00:19:29,010
+Some of them will be fun.
+
+425
+00:19:29,010 --> 00:19:31,330
+Hopefully all of
+them will be fun.
+
+426
+00:19:31,330 --> 00:19:35,190
+None of them will
+bee too painful.
+
+427
+00:19:35,190 --> 00:19:37,510
+But for people who are
+taking the class for credit,
+
+428
+00:19:37,510 --> 00:19:39,650
+you have to do a project
+and presentation.
+
+429
+00:19:39,650 --> 00:19:41,450
+The project could be
+about tons of things.
+
+430
+00:19:41,450 --> 00:19:43,080
+You could build a sculpture.
+
+431
+00:19:43,080 --> 00:19:45,760
+You could come up with a cool
+virtual design of something
+
+432
+00:19:45,760 --> 00:19:48,210
+amazing that somehow
+relates to folding.
+
+433
+00:19:48,210 --> 00:19:50,942
+It doesn't have to be direct.
+
+434
+00:19:50,942 --> 00:19:53,150
+If you're a coder, you could
+implement some algorithm
+
+435
+00:19:53,150 --> 00:19:57,880
+we talk about, or make a
+beautiful image or animation
+
+436
+00:19:57,880 --> 00:19:59,720
+or applet or something.
+
+437
+00:19:59,720 --> 00:20:03,790
+If you're more theory, you
+could solve an open problem.
+
+438
+00:20:03,790 --> 00:20:05,170
+Obviously that's a big win.
+
+439
+00:20:05,170 --> 00:20:08,090
+But even trying to solve
+an open problem is fine.
+
+440
+00:20:08,090 --> 00:20:11,350
+You can talk about how
+you failed to solve it,
+
+441
+00:20:11,350 --> 00:20:14,302
+in the unhappy
+case that happens.
+
+442
+00:20:14,302 --> 00:20:16,010
+But if you want to
+solve an open problem,
+
+443
+00:20:16,010 --> 00:20:17,820
+I would encourage you to come
+to the open problem session,
+
+444
+00:20:17,820 --> 00:20:19,450
+so we can all solve it together.
+
+445
+00:20:19,450 --> 00:20:21,220
+Then you can have
+a joint project
+
+446
+00:20:21,220 --> 00:20:25,550
+on what we do, but it's totally
+unpredictable, of course.
+
+447
+00:20:25,550 --> 00:20:27,510
+Even posing an open
+problem in this field
+
+448
+00:20:27,510 --> 00:20:28,610
+is pretty interesting.
+
+449
+00:20:28,610 --> 00:20:30,370
+I know a lot of the
+hard open problems.
+
+450
+00:20:30,370 --> 00:20:34,640
+I would like to find more of
+them, more tractable ones.
+
+451
+00:20:34,640 --> 00:20:36,910
+And so if you have some
+idea, especially related
+
+452
+00:20:36,910 --> 00:20:39,720
+to some application field
+that you know a lot about,
+
+453
+00:20:39,720 --> 00:20:41,560
+it'd be cool to try
+to extract, what
+
+454
+00:20:41,560 --> 00:20:46,110
+is the mathematical problem
+in a lot of these fields?
+
+455
+00:20:46,110 --> 00:20:47,400
+Or you can write a survey.
+
+456
+00:20:47,400 --> 00:20:50,047
+That's a typical project.
+
+457
+00:20:50,047 --> 00:20:52,630
+You should avoid overlap with--
+I don't actually have it here,
+
+458
+00:20:52,630 --> 00:20:54,300
+but the textbook
+for this class--
+
+459
+00:20:54,300 --> 00:20:57,150
+you can imagine it being
+here-- is Geometric Folding
+
+460
+00:20:57,150 --> 00:20:59,110
+Algorithms.
+
+461
+00:20:59,110 --> 00:20:59,890
+Here it is.
+
+462
+00:20:59,890 --> 00:21:00,760
+Thank you, Jason.
+
+463
+00:21:00,760 --> 00:21:01,260
+That's good.
+
+464
+00:21:01,260 --> 00:21:02,350
+I ran out of copies.
+
+465
+00:21:02,350 --> 00:21:04,091
+Now I have one.
+
+466
+00:21:04,091 --> 00:21:05,810
+No, I'll give it back.
+
+467
+00:21:05,810 --> 00:21:09,196
+So this is by me and Joe
+O'Rourke at Smith College.
+
+468
+00:21:09,221 --> 00:21:11,074
+It is--
+
+469
+00:21:11,099 --> 00:21:14,229
+I'll talk about availability
+of this book offline.
+
+470
+00:21:14,254 --> 00:21:17,146
+When we're not
+on the Internet.
+
+471
+00:21:17,171 --> 00:21:22,319
+But you can buy it.
+You're supposed to buy it.
+
+472
+00:21:22,344 --> 00:21:27,171
+Alright.
+Let's see.
+
+473
+00:21:27,196 --> 00:21:28,695
+Any questions about
+class structure?
+
+474
+00:21:28,695 --> 00:21:31,250
+
+
+475
+00:21:31,250 --> 00:21:31,810
+Yeah.
+
+476
+00:21:31,810 --> 00:21:34,490
+AUDIENCE: Can projects be
+individual? [INAUDIBLE]
+
+477
+00:21:34,490 --> 00:21:36,645
+PROFESSOR: Projects
+can be with groups.
+
+478
+00:21:36,645 --> 00:21:38,450
+I forget whether the
+website has a limit
+
+479
+00:21:38,450 --> 00:21:39,450
+on the number of people.
+
+480
+00:21:39,450 --> 00:21:40,949
+I don't think so.
+
+481
+00:21:40,949 --> 00:21:43,240
+But at some point you'll have
+to do a project proposal.
+
+482
+00:21:43,240 --> 00:21:44,710
+I should mention that also.
+
+483
+00:21:44,710 --> 00:21:48,050
+And then I will vet
+your project group.
+
+484
+00:21:48,050 --> 00:21:49,547
+But I think anything's fine.
+
+485
+00:21:49,547 --> 00:21:51,130
+Just when you have
+more people, you're
+
+486
+00:21:51,130 --> 00:21:53,820
+expected to do a
+little more, naturally.
+
+487
+00:21:53,820 --> 00:21:55,350
+Other questions?
+
+488
+00:21:55,350 --> 00:21:55,980
+Yeah.
+
+489
+00:21:55,980 --> 00:21:57,560
+I love collaboration.
+
+490
+00:21:57,560 --> 00:22:00,040
+I think I've never written
+a paper without a co-author.
+
+491
+00:22:00,040 --> 00:22:01,460
+It wasn't a survey paper.
+
+492
+00:22:01,460 --> 00:22:03,230
+So collaboration's good.
+
+493
+00:22:03,230 --> 00:22:05,870
+
+
+494
+00:22:05,870 --> 00:22:07,021
+All right.
+
+495
+00:22:07,021 --> 00:22:07,520
+Doing well.
+
+496
+00:22:07,520 --> 00:22:10,960
+
+
+497
+00:22:10,960 --> 00:22:14,170
+So the next thing I
+want to do is actually
+
+498
+00:22:14,170 --> 00:22:16,490
+dive into actual content.
+
+499
+00:22:16,490 --> 00:22:18,112
+This was totally generic.
+
+500
+00:22:18,112 --> 00:22:19,070
+And to me, it's useful.
+
+501
+00:22:19,070 --> 00:22:20,737
+But maybe to you,
+it's less useful.
+
+502
+00:22:20,737 --> 00:22:22,070
+This is sort of an organization.
+
+503
+00:22:22,070 --> 00:22:23,980
+As we go through,
+everything you'll see
+
+504
+00:22:23,980 --> 00:22:26,869
+will fit almost always into
+one of these three categories.
+
+505
+00:22:26,869 --> 00:22:29,160
+The question will fit into
+one of these two categories,
+
+506
+00:22:29,160 --> 00:22:31,690
+and the answer will fit into
+one of these three categories.
+
+507
+00:22:31,690 --> 00:22:34,760
+Now let's see what some of
+those actual problems, questions
+
+508
+00:22:34,760 --> 00:22:36,090
+and answers, are.
+
+509
+00:22:36,090 --> 00:22:37,700
+That's the fun part.
+
+510
+00:22:37,700 --> 00:22:39,920
+There's so many
+cool results here,
+
+511
+00:22:39,920 --> 00:22:41,520
+and so many cool open problems.
+
+512
+00:22:41,520 --> 00:22:46,630
+I thought I'd tell you a bunch
+of the big open problems, too.
+
+513
+00:22:46,630 --> 00:22:49,890
+So in today's class, I'm
+going to go in order.
+
+514
+00:22:49,890 --> 00:22:52,360
+We're going to start with
+linkages, and then paper,
+
+515
+00:22:52,360 --> 00:22:55,220
+and then polyhedra.
+
+516
+00:22:55,220 --> 00:23:05,390
+And I'm going to start with
+linkages allowing intersection.
+
+517
+00:23:05,390 --> 00:23:09,230
+
+
+518
+00:23:09,230 --> 00:23:13,650
+So magically, bars of the
+linkage can overlap each other.
+
+519
+00:23:13,650 --> 00:23:16,020
+And then later I'll
+talk about linkages,
+
+520
+00:23:16,020 --> 00:23:18,140
+which is most interesting
+in two dimensions,
+
+521
+00:23:18,140 --> 00:23:20,473
+because you can actually build
+them in three dimensions.
+
+522
+00:23:20,473 --> 00:23:24,810
+And then we'll go to linkages
+that do not have intersection.
+
+523
+00:23:24,810 --> 00:23:30,550
+So an early
+motivation here where
+
+524
+00:23:30,550 --> 00:23:32,810
+a lot of this linkage folding
+came from originally--
+
+525
+00:23:32,810 --> 00:23:41,320
+this is the 17, 1800s-- is
+converting linear motion
+
+526
+00:23:41,320 --> 00:23:42,400
+into circular motion.
+
+527
+00:23:42,400 --> 00:23:47,390
+
+
+528
+00:23:47,390 --> 00:23:51,380
+Actually, it's really--
+yeah, get it right.
+
+529
+00:23:51,380 --> 00:23:53,605
+Linear motion to
+circular motion.
+
+530
+00:23:53,605 --> 00:23:56,724
+
+
+531
+00:23:56,724 --> 00:23:58,640
+I don't know what order
+to cover these things.
+
+532
+00:23:58,640 --> 00:24:00,850
+I'll show you a slide.
+
+533
+00:24:00,850 --> 00:24:04,230
+My rules are essentially
+no words on any slide.
+
+534
+00:24:04,230 --> 00:24:06,430
+This is just for
+pretty pictures,
+
+535
+00:24:06,430 --> 00:24:08,350
+and I'll write
+stuff on the board.
+
+536
+00:24:08,350 --> 00:24:10,770
+There's this fun book called
+How to Draw a Straight
+
+537
+00:24:10,770 --> 00:24:15,720
+Line by Kempe in 1877, which
+is all about this problem.
+
+538
+00:24:15,720 --> 00:24:18,040
+How do I turn a
+circular crank and make
+
+539
+00:24:18,040 --> 00:24:20,610
+a straight line come
+out as a result?
+
+540
+00:24:20,610 --> 00:24:23,890
+And the motivation for this
+problem is steam engines.
+
+541
+00:24:23,890 --> 00:24:26,380
+You have a steam piston,
+which is moving something
+
+542
+00:24:26,380 --> 00:24:28,080
+up and down along
+a straight line.
+
+543
+00:24:28,080 --> 00:24:31,600
+And maybe you're building
+a locomotive train,
+
+544
+00:24:31,600 --> 00:24:35,709
+and you want to turn
+a wheel in a circle,
+
+545
+00:24:35,709 --> 00:24:36,750
+because wheels are round.
+
+546
+00:24:36,750 --> 00:24:38,460
+So how do you convert
+this linear motion
+
+547
+00:24:38,460 --> 00:24:40,050
+into a circular motion?
+
+548
+00:24:40,050 --> 00:24:45,330
+That is How to Draw a Straight
+Line, affectionately titled.
+
+549
+00:24:45,330 --> 00:24:49,060
+But you can see that one of
+the earliest linkages for this
+
+550
+00:24:49,060 --> 00:24:52,370
+is called the Watt
+parallel motion.
+
+551
+00:24:52,370 --> 00:24:55,090
+And we have a little
+animation here.
+
+552
+00:24:55,090 --> 00:24:58,270
+So the idea is this vertex in
+the top left is pinned down.
+
+553
+00:24:58,270 --> 00:25:00,850
+This one in the bottom
+right is pinned down.
+
+554
+00:25:00,850 --> 00:25:04,980
+And then, I think if I move
+this around the circle,
+
+555
+00:25:04,980 --> 00:25:10,150
+the green guy moves
+along that figure eight.
+
+556
+00:25:10,150 --> 00:25:13,050
+And there's a limit
+to how far it can go.
+
+557
+00:25:13,050 --> 00:25:15,830
+So and if you draw it
+right, the figure eight
+
+558
+00:25:15,830 --> 00:25:17,980
+is almost a straight line.
+
+559
+00:25:17,980 --> 00:25:21,230
+So that was mathematics
+back in the day.
+
+560
+00:25:21,230 --> 00:25:23,382
+No, no one thought
+that that was perfect,
+
+561
+00:25:23,382 --> 00:25:24,340
+but it was pretty good.
+
+562
+00:25:24,340 --> 00:25:26,880
+And that actually led Watt--
+you may have heard of Watt.
+
+563
+00:25:26,880 --> 00:25:28,540
+He's a unit.
+
+564
+00:25:28,540 --> 00:25:31,860
+And he was very proud
+of this invention.
+
+565
+00:25:31,860 --> 00:25:35,410
+And he made tons of innovations
+in the steam engine world,
+
+566
+00:25:35,410 --> 00:25:37,260
+and this was his favorite.
+
+567
+00:25:37,260 --> 00:25:39,200
+And, I mean, it changed things.
+
+568
+00:25:39,200 --> 00:25:41,760
+But later on-- I mean this
+is like 100 years later,
+
+569
+00:25:41,760 --> 00:25:44,950
+1864 versus 1764.
+
+570
+00:25:44,950 --> 00:25:46,900
+Exactly 100 years later.
+
+571
+00:25:46,900 --> 00:25:51,210
+Peaucellier a French guy
+in the army, I think,
+
+572
+00:25:51,210 --> 00:25:52,460
+came up with this linkage.
+
+573
+00:25:52,460 --> 00:25:55,530
+So again, you have two
+pinned vertices here.
+
+574
+00:25:55,530 --> 00:25:57,220
+This one's moving
+around a circle.
+
+575
+00:25:57,220 --> 00:25:59,230
+So you just turn
+the crank, and look.
+
+576
+00:25:59,230 --> 00:26:02,440
+This guy moves
+along that red line.
+
+577
+00:26:02,440 --> 00:26:03,980
+Perfect.
+
+578
+00:26:03,980 --> 00:26:04,480
+Very cool.
+
+579
+00:26:04,480 --> 00:26:08,600
+Again it has a limit
+how far you can go.
+
+580
+00:26:08,600 --> 00:26:10,110
+But it's pretty awesome.
+
+581
+00:26:10,110 --> 00:26:12,195
+I mean you could play
+with this forever.
+
+582
+00:26:12,195 --> 00:26:15,920
+
+
+583
+00:26:15,920 --> 00:26:16,667
+I won't bore you.
+
+584
+00:26:16,667 --> 00:26:18,375
+There's this other
+guy you may have heard
+
+585
+00:26:18,375 --> 00:26:20,790
+of, Kelvin, Lord Kelvin.
+
+586
+00:26:20,790 --> 00:26:22,859
+Another unit.
+
+587
+00:26:22,859 --> 00:26:24,650
+There's a story about
+him playing with one.
+
+588
+00:26:24,650 --> 00:26:26,399
+He wouldn't want to
+give it up, because he
+
+589
+00:26:26,399 --> 00:26:29,370
+was having too much fun just
+pushing it back and forth.
+
+590
+00:26:29,370 --> 00:26:33,494
+It's like, wow, a straight
+line out of a circle.
+
+591
+00:26:33,494 --> 00:26:34,410
+So that's pretty cool.
+
+592
+00:26:34,410 --> 00:26:36,660
+Making straight lines out
+of circles is pretty neat.
+
+593
+00:26:36,660 --> 00:26:40,126
+In fact, you could think,
+well, what else could I make?
+
+594
+00:26:40,126 --> 00:26:41,250
+I can make a straight line.
+
+595
+00:26:41,250 --> 00:26:42,083
+That's kind of nice.
+
+596
+00:26:42,083 --> 00:26:46,740
+But could I make, I don't
+know, some other curve?
+
+597
+00:26:46,740 --> 00:26:48,870
+I mean a straight line is
+a special kind of curve.
+
+598
+00:26:48,870 --> 00:26:53,520
+Maybe I could make this curve.
+
+599
+00:26:53,520 --> 00:26:54,493
+That's a nice curve.
+
+600
+00:26:54,493 --> 00:26:57,170
+
+
+601
+00:26:57,170 --> 00:26:59,480
+In general, there's
+a universality result
+
+602
+00:26:59,480 --> 00:27:02,490
+which says there's a
+linkage to sign your name.
+
+603
+00:27:02,490 --> 00:27:04,924
+
+
+604
+00:27:04,924 --> 00:27:05,965
+That's the cute phrasing.
+
+605
+00:27:05,965 --> 00:27:09,340
+
+
+606
+00:27:09,340 --> 00:27:11,950
+So it's a
+two-dimensional linkage.
+
+607
+00:27:11,950 --> 00:27:19,610
+You turn one circular crank,
+and it signs your name.
+
+608
+00:27:19,610 --> 00:27:22,050
+The mathematical
+version is that you
+
+609
+00:27:22,050 --> 00:27:27,230
+trace a piecewise
+polynomial curve.
+
+610
+00:27:27,230 --> 00:27:30,359
+Or if you're an architect
+or graphics person,
+
+611
+00:27:30,359 --> 00:27:31,150
+call this a spline.
+
+612
+00:27:31,150 --> 00:27:37,440
+
+
+613
+00:27:37,440 --> 00:27:38,980
+Pick your favorite word.
+
+614
+00:27:38,980 --> 00:27:42,210
+You can make it all
+with one linkage.
+
+615
+00:27:42,210 --> 00:27:45,580
+It's pretty crazy, and
+not super practical.
+
+616
+00:27:45,580 --> 00:27:50,470
+Building this would probably
+require thousands of bars.
+
+617
+00:27:50,470 --> 00:27:53,070
+But hey, who's counting?
+
+618
+00:27:53,070 --> 00:27:55,021
+At least you can get
+a universality result.
+
+619
+00:27:55,021 --> 00:27:56,770
+This is actually
+something that goes back,
+
+620
+00:27:56,770 --> 00:27:59,010
+in particular, to the
+first time this class was
+
+621
+00:27:59,010 --> 00:28:01,320
+taught six years ago.
+
+622
+00:28:01,320 --> 00:28:03,020
+We found some better
+ways to do, so it's
+
+623
+00:28:03,020 --> 00:28:04,780
+known that it could be done.
+
+624
+00:28:04,780 --> 00:28:08,790
+And I'll talk about
+those ways later on.
+
+625
+00:28:08,790 --> 00:28:09,720
+Cool.
+
+626
+00:28:09,720 --> 00:28:10,910
+Open problem.
+
+627
+00:28:10,910 --> 00:28:14,364
+Not everything is known.
+
+628
+00:28:14,364 --> 00:28:16,530
+There's a lot of open
+problems here, but one of them
+
+629
+00:28:16,530 --> 00:28:18,950
+is, what if you
+forbid crossings?
+
+630
+00:28:18,950 --> 00:28:22,600
+
+
+631
+00:28:22,600 --> 00:28:26,140
+So these linkages, like the
+ones I've been showing here,
+
+632
+00:28:26,140 --> 00:28:28,660
+like the Peaucellier linkage,
+there's crossing bars.
+
+633
+00:28:28,660 --> 00:28:32,170
+And yeah, you could do that, but
+what if you forbid crossings?
+
+634
+00:28:32,170 --> 00:28:35,250
+It'd be really cool to sign
+your name with a linkage that
+
+635
+00:28:35,250 --> 00:28:36,950
+doesn't even cross itself.
+
+636
+00:28:36,950 --> 00:28:37,940
+That's totally open.
+
+637
+00:28:37,940 --> 00:28:40,200
+Getting any kind of
+result, positive result,
+
+638
+00:28:40,200 --> 00:28:41,890
+maybe not everything,
+but at least
+
+639
+00:28:41,890 --> 00:28:43,223
+getting some interesting things.
+
+640
+00:28:43,223 --> 00:28:45,690
+Even drawing a straight
+line, I think, is open.
+
+641
+00:28:45,690 --> 00:28:48,530
+Could be a fun
+problem to work on.
+
+642
+00:28:48,530 --> 00:28:49,140
+All right.
+
+643
+00:28:49,140 --> 00:28:51,870
+That's one.
+
+644
+00:28:51,870 --> 00:28:58,610
+Let's go over here.
+
+645
+00:28:58,610 --> 00:29:01,334
+
+
+646
+00:29:01,334 --> 00:29:03,500
+Let's see, is that the end
+of linkages, is crossing?
+
+647
+00:29:03,500 --> 00:29:04,130
+No.
+
+648
+00:29:04,130 --> 00:29:07,940
+Next question you might
+ask is-- so that's
+
+649
+00:29:07,940 --> 00:29:10,280
+sort of a design question.
+
+650
+00:29:10,280 --> 00:29:13,140
+I was given the goal, which
+was to make a straight line
+
+651
+00:29:13,140 --> 00:29:16,090
+or sign my name.
+
+652
+00:29:16,090 --> 00:29:18,280
+And I wanted to find
+the linkage that did it.
+
+653
+00:29:18,280 --> 00:29:21,710
+The other question, the
+foldability question,
+
+654
+00:29:21,710 --> 00:29:25,370
+one of them is rigidity, which
+is, does a linkage fold at all?
+
+655
+00:29:25,370 --> 00:29:29,410
+
+
+656
+00:29:29,410 --> 00:29:30,740
+I should say a given linkage.
+
+657
+00:29:30,740 --> 00:29:38,620
+
+
+658
+00:29:38,620 --> 00:29:42,790
+So for example, I'll
+give you three examples.
+
+659
+00:29:42,790 --> 00:29:43,630
+Test you out here.
+
+660
+00:29:43,630 --> 00:29:46,792
+
+
+661
+00:29:46,792 --> 00:29:48,500
+These are rigid bars
+connected by hinges.
+
+662
+00:29:48,500 --> 00:30:00,020
+
+
+663
+00:30:00,020 --> 00:30:02,950
+OK, rigid or flexible?
+
+664
+00:30:02,950 --> 00:30:04,380
+Rigid, I agree.
+
+665
+00:30:04,380 --> 00:30:06,071
+Rigid or flexible.
+
+666
+00:30:06,071 --> 00:30:06,570
+Rigid.
+
+667
+00:30:06,570 --> 00:30:08,360
+Any other answers?
+
+668
+00:30:08,360 --> 00:30:10,330
+Flexible, correct.
+
+669
+00:30:10,330 --> 00:30:11,650
+Both are correct.
+
+670
+00:30:11,650 --> 00:30:16,290
+In two dimensions, OK, it
+depends where you live?
+
+671
+00:30:16,290 --> 00:30:19,556
+In two dimensions, this
+is rigid no matter what,
+
+672
+00:30:19,556 --> 00:30:21,930
+in any dimension.
+
+673
+00:30:21,930 --> 00:30:26,870
+But in three dimensions, this is
+flexible and in two dimensions,
+
+674
+00:30:26,870 --> 00:30:28,732
+it's rigid.
+
+675
+00:30:28,732 --> 00:30:30,606
+In three dimensions,
+you can pick this guy up
+
+676
+00:30:30,606 --> 00:30:33,780
+and it spins around a circle,
+out of the board here.
+
+677
+00:30:33,780 --> 00:30:35,030
+Or you could pick this guy up.
+
+678
+00:30:35,030 --> 00:30:36,550
+It spins around a circle.
+
+679
+00:30:36,550 --> 00:30:38,485
+In two dimensions,
+though, it's rigid
+
+680
+00:30:38,485 --> 00:30:40,110
+because it's really
+just two triangles.
+
+681
+00:30:40,110 --> 00:30:41,920
+Triangles are rigid
+in two dimensions.
+
+682
+00:30:41,920 --> 00:30:43,110
+This is a tetrahedron.
+
+683
+00:30:43,110 --> 00:30:45,450
+Tetrahedra are rigid
+in three dimensions.
+
+684
+00:30:45,450 --> 00:30:47,010
+Rigid or flexible?
+
+685
+00:30:47,010 --> 00:30:48,659
+Everyone agrees.
+
+686
+00:30:48,659 --> 00:30:50,075
+In both dimensions
+it is flexible.
+
+687
+00:30:50,075 --> 00:30:52,680
+
+
+688
+00:30:52,680 --> 00:30:57,080
+OK, pretty intuitive
+for four vertices.
+
+689
+00:30:57,080 --> 00:30:59,232
+But you can ask the
+mathematical question
+
+690
+00:30:59,232 --> 00:31:00,190
+and give you a linkage.
+
+691
+00:31:00,190 --> 00:31:01,450
+Is it rigid in 2D?
+
+692
+00:31:01,450 --> 00:31:03,390
+Is it rigid in 3D?
+
+693
+00:31:03,390 --> 00:31:06,530
+And there are many
+versions of this question.
+
+694
+00:31:06,530 --> 00:31:11,510
+But the short version, a
+short answer, let's say,
+
+695
+00:31:11,510 --> 00:31:14,160
+is that distinguishing rigid
+from flexible two-dimensional
+
+696
+00:31:14,160 --> 00:31:15,694
+linkages is easy.
+
+697
+00:31:15,694 --> 00:31:17,110
+There's a good
+algorithm to do it.
+
+698
+00:31:17,110 --> 00:31:19,070
+It's very powerful, very useful.
+
+699
+00:31:19,070 --> 00:31:22,000
+In 3D, we have no idea.
+
+700
+00:31:22,000 --> 00:31:24,140
+Very open.
+
+701
+00:31:24,140 --> 00:31:24,640
+Tough.
+
+702
+00:31:24,640 --> 00:31:25,300
+Very tough problem.
+
+703
+00:31:25,300 --> 00:31:26,716
+A lot of people
+have been thinking
+
+704
+00:31:26,716 --> 00:31:30,220
+about that for decades.
+
+705
+00:31:30,220 --> 00:31:31,050
+So that's rigidity.
+
+706
+00:31:31,050 --> 00:31:34,840
+I'm just going to touch on
+lots of topics very briefly.
+
+707
+00:31:34,840 --> 00:31:48,220
+
+
+708
+00:31:48,220 --> 00:31:49,590
+All right.
+
+709
+00:31:49,590 --> 00:31:53,090
+Next we go on to, I
+guess, one and a half.
+
+710
+00:31:53,090 --> 00:31:58,340
+This is linkages
+forbidding intersection.
+
+711
+00:31:58,340 --> 00:32:10,436
+
+
+712
+00:32:10,436 --> 00:32:11,810
+And this is more
+interesting when
+
+713
+00:32:11,810 --> 00:32:13,684
+you're talking about 3D
+linkages like my arm.
+
+714
+00:32:13,684 --> 00:32:15,910
+I really don't want it
+to penetrate other bars.
+
+715
+00:32:15,910 --> 00:32:16,685
+It's not possible.
+
+716
+00:32:16,685 --> 00:32:20,000
+
+
+717
+00:32:20,000 --> 00:32:24,530
+And the first question you
+might ask in this world, which
+
+718
+00:32:24,530 --> 00:32:29,070
+I guess is a
+foldability question,
+
+719
+00:32:29,070 --> 00:32:31,400
+sort of a
+reconfiguration question,
+
+720
+00:32:31,400 --> 00:32:36,940
+let's say I want to fold
+my robotic arm from one
+
+721
+00:32:36,940 --> 00:32:39,230
+configuration that
+I know-- call it
+
+722
+00:32:39,230 --> 00:32:46,230
+configuration A-- to some
+other configuration, B.
+
+723
+00:32:46,230 --> 00:32:47,980
+When is that possible?
+
+724
+00:32:47,980 --> 00:32:49,090
+Can I go from A to B?
+
+725
+00:32:49,090 --> 00:32:53,054
+Can I go from some other A
+prime to some other B prime?
+
+726
+00:32:53,054 --> 00:32:54,220
+Sometimes yes, sometimes no.
+
+727
+00:32:54,220 --> 00:32:55,420
+It depends.
+
+728
+00:32:55,420 --> 00:32:57,150
+Sometimes it's not
+foldable at all,
+
+729
+00:32:57,150 --> 00:32:59,744
+even when you allow
+intersections.
+
+730
+00:32:59,744 --> 00:33:01,410
+So this is a pretty
+open-ended question.
+
+731
+00:33:01,410 --> 00:33:03,810
+In general, it's
+computationally intractable.
+
+732
+00:33:03,810 --> 00:33:06,264
+If I give you a linkage
+and two configurations,
+
+733
+00:33:06,264 --> 00:33:07,930
+to decide whether you
+can go from A to B
+
+734
+00:33:07,930 --> 00:33:10,280
+is, for the
+complexity theorists,
+
+735
+00:33:10,280 --> 00:33:11,550
+piece space complete.
+
+736
+00:33:11,550 --> 00:33:14,120
+Talk about what
+that means later.
+
+737
+00:33:14,120 --> 00:33:15,970
+Really, really hard
+is the short version.
+
+738
+00:33:15,970 --> 00:33:18,820
+
+
+739
+00:33:18,820 --> 00:33:25,350
+But a lot of the times you can
+think about special linkages.
+
+740
+00:33:25,350 --> 00:33:28,760
+There are a lot of
+interesting special cases.
+
+741
+00:33:28,760 --> 00:33:32,530
+
+
+742
+00:33:32,530 --> 00:33:36,650
+In particular, we like
+to think about chains
+
+743
+00:33:36,650 --> 00:33:37,530
+like I drew before.
+
+744
+00:33:37,530 --> 00:33:43,260
+
+
+745
+00:33:43,260 --> 00:33:46,090
+Also polygons.
+
+746
+00:33:46,090 --> 00:33:48,980
+That's a little
+messy, but imagine
+
+747
+00:33:48,980 --> 00:33:50,959
+those don't self-intersect.
+
+748
+00:33:50,959 --> 00:33:52,500
+So this is what I
+call an open chain,
+
+749
+00:33:52,500 --> 00:33:53,600
+and this is a closed chain.
+
+750
+00:33:53,600 --> 00:33:54,808
+In general, these are chains.
+
+751
+00:33:54,808 --> 00:33:57,130
+
+
+752
+00:33:57,130 --> 00:34:00,510
+And the other thing I might like
+to think about, in particular
+
+753
+00:34:00,510 --> 00:34:03,245
+because proteins look kind
+of like this, are trees.
+
+754
+00:34:03,245 --> 00:34:08,430
+
+
+755
+00:34:08,430 --> 00:34:11,780
+Trees are just linkages
+without any cycles in them.
+
+756
+00:34:11,780 --> 00:34:13,500
+So those are nice and simple.
+
+757
+00:34:13,500 --> 00:34:16,880
+Here I have no cycles,
+no cycles, one cycle.
+
+758
+00:34:16,880 --> 00:34:17,990
+Easier to think about.
+
+759
+00:34:17,990 --> 00:34:20,410
+And sometimes you actually
+get a universality result
+
+760
+00:34:20,410 --> 00:34:23,035
+that these linkages can
+fold from any configuration
+
+761
+00:34:23,035 --> 00:34:24,680
+to any configuration.
+
+762
+00:34:24,680 --> 00:34:26,440
+And that's especially cool.
+
+763
+00:34:26,440 --> 00:34:27,810
+Let me tell you about them.
+
+764
+00:34:27,810 --> 00:34:34,794
+
+
+765
+00:34:34,794 --> 00:34:35,710
+Where do I want to go?
+
+766
+00:34:35,710 --> 00:34:44,190
+
+
+767
+00:34:44,190 --> 00:34:47,240
+So it depends again what
+dimension you live in.
+
+768
+00:34:47,240 --> 00:34:49,967
+
+
+769
+00:34:49,967 --> 00:34:51,300
+I'm very flexible in this class.
+
+770
+00:34:51,300 --> 00:34:52,674
+You can live in
+any dimension you
+
+771
+00:34:52,674 --> 00:34:56,700
+want to, and even
+fictional ones.
+
+772
+00:34:56,700 --> 00:35:00,420
+And you can think about
+chains and trees, let's say.
+
+773
+00:35:00,420 --> 00:35:01,900
+You could go more
+general, but this
+
+774
+00:35:01,900 --> 00:35:04,020
+is where most things
+have been studied.
+
+775
+00:35:04,020 --> 00:35:08,060
+And the answer is,
+for chains in 2D
+
+776
+00:35:08,060 --> 00:35:10,320
+you get a universality result.
+
+777
+00:35:10,320 --> 00:35:12,830
+You can fold from
+anything into anything.
+
+778
+00:35:12,830 --> 00:35:17,075
+For trees in 2D, you don't.
+
+779
+00:35:17,075 --> 00:35:19,450
+There are some trees you can't
+get from one configuration
+
+780
+00:35:19,450 --> 00:35:20,910
+to another.
+
+781
+00:35:20,910 --> 00:35:21,989
+Which ones?
+
+782
+00:35:21,989 --> 00:35:22,680
+We don't know.
+
+783
+00:35:22,680 --> 00:35:26,089
+But at least you don't
+get a universality result.
+
+784
+00:35:26,089 --> 00:35:29,460
+In 3D chains you do not
+get a universality result.
+
+785
+00:35:29,460 --> 00:35:32,770
+And so also for trees,
+because that's even harder.
+
+786
+00:35:32,770 --> 00:35:36,339
+And for 4D, everything's easy.
+
+787
+00:35:36,339 --> 00:35:38,880
+Also in 5D, any
+higher dimension.
+
+788
+00:35:38,880 --> 00:35:46,500
+Because the intuition here,
+at least for this column,
+
+789
+00:35:46,500 --> 00:35:48,500
+is you think about tying knots.
+
+790
+00:35:48,500 --> 00:35:51,127
+I have a one-dimensional
+linkage here.
+
+791
+00:35:51,127 --> 00:35:52,710
+Think of it as a
+one-dimensional cord.
+
+792
+00:35:52,710 --> 00:35:54,290
+It's kind of a kinky cord.
+
+793
+00:35:54,290 --> 00:35:58,580
+It has kinks-- not the
+other kind of kinky.
+
+794
+00:35:58,580 --> 00:36:00,980
+And in two dimensions,
+if you draw
+
+795
+00:36:00,980 --> 00:36:04,004
+a non-self-intersecting
+loop, it's never knotted.
+
+796
+00:36:04,004 --> 00:36:05,670
+You can't draw a knot
+in two dimensions.
+
+797
+00:36:05,670 --> 00:36:07,140
+You can drawn a knot
+in three dimensions,
+
+798
+00:36:07,140 --> 00:36:09,670
+and you cannot draw a knot
+in four dimensions or higher.
+
+799
+00:36:09,670 --> 00:36:11,510
+You may not know that
+result, but it's true.
+
+800
+00:36:11,510 --> 00:36:15,280
+So it matches, but things are
+little tricky, even trees.
+
+801
+00:36:15,280 --> 00:36:17,530
+If this was a piece
+of string, you'd
+
+802
+00:36:17,530 --> 00:36:21,410
+be able to always fold this
+piece of a tree-shaped piece
+
+803
+00:36:21,410 --> 00:36:22,952
+of string into
+anything you wanted.
+
+804
+00:36:22,952 --> 00:36:24,410
+But it's a little
+more complicated.
+
+805
+00:36:24,410 --> 00:36:27,560
+
+
+806
+00:36:27,560 --> 00:36:32,790
+Let me show you a locked
+tree, I think, is next.
+
+807
+00:36:32,790 --> 00:36:35,050
+Yeah.
+
+808
+00:36:35,050 --> 00:36:39,190
+For a long time, these were
+the only known locked trees.
+
+809
+00:36:39,190 --> 00:36:43,187
+These are configurations of tree
+linkages that cannot reach some
+
+810
+00:36:43,187 --> 00:36:44,020
+other configuration.
+
+811
+00:36:44,020 --> 00:36:46,150
+In fact, they can
+barely move at all.
+
+812
+00:36:46,150 --> 00:36:48,650
+It's less obvious
+for some of them.
+
+813
+00:36:48,650 --> 00:36:51,670
+But say, in this
+top left one, you
+
+814
+00:36:51,670 --> 00:36:55,920
+have these little sort of petals
+tucked into their armpits,
+
+815
+00:36:55,920 --> 00:36:58,980
+I guess, and you can't
+get any of those arms
+
+816
+00:36:58,980 --> 00:37:01,899
+open unless you had a
+lot of room to open it.
+
+817
+00:37:01,899 --> 00:37:03,440
+And in order to make
+room, you'd have
+
+818
+00:37:03,440 --> 00:37:05,064
+to squeeze all the
+others really tight.
+
+819
+00:37:05,064 --> 00:37:07,360
+And if you draw this
+example tight enough,
+
+820
+00:37:07,360 --> 00:37:10,630
+also none of the arms can
+get compressed very much.
+
+821
+00:37:10,630 --> 00:37:12,560
+And so it's locked.
+
+822
+00:37:12,560 --> 00:37:15,130
+And this is one of the first
+examples actually discovered
+
+823
+00:37:15,130 --> 00:37:18,010
+in 1998, and publication
+took a while.
+
+824
+00:37:18,010 --> 00:37:20,432
+There are a few others,
+which you see here.
+
+825
+00:37:20,432 --> 00:37:21,890
+This one's kind of
+crazy because it
+
+826
+00:37:21,890 --> 00:37:26,000
+has only one vertex with
+three incident bars.
+
+827
+00:37:26,000 --> 00:37:27,500
+Everybody else is like a chain.
+
+828
+00:37:27,500 --> 00:37:30,080
+So it's like three chains
+joined together at that point,
+
+829
+00:37:30,080 --> 00:37:32,357
+and still it is locked.
+
+830
+00:37:32,357 --> 00:37:34,190
+And for a long time,
+these were the examples
+
+831
+00:37:34,190 --> 00:37:35,398
+we would always carry around.
+
+832
+00:37:35,398 --> 00:37:37,450
+These are the ones that
+appear in the textbook.
+
+833
+00:37:37,450 --> 00:37:39,330
+But I thought it would
+be neat to see, well,
+
+834
+00:37:39,330 --> 00:37:40,990
+are there any simpler examples?
+
+835
+00:37:40,990 --> 00:37:43,630
+And last time this class
+was offered three years ago,
+
+836
+00:37:43,630 --> 00:37:46,880
+we found what is believed
+to be the smallest
+
+837
+00:37:46,880 --> 00:37:49,880
+locked tree in existence.
+
+838
+00:37:49,880 --> 00:37:57,600
+It has 1, 2, 3, 4, 5, 6, 7,
+8 bars, if I counted right.
+
+839
+00:37:57,600 --> 00:38:00,920
+And it looks curved here,
+just to make it easier to see.
+
+840
+00:38:00,920 --> 00:38:02,830
+But, in fact, you could
+straighten these out
+
+841
+00:38:02,830 --> 00:38:04,050
+and it's still locked.
+
+842
+00:38:04,050 --> 00:38:08,500
+If you squeeze these
+little regions down,
+
+843
+00:38:08,500 --> 00:38:10,650
+they'd be very tight.
+
+844
+00:38:10,650 --> 00:38:13,390
+So that was with a bunch of
+students from this class.
+
+845
+00:38:13,390 --> 00:38:16,540
+
+
+846
+00:38:16,540 --> 00:38:17,660
+Cool.
+
+847
+00:38:17,660 --> 00:38:20,480
+So that gives you some
+idea of this answer.
+
+848
+00:38:20,480 --> 00:38:23,420
+
+
+849
+00:38:23,420 --> 00:38:30,030
+Maybe I'll draw you
+a picture for chains,
+
+850
+00:38:30,030 --> 00:38:31,155
+because it's really simple.
+
+851
+00:38:31,155 --> 00:38:37,140
+
+
+852
+00:38:37,140 --> 00:38:48,260
+OK, imagine tying a knot, but
+don't actually close the loops.
+
+853
+00:38:48,260 --> 00:38:50,790
+And make these end lengths
+really, really long.
+
+854
+00:38:50,790 --> 00:38:52,550
+We call this the
+knitting needles example,
+
+855
+00:38:52,550 --> 00:38:55,091
+because the intuition was you
+have two long knitting needles,
+
+856
+00:38:55,091 --> 00:38:58,370
+and then a very short cord
+connecting them in a knot.
+
+857
+00:38:58,370 --> 00:38:59,840
+Mathematically,
+this is not a knot,
+
+858
+00:38:59,840 --> 00:39:02,690
+because if it were string, you
+could untie it, no problem.
+
+859
+00:39:02,690 --> 00:39:06,230
+But because of these really
+long bars, you can't untie it.
+
+860
+00:39:06,230 --> 00:39:10,010
+So that's why 3D is hard.
+
+861
+00:39:10,010 --> 00:39:11,790
+Or one example of
+why 3D is hard.
+
+862
+00:39:11,790 --> 00:39:13,390
+It's pretty much
+our only example.
+
+863
+00:39:13,390 --> 00:39:16,360
+It is the smallest example, and
+we can prove things about it.
+
+864
+00:39:16,360 --> 00:39:20,910
+But there's a pretty
+fascinating open question here,
+
+865
+00:39:20,910 --> 00:39:26,980
+I would say, which
+is, characterize
+
+866
+00:39:26,980 --> 00:39:28,550
+these bad examples.
+
+867
+00:39:28,550 --> 00:39:38,164
+Which 3D chains and
+which 2D trees have
+
+868
+00:39:38,164 --> 00:39:39,080
+locked configurations?
+
+869
+00:39:39,080 --> 00:39:44,647
+
+
+870
+00:39:44,647 --> 00:39:46,980
+And all that means is that
+there are two configurations,
+
+871
+00:39:46,980 --> 00:39:51,120
+A and B, for which you
+cannot get from A to B.
+
+872
+00:39:51,120 --> 00:39:53,600
+So this is an example.
+
+873
+00:39:53,600 --> 00:39:55,090
+Those locked trees
+are an example.
+
+874
+00:39:55,090 --> 00:39:58,360
+It'd be really fascinating
+if you could do this.
+
+875
+00:39:58,360 --> 00:40:01,060
+I would guess that this is a
+hard problem, but I don't know.
+
+876
+00:40:01,060 --> 00:40:03,310
+It's hard to know
+whether it's hard.
+
+877
+00:40:03,310 --> 00:40:10,590
+
+
+878
+00:40:10,590 --> 00:40:13,470
+It'd be nice to understand
+3D chains in particular,
+
+879
+00:40:13,470 --> 00:40:16,930
+because they relate--
+and 3D trees.
+
+880
+00:40:16,930 --> 00:40:17,570
+Oh, sorry.
+
+881
+00:40:17,570 --> 00:40:18,660
+I have more animations.
+
+882
+00:40:18,660 --> 00:40:19,840
+I forgot.
+
+883
+00:40:19,840 --> 00:40:22,350
+Let me show you some pretty
+pictures for this result.
+
+884
+00:40:22,350 --> 00:40:27,060
+This was actually my PhD
+thesis, way back in 2001.
+
+885
+00:40:27,060 --> 00:40:30,210
+And this is a more
+modern algorithm
+
+886
+00:40:30,210 --> 00:40:31,940
+for solving this problem.
+
+887
+00:40:31,940 --> 00:40:33,744
+I give you some
+complicated polygon.
+
+888
+00:40:33,744 --> 00:40:35,410
+First thing you want
+to know is, can you
+
+889
+00:40:35,410 --> 00:40:37,691
+unfold it into a
+nice convex shape?
+
+890
+00:40:37,691 --> 00:40:40,190
+Once you get there, you could
+refolded into some other shape
+
+891
+00:40:40,190 --> 00:40:43,230
+by playing one of these
+motions backwards.
+
+892
+00:40:43,230 --> 00:40:45,850
+So that's how you
+unfold some teeth.
+
+893
+00:40:45,850 --> 00:40:48,500
+
+
+894
+00:40:48,500 --> 00:40:51,070
+Here's one of those tree
+examples, but doubled.
+
+895
+00:40:51,070 --> 00:40:53,660
+For a while, people thought
+that might still be locked,
+
+896
+00:40:53,660 --> 00:40:54,720
+but it's not.
+
+897
+00:40:54,720 --> 00:40:58,390
+Can do this crazy fivefold
+rotationally symmetric motion
+
+898
+00:40:58,390 --> 00:40:59,630
+to unfold that thing.
+
+899
+00:40:59,630 --> 00:41:01,859
+We're zooming in
+and out, so it looks
+
+900
+00:41:01,859 --> 00:41:03,650
+like things are getting
+bigger and smaller.
+
+901
+00:41:03,650 --> 00:41:06,108
+But in fact, each of these bars
+is staying the same length,
+
+902
+00:41:06,108 --> 00:41:08,756
+and they're never
+crossing each other.
+
+903
+00:41:08,756 --> 00:41:10,380
+Here's a much more
+complicated example.
+
+904
+00:41:10,380 --> 00:41:11,600
+This is the first
+algorithm that could
+
+905
+00:41:11,600 --> 00:41:13,120
+handle examples of this size.
+
+906
+00:41:13,120 --> 00:41:16,130
+It's pretty fast.
+
+907
+00:41:16,130 --> 00:41:21,090
+That's like it's
+going to come back.
+
+908
+00:41:21,090 --> 00:41:23,600
+You can do it.
+
+909
+00:41:23,600 --> 00:41:26,330
+It's like a spider.
+
+910
+00:41:26,330 --> 00:41:28,090
+Spooky.
+
+911
+00:41:28,090 --> 00:41:30,835
+I think it has 500
+vertices, and it probably
+
+912
+00:41:30,835 --> 00:41:32,210
+took a couple
+minutes to compute.
+
+913
+00:41:32,210 --> 00:41:33,792
+I'm not computing it live here.
+
+914
+00:41:33,792 --> 00:41:35,250
+There's an applet
+on the web if you
+
+915
+00:41:35,250 --> 00:41:36,882
+want to pick your
+favorite polygon
+
+916
+00:41:36,882 --> 00:41:38,090
+and run this algorithm on it.
+
+917
+00:41:38,090 --> 00:41:41,730
+It doesn't make quite
+movies like in this style,
+
+918
+00:41:41,730 --> 00:41:46,482
+but it will show
+you how it unfolds.
+
+919
+00:41:46,482 --> 00:41:47,565
+We call this the tentacle.
+
+920
+00:41:47,565 --> 00:41:52,059
+
+
+921
+00:41:52,059 --> 00:41:54,350
+Yeah, so we'll talk about
+this algorithm, how it works.
+
+922
+00:41:54,350 --> 00:41:55,240
+There's a couple
+other algorithms
+
+923
+00:41:55,240 --> 00:41:56,281
+for solving this problem.
+
+924
+00:41:56,281 --> 00:41:57,930
+It's pretty cool,
+and you could imagine
+
+925
+00:41:57,930 --> 00:42:00,560
+using this for planning the
+motion of a robotic arm in two
+
+926
+00:42:00,560 --> 00:42:01,460
+dimensions.
+
+927
+00:42:01,460 --> 00:42:03,930
+But in three dimensions,
+things are a lot harder.
+
+928
+00:42:03,930 --> 00:42:06,440
+We lack good algorithms.
+
+929
+00:42:06,440 --> 00:42:08,474
+I would like to study
+four dimensions actually.
+
+930
+00:42:08,474 --> 00:42:10,140
+There's some pretty
+neat questions here,
+
+931
+00:42:10,140 --> 00:42:11,920
+but I'm not supposed
+to talk about that.
+
+932
+00:42:11,920 --> 00:42:13,160
+It's not on my list.
+
+933
+00:42:13,160 --> 00:42:17,040
+I've got to move quickly, but
+we're doing all right on time.
+
+934
+00:42:17,040 --> 00:42:19,890
+What I wanted to show
+you was a protein.
+
+935
+00:42:19,890 --> 00:42:22,750
+This is a particular
+enzyme protein
+
+936
+00:42:22,750 --> 00:42:27,840
+called hexokinase, whatever.
+
+937
+00:42:27,840 --> 00:42:29,130
+Embarrassing myself.
+
+938
+00:42:29,130 --> 00:42:31,090
+It's a particularly
+complicated one.
+
+939
+00:42:31,090 --> 00:42:34,530
+It is one of a few I could
+find a nice free image of.
+
+940
+00:42:34,530 --> 00:42:38,160
+But you can see closely,
+if you look closely here,
+
+941
+00:42:38,160 --> 00:42:39,460
+it's a linkage.
+
+942
+00:42:39,460 --> 00:42:41,430
+And this one actually
+has lots of cycles.
+
+943
+00:42:41,430 --> 00:42:44,850
+But the backbone of a
+protein is like a tree,
+
+944
+00:42:44,850 --> 00:42:47,740
+and so it fits into
+this kind of world.
+
+945
+00:42:47,740 --> 00:42:49,870
+Unfortunately it
+fits in this world
+
+946
+00:42:49,870 --> 00:42:52,621
+of three-dimensional trees,
+which are really hard to fold.
+
+947
+00:42:52,621 --> 00:42:54,370
+Or three-dimensional
+chains, if you really
+
+948
+00:42:54,370 --> 00:42:55,814
+just look at the backbone.
+
+949
+00:42:55,814 --> 00:42:57,980
+They're a little bit more
+complicated than the sorts
+
+950
+00:42:57,980 --> 00:42:59,521
+of linkages we're
+talking about here,
+
+951
+00:42:59,521 --> 00:43:02,650
+but it makes it even harder
+to fold things like this.
+
+952
+00:43:02,650 --> 00:43:04,940
+But there's something
+special about proteins
+
+953
+00:43:04,940 --> 00:43:07,020
+that makes them
+fold really well.
+
+954
+00:43:07,020 --> 00:43:10,630
+That enzyme over there is
+in every living organism
+
+955
+00:43:10,630 --> 00:43:14,410
+we have ever tested for the
+existence of that thing, which
+
+956
+00:43:14,410 --> 00:43:17,150
+I assume is everything.
+
+957
+00:43:17,150 --> 00:43:19,620
+And yet it's folding.
+
+958
+00:43:19,620 --> 00:43:22,030
+It's produced by this
+machine-- the Ribosome,
+
+959
+00:43:22,030 --> 00:43:25,090
+you probably know about it--
+in a sort of straight state,
+
+960
+00:43:25,090 --> 00:43:27,540
+and then it folds into
+this shape pretty reliably,
+
+961
+00:43:27,540 --> 00:43:31,684
+less than a second, usually
+like within nanoseconds.
+
+962
+00:43:31,684 --> 00:43:33,600
+So it's really hard to
+watch what's happening.
+
+963
+00:43:33,600 --> 00:43:35,590
+It's very hot and jiggly,
+so it's a little hard
+
+964
+00:43:35,590 --> 00:43:38,500
+to see what's actually
+going on in the real thing.
+
+965
+00:43:38,500 --> 00:43:42,390
+But somehow, these kinds
+of barriers to foldability
+
+966
+00:43:42,390 --> 00:43:43,540
+don't happen.
+
+967
+00:43:43,540 --> 00:43:47,530
+Maybe that's because evolution
+found the right things,
+
+968
+00:43:47,530 --> 00:43:52,560
+or maybe it's because
+protein chains don't really
+
+969
+00:43:52,560 --> 00:43:54,350
+look like this.
+
+970
+00:43:54,350 --> 00:43:57,100
+They don't have these super
+long bars and super short bars.
+
+971
+00:43:57,100 --> 00:43:59,690
+If you've ever played with a
+chemistry set, all of the bars
+
+972
+00:43:59,690 --> 00:44:02,634
+are within a factor of
+like 1.5 of each other.
+
+973
+00:44:02,634 --> 00:44:04,550
+So there's lots of cool
+mathematical questions
+
+974
+00:44:04,550 --> 00:44:05,930
+that come out of
+protein folding,
+
+975
+00:44:05,930 --> 00:44:07,870
+and we will talk
+about the ones I know.
+
+976
+00:44:07,870 --> 00:44:09,390
+I'd love to find more.
+
+977
+00:44:09,390 --> 00:44:11,150
+But the ones I know
+I will talk about.
+
+978
+00:44:11,150 --> 00:44:12,060
+And that's linkages.
+
+979
+00:44:12,060 --> 00:44:15,010
+Let me move on to paper,
+unless there are questions.
+
+980
+00:44:15,010 --> 00:44:17,725
+
+
+981
+00:44:17,725 --> 00:44:19,180
+All right.
+
+982
+00:44:19,180 --> 00:44:21,660
+Let's go over here.
+
+983
+00:44:21,660 --> 00:44:25,610
+So we've seen some universality
+results, some hardness results.
+
+984
+00:44:25,610 --> 00:44:26,992
+I didn't go into them.
+
+985
+00:44:26,992 --> 00:44:27,950
+Folding these linkages.
+
+986
+00:44:27,950 --> 00:44:32,730
+
+
+987
+00:44:32,730 --> 00:44:33,845
+Let's do that for paper.
+
+988
+00:44:33,845 --> 00:44:42,270
+
+
+989
+00:44:42,270 --> 00:44:43,770
+I think first up I
+have foldability.
+
+990
+00:44:43,770 --> 00:44:46,535
+
+
+991
+00:44:46,535 --> 00:44:47,910
+And then we'll
+talk about design.
+
+992
+00:44:47,910 --> 00:44:50,820
+
+
+993
+00:44:50,820 --> 00:44:55,060
+So there are lots of
+questions in both.
+
+994
+00:44:55,060 --> 00:44:57,440
+But for foldability, the
+sort of first question people
+
+995
+00:44:57,440 --> 00:45:00,840
+like to ask is, which
+crease patterns fold flat?
+
+996
+00:45:00,840 --> 00:45:10,720
+
+
+997
+00:45:10,720 --> 00:45:13,490
+So a crease pattern
+is just a graph
+
+998
+00:45:13,490 --> 00:45:14,590
+drawn on a piece of paper.
+
+999
+00:45:14,590 --> 00:45:17,320
+So you have some
+collection of lines,
+
+1000
+00:45:17,320 --> 00:45:20,340
+and I think that will fold flat.
+
+1001
+00:45:20,340 --> 00:45:22,840
+But I'm not going to try to
+draw something more complicated,
+
+1002
+00:45:22,840 --> 00:45:24,420
+but you could imagine doing it.
+
+1003
+00:45:24,420 --> 00:45:28,320
+
+
+1004
+00:45:28,320 --> 00:45:28,940
+I don't know.
+
+1005
+00:45:28,940 --> 00:45:31,100
+That probably is
+not flat foldable.
+
+1006
+00:45:31,100 --> 00:45:31,895
+It might be.
+
+1007
+00:45:31,895 --> 00:45:34,267
+It's close.
+
+1008
+00:45:34,267 --> 00:45:35,600
+But that's the sort of question.
+
+1009
+00:45:35,600 --> 00:45:37,480
+If you take some
+origami and unfold it,
+
+1010
+00:45:37,480 --> 00:45:39,810
+what kind of
+patterns do you get?
+
+1011
+00:45:39,810 --> 00:45:41,565
+Some flat origami,
+something that
+
+1012
+00:45:41,565 --> 00:45:43,330
+folds into two
+dimensions in the end.
+
+1013
+00:45:43,330 --> 00:45:45,460
+There's some really
+nice structure here.
+
+1014
+00:45:45,460 --> 00:45:48,510
+If I drew it right, this
+angle plus this angle
+
+1015
+00:45:48,510 --> 00:45:51,126
+should equal 180
+degrees, for example.
+
+1016
+00:45:51,126 --> 00:45:52,250
+And that's true everywhere.
+
+1017
+00:45:52,250 --> 00:45:54,610
+And there's all sorts
+of cool properties.
+
+1018
+00:45:54,610 --> 00:45:58,150
+But unfortunately,
+this is really hard.
+
+1019
+00:45:58,150 --> 00:46:00,962
+This is NP hard problem.
+
+1020
+00:46:00,962 --> 00:46:03,770
+You've probably at least
+heard of P versus NP.
+
+1021
+00:46:03,770 --> 00:46:05,610
+Again, I'll define it later.
+
+1022
+00:46:05,610 --> 00:46:08,450
+But it means probably
+there is no good algorithm
+
+1023
+00:46:08,450 --> 00:46:09,620
+to solve this problem.
+
+1024
+00:46:09,620 --> 00:46:11,630
+It's really hard
+to figure out which
+
+1025
+00:46:11,630 --> 00:46:13,125
+crease patterns fold flat.
+
+1026
+00:46:13,125 --> 00:46:16,290
+It's kind of annoying.
+
+1027
+00:46:16,290 --> 00:46:18,670
+One good news is
+that if you just
+
+1028
+00:46:18,670 --> 00:46:21,500
+have an example like the
+original thing I drew,
+
+1029
+00:46:21,500 --> 00:46:26,040
+which is like this-- so it
+has one vertex and a bunch
+
+1030
+00:46:26,040 --> 00:46:29,930
+of creases emanating out,
+that picture we understand.
+
+1031
+00:46:29,930 --> 00:46:35,800
+So it's easy for
+a single vertex.
+
+1032
+00:46:35,800 --> 00:46:39,710
+That may seem kind of trivial,
+but it's actually really useful
+
+1033
+00:46:39,710 --> 00:46:42,640
+because it lets you understand
+the local behavior around one
+
+1034
+00:46:42,640 --> 00:46:43,152
+vertex.
+
+1035
+00:46:43,152 --> 00:46:44,610
+If you check that
+for every vertex,
+
+1036
+00:46:44,610 --> 00:46:46,901
+you don't know that the whole
+thing folds, but at least
+
+1037
+00:46:46,901 --> 00:46:49,380
+you know it mostly
+folds, at least locally.
+
+1038
+00:46:49,380 --> 00:46:52,870
+And you can't tell whether
+it globally folds correctly,
+
+1039
+00:46:52,870 --> 00:46:54,990
+because that's NP hard.
+
+1040
+00:46:54,990 --> 00:46:58,274
+There are so many questions here
+like, what about two vertices?
+
+1041
+00:46:58,274 --> 00:46:59,190
+No one's studied that.
+
+1042
+00:46:59,190 --> 00:47:03,155
+I think it's polynomial,
+but well, it's
+
+1043
+00:47:03,155 --> 00:47:07,220
+certainly polynomial,
+but I think
+
+1044
+00:47:07,220 --> 00:47:08,620
+you could do it in linear time.
+
+1045
+00:47:08,620 --> 00:47:10,203
+Anyway, there's lots
+of open questions
+
+1046
+00:47:10,203 --> 00:47:13,170
+there I haven't
+even listed here.
+
+1047
+00:47:13,170 --> 00:47:16,440
+One of the bigger open
+questions is a particular kind
+
+1048
+00:47:16,440 --> 00:47:20,530
+of crease pattern, which you may
+have encountered in real life
+
+1049
+00:47:20,530 --> 00:47:22,892
+refolding your roadmaps.
+
+1050
+00:47:22,892 --> 00:47:24,980
+The saying goes, the
+easiest way to refold
+
+1051
+00:47:24,980 --> 00:47:27,290
+your road map is differently.
+
+1052
+00:47:27,290 --> 00:47:32,770
+So suppose you have your road
+map, and each of these creases
+
+1053
+00:47:32,770 --> 00:47:34,329
+is marked.
+
+1054
+00:47:34,329 --> 00:47:36,120
+I'm not going to mark
+all them because it's
+
+1055
+00:47:36,120 --> 00:47:38,070
+a little messy with
+black and white chalk.
+
+1056
+00:47:38,070 --> 00:47:40,270
+But some of them are marked
+mountain, some of them
+
+1057
+00:47:40,270 --> 00:47:45,930
+are marked valley, meaning
+you fold-- this is valley.
+
+1058
+00:47:45,930 --> 00:47:47,120
+This is mountain.
+
+1059
+00:47:47,120 --> 00:47:49,996
+So they just have a relative
+orientation to each other.
+
+1060
+00:47:49,996 --> 00:47:51,620
+Suppose you look
+carefully at your map.
+
+1061
+00:47:51,620 --> 00:47:54,330
+You can recover which
+way it was folded last,
+
+1062
+00:47:54,330 --> 00:47:55,420
+hopefully correctly.
+
+1063
+00:47:55,420 --> 00:47:58,830
+And then you want to find,
+does that thing fold flat?
+
+1064
+00:47:58,830 --> 00:48:00,870
+Sometimes it does,
+sometimes it doesn't.
+
+1065
+00:48:00,870 --> 00:48:04,700
+For two by n maps, we don't
+know whether we can even
+
+1066
+00:48:04,700 --> 00:48:06,530
+detect this with an
+efficient algorithm.
+
+1067
+00:48:06,530 --> 00:48:10,429
+Can I decide whether
+this thing folds flat
+
+1068
+00:48:10,429 --> 00:48:12,220
+using those creases
+and those orientations?
+
+1069
+00:48:12,220 --> 00:48:13,310
+For two by n, it's open.
+
+1070
+00:48:13,310 --> 00:48:15,310
+For one by n, it's easy.
+
+1071
+00:48:15,310 --> 00:48:16,970
+Obviously for bigger,
+it's also open.
+
+1072
+00:48:16,970 --> 00:48:18,500
+Two by n is the smallest.
+
+1073
+00:48:18,500 --> 00:48:20,510
+This is a really
+annoying problem.
+
+1074
+00:48:20,510 --> 00:48:21,710
+Worked on it many times.
+
+1075
+00:48:21,710 --> 00:48:24,200
+It's very difficult.
+
+1076
+00:48:24,200 --> 00:48:27,760
+All right, so that's a quick
+overview of foldability.
+
+1077
+00:48:27,760 --> 00:48:30,500
+It's hard, but there are a lot
+of interesting special cases
+
+1078
+00:48:30,500 --> 00:48:32,850
+where we might be
+able to solve it.
+
+1079
+00:48:32,850 --> 00:48:37,310
+
+
+1080
+00:48:37,310 --> 00:48:40,400
+Let's move on to design,
+which is probably
+
+1081
+00:48:40,400 --> 00:48:44,430
+where most of the action
+is in the origami world,
+
+1082
+00:48:44,430 --> 00:48:45,860
+in the mathematical
+origami world.
+
+1083
+00:48:45,860 --> 00:48:53,090
+
+
+1084
+00:48:53,090 --> 00:48:58,870
+So and there are
+tons of results,
+
+1085
+00:48:58,870 --> 00:49:02,290
+and I had a much
+longer list initially,
+
+1086
+00:49:02,290 --> 00:49:05,345
+but I trimmed just for
+brevity down to a few things.
+
+1087
+00:49:05,345 --> 00:49:12,035
+
+
+1088
+00:49:12,035 --> 00:49:14,230
+The central question--
+at least it's
+
+1089
+00:49:14,230 --> 00:49:19,340
+been considered so far-- in
+computational origami design
+
+1090
+00:49:19,340 --> 00:49:20,585
+is, what shapes can you make?
+
+1091
+00:49:20,585 --> 00:49:22,710
+You could imagine other
+properties than just shape,
+
+1092
+00:49:22,710 --> 00:49:24,850
+if you want stability
+in your folding,
+
+1093
+00:49:24,850 --> 00:49:27,730
+lots of practical things--
+not much thickness,
+
+1094
+00:49:27,730 --> 00:49:29,700
+not too many creases, whatever.
+
+1095
+00:49:29,700 --> 00:49:33,910
+But shape has sort of
+been the fun centerpiece.
+
+1096
+00:49:33,910 --> 00:49:40,150
+And there's an early result
+that says universally,
+
+1097
+00:49:40,150 --> 00:49:41,860
+you can make anything you want.
+
+1098
+00:49:41,860 --> 00:49:43,630
+And in the
+mathematical world, you
+
+1099
+00:49:43,630 --> 00:49:45,340
+might try to make a polygon.
+
+1100
+00:49:45,340 --> 00:49:48,350
+Try to make a
+silhouette or something.
+
+1101
+00:49:48,350 --> 00:49:52,730
+You could make a
+polyhedron in 3D.
+
+1102
+00:49:52,730 --> 00:49:56,960
+Maybe you want to wrap a box,
+so you want to fold a box,
+
+1103
+00:49:56,960 --> 00:50:00,580
+or you want to fold a
+3D model of a dragon.
+
+1104
+00:50:00,580 --> 00:50:02,490
+That's all possible.
+
+1105
+00:50:02,490 --> 00:50:05,910
+And for fun, you can even
+make any two-color pattern
+
+1106
+00:50:05,910 --> 00:50:08,690
+on either of those things.
+
+1107
+00:50:08,690 --> 00:50:12,540
+So I have a tiny example
+here, which is-- yeah,
+
+1108
+00:50:12,540 --> 00:50:16,270
+it's still alive-- a four
+by four checkerboard.
+
+1109
+00:50:16,270 --> 00:50:19,780
+And it's made from
+one square of paper.
+
+1110
+00:50:19,780 --> 00:50:23,130
+
+
+1111
+00:50:23,130 --> 00:50:26,700
+It's white on one side
+and red on the other.
+
+1112
+00:50:26,700 --> 00:50:29,579
+So you get some idea of
+making two-color patterns.
+
+1113
+00:50:29,579 --> 00:50:30,870
+This one's pretty easy to fold.
+
+1114
+00:50:30,870 --> 00:50:34,760
+It even folds itself almost.
+
+1115
+00:50:34,760 --> 00:50:35,430
+That's great.
+
+1116
+00:50:35,430 --> 00:50:38,112
+Usually when I give a
+class like to high school
+
+1117
+00:50:38,112 --> 00:50:40,570
+students or something, I say,
+could you refold this for me?
+
+1118
+00:50:40,570 --> 00:50:42,280
+And they're like, oh, no!
+
+1119
+00:50:42,280 --> 00:50:43,680
+But it actually does it itself.
+
+1120
+00:50:43,680 --> 00:50:45,210
+It's great.
+
+1121
+00:50:45,210 --> 00:50:47,300
+Like magic.
+
+1122
+00:50:47,300 --> 00:50:48,600
+So you could try that at home.
+
+1123
+00:50:48,600 --> 00:50:49,680
+Just take a square paper.
+
+1124
+00:50:49,680 --> 00:50:50,180
+It works.
+
+1125
+00:50:50,180 --> 00:50:54,840
+
+
+1126
+00:50:54,840 --> 00:50:57,240
+So this is great.
+
+1127
+00:50:57,240 --> 00:50:58,320
+Super general.
+
+1128
+00:50:58,320 --> 00:51:00,910
+This is something actually
+my dad and I proved
+
+1129
+00:51:00,910 --> 00:51:04,070
+with Joe Mitchell
+back in '99, I think.
+
+1130
+00:51:04,070 --> 00:51:05,970
+I don't remember exactly.
+
+1131
+00:51:05,970 --> 00:51:09,560
+So beginning of modern
+computational origami design.
+
+1132
+00:51:09,560 --> 00:51:11,920
+But the way that we do
+this, while algorithmic,
+
+1133
+00:51:11,920 --> 00:51:13,820
+is completely impractical.
+
+1134
+00:51:13,820 --> 00:51:15,805
+We'd never want to
+use the foldings that
+
+1135
+00:51:15,805 --> 00:51:18,620
+are designed by this algorithm,
+unless you're starting out
+
+1136
+00:51:18,620 --> 00:51:20,470
+with a big ticker tape of paper.
+
+1137
+00:51:20,470 --> 00:51:21,729
+Then it's a great method.
+
+1138
+00:51:21,729 --> 00:51:24,270
+But if you're starting with a
+square, the first thing it does
+
+1139
+00:51:24,270 --> 00:51:26,600
+is fold it down to a
+tiny little narrow strip,
+
+1140
+00:51:26,600 --> 00:51:28,020
+and then wraps the shape.
+
+1141
+00:51:28,020 --> 00:51:29,270
+And we'll see how that's done.
+
+1142
+00:51:29,270 --> 00:51:30,978
+It's interesting to
+do it mathematically,
+
+1143
+00:51:30,978 --> 00:51:33,430
+but it's not how you want
+to do it practically.
+
+1144
+00:51:33,430 --> 00:51:36,710
+Good news is-- that used to be
+sort of the end of the story.
+
+1145
+00:51:36,710 --> 00:51:40,420
+But now you can even do
+it pretty practically--
+
+1146
+00:51:40,420 --> 00:51:46,830
+practically is a
+relative term-- using
+
+1147
+00:51:46,830 --> 00:51:49,610
+something called Origamizer.
+
+1148
+00:51:49,610 --> 00:51:53,489
+And if you've seen the poster
+of this class, you've seen--
+
+1149
+00:51:53,489 --> 00:51:55,280
+and if I'm lucky, it's
+even the next slide,
+
+1150
+00:51:55,280 --> 00:52:00,180
+yes it is-- this rabbit--
+bunny, I should say.
+
+1151
+00:52:00,180 --> 00:52:01,350
+This is the Stanford bunny.
+
+1152
+00:52:01,350 --> 00:52:03,760
+The original Stanford
+bunny is in the top right.
+
+1153
+00:52:03,760 --> 00:52:05,287
+That's a classic model.
+
+1154
+00:52:05,287 --> 00:52:07,870
+Everybody in computer graphics
+does something with that bunny.
+
+1155
+00:52:07,870 --> 00:52:09,060
+It has a zillion triangles.
+
+1156
+00:52:09,060 --> 00:52:10,746
+I don't know offhand how many.
+
+1157
+00:52:10,746 --> 00:52:12,120
+It's been simplified
+here to make
+
+1158
+00:52:12,120 --> 00:52:17,396
+it feasible to fold to
+this mesh of triangles.
+
+1159
+00:52:17,396 --> 00:52:19,770
+So the input to the algorithm
+was this mesh of triangles.
+
+1160
+00:52:19,770 --> 00:52:22,070
+The output of the algorithm--
+and it's a real program,
+
+1161
+00:52:22,070 --> 00:52:24,600
+you can go and download
+it right now for free--
+
+1162
+00:52:24,600 --> 00:52:26,289
+is this crease pattern.
+
+1163
+00:52:26,289 --> 00:52:28,080
+Now it doesn't look
+like a square or paper,
+
+1164
+00:52:28,080 --> 00:52:29,746
+but if you start with
+a square of paper,
+
+1165
+00:52:29,746 --> 00:52:31,640
+you just fold away
+the excess stuff.
+
+1166
+00:52:31,640 --> 00:52:33,790
+You'll get to a piece
+of paper like this.
+
+1167
+00:52:33,790 --> 00:52:38,050
+And then you just fold along
+all those little creases there,
+
+1168
+00:52:38,050 --> 00:52:40,340
+and eight hours later
+you have this bunny.
+
+1169
+00:52:40,340 --> 00:52:42,730
+This is a real photograph
+of a folded bunny
+
+1170
+00:52:42,730 --> 00:52:45,070
+by Tomohiro Tachi, who
+designed this thing.
+
+1171
+00:52:45,070 --> 00:52:49,020
+He came up with the original
+algorithm and computer program.
+
+1172
+00:52:49,020 --> 00:52:50,600
+In the last few
+years, we've been
+
+1173
+00:52:50,600 --> 00:52:52,800
+proving this algorithm
+actually always works.
+
+1174
+00:52:52,800 --> 00:52:55,008
+We still don't know how to
+prove that it's efficient,
+
+1175
+00:52:55,008 --> 00:52:57,450
+or even what
+efficient should mean.
+
+1176
+00:52:57,450 --> 00:52:59,880
+But in practice it's super good.
+
+1177
+00:52:59,880 --> 00:53:01,640
+If you look closely,
+the white parts
+
+1178
+00:53:01,640 --> 00:53:02,760
+are the parts of
+the paper that you
+
+1179
+00:53:02,760 --> 00:53:04,176
+need to use in
+order to make this.
+
+1180
+00:53:04,176 --> 00:53:05,840
+They are the triangles
+of the surface.
+
+1181
+00:53:05,840 --> 00:53:07,660
+These grey regions
+are the excess.
+
+1182
+00:53:07,660 --> 00:53:08,950
+And it's pretty small.
+
+1183
+00:53:08,950 --> 00:53:12,540
+I don't know, maybe 50% of the
+area is used in a useful way
+
+1184
+00:53:12,540 --> 00:53:14,350
+here, which is a lot.
+
+1185
+00:53:14,350 --> 00:53:17,430
+Whereas this method
+over here would use
+
+1186
+00:53:17,430 --> 00:53:20,750
+like a one millionth
+of a percent
+
+1187
+00:53:20,750 --> 00:53:21,840
+of the paper or something.
+
+1188
+00:53:21,840 --> 00:53:22,945
+A very tiny amount.
+
+1189
+00:53:22,945 --> 00:53:24,362
+The Origamizer is
+super efficient.
+
+1190
+00:53:24,362 --> 00:53:26,570
+We don't know how to prove
+that it's super efficient,
+
+1191
+00:53:26,570 --> 00:53:28,360
+but at least we can
+prove that it works.
+
+1192
+00:53:28,360 --> 00:53:31,480
+It will make any 3D
+polyhedron you want.
+
+1193
+00:53:31,480 --> 00:53:34,520
+And in practice, it
+seems really good at it.
+
+1194
+00:53:34,520 --> 00:53:38,810
+Now it's a very different
+style from typical origami,
+
+1195
+00:53:38,810 --> 00:53:41,870
+so this has not yet hit the
+sculpture world, let's say.
+
+1196
+00:53:41,870 --> 00:53:44,695
+But I think it opens the door
+to a lot of new possibilities.
+
+1197
+00:53:44,695 --> 00:53:47,420
+
+
+1198
+00:53:47,420 --> 00:53:50,980
+Traditionally
+though-- traditionally
+
+1199
+00:53:50,980 --> 00:53:54,120
+before this Origamizer
+or in practice
+
+1200
+00:53:54,120 --> 00:53:57,070
+today, a much more
+commonly used approach
+
+1201
+00:53:57,070 --> 00:54:00,330
+to computational
+origami design is
+
+1202
+00:54:00,330 --> 00:54:02,982
+something called
+the tree method.
+
+1203
+00:54:02,982 --> 00:54:04,690
+I'm just going to call
+it TreeMaker here.
+
+1204
+00:54:04,690 --> 00:54:06,356
+TreeMaker's the name
+of the program that
+
+1205
+00:54:06,356 --> 00:54:10,800
+implements the tree method,
+and it's made by Robert Lang.
+
+1206
+00:54:10,800 --> 00:54:19,264
+And this is sort of making
+stick figures, which
+
+1207
+00:54:19,264 --> 00:54:20,180
+sounds a little silly.
+
+1208
+00:54:20,180 --> 00:54:25,350
+But TreeMaker or the
+tree method is powerful
+
+1209
+00:54:25,350 --> 00:54:31,600
+for if I want to make what's
+called an origami base, that
+
+1210
+00:54:31,600 --> 00:54:37,329
+has a lot of limbs in different
+places of different lengths--
+
+1211
+00:54:37,329 --> 00:54:39,120
+maybe you want to make
+something like that.
+
+1212
+00:54:39,120 --> 00:54:42,060
+I don't know.
+
+1213
+00:54:42,060 --> 00:54:44,480
+The typical origami base might
+look something like this.
+
+1214
+00:54:44,480 --> 00:54:45,820
+Maybe you want to make a lizard.
+
+1215
+00:54:45,820 --> 00:54:49,310
+It has a head, some forearms,
+some really big hind legs,
+
+1216
+00:54:49,310 --> 00:54:52,190
+a little tail, and some body.
+
+1217
+00:54:52,190 --> 00:54:58,370
+You can abstract
+this into a tree
+
+1218
+00:54:58,370 --> 00:55:00,690
+and then say, well can
+I fold a piece of paper
+
+1219
+00:55:00,690 --> 00:55:02,430
+into some shape
+whose projection is
+
+1220
+00:55:02,430 --> 00:55:05,580
+that tree, with all
+the right edge links?
+
+1221
+00:55:05,580 --> 00:55:06,650
+And the answer is yes.
+
+1222
+00:55:06,650 --> 00:55:08,570
+I mean, you can make
+anything, of course.
+
+1223
+00:55:08,570 --> 00:55:12,520
+But what TreeMaker tries to do
+is find the most efficient way
+
+1224
+00:55:12,520 --> 00:55:14,102
+to make that thing.
+
+1225
+00:55:14,102 --> 00:55:16,060
+Unfortunately, finding
+the most efficient way--
+
+1226
+00:55:16,060 --> 00:55:19,200
+like the smallest square
+paper, so the most paper
+
+1227
+00:55:19,200 --> 00:55:22,400
+usage possible to make
+something with that projection--
+
+1228
+00:55:22,400 --> 00:55:24,720
+finding that is NP complete.
+
+1229
+00:55:24,720 --> 00:55:27,810
+We just proved that this
+year with Robert Lang
+
+1230
+00:55:27,810 --> 00:55:29,520
+and Sandor Fekete.
+
+1231
+00:55:29,520 --> 00:55:32,350
+But there's a theory.
+
+1232
+00:55:32,350 --> 00:55:34,284
+There's a hard problem
+you have to solve,
+
+1233
+00:55:34,284 --> 00:55:35,700
+something related
+to disk packing.
+
+1234
+00:55:35,700 --> 00:55:37,750
+If you solve it, you
+find the best way.
+
+1235
+00:55:37,750 --> 00:55:40,560
+In practice, use some heuristics
+which are really good.
+
+1236
+00:55:40,560 --> 00:55:42,782
+And usually you
+find the optimal way
+
+1237
+00:55:42,782 --> 00:55:43,990
+to make a given stick figure.
+
+1238
+00:55:43,990 --> 00:55:47,620
+But for super complicated
+things, it may not be perfect.
+
+1239
+00:55:47,620 --> 00:55:51,810
+Now a lot of people use this
+method for designing origami.
+
+1240
+00:55:51,810 --> 00:55:57,050
+I have a slide of cool
+origami, just to show you.
+
+1241
+00:55:57,050 --> 00:55:58,850
+Not all of this uses
+the tree method.
+
+1242
+00:55:58,850 --> 00:56:02,460
+
+
+1243
+00:56:02,460 --> 00:56:04,460
+These three designs
+by Brian Chan,
+
+1244
+00:56:04,460 --> 00:56:08,530
+who was an MIT grad student,
+graduated last year--
+
+1245
+00:56:08,530 --> 00:56:11,540
+these are all designed
+partly using the tree method.
+
+1246
+00:56:11,540 --> 00:56:13,500
+I'm sure they're more
+complicated than that.
+
+1247
+00:56:13,500 --> 00:56:16,960
+But to get the initial structure
+of the arms in the right place,
+
+1248
+00:56:16,960 --> 00:56:19,406
+the legs in the right place,
+the head, body segments,
+
+1249
+00:56:19,406 --> 00:56:20,780
+fingers-- some of
+these guys have
+
+1250
+00:56:20,780 --> 00:56:26,120
+fingers-- all that stuff
+is done using tree theory,
+
+1251
+00:56:26,120 --> 00:56:28,890
+almost certainly not with
+TreeMaker, the program.
+
+1252
+00:56:28,890 --> 00:56:32,060
+Most origami designers do it by
+hand, in their head, or drawing
+
+1253
+00:56:32,060 --> 00:56:35,360
+pictures with a drawing
+program, to design out the base.
+
+1254
+00:56:35,360 --> 00:56:37,510
+Then they fold by
+hand everything.
+
+1255
+00:56:37,510 --> 00:56:41,170
+But still, the math is in there.
+
+1256
+00:56:41,170 --> 00:56:44,220
+These guys are not yet
+mathematically analyzed,
+
+1257
+00:56:44,220 --> 00:56:44,830
+let's say.
+
+1258
+00:56:44,830 --> 00:56:51,600
+They're experiments by
+[? Garn ?] and Joel Cooper.
+
+1259
+00:56:51,600 --> 00:56:55,842
+[? Garn ?] is a computer
+scientist slash mathematician,
+
+1260
+00:56:55,842 --> 00:56:58,050
+but he doesn't understand
+these yet, and sort of he's
+
+1261
+00:56:58,050 --> 00:56:59,070
+trying to figure it out.
+
+1262
+00:56:59,070 --> 00:57:00,960
+So there's a lot of
+interesting questions,
+
+1263
+00:57:00,960 --> 00:57:05,530
+and you get some really
+cool sculpture as a result,
+
+1264
+00:57:05,530 --> 00:57:07,460
+out of this world.
+
+1265
+00:57:07,460 --> 00:57:10,480
+So this is something
+we've also been working on
+
+1266
+00:57:10,480 --> 00:57:13,890
+with my dad and Robert Lang,
+proving that this actually
+
+1267
+00:57:13,890 --> 00:57:14,870
+works.
+
+1268
+00:57:14,870 --> 00:57:16,330
+It's been around
+for a long time,
+
+1269
+00:57:16,330 --> 00:57:19,041
+but it turns out to
+be really complicated
+
+1270
+00:57:19,041 --> 00:57:20,290
+to prove that it always works.
+
+1271
+00:57:20,290 --> 00:57:23,290
+But it looks like it
+does, so stay tuned.
+
+1272
+00:57:23,290 --> 00:57:25,816
+Some time we will
+publish that paper.
+
+1273
+00:57:25,816 --> 00:57:27,960
+It's still in process.
+
+1274
+00:57:27,960 --> 00:57:29,510
+All right.
+
+1275
+00:57:29,510 --> 00:57:31,817
+I have some more fun things.
+
+1276
+00:57:31,817 --> 00:57:33,150
+This is just a random selection.
+
+1277
+00:57:33,150 --> 00:57:36,090
+There's a ton of work here.
+
+1278
+00:57:36,090 --> 00:57:38,930
+One of my favorites-- this was
+my first result in this field--
+
+1279
+00:57:38,930 --> 00:57:41,980
+is the folding cut
+problem, theorem, whatever.
+
+1280
+00:57:41,980 --> 00:57:48,590
+So you start with a rectangle
+of paper, and you fold it flat.
+
+1281
+00:57:48,590 --> 00:57:50,160
+Now you take your
+scissors-- I know
+
+1282
+00:57:50,160 --> 00:57:53,230
+this is blasphemy
+for most origamists.
+
+1283
+00:57:53,230 --> 00:57:54,940
+But I'm not going to
+make a lot of cuts.
+
+1284
+00:57:54,940 --> 00:57:58,510
+I'm just going to make
+one complete straight cut.
+
+1285
+00:57:58,510 --> 00:58:02,020
+I get two pieces in this case,
+and then I unfold the pieces
+
+1286
+00:58:02,020 --> 00:58:05,220
+and see what I get.
+
+1287
+00:58:05,220 --> 00:58:08,640
+In this case I
+get a little swan.
+
+1288
+00:58:08,640 --> 00:58:11,420
+And the general theorem is you
+can make any polygon you want.
+
+1289
+00:58:11,420 --> 00:58:13,410
+In fact, you can
+make one cut and make
+
+1290
+00:58:13,410 --> 00:58:15,460
+any collection of
+polygons you want.
+
+1291
+00:58:15,460 --> 00:58:17,840
+So like on my website,
+you can make the MIT logo
+
+1292
+00:58:17,840 --> 00:58:21,240
+with all the little rectangles
+with one complete straight cut.
+
+1293
+00:58:21,240 --> 00:58:23,530
+And the outside
+shape will have holes
+
+1294
+00:58:23,530 --> 00:58:25,920
+exactly where you want them.
+
+1295
+00:58:25,920 --> 00:58:27,620
+And you can download
+this, too, if you
+
+1296
+00:58:27,620 --> 00:58:29,650
+want to impress
+all your friends,
+
+1297
+00:58:29,650 --> 00:58:32,730
+especially recommended
+for, like, kids.
+
+1298
+00:58:32,730 --> 00:58:33,977
+It's a good magic trick.
+
+1299
+00:58:33,977 --> 00:58:35,810
+In fact, Harry Houdini
+used to do this trick
+
+1300
+00:58:35,810 --> 00:58:38,210
+in the '20s before he
+was an escape artist.
+
+1301
+00:58:38,210 --> 00:58:39,680
+He did general magic.
+
+1302
+00:58:39,680 --> 00:58:40,340
+Not this trick.
+
+1303
+00:58:40,340 --> 00:58:41,870
+He made stars.
+
+1304
+00:58:41,870 --> 00:58:45,137
+And we thought about it, and we
+proved you could make anything.
+
+1305
+00:58:45,137 --> 00:58:45,720
+So that's fun.
+
+1306
+00:58:45,720 --> 00:58:47,420
+Another universality result.
+
+1307
+00:58:47,420 --> 00:58:48,494
+It's what got us started.
+
+1308
+00:58:48,494 --> 00:58:50,410
+And it relates to things
+like the tree theory,
+
+1309
+00:58:50,410 --> 00:58:54,060
+in fact, because what
+you're really solving here
+
+1310
+00:58:54,060 --> 00:58:58,220
+is, how do I take a polygon
+and-- if I fold this guy back
+
+1311
+00:58:58,220 --> 00:59:02,560
+up-- how do I make all
+the edges of that polygon
+
+1312
+00:59:02,560 --> 00:59:04,780
+lie along-- this
+guy's not very happy,
+
+1313
+00:59:04,780 --> 00:59:08,370
+get rid of that-- lie
+along a straight line.
+
+1314
+00:59:08,370 --> 00:59:10,829
+That actually turns out to be
+important for origami design.
+
+1315
+00:59:10,829 --> 00:59:12,453
+A lot of these things--
+an Origamizer--
+
+1316
+00:59:12,453 --> 00:59:13,630
+it's all over the place.
+
+1317
+00:59:13,630 --> 00:59:17,590
+And so this structure
+is helpful for solving
+
+1318
+00:59:17,590 --> 00:59:21,912
+sort of pure origami
+problems, not with cutting.
+
+1319
+00:59:21,912 --> 00:59:22,870
+So what else do I have?
+
+1320
+00:59:22,870 --> 00:59:26,160
+Curved creases.
+
+1321
+00:59:26,160 --> 00:59:29,760
+You may not know this,
+because most origami
+
+1322
+00:59:29,760 --> 00:59:31,040
+is straight creases.
+
+1323
+00:59:31,040 --> 00:59:33,640
+But if you take
+a piece of paper,
+
+1324
+00:59:33,640 --> 00:59:36,940
+you can put a curved
+crease into it.
+
+1325
+00:59:36,940 --> 00:59:40,630
+It's a little hard to do
+by hand, but there you go.
+
+1326
+00:59:40,630 --> 00:59:43,110
+Curved crease.
+
+1327
+00:59:43,110 --> 00:59:44,390
+Is that allowed?
+
+1328
+00:59:44,390 --> 00:59:47,080
+What can you make like that?
+
+1329
+00:59:47,080 --> 00:59:48,290
+It's not too well studied.
+
+1330
+00:59:48,290 --> 00:59:50,800
+Jeannine Mosely has done some
+of the curved crease stuff.
+
+1331
+00:59:50,800 --> 00:59:52,860
+Early stuff was done
+by David Huffman,
+
+1332
+00:59:52,860 --> 00:59:56,360
+you may know from Huffman codes
+in every cell phone, whatever.
+
+1333
+00:59:56,360 --> 00:59:59,900
+And by Ron Resch.
+
+1334
+00:59:59,900 --> 01:00:01,300
+That's wrong queuing.
+
+1335
+01:00:01,300 --> 01:00:03,167
+All right, I'm going
+to show that later.
+
+1336
+01:00:03,167 --> 01:00:05,000
+This are some of the
+things that we've made,
+
+1337
+01:00:05,000 --> 01:00:08,180
+this is my dad and I,
+out of curved creases.
+
+1338
+01:00:08,180 --> 01:00:12,390
+This is kind of a crazy-- it's
+like a circular piece of paper,
+
+1339
+01:00:12,390 --> 01:00:15,090
+but it goes around
+twice like a ramp.
+
+1340
+01:00:15,090 --> 01:00:17,930
+So you make two circles
+and then join the ends,
+
+1341
+01:00:17,930 --> 01:00:19,880
+and you pleat along
+concentric circles,
+
+1342
+01:00:19,880 --> 01:00:21,560
+alternating mountain and valley.
+
+1343
+01:00:21,560 --> 01:00:23,542
+And you change a few
+different parameters,
+
+1344
+01:00:23,542 --> 01:00:25,250
+and you get these
+three different shapes.
+
+1345
+01:00:25,250 --> 01:00:28,710
+These are in the permanent
+collection at MOMA in New York.
+
+1346
+01:00:28,710 --> 01:00:32,680
+So you can make some really
+cool sculpture out of this.
+
+1347
+01:00:32,680 --> 01:00:34,260
+This is a more
+recent piece we did.
+
+1348
+01:00:34,260 --> 01:00:40,166
+And this is taking just a
+regular circular band of paper
+
+1349
+01:00:40,166 --> 01:00:41,540
+with concentric
+circular creases,
+
+1350
+01:00:41,540 --> 01:00:47,130
+and then taking three of them
+and joining them together
+
+1351
+01:00:47,130 --> 01:00:49,020
+at a few points.
+
+1352
+01:00:49,020 --> 01:00:51,000
+And then you get
+some cool structures.
+
+1353
+01:00:51,000 --> 01:00:53,890
+These are interesting to us
+especially because the paper
+
+1354
+01:00:53,890 --> 01:00:55,460
+actually does fold itself.
+
+1355
+01:00:55,460 --> 01:00:57,120
+You put in these
+circular creases.
+
+1356
+01:00:57,120 --> 01:00:59,000
+You just squeeze
+a little, and it
+
+1357
+01:00:59,000 --> 01:01:01,425
+will make these
+shapes automatically.
+
+1358
+01:01:01,425 --> 01:01:03,830
+It's called
+self-folding origami.
+
+1359
+01:01:03,830 --> 01:01:05,740
+And in that spirit,
+I will show you
+
+1360
+01:01:05,740 --> 01:01:08,080
+a different kind of
+self-folding origami.
+
+1361
+01:01:08,080 --> 01:01:11,380
+I think I need to
+click this button.
+
+1362
+01:01:11,380 --> 01:01:17,280
+Which is approach to making
+paper that folds itself.
+
+1363
+01:01:17,280 --> 01:01:21,930
+This is a self-folding sheet.
+
+1364
+01:01:21,930 --> 01:01:24,290
+It's made of rigid panels
+connected by little rubber
+
+1365
+01:01:24,290 --> 01:01:28,640
+hinges, and there's little
+muscles, you could say,
+
+1366
+01:01:28,640 --> 01:01:31,780
+that are folding
+those creases shut.
+
+1367
+01:01:31,780 --> 01:01:34,390
+By turning on some
+electrical signal,
+
+1368
+01:01:34,390 --> 01:01:36,070
+that thing folds
+itself into a boat.
+
+1369
+01:01:36,070 --> 01:01:39,990
+That same sheet, you can send
+it a different electrical signal
+
+1370
+01:01:39,990 --> 01:01:43,050
+and it will just fold
+along these two creases.
+
+1371
+01:01:43,050 --> 01:01:45,760
+And then there's little
+magnets to hold it into place,
+
+1372
+01:01:45,760 --> 01:01:47,620
+so you can turn off
+that electricity now.
+
+1373
+01:01:47,620 --> 01:01:48,550
+No power.
+
+1374
+01:01:48,550 --> 01:01:51,240
+Then you send it a third signal,
+and it will fold those three
+
+1375
+01:01:51,240 --> 01:01:55,240
+creases, and you get
+a paper airplane.
+
+1376
+01:01:55,240 --> 01:01:58,170
+No origamist required.
+
+1377
+01:01:58,170 --> 01:02:03,189
+So the idea here, this is the
+programmable matter vision,
+
+1378
+01:02:03,189 --> 01:02:05,230
+where you could download
+hardware in the same way
+
+1379
+01:02:05,230 --> 01:02:06,470
+you could download software.
+
+1380
+01:02:06,470 --> 01:02:11,100
+You can make one sheet that
+has lots of panels in it,
+
+1381
+01:02:11,100 --> 01:02:13,239
+enough creases to make
+anything you want.
+
+1382
+01:02:13,239 --> 01:02:15,530
+And then you just push a
+button and some of the creases
+
+1383
+01:02:15,530 --> 01:02:16,010
+turn on.
+
+1384
+01:02:16,010 --> 01:02:17,740
+Then push a button and
+some other creases turn on,
+
+1385
+01:02:17,740 --> 01:02:19,740
+and it folds into some
+complicated origami
+
+1386
+01:02:19,740 --> 01:02:21,120
+all by itself.
+
+1387
+01:02:21,120 --> 01:02:23,050
+You could imagine making
+this building scale.
+
+1388
+01:02:23,050 --> 01:02:25,880
+You could imagine making it
+nano scale, some scale where
+
+1389
+01:02:25,880 --> 01:02:28,380
+an origamist can't
+do it, or you don't
+
+1390
+01:02:28,380 --> 01:02:30,180
+have an origamist
+to do it for you.
+
+1391
+01:02:30,180 --> 01:02:33,520
+This would be the
+self-refolding, transforming
+
+1392
+01:02:33,520 --> 01:02:35,730
+robot thing.
+
+1393
+01:02:35,730 --> 01:02:38,400
+To do it, though, we
+needed to prove new theory.
+
+1394
+01:02:38,400 --> 01:02:43,065
+And this is the world of, call
+it, universal hinge patterns.
+
+1395
+01:02:43,065 --> 01:02:49,050
+
+
+1396
+01:02:49,050 --> 01:02:52,225
+And this is the topic of a
+master's thesis just finished
+
+1397
+01:02:52,225 --> 01:02:53,850
+last week, I think,
+by [? Viva Vadia ?]
+
+1398
+01:02:53,850 --> 01:02:57,540
+where-- and maybe
+we'll get him to talk
+
+1399
+01:02:57,540 --> 01:03:00,660
+about it at some point--
+it's one crease pattern.
+
+1400
+01:03:00,660 --> 01:03:04,410
+In that case we were using
+a crease pattern called
+
+1401
+01:03:04,410 --> 01:03:09,180
+box pleating, where
+you take a square grid,
+
+1402
+01:03:09,180 --> 01:03:12,085
+and then you put alternating
+diagonals in those squares.
+
+1403
+01:03:12,085 --> 01:03:18,810
+
+
+1404
+01:03:18,810 --> 01:03:20,830
+Get my alternation going here.
+
+1405
+01:03:20,830 --> 01:03:22,709
+So that's the so-called
+box pleating pattern.
+
+1406
+01:03:22,709 --> 01:03:25,000
+We proved that that pattern,
+if you make it big enough,
+
+1407
+01:03:25,000 --> 01:03:29,890
+can fold any 3D shape that's
+made out of little cubes.
+
+1408
+01:03:29,890 --> 01:03:34,820
+I think, yeah, so in fact if
+you take a sort of n by n sheet,
+
+1409
+01:03:34,820 --> 01:03:36,990
+you could make about n cubes.
+
+1410
+01:03:36,990 --> 01:03:39,804
+And in the worst case,
+that's the best you can do.
+
+1411
+01:03:39,804 --> 01:03:41,220
+So that's cool,
+because that tells
+
+1412
+01:03:41,220 --> 01:03:42,770
+you here's one robot you build.
+
+1413
+01:03:42,770 --> 01:03:46,060
+You just make this sheet
+with those creases,
+
+1414
+01:03:46,060 --> 01:03:48,760
+those rubber creases with
+muscles on each of those edges.
+
+1415
+01:03:48,760 --> 01:03:52,020
+And if you can turn those
+edges on and off programmably,
+
+1416
+01:03:52,020 --> 01:03:55,150
+you could make anything you
+want up to some resolution.
+
+1417
+01:03:55,150 --> 01:03:57,820
+If you want to make a
+bunny, you can sort of
+
+1418
+01:03:57,820 --> 01:04:01,480
+build that bunny our of
+little cubes in simulation,
+
+1419
+01:04:01,480 --> 01:04:05,772
+and then fold that cubefied,
+voxillized form of the bunny.
+
+1420
+01:04:05,772 --> 01:04:07,480
+And then you want to
+make something else,
+
+1421
+01:04:07,480 --> 01:04:10,265
+you unfold it and refold
+it all automatically.
+
+1422
+01:04:10,265 --> 01:04:13,572
+
+
+1423
+01:04:13,572 --> 01:04:15,018
+AUDIENCE: This is
+like [INAUDIBLE]
+
+1424
+01:04:15,018 --> 01:04:17,430
+no width of the material?
+
+1425
+01:04:17,430 --> 01:04:20,690
+PROFESSOR: Yeah, there's a
+lot of open questions here.
+
+1426
+01:04:20,690 --> 01:04:22,800
+This result assumes 0 thickness.
+
+1427
+01:04:22,800 --> 01:04:24,560
+In fact, every result
+I've talked about
+
+1428
+01:04:24,560 --> 01:04:25,394
+assumes 0 thickness.
+
+1429
+01:04:25,394 --> 01:04:27,476
+I think there's one theorem
+in the literature that
+
+1430
+01:04:27,476 --> 01:04:28,750
+looks at thickness of paper.
+
+1431
+01:04:28,750 --> 01:04:31,180
+That's a great open
+question, and you really
+
+1432
+01:04:31,180 --> 01:04:33,390
+see it in something
+like that video.
+
+1433
+01:04:33,390 --> 01:04:37,750
+That just appeared at PNAS,
+and the video's online.
+
+1434
+01:04:37,750 --> 01:04:39,870
+Because in the
+airplane, you have
+
+1435
+01:04:39,870 --> 01:04:41,860
+to fold through multiple layers.
+
+1436
+01:04:41,860 --> 01:04:42,627
+And that's tricky.
+
+1437
+01:04:42,627 --> 01:04:45,210
+We get around that right now by
+having the creases be a little
+
+1438
+01:04:45,210 --> 01:04:46,910
+bit stretchy, some rubber.
+
+1439
+01:04:46,910 --> 01:04:50,730
+But there's a limit, and it's
+related to the thickness.
+
+1440
+01:04:50,730 --> 01:04:54,190
+So yes, some complicated shapes
+are not going to work this way.
+
+1441
+01:04:54,190 --> 01:04:56,410
+I think one thing that
+would work really well-- we
+
+1442
+01:04:56,410 --> 01:04:59,940
+have another result with Jason
+Ku, which is folding a maze.
+
+1443
+01:04:59,940 --> 01:05:04,180
+This is sort of like folding
+a shallow terrain in this way,
+
+1444
+01:05:04,180 --> 01:05:07,310
+so you could make a rat maze
+out of a square-- just tracks
+
+1445
+01:05:07,310 --> 01:05:09,520
+by 50%, and then
+you have arbitrary
+
+1446
+01:05:09,520 --> 01:05:11,740
+undulation in the middle,
+which is pretty cool.
+
+1447
+01:05:11,740 --> 01:05:13,823
+So some of these things
+are going to be practical.
+
+1448
+01:05:13,823 --> 01:05:14,460
+Some are not.
+
+1449
+01:05:14,460 --> 01:05:18,250
+So there's still interesting
+theory questions to ask about.
+
+1450
+01:05:18,250 --> 01:05:20,940
+I think thickness is
+a really good one.
+
+1451
+01:05:20,940 --> 01:05:22,990
+Other questions?
+
+1452
+01:05:22,990 --> 01:05:23,490
+Yeah.
+
+1453
+01:05:23,490 --> 01:05:26,355
+
+
+1454
+01:05:26,355 --> 01:05:28,980
+AUDIENCE: [INAUDIBLE] I thought
+I heard something about how you
+
+1455
+01:05:28,980 --> 01:05:30,902
+can't fold a sheet of
+paper more than like--
+
+1456
+01:05:30,902 --> 01:05:32,610
+PROFESSOR: Yeah, so
+that's the one thing.
+
+1457
+01:05:32,610 --> 01:05:37,120
+The question is, you can't
+fold a piece of paper in half 8
+
+1458
+01:05:37,120 --> 01:05:41,700
+times, 7 times, whatever the
+number is everyone quotes.
+
+1459
+01:05:41,700 --> 01:05:45,060
+The answer was solved by
+someone who was a high school
+
+1460
+01:05:45,060 --> 01:05:48,240
+student a few years ago.
+
+1461
+01:05:48,240 --> 01:05:49,760
+What's her name?
+
+1462
+01:05:49,760 --> 01:05:51,540
+Britney Gallivan.
+
+1463
+01:05:51,540 --> 01:05:54,960
+And so this is the one paper
+that's about thickness,
+
+1464
+01:05:54,960 --> 01:06:00,260
+and she analyzed-- the issue
+is when you fold-- if you have
+
+1465
+01:06:00,260 --> 01:06:05,350
+a folding that is
+1,000 layers thick,
+
+1466
+01:06:05,350 --> 01:06:07,210
+and you want to
+fold in the middle,
+
+1467
+01:06:07,210 --> 01:06:11,260
+you can't just like cut here
+and move it over here and then
+
+1468
+01:06:11,260 --> 01:06:12,550
+be folded.
+
+1469
+01:06:12,550 --> 01:06:15,950
+Paper has to actually
+turn that corner.
+
+1470
+01:06:15,950 --> 01:06:21,000
+And the thicker that thing
+is, the more length of paper
+
+1471
+01:06:21,000 --> 01:06:23,406
+it takes to turn that corner.
+
+1472
+01:06:23,406 --> 01:06:24,780
+And you can compute
+how much that
+
+1473
+01:06:24,780 --> 01:06:28,120
+is if you assume sort of
+a circular trajectory,
+
+1474
+01:06:28,120 --> 01:06:29,500
+and it matches reality.
+
+1475
+01:06:29,500 --> 01:06:33,180
+So she computed how thin does
+a piece of paper need to be,
+
+1476
+01:06:33,180 --> 01:06:35,160
+or how long does
+a piece of paper
+
+1477
+01:06:35,160 --> 01:06:37,330
+have to be-- it's
+that ratio-- in order
+
+1478
+01:06:37,330 --> 01:06:39,252
+to fold it in half 12 times.
+
+1479
+01:06:39,252 --> 01:06:41,210
+So she took a piece of
+paper that was, I think,
+
+1480
+01:06:41,210 --> 01:06:44,817
+three-quarters of a mile long,
+and folded it in half 12 times.
+
+1481
+01:06:44,817 --> 01:06:46,900
+And it's like this big
+monstrosity when it's done.
+
+1482
+01:06:46,900 --> 01:06:49,120
+And it follows the
+theory exactly.
+
+1483
+01:06:49,120 --> 01:06:50,970
+So that seems to
+be the right model,
+
+1484
+01:06:50,970 --> 01:06:52,690
+but that's the only
+paper that analyzes
+
+1485
+01:06:52,690 --> 01:06:54,731
+paper folding in that
+model, because it's so much
+
+1486
+01:06:54,731 --> 01:06:56,400
+easier to think
+about zero thickness.
+
+1487
+01:06:56,400 --> 01:06:57,650
+But that is what we should do.
+
+1488
+01:06:57,650 --> 01:06:59,990
+So that particular
+question we understand,
+
+1489
+01:06:59,990 --> 01:07:02,350
+but everything else is open.
+
+1490
+01:07:02,350 --> 01:07:05,554
+I'll show you some
+pictures of that next time.
+
+1491
+01:07:05,554 --> 01:07:06,220
+Other questions?
+
+1492
+01:07:06,220 --> 01:07:07,760
+All right.
+
+1493
+01:07:07,760 --> 01:07:10,240
+That is paper, and
+then I was going
+
+1494
+01:07:10,240 --> 01:07:14,550
+to show you a little bit
+about polyhedra and hinged
+
+1495
+01:07:14,550 --> 01:07:15,120
+dissections.
+
+1496
+01:07:15,120 --> 01:07:16,340
+All right.
+
+1497
+01:07:16,340 --> 01:07:17,010
+Let's go.
+
+1498
+01:07:17,010 --> 01:07:37,779
+
+
+1499
+01:07:37,779 --> 01:07:39,820
+So I mentioned there's a
+bunch of different kinds
+
+1500
+01:07:39,820 --> 01:07:42,840
+of polyhedron folding
+and unfolding problems.
+
+1501
+01:07:42,840 --> 01:07:46,000
+Probably the coolest
+one-- because it's
+
+1502
+01:07:46,000 --> 01:07:50,200
+the oldest problem in
+this entire field--
+
+1503
+01:07:50,200 --> 01:07:56,670
+is unfolding convex polyhedron
+by cutting along the edges.
+
+1504
+01:07:56,670 --> 01:08:06,080
+We call this edge
+unfolding convex polyhedra.
+
+1505
+01:08:06,080 --> 01:08:08,480
+At the beginning of
+class, I showed you
+
+1506
+01:08:08,480 --> 01:08:10,760
+a cube which you could
+unfold into a cross.
+
+1507
+01:08:10,760 --> 01:08:11,570
+I want that.
+
+1508
+01:08:11,570 --> 01:08:13,790
+So I was only cutting
+along edges of the cube.
+
+1509
+01:08:13,790 --> 01:08:15,480
+That's this edge unfolding.
+
+1510
+01:08:15,480 --> 01:08:16,900
+The cube is a convex shape.
+
+1511
+01:08:16,900 --> 01:08:20,050
+It doesn't have any dents.
+
+1512
+01:08:20,050 --> 01:08:23,300
+And I got to unfold it with
+one piece without overlap.
+
+1513
+01:08:23,300 --> 01:08:24,830
+Is that always possible?
+
+1514
+01:08:24,830 --> 01:08:27,520
+We have no idea.
+
+1515
+01:08:27,520 --> 01:08:30,020
+Can every convex polyhedron
+be made in that way?
+
+1516
+01:08:30,020 --> 01:08:30,920
+We don't know.
+
+1517
+01:08:30,920 --> 01:08:36,730
+This problem goes back
+to Albrecht Durer,
+
+1518
+01:08:36,730 --> 01:08:37,780
+this guy on the left.
+
+1519
+01:08:37,780 --> 01:08:39,530
+This is his self-portrait.
+
+1520
+01:08:39,530 --> 01:08:43,690
+In 1525, he wrote this book
+called The Painter's Manual
+
+1521
+01:08:43,690 --> 01:08:44,910
+in German.
+
+1522
+01:08:44,910 --> 01:08:48,410
+And he tried this out for
+a whole bunch of polyhedra.
+
+1523
+01:08:48,410 --> 01:08:53,070
+This is the so-called snub
+cube, and unfolded in his book.
+
+1524
+01:08:53,070 --> 01:08:56,160
+And he has page after page
+after page of these unfoldings.
+
+1525
+01:08:56,160 --> 01:08:57,619
+And they're all edge unfoldings.
+
+1526
+01:08:57,619 --> 01:08:58,660
+Most of them are correct.
+
+1527
+01:08:58,660 --> 01:09:00,815
+There's a couple small
+errors, probably just
+
+1528
+01:09:00,815 --> 01:09:01,690
+transcription errors.
+
+1529
+01:09:01,690 --> 01:09:02,735
+And he did this
+because he wanted
+
+1530
+01:09:02,735 --> 01:09:04,070
+to understand these 3D shapes.
+
+1531
+01:09:04,070 --> 01:09:05,170
+He had to build them.
+
+1532
+01:09:05,170 --> 01:09:07,410
+How do you build them?
+
+1533
+01:09:07,410 --> 01:09:09,820
+So he didn't pose this
+mathematical question.
+
+1534
+01:09:09,820 --> 01:09:11,570
+He was not a mathematician.
+
+1535
+01:09:11,570 --> 01:09:14,150
+But it's sort of implicit
+there, and people
+
+1536
+01:09:14,150 --> 01:09:18,520
+have been thinking about it for
+at least decades if not more.
+
+1537
+01:09:18,520 --> 01:09:21,810
+At least since '65, I think,
+was the first formal posing.
+
+1538
+01:09:21,810 --> 01:09:23,760
+And it's really hard.
+
+1539
+01:09:23,760 --> 01:09:27,150
+A lot of people
+have worked on it.
+
+1540
+01:09:27,150 --> 01:09:29,129
+We'll talk about it.
+
+1541
+01:09:29,129 --> 01:09:31,954
+There are some interesting
+things that are known.
+
+1542
+01:09:31,954 --> 01:09:33,329
+I mean the depressing
+thing is we
+
+1543
+01:09:33,329 --> 01:09:35,459
+have no algorithm which
+we think will work.
+
+1544
+01:09:35,459 --> 01:09:38,945
+Every algorithm we've tried
+has a counter example.
+
+1545
+01:09:38,945 --> 01:09:40,320
+Every counter
+example we've tried
+
+1546
+01:09:40,320 --> 01:09:42,530
+has an algorithm
+for which it works,
+
+1547
+01:09:42,530 --> 01:09:48,200
+but they don't match
+up, so it's frustrating.
+
+1548
+01:09:48,200 --> 01:09:52,160
+If you allow
+non-convex polyhedra,
+
+1549
+01:09:52,160 --> 01:09:53,270
+then the answer is no.
+
+1550
+01:09:53,270 --> 01:09:57,539
+So that's something I did
+with a bunch of people
+
+1551
+01:09:57,539 --> 01:09:58,520
+back in the day.
+
+1552
+01:09:58,520 --> 01:10:01,045
+This was actually
+done in '98, then
+
+1553
+01:10:01,045 --> 01:10:03,870
+it took forever for the
+journal paper to appear.
+
+1554
+01:10:03,870 --> 01:10:05,340
+This is a polyhedron.
+
+1555
+01:10:05,340 --> 01:10:07,120
+All the faces are triangles.
+
+1556
+01:10:07,120 --> 01:10:09,260
+So it's sort of
+topologically convex.
+
+1557
+01:10:09,260 --> 01:10:11,300
+And then if I made the
+spike a little shorter,
+
+1558
+01:10:11,300 --> 01:10:13,220
+it would be a convex polyhedron.
+
+1559
+01:10:13,220 --> 01:10:16,213
+But this particular embedding--
+these are just two views.
+
+1560
+01:10:16,213 --> 01:10:18,129
+If you cross your eyes,
+it's three dimensions.
+
+1561
+01:10:18,129 --> 01:10:19,390
+No, I'm just kidding.
+
+1562
+01:10:19,390 --> 01:10:20,870
+It's not designed for that.
+
+1563
+01:10:20,870 --> 01:10:22,379
+Just two views of
+the same thing.
+
+1564
+01:10:22,379 --> 01:10:26,499
+And if you cut along the
+edges any way you want,
+
+1565
+01:10:26,499 --> 01:10:28,782
+it will overlap itself
+or be multiple pieces.
+
+1566
+01:10:28,782 --> 01:10:30,240
+And we'll prove
+that at some point.
+
+1567
+01:10:30,240 --> 01:10:30,990
+It's not too hard.
+
+1568
+01:10:30,990 --> 01:10:34,249
+
+
+1569
+01:10:34,249 --> 01:10:37,950
+Yeah, so good.
+
+1570
+01:10:37,950 --> 01:10:39,720
+That's edge unfolding.
+
+1571
+01:10:39,720 --> 01:10:41,560
+But there's another
+kind of unfolding
+
+1572
+01:10:41,560 --> 01:10:44,180
+called general unfolding.
+
+1573
+01:10:44,180 --> 01:10:47,600
+This seems a lot more
+interesting to me.
+
+1574
+01:10:47,600 --> 01:10:49,379
+Edges are sort of artificial.
+
+1575
+01:10:49,379 --> 01:10:51,539
+What if you let me cut
+anywhere on the surface,
+
+1576
+01:10:51,539 --> 01:10:53,660
+not just at the edges?
+
+1577
+01:10:53,660 --> 01:10:58,860
+Well, then it turns out,
+for convex polyhedra,
+
+1578
+01:10:58,860 --> 01:11:01,050
+you can do it.
+
+1579
+01:11:01,050 --> 01:11:02,395
+It's always possible.
+
+1580
+01:11:02,395 --> 01:11:09,520
+
+
+1581
+01:11:09,520 --> 01:11:11,410
+I don't have pictures
+of that here,
+
+1582
+01:11:11,410 --> 01:11:14,840
+but even for some non-convex
+polyhedra you could do it.
+
+1583
+01:11:14,840 --> 01:11:16,980
+For example, this
+polyhedron, if you
+
+1584
+01:11:16,980 --> 01:11:20,070
+let me cut not just at the edges
+but anywhere on the surface,
+
+1585
+01:11:20,070 --> 01:11:23,560
+you can do this crazy thing.
+
+1586
+01:11:23,560 --> 01:11:27,630
+These are the spikes, and you
+cut out a tiny little sliver
+
+1587
+01:11:27,630 --> 01:11:30,060
+out to the side,
+and that lets you
+
+1588
+01:11:30,060 --> 01:11:33,490
+attach one of those spikes
+from one of these witch's hats
+
+1589
+01:11:33,490 --> 01:11:35,430
+to the wrong side.
+
+1590
+01:11:35,430 --> 01:11:39,640
+Like you see, this blue guy, the
+blue spike-- because this edge
+
+1591
+01:11:39,640 --> 01:11:41,360
+ends up being
+glued over here, we
+
+1592
+01:11:41,360 --> 01:11:43,360
+can attach the spike with
+the little sliver that
+
+1593
+01:11:43,360 --> 01:11:46,510
+gets opened up here, over
+there, and avoid overlap.
+
+1594
+01:11:46,510 --> 01:11:48,100
+Even if these spikes
+are super tall,
+
+1595
+01:11:48,100 --> 01:11:50,620
+does this go out to
+infinity and overlap.
+
+1596
+01:11:50,620 --> 01:11:52,390
+That's one example.
+
+1597
+01:11:52,390 --> 01:11:55,160
+Can you do it for every
+non-convex polyhedron?
+
+1598
+01:11:55,160 --> 01:11:55,950
+We don't know.
+
+1599
+01:11:55,950 --> 01:11:57,830
+I would love to
+answer that question.
+
+1600
+01:11:57,830 --> 01:12:01,330
+The one thing we know or
+the big thing that we know
+
+1601
+01:12:01,330 --> 01:12:04,310
+is so-called
+orthogonal polyhedra.
+
+1602
+01:12:04,310 --> 01:12:05,310
+This is always possible.
+
+1603
+01:12:05,310 --> 01:12:07,309
+This the same kind of
+thing I was talking about.
+
+1604
+01:12:07,309 --> 01:12:09,920
+You take any 3D shape
+made of little cubes--
+
+1605
+01:12:09,920 --> 01:12:15,069
+so all the faces are horizontal,
+vertical, or the other way--
+
+1606
+01:12:15,069 --> 01:12:16,360
+then it's also always possible.
+
+1607
+01:12:16,360 --> 01:12:20,050
+
+
+1608
+01:12:20,050 --> 01:12:22,960
+The current method takes an
+exponential number of cuts.
+
+1609
+01:12:22,960 --> 01:12:24,092
+It's really impractical.
+
+1610
+01:12:24,092 --> 01:12:25,550
+I think we could
+make it practical.
+
+1611
+01:12:25,550 --> 01:12:27,760
+I think we could generalize
+it to everything.
+
+1612
+01:12:27,760 --> 01:12:29,455
+But those are all
+open questions.
+
+1613
+01:12:29,455 --> 01:12:32,050
+
+
+1614
+01:12:32,050 --> 01:12:34,320
+One more picture I
+wanted to show you
+
+1615
+01:12:34,320 --> 01:12:37,530
+is, so here we really want
+to keep the shape connected.
+
+1616
+01:12:37,530 --> 01:12:39,750
+You have to have a
+positive area of connection
+
+1617
+01:12:39,750 --> 01:12:41,110
+between everything.
+
+1618
+01:12:41,110 --> 01:12:44,160
+If you let that connection
+go down to a single point--
+
+1619
+01:12:44,160 --> 01:12:46,790
+sort of cheating, this is
+called vertex unfolding--
+
+1620
+01:12:46,790 --> 01:12:51,990
+and then it's possible for any
+surface made out of triangles.
+
+1621
+01:12:51,990 --> 01:12:53,490
+So it could be
+non-convex, anything.
+
+1622
+01:12:53,490 --> 01:12:54,930
+These happen to be
+convex polyhedra.
+
+1623
+01:12:54,930 --> 01:12:57,305
+It's a little hard to see that
+they're three-dimensional,
+
+1624
+01:12:57,305 --> 01:12:57,890
+but they are.
+
+1625
+01:12:57,890 --> 01:13:00,700
+You cut them up
+into little faces.
+
+1626
+01:13:00,700 --> 01:13:03,480
+Here I'm only
+cutting along edges.
+
+1627
+01:13:03,480 --> 01:13:06,480
+And I string them
+out on a line here.
+
+1628
+01:13:06,480 --> 01:13:08,180
+This thing will not
+overlap, but I'm
+
+1629
+01:13:08,180 --> 01:13:10,221
+kind of cheating because
+the connections are only
+
+1630
+01:13:10,221 --> 01:13:11,750
+at single points.
+
+1631
+01:13:11,750 --> 01:13:16,440
+But hey, we'll take a positive
+result if we can get it.
+
+1632
+01:13:16,440 --> 01:13:19,155
+A lot of these problems
+are really hard.
+
+1633
+01:13:19,155 --> 01:13:20,780
+OK, the next thing
+I want to talk about
+
+1634
+01:13:20,780 --> 01:13:22,590
+is the reverse
+direction folding.
+
+1635
+01:13:22,590 --> 01:13:25,165
+So we know-- this is
+a video I made back
+
+1636
+01:13:25,165 --> 01:13:28,860
+when I was a grad
+student, a long time ago.
+
+1637
+01:13:28,860 --> 01:13:31,280
+So we know you can take
+a cube, and there's
+
+1638
+01:13:31,280 --> 01:13:33,880
+a whole bunch of different ways
+to just cut along its edges
+
+1639
+01:13:33,880 --> 01:13:35,920
+and unfold it into one piece.
+
+1640
+01:13:35,920 --> 01:13:39,070
+And the particular
+unfolding I want to consider
+
+1641
+01:13:39,070 --> 01:13:42,620
+is the cross unfolding,
+because that's our favorite.
+
+1642
+01:13:42,620 --> 01:13:44,960
+So you take this
+cross unfolding,
+
+1643
+01:13:44,960 --> 01:13:47,270
+and ideally don't stutter.
+
+1644
+01:13:47,270 --> 01:13:49,720
+And you say, well what if
+I gave you that polygon?
+
+1645
+01:13:49,720 --> 01:13:51,840
+What 3D shapes
+could it fold into?
+
+1646
+01:13:51,840 --> 01:13:53,992
+One thing is the
+cube, but it can also
+
+1647
+01:13:53,992 --> 01:13:55,825
+make this flat doubly
+covered quadrilateral.
+
+1648
+01:13:55,825 --> 01:14:00,190
+
+
+1649
+01:14:00,190 --> 01:14:03,350
+So I'm taking this
+as a piece of paper,
+
+1650
+01:14:03,350 --> 01:14:06,190
+but I can set the
+creases however I want.
+
+1651
+01:14:06,190 --> 01:14:10,570
+I can fold it into this
+five-sided, reflectionally
+
+1652
+01:14:10,570 --> 01:14:11,970
+symmetric polyhedron.
+
+1653
+01:14:11,970 --> 01:14:14,950
+
+
+1654
+01:14:14,950 --> 01:14:17,590
+All of these things are
+convex, and they all
+
+1655
+01:14:17,590 --> 01:14:19,770
+have perfect coverage,
+unlike an origami where
+
+1656
+01:14:19,770 --> 01:14:21,270
+I'm allowed to have
+multiple layers.
+
+1657
+01:14:21,270 --> 01:14:23,050
+Here, one layer everywhere.
+
+1658
+01:14:23,050 --> 01:14:24,640
+Like sheet metal bending.
+
+1659
+01:14:24,640 --> 01:14:26,906
+So here, this pocket fits
+perfectly into that tab.
+
+1660
+01:14:26,906 --> 01:14:27,780
+I make a tetrahedron.
+
+1661
+01:14:27,780 --> 01:14:31,450
+
+
+1662
+01:14:31,450 --> 01:14:33,820
+And the last thing you can
+make with something called
+
+1663
+01:14:33,820 --> 01:14:36,290
+edge-to-edge [INAUDIBLE]--
+I'll talk about this more.
+
+1664
+01:14:36,290 --> 01:14:38,750
+There's an algorithm here
+which, given a polygon,
+
+1665
+01:14:38,750 --> 01:14:42,150
+will list all of the
+things it can fold into,
+
+1666
+01:14:42,150 --> 01:14:44,820
+in a reasonable amount of time.
+
+1667
+01:14:44,820 --> 01:14:46,090
+This is an octahedron.
+
+1668
+01:14:46,090 --> 01:14:47,465
+Those are the five
+things you can
+
+1669
+01:14:47,465 --> 01:14:51,710
+make by edge-to-edge
+[INAUDIBLE] of the cross.
+
+1670
+01:14:51,710 --> 01:14:57,137
+Let me stop that.
+
+1671
+01:14:57,137 --> 01:14:58,220
+So that's also on the web.
+
+1672
+01:14:58,220 --> 01:15:00,000
+You can watch it.
+
+1673
+01:15:00,000 --> 01:15:03,010
+In fact, all the lecture notes
+I use, my handwritten notes,
+
+1674
+01:15:03,010 --> 01:15:04,301
+are on the class web page.
+
+1675
+01:15:04,301 --> 01:15:06,550
+The slides that I'm showing
+are on the class web page.
+
+1676
+01:15:06,550 --> 01:15:08,758
+And when there's videos,
+there's links to the videos,
+
+1677
+01:15:08,758 --> 01:15:13,670
+so it's all there for your
+perusal if you miss something.
+
+1678
+01:15:13,670 --> 01:15:16,550
+The last thing I wanted to talk
+about, because I've already
+
+1679
+01:15:16,550 --> 01:15:19,510
+done one, two and three,
+there should always
+
+1680
+01:15:19,510 --> 01:15:22,240
+be one more thing.
+
+1681
+01:15:22,240 --> 01:15:23,599
+Fourth thing.
+
+1682
+01:15:23,599 --> 01:15:25,640
+And this is kind of funny,
+because I don't really
+
+1683
+01:15:25,640 --> 01:15:26,515
+know where to put it.
+
+1684
+01:15:26,515 --> 01:15:27,880
+I'm still figuring it out.
+
+1685
+01:15:27,880 --> 01:15:29,367
+We have these
+debates, because it's
+
+1686
+01:15:29,367 --> 01:15:31,200
+so easy when you're
+thinking about linkages.
+
+1687
+01:15:31,200 --> 01:15:32,324
+Oh, that's one dimensional.
+
+1688
+01:15:32,324 --> 01:15:33,770
+Paper, that's two-dimensional.
+
+1689
+01:15:33,770 --> 01:15:36,390
+Polyhedra, well locally
+it's two-dimensional,
+
+1690
+01:15:36,390 --> 01:15:37,515
+but it's three-dimensional.
+
+1691
+01:15:37,515 --> 01:15:38,840
+It's different.
+
+1692
+01:15:38,840 --> 01:15:41,860
+Different questions.
+
+1693
+01:15:41,860 --> 01:15:44,150
+Hinged dissections span
+so many dimensions,
+
+1694
+01:15:44,150 --> 01:15:46,680
+I don't know where to put it.
+
+1695
+01:15:46,680 --> 01:15:49,385
+So four, hinged dissections.
+
+1696
+01:15:49,385 --> 01:15:54,070
+
+
+1697
+01:15:54,070 --> 01:15:56,050
+This didn't used to be
+a topic in this class,
+
+1698
+01:15:56,050 --> 01:15:57,591
+and it's not a topic
+in our textbook,
+
+1699
+01:15:57,591 --> 01:16:00,550
+because the result was proved
+like last year or the year
+
+1700
+01:16:00,550 --> 01:16:02,360
+before out of this class.
+
+1701
+01:16:02,360 --> 01:16:04,470
+Three years ago.
+
+1702
+01:16:04,470 --> 01:16:20,850
+And the theorem is you take
+any finite set of polygons,
+
+1703
+01:16:20,850 --> 01:16:34,730
+of the same area,
+they can be folded
+
+1704
+01:16:34,730 --> 01:16:49,770
+from one chain of polygons
+without collision.
+
+1705
+01:16:49,770 --> 01:16:53,000
+
+
+1706
+01:16:53,000 --> 01:16:57,570
+I'm going to say this
+first, and but let me
+
+1707
+01:16:57,570 --> 01:17:00,360
+show you a simple example.
+
+1708
+01:17:00,360 --> 01:17:02,316
+Very simple.
+
+1709
+01:17:02,316 --> 01:17:03,815
+This is going to
+be a little boring.
+
+1710
+01:17:03,815 --> 01:17:06,710
+Let me show you more
+interesting example.
+
+1711
+01:17:06,710 --> 01:17:09,070
+Let's take an
+equilateral triangle.
+
+1712
+01:17:09,070 --> 01:17:11,890
+I'm going to cut it
+into two triangles,
+
+1713
+01:17:11,890 --> 01:17:15,310
+and then I'm going to
+hinge them together here.
+
+1714
+01:17:15,310 --> 01:17:19,650
+So this is now a hinged
+chain of polygons.
+
+1715
+01:17:19,650 --> 01:17:23,920
+If I open it up a little
+bit, it looks like this.
+
+1716
+01:17:23,920 --> 01:17:25,735
+It looks a lot like
+those vertex unfoldings
+
+1717
+01:17:25,735 --> 01:17:27,990
+I was showing before.
+
+1718
+01:17:27,990 --> 01:17:33,670
+And you can fold this
+thing into one other shape.
+
+1719
+01:17:33,670 --> 01:17:36,715
+It's going to look like this.
+
+1720
+01:17:36,715 --> 01:17:39,632
+
+
+1721
+01:17:39,632 --> 01:17:42,045
+Not a very good drawing,
+but you get the idea.
+
+1722
+01:17:42,045 --> 01:17:43,920
+Something like that.
+
+1723
+01:17:43,920 --> 01:17:45,890
+So this is what we call
+a hinged dissection
+
+1724
+01:17:45,890 --> 01:17:49,300
+from this equilateral triangle
+into this other triangle.
+
+1725
+01:17:49,300 --> 01:17:52,040
+And it's been an open
+question for about 100 years.
+
+1726
+01:17:52,040 --> 01:17:54,530
+Can you always do this for
+polygons of the same area?
+
+1727
+01:17:54,530 --> 01:17:56,280
+Turns out yes, not
+only for two polygons--
+
+1728
+01:17:56,280 --> 01:17:59,340
+you can take seven
+polygons of equal area
+
+1729
+01:17:59,340 --> 01:18:02,750
+and there's one of
+these chains of blocks
+
+1730
+01:18:02,750 --> 01:18:05,180
+that can fold into all of them.
+
+1731
+01:18:05,180 --> 01:18:10,480
+And I think I have
+a little teaser
+
+1732
+01:18:10,480 --> 01:18:13,080
+picture of how the
+construction goes.
+
+1733
+01:18:13,080 --> 01:18:14,410
+It's really crazy.
+
+1734
+01:18:14,410 --> 01:18:15,960
+You have this chain of blocks.
+
+1735
+01:18:15,960 --> 01:18:18,300
+It's changed in a particular
+way and you say, well
+
+1736
+01:18:18,300 --> 01:18:20,850
+I really want that green piece--
+so think of it like this.
+
+1737
+01:18:20,850 --> 01:18:26,280
+You just have three triangles or
+three pieces that you can fold.
+
+1738
+01:18:26,280 --> 01:18:28,700
+You say, well I really like
+that green piece to be up top.
+
+1739
+01:18:28,700 --> 01:18:31,194
+Turns out you can make
+all these crazy cuts.
+
+1740
+01:18:31,194 --> 01:18:33,360
+And if you fold it this
+way, you get the green piece
+
+1741
+01:18:33,360 --> 01:18:33,943
+on the bottom.
+
+1742
+01:18:33,943 --> 01:18:36,460
+If you fold it this way, you
+get the green piece on the top.
+
+1743
+01:18:36,460 --> 01:18:39,160
+It's one hinged dissection that
+can move the pieces around,
+
+1744
+01:18:39,160 --> 01:18:42,230
+and basically pretend as if
+the hinges weren't there,
+
+1745
+01:18:42,230 --> 01:18:43,920
+and make anything you want.
+
+1746
+01:18:43,920 --> 01:18:45,710
+So it's a bit complicated,
+but it's really
+
+1747
+01:18:45,710 --> 01:18:49,220
+cool theory, something that
+we worked on for like 10 years
+
+1748
+01:18:49,220 --> 01:18:52,130
+before finally solving.
+
+1749
+01:18:52,130 --> 01:18:53,434
+And it's practical.
+
+1750
+01:18:53,434 --> 01:18:55,600
+I mean this particular
+construction isn't practical,
+
+1751
+01:18:55,600 --> 01:18:58,120
+but this is another way
+to build transformers.
+
+1752
+01:18:58,120 --> 01:18:59,130
+Also to build sculpture.
+
+1753
+01:18:59,130 --> 01:19:02,451
+This is a sculpture by Laurie
+Palmer that we collaborated on.
+
+1754
+01:19:02,451 --> 01:19:03,700
+It's an interactive sculpture.
+
+1755
+01:19:03,700 --> 01:19:07,400
+You pick up gloves, and
+this is one chain of blocks.
+
+1756
+01:19:07,400 --> 01:19:09,990
+And the theorem is, this
+particular chain of blocks--
+
+1757
+01:19:09,990 --> 01:19:13,170
+about 1,000 blocks here--
+can make any shape made out
+
+1758
+01:19:13,170 --> 01:19:18,766
+of about 250 cubes.
+
+1759
+01:19:18,766 --> 01:19:22,280
+It's slightly skewed, but so
+there's one hinged dissection
+
+1760
+01:19:22,280 --> 01:19:25,600
+that can fold into exponentially
+many different shapes-- again,
+
+1761
+01:19:25,600 --> 01:19:27,870
+anything made out
+of little cubes.
+
+1762
+01:19:27,870 --> 01:19:29,810
+And this is the
+sculpture version.
+
+1763
+01:19:29,810 --> 01:19:32,830
+We also have various
+prototypes of a robot that's
+
+1764
+01:19:32,830 --> 01:19:36,290
+a long chain of little cubes
+or cube-like shapes, that
+
+1765
+01:19:36,290 --> 01:19:38,606
+can fold itself into
+any 3D shape you want.
+
+1766
+01:19:38,606 --> 01:19:40,480
+It's, again, a different
+kind of transformer,
+
+1767
+01:19:40,480 --> 01:19:42,550
+more inspired by
+proteins, the way nature
+
+1768
+01:19:42,550 --> 01:19:47,520
+does it by long chains,
+compared to the sheet-folding,
+
+1769
+01:19:47,520 --> 01:19:49,280
+origami-inspired approach.
+
+1770
+01:19:49,280 --> 01:19:52,550
+But it's all pretty
+exciting and fun.
+
+1771
+01:19:52,550 --> 01:19:54,630
+Any questions?
+
+1772
+01:19:54,630 --> 01:19:56,010
+Jean?
+
+1773
+01:19:56,010 --> 01:19:58,260
+AUDIENCE: This is a 3D version
+you were talking about.
+
+1774
+01:19:58,260 --> 01:20:01,710
+PROFESSOR: Yeah, I
+pulled a fast one.
+
+1775
+01:20:01,710 --> 01:20:03,140
+That picture's 3D.
+
+1776
+01:20:03,140 --> 01:20:04,410
+This is about 2D.
+
+1777
+01:20:04,410 --> 01:20:06,380
+For 3D, you need the same area.
+
+1778
+01:20:06,380 --> 01:20:08,340
+You need one other
+condition just
+
+1779
+01:20:08,340 --> 01:20:11,850
+for them to have a dissection.
+
+1780
+01:20:11,850 --> 01:20:14,990
+It's impossible to go from a
+regular tetrahedron to a cube.
+
+1781
+01:20:14,990 --> 01:20:17,630
+This was one of Hilbert's
+problems from 1900.
+
+1782
+01:20:17,630 --> 01:20:20,970
+And volumetrically
+it's impossible to go
+
+1783
+01:20:20,970 --> 01:20:24,190
+from regular
+tetrahedron to a cube,
+
+1784
+01:20:24,190 --> 01:20:26,560
+because the angles are wrong.
+
+1785
+01:20:26,560 --> 01:20:28,290
+It's an algebraic thing.
+
+1786
+01:20:28,290 --> 01:20:30,900
+And if you make things out
+of little cubes, it's fine.
+
+1787
+01:20:30,900 --> 01:20:31,600
+You get that.
+
+1788
+01:20:31,600 --> 01:20:32,579
+There's no problem.
+
+1789
+01:20:32,579 --> 01:20:34,370
+But in general, there's
+some tricky issues.
+
+1790
+01:20:34,370 --> 01:20:37,290
+It's easier to state for
+2D, which is why I did,
+
+1791
+01:20:37,290 --> 01:20:39,630
+but it works in 3D, too, with
+a little extra condition.
+
+1792
+01:20:39,630 --> 01:20:42,660
+And we'll talk about
+that in the future.
+
+1793
+01:20:42,660 --> 01:20:45,030
+Other questions?
+
+1794
+01:20:45,030 --> 01:20:47,810
+All right, that's the
+end of lecture one.
+

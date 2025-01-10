@@ -1,0 +1,7722 @@
+1
+0-1:59:59,500 --> 00:00:02,285
+
+2
+00:00:02,285 --> 00:00:03,160
+PROFESSOR: All right.
+
+3
+00:00:03,160 --> 00:00:07,270
+Welcome back to 6849.
+
+4
+00:00:07,270 --> 00:00:12,030
+You may recall or have heard
+that this film crew from Japan
+
+5
+00:00:12,030 --> 00:00:12,880
+is here.
+
+6
+00:00:12,880 --> 00:00:14,890
+They're from a program
+called [? Gachan, ?]
+
+7
+00:00:14,890 --> 00:00:16,647
+which is about showing
+all the cool things
+
+8
+00:00:16,647 --> 00:00:18,480
+that happen in universities
+around the world
+
+9
+00:00:18,480 --> 00:00:20,360
+to students in Japan.
+
+10
+00:00:20,360 --> 00:00:22,000
+So don't mind them,
+but you're going
+
+11
+00:00:22,000 --> 00:00:25,116
+to have to sign a
+release form at the end.
+
+12
+00:00:25,116 --> 00:00:27,240
+I apparently don't need
+you to sign a release form.
+
+13
+00:00:27,240 --> 00:00:27,880
+It just works.
+
+14
+00:00:27,880 --> 00:00:32,944
+
+15
+00:00:32,944 --> 00:00:34,360
+We're talking about
+origami today.
+
+16
+00:00:34,360 --> 00:00:38,350
+We began a series of lectures
+on computational origami.
+
+17
+00:00:38,350 --> 00:00:41,830
+We're going to do some
+design, some actual folding,
+
+18
+00:00:41,830 --> 00:00:46,580
+and some foldability
+algorithm stuff.
+
+19
+00:00:46,580 --> 00:00:53,730
+Does everyone have one of these
+strips and a square of paper?
+
+20
+00:00:53,730 --> 00:00:54,510
+You don't.
+
+21
+00:00:54,510 --> 00:00:56,450
+Who has the master?
+
+22
+00:00:56,450 --> 00:00:59,880
+Why don't you grab a few?
+
+23
+00:00:59,880 --> 00:01:01,550
+Some of these.
+
+24
+00:01:01,550 --> 00:01:02,680
+Here's the package.
+
+25
+00:01:02,680 --> 00:01:06,280
+
+26
+00:01:06,280 --> 00:01:08,501
+Lots of stuff.
+
+27
+00:01:08,501 --> 00:01:10,640
+The paper comes from
+the [? Gachan ?] team,
+
+28
+00:01:10,640 --> 00:01:12,150
+so thanks to them.
+
+29
+00:01:12,150 --> 00:01:17,370
+This is stuff you use in
+your adding machine, I guess.
+
+30
+00:01:17,370 --> 00:01:20,130
+That's where it comes from.
+
+31
+00:01:20,130 --> 00:01:20,720
+Yes.
+
+32
+00:01:20,720 --> 00:01:21,595
+You need one of each.
+
+33
+00:01:21,595 --> 00:01:22,305
+Go for it.
+
+34
+00:01:22,305 --> 00:01:23,610
+Open it.
+
+35
+00:01:23,610 --> 00:01:25,290
+Let's get started.
+
+36
+00:01:25,290 --> 00:01:26,495
+Where is my chalk?
+
+37
+00:01:26,495 --> 00:01:30,080
+
+38
+00:01:30,080 --> 00:01:36,660
+So just to warm you up,
+I want to do some folding
+
+39
+00:01:36,660 --> 00:01:38,310
+and give you some terminology.
+
+40
+00:01:38,310 --> 00:01:40,780
+I know some of you have
+done origami before,
+
+41
+00:01:40,780 --> 00:01:44,420
+but a lot of you
+haven't, so bear with me.
+
+42
+00:01:44,420 --> 00:01:47,252
+I will try to do this quickly.
+
+43
+00:01:47,252 --> 00:01:48,960
+And even for those
+who have done origami,
+
+44
+00:01:48,960 --> 00:01:51,040
+you may not have done
+origami math before.
+
+45
+00:01:51,040 --> 00:01:52,310
+That's why you're here.
+
+46
+00:01:52,310 --> 00:01:55,440
+So things like a
+piece of paper, which
+
+47
+00:01:55,440 --> 00:01:57,500
+you might take for
+granted, I'm going
+
+48
+00:01:57,500 --> 00:02:03,360
+to define here to
+be a 2D polygon.
+
+49
+00:02:03,360 --> 00:02:05,380
+There's actually many
+interesting definitions
+
+50
+00:02:05,380 --> 00:02:07,630
+of a piece of paper,
+but for today at least,
+
+51
+00:02:07,630 --> 00:02:09,610
+most of the time, we'll
+think about polygon.
+
+52
+00:02:09,610 --> 00:02:11,526
+Usually, you think of a
+square piece of paper,
+
+53
+00:02:11,526 --> 00:02:14,940
+but "polygon" would be the
+geometer's generalization
+
+54
+00:02:14,940 --> 00:02:16,500
+of that.
+
+55
+00:02:16,500 --> 00:02:20,455
+Also, the polygon has
+distinguished sides.
+
+56
+00:02:20,455 --> 00:02:24,320
+
+57
+00:02:24,320 --> 00:02:29,470
+So distinguished
+top and bottom side.
+
+58
+00:02:29,470 --> 00:02:36,050
+In practice, with standard
+kami paper from Japan,
+
+59
+00:02:36,050 --> 00:02:38,207
+you have the colored
+side and the white side,
+
+60
+00:02:38,207 --> 00:02:39,540
+so that's one clear distinction.
+
+61
+00:02:39,540 --> 00:02:41,200
+Maybe we call the
+colored side the top.
+
+62
+00:02:41,200 --> 00:02:43,580
+Doesn't really matter, just
+so we can tell things apart,
+
+63
+00:02:43,580 --> 00:02:47,220
+and in particular tell
+mountains from valleys.
+
+64
+00:02:47,220 --> 00:02:48,620
+That's our motivation.
+
+65
+00:02:48,620 --> 00:02:55,230
+So a crease in a piece
+of paper, this I'm
+
+66
+00:02:55,230 --> 00:03:00,130
+going to think abstractly as
+just a line segment or some one
+
+67
+00:03:00,130 --> 00:03:05,825
+dimensional curve drawn
+on the piece of paper.
+
+68
+00:03:05,825 --> 00:03:12,720
+
+69
+00:03:12,720 --> 00:03:19,260
+And then we have crease pattern.
+
+70
+00:03:19,260 --> 00:03:25,630
+
+71
+00:03:25,630 --> 00:03:30,680
+This is just a bunch of creases,
+so a bunch of line segments
+
+72
+00:03:30,680 --> 00:03:32,360
+drawn on the piece of paper.
+
+73
+00:03:32,360 --> 00:03:35,120
+If you are graph
+theoretically inclined,
+
+74
+00:03:35,120 --> 00:03:36,880
+I would think of
+this as a planar
+
+75
+00:03:36,880 --> 00:03:42,135
+graph drawn on the paper.
+
+76
+00:03:42,135 --> 00:03:45,089
+
+77
+00:03:45,089 --> 00:03:46,880
+If you're not graph
+theoretically inclined,
+
+78
+00:03:46,880 --> 00:03:48,840
+just ignore that definition.
+
+79
+00:03:48,840 --> 00:03:52,400
+They're the same thing.
+
+80
+00:03:52,400 --> 00:03:54,630
+That's a crease pattern.
+
+81
+00:03:54,630 --> 00:03:59,590
+So for example, the thing
+we're going to be folding
+
+82
+00:03:59,590 --> 00:04:02,770
+is this very simple
+pinwheel, and this
+
+83
+00:04:02,770 --> 00:04:05,260
+is an example of a
+crease pattern that
+
+84
+00:04:05,260 --> 00:04:07,140
+folds into that pinwheel.
+
+85
+00:04:07,140 --> 00:04:10,037
+So here, the lines
+are distinguished.
+
+86
+00:04:10,037 --> 00:04:12,620
+There's two different kinds, the
+red lines and the blue lines,
+
+87
+00:04:12,620 --> 00:04:14,061
+but ignore that for now.
+
+88
+00:04:14,061 --> 00:04:15,519
+That's a bunch of
+creases which you
+
+89
+00:04:15,519 --> 00:04:16,899
+could put in and
+make that thing.
+
+90
+00:04:16,899 --> 00:04:20,269
+
+91
+00:04:20,269 --> 00:04:24,320
+Before we get there, I want
+the notion of a folded state.
+
+92
+00:04:24,320 --> 00:04:27,710
+
+93
+00:04:27,710 --> 00:04:31,240
+So this is all pretty normal
+if you're an origamist.
+
+94
+00:04:31,240 --> 00:04:34,390
+This is really something
+only the mathematicians use,
+
+95
+00:04:34,390 --> 00:04:36,130
+this term, folded state.
+
+96
+00:04:36,130 --> 00:04:39,540
+
+97
+00:04:39,540 --> 00:04:45,925
+Formally, this is what we refer
+to as the finished product.
+
+98
+00:04:45,925 --> 00:04:49,300
+
+99
+00:04:49,300 --> 00:04:53,960
+This pinwheel is a folded
+state of this piece of paper.
+
+100
+00:04:53,960 --> 00:04:54,970
+Clear?
+
+101
+00:04:54,970 --> 00:04:58,100
+Defining that is a real pain,
+and you can look at chapter 11,
+
+102
+00:04:58,100 --> 00:04:59,410
+I think, in the textbook.
+
+103
+00:04:59,410 --> 00:05:00,740
+Maybe I'll talk about
+it at some point,
+
+104
+00:05:00,740 --> 00:05:02,156
+but I don't want
+to get distracted
+
+105
+00:05:02,156 --> 00:05:04,040
+by how you define what
+a folded state is.
+
+106
+00:05:04,040 --> 00:05:05,456
+But you're not
+allowed to stretch,
+
+107
+00:05:05,456 --> 00:05:07,300
+you're not allowed to tear.
+
+108
+00:05:07,300 --> 00:05:09,850
+It should be a
+nice, valid folding.
+
+109
+00:05:09,850 --> 00:05:11,630
+You can't cross yourself.
+
+110
+00:05:11,630 --> 00:05:15,030
+So that's this notion
+of folded state.
+
+111
+00:05:15,030 --> 00:05:21,460
+And if you take a folded
+state and then unfold it--
+
+112
+00:05:21,460 --> 00:05:23,690
+this is something you can
+do with a folded state--
+
+113
+00:05:23,690 --> 00:05:24,920
+you get a crease pattern.
+
+114
+00:05:24,920 --> 00:05:29,920
+
+115
+00:05:29,920 --> 00:05:35,360
+So I can take this
+pinwheel, unfold it,
+
+116
+00:05:35,360 --> 00:05:38,260
+and I can see which
+lines are creased
+
+117
+00:05:38,260 --> 00:05:40,220
+to make that pinwheel happen.
+
+118
+00:05:40,220 --> 00:05:47,040
+So that's the crease
+pattern of a folded state.
+
+119
+00:05:47,040 --> 00:05:49,740
+Today especially, and
+a lot of the field
+
+120
+00:05:49,740 --> 00:05:54,060
+is concerned with the idea
+of flat foldings, which
+
+121
+00:05:54,060 --> 00:06:03,980
+are a particular kind of folded
+state that lives in the plane,
+
+122
+00:06:03,980 --> 00:06:04,825
+lying in the plane.
+
+123
+00:06:04,825 --> 00:06:08,529
+
+124
+00:06:08,529 --> 00:06:10,570
+Of course, it doesn't
+literally lie on the plane.
+
+125
+00:06:10,570 --> 00:06:13,090
+There's lots of layers
+stacked on top of each other,
+
+126
+00:06:13,090 --> 00:06:14,870
+but geometrically,
+everything has
+
+127
+00:06:14,870 --> 00:06:18,960
+been collapsed onto one
+slightly thickened plane here.
+
+128
+00:06:18,960 --> 00:06:21,160
+So this is a flat origami.
+
+129
+00:06:21,160 --> 00:06:26,340
+This is also a flat
+origami, the trivial kind.
+
+130
+00:06:26,340 --> 00:06:27,900
+That's a flat folding.
+
+131
+00:06:27,900 --> 00:06:34,020
+And when this is possible,
+we call that crease pattern
+
+132
+00:06:34,020 --> 00:06:34,705
+flat foldable.
+
+133
+00:06:34,705 --> 00:06:47,350
+
+134
+00:06:47,350 --> 00:06:52,880
+And finally, we get to the
+idea of mountains and valleys.
+
+135
+00:06:52,880 --> 00:07:05,120
+So a mountain crease is
+when the bottom sides
+
+136
+00:07:05,120 --> 00:07:17,100
+touch, and a valley crease
+is when the top sides touch.
+
+137
+00:07:17,100 --> 00:07:21,390
+
+138
+00:07:21,390 --> 00:07:23,320
+So remember my
+distinguished sides.
+
+139
+00:07:23,320 --> 00:07:25,340
+I'll call the
+colored side the top,
+
+140
+00:07:25,340 --> 00:07:28,010
+so then this is a
+mountain crease over here
+
+141
+00:07:28,010 --> 00:07:30,620
+because I'm bringing the
+two white sides together,
+
+142
+00:07:30,620 --> 00:07:32,920
+and where's a valley?
+
+143
+00:07:32,920 --> 00:07:36,770
+I guess this is a valley, where
+I'm bringing the two colored
+
+144
+00:07:36,770 --> 00:07:39,050
+sides, the two top
+sides, together.
+
+145
+00:07:39,050 --> 00:07:41,560
+Together, that
+makes this pattern,
+
+146
+00:07:41,560 --> 00:07:45,120
+and hopefully, that
+matches up with here.
+
+147
+00:07:45,120 --> 00:07:46,160
+I mean, it's symmetric.
+
+148
+00:07:46,160 --> 00:07:47,451
+You could flip everything over.
+
+149
+00:07:47,451 --> 00:07:49,465
+You'd just get the
+inverted color pattern.
+
+150
+00:07:49,465 --> 00:07:51,966
+It doesn't really matter which
+side you defined to be which,
+
+151
+00:07:51,966 --> 00:07:53,506
+but the point is to
+distinguish which
+
+152
+00:07:53,506 --> 00:07:55,210
+are mountains versus
+which are valleys.
+
+153
+00:07:55,210 --> 00:07:58,130
+You get different
+parity, it looks
+
+154
+00:07:58,130 --> 00:08:00,140
+like, I have matched up there.
+
+155
+00:08:00,140 --> 00:08:03,760
+So let's fold this, just
+for some experience,
+
+156
+00:08:03,760 --> 00:08:06,090
+if you've never made one before.
+
+157
+00:08:06,090 --> 00:08:10,470
+Take your square piece of
+paper, and to get started,
+
+158
+00:08:10,470 --> 00:08:12,090
+let's say with
+the white side up,
+
+159
+00:08:12,090 --> 00:08:15,410
+just fold along
+the two diagonals,
+
+160
+00:08:15,410 --> 00:08:18,390
+the valley folds, bringing
+the two white sides together.
+
+161
+00:08:18,390 --> 00:08:21,160
+
+162
+00:08:21,160 --> 00:08:25,834
+So you fold along one
+diagonal, then you unfold, then
+
+163
+00:08:25,834 --> 00:08:27,250
+you fold along the
+other diagonal.
+
+164
+00:08:27,250 --> 00:08:37,150
+
+165
+00:08:37,150 --> 00:08:39,650
+How are we doing?
+
+166
+00:08:39,650 --> 00:08:40,654
+Couple diagonals.
+
+167
+00:08:40,654 --> 00:08:41,659
+I have the big sheet.
+
+168
+00:08:41,659 --> 00:08:42,700
+I should be going slower.
+
+169
+00:08:42,700 --> 00:08:45,360
+
+170
+00:08:45,360 --> 00:08:47,330
+So now, I want to fold
+that inner square,
+
+171
+00:08:47,330 --> 00:08:49,310
+and we've conveniently
+marked the center point.
+
+172
+00:08:49,310 --> 00:08:52,540
+So I'm going to fold each of
+the four edges of the square
+
+173
+00:08:52,540 --> 00:08:54,910
+to the center, and
+make sure to line up
+
+174
+00:08:54,910 --> 00:08:57,895
+the left and right edges,
+and that guarantees that I
+
+175
+00:08:57,895 --> 00:09:00,970
+fold parallel to
+that bottom edge.
+
+176
+00:09:00,970 --> 00:09:02,510
+In this case, I
+just want to crease
+
+177
+00:09:02,510 --> 00:09:05,120
+the middle half of that line.
+
+178
+00:09:05,120 --> 00:09:06,870
+So I'm not creasing all the way.
+
+179
+00:09:06,870 --> 00:09:09,590
+I'm just creasing
+in the middle half
+
+180
+00:09:09,590 --> 00:09:12,240
+here to make that one
+edge of the square,
+
+181
+00:09:12,240 --> 00:09:15,365
+and then I turn and I
+repeat that four times.
+
+182
+00:09:15,365 --> 00:09:30,130
+
+183
+00:09:30,130 --> 00:09:32,180
+Switch sides for
+different visibility.
+
+184
+00:09:32,180 --> 00:09:45,430
+
+185
+00:09:45,430 --> 00:09:48,160
+This is not the usual
+way to teach this model,
+
+186
+00:09:48,160 --> 00:09:52,050
+but I think it's the
+mathematically appropriate way.
+
+187
+00:09:52,050 --> 00:09:55,200
+I'm trying to make that crease
+pattern as quickly as I can.
+
+188
+00:09:55,200 --> 00:09:57,180
+I did it with the white
+side up because I'm
+
+189
+00:09:57,180 --> 00:09:59,002
+folding everything
+valley, which is easier.
+
+190
+00:09:59,002 --> 00:10:00,710
+In reality, I want
+these to be mountains.
+
+191
+00:10:00,710 --> 00:10:04,310
+When I turn them over, they're
+all mountains, and I'm happy.
+
+192
+00:10:04,310 --> 00:10:08,262
+We made some extra creases
+here, which we didn't need to.
+
+193
+00:10:08,262 --> 00:10:08,970
+How are we doing?
+
+194
+00:10:08,970 --> 00:10:11,310
+How many people are
+done with those?
+
+195
+00:10:11,310 --> 00:10:13,640
+How many people are not?
+
+196
+00:10:13,640 --> 00:10:14,810
+Couple people.
+
+197
+00:10:14,810 --> 00:10:18,360
+Sarah, hurry up.
+
+198
+00:10:18,360 --> 00:10:21,630
+Now comes the fun
+part, and this is
+
+199
+00:10:21,630 --> 00:10:23,890
+to give you an idea of what
+general origami folds can
+
+200
+00:10:23,890 --> 00:10:24,390
+be like.
+
+201
+00:10:24,390 --> 00:10:27,110
+I want to simultaneously
+fold all those creases
+
+202
+00:10:27,110 --> 00:10:30,810
+that I put in except
+for the center, where
+
+203
+00:10:30,810 --> 00:10:32,390
+it's supposed to be uncreased.
+
+204
+00:10:32,390 --> 00:10:36,760
+So I'm going to bring those
+four edges of the square in,
+
+205
+00:10:36,760 --> 00:10:38,630
+and if you do it
+right, you'll end up
+
+206
+00:10:38,630 --> 00:10:41,600
+with these four flaps
+sticking out of the top.
+
+207
+00:10:41,600 --> 00:10:43,040
+It's not going to lie flat.
+
+208
+00:10:43,040 --> 00:10:44,570
+We don't have enough
+creases in yet.
+
+209
+00:10:44,570 --> 00:10:47,560
+But we have these four
+flaps of the pinwheel,
+
+210
+00:10:47,560 --> 00:10:49,640
+and then you just
+get to choose, do I
+
+211
+00:10:49,640 --> 00:10:51,750
+flip them over one
+way or the other?
+
+212
+00:10:51,750 --> 00:10:54,360
+If you flip them over as much
+as they go in that direction--
+
+213
+00:10:54,360 --> 00:10:58,365
+I'll try to match the figure.
+
+214
+00:10:58,365 --> 00:11:00,200
+I'll put this guy
+over at the left,
+
+215
+00:11:00,200 --> 00:11:07,790
+crease him in, put this guy
+down at that end, and this guy
+
+216
+00:11:07,790 --> 00:11:13,650
+over to the right,
+and this guy up.
+
+217
+00:11:13,650 --> 00:11:15,960
+I get my pinwheel.
+
+218
+00:11:15,960 --> 00:11:19,010
+If that doesn't work out
+for you, you can try again.
+
+219
+00:11:19,010 --> 00:11:22,050
+It's not so hard, but
+it gives you some idea
+
+220
+00:11:22,050 --> 00:11:23,980
+that putting all these
+creases in at once
+
+221
+00:11:23,980 --> 00:11:27,230
+is kind of necessary
+for this to happen.
+
+222
+00:11:27,230 --> 00:11:29,980
+In particular, if you
+look at the crease pattern
+
+223
+00:11:29,980 --> 00:11:32,600
+of this model, there
+is no fold that
+
+224
+00:11:32,600 --> 00:11:35,410
+goes all the way
+through the square,
+
+225
+00:11:35,410 --> 00:11:38,392
+so you can't make a
+first fold and then
+
+226
+00:11:38,392 --> 00:11:39,600
+make a second fold and so on.
+
+227
+00:11:39,600 --> 00:11:41,929
+You really have to
+do this all at once.
+
+228
+00:11:41,929 --> 00:11:44,470
+There's many ways to do it, some
+of which are more intuitive,
+
+229
+00:11:44,470 --> 00:11:48,600
+but I thought this simultaneous
+collapse is the coolest.
+
+230
+00:11:48,600 --> 00:11:51,085
+It's nice and fourfold
+symmetric as you do it, I guess,
+
+231
+00:11:51,085 --> 00:11:52,440
+if you do it right.
+
+232
+00:11:52,440 --> 00:11:55,910
+I think this even folds rigidly.
+
+233
+00:11:55,910 --> 00:11:58,700
+That's to give you
+some intuition,
+
+234
+00:11:58,700 --> 00:12:00,995
+some real, practical
+origami experience.
+
+235
+00:12:00,995 --> 00:12:05,210
+
+236
+00:12:05,210 --> 00:12:07,630
+And you get an idea of
+what a crease pattern is,
+
+237
+00:12:07,630 --> 00:12:09,350
+when a mountain valley is.
+
+238
+00:12:09,350 --> 00:12:11,240
+I have two more
+terms and then we
+
+239
+00:12:11,240 --> 00:12:13,305
+can go to math, some real stuff.
+
+240
+00:12:13,305 --> 00:12:19,900
+
+241
+00:12:19,900 --> 00:12:22,930
+There's two notions that
+involve mountains and valleys.
+
+242
+00:12:22,930 --> 00:12:31,384
+One is a mountain-valley
+assignment,
+
+243
+00:12:31,384 --> 00:12:33,050
+and this is something
+that goes together
+
+244
+00:12:33,050 --> 00:12:34,860
+with the crease pattern.
+
+245
+00:12:34,860 --> 00:12:39,359
+And this specifies which
+creases are mountains
+
+246
+00:12:39,359 --> 00:12:40,275
+and which are valleys.
+
+247
+00:12:40,275 --> 00:12:48,402
+
+248
+00:12:48,402 --> 00:12:50,990
+Did you all get it?
+
+249
+00:12:50,990 --> 00:12:51,700
+Good.
+
+250
+00:12:51,700 --> 00:12:52,830
+The pinwheel, I mean.
+
+251
+00:12:52,830 --> 00:13:00,390
+
+252
+00:13:00,390 --> 00:13:03,050
+So you could think of this
+as a coloring of the edges,
+
+253
+00:13:03,050 --> 00:13:03,760
+whatever.
+
+254
+00:13:03,760 --> 00:13:07,090
+In this case, I'm
+simultaneously using color red
+
+255
+00:13:07,090 --> 00:13:09,700
+to denote mountains and
+blue to denote valleys,
+
+256
+00:13:09,700 --> 00:13:12,210
+and also, the standard
+in origami world,
+
+257
+00:13:12,210 --> 00:13:14,560
+although it's a bit
+annoying, is dot dash
+
+258
+00:13:14,560 --> 00:13:17,635
+means mountain and
+dash means valley.
+
+259
+00:13:17,635 --> 00:13:18,510
+That's pretty common.
+
+260
+00:13:18,510 --> 00:13:22,240
+You'll see that throughout.
+
+261
+00:13:22,240 --> 00:13:32,350
+That was invented in the
+1950s, I guess, by Yoshizawa,
+
+262
+00:13:32,350 --> 00:13:33,662
+maybe earlier.
+
+263
+00:13:33,662 --> 00:13:34,620
+Somewhere around there.
+
+264
+00:13:34,620 --> 00:13:37,160
+
+265
+00:13:37,160 --> 00:13:39,130
+And then if I take a
+crease pattern together
+
+266
+00:13:39,130 --> 00:13:40,546
+with a mountain-valley
+assignment,
+
+267
+00:13:40,546 --> 00:13:43,120
+I'm going to call this a
+mountain-valley pattern.
+
+268
+00:13:43,120 --> 00:13:46,832
+That's the picture that
+I'm really drawing here.
+
+269
+00:13:46,832 --> 00:13:49,290
+Sometimes it's useful to think
+of these as coming together,
+
+270
+00:13:49,290 --> 00:13:50,830
+sometimes as separate.
+
+271
+00:13:50,830 --> 00:13:53,590
+You're going to see this
+terminology all over the place,
+
+272
+00:13:53,590 --> 00:13:57,840
+so I figure I should define it.
+
+273
+00:13:57,840 --> 00:14:07,230
+
+274
+00:14:07,230 --> 00:14:09,470
+And sometimes, m is
+mountain, v is valley.
+
+275
+00:14:09,470 --> 00:14:13,830
+
+276
+00:14:13,830 --> 00:14:16,060
+Now we can do some fun stuff.
+
+277
+00:14:16,060 --> 00:14:20,507
+
+278
+00:14:20,507 --> 00:14:22,090
+I showed you this
+pinwheel to give you
+
+279
+00:14:22,090 --> 00:14:24,720
+an idea of more
+complicated folds,
+
+280
+00:14:24,720 --> 00:14:26,450
+the general origami folds.
+
+281
+00:14:26,450 --> 00:14:29,640
+But today, I want to focus
+on relatively simple kind
+
+282
+00:14:29,640 --> 00:14:31,500
+of folds, which is
+called simple folds.
+
+283
+00:14:31,500 --> 00:14:36,960
+
+284
+00:14:36,960 --> 00:14:39,360
+Unlike this thing where I have
+to simultaneously collapse
+
+285
+00:14:39,360 --> 00:14:43,010
+many creases, a simple fold
+just involves one crease.
+
+286
+00:14:43,010 --> 00:14:55,040
+It is a fold along
+a single line,
+
+287
+00:14:55,040 --> 00:14:59,470
+and we fold it by plus
+or minus 180 degrees.
+
+288
+00:14:59,470 --> 00:15:01,940
+So depending which
+way you're counting,
+
+289
+00:15:01,940 --> 00:15:05,020
+plus 180 is maybe valley,
+minus 180 is mountain.
+
+290
+00:15:05,020 --> 00:15:07,900
+
+291
+00:15:07,900 --> 00:15:11,350
+If I start with a flat folding,
+after I make a simple fold,
+
+292
+00:15:11,350 --> 00:15:13,306
+I will again have
+a flat folding.
+
+293
+00:15:13,306 --> 00:15:14,680
+What we're interested
+in is, what
+
+294
+00:15:14,680 --> 00:15:16,540
+can you make by a
+sequence of simple folds?
+
+295
+00:15:16,540 --> 00:15:18,210
+I start from a
+square paper, say,
+
+296
+00:15:18,210 --> 00:15:20,140
+and I make a sequence
+of simple folds.
+
+297
+00:15:20,140 --> 00:15:22,380
+At all times, I will
+be flat folding.
+
+298
+00:15:22,380 --> 00:15:24,352
+It's easy to get there.
+
+299
+00:15:24,352 --> 00:15:26,810
+The pinwheel is something you
+could not make in this model.
+
+300
+00:15:26,810 --> 00:15:28,870
+It's a restricted
+model, but it's still
+
+301
+00:15:28,870 --> 00:15:30,000
+surprisingly powerful.
+
+302
+00:15:30,000 --> 00:15:31,500
+You still get a
+universality result.
+
+303
+00:15:31,500 --> 00:15:35,400
+Even with simple folds, you
+can make any flat thing.
+
+304
+00:15:35,400 --> 00:15:37,410
+And if you relax this
+constraint and don't
+
+305
+00:15:37,410 --> 00:15:39,990
+say it's plus or
+minus 180, then you
+
+306
+00:15:39,990 --> 00:15:42,520
+can actually make any
+3D thing you want.
+
+307
+00:15:42,520 --> 00:15:45,000
+So that's the first thing
+we will prove today,
+
+308
+00:15:45,000 --> 00:15:48,010
+and that's in the
+origami design world.
+
+309
+00:15:48,010 --> 00:15:50,050
+And then we'll go to
+origami foldability.
+
+310
+00:15:50,050 --> 00:15:51,341
+I'll give you a crease pattern.
+
+311
+00:15:51,341 --> 00:15:54,520
+I want to know, can it be folded
+by a sequence of simple folds?
+
+312
+00:15:54,520 --> 00:15:58,080
+That's a much harder problem,
+but some cases are easy.
+
+313
+00:15:58,080 --> 00:16:20,830
+
+314
+00:16:20,830 --> 00:16:24,990
+So this the universality result
+I mentioned in lecture one.
+
+315
+00:16:24,990 --> 00:16:27,030
+This is going to be the
+inefficient version,
+
+316
+00:16:27,030 --> 00:16:29,270
+but we're going to
+prove that everything
+
+317
+00:16:29,270 --> 00:16:32,136
+can be folded from
+a square paper.
+
+318
+00:16:32,136 --> 00:16:33,760
+I'm going to be more
+precise about what
+
+319
+00:16:33,760 --> 00:16:34,634
+I mean by everything.
+
+320
+00:16:34,634 --> 00:16:46,920
+
+321
+00:16:46,920 --> 00:16:50,760
+So I'm going to imagine there
+are a bunch of polygons in 3D
+
+322
+00:16:50,760 --> 00:16:52,310
+and they're somehow
+joined together
+
+323
+00:16:52,310 --> 00:16:54,030
+into one connected mass.
+
+324
+00:16:54,030 --> 00:16:55,920
+This could be a
+polyhedron like a cube,
+
+325
+00:16:55,920 --> 00:16:57,870
+it could be a
+polyhedron like a bunny,
+
+326
+00:16:57,870 --> 00:17:01,010
+it could be some
+crazy, thorny mess,
+
+327
+00:17:01,010 --> 00:17:02,605
+but each piece
+locally is a polygon,
+
+328
+00:17:02,605 --> 00:17:04,271
+and you just stick a
+whole bunch of them
+
+329
+00:17:04,271 --> 00:17:07,790
+together to some
+connected thing.
+
+330
+00:17:07,790 --> 00:17:14,579
+Plus you get to specify what
+color, what side of the paper
+
+331
+00:17:14,579 --> 00:17:17,939
+you want to be visible on
+each of those polygons.
+
+332
+00:17:17,939 --> 00:17:24,740
+
+333
+00:17:24,740 --> 00:17:29,770
+You can even do that on
+each side of the polygon
+
+334
+00:17:29,770 --> 00:17:30,270
+if you want.
+
+335
+00:17:30,270 --> 00:17:35,470
+
+336
+00:17:35,470 --> 00:18:14,100
+And you can fold that thing from
+a big enough piece of paper,
+
+337
+00:18:14,100 --> 00:18:18,090
+such as a big enough square, a
+big enough rectangle, whatever
+
+338
+00:18:18,090 --> 00:18:19,732
+you feel like.
+
+339
+00:18:19,732 --> 00:18:22,490
+Bicolor paper here
+refers to the idea
+
+340
+00:18:22,490 --> 00:18:26,060
+that your paper is
+different colors
+
+341
+00:18:26,060 --> 00:18:28,610
+on one side and the other,
+so white on one side,
+
+342
+00:18:28,610 --> 00:18:31,204
+colored on the other
+side, white on one side,
+
+343
+00:18:31,204 --> 00:18:32,620
+black on the other
+side, whatever.
+
+344
+00:18:32,620 --> 00:18:39,850
+We usually try to draw that
+with the folded over corner.
+
+345
+00:18:39,850 --> 00:18:43,350
+
+346
+00:18:43,350 --> 00:18:46,910
+There we go, bicolor paper.
+
+347
+00:18:46,910 --> 00:18:51,480
+So for example,
+for fun, here's how
+
+348
+00:18:51,480 --> 00:18:54,526
+you could imagine this
+design by John Montroll.
+
+349
+00:18:54,526 --> 00:18:56,900
+This is folded from a square
+of paper, white on one side,
+
+350
+00:18:56,900 --> 00:18:57,691
+black on the other.
+
+351
+00:18:57,691 --> 00:18:59,600
+It's a zebra.
+
+352
+00:18:59,600 --> 00:19:01,490
+And you could imagine
+the input to that
+
+353
+00:19:01,490 --> 00:19:04,110
+problem was a bunch of polygons.
+
+354
+00:19:04,110 --> 00:19:06,650
+There's some white polygons,
+some black polygons.
+
+355
+00:19:06,650 --> 00:19:09,620
+Together, they form
+a connected union,
+
+356
+00:19:09,620 --> 00:19:11,840
+and that could be the input.
+
+357
+00:19:11,840 --> 00:19:14,270
+This could be an output to
+how you fold your square
+
+358
+00:19:14,270 --> 00:19:15,544
+to make that color pattern.
+
+359
+00:19:15,544 --> 00:19:17,710
+Of course, if you gave this
+input to that algorithm,
+
+360
+00:19:17,710 --> 00:19:21,570
+you'll get a much uglier
+folding than the one designed
+
+361
+00:19:21,570 --> 00:19:23,094
+by a human, but that's the idea.
+
+362
+00:19:23,094 --> 00:19:24,510
+You could also
+imagine you're just
+
+363
+00:19:24,510 --> 00:19:26,340
+given a polygon
+you want to make.
+
+364
+00:19:26,340 --> 00:19:28,620
+You say, I want to make
+a horse, a flat horse.
+
+365
+00:19:28,620 --> 00:19:30,770
+Then you could give
+that to this algorithm
+
+366
+00:19:30,770 --> 00:19:33,250
+and it will tell you
+how to fold a horse.
+
+367
+00:19:33,250 --> 00:19:35,440
+That's the general idea.
+
+368
+00:19:35,440 --> 00:19:40,150
+
+369
+00:19:40,150 --> 00:19:42,336
+So how do we prove that?
+
+370
+00:19:42,336 --> 00:19:43,335
+Want to make everything.
+
+371
+00:19:43,335 --> 00:19:55,750
+
+372
+00:19:55,750 --> 00:19:58,360
+So this is an early result in
+computational origami design,
+
+373
+00:19:58,360 --> 00:20:02,065
+I think from 1998, probably.
+
+374
+00:20:02,065 --> 00:20:07,600
+Trial version here is in 2000.
+
+375
+00:20:07,600 --> 00:20:10,340
+Any ideas how to prove this?
+
+376
+00:20:10,340 --> 00:20:13,209
+How can we make anything?
+
+377
+00:20:13,209 --> 00:20:14,750
+Got to get you
+thinking a little bit.
+
+378
+00:20:14,750 --> 00:20:21,070
+
+379
+00:20:21,070 --> 00:20:24,620
+We have a subtle hint.
+
+380
+00:20:24,620 --> 00:20:29,710
+So the idea is to take
+a really long strip,
+
+381
+00:20:29,710 --> 00:20:32,910
+much longer than this
+one, and fold it, and just
+
+382
+00:20:32,910 --> 00:20:37,270
+wrap around your polyhedron
+over and over and over,
+
+383
+00:20:37,270 --> 00:20:40,310
+and eventually make
+whatever you want.
+
+384
+00:20:40,310 --> 00:20:42,300
+So it's going to
+be a little flimsy,
+
+385
+00:20:42,300 --> 00:20:45,230
+but mathematically,
+it'll work perfectly.
+
+386
+00:20:45,230 --> 00:20:51,430
+So first thing to do is
+fold your paper, whatever
+
+387
+00:20:51,430 --> 00:20:57,735
+shape it is, down to a
+long, narrow strip, so
+
+388
+00:20:57,735 --> 00:20:58,955
+a long, narrow rectangle.
+
+389
+00:20:58,955 --> 00:21:09,650
+
+390
+00:21:09,650 --> 00:21:12,030
+Conveniently, you have your
+strips of paper already,
+
+391
+00:21:12,030 --> 00:21:13,030
+but if you started
+with a square,
+
+392
+00:21:13,030 --> 00:21:14,946
+the first thing you'd
+do is accordion pleat it
+
+393
+00:21:14,946 --> 00:21:17,890
+down to just one
+edge of the square.
+
+394
+00:21:17,890 --> 00:21:18,639
+Crazy already.
+
+395
+00:21:18,639 --> 00:21:20,680
+If you started with a
+square, this is a bad idea.
+
+396
+00:21:20,680 --> 00:21:23,610
+If you started with a strip,
+it's actually pretty good.
+
+397
+00:21:23,610 --> 00:21:27,020
+It's probably close to optimal.
+
+398
+00:21:27,020 --> 00:21:30,650
+But now, how do I actually, say,
+wrap everything with the strip?
+
+399
+00:21:30,650 --> 00:21:32,537
+Let's be more formal about that.
+
+400
+00:21:32,537 --> 00:21:34,120
+The first thing I'm
+going to do, which
+
+401
+00:21:34,120 --> 00:21:38,650
+is a common trick in
+computational geometry,
+
+402
+00:21:38,650 --> 00:21:41,460
+it's like, well,
+polygons are confusing.
+
+403
+00:21:41,460 --> 00:21:42,480
+I like triangles better.
+
+404
+00:21:42,480 --> 00:21:43,720
+They're much simpler.
+
+405
+00:21:43,720 --> 00:21:45,700
+So just triangulate
+all the polygons.
+
+406
+00:21:45,700 --> 00:21:48,920
+If I have some crazy
+polygon, imagine
+
+407
+00:21:48,920 --> 00:21:53,060
+that's some piece
+of the zebra, I'll
+
+408
+00:21:53,060 --> 00:21:57,435
+just subdivide it
+into triangles.
+
+409
+00:21:57,435 --> 00:21:59,060
+There's standard
+algorithms to do this.
+
+410
+00:21:59,060 --> 00:22:00,268
+I don't want to go into that.
+
+411
+00:22:00,268 --> 00:22:03,600
+You can just add a bunch of
+these diagonals to the polygon,
+
+412
+00:22:03,600 --> 00:22:06,320
+just keep adding them as long
+as they don't cross each other.
+
+413
+00:22:06,320 --> 00:22:08,750
+When you're done, it
+will be triangulated.
+
+414
+00:22:08,750 --> 00:22:11,518
+You can do that efficiently,
+linear time, even.
+
+415
+00:22:11,518 --> 00:22:14,381
+
+416
+00:22:14,381 --> 00:22:16,130
+That's a little bit
+easier to think about.
+
+417
+00:22:16,130 --> 00:22:19,530
+Now I just have to figure
+out how to wrap one triangle
+
+418
+00:22:19,530 --> 00:22:23,066
+and then how to combine those
+wrappings together somehow.
+
+419
+00:22:23,066 --> 00:22:24,940
+Then I could go through
+triangle by triangle,
+
+420
+00:22:24,940 --> 00:22:29,460
+visit everything, cover
+everything I need to cover.
+
+421
+00:22:29,460 --> 00:22:32,740
+So that's what
+we're going to do.
+
+422
+00:22:32,740 --> 00:22:36,380
+
+423
+00:22:36,380 --> 00:22:41,230
+Cover each of these
+triangles in some order.
+
+424
+00:22:41,230 --> 00:22:44,130
+We're going to cover
+each one at least once,
+
+425
+00:22:44,130 --> 00:22:47,680
+possibly more if
+we're not careful.
+
+426
+00:22:47,680 --> 00:22:49,460
+For starters, we'll
+be not careful.
+
+427
+00:22:49,460 --> 00:22:56,150
+
+428
+00:22:56,150 --> 00:23:06,660
+And we're going to do this
+by using a zigzag path
+
+429
+00:23:06,660 --> 00:23:14,640
+parallel to the
+next edge starting
+
+430
+00:23:14,640 --> 00:23:16,120
+from the opposite corner.
+
+431
+00:23:16,120 --> 00:23:18,970
+So some technical details.
+
+432
+00:23:18,970 --> 00:23:24,300
+Much easier to see in a picture,
+so let me draw you a picture.
+
+433
+00:23:24,300 --> 00:23:32,040
+
+434
+00:23:32,040 --> 00:23:35,050
+Let's say we want to
+visit this triangle first,
+
+435
+00:23:35,050 --> 00:23:36,567
+and after we visit
+this triangle,
+
+436
+00:23:36,567 --> 00:23:38,150
+let's say we've
+planned out that we're
+
+437
+00:23:38,150 --> 00:23:39,880
+going to visit
+this triangle next.
+
+438
+00:23:39,880 --> 00:23:42,800
+After that one, we're going
+to go to this triangle.
+
+439
+00:23:42,800 --> 00:23:45,990
+So this is what I'd call
+the next edge, because it's
+
+440
+00:23:45,990 --> 00:23:48,410
+the edge connecting
+to the next triangle.
+
+441
+00:23:48,410 --> 00:23:50,810
+So I'd like to zigzag
+parallel to this edge,
+
+442
+00:23:50,810 --> 00:23:53,980
+so I want to go back
+and forth like that.
+
+443
+00:23:53,980 --> 00:23:57,730
+And then it says I want to start
+at the opposite corner, which
+
+444
+00:23:57,730 --> 00:23:59,720
+is this one.
+
+445
+00:23:59,720 --> 00:24:01,220
+So I'm going to
+start here, and I'll
+
+446
+00:24:01,220 --> 00:24:02,636
+draw this a little
+more precisely.
+
+447
+00:24:02,636 --> 00:24:06,240
+
+448
+00:24:06,240 --> 00:24:08,590
+I'm going to take
+my strip and just
+
+449
+00:24:08,590 --> 00:24:14,270
+go this way for a little while,
+and turn around and come back
+
+450
+00:24:14,270 --> 00:24:19,090
+this way, and then
+turn around, and we're
+
+451
+00:24:19,090 --> 00:24:22,920
+going to see how to do
+turning around in a moment, so
+
+452
+00:24:22,920 --> 00:24:24,080
+something like that.
+
+453
+00:24:24,080 --> 00:24:29,060
+
+454
+00:24:29,060 --> 00:24:32,930
+Now I've got to start planning
+a little bit, because I want
+
+455
+00:24:32,930 --> 00:24:35,710
+to do this triangle in the same
+way, meaning I want to go back
+
+456
+00:24:35,710 --> 00:24:38,880
+and forth parallel
+to the next edge
+
+457
+00:24:38,880 --> 00:24:41,020
+starting at the opposite corner.
+
+458
+00:24:41,020 --> 00:24:44,460
+So that means next thing I want
+to do is start at this corner,
+
+459
+00:24:44,460 --> 00:24:47,200
+so I need to set this up
+so that I don't end here.
+
+460
+00:24:47,200 --> 00:24:48,630
+I'd like to end here.
+
+461
+00:24:48,630 --> 00:24:52,400
+You can do that just by
+doing one more iteration.
+
+462
+00:24:52,400 --> 00:24:54,670
+If I end up with the
+wrong parity-- here
+
+463
+00:24:54,670 --> 00:24:56,785
+it looks like I won't too much.
+
+464
+00:24:56,785 --> 00:24:59,450
+
+465
+00:24:59,450 --> 00:25:00,780
+Here it's a little ugly.
+
+466
+00:25:00,780 --> 00:25:03,390
+Got a little bit of uncovered
+portion of the triangle,
+
+467
+00:25:03,390 --> 00:25:06,830
+so you need a slightly
+different turn here.
+
+468
+00:25:06,830 --> 00:25:10,140
+Then I'll just come and
+sort of overlap myself.
+
+469
+00:25:10,140 --> 00:25:10,650
+That's OK.
+
+470
+00:25:10,650 --> 00:25:13,000
+I just have to cover
+it at least once.
+
+471
+00:25:13,000 --> 00:25:16,510
+And then I do some
+kind of turn here,
+
+472
+00:25:16,510 --> 00:25:19,022
+and then I'm going to do this.
+
+473
+00:25:19,022 --> 00:25:20,730
+So there's obviously
+some questions here.
+
+474
+00:25:20,730 --> 00:25:22,790
+How do I make these
+180 degree turns?
+
+475
+00:25:22,790 --> 00:25:24,430
+How do I make an arbitrary turn?
+
+476
+00:25:24,430 --> 00:25:26,810
+How do I turn even when I'm
+allowed to overlap myself?
+
+477
+00:25:26,810 --> 00:25:28,601
+I'm not going to worry
+about that too much,
+
+478
+00:25:28,601 --> 00:25:29,860
+basically the same.
+
+479
+00:25:29,860 --> 00:25:33,050
+Basically, how do I turn?
+
+480
+00:25:33,050 --> 00:25:33,720
+How do I turn?
+
+481
+00:25:33,720 --> 00:25:39,940
+Well, let's take our
+strips and do some turning,
+
+482
+00:25:39,940 --> 00:25:45,640
+and I have a slide
+to follow along.
+
+483
+00:25:45,640 --> 00:25:52,470
+I have a big strip,
+a little bit too big.
+
+484
+00:25:52,470 --> 00:25:55,520
+So the idea is you
+have your strip,
+
+485
+00:25:55,520 --> 00:25:58,460
+you're gone merrily along,
+and at some point you decide,
+
+486
+00:25:58,460 --> 00:26:01,970
+oh, I really need to
+make a 132 degree turn.
+
+487
+00:26:01,970 --> 00:26:04,124
+I mean, it could be
+anything because here, we've
+
+488
+00:26:04,124 --> 00:26:05,290
+got to make some crazy turn.
+
+489
+00:26:05,290 --> 00:26:07,010
+We don't know what
+the amount is.
+
+490
+00:26:07,010 --> 00:26:08,980
+So the turn gadget
+is always the same.
+
+491
+00:26:08,980 --> 00:26:12,159
+You start out by making a
+mountain fold perpendicular
+
+492
+00:26:12,159 --> 00:26:12,700
+to the strip.
+
+493
+00:26:12,700 --> 00:26:15,840
+
+494
+00:26:15,840 --> 00:26:17,485
+So just fold in
+half, so to speak.
+
+495
+00:26:17,485 --> 00:26:18,985
+Of course, half of
+this is connected
+
+496
+00:26:18,985 --> 00:26:20,720
+to everything you built already.
+
+497
+00:26:20,720 --> 00:26:22,470
+The other half, you don't know.
+
+498
+00:26:22,470 --> 00:26:26,510
+And then you take the back layer
+and fold it to whatever angle
+
+499
+00:26:26,510 --> 00:26:27,010
+you want.
+
+500
+00:26:27,010 --> 00:26:31,240
+You have this degree of freedom
+wherever you want to put it.
+
+501
+00:26:31,240 --> 00:26:33,870
+So for example, if we wanted
+to make an obtuse angle.
+
+502
+00:26:33,870 --> 00:26:36,790
+I'm always going to fold
+incident to that bottom corner.
+
+503
+00:26:36,790 --> 00:26:39,670
+
+504
+00:26:39,670 --> 00:26:42,840
+It's a little hard to
+handle, but you get the idea.
+
+505
+00:26:42,840 --> 00:26:46,660
+That's a nice, perfect
+turn right there.
+
+506
+00:26:46,660 --> 00:26:48,580
+Looks even cooler on my side.
+
+507
+00:26:48,580 --> 00:26:52,290
+You just see the angular
+bisector or something.
+
+508
+00:26:52,290 --> 00:26:54,270
+So that's a decent obtuse angle.
+
+509
+00:26:54,270 --> 00:26:57,950
+Things are little bit uglier
+when you make an acute angle,
+
+510
+00:26:57,950 --> 00:27:00,610
+something like this.
+
+511
+00:27:00,610 --> 00:27:02,790
+You could make whatever
+angle you want.
+
+512
+00:27:02,790 --> 00:27:04,290
+You should have
+enough strip to make
+
+513
+00:27:04,290 --> 00:27:08,560
+several turns if
+you feel like it.
+
+514
+00:27:08,560 --> 00:27:11,622
+If I make an acute angle like
+this, I get some overhang.
+
+515
+00:27:11,622 --> 00:27:13,830
+So I have what I want, which
+is the strip coming here
+
+516
+00:27:13,830 --> 00:27:17,420
+and the strip coming
+here at the extremes,
+
+517
+00:27:17,420 --> 00:27:20,480
+but over in this corner I
+have some extra material,
+
+518
+00:27:20,480 --> 00:27:22,620
+and it could be a lot.
+
+519
+00:27:22,620 --> 00:27:24,820
+But whatever it is,
+I'll just rid of it
+
+520
+00:27:24,820 --> 00:27:27,110
+by folding it
+underneath repeatedly.
+
+521
+00:27:27,110 --> 00:27:29,890
+In this case, one
+fold, it's gone.
+
+522
+00:27:29,890 --> 00:27:31,770
+In general, when
+I make that fold,
+
+523
+00:27:31,770 --> 00:27:35,720
+it might come out over here and
+I have to wrap around that cone
+
+524
+00:27:35,720 --> 00:27:38,340
+several times.
+
+525
+00:27:38,340 --> 00:27:41,180
+There's probably an
+example of that here.
+
+526
+00:27:41,180 --> 00:27:43,350
+This figure in the
+middle version,
+
+527
+00:27:43,350 --> 00:27:46,590
+you start just the same by
+folding a super acute angle.
+
+528
+00:27:46,590 --> 00:27:49,240
+I fold that corner over and
+it overhangs a little bit
+
+529
+00:27:49,240 --> 00:27:51,190
+on the bottom,
+but it got tinier.
+
+530
+00:27:51,190 --> 00:27:52,940
+And if you just wrap
+it around the corner,
+
+531
+00:27:52,940 --> 00:27:55,830
+eventually it will disappear and
+you have exactly what you want,
+
+532
+00:27:55,830 --> 00:27:58,038
+which is a strip coming
+horizontally and then a strip
+
+533
+00:27:58,038 --> 00:28:01,730
+coming off diagonally at
+whatever angle you wanted.
+
+534
+00:28:01,730 --> 00:28:03,124
+So that's really easy.
+
+535
+00:28:03,124 --> 00:28:04,540
+That's what we
+call a turn gadget.
+
+536
+00:28:04,540 --> 00:28:13,180
+
+537
+00:28:13,180 --> 00:28:15,415
+So we do this
+using turn gadgets.
+
+538
+00:28:15,415 --> 00:28:19,470
+
+539
+00:28:19,470 --> 00:28:22,520
+Now, you can't actually turn
+with 180 degree angle here,
+
+540
+00:28:22,520 --> 00:28:24,550
+which is why in
+this picture, what I
+
+541
+00:28:24,550 --> 00:28:29,710
+drew was a 90 degree turn and
+then another 90 degree turn.
+
+542
+00:28:29,710 --> 00:28:31,820
+You can do that
+however you want.
+
+543
+00:28:31,820 --> 00:28:33,430
+That's one way.
+
+544
+00:28:33,430 --> 00:28:36,890
+In fact, the way I've shown
+it, it would be orthogonal,
+
+545
+00:28:36,890 --> 00:28:40,700
+but doesn't really matter.
+
+546
+00:28:40,700 --> 00:28:43,850
+These turns are not much harder.
+
+547
+00:28:43,850 --> 00:28:46,810
+You just do one or two of
+those turns to get aligned.
+
+548
+00:28:46,810 --> 00:28:50,010
+And you can decide here, do
+I turn around to the left
+
+549
+00:28:50,010 --> 00:28:53,909
+or do I turn around to the
+right, and then I zigzag?
+
+550
+00:28:53,909 --> 00:28:55,950
+Depending on which way I
+go, I will end up either
+
+551
+00:28:55,950 --> 00:28:58,450
+at this corner or this corner,
+and if my next triangle's
+
+552
+00:28:58,450 --> 00:29:00,850
+up here, then I want to
+end up at this corner.
+
+553
+00:29:00,850 --> 00:29:02,830
+If my next triangle's
+over here, then I
+
+554
+00:29:02,830 --> 00:29:05,640
+want to end up at this corner.
+
+555
+00:29:05,640 --> 00:29:07,690
+You plan out ahead of
+time what order you're
+
+556
+00:29:07,690 --> 00:29:10,340
+going to visit the
+triangles, just decide.
+
+557
+00:29:10,340 --> 00:29:12,590
+Technically, it's like the
+traveling salesman problem,
+
+558
+00:29:12,590 --> 00:29:14,620
+but you don't have to be
+efficient at the moment.
+
+559
+00:29:14,620 --> 00:29:16,130
+We're not worrying
+about efficiency.
+
+560
+00:29:16,130 --> 00:29:18,600
+Just visit triangle after
+triangle, keep going to one
+
+561
+00:29:18,600 --> 00:29:20,760
+you haven't visited before.
+
+562
+00:29:20,760 --> 00:29:22,010
+It could be far away from you.
+
+563
+00:29:22,010 --> 00:29:23,730
+Maybe you have to go over
+many triangles you visited
+
+564
+00:29:23,730 --> 00:29:24,960
+before, but eventually
+you'll get to one
+
+565
+00:29:24,960 --> 00:29:27,400
+you haven't visited until
+you're done, and then boom,
+
+566
+00:29:27,400 --> 00:29:29,130
+you've made anything.
+
+567
+00:29:29,130 --> 00:29:31,210
+Amazing.
+
+568
+00:29:31,210 --> 00:29:33,330
+We haven't quite
+proved the theorem.
+
+569
+00:29:33,330 --> 00:29:37,770
+At this point, we can make any
+connected union of polygons.
+
+570
+00:29:37,770 --> 00:29:39,610
+This is one polygon,
+but if you're
+
+571
+00:29:39,610 --> 00:29:44,150
+in 3D, when you cross over
+from one polygon to the next,
+
+572
+00:29:44,150 --> 00:29:46,964
+you might have to bend it at
+some angle that's not flat,
+
+573
+00:29:46,964 --> 00:29:48,630
+but then you can make
+any 3D thing, too.
+
+574
+00:29:48,630 --> 00:29:49,357
+Yeah?
+
+575
+00:29:49,357 --> 00:29:51,925
+AUDIENCE: When you wrap around
+the triangle whose edge type
+
+576
+00:29:51,925 --> 00:29:54,260
+is the bottom, how
+do you do that when
+
+577
+00:29:54,260 --> 00:29:55,900
+the top left triangle is there?
+
+578
+00:29:55,900 --> 00:29:56,770
+PROFESSOR: Sorry.
+
+579
+00:29:56,770 --> 00:29:58,471
+When I wrap around here?
+
+580
+00:29:58,471 --> 00:30:01,072
+AUDIENCE: No, the triangle
+whose edge is the bottom edge.
+
+581
+00:30:01,072 --> 00:30:01,905
+PROFESSOR: This one?
+
+582
+00:30:01,905 --> 00:30:02,530
+AUDIENCE: Yeah.
+
+583
+00:30:02,530 --> 00:30:04,419
+How do you do that,
+given that there's
+
+584
+00:30:04,419 --> 00:30:07,120
+the triangle in the top left?
+
+585
+00:30:07,120 --> 00:30:09,944
+PROFESSOR: Oh, I see.
+
+586
+00:30:09,944 --> 00:30:11,360
+The question is,
+what do I do here
+
+587
+00:30:11,360 --> 00:30:13,550
+because I'm going to overlap
+into this triangle again?
+
+588
+00:30:13,550 --> 00:30:14,216
+AUDIENCE: Right.
+
+589
+00:30:14,216 --> 00:30:14,890
+PROFESSOR: Yeah.
+
+590
+00:30:14,890 --> 00:30:16,723
+So you have to be a
+little bit careful here,
+
+591
+00:30:16,723 --> 00:30:19,390
+and there's one other gadget
+I need to mention here,
+
+592
+00:30:19,390 --> 00:30:23,590
+which is the hide gadget,
+I think it's called.
+
+593
+00:30:23,590 --> 00:30:26,977
+
+594
+00:30:26,977 --> 00:30:28,810
+Because I didn't fold
+exactly this triangle,
+
+595
+00:30:28,810 --> 00:30:30,680
+I folded too much.
+
+596
+00:30:30,680 --> 00:30:34,540
+At this point when I have the
+strip here, and maybe a little
+
+597
+00:30:34,540 --> 00:30:36,640
+bit out of the way,
+I'd like to get rid
+
+598
+00:30:36,640 --> 00:30:39,970
+of all this messy stuff,
+just tuck it underneath.
+
+599
+00:30:39,970 --> 00:30:43,720
+So I'm going to fold along this
+line, fold all this stuff back
+
+600
+00:30:43,720 --> 00:30:47,800
+behind, and that might still be
+a mess because it could stick
+
+601
+00:30:47,800 --> 00:30:50,040
+out over here or somewhere else.
+
+602
+00:30:50,040 --> 00:30:52,760
+So let me tell you about the
+hide gadget a little bit,
+
+603
+00:30:52,760 --> 00:30:53,840
+maybe over here.
+
+604
+00:30:53,840 --> 00:31:01,530
+
+605
+00:31:01,530 --> 00:31:04,450
+You have to be a little careful
+when you do that exactly,
+
+606
+00:31:04,450 --> 00:31:06,500
+but it's not that hard.
+
+607
+00:31:06,500 --> 00:31:12,500
+
+608
+00:31:12,500 --> 00:31:23,270
+So in general,
+the hide gadget is
+
+609
+00:31:23,270 --> 00:31:25,800
+you have some convex polygon.
+
+610
+00:31:25,800 --> 00:31:28,370
+Here, it's always going to
+be a triangle, actually,
+
+611
+00:31:28,370 --> 00:31:31,110
+but this would work
+for any convex polygon.
+
+612
+00:31:31,110 --> 00:31:34,520
+You have some folding which
+contains that polygon,
+
+613
+00:31:34,520 --> 00:31:36,680
+but it might go outside
+all over the place.
+
+614
+00:31:36,680 --> 00:31:38,019
+That's our situation.
+
+615
+00:31:38,019 --> 00:31:38,935
+We want this triangle.
+
+616
+00:31:38,935 --> 00:31:40,820
+We have a folding that
+includes the triangle
+
+617
+00:31:40,820 --> 00:31:43,790
+but it has all this
+junk on the outside.
+
+618
+00:31:43,790 --> 00:31:46,960
+All you need to do is
+repeatedly fold along
+
+619
+00:31:46,960 --> 00:31:50,090
+the extension of
+each of these edges,
+
+620
+00:31:50,090 --> 00:31:52,680
+and you can prove-- I'm
+not going to do it here
+
+621
+00:31:52,680 --> 00:31:54,600
+because it's a
+little bit messy--
+
+622
+00:31:54,600 --> 00:31:57,460
+but as you fold that
+thing, obviously
+
+623
+00:31:57,460 --> 00:32:00,140
+the area that you go
+outside gets smaller,
+
+624
+00:32:00,140 --> 00:32:02,940
+and you do make steady
+progress and eventually,
+
+625
+00:32:02,940 --> 00:32:05,317
+after finitely many folds,
+you will have reduced
+
+626
+00:32:05,317 --> 00:32:06,900
+this thing down to
+the convex polygon.
+
+627
+00:32:06,900 --> 00:32:10,070
+Just keep folding mountain
+fold along each of those edges.
+
+628
+00:32:10,070 --> 00:32:12,780
+
+629
+00:32:12,780 --> 00:32:16,024
+And I think there's even
+a pseudo polynomial bound
+
+630
+00:32:16,024 --> 00:32:17,690
+on the number of folds
+you need to make,
+
+631
+00:32:17,690 --> 00:32:20,190
+although I won't
+go into that here.
+
+632
+00:32:20,190 --> 00:32:23,532
+
+633
+00:32:23,532 --> 00:32:25,240
+So that's what you do
+with this triangle.
+
+634
+00:32:25,240 --> 00:32:30,440
+Then you fold the next one, and
+then you apply the hide gadget
+
+635
+00:32:30,440 --> 00:32:31,610
+to that triangle.
+
+636
+00:32:31,610 --> 00:32:36,062
+When you do that, there is
+this triangle in the way.
+
+637
+00:32:36,062 --> 00:32:37,770
+Technically, I guess,
+that wouldn't quite
+
+638
+00:32:37,770 --> 00:32:40,600
+be simple folds because you're
+folding along this line.
+
+639
+00:32:40,600 --> 00:32:43,100
+You need to tuck it
+in between the layers.
+
+640
+00:32:43,100 --> 00:32:45,370
+You have to avoid collision
+with this triangle
+
+641
+00:32:45,370 --> 00:32:47,490
+and go underneath this one.
+
+642
+00:32:47,490 --> 00:32:47,990
+Hm.
+
+643
+00:32:47,990 --> 00:32:49,805
+I hadn't thought about that.
+
+644
+00:32:49,805 --> 00:32:51,680
+I'd like to say this
+works with simple folds.
+
+645
+00:32:51,680 --> 00:32:55,570
+
+646
+00:32:55,570 --> 00:32:57,840
+It sort of does in that
+each fold you make,
+
+647
+00:32:57,840 --> 00:32:59,990
+you're just folding
+along one line at a time,
+
+648
+00:32:59,990 --> 00:33:03,060
+but you do actually
+collide in the middle.
+
+649
+00:33:03,060 --> 00:33:04,600
+It's not so ideal.
+
+650
+00:33:04,600 --> 00:33:08,550
+Origami folds, this
+definitely works.
+
+651
+00:33:08,550 --> 00:33:11,320
+I wonder if there's a way to
+do it with simple folds now.
+
+652
+00:33:11,320 --> 00:33:11,820
+Interesting.
+
+653
+00:33:11,820 --> 00:33:15,416
+
+654
+00:33:15,416 --> 00:33:15,916
+Hm.
+
+655
+00:33:15,916 --> 00:33:16,892
+I don't know.
+
+656
+00:33:16,892 --> 00:33:20,796
+AUDIENCE: Can you
+undo the corner gadget
+
+657
+00:33:20,796 --> 00:33:23,724
+to separate the
+triangles, hide the folds,
+
+658
+00:33:23,724 --> 00:33:26,455
+and then put them back?
+
+659
+00:33:26,455 --> 00:33:28,950
+PROFESSOR: The question is,
+can I pull them apart, do them
+
+660
+00:33:28,950 --> 00:33:30,630
+separately, and push
+them back together?
+
+661
+00:33:30,630 --> 00:33:33,088
+Pulling them apart and pushing
+them back together would not
+
+662
+00:33:33,088 --> 00:33:34,350
+be simple folds, I think.
+
+663
+00:33:34,350 --> 00:33:35,320
+Maybe you could do it.
+
+664
+00:33:35,320 --> 00:33:36,903
+AUDIENCE: You just
+type a [INAUDIBLE].
+
+665
+00:33:36,903 --> 00:33:37,930
+PROFESSOR: Yeah, OK.
+
+666
+00:33:37,930 --> 00:33:38,715
+Interesting.
+
+667
+00:33:38,715 --> 00:33:39,840
+We should think about that.
+
+668
+00:33:39,840 --> 00:33:42,450
+I'm surprised this is not
+known, but I'm pretty sure
+
+669
+00:33:42,450 --> 00:33:45,690
+now that it's not known.
+
+670
+00:33:45,690 --> 00:33:47,250
+Maybe first open
+problem session,
+
+671
+00:33:47,250 --> 00:33:49,657
+we can solve that
+in a few minutes.
+
+672
+00:33:49,657 --> 00:33:50,365
+Should be doable.
+
+673
+00:33:50,365 --> 00:33:56,200
+
+674
+00:33:56,200 --> 00:33:58,130
+There's one more
+gadget we need if we
+
+675
+00:33:58,130 --> 00:34:01,260
+want to get the
+two color pattern.
+
+676
+00:34:01,260 --> 00:34:04,760
+
+677
+00:34:04,760 --> 00:34:06,890
+This polygon maybe
+is all one color.
+
+678
+00:34:06,890 --> 00:34:09,760
+Maybe it's all the
+colored side of the paper.
+
+679
+00:34:09,760 --> 00:34:12,989
+But then at some point,
+we might transition over
+
+680
+00:34:12,989 --> 00:34:19,247
+to another polygon, and
+maybe that's the other color.
+
+681
+00:34:19,247 --> 00:34:21,330
+So all we're going to do
+is we're, again, visiting
+
+682
+00:34:21,330 --> 00:34:22,790
+these triangles in some order.
+
+683
+00:34:22,790 --> 00:34:26,870
+Whenever we go between a black
+triangle and a white triangle,
+
+684
+00:34:26,870 --> 00:34:30,130
+we are going to apply
+a color reversal
+
+685
+00:34:30,130 --> 00:34:36,589
+gadget, which is very simple.
+
+686
+00:34:36,589 --> 00:34:41,780
+
+687
+00:34:41,780 --> 00:34:44,489
+I forgot to color one
+side of the strip,
+
+688
+00:34:44,489 --> 00:34:50,000
+so bear with me for a second,
+and feel free to color
+
+689
+00:34:50,000 --> 00:34:50,750
+in your own strip.
+
+690
+00:34:50,750 --> 00:34:54,187
+
+691
+00:34:54,187 --> 00:34:56,159
+Probably killing this
+microphone right here.
+
+692
+00:34:56,159 --> 00:35:00,340
+
+693
+00:35:00,340 --> 00:35:02,570
+Purple on one side,
+white on the other,
+
+694
+00:35:02,570 --> 00:35:05,990
+although it's so transparent,
+it looks almost the same.
+
+695
+00:35:05,990 --> 00:35:07,460
+The idea is very simple.
+
+696
+00:35:07,460 --> 00:35:09,120
+Where are we starting from?
+
+697
+00:35:09,120 --> 00:35:12,470
+We're starting from
+the not purple side.
+
+698
+00:35:12,470 --> 00:35:14,630
+Then we make a mountain fold.
+
+699
+00:35:14,630 --> 00:35:16,420
+It's just like a turn gadget.
+
+700
+00:35:16,420 --> 00:35:19,820
+In fact, it's just like
+you're turning 90 degrees.
+
+701
+00:35:19,820 --> 00:35:23,900
+We fold up like this, and
+then we just immediately make
+
+702
+00:35:23,900 --> 00:35:28,340
+another 90 degree turn
+without the first fold,
+
+703
+00:35:28,340 --> 00:35:34,460
+and we get a sharp transition
+straight along the strip
+
+704
+00:35:34,460 --> 00:35:38,630
+from light purple to dark
+purple, it looks like,
+
+705
+00:35:38,630 --> 00:35:42,889
+but from the white side
+to the purple side.
+
+706
+00:35:42,889 --> 00:35:45,180
+Right when you transition
+between any pair of triangles
+
+707
+00:35:45,180 --> 00:35:47,500
+of the opposite color, you
+just apply this gadget.
+
+708
+00:35:47,500 --> 00:35:49,180
+You make three more
+folds, and boom,
+
+709
+00:35:49,180 --> 00:35:51,787
+you've got your color reversal.
+
+710
+00:35:51,787 --> 00:35:53,120
+AUDIENCE: Can you do that again?
+
+711
+00:35:53,120 --> 00:35:53,470
+PROFESSOR: Do it again?
+
+712
+00:35:53,470 --> 00:35:53,970
+All right.
+
+713
+00:35:53,970 --> 00:35:55,540
+So first I make a mountain fold.
+
+714
+00:35:55,540 --> 00:35:58,240
+
+715
+00:35:58,240 --> 00:36:00,190
+Now both sides are white.
+
+716
+00:36:00,190 --> 00:36:05,180
+Then I fold this guy up, so
+now I have a regular 90 degree
+
+717
+00:36:05,180 --> 00:36:08,507
+turn, and then I
+fold this guy back.
+
+718
+00:36:08,507 --> 00:36:11,090
+That's the tricky part because
+you can't see what's happening.
+
+719
+00:36:11,090 --> 00:36:12,830
+Let me flip it over for you.
+
+720
+00:36:12,830 --> 00:36:19,580
+So I'm just folding
+the top two layers here
+
+721
+00:36:19,580 --> 00:36:25,912
+along that 45 degree angle,
+and then I get that transition.
+
+722
+00:36:25,912 --> 00:36:27,620
+On this side, it's
+still purple and white
+
+723
+00:36:27,620 --> 00:36:28,661
+but it's a little uglier.
+
+724
+00:36:28,661 --> 00:36:31,220
+
+725
+00:36:31,220 --> 00:36:32,100
+It's on the slide.
+
+726
+00:36:32,100 --> 00:36:35,220
+You can try again.
+
+727
+00:36:35,220 --> 00:36:37,600
+It doesn't say here, but
+fold just the back layers.
+
+728
+00:36:37,600 --> 00:36:43,220
+
+729
+00:36:43,220 --> 00:36:44,290
+All right?
+
+730
+00:36:44,290 --> 00:36:46,570
+Questions?
+
+731
+00:36:46,570 --> 00:36:49,770
+So that's how you can
+visit all these polygons,
+
+732
+00:36:49,770 --> 00:36:53,650
+do color transitions, you can do
+it in 3D, make any polyhedron.
+
+733
+00:36:53,650 --> 00:36:56,180
+A little crazy, but
+the point is you
+
+734
+00:36:56,180 --> 00:36:59,310
+do need to do some algorithmic
+construction to really see
+
+735
+00:36:59,310 --> 00:37:00,910
+this method work.
+
+736
+00:37:00,910 --> 00:37:02,132
+You need those three gadgets.
+
+737
+00:37:02,132 --> 00:37:03,840
+You need to be sure
+that you can actually
+
+738
+00:37:03,840 --> 00:37:05,089
+combine them in the right way.
+
+739
+00:37:05,089 --> 00:37:08,180
+And I'm hand waving a little
+bit some of these details.
+
+740
+00:37:08,180 --> 00:37:10,830
+You should be more
+careful, but it works.
+
+741
+00:37:10,830 --> 00:37:14,450
+
+742
+00:37:14,450 --> 00:37:17,112
+It's obviously
+horribly inefficient,
+
+743
+00:37:17,112 --> 00:37:19,445
+but we can make it at least
+a little bit more efficient.
+
+744
+00:37:19,445 --> 00:37:20,570
+Let me tell you about that.
+
+745
+00:37:20,570 --> 00:37:39,140
+
+746
+00:37:39,140 --> 00:37:53,500
+So we can achieve something I
+call pseudo efficiency, which
+
+747
+00:37:53,500 --> 00:37:59,700
+is if you are allowed to
+start with any rectangle
+
+748
+00:37:59,700 --> 00:38:09,580
+you want, so in
+particular, if we
+
+749
+00:38:09,580 --> 00:38:12,650
+start with a long strip of
+paper like you did here,
+
+750
+00:38:12,650 --> 00:38:14,440
+then you can make
+this super efficient.
+
+751
+00:38:14,440 --> 00:38:23,080
+
+752
+00:38:23,080 --> 00:38:29,760
+The area of the piece of
+paper that we start with
+
+753
+00:38:29,760 --> 00:38:39,756
+can be equal to the
+surface area of the thing
+
+754
+00:38:39,756 --> 00:38:40,630
+that we want to fold.
+
+755
+00:38:40,630 --> 00:38:43,530
+
+756
+00:38:43,530 --> 00:38:45,890
+If we could achieve this,
+we would be really happy.
+
+757
+00:38:45,890 --> 00:38:47,340
+That means we have zero wastage.
+
+758
+00:38:47,340 --> 00:38:49,310
+I can't get zero
+wastage, but I can
+
+759
+00:38:49,310 --> 00:38:51,705
+get just a little
+tiny bit of wastage.
+
+760
+00:38:51,705 --> 00:38:54,780
+
+761
+00:38:54,780 --> 00:38:59,790
+So we write epsilon for a very
+tiny result, very tiny error.
+
+762
+00:38:59,790 --> 00:39:01,291
+So epsilon does
+have to be positive,
+
+763
+00:39:01,291 --> 00:39:02,790
+we have to have
+some wastage, but it
+
+764
+00:39:02,790 --> 00:39:04,010
+can be arbitrarily small.
+
+765
+00:39:04,010 --> 00:39:07,350
+Basically, the narrower and
+longer you make your strip,
+
+766
+00:39:07,350 --> 00:39:09,100
+the closer the area
+of your piece of paper
+
+767
+00:39:09,100 --> 00:39:12,280
+gets to the surface area of your
+target shape, which is the best
+
+768
+00:39:12,280 --> 00:39:14,090
+you can hope for.
+
+769
+00:39:14,090 --> 00:39:17,130
+So with this crazy proviso,
+which is completely impractical
+
+770
+00:39:17,130 --> 00:39:20,770
+we get a super
+practical outcome.
+
+771
+00:39:20,770 --> 00:39:22,460
+And the summation is
+not very practical,
+
+772
+00:39:22,460 --> 00:39:24,939
+but it's kind of nifty,
+and I particularly
+
+773
+00:39:24,939 --> 00:39:25,980
+like the proof technique.
+
+774
+00:39:25,980 --> 00:39:35,150
+It uses a very powerful tool in
+computational geometry, so let
+
+775
+00:39:35,150 --> 00:39:35,900
+me show it to you.
+
+776
+00:39:35,900 --> 00:39:41,760
+
+777
+00:39:41,760 --> 00:39:46,900
+So the central issue is that
+while visiting a triangle,
+
+778
+00:39:46,900 --> 00:39:48,360
+we actually do
+pretty efficiently.
+
+779
+00:39:48,360 --> 00:39:50,890
+Except for the very
+last strip, where
+
+780
+00:39:50,890 --> 00:39:55,450
+we might overlap ourselves,
+except for these little corner
+
+781
+00:39:55,450 --> 00:39:57,610
+turn gadgets, and also
+the material that's
+
+782
+00:39:57,610 --> 00:39:59,907
+used up in the
+gadgets themselves,
+
+783
+00:39:59,907 --> 00:40:01,240
+We're actually really efficient.
+
+784
+00:40:01,240 --> 00:40:04,090
+We're covering this
+triangle almost one for one.
+
+785
+00:40:04,090 --> 00:40:05,970
+There's a little bit
+of garbage at the edge
+
+786
+00:40:05,970 --> 00:40:08,510
+and a little bit of
+garbage at this edge,
+
+787
+00:40:08,510 --> 00:40:11,220
+but you could imagine as
+the strip gets smaller,
+
+788
+00:40:11,220 --> 00:40:14,490
+this wastage gets smaller,
+because it's essentially
+
+789
+00:40:14,490 --> 00:40:17,620
+this length times the
+width of the strip up
+
+790
+00:40:17,620 --> 00:40:18,900
+to constant factors.
+
+791
+00:40:18,900 --> 00:40:21,310
+So as the strip gets narrower,
+it gets closer and closer
+
+792
+00:40:21,310 --> 00:40:24,334
+to this thing times
+0, so this wastage
+
+793
+00:40:24,334 --> 00:40:25,500
+gets closer and closer to 0.
+
+794
+00:40:25,500 --> 00:40:28,160
+Same thing over here,
+same thing over here.
+
+795
+00:40:28,160 --> 00:40:29,790
+The real problem
+at this point is
+
+796
+00:40:29,790 --> 00:40:32,960
+that we visit some triangles
+possibly many times.
+
+797
+00:40:32,960 --> 00:40:36,710
+I was totally free about
+how I visited triangles.
+
+798
+00:40:36,710 --> 00:40:40,190
+Maybe I go here and then over
+here and then back over here.
+
+799
+00:40:40,190 --> 00:40:42,010
+I may be very wasteful.
+
+800
+00:40:42,010 --> 00:40:44,080
+So I just want to
+avoid that wastage.
+
+801
+00:40:44,080 --> 00:40:47,295
+Just visit each triangle
+once, exactly once.
+
+802
+00:40:47,295 --> 00:40:50,380
+How could you do
+it exactly once?
+
+803
+00:40:50,380 --> 00:40:54,180
+With a great idea called
+Hamiltonian refinement.
+
+804
+00:40:54,180 --> 00:40:57,480
+
+805
+00:40:57,480 --> 00:40:59,500
+I've used this idea many times.
+
+806
+00:40:59,500 --> 00:41:02,526
+This was the first
+time I used it.
+
+807
+00:41:02,526 --> 00:41:03,830
+It's very cool.
+
+808
+00:41:03,830 --> 00:41:06,780
+I think it goes back
+to '97 or something.
+
+809
+00:41:06,780 --> 00:41:09,865
+So you have some triangulation.
+
+810
+00:41:09,865 --> 00:41:14,330
+
+811
+00:41:14,330 --> 00:41:17,407
+I'm going to keep it
+relatively simple.
+
+812
+00:41:17,407 --> 00:41:19,740
+And I'd really like to visit
+each triangle exactly once.
+
+813
+00:41:19,740 --> 00:41:21,156
+So you think, OK,
+maybe I'll start
+
+814
+00:41:21,156 --> 00:41:25,380
+here, then I'll go over here,
+and over here, and uh oh.
+
+815
+00:41:25,380 --> 00:41:27,050
+Then I'm stuck.
+
+816
+00:41:27,050 --> 00:41:28,790
+I can't get to the
+other triangles
+
+817
+00:41:28,790 --> 00:41:32,760
+without revisiting
+an existing triangle.
+
+818
+00:41:32,760 --> 00:41:35,130
+It's impossible to find what
+we call a Hamiltonian path.
+
+819
+00:41:35,130 --> 00:41:38,190
+Hamiltonian path will visit
+each triangle exactly once.
+
+820
+00:41:38,190 --> 00:41:40,366
+But who cares about
+these triangles?
+
+821
+00:41:40,366 --> 00:41:42,240
+I just made these
+triangles to make it easier
+
+822
+00:41:42,240 --> 00:41:43,670
+to think about a polygon.
+
+823
+00:41:43,670 --> 00:41:45,170
+I could actually
+cut these triangles
+
+824
+00:41:45,170 --> 00:41:50,110
+into smaller triangles and
+ideally make it Hamiltonian.
+
+825
+00:41:50,110 --> 00:41:53,440
+So here's the idea.
+
+826
+00:41:53,440 --> 00:41:57,350
+There's this idea called the
+dual graph, which is also
+
+827
+00:41:57,350 --> 00:42:00,520
+pretty central in
+computational geometry,
+
+828
+00:42:00,520 --> 00:42:03,680
+where I'm going to make a
+little dot for every triangle
+
+829
+00:42:03,680 --> 00:42:06,110
+inside each triangle,
+and then I'm
+
+830
+00:42:06,110 --> 00:42:08,220
+going to connect
+those dots whenever
+
+831
+00:42:08,220 --> 00:42:10,930
+there is two triangles
+that share an edge.
+
+832
+00:42:10,930 --> 00:42:15,120
+
+833
+00:42:15,120 --> 00:42:17,460
+This is called the dual graph.
+
+834
+00:42:17,460 --> 00:42:21,880
+These parts are called the dual
+graph of the triangulation.
+
+835
+00:42:21,880 --> 00:42:23,630
+And in this picture,
+I've got a nice, kind
+
+836
+00:42:23,630 --> 00:42:25,380
+of tree-shaped graph.
+
+837
+00:42:25,380 --> 00:42:27,480
+In general, you might
+get cycles, but then
+
+838
+00:42:27,480 --> 00:42:29,466
+just throw away edges
+until you get a tree.
+
+839
+00:42:29,466 --> 00:42:31,090
+I really like to
+think of it as a tree,
+
+840
+00:42:31,090 --> 00:42:34,710
+and if I throw in enough
+edges, it will be a tree.
+
+841
+00:42:34,710 --> 00:42:40,420
+Then my idea is I'd really
+like to just visit everything
+
+842
+00:42:40,420 --> 00:42:44,350
+in this order, walking
+around the tree.
+
+843
+00:42:44,350 --> 00:42:47,490
+
+844
+00:42:47,490 --> 00:42:49,000
+I can go around in
+a cycle and visit
+
+845
+00:42:49,000 --> 00:42:51,974
+each of these little
+polygons exactly once.
+
+846
+00:42:51,974 --> 00:42:53,515
+Now, these polygons
+aren't triangles,
+
+847
+00:42:53,515 --> 00:42:57,290
+which is kind of annoying,
+so I just triangulate.
+
+848
+00:42:57,290 --> 00:43:03,020
+So you could just triangulate
+like this, I guess.
+
+849
+00:43:03,020 --> 00:43:07,430
+If you want to be
+excessive and simpler,
+
+850
+00:43:07,430 --> 00:43:09,820
+from every one of
+these dots, you
+
+851
+00:43:09,820 --> 00:43:12,210
+can cut to the midpoint
+of the three edges
+
+852
+00:43:12,210 --> 00:43:14,240
+and also cut to the vertices.
+
+853
+00:43:14,240 --> 00:43:16,590
+For every triangle, I just
+cut to the three vertices
+
+854
+00:43:16,590 --> 00:43:19,820
+and cut to the midpoints.
+
+855
+00:43:19,820 --> 00:43:23,660
+You do that, and
+you are guaranteed.
+
+856
+00:43:23,660 --> 00:43:27,120
+This gets a little messy,
+but this is theoretical.
+
+857
+00:43:27,120 --> 00:43:30,090
+
+858
+00:43:30,090 --> 00:43:33,660
+You will increase the number of
+triangles by a factor of six.
+
+859
+00:43:33,660 --> 00:43:37,560
+Each triangle gets replaced by
+six little smaller triangles.
+
+860
+00:43:37,560 --> 00:43:40,480
+It covers the same region,
+and yet now it's Hamiltonian.
+
+861
+00:43:40,480 --> 00:43:43,270
+Now I can visit these triangles
+and visit each triangle exactly
+
+862
+00:43:43,270 --> 00:43:46,510
+once, and that's how you
+get pseudo efficiency.
+
+863
+00:43:46,510 --> 00:43:49,731
+Pretty easy once
+you know this trick.
+
+864
+00:43:49,731 --> 00:43:50,230
+Questions?
+
+865
+00:43:50,230 --> 00:43:53,432
+
+866
+00:43:53,432 --> 00:43:55,340
+AUDIENCE: Why is it
+called pseudo efficiency?
+
+867
+00:43:55,340 --> 00:43:56,890
+PROFESSOR: Well, I made that up.
+
+868
+00:43:56,890 --> 00:43:58,920
+Why is it called
+pseudo efficiency?
+
+869
+00:43:58,920 --> 00:44:02,050
+Because it's not
+really efficient.
+
+870
+00:44:02,050 --> 00:44:05,460
+It is efficient,
+I agree, but only
+
+871
+00:44:05,460 --> 00:44:07,430
+with this crazy
+assumption that you're
+
+872
+00:44:07,430 --> 00:44:09,930
+allowed to start with an
+arbitrarily narrow strip,
+
+873
+00:44:09,930 --> 00:44:12,350
+and that's not really practical.
+
+874
+00:44:12,350 --> 00:44:15,110
+The practical origami problem
+is I start with a square.
+
+875
+00:44:15,110 --> 00:44:19,570
+How big of a square do I
+need to fold this shape?
+
+876
+00:44:19,570 --> 00:44:24,500
+And that's something we'll
+talk about probably next week.
+
+877
+00:44:24,500 --> 00:44:26,820
+That's been studied
+but it's a lot harder,
+
+878
+00:44:26,820 --> 00:44:29,615
+so I'm starting
+with the easy stuff.
+
+879
+00:44:29,615 --> 00:44:32,198
+AUDIENCE: Does this necessarily
+keep the mountains and valleys
+
+880
+00:44:32,198 --> 00:44:33,830
+that you defined
+at the beginning?
+
+881
+00:44:33,830 --> 00:44:36,371
+PROFESSOR: Will this keep the
+mountains and valleys the same?
+
+882
+00:44:36,371 --> 00:44:38,462
+
+883
+00:44:38,462 --> 00:44:40,920
+The input didn't specify where
+the mountains valleys should
+
+884
+00:44:40,920 --> 00:44:41,420
+be.
+
+885
+00:44:41,420 --> 00:44:44,870
+It just said you have
+to make these polygons.
+
+886
+00:44:44,870 --> 00:44:49,180
+Every fold you make in this
+construction will stay,
+
+887
+00:44:49,180 --> 00:44:52,404
+but you may make more folds that
+go on top of existing folds.
+
+888
+00:44:52,404 --> 00:44:54,820
+I think all the mountains and
+valleys that you define here
+
+889
+00:44:54,820 --> 00:44:58,210
+will remain mountains or valleys
+as we specified, but keep
+
+890
+00:44:58,210 --> 00:45:01,600
+adding creases until you finish.
+
+891
+00:45:01,600 --> 00:45:03,600
+Yeah?
+
+892
+00:45:03,600 --> 00:45:06,350
+AUDIENCE: Are you
+just doing a 2D case
+
+893
+00:45:06,350 --> 00:45:08,834
+of what we call the
+3D pyramid there?
+
+894
+00:45:08,834 --> 00:45:09,333
+[INAUDIBLE]
+
+895
+00:45:09,333 --> 00:45:12,940
+
+896
+00:45:12,940 --> 00:45:14,950
+PROFESSOR: The question
+is, what about 3D?
+
+897
+00:45:14,950 --> 00:45:18,400
+This dual graph idea
+does work in 3D.
+
+898
+00:45:18,400 --> 00:45:21,520
+I drew a 2D picture because
+it's a lot easier to draw,
+
+899
+00:45:21,520 --> 00:45:25,567
+but you could imagine, for
+example, you have a cube.
+
+900
+00:45:25,567 --> 00:45:27,400
+I'm not going to be
+able to draw everything,
+
+901
+00:45:27,400 --> 00:45:31,310
+but you can still
+form a dual graph.
+
+902
+00:45:31,310 --> 00:45:32,865
+I should have
+triangulated the cube,
+
+903
+00:45:32,865 --> 00:45:34,990
+but in fact, you can do
+this for any kind of graph.
+
+904
+00:45:34,990 --> 00:45:39,777
+I'm making a dot for
+every face of the thing
+
+905
+00:45:39,777 --> 00:45:40,610
+that I want to make.
+
+906
+00:45:40,610 --> 00:45:42,685
+Each of these
+polygons, I make a dot.
+
+907
+00:45:42,685 --> 00:45:45,040
+So in fact, if I
+finished this picture,
+
+908
+00:45:45,040 --> 00:45:51,440
+I would get the dual
+graph is the octahedron.
+
+909
+00:45:51,440 --> 00:45:55,130
+It would look something
+like this topologically.
+
+910
+00:45:55,130 --> 00:45:57,440
+It doesn't have to
+be a geometric thing.
+
+911
+00:45:57,440 --> 00:45:59,264
+It works just as well in 3D.
+
+912
+00:45:59,264 --> 00:46:00,930
+It actually still
+works even if you just
+
+913
+00:46:00,930 --> 00:46:03,400
+say, for every
+triangle, just cut
+
+914
+00:46:03,400 --> 00:46:06,882
+to the midpoints of the three
+edges and to the vertices.
+
+915
+00:46:06,882 --> 00:46:08,340
+Then that thing
+will be Hamiltonian
+
+916
+00:46:08,340 --> 00:46:10,880
+and you can walk around
+it by doing this dual
+
+917
+00:46:10,880 --> 00:46:13,390
+and spanning tree construction.
+
+918
+00:46:13,390 --> 00:46:14,890
+I won't go into it
+exactly, but that
+
+919
+00:46:14,890 --> 00:46:17,940
+could be done in linear time.
+
+920
+00:46:17,940 --> 00:46:19,940
+I'm still only making a
+two dimensional surface.
+
+921
+00:46:19,940 --> 00:46:21,790
+I'm not trying to
+make a 3D solid here,
+
+922
+00:46:21,790 --> 00:46:24,490
+so that's why locally,
+it's two dimensional.
+
+923
+00:46:24,490 --> 00:46:26,560
+Locally, this just works.
+
+924
+00:46:26,560 --> 00:46:28,950
+Another question?
+
+925
+00:46:28,950 --> 00:46:33,102
+AUDIENCE: So it seems that if
+you could also just stick with
+
+926
+00:46:33,102 --> 00:46:36,704
+the original construction,
+and when you cannot find
+
+927
+00:46:36,704 --> 00:46:41,390
+the Hamiltonian path around
+the triangles, [INAUDIBLE],
+
+928
+00:46:41,390 --> 00:46:45,210
+you don't cover them again, you
+just get a narrow strip that
+
+929
+00:46:45,210 --> 00:46:47,910
+runs through them and
+just rigidly [INAUDIBLE]?
+
+930
+00:46:47,910 --> 00:46:49,160
+PROFESSOR: That's a neat idea.
+
+931
+00:46:49,160 --> 00:46:51,420
+So instead of doing this
+Hamiltonian refinement,
+
+932
+00:46:51,420 --> 00:46:53,820
+you could visit the
+triangles in any order,
+
+933
+00:46:53,820 --> 00:46:55,750
+but then to get
+from one triangle
+
+934
+00:46:55,750 --> 00:46:57,910
+to some distant
+triangle, instead
+
+935
+00:46:57,910 --> 00:47:00,760
+of covering all the triangles in
+the middle which you've already
+
+936
+00:47:00,760 --> 00:47:03,400
+covered, which is
+excessive, just go
+
+937
+00:47:03,400 --> 00:47:07,749
+as straight there as possible.
+
+938
+00:47:07,749 --> 00:47:10,040
+Locally, you'd think of that
+as being a one dimensional
+
+939
+00:47:10,040 --> 00:47:12,310
+wastage instead of a
+two dimensional wastage.
+
+940
+00:47:12,310 --> 00:47:16,020
+So probably you can get the
+same result by that technique.
+
+941
+00:47:16,020 --> 00:47:17,630
+I hadn't thought of that before.
+
+942
+00:47:17,630 --> 00:47:22,280
+We should check it, but
+I think that should work.
+
+943
+00:47:22,280 --> 00:47:25,100
+This is kind of cooler, just
+because it uses a fancy tool,
+
+944
+00:47:25,100 --> 00:47:28,004
+but I imagine with a
+little more analysis,
+
+945
+00:47:28,004 --> 00:47:29,795
+you could prove that
+that works because you
+
+946
+00:47:29,795 --> 00:47:31,336
+know there aren't
+too many triangles.
+
+947
+00:47:31,336 --> 00:47:33,920
+
+948
+00:47:33,920 --> 00:47:34,420
+Good.
+
+949
+00:47:34,420 --> 00:47:37,570
+
+950
+00:47:37,570 --> 00:47:39,870
+I think I'm going to
+skip seem placement
+
+951
+00:47:39,870 --> 00:47:41,950
+and move on to foldability.
+
+952
+00:47:41,950 --> 00:47:44,340
+This was a little intro
+to origami design.
+
+953
+00:47:44,340 --> 00:47:47,340
+Obviously not practical
+yet, but it's something.
+
+954
+00:47:47,340 --> 00:47:51,076
+
+955
+00:47:51,076 --> 00:47:52,075
+It's nice and universal.
+
+956
+00:47:52,075 --> 00:47:53,125
+You can make everything.
+
+957
+00:47:53,125 --> 00:47:56,210
+
+958
+00:47:56,210 --> 00:47:58,730
+So let me tell you a little
+bit about the other side
+
+959
+00:47:58,730 --> 00:48:02,400
+of the world, which is,
+instead of a target shape,
+
+960
+00:48:02,400 --> 00:48:04,080
+what if I gave you
+a crease pattern?
+
+961
+00:48:04,080 --> 00:48:08,290
+We just want to know, does
+this crease pattern fold?
+
+962
+00:48:08,290 --> 00:48:13,600
+I give you the crease
+pattern of that pinwheel.
+
+963
+00:48:13,600 --> 00:48:15,380
+I say, does this
+fold into anything?
+
+964
+00:48:15,380 --> 00:48:17,360
+Does it fold into
+a flat origami?
+
+965
+00:48:17,360 --> 00:48:19,170
+Does it fold into
+something else?
+
+966
+00:48:19,170 --> 00:48:21,200
+Can you fold it
+with simple folds?
+
+967
+00:48:21,200 --> 00:48:23,040
+Can you fold it
+with origami folds?
+
+968
+00:48:23,040 --> 00:48:25,060
+Those are all
+interesting questions.
+
+969
+00:48:25,060 --> 00:48:30,790
+We're going to start with a
+very simple form of it, which
+
+970
+00:48:30,790 --> 00:48:34,380
+is when the piece of paper
+is one dimensional, which
+
+971
+00:48:34,380 --> 00:48:37,250
+is almost what you
+were thinking of here.
+
+972
+00:48:37,250 --> 00:48:39,890
+It's like strip folding, but
+I'm going to furthermore require
+
+973
+00:48:39,890 --> 00:48:43,090
+that all the folds I make are
+perpendicular to the strip
+
+974
+00:48:43,090 --> 00:48:44,640
+direction.
+
+975
+00:48:44,640 --> 00:48:50,660
+So I'm always going to fold
+like this and then like this.
+
+976
+00:48:50,660 --> 00:48:52,820
+So it's going to remain a strip.
+
+977
+00:48:52,820 --> 00:48:54,620
+It'll just be a smaller strip.
+
+978
+00:48:54,620 --> 00:48:56,800
+I know it seems kind
+of boring, but it's
+
+979
+00:48:56,800 --> 00:48:58,470
+something we
+understand really well,
+
+980
+00:48:58,470 --> 00:49:02,530
+so that's why I'm going
+to tell you about it.
+
+981
+00:49:02,530 --> 00:49:04,930
+And then it relates
+to locally what
+
+982
+00:49:04,930 --> 00:49:07,050
+happens at one vertex
+of the crease pattern,
+
+983
+00:49:07,050 --> 00:49:11,750
+but we'll get to
+that next class.
+
+984
+00:49:11,750 --> 00:49:15,790
+So one dimensional flat folding.
+
+985
+00:49:15,790 --> 00:49:17,500
+I don't have them
+anymore here, but I'm
+
+986
+00:49:17,500 --> 00:49:19,800
+going to redefine "piece of
+paper" and all these things
+
+987
+00:49:19,800 --> 00:49:22,230
+because I want to
+be even simpler.
+
+988
+00:49:22,230 --> 00:49:26,330
+
+989
+00:49:26,330 --> 00:49:29,981
+So piece of paper now is going
+to be a one dimensional line
+
+990
+00:49:29,981 --> 00:49:30,480
+segment.
+
+991
+00:49:30,480 --> 00:49:35,800
+
+992
+00:49:35,800 --> 00:49:42,940
+A crease is going to be
+a point on that segment.
+
+993
+00:49:42,940 --> 00:49:45,197
+In general, a crease is
+one dimension smaller
+
+994
+00:49:45,197 --> 00:49:47,030
+than the piece of paper
+you're working with.
+
+995
+00:49:47,030 --> 00:49:48,220
+You could actually
+define "piece of paper"
+
+996
+00:49:48,220 --> 00:49:50,570
+to be a five dimensional
+solid if you wanted.
+
+997
+00:49:50,570 --> 00:49:52,630
+Then creases would be
+four dimensional flats,
+
+998
+00:49:52,630 --> 00:49:54,320
+they're called.
+
+999
+00:49:54,320 --> 00:49:55,290
+It's not a hyperplane.
+
+1000
+00:49:55,290 --> 00:49:56,910
+Four dimensional flat.
+
+1001
+00:49:56,910 --> 00:50:00,160
+That's what they're called.
+
+1002
+00:50:00,160 --> 00:50:02,580
+Or if you wanted to do curved
+creases in five dimensions,
+
+1003
+00:50:02,580 --> 00:50:06,992
+then it's a four dimensional
+surface somewhere in there.
+
+1004
+00:50:06,992 --> 00:50:11,170
+We won't do 5D
+origami in this class.
+
+1005
+00:50:11,170 --> 00:50:15,480
+Flat folding now means that
+your folding lies on a line.
+
+1006
+00:50:15,480 --> 00:50:17,230
+Of course, it will
+always lie in the plane
+
+1007
+00:50:17,230 --> 00:50:20,952
+if you're folding a line
+segment in the plane.
+
+1008
+00:50:20,952 --> 00:50:23,160
+So generally, we take a
+piece of paper one dimension,
+
+1009
+00:50:23,160 --> 00:50:26,100
+we fold it in a space
+that's one higher dimension,
+
+1010
+00:50:26,100 --> 00:50:28,294
+so we're going to be
+folding this thing in 2D.
+
+1011
+00:50:28,294 --> 00:50:30,210
+We use increases that
+are one lower dimension.
+
+1012
+00:50:30,210 --> 00:50:32,734
+Here, zero dimensional points.
+
+1013
+00:50:32,734 --> 00:50:34,650
+If we want it to be flat,
+it should in the end
+
+1014
+00:50:34,650 --> 00:50:36,691
+lie in the same dimension
+the piece of paper did.
+
+1015
+00:50:36,691 --> 00:50:39,560
+
+1016
+00:50:39,560 --> 00:50:41,510
+It's great because
+I can just draw.
+
+1017
+00:50:41,510 --> 00:50:43,080
+There's my piece of paper.
+
+1018
+00:50:43,080 --> 00:50:45,970
+Here are some creases.
+
+1019
+00:50:45,970 --> 00:50:47,370
+They're spread out however.
+
+1020
+00:50:47,370 --> 00:50:49,390
+Maybe they're marked
+mountain and valley,
+
+1021
+00:50:49,390 --> 00:50:52,580
+and I'm not going to use
+dashes and dot dashes here
+
+1022
+00:50:52,580 --> 00:50:55,570
+because they're
+points, so I'll write
+
+1023
+00:50:55,570 --> 00:50:57,460
+m's and v's,
+something like that.
+
+1024
+00:50:57,460 --> 00:50:59,410
+And I didn't check,
+but this either
+
+1025
+00:50:59,410 --> 00:51:01,125
+will be flat foldable or not.
+
+1026
+00:51:01,125 --> 00:51:06,440
+
+1027
+00:51:06,440 --> 00:51:09,180
+I think it is.
+
+1028
+00:51:09,180 --> 00:51:10,460
+How do I know that it is?
+
+1029
+00:51:10,460 --> 00:51:12,930
+Because we have a great
+characterization that tells you
+
+1030
+00:51:12,930 --> 00:51:15,789
+when a mountain valley
+pattern is flat foldable.
+
+1031
+00:51:15,789 --> 00:51:17,330
+Now, the first
+question you might ask
+
+1032
+00:51:17,330 --> 00:51:19,900
+is, what about
+crease patterns if I
+
+1033
+00:51:19,900 --> 00:51:22,480
+don't specify
+mountains and valleys?
+
+1034
+00:51:22,480 --> 00:51:25,110
+Then you can always
+fold anything.
+
+1035
+00:51:25,110 --> 00:51:28,220
+If I just gave you a
+segment and I put creases
+
+1036
+00:51:28,220 --> 00:51:33,670
+in some crazy pattern, all
+I do is alternate mountain,
+
+1037
+00:51:33,670 --> 00:51:36,610
+valley, mountain, valley,
+mountain, valley, mountain,
+
+1038
+00:51:36,610 --> 00:51:40,410
+valley, and I'm going to regret
+making such a big example.
+
+1039
+00:51:40,410 --> 00:51:47,300
+And I just go mountain, valley,
+mountain-- it alternates.
+
+1040
+00:51:47,300 --> 00:51:48,950
+You get some zigzag.
+
+1041
+00:51:48,950 --> 00:51:51,800
+And this thing is not going
+to collide with itself.
+
+1042
+00:51:51,800 --> 00:51:52,910
+It just works.
+
+1043
+00:51:52,910 --> 00:51:55,240
+In fact, you could even fold
+it one step at a time left
+
+1044
+00:51:55,240 --> 00:51:57,640
+to right by simple
+folds, and you'll
+
+1045
+00:51:57,640 --> 00:52:00,389
+get a nice flat
+folding of that thing.
+
+1046
+00:52:00,389 --> 00:52:01,930
+So every crease
+pattern can be folded
+
+1047
+00:52:01,930 --> 00:52:04,340
+with some mountain-valley
+assignment, namely
+
+1048
+00:52:04,340 --> 00:52:08,060
+the alternating accordion
+pleat, but what if I give you
+
+1049
+00:52:08,060 --> 00:52:11,420
+the mountain-valley assignment?
+
+1050
+00:52:11,420 --> 00:52:16,000
+Sometimes I can do
+it, sometimes I can't.
+
+1051
+00:52:16,000 --> 00:52:22,760
+So here's an example where
+you can't, two valleys
+
+1052
+00:52:22,760 --> 00:52:25,660
+with some really big
+segments on either side.
+
+1053
+00:52:25,660 --> 00:52:29,030
+So when you try to fold that,
+it looks something like that,
+
+1054
+00:52:29,030 --> 00:52:31,200
+and if one of these was
+really short, one of them
+
+1055
+00:52:31,200 --> 00:52:34,110
+could tuck inside the other,
+but because they're both long,
+
+1056
+00:52:34,110 --> 00:52:36,157
+they have to collide.
+
+1057
+00:52:36,157 --> 00:52:37,990
+That's the sort of thing
+we're worried about
+
+1058
+00:52:37,990 --> 00:52:40,448
+and we'd like to detect that
+efficiently with an algorithm.
+
+1059
+00:52:40,448 --> 00:52:55,010
+
+1060
+00:52:55,010 --> 00:52:56,520
+So let me tell you how.
+
+1061
+00:52:56,520 --> 00:53:08,340
+We're going to use two
+different operations,
+
+1062
+00:53:08,340 --> 00:53:10,260
+and both of these
+operations will, in fact,
+
+1063
+00:53:10,260 --> 00:53:14,500
+be performable
+using simple folds.
+
+1064
+00:53:14,500 --> 00:53:16,000
+What we're going
+to end up proving
+
+1065
+00:53:16,000 --> 00:53:18,660
+is that a one dimensional
+mountain valley
+
+1066
+00:53:18,660 --> 00:53:21,820
+pattern is flat foldable
+if and only if it's flat
+
+1067
+00:53:21,820 --> 00:53:24,560
+foldable via a sequence
+of simple folds.
+
+1068
+00:53:24,560 --> 00:53:27,990
+So these simple folds that
+we've been arguing about
+
+1069
+00:53:27,990 --> 00:53:31,610
+are universally
+powerful for 1D paper.
+
+1070
+00:53:31,610 --> 00:53:33,700
+They are not universally
+powerful for 2D paper
+
+1071
+00:53:33,700 --> 00:53:37,120
+because you cannot fold this
+pinwheel with simple folds.
+
+1072
+00:53:37,120 --> 00:53:39,180
+There's no first fold to make.
+
+1073
+00:53:39,180 --> 00:53:42,180
+But in one dimension,
+turns out there is.
+
+1074
+00:53:42,180 --> 00:53:46,550
+It's not obvious, but it's true.
+
+1075
+00:53:46,550 --> 00:53:49,980
+And here, we're going to
+make two very simple kinds
+
+1076
+00:53:49,980 --> 00:53:51,570
+of simple folds.
+
+1077
+00:53:51,570 --> 00:53:54,150
+The first one is called
+an end fold, which
+
+1078
+00:53:54,150 --> 00:53:58,650
+is you take the last, or
+the very first crease,
+
+1079
+00:53:58,650 --> 00:54:02,990
+and you just fold it over.
+
+1080
+00:54:02,990 --> 00:54:03,910
+That's an n fold.
+
+1081
+00:54:03,910 --> 00:54:09,040
+Now, for this to be valid
+in the simple folding world,
+
+1082
+00:54:09,040 --> 00:54:12,440
+to not get stuck,
+I'm going to require
+
+1083
+00:54:12,440 --> 00:54:19,600
+that this portion has
+no creases inside it.
+
+1084
+00:54:19,600 --> 00:54:21,860
+So it could have a crease
+right at the boundary,
+
+1085
+00:54:21,860 --> 00:54:25,160
+but there are no
+creases in that region.
+
+1086
+00:54:25,160 --> 00:54:28,230
+So when I fold this thing over,
+I don't cover anything up.
+
+1087
+00:54:28,230 --> 00:54:31,170
+No creases get covered up.
+
+1088
+00:54:31,170 --> 00:54:34,340
+This in some sense is
+clearly a good thing to do.
+
+1089
+00:54:34,340 --> 00:54:35,569
+This may not exist.
+
+1090
+00:54:35,569 --> 00:54:37,610
+If you find such a crease
+and you make this fold,
+
+1091
+00:54:37,610 --> 00:54:39,450
+now you can think of
+this piece of paper
+
+1092
+00:54:39,450 --> 00:54:40,830
+as sort of glued up there.
+
+1093
+00:54:40,830 --> 00:54:44,180
+You can think of just you cut
+off one part of the paper.
+
+1094
+00:54:44,180 --> 00:54:47,040
+You made a problem even easier.
+
+1095
+00:54:47,040 --> 00:54:49,205
+So this is clearly
+a safe thing to do.
+
+1096
+00:54:49,205 --> 00:54:51,040
+It should make your
+folding easier,
+
+1097
+00:54:51,040 --> 00:54:53,080
+but usually it doesn't exist.
+
+1098
+00:54:53,080 --> 00:54:54,650
+In that case, we
+make what's called
+
+1099
+00:54:54,650 --> 00:54:59,770
+a crimp, which is
+we have our segment.
+
+1100
+00:54:59,770 --> 00:55:03,390
+We take two creases with
+different mountain-valley
+
+1101
+00:55:03,390 --> 00:55:03,910
+assignments.
+
+1102
+00:55:03,910 --> 00:55:06,076
+Maybe the first one's
+mountain, second one's valley,
+
+1103
+00:55:06,076 --> 00:55:09,390
+but they're different, and
+then we fold those two creases.
+
+1104
+00:55:09,390 --> 00:55:12,390
+
+1105
+00:55:12,390 --> 00:55:13,680
+Something like that.
+
+1106
+00:55:13,680 --> 00:55:15,556
+So the paper get smaller
+again, but here it's
+
+1107
+00:55:15,556 --> 00:55:17,846
+a little less clear what's
+happening because there were
+
+1108
+00:55:17,846 --> 00:55:19,550
+creases over here,
+creases over here.
+
+1109
+00:55:19,550 --> 00:55:20,890
+They got closer to each other.
+
+1110
+00:55:20,890 --> 00:55:22,170
+Maybe that's a problem.
+
+1111
+00:55:22,170 --> 00:55:23,140
+Maybe it messes you up.
+
+1112
+00:55:23,140 --> 00:55:24,015
+Turns out it doesn't.
+
+1113
+00:55:24,015 --> 00:55:26,810
+
+1114
+00:55:26,810 --> 00:55:31,260
+The other thing, again, we
+require, if this is distance x,
+
+1115
+00:55:31,260 --> 00:55:36,250
+we require that this region
+of length x and this region
+
+1116
+00:55:36,250 --> 00:55:37,884
+of length x is empty of creases.
+
+1117
+00:55:37,884 --> 00:55:38,800
+There's nothing there.
+
+1118
+00:55:38,800 --> 00:55:40,780
+You could have things
+on the boundary
+
+1119
+00:55:40,780 --> 00:55:43,370
+but nothing interior to here,
+nothing interior to here,
+
+1120
+00:55:43,370 --> 00:55:45,250
+and nothing interior to here.
+
+1121
+00:55:45,250 --> 00:55:47,960
+Just two increases with sort
+of a nice, safe neighborhood
+
+1122
+00:55:47,960 --> 00:55:50,180
+around them so that
+when I make these two
+
+1123
+00:55:50,180 --> 00:55:54,050
+folds, this whole region,
+I didn't cover anything up
+
+1124
+00:55:54,050 --> 00:55:54,550
+in there.
+
+1125
+00:55:54,550 --> 00:55:56,750
+There's nothing in
+this Zorro mark.
+
+1126
+00:55:56,750 --> 00:55:59,870
+
+1127
+00:55:59,870 --> 00:56:02,180
+That's the definition of
+an n fold and a crimp.
+
+1128
+00:56:02,180 --> 00:56:04,570
+Now, maybe these
+things don't exist.
+
+1129
+00:56:04,570 --> 00:56:07,360
+I claim if they don't exist,
+you are not flat foldable
+
+1130
+00:56:07,360 --> 00:56:08,760
+no matter what you do.
+
+1131
+00:56:08,760 --> 00:56:10,580
+These are enough
+to make everything
+
+1132
+00:56:10,580 --> 00:56:11,550
+that is flat foldable.
+
+1133
+00:56:11,550 --> 00:56:14,672
+
+1134
+00:56:14,672 --> 00:56:15,755
+We're going to prove that.
+
+1135
+00:56:15,755 --> 00:56:37,210
+
+1136
+00:56:37,210 --> 00:56:43,370
+We're going to characterize
+flat foldability by saying,
+
+1137
+00:56:43,370 --> 00:56:48,489
+if I gave you some
+mountain-valley pattern,
+
+1138
+00:56:48,489 --> 00:56:50,155
+and I want to know,
+is it flat foldable?
+
+1139
+00:56:50,155 --> 00:56:53,490
+
+1140
+00:56:53,490 --> 00:56:55,030
+Remember, a
+mountain-valley pattern
+
+1141
+00:56:55,030 --> 00:56:58,580
+is a crease pattern together
+with m's and v's written
+
+1142
+00:56:58,580 --> 00:57:00,710
+on each crease.
+
+1143
+00:57:00,710 --> 00:57:03,420
+I claim it is flat
+foldable if and only
+
+1144
+00:57:03,420 --> 00:57:18,820
+if there is a sequence
+of crimps and end folds.
+
+1145
+00:57:18,820 --> 00:57:23,799
+
+1146
+00:57:23,799 --> 00:57:26,340
+So this is saying that crimps
+and end folds are all you need.
+
+1147
+00:57:26,340 --> 00:57:29,620
+In fact, we're going to show
+that you can make any crimp
+
+1148
+00:57:29,620 --> 00:57:31,600
+and any end fold,
+anything that looks valid,
+
+1149
+00:57:31,600 --> 00:57:34,720
+anything that has these
+empty regions here,
+
+1150
+00:57:34,720 --> 00:57:37,980
+just greedily keep doing
+one after the other
+
+1151
+00:57:37,980 --> 00:57:40,480
+without regard to what's
+going to happen in the future.
+
+1152
+00:57:40,480 --> 00:57:43,350
+If you get stuck, then your
+thing in the first place
+
+1153
+00:57:43,350 --> 00:57:44,312
+was not flat foldable.
+
+1154
+00:57:44,312 --> 00:57:46,270
+If you finish, obviously,
+it was flat foldable.
+
+1155
+00:57:46,270 --> 00:57:47,720
+You've folded it.
+
+1156
+00:57:47,720 --> 00:57:50,770
+So it doesn't matter even what
+order you do these operations.
+
+1157
+00:57:50,770 --> 00:57:53,890
+I won't write that here,
+but we will prove that.
+
+1158
+00:57:53,890 --> 00:57:56,100
+And there's another
+characterization
+
+1159
+00:57:56,100 --> 00:57:57,660
+which we use to prove this one.
+
+1160
+00:57:57,660 --> 00:58:00,250
+This is the one we care about.
+
+1161
+00:58:00,250 --> 00:58:04,420
+This one's a little bit
+easier to think about.
+
+1162
+00:58:04,420 --> 00:58:06,200
+I call it the mingling property.
+
+1163
+00:58:06,200 --> 00:58:09,180
+It says mountains and valleys
+hang out with each other,
+
+1164
+00:58:09,180 --> 00:58:09,680
+basically.
+
+1165
+00:58:09,680 --> 00:58:14,291
+
+1166
+00:58:14,291 --> 00:58:15,540
+That's why I call it mingling.
+
+1167
+00:58:15,540 --> 00:58:19,380
+
+1168
+00:58:19,380 --> 00:58:20,710
+So what does it mean?
+
+1169
+00:58:20,710 --> 00:58:32,210
+
+1170
+00:58:32,210 --> 00:58:35,490
+If I take a whole
+bunch of v's in a row,
+
+1171
+00:58:35,490 --> 00:58:41,694
+or I take a whole bunch m's
+in a row, as many as I can,
+
+1172
+00:58:41,694 --> 00:58:44,110
+that means they're surrounded
+by creases of the other type
+
+1173
+00:58:44,110 --> 00:58:46,637
+or possibly the
+edge of the paper.
+
+1174
+00:58:46,637 --> 00:58:48,970
+But if I take a whole bunch
+of v's, then the next crease
+
+1175
+00:58:48,970 --> 00:58:52,810
+and the previous crease
+are m's, let's say,
+
+1176
+00:58:52,810 --> 00:59:02,670
+then the adjacent crease
+of the other type,
+
+1177
+00:59:02,670 --> 00:59:07,930
+or possibly the
+end of the paper,
+
+1178
+00:59:07,930 --> 00:59:13,970
+and I want this to be
+true on at least one side.
+
+1179
+00:59:13,970 --> 00:59:15,720
+This is, again, one
+of those things that's
+
+1180
+00:59:15,720 --> 00:59:18,650
+much easier in a picture, but
+I will write down the words
+
+1181
+00:59:18,650 --> 00:59:21,030
+first.
+
+1182
+00:59:21,030 --> 00:59:38,410
+Is nearer than the adjacent
+m or v. Sorry, backwards.
+
+1183
+00:59:38,410 --> 00:59:42,060
+I'm trying to use
+parallel construction here
+
+1184
+00:59:42,060 --> 00:59:45,991
+but I got it inverted
+for my notes.
+
+1185
+00:59:45,991 --> 00:59:46,990
+Let me draw the picture.
+
+1186
+00:59:46,990 --> 00:59:51,020
+You have a segment.
+
+1187
+00:59:51,020 --> 00:59:55,490
+Suppose I take some maximal
+sequence of m's all in a row.
+
+1188
+00:59:55,490 --> 00:59:58,250
+
+1189
+00:59:58,250 --> 01:00:00,934
+So maybe on one side,
+maybe the next thing
+
+1190
+01:00:00,934 --> 01:00:02,350
+here is just the
+edge of the paper
+
+1191
+01:00:02,350 --> 01:00:03,474
+so there's no crease there.
+
+1192
+01:00:03,474 --> 01:00:07,150
+
+1193
+01:00:07,150 --> 01:00:10,770
+If this was it, then I
+would say this thing is not
+
+1194
+01:00:10,770 --> 01:00:14,430
+mingling because this
+distance is bigger
+
+1195
+01:00:14,430 --> 01:00:17,880
+than this one and this distance
+is bigger than this one.
+
+1196
+01:00:17,880 --> 01:00:19,710
+So these m's are really
+clustered together.
+
+1197
+01:00:19,710 --> 01:00:22,492
+They're not mingling with
+the edges, so that's bad.
+
+1198
+01:00:22,492 --> 01:00:23,950
+And in fact, this
+thing is not flat
+
+1199
+01:00:23,950 --> 01:00:26,360
+foldable for the same
+reason that one is not.
+
+1200
+01:00:26,360 --> 01:00:30,310
+But if, for example, I put
+a valley crease right here,
+
+1201
+01:00:30,310 --> 01:00:32,840
+then this is closer than that.
+
+1202
+01:00:32,840 --> 01:00:35,010
+I mean this distance is
+smaller than that one.
+
+1203
+01:00:35,010 --> 01:00:37,670
+So I call that mingling because
+at least on the right side,
+
+1204
+01:00:37,670 --> 01:00:39,130
+the m's are mingling
+with the v's.
+
+1205
+01:00:39,130 --> 01:00:41,060
+On the left side,
+they're not mingling,
+
+1206
+01:00:41,060 --> 01:00:42,900
+but right side's
+better than nothing.
+
+1207
+01:00:42,900 --> 01:00:44,990
+I need this to hold
+on at least one side.
+
+1208
+01:00:44,990 --> 01:00:46,880
+Could hold on both.
+
+1209
+01:00:46,880 --> 01:00:51,905
+I claim this thing
+is flat foldable.
+
+1210
+01:00:51,905 --> 01:00:54,560
+Is that true?
+
+1211
+01:00:54,560 --> 01:00:55,990
+Yeah.
+
+1212
+01:00:55,990 --> 01:00:58,150
+Maybe.
+
+1213
+01:00:58,150 --> 01:00:59,150
+It doesn't look so true.
+
+1214
+01:00:59,150 --> 01:01:08,567
+
+1215
+01:01:08,567 --> 01:01:10,775
+I think I probably need some
+condition on the v also.
+
+1216
+01:01:10,775 --> 01:01:16,750
+
+1217
+01:01:16,750 --> 01:01:18,540
+Well, we'll see what
+happens in the proof.
+
+1218
+01:01:18,540 --> 01:01:20,005
+That's more exciting.
+
+1219
+01:01:20,005 --> 01:01:21,880
+Usually the proof is
+easier than the example.
+
+1220
+01:01:21,880 --> 01:01:37,000
+
+1221
+01:01:37,000 --> 01:01:37,730
+Oh, I see why.
+
+1222
+01:01:37,730 --> 01:01:43,640
+
+1223
+01:01:43,640 --> 01:01:44,630
+There's a problem here.
+
+1224
+01:01:44,630 --> 01:01:48,762
+I think I need to say "forever."
+
+1225
+01:01:48,762 --> 01:01:50,220
+I'll say what I
+mean by that later.
+
+1226
+01:01:50,220 --> 01:01:54,040
+
+1227
+01:01:54,040 --> 01:01:55,720
+The proof will still
+work, but it's not
+
+1228
+01:01:55,720 --> 01:01:56,678
+such a pretty property.
+
+1229
+01:01:56,678 --> 01:02:04,870
+
+1230
+01:02:04,870 --> 01:02:09,590
+The proof is in three
+parts, basically.
+
+1231
+01:02:09,590 --> 01:02:19,380
+First part is if
+you're flat foldable,
+
+1232
+01:02:19,380 --> 01:02:21,095
+then you are mingling.
+
+1233
+01:02:21,095 --> 01:02:26,240
+
+1234
+01:02:26,240 --> 01:02:28,240
+Certainly, if I want these
+all to be equivalent,
+
+1235
+01:02:28,240 --> 01:02:31,777
+it should be true that the
+first one implies the third one.
+
+1236
+01:02:31,777 --> 01:02:33,360
+This is actually
+really easy to prove.
+
+1237
+01:02:33,360 --> 01:02:38,820
+
+1238
+01:02:38,820 --> 01:02:40,800
+Suppose it were not mingling.
+
+1239
+01:02:40,800 --> 01:02:42,610
+Suppose I had some
+crease pattern that
+
+1240
+01:02:42,610 --> 01:02:43,690
+violates that constraint.
+
+1241
+01:02:43,690 --> 01:02:46,100
+What that means is I
+have a bunch of m's here,
+
+1242
+01:02:46,100 --> 01:02:48,960
+I don't know how
+they're spread out.
+
+1243
+01:02:48,960 --> 01:02:50,700
+Then I know that
+there's a big gap
+
+1244
+01:02:50,700 --> 01:02:55,086
+until the next crease,
+something like that.
+
+1245
+01:02:55,086 --> 01:02:56,960
+Well, let's think about--
+there aren't really
+
+1246
+01:02:56,960 --> 01:02:58,780
+that many ways to fold
+a whole bunch of m's
+
+1247
+01:02:58,780 --> 01:03:01,730
+in a row or a whole bunch
+of v's that's symmetric.
+
+1248
+01:03:01,730 --> 01:03:04,257
+You pretty much have
+to spiral around.
+
+1249
+01:03:04,257 --> 01:03:05,965
+You're always turning
+the same direction.
+
+1250
+01:03:05,965 --> 01:03:10,960
+
+1251
+01:03:10,960 --> 01:03:13,452
+If it's flat foldable, which
+is what we're assuming here,
+
+1252
+01:03:13,452 --> 01:03:14,910
+it's got to look
+kind of like that.
+
+1253
+01:03:14,910 --> 01:03:16,826
+In fact, it has two ends,
+so it could actually
+
+1254
+01:03:16,826 --> 01:03:18,970
+make two spirals.
+
+1255
+01:03:18,970 --> 01:03:21,190
+But if you think about
+what happens there,
+
+1256
+01:03:21,190 --> 01:03:28,380
+this last part at the end of the
+spirals, that's this segment.
+
+1257
+01:03:28,380 --> 01:03:32,480
+That's when you possibly turn
+around the other direction.
+
+1258
+01:03:32,480 --> 01:03:34,190
+Maybe this is the valley.
+
+1259
+01:03:34,190 --> 01:03:35,860
+But take a look at
+what's going on here.
+
+1260
+01:03:35,860 --> 01:03:39,150
+This segment is tucked
+inside the spiral.
+
+1261
+01:03:39,150 --> 01:03:40,720
+If it's super long
+like it is here,
+
+1262
+01:03:40,720 --> 01:03:44,170
+if it's longer than the previous
+portion-- let me label this.
+
+1263
+01:03:44,170 --> 01:03:52,750
+This is x, this is x,
+this is y, this is y.
+
+1264
+01:03:52,750 --> 01:03:54,300
+That looks really bad.
+
+1265
+01:03:54,300 --> 01:03:55,634
+x has to be smaller than y.
+
+1266
+01:03:55,634 --> 01:03:57,300
+Otherwise, it's going
+to penetrate right
+
+1267
+01:03:57,300 --> 01:04:00,710
+through that corner.
+
+1268
+01:04:00,710 --> 01:04:04,810
+In this case with the double
+spiral, double spiral all
+
+1269
+01:04:04,810 --> 01:04:07,250
+the way, what does it mean?
+
+1270
+01:04:07,250 --> 01:04:09,860
+
+1271
+01:04:09,860 --> 01:04:12,250
+I guess no one knows
+double rainbow.
+
+1272
+01:04:12,250 --> 01:04:15,810
+
+1273
+01:04:15,810 --> 01:04:17,770
+Bad stuff.
+
+1274
+01:04:17,770 --> 01:04:20,310
+In the double spiral
+case, in fact, this end
+
+1275
+01:04:20,310 --> 01:04:22,180
+must be shorter than
+this one and this one
+
+1276
+01:04:22,180 --> 01:04:24,000
+must be shorter than this one.
+
+1277
+01:04:24,000 --> 01:04:26,820
+So in this case, you must
+be mingling on both sides,
+
+1278
+01:04:26,820 --> 01:04:28,930
+but it doesn't have
+to be that way.
+
+1279
+01:04:28,930 --> 01:04:31,540
+If it's just a single
+spiral, this last segment
+
+1280
+01:04:31,540 --> 01:04:32,540
+can be really long.
+
+1281
+01:04:32,540 --> 01:04:33,180
+That's OK.
+
+1282
+01:04:33,180 --> 01:04:36,450
+It's much longer than this
+one, but the inner part
+
+1283
+01:04:36,450 --> 01:04:39,010
+of the spiral must
+always be smaller
+
+1284
+01:04:39,010 --> 01:04:41,040
+than the next segment
+of the spiral,
+
+1285
+01:04:41,040 --> 01:04:42,710
+and that's exactly
+what mingling says.
+
+1286
+01:04:42,710 --> 01:04:45,290
+Could be on the left, could be
+on the right, you don't know.
+
+1287
+01:04:45,290 --> 01:04:47,620
+But on at least one of the
+sides, you must be mingling.
+
+1288
+01:04:47,620 --> 01:04:50,290
+And therefore, if you're going
+to have a flat folding at all,
+
+1289
+01:04:50,290 --> 01:04:51,930
+you must be mingling.
+
+1290
+01:04:51,930 --> 01:04:52,620
+Clear?
+
+1291
+01:04:52,620 --> 01:04:53,140
+Question?
+
+1292
+01:04:53,140 --> 01:04:55,990
+AUDIENCE: When you say a maximal
+sequence, what do you mean?
+
+1293
+01:04:55,990 --> 01:04:57,440
+PROFESSOR: Maximal
+means that you
+
+1294
+01:04:57,440 --> 01:04:59,490
+can't make it any
+bigger locally.
+
+1295
+01:04:59,490 --> 01:05:01,590
+I can't add any more
+creases and still
+
+1296
+01:05:01,590 --> 01:05:03,500
+have a contiguous
+bunch of mountains.
+
+1297
+01:05:03,500 --> 01:05:05,140
+It's a good question.
+
+1298
+01:05:05,140 --> 01:05:08,340
+In mathematics, there's
+maximal and maximum.
+
+1299
+01:05:08,340 --> 01:05:11,900
+Maximal means locally biggest,
+maximum means globally biggest.
+
+1300
+01:05:11,900 --> 01:05:14,040
+So I don't mean take
+the biggest sequence
+
+1301
+01:05:14,040 --> 01:05:15,900
+of contiguous m's you can find.
+
+1302
+01:05:15,900 --> 01:05:18,620
+I just mean take some contiguous
+sequence of m's that you
+
+1303
+01:05:18,620 --> 01:05:22,290
+can't make any bigger
+on either side.
+
+1304
+01:05:22,290 --> 01:05:24,570
+I just mean that it's
+surrounded by valleys.
+
+1305
+01:05:24,570 --> 01:05:31,030
+I want this to hold for every
+contiguous sequence of m's.
+
+1306
+01:05:31,030 --> 01:05:33,780
+That's one of those funny
+math technical terms.
+
+1307
+01:05:33,780 --> 01:05:36,470
+Other questions?
+
+1308
+01:05:36,470 --> 01:05:38,040
+So that's the first thing.
+
+1309
+01:05:38,040 --> 01:05:40,705
+Somehow I want to connect all
+these properties together.
+
+1310
+01:05:40,705 --> 01:05:44,390
+
+1311
+01:05:44,390 --> 01:05:53,280
+The next part is that
+if you're mingling,
+
+1312
+01:05:53,280 --> 01:05:55,770
+either there's an end
+fold or there's a crimp.
+
+1313
+01:05:55,770 --> 01:06:02,450
+
+1314
+01:06:02,450 --> 01:06:05,660
+At least one of those two
+things must be possible.
+
+1315
+01:06:05,660 --> 01:06:07,970
+So this would be good
+news because if I'm
+
+1316
+01:06:07,970 --> 01:06:09,820
+flat foldable,
+then I'm mingling.
+
+1317
+01:06:09,820 --> 01:06:12,250
+If I'm mingling, then
+there's a fold I can make.
+
+1318
+01:06:12,250 --> 01:06:13,389
+That seems like progress.
+
+1319
+01:06:13,389 --> 01:06:15,430
+Then I have to show that
+I don't mess anything up
+
+1320
+01:06:15,430 --> 01:06:18,270
+when I make that fold.
+
+1321
+01:06:18,270 --> 01:06:20,719
+But if I could keep going
+in a circle like this,
+
+1322
+01:06:20,719 --> 01:06:22,510
+then I would keep being
+able to make folds,
+
+1323
+01:06:22,510 --> 01:06:24,170
+and then eventually I
+would fold the whole thing
+
+1324
+01:06:24,170 --> 01:06:25,940
+because there's only
+end folds at the end.
+
+1325
+01:06:25,940 --> 01:06:27,140
+I'll have made them all.
+
+1326
+01:06:27,140 --> 01:06:32,770
+
+1327
+01:06:32,770 --> 01:06:36,215
+It's not that much
+trickier, I guess.
+
+1328
+01:06:36,215 --> 01:06:39,175
+It involves parentheses.
+
+1329
+01:06:39,175 --> 01:06:40,300
+That's one way to write it.
+
+1330
+01:06:40,300 --> 01:06:40,925
+Yeah, question?
+
+1331
+01:06:40,925 --> 01:06:44,340
+
+1332
+01:06:44,340 --> 01:06:46,790
+AUDIENCE: So right
+now, the main property
+
+1333
+01:06:46,790 --> 01:06:53,250
+is finding a way that
+[INAUDIBLE] two or more?
+
+1334
+01:06:53,250 --> 01:06:54,344
+PROFESSOR: That's right.
+
+1335
+01:06:54,344 --> 01:06:56,864
+AUDIENCE: And there is an
+example that [INAUDIBLE]?
+
+1336
+01:06:56,864 --> 01:06:57,530
+PROFESSOR: Yeah.
+
+1337
+01:06:57,530 --> 01:06:59,100
+Just ignore this.
+
+1338
+01:06:59,100 --> 01:07:02,140
+It'll be easier to
+think of it that way.
+
+1339
+01:07:02,140 --> 01:07:04,670
+I'm going to use mingling
+to prove this property,
+
+1340
+01:07:04,670 --> 01:07:07,740
+but this is not equivalent
+to those properties.
+
+1341
+01:07:07,740 --> 01:07:10,700
+You need to add
+"forever," but that's
+
+1342
+01:07:10,700 --> 01:07:12,515
+too confusing at the moment.
+
+1343
+01:07:12,515 --> 01:07:13,890
+This is a definition
+of mingling.
+
+1344
+01:07:13,890 --> 01:07:16,789
+We're going to use it
+as a separate thing,
+
+1345
+01:07:16,789 --> 01:07:19,080
+and I'm going to prove these
+two things are equivalent.
+
+1346
+01:07:19,080 --> 01:07:20,680
+Then I'll be correct.
+
+1347
+01:07:20,680 --> 01:07:24,040
+Correct is always a good thing.
+
+1348
+01:07:24,040 --> 01:07:32,220
+So what I want to do is for each
+of these mingling sequences,
+
+1349
+01:07:32,220 --> 01:07:41,820
+for each maximal
+sequence of m's or v's, I
+
+1350
+01:07:41,820 --> 01:07:45,340
+want to write down two symbols.
+
+1351
+01:07:45,340 --> 01:07:49,670
+I'm going to write a curved
+left parenthesis if it
+
+1352
+01:07:49,670 --> 01:08:00,020
+is left mingling, meaning I have
+all these mountains, let's say.
+
+1353
+01:08:00,020 --> 01:08:04,340
+
+1354
+01:08:04,340 --> 01:08:05,940
+Draw it in a reasonable way.
+
+1355
+01:08:05,940 --> 01:08:08,860
+Then I'm happy on the left side.
+
+1356
+01:08:08,860 --> 01:08:13,637
+I'm mingling with a v with
+an m fold on the left side.
+
+1357
+01:08:13,637 --> 01:08:15,970
+I know it's either left
+mingling or it's right mingling.
+
+1358
+01:08:15,970 --> 01:08:18,260
+I'm assuming mingling here.
+
+1359
+01:08:18,260 --> 01:08:21,790
+I will write a square
+bracket if it's not.
+
+1360
+01:08:21,790 --> 01:08:24,819
+Then I will write a
+curved right bracket
+
+1361
+01:08:24,819 --> 01:08:31,200
+if you're right
+mingling, which is just
+
+1362
+01:08:31,200 --> 01:08:33,700
+the same picture but
+on the other side.
+
+1363
+01:08:33,700 --> 01:08:36,660
+And I'm going to write a closed
+square bracket if it's not.
+
+1364
+01:08:36,660 --> 01:08:40,450
+
+1365
+01:08:40,450 --> 01:08:45,283
+Then I claim that
+parentheses sequence
+
+1366
+01:08:45,283 --> 01:08:46,324
+has some nice properties.
+
+1367
+01:08:46,324 --> 01:08:53,760
+
+1368
+01:08:53,760 --> 01:08:57,660
+So for example, this
+is a string that I get.
+
+1369
+01:08:57,660 --> 01:09:02,779
+It might look like
+this, maybe that.
+
+1370
+01:09:02,779 --> 01:09:03,620
+Who knows?
+
+1371
+01:09:03,620 --> 01:09:04,720
+It looks like something.
+
+1372
+01:09:04,720 --> 01:09:08,214
+I know that every pair, at least
+one of the two sides is curved.
+
+1373
+01:09:08,214 --> 01:09:10,380
+I can't have them both be
+square because then you're
+
+1374
+01:09:10,380 --> 01:09:11,600
+not mingling at all.
+
+1375
+01:09:11,600 --> 01:09:13,950
+I know I'm always mingling
+left or mingling right,
+
+1376
+01:09:13,950 --> 01:09:15,290
+so it's something.
+
+1377
+01:09:15,290 --> 01:09:17,410
+Now, one thing
+that's really good
+
+1378
+01:09:17,410 --> 01:09:22,529
+is I have no double
+square bracket.
+
+1379
+01:09:22,529 --> 01:09:24,290
+That's impossible.
+
+1380
+01:09:24,290 --> 01:09:27,300
+I also know that
+if I had something
+
+1381
+01:09:27,300 --> 01:09:29,979
+like this, what does that mean?
+
+1382
+01:09:29,979 --> 01:09:37,500
+It means I have a bunch
+of mountains over here,
+
+1383
+01:09:37,500 --> 01:09:40,779
+then I have a very
+nearby valley, and then
+
+1384
+01:09:40,779 --> 01:09:44,760
+a bunch of valleys
+over here, and I
+
+1385
+01:09:44,760 --> 01:09:48,100
+know that the mountains
+are right mingling, which
+
+1386
+01:09:48,100 --> 01:09:55,350
+means I know that
+x is bigger than y.
+
+1387
+01:09:55,350 --> 01:09:56,600
+That's what this symbol means.
+
+1388
+01:09:56,600 --> 01:09:59,310
+It means to the right of the
+m's, I've got a small gap,
+
+1389
+01:09:59,310 --> 01:10:02,080
+and it means to the left of the
+v's, I also have a small gap.
+
+1390
+01:10:02,080 --> 01:10:05,825
+That means y is also bigger
+than this z distance.
+
+1391
+01:10:05,825 --> 01:10:08,690
+
+1392
+01:10:08,690 --> 01:10:09,440
+AUDIENCE: Smaller.
+
+1393
+01:10:09,440 --> 01:10:10,370
+PROFESSOR: Thank you.
+
+1394
+01:10:10,370 --> 01:10:13,020
+
+1395
+01:10:13,020 --> 01:10:14,416
+Smaller.
+
+1396
+01:10:14,416 --> 01:10:18,090
+I'm too tempted to
+combine them together,
+
+1397
+01:10:18,090 --> 01:10:21,630
+but it's a funny looking thing.
+y is smaller than both x and z.
+
+1398
+01:10:21,630 --> 01:10:24,630
+So then what do I do?
+
+1399
+01:10:24,630 --> 01:10:25,130
+Crimp.
+
+1400
+01:10:25,130 --> 01:10:29,510
+
+1401
+01:10:29,510 --> 01:10:32,120
+That was sort of the
+definition of a crimp,
+
+1402
+01:10:32,120 --> 01:10:35,320
+that at least if I took
+this region x and copied it
+
+1403
+01:10:35,320 --> 01:10:37,080
+over here, those were
+empty of creases.
+
+1404
+01:10:37,080 --> 01:10:40,920
+And now we're saying that
+there's a big gap here.
+
+1405
+01:10:40,920 --> 01:10:42,420
+I guess technically
+it's bigger than
+
+1406
+01:10:42,420 --> 01:10:45,030
+or equal to if you said
+all these things right.
+
+1407
+01:10:45,030 --> 01:10:49,320
+
+1408
+01:10:49,320 --> 01:10:53,560
+I said "nearer," but I
+meant non-strictly nearer.
+
+1409
+01:10:53,560 --> 01:10:57,210
+It's enough to do a crimp.
+
+1410
+01:10:57,210 --> 01:10:59,440
+So if I find this, I'm happy.
+
+1411
+01:10:59,440 --> 01:11:01,420
+The other thing that
+I'm really happy with
+
+1412
+01:11:01,420 --> 01:11:09,205
+is if I have an open
+paren at the beginning,
+
+1413
+01:11:09,205 --> 01:11:12,640
+a curved parenthesis,
+open parenthesis,
+
+1414
+01:11:12,640 --> 01:11:16,020
+at the beginning of the
+string, or a right parenthesis
+
+1415
+01:11:16,020 --> 01:11:18,640
+at the end of the
+string, because that
+
+1416
+01:11:18,640 --> 01:11:20,060
+means I can do an end fold.
+
+1417
+01:11:20,060 --> 01:11:25,560
+
+1418
+01:11:25,560 --> 01:11:27,580
+That means that you have
+a very short segment
+
+1419
+01:11:27,580 --> 01:11:29,730
+at the very beginning so
+you can just fold it over.
+
+1420
+01:11:29,730 --> 01:11:31,688
+This means you have a
+short segment at the end.
+
+1421
+01:11:31,688 --> 01:11:33,700
+Just fold it over.
+
+1422
+01:11:33,700 --> 01:11:36,270
+So as long as I can find
+one of these three things,
+
+1423
+01:11:36,270 --> 01:11:37,610
+I am golden.
+
+1424
+01:11:37,610 --> 01:11:42,870
+I have what I want, which
+was an end fold or a crimp.
+
+1425
+01:11:42,870 --> 01:11:45,890
+How do I prove that I
+have one of those things?
+
+1426
+01:11:45,890 --> 01:11:47,490
+The easy way is
+by contradiction.
+
+1427
+01:11:47,490 --> 01:11:50,380
+Just imagine if you didn't
+have any one of these things,
+
+1428
+01:11:50,380 --> 01:11:52,900
+it's pretty forced what you
+have to have in your string
+
+1429
+01:11:52,900 --> 01:11:55,880
+because you know you must start
+with an open square bracket.
+
+1430
+01:11:55,880 --> 01:11:58,380
+You also know that you cannot
+then immediately have a closed
+
+1431
+01:11:58,380 --> 01:12:02,707
+square bracket, so you
+must have a closed paren.
+
+1432
+01:12:02,707 --> 01:12:05,040
+Now I know that I cannot have
+an open paren because then
+
+1433
+01:12:05,040 --> 01:12:07,210
+I'd have this, and that
+would be good for me.
+
+1434
+01:12:07,210 --> 01:12:09,860
+So if I want to be bad, I have
+to have an open square bracket,
+
+1435
+01:12:09,860 --> 01:12:11,568
+but then I'd have to
+have a closed paren,
+
+1436
+01:12:11,568 --> 01:12:14,100
+and then I'd have to have an
+open square bracket, and so on.
+
+1437
+01:12:14,100 --> 01:12:17,600
+In the end, you will have
+a closed paren at the end,
+
+1438
+01:12:17,600 --> 01:12:20,570
+and that means you
+can make an end fold.
+
+1439
+01:12:20,570 --> 01:12:22,340
+So either something
+failed in here.
+
+1440
+01:12:22,340 --> 01:12:24,780
+Maybe I had two parens
+together-- then I
+
+1441
+01:12:24,780 --> 01:12:26,490
+would have gotten
+a crimp-- or I can
+
+1442
+01:12:26,490 --> 01:12:28,270
+keep going all the
+way through here
+
+1443
+01:12:28,270 --> 01:12:29,700
+and get a closed
+paren at the end.
+
+1444
+01:12:29,700 --> 01:12:32,180
+In any case, I get at least
+one of these three things
+
+1445
+01:12:32,180 --> 01:12:34,940
+happening, and so I get
+either an end fold or a crimp
+
+1446
+01:12:34,940 --> 01:12:36,477
+assuming I am mingling.
+
+1447
+01:12:36,477 --> 01:12:38,060
+And instead of
+assuming I am mingling,
+
+1448
+01:12:38,060 --> 01:12:40,300
+I can just assume that
+I'm flat foldable,
+
+1449
+01:12:40,300 --> 01:12:42,305
+and then I get from this
+chain of implications
+
+1450
+01:12:42,305 --> 01:12:45,455
+that there is an
+end fold or a crimp.
+
+1451
+01:12:45,455 --> 01:12:46,500
+OK so far?
+
+1452
+01:12:46,500 --> 01:12:48,950
+So that means I can
+make at least one fold.
+
+1453
+01:12:48,950 --> 01:12:51,570
+If I am flat foldable, I can
+make at least one crimp or end
+
+1454
+01:12:51,570 --> 01:12:52,740
+fold.
+
+1455
+01:12:52,740 --> 01:12:55,611
+Now the question is,
+can I keep going?
+
+1456
+01:12:55,611 --> 01:12:57,110
+For that, we need
+one more property.
+
+1457
+01:12:57,110 --> 01:13:14,810
+
+1458
+01:13:14,810 --> 01:13:17,370
+If I make a crimp
+or an end fold,
+
+1459
+01:13:17,370 --> 01:13:21,180
+I want to prove that that
+preserves flat foldability.
+
+1460
+01:13:21,180 --> 01:13:32,105
+
+1461
+01:13:32,105 --> 01:13:34,230
+What that means is if I
+start with something that's
+
+1462
+01:13:34,230 --> 01:13:36,438
+flat foldable and then I
+make a crimp or an end fold,
+
+1463
+01:13:36,438 --> 01:13:37,800
+I will still be flat foldable.
+
+1464
+01:13:37,800 --> 01:13:39,500
+This is the property
+I need because it
+
+1465
+01:13:39,500 --> 01:13:41,280
+will let me close the chain.
+
+1466
+01:13:41,280 --> 01:13:43,030
+I'm flat foldable,
+therefore I'm mingling,
+
+1467
+01:13:43,030 --> 01:13:45,880
+therefore I have an end fold
+or a crimp, so I make it.
+
+1468
+01:13:45,880 --> 01:13:48,130
+This property says that I
+will still be flat foldable,
+
+1469
+01:13:48,130 --> 01:13:49,588
+therefore number
+one applies again.
+
+1470
+01:13:49,588 --> 01:13:52,060
+I'm still mingling, I
+can still find a fold,
+
+1471
+01:13:52,060 --> 01:13:54,861
+and I'm still flat foldable,
+so I'm still mingling.
+
+1472
+01:13:54,861 --> 01:13:55,860
+I can still find a fold.
+
+1473
+01:13:55,860 --> 01:13:56,704
+I can keep going.
+
+1474
+01:13:56,704 --> 01:13:58,120
+I will never get
+stuck because I'm
+
+1475
+01:13:58,120 --> 01:14:00,050
+guaranteed if I
+started flat foldable,
+
+1476
+01:14:00,050 --> 01:14:02,880
+I will be flat foldable forever.
+
+1477
+01:14:02,880 --> 01:14:04,375
+I will also be mingling forever.
+
+1478
+01:14:04,375 --> 01:14:06,980
+
+1479
+01:14:06,980 --> 01:14:09,170
+I realize now but
+apparently have not
+
+1480
+01:14:09,170 --> 01:14:11,752
+realized before, it's not
+enough to be mingling just
+
+1481
+01:14:11,752 --> 01:14:12,460
+at the beginning.
+
+1482
+01:14:12,460 --> 01:14:14,850
+You have to be mingling
+through every step there.
+
+1483
+01:14:14,850 --> 01:14:16,180
+In fact, what we're
+showing is that you're
+
+1484
+01:14:16,180 --> 01:14:18,340
+fat foldable at every step,
+which implies mingling,
+
+1485
+01:14:18,340 --> 01:14:19,714
+but mingling is
+not quite enough.
+
+1486
+01:14:19,714 --> 01:14:23,120
+You'd have to check it
+all the way through.
+
+1487
+01:14:23,120 --> 01:14:25,850
+That's why I stated
+the theorem wrong.
+
+1488
+01:14:25,850 --> 01:14:29,970
+How do we prove this
+theorem, this claim?
+
+1489
+01:14:29,970 --> 01:14:32,010
+I'm going to do it
+proof by picture.
+
+1490
+01:14:32,010 --> 01:14:35,140
+It's not always OK,
+but it will be OK.
+
+1491
+01:14:35,140 --> 01:14:35,730
+Trust me.
+
+1492
+01:14:35,730 --> 01:14:38,129
+
+1493
+01:14:38,129 --> 01:14:39,795
+We are assuming that
+we're flat foldable
+
+1494
+01:14:39,795 --> 01:14:41,960
+and we're assuming there's
+a crimp or an end fold.
+
+1495
+01:14:41,960 --> 01:14:43,446
+Actually, we know
+that that exists.
+
+1496
+01:14:43,446 --> 01:14:45,070
+I'm going to think
+about the crimp case
+
+1497
+01:14:45,070 --> 01:14:47,280
+because end fold
+is even simpler.
+
+1498
+01:14:47,280 --> 01:14:50,200
+
+1499
+01:14:50,200 --> 01:14:51,610
+See, here's the thing.
+
+1500
+01:14:51,610 --> 01:14:56,440
+I would really like to fold
+some crimp like this, let's say.
+
+1501
+01:14:56,440 --> 01:15:01,380
+This is an m, this
+is a v. What I'm
+
+1502
+01:15:01,380 --> 01:15:03,920
+claiming is I'm allowed
+to make that crimp first
+
+1503
+01:15:03,920 --> 01:15:06,950
+and then do everything else,
+but conceivably, there's
+
+1504
+01:15:06,950 --> 01:15:09,790
+some flat folding that
+doesn't make this crimp first.
+
+1505
+01:15:09,790 --> 01:15:11,330
+I mean, it must
+fold this mountain
+
+1506
+01:15:11,330 --> 01:15:13,330
+and it must fold this
+valley, but at some point.
+
+1507
+01:15:13,330 --> 01:15:14,880
+We don't really know when.
+
+1508
+01:15:14,880 --> 01:15:16,890
+Somehow it all
+simultaneously collapses
+
+1509
+01:15:16,890 --> 01:15:18,349
+into some flat folding.
+
+1510
+01:15:18,349 --> 01:15:19,640
+Now, this thing should be flat.
+
+1511
+01:15:19,640 --> 01:15:20,670
+It should line in a line.
+
+1512
+01:15:20,670 --> 01:15:22,336
+I'm stretching it out
+so you can see it.
+
+1513
+01:15:22,336 --> 01:15:24,840
+
+1514
+01:15:24,840 --> 01:15:27,240
+It's a segment
+that we're folding,
+
+1515
+01:15:27,240 --> 01:15:30,130
+so maybe it does this,
+some crazy thing.
+
+1516
+01:15:30,130 --> 01:15:34,380
+Maybe this part does
+something crazy here,
+
+1517
+01:15:34,380 --> 01:15:36,240
+goes there, whatever.
+
+1518
+01:15:36,240 --> 01:15:39,820
+We know it's not crossing
+and it's sort of horizontal,
+
+1519
+01:15:39,820 --> 01:15:41,690
+but it could be an ugly mess.
+
+1520
+01:15:41,690 --> 01:15:43,690
+And in particular,
+in this picture,
+
+1521
+01:15:43,690 --> 01:15:47,360
+it does not look like this crimp
+was done first-- maybe embolden
+
+1522
+01:15:47,360 --> 01:15:51,470
+the crimp here-- because there's
+this stuff in the middle.
+
+1523
+01:15:51,470 --> 01:15:53,490
+Now, we know that there's
+no creases in here.
+
+1524
+01:15:53,490 --> 01:15:58,840
+We know the earliest we can turn
+is at the ends of the crimp.
+
+1525
+01:15:58,840 --> 01:16:01,740
+But there could be stuff that
+comes in the middle here.
+
+1526
+01:16:01,740 --> 01:16:02,860
+What do I do?
+
+1527
+01:16:02,860 --> 01:16:06,930
+I just move the
+stuff out of the way.
+
+1528
+01:16:06,930 --> 01:16:08,410
+Let me do this the right way.
+
+1529
+01:16:08,410 --> 01:16:10,810
+Got to do this a
+little bit carefully,
+
+1530
+01:16:10,810 --> 01:16:13,269
+and unfortunately, my
+picture is so messy,
+
+1531
+01:16:13,269 --> 01:16:14,310
+hopefully you can see it.
+
+1532
+01:16:14,310 --> 01:16:18,350
+So I'm going to take this part,
+which is inside the crimp,
+
+1533
+01:16:18,350 --> 01:16:22,570
+I'm going to move
+it down here, just
+
+1534
+01:16:22,570 --> 01:16:25,970
+lower those layers down to here.
+
+1535
+01:16:25,970 --> 01:16:30,490
+Now I know locally,
+there's a fold right here.
+
+1536
+01:16:30,490 --> 01:16:32,830
+And so if I take all
+the stuff that's in here
+
+1537
+01:16:32,830 --> 01:16:36,220
+and move it down here, it
+will still be non-crossing.
+
+1538
+01:16:36,220 --> 01:16:42,050
+And then I take this stuff
+and I move it up here.
+
+1539
+01:16:42,050 --> 01:16:44,517
+Equivalently, you can
+think of me crushing this
+
+1540
+01:16:44,517 --> 01:16:46,350
+down and crushing this
+up, but it's actually
+
+1541
+01:16:46,350 --> 01:16:48,190
+important the direction
+these things go.
+
+1542
+01:16:48,190 --> 01:16:51,110
+I could not put this stuff up
+here because I don't really
+
+1543
+01:16:51,110 --> 01:16:52,410
+know how long this goes.
+
+1544
+01:16:52,410 --> 01:16:54,609
+It's not valid for me
+to try to put it up.
+
+1545
+01:16:54,609 --> 01:16:55,900
+I could collide with something.
+
+1546
+01:16:55,900 --> 01:16:57,830
+But I know that there's
+a crease right here,
+
+1547
+01:16:57,830 --> 01:16:59,439
+so I can put it right over here.
+
+1548
+01:16:59,439 --> 01:17:01,480
+I can take this stuff and
+put it right over here.
+
+1549
+01:17:01,480 --> 01:17:03,688
+This is a weird kind of
+manipulation of folded states
+
+1550
+01:17:03,688 --> 01:17:06,390
+which we don't normally do,
+but here we need to do it.
+
+1551
+01:17:06,390 --> 01:17:08,840
+After I've done that--
+is there any hope
+
+1552
+01:17:08,840 --> 01:17:10,490
+of me redrawing the picture?
+
+1553
+01:17:10,490 --> 01:17:13,000
+Maybe.
+
+1554
+01:17:13,000 --> 01:17:15,450
+After we've done that,
+we'll have the crimp.
+
+1555
+01:17:15,450 --> 01:17:18,430
+It will be nice and tight.
+
+1556
+01:17:18,430 --> 01:17:26,520
+And then we'll have
+this finger here,
+
+1557
+01:17:26,520 --> 01:17:32,140
+and then it goes up
+here, up this anvil.
+
+1558
+01:17:32,140 --> 01:17:36,250
+Then this part, instead
+of going inside,
+
+1559
+01:17:36,250 --> 01:17:46,130
+actually goes in here, up
+there, something like that,
+
+1560
+01:17:46,130 --> 01:17:47,510
+and that's the end.
+
+1561
+01:17:47,510 --> 01:17:49,410
+Then this is the other side.
+
+1562
+01:17:49,410 --> 01:17:52,230
+Other side wasn't too
+complicated, I think.
+
+1563
+01:17:52,230 --> 01:17:54,450
+But you can check.
+
+1564
+01:17:54,450 --> 01:17:56,870
+I guess now it's down here.
+
+1565
+01:17:56,870 --> 01:17:58,970
+But you can really just
+do the shifting locally
+
+1566
+01:17:58,970 --> 01:18:00,400
+and it doesn't mess anything up.
+
+1567
+01:18:00,400 --> 01:18:02,250
+I'm going to wave my
+hands because it's
+
+1568
+01:18:02,250 --> 01:18:04,110
+a bit messy to
+really prove that.
+
+1569
+01:18:04,110 --> 01:18:06,570
+But if you do that, boom.
+
+1570
+01:18:06,570 --> 01:18:10,074
+Now this crimp looks like
+it was actually done first.
+
+1571
+01:18:10,074 --> 01:18:11,740
+You can see that this
+folded state could
+
+1572
+01:18:11,740 --> 01:18:14,480
+have been made by first doing
+that crimp and then folding
+
+1573
+01:18:14,480 --> 01:18:15,970
+the rest.
+
+1574
+01:18:15,970 --> 01:18:19,660
+You can treat this as if the
+paper was fused together here,
+
+1575
+01:18:19,660 --> 01:18:22,441
+and that will be a folded state
+of that smaller piece of paper.
+
+1576
+01:18:22,441 --> 01:18:24,940
+So even though we were shifting
+creases closer to each other
+
+1577
+01:18:24,940 --> 01:18:27,029
+and it looked a little
+scary what's happening,
+
+1578
+01:18:27,029 --> 01:18:28,570
+we know from this
+construction if you
+
+1579
+01:18:28,570 --> 01:18:31,160
+could fold the original thing,
+you can fold the thing even
+
+1580
+01:18:31,160 --> 01:18:32,890
+when the crimp got
+fused together.
+
+1581
+01:18:32,890 --> 01:18:34,690
+Therefore, crimps
+are always safe,
+
+1582
+01:18:34,690 --> 01:18:37,810
+and by an even easier argument,
+end folds are always safe.
+
+1583
+01:18:37,810 --> 01:18:40,810
+I already gave that
+argument, basically.
+
+1584
+01:18:40,810 --> 01:18:43,570
+So a little crazy,
+but that proves
+
+1585
+01:18:43,570 --> 01:18:45,610
+that you preserve
+flat foldability
+
+1586
+01:18:45,610 --> 01:18:50,430
+by going in this chain
+n or n over 2 times,
+
+1587
+01:18:50,430 --> 01:18:53,100
+you will fold everything if you
+were originally flat foldable.
+
+1588
+01:18:53,100 --> 01:18:55,433
+If you're not, you will get
+stuck because otherwise, you
+
+1589
+01:18:55,433 --> 01:18:57,570
+would find a folding, and so on.
+
+1590
+01:18:57,570 --> 01:18:58,070
+Clear?
+
+1591
+01:18:58,070 --> 01:19:03,130
+
+1592
+01:19:03,130 --> 01:19:05,910
+I'll just mention
+you can generalize
+
+1593
+01:19:05,910 --> 01:19:11,660
+this to folding two dimensional
+maps with simple folds.
+
+1594
+01:19:11,660 --> 01:19:15,880
+I should say, of course, an
+end fold is a simple fold.
+
+1595
+01:19:15,880 --> 01:19:18,067
+A crimp is two simple folds.
+
+1596
+01:19:18,067 --> 01:19:19,650
+You can first fold
+along the mountain,
+
+1597
+01:19:19,650 --> 01:19:22,233
+you won't get any collision, and
+then fold back on the valley.
+
+1598
+01:19:22,233 --> 01:19:24,020
+That's a simple fold.
+
+1599
+01:19:24,020 --> 01:19:26,020
+So this is saying,
+in fact, something
+
+1600
+01:19:26,020 --> 01:19:28,380
+is flat foldable
+in one dimension if
+
+1601
+01:19:28,380 --> 01:19:32,045
+and only if it is flat foldable
+by a sequence of simple folds.
+
+1602
+01:19:32,045 --> 01:19:33,920
+As long as you stick to
+crimps and end folds,
+
+1603
+01:19:33,920 --> 01:19:35,920
+it doesn't matter what
+order you do them in.
+
+1604
+01:19:35,920 --> 01:19:38,610
+
+1605
+01:19:38,610 --> 01:19:41,840
+That's not true as soon as
+you go to two dimensions.
+
+1606
+01:19:41,840 --> 01:19:55,080
+So for example, just
+for fun, do I really
+
+1607
+01:19:55,080 --> 01:19:56,320
+want to draw the whole thing?
+
+1608
+01:19:56,320 --> 01:19:57,278
+I guess I've committed.
+
+1609
+01:19:57,278 --> 01:20:02,237
+
+1610
+01:20:02,237 --> 01:20:03,820
+There's a couple
+examples in the notes
+
+1611
+01:20:03,820 --> 01:20:07,420
+that you can take a look at,
+and I encourage you to make one.
+
+1612
+01:20:07,420 --> 01:20:10,826
+This can be folded flat
+but not by simple folds,
+
+1613
+01:20:10,826 --> 01:20:13,200
+and you can see that it can't
+be followed by simple folds
+
+1614
+01:20:13,200 --> 01:20:15,700
+because there's no fold that
+goes all the way through.
+
+1615
+01:20:15,700 --> 01:20:17,950
+This line is valley,
+mountain, mountain.
+
+1616
+01:20:17,950 --> 01:20:21,480
+There's no line that's all
+mountains or all valleys.
+
+1617
+01:20:21,480 --> 01:20:25,310
+But you can use this structure
+to understand at least which
+
+1618
+01:20:25,310 --> 01:20:28,530
+rectangular maps with
+horizontal and vertical creases
+
+1619
+01:20:28,530 --> 01:20:30,730
+can be folded flat
+by simple folds,
+
+1620
+01:20:30,730 --> 01:20:32,550
+and the answer would be no here.
+
+1621
+01:20:32,550 --> 01:20:39,530
+All you do is you say, well,
+I know if there's any fold,
+
+1622
+01:20:39,530 --> 01:20:41,850
+I must have a mountain
+or a valley that
+
+1623
+01:20:41,850 --> 01:20:43,120
+goes all the way through.
+
+1624
+01:20:43,120 --> 01:20:44,900
+So Imagine here's
+your rectangle.
+
+1625
+01:20:44,900 --> 01:20:47,150
+There's got to be something
+that's valley all the way.
+
+1626
+01:20:47,150 --> 01:20:50,400
+
+1627
+01:20:50,400 --> 01:20:56,010
+Now, if you think about a crease
+that goes the other direction,
+
+1628
+01:20:56,010 --> 01:20:58,240
+these are two valleys.
+
+1629
+01:20:58,240 --> 01:21:01,700
+You can show, just by playing
+around with a little pattern
+
+1630
+01:21:01,700 --> 01:21:05,414
+like this, you cannot have
+these two both be valleys
+
+1631
+01:21:05,414 --> 01:21:07,330
+because that would be
+all four valleys is bad.
+
+1632
+01:21:07,330 --> 01:21:08,579
+If you try that, doesn't work.
+
+1633
+01:21:08,579 --> 01:21:10,070
+Or it also can't
+be both mountains.
+
+1634
+01:21:10,070 --> 01:21:12,420
+You can't valley, mountain,
+valley, mountain in order.
+
+1635
+01:21:12,420 --> 01:21:13,455
+That doesn't fold.
+
+1636
+01:21:13,455 --> 01:21:15,080
+So in fact, these
+have to be different.
+
+1637
+01:21:15,080 --> 01:21:16,310
+One's mountain, one's valley.
+
+1638
+01:21:16,310 --> 01:21:19,040
+I don't care which is which, but
+I know that this line actually
+
+1639
+01:21:19,040 --> 01:21:20,640
+cannot be folded
+by a simple fold.
+
+1640
+01:21:20,640 --> 01:21:23,470
+It's got a valley
+and a mountain.
+
+1641
+01:21:23,470 --> 01:21:27,310
+So in fact, the picture has
+to be I have a line like this.
+
+1642
+01:21:27,310 --> 01:21:30,140
+Maybe I have a few lines that
+are mountains all the way
+
+1643
+01:21:30,140 --> 01:21:33,300
+or valleys all the way.
+
+1644
+01:21:33,300 --> 01:21:36,190
+And any horizontal
+line I can't fold.
+
+1645
+01:21:36,190 --> 01:21:38,430
+I've got to finish
+folding these guys first.
+
+1646
+01:21:38,430 --> 01:21:41,030
+That means I have a one
+dimensional problem.
+
+1647
+01:21:41,030 --> 01:21:43,290
+So I apply this algorithm
+to see whether that one
+
+1648
+01:21:43,290 --> 01:21:45,220
+dimensional thing folds.
+
+1649
+01:21:45,220 --> 01:21:48,241
+Once I've folded all
+those vertical things,
+
+1650
+01:21:48,241 --> 01:21:49,740
+solved that one
+dimensional problem,
+
+1651
+01:21:49,740 --> 01:21:51,427
+I will then have a
+horizontal problem,
+
+1652
+01:21:51,427 --> 01:21:53,010
+and then I'll have
+a vertical problem.
+
+1653
+01:21:53,010 --> 01:21:54,682
+You just keep
+doing this, and you
+
+1654
+01:21:54,682 --> 01:21:56,140
+can show in the
+same way you always
+
+1655
+01:21:56,140 --> 01:21:57,380
+preserve flat foldability.
+
+1656
+01:21:57,380 --> 01:21:59,522
+You just keep doing
+crimps and end folds,
+
+1657
+01:21:59,522 --> 01:22:00,980
+and this will fold
+your map if it's
+
+1658
+01:22:00,980 --> 01:22:03,790
+at all possible by simple
+folds, which most ones that
+
+1659
+01:22:03,790 --> 01:22:06,500
+are in production are
+foldable by simple folds.
+
+1660
+01:22:06,500 --> 01:22:07,325
+Question?
+
+1661
+01:22:07,325 --> 01:22:07,950
+AUDIENCE: Yeah.
+
+1662
+01:22:07,950 --> 01:22:10,920
+If we go back to the
+example where [INAUDIBLE]?
+
+1663
+01:22:10,920 --> 01:22:14,534
+
+1664
+01:22:14,534 --> 01:22:15,200
+PROFESSOR: Yeah.
+
+1665
+01:22:15,200 --> 01:22:21,390
+
+1666
+01:22:21,390 --> 01:22:27,374
+AUDIENCE: [INAUDIBLE]
+mountain, it would be reversed
+
+1667
+01:22:27,374 --> 01:22:29,724
+and then it would be
+foldable [INAUDIBLE].
+
+1668
+01:22:29,724 --> 01:22:30,390
+PROFESSOR: Yeah.
+
+1669
+01:22:30,390 --> 01:22:31,270
+This is good.
+
+1670
+01:22:31,270 --> 01:22:33,030
+This is the case
+that could work.
+
+1671
+01:22:33,030 --> 01:22:35,060
+This is foldable
+if you try it out.
+
+1672
+01:22:35,060 --> 01:22:37,540
+You first told here,
+and then the valley
+
+1673
+01:22:37,540 --> 01:22:40,530
+falls onto the mountain but it
+turns upside down as it folds,
+
+1674
+01:22:40,530 --> 01:22:42,900
+and so they actually nest
+nicely inside each other.
+
+1675
+01:22:42,900 --> 01:22:44,680
+It's confusing because
+it's inverting.
+
+1676
+01:22:44,680 --> 01:22:46,864
+This is the one valley
+case, but my point
+
+1677
+01:22:46,864 --> 01:22:48,780
+is you have to fold this
+before you fold that.
+
+1678
+01:22:48,780 --> 01:22:51,620
+
+1679
+01:22:51,620 --> 01:22:53,620
+There's a little more
+details in the notes here.
+
+1680
+01:22:53,620 --> 01:22:56,120
+You can make this into a really
+fast linear time algorithm
+
+1681
+01:22:56,120 --> 01:22:57,495
+if you use fancy
+data structures,
+
+1682
+01:22:57,495 --> 01:23:01,380
+but that's beyond
+this scope, and that
+
+1683
+01:23:01,380 --> 01:23:04,200
+is the end of lecture two.
+
