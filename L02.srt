@@ -7,7 +7,7 @@ PROFESSOR: All right.
 
 3
 00:00:03,160 --> 00:00:07,270
-Welcome back to 6849.
+Welcome back to 6.849.
 
 4
 00:00:07,270 --> 00:00:12,030
@@ -21,7 +21,7 @@ is here.
 6
 00:00:12,880 --> 00:00:14,890
 They're from a program
-called [? Gachan, ?]
+called Gachan!,
 
 7
 00:00:14,890 --> 00:00:16,647
@@ -114,7 +114,7 @@ Lots of stuff.
 27
 00:01:08,501 --> 00:01:10,640
 The paper comes from
-the [? Gachan ?] team,
+the Gachan! team,
 
 28
 00:01:10,640 --> 00:01:12,150
@@ -424,7 +424,7 @@ this term, folded state.
 
 97
 00:04:39,540 --> 00:04:45,925
-Formally, this is what we refer
+Informally, this is what we refer
 to as the finished product.
 
 98
@@ -583,11 +583,11 @@ And when this is possible,
 we call that crease pattern
 
 132
-00:06:34,020 --> 00:06:34,705
+00:06:34,020 --> 00:06:37,020
 flat foldable.
 
 133
-00:06:34,705 --> 00:06:47,350
+00:06:37,020 --> 00:06:47,350
 
 134
 00:06:47,350 --> 00:06:52,880
@@ -1038,7 +1038,7 @@ collapse is the coolest.
 
 230
 00:11:48,600 --> 00:11:51,085
-It's nice and fourfold
+It's nice and four-fold
 symmetric as you do it, I guess,
 
 231
@@ -1069,7 +1069,7 @@ what a crease pattern is,
 
 237
 00:12:07,630 --> 00:12:09,350
-when a mountain valley is.
+what a mountain/valley is.
 
 238
 00:12:09,350 --> 00:12:11,240
@@ -1230,8 +1230,8 @@ so I figure I should define it.
 
 274
 00:14:07,230 --> 00:14:09,470
-And sometimes, m is
-mountain, v is valley.
+And sometimes, M is
+mountain, V is valley.
 
 275
 00:14:09,470 --> 00:14:13,830
@@ -1572,8 +1572,8 @@ for fun, here's how
 
 348
 00:18:51,480 --> 00:18:54,526
-you could imagine this
-design by John Montroll.
+you could imagine-- This
+is a design by John Montroll.
 
 349
 00:18:54,526 --> 00:18:56,900
@@ -1688,7 +1688,7 @@ I think from 1998, probably.
 
 374
 00:20:02,065 --> 00:20:07,600
-Trial version here is in 2000.
+Journal version here is in 2000.
 
 375
 00:20:07,600 --> 00:20:10,340
@@ -2869,7 +2869,7 @@ fold along each of those edges.
 629
 00:32:12,780 --> 00:32:16,024
 And I think there's even
-a pseudo polynomial bound
+a pseudopolynomial bound
 
 630
 00:32:16,024 --> 00:32:17,690
@@ -3027,7 +3027,7 @@ Maybe you could do it.
 664
 00:33:35,320 --> 00:33:36,903
 AUDIENCE: You just
-type a [INAUDIBLE].
+have a pleat.
 
 665
 00:33:36,903 --> 00:33:37,930
@@ -3389,7 +3389,7 @@ Let me tell you about that.
 746
 00:37:39,140 --> 00:37:53,500
 So we can achieve something I
-call pseudo efficiency, which
+call pseudo-efficiency, which
 
 747
 00:37:53,500 --> 00:37:59,700
@@ -3931,7 +3931,7 @@ and visit each triangle exactly
 862
 00:43:43,270 --> 00:43:46,510
 once, and that's how you
-get pseudo efficiency.
+get pseudo-efficiency.
 
 863
 00:43:46,510 --> 00:43:49,731
@@ -3948,7 +3948,7 @@ Questions?
 866
 00:43:53,432 --> 00:43:55,340
 AUDIENCE: Why is it
-called pseudo efficiency?
+called pseudo-efficiency?
 
 867
 00:43:55,340 --> 00:43:56,890
@@ -3957,7 +3957,7 @@ PROFESSOR: Well, I made that up.
 868
 00:43:56,890 --> 00:43:58,920
 Why is it called
-pseudo efficiency?
+pseudo-efficiency?
 
 869
 00:43:58,920 --> 00:44:02,050
@@ -4237,7 +4237,7 @@ and when you cannot find
 927
 00:46:36,704 --> 00:46:41,390
 the Hamiltonian path around
-the triangles, [INAUDIBLE],
+the triangles, you just--
 
 928
 00:46:41,390 --> 00:46:45,210
@@ -4246,8 +4246,8 @@ just get a narrow strip that
 
 929
 00:46:45,210 --> 00:46:47,910
-runs through them and
-just rigidly [INAUDIBLE]?
+runs through them and just
+reaches the corner you need?
 
 930
 00:46:47,910 --> 00:46:49,160
@@ -4344,7 +4344,7 @@ Good.
 950
 00:47:37,570 --> 00:47:39,870
 I think I'm going to
-skip seem placement
+skip seam placement
 
 951
 00:47:39,870 --> 00:47:41,950
@@ -4682,7 +4682,7 @@ points, so I'll write
 
 1023
 00:50:55,570 --> 00:50:57,460
-m's and v's,
+M's and V's,
 something like that.
 
 1024
@@ -4951,7 +4951,7 @@ and you just fold it over.
 
 1080
 00:54:02,990 --> 00:54:03,910
-That's an n fold.
+That's an end fold.
 
 1081
 00:54:03,910 --> 00:54:09,040
@@ -5165,7 +5165,7 @@ this Zorro mark.
 1127
 00:55:59,870 --> 00:56:02,180
 That's the definition of
-an n fold and a crimp.
+an end fold and a crimp.
 
 1128
 00:56:02,180 --> 00:56:04,570
@@ -5226,7 +5226,7 @@ mountain-valley pattern
 1141
 00:56:55,030 --> 00:56:58,580
 is a crease pattern together
-with m's and v's written
+with M's and V's written
 
 1142
 00:56:58,580 --> 00:57:00,710
@@ -5354,11 +5354,11 @@ So what does it mean?
 1170
 00:58:32,210 --> 00:58:35,490
 If I take a whole
-bunch of v's in a row,
+bunch of V's in a row,
 
 1171
 00:58:35,490 --> 00:58:41,694
-or I take a whole bunch m's
+or I take a whole bunch M's
 in a row, as many as I can,
 
 1172
@@ -5374,12 +5374,12 @@ edge of the paper.
 1174
 00:58:46,637 --> 00:58:48,970
 But if I take a whole bunch
-of v's, then the next crease
+of V's, then the next crease
 
 1175
 00:58:48,970 --> 00:58:52,810
 and the previous crease
-are m's, let's say,
+are M's, let's say,
 
 1176
 00:58:52,810 --> 00:59:02,670
@@ -5413,7 +5413,7 @@ first.
 1182
 00:59:21,030 --> 00:59:38,410
 Is nearer than the adjacent
-m or v. Sorry, backwards.
+M or V. Sorry, backwards.
 
 1183
 00:59:38,410 --> 00:59:42,060
@@ -5436,7 +5436,7 @@ You have a segment.
 1187
 00:59:51,020 --> 00:59:55,490
 Suppose I take some maximal
-sequence of m's all in a row.
+sequence of M's all in a row.
 
 1188
 00:59:55,490 --> 00:59:58,250
@@ -5475,7 +5475,7 @@ is bigger than this one.
 
 1196
 01:00:17,880 --> 01:00:19,710
-So these m's are really
+So these M's are really
 clustered together.
 
 1197
@@ -5514,8 +5514,8 @@ at least on the right side,
 
 1204
 01:00:37,670 --> 01:00:39,130
-the m's are mingling
-with the v's.
+the M's are mingling
+with the V's.
 
 1205
 01:00:39,130 --> 01:00:41,060
@@ -5563,7 +5563,7 @@ It doesn't look so true.
 1215
 01:01:08,567 --> 01:01:10,775
 I think I probably need some
-condition on the v also.
+condition on the V also.
 
 1216
 01:01:10,775 --> 01:01:16,750
@@ -5671,7 +5671,7 @@ violates that constraint.
 1241
 01:02:43,690 --> 01:02:46,100
 What that means is I
-have a bunch of m's here,
+have a bunch of M's here,
 
 1242
 01:02:46,100 --> 01:02:48,960
@@ -5696,12 +5696,12 @@ there aren't really
 1246
 01:02:56,960 --> 01:02:58,780
 that many ways to fold
-a whole bunch of m's
+a whole bunch of M's
 
 1247
 01:02:58,780 --> 01:03:01,730
 in a row or a whole bunch
-of v's that's symmetric.
+of V's that's symmetric.
 
 1248
 01:03:01,730 --> 01:03:04,257
@@ -5950,12 +5950,12 @@ the biggest sequence
 
 1301
 01:05:14,040 --> 01:05:15,900
-of contiguous m's you can find.
+of contiguous M's you can find.
 
 1302
 01:05:15,900 --> 01:05:18,620
 I just mean take some contiguous
-sequence of m's that you
+sequence of M's that you
 
 1303
 01:05:18,620 --> 01:05:22,290
@@ -5970,7 +5970,7 @@ surrounded by valleys.
 1305
 01:05:24,570 --> 01:05:31,030
 I want this to hold for every
-contiguous sequence of m's.
+contiguous sequence of M's.
 
 1306
 01:05:31,030 --> 01:05:33,780
@@ -6088,13 +6088,13 @@ Yeah, question?
 
 1332
 01:06:44,340 --> 01:06:46,790
-AUDIENCE: So right
-now, the main property
+AUDIENCE: So right now,
+the mingling property
 
 1333
 01:06:46,790 --> 01:06:53,250
-is finding a way that
-[INAUDIBLE] two or more?
+is finding a way that [INAUDIBLE]
+sequence two or more?
 
 1334
 01:06:53,250 --> 01:06:54,344
@@ -6103,7 +6103,7 @@ PROFESSOR: That's right.
 1335
 01:06:54,344 --> 01:06:56,864
 AUDIENCE: And there is an
-example that [INAUDIBLE]?
+example that doesn't...
 
 1336
 01:06:56,864 --> 01:06:57,530
@@ -6168,7 +6168,7 @@ of these mingling sequences,
 1349
 01:07:32,220 --> 01:07:41,820
 for each maximal
-sequence of m's or v's, I
+sequence of M's or V's, I
 
 1350
 01:07:41,820 --> 01:07:45,340
@@ -6197,8 +6197,8 @@ Then I'm happy on the left side.
 
 1356
 01:08:08,860 --> 01:08:13,637
-I'm mingling with a v with
-an m fold on the left side.
+I'm mingling with a V with
+an M fold on the left side.
 
 1357
 01:08:13,637 --> 01:08:15,970
@@ -6345,12 +6345,12 @@ That's what this symbol means.
 1388
 01:09:56,600 --> 01:09:59,310
 It means to the right of the
-m's, I've got a small gap,
+M's, I've got a small gap,
 
 1389
 01:09:59,310 --> 01:10:02,080
 and it means to the left of the
-v's, I also have a small gap.
+V's, I also have a small gap.
 
 1390
 01:10:02,080 --> 01:10:05,825
@@ -6867,8 +6867,8 @@ some crimp like this, let's say.
 
 1501
 01:14:56,440 --> 01:15:01,380
-This is an m, this
-is a v. What I'm
+This is an M, this
+is a V. What I'm
 
 1502
 01:15:01,380 --> 01:15:03,920
@@ -7268,7 +7268,7 @@ flat foldability
 1586
 01:18:45,610 --> 01:18:50,430
 by going in this chain
-n or n over 2 times,
+n or n/2 times,
 
 1587
 01:18:50,430 --> 01:18:53,100
@@ -7623,27 +7623,30 @@ AUDIENCE: Yeah.
 1662
 01:22:07,950 --> 01:22:10,920
 If we go back to the
-example where [INAUDIBLE]?
+example where that valley
 
 1663
 01:22:10,920 --> 01:22:14,534
+around this one, and valley
+here and mountain here.
 
 1664
 01:22:14,534 --> 01:22:15,200
 PROFESSOR: Yeah.
 
 1665
-01:22:15,200 --> 01:22:21,390
+01:22:20,000 --> 01:22:22,390
+If we fold the vertical valley,
 
 1666
-01:22:21,390 --> 01:22:27,374
-AUDIENCE: [INAUDIBLE]
+01:22:22,390 --> 01:22:27,374
+AUDIENCE: the valley goes on the
 mountain, it would be reversed
 
 1667
 01:22:27,374 --> 01:22:29,724
 and then it would be
-foldable [INAUDIBLE].
+foldable by that sequence.
 
 1668
 01:22:29,724 --> 01:22:30,390
@@ -7718,5 +7721,5 @@ this scope, and that
 
 1683
 01:23:01,380 --> 01:23:04,200
-is the end of lecture two.
+is the end of Lecture 2.
 
