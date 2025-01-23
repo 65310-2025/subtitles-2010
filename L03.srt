@@ -1,5 +1,5 @@
 1
-0-1:59:59,500 --> 00:00:02,350
+00:00:00,000 --> 00:00:02,350
 
 2
 00:00:02,350 --> 00:00:06,350
@@ -193,8 +193,8 @@ by some sequence of angles.
 
 44
 00:02:38,060 --> 00:02:41,390
-In general, theta
-1 up to theta n.
+In general, theta_1
+up to theta_n.
 
 45
 00:02:41,390 --> 00:02:45,560
@@ -1362,18 +1362,18 @@ travel along a circle--
 
 300
 00:15:56,640 --> 00:15:58,670
-so we went theta 1
+so we went theta_1
 counterclockwise.
 
 301
 00:15:58,670 --> 00:16:01,610
 Now we're going to
-go theta 2 clockwise;
+go theta_2 clockwise;
 
 302
 00:16:01,610 --> 00:16:04,960
-then we're going to go theta
-3 counterclockwise, and so on.
+then we're going to go theta_3
+counterclockwise, and so on.
 
 303
 00:16:04,960 --> 00:16:07,430
@@ -1387,16 +1387,16 @@ think drawn a line.
 
 305
 00:16:09,790 --> 00:16:12,260
-So we go to the right, theta 1.
+So we go to the right, theta_1.
 
 306
 00:16:12,260 --> 00:16:15,630
-Then we go to the left, theta 2.
+Then we go to the left, theta_2.
 
 307
 00:16:15,630 --> 00:16:20,540
 Then we go to the
-right, theta 3.
+right, theta_3.
 
 308
 00:16:20,540 --> 00:16:22,500
@@ -1410,7 +1410,7 @@ terms of horizontal travel.
 
 310
 00:16:24,919 --> 00:16:26,210
-The y-coordinate means nothing.
+The y coordinate means nothing.
 
 311
 00:16:26,210 --> 00:16:29,770
@@ -1428,12 +1428,12 @@ of a circle of paper--
 314
 00:16:36,810 --> 00:16:40,650
 these guys have to have
-the same x-coordinate.
+the same x coordinate.
 
 315
 00:16:40,650 --> 00:16:42,900
 So I don't know-- I mean,
-the y-coordinates, they also
+the y coordinates, they also
 
 316
 00:16:42,900 --> 00:16:43,780
@@ -1442,7 +1442,7 @@ have to work out.
 317
 00:16:43,780 --> 00:16:45,738
 But we're not thinking
-about the y-coordinates.
+about the y coordinates.
 
 318
 00:16:45,738 --> 00:16:47,685
@@ -1474,28 +1474,28 @@ How much do we go right?
 
 324
 00:16:57,990 --> 00:16:59,780
-Well, we go theta
-1 to the right.
+Well, we go theta_1
+to the right.
 
 325
 00:16:59,780 --> 00:17:01,510
-Then we go theta 2
+Then we go theta_2
 to the left, which
 
 326
 00:17:01,510 --> 00:17:04,530
 is like going negative
-theta 2 to the right.
+theta_2 to the right.
 
 327
 00:17:04,530 --> 00:17:07,099
 And then we go through
-theta 3 to the right.
+theta_3 to the right.
 
 328
 00:17:07,099 --> 00:17:09,970
 Then we go negative
-theta 4 to the right.
+theta_4 to the right.
 
 329
 00:17:09,970 --> 00:17:14,619
@@ -1527,21 +1527,21 @@ we have to change direction.
 335
 00:17:31,840 --> 00:17:35,890
 And so in the end, it's
-important that after theta 4,
+important that after theta_4,
 
 336
 00:17:35,890 --> 00:17:38,730
 we change direction
-to visit theta 1.
+to visit theta_1.
 
 337
 00:17:38,730 --> 00:17:42,990
 If they were aligned-- like
-if theta 4 went over here
+if theta_4 went over here
 
 338
 00:17:42,990 --> 00:17:47,620
-and then theta 5 went
+and then theta_5 went
 like that, and there
 
 339
@@ -1557,7 +1557,7 @@ up, there's no crease here.
 341
 00:17:51,940 --> 00:17:54,919
 You just went straight
-from theta 5 theta 1.
+from theta_5 to theta_1.
 
 342
 00:17:54,919 --> 00:17:56,960
@@ -1599,7 +1599,7 @@ realize the angles correspond
 
 351
 00:18:18,230 --> 00:18:20,320
-to x-coordinates in
+to x coordinates in
 this linear space.
 
 352
@@ -1627,7 +1627,7 @@ stacking order of these edges.
 357
 00:18:35,922 --> 00:18:37,630
 We need to worry about
-the y-coordinates.
+the y coordinates.
 
 358
 00:18:37,630 --> 00:18:39,809
@@ -1791,12 +1791,12 @@ picture like this,
 393
 00:20:08,680 --> 00:20:10,638
 I've already drawn it
-with nice x-coordinates--
+with nice x coordinates--
 
 394
 00:20:10,638 --> 00:20:12,830
 I don't know about the
-y-coordinates yet-- I say,
+y coordinates yet-- I say,
 
 395
 00:20:12,830 --> 00:20:13,470
@@ -1863,11 +1863,11 @@ messed up before.
 409
 00:20:45,892 --> 00:20:47,475
 And you'll preserve
-the x-coordinates.
+the x coordinates.
 
 410
 00:20:47,475 --> 00:20:49,000
-The x-coordinates
+The x coordinates
 aren't changing
 
 411
@@ -1998,7 +1998,7 @@ whatever we do,
 
 439
 00:22:16,770 --> 00:22:20,150
-the x-coordinates are
+the x coordinates are
 lined up at the end.
 
 440
@@ -2017,7 +2017,7 @@ without crossing.
 443
 00:22:34,230 --> 00:22:36,740
 So this is a statement
-about y-coordinates.
+about y coordinates.
 
 444
 00:22:36,740 --> 00:22:40,030
@@ -2330,7 +2330,7 @@ picture like this.
 511
 00:26:03,490 --> 00:26:06,640
 We have horizontal travel
-according to the theta i's.
+according to the theta_i's.
 
 512
 00:26:06,640 --> 00:26:09,790
@@ -2993,12 +2993,12 @@ so globally smallest theta.
 
 657
 00:33:17,880 --> 00:33:19,500
-Say it's theta i.
+Say it's theta_i.
 
 658
 00:33:19,500 --> 00:33:27,461
-So the picture is theta i,
-theta i minus 1, theta i plus 1.
+So the picture is theta_i,
+theta_i-1, theta_i+1.
 
 659
 00:33:27,461 --> 00:33:28,960
@@ -3078,7 +3078,7 @@ apply one of these crimps.
 675
 00:34:15,170 --> 00:34:18,830
 Incidentally, the word crimp,
-Jason Koo was asking about,
+Jason Ku was asking about,
 
 676
 00:34:18,830 --> 00:34:21,620
@@ -5064,7 +5064,7 @@ how should I disperse
 
 1110
 00:54:37,850 --> 00:54:40,130
-the theta i's in
+the theta_i's in
 order to make there
 
 1111
@@ -5105,7 +5105,7 @@ and valleys.
 1119
 00:54:53,490 --> 00:54:55,640
 But I was asking a
-question about theta i's.
+question about theta_i's.
 
 1120
 00:54:55,640 --> 00:54:59,010
@@ -5129,8 +5129,8 @@ have a bunch of angles,
 
 1124
 00:55:11,917 --> 00:55:14,372
-consecutive theta
-i's are increasing?
+consecutive theta_i's
+are increasing?
 
 1125
 00:55:14,372 --> 00:55:16,800
@@ -5215,13 +5215,13 @@ choice as possible?
 
 1142
 00:56:03,970 --> 00:56:08,570
-AUDIENCE: Isn't 2 to the n every
-mountain valley assignment?
+AUDIENCE: Isn't it 2 to the n/2
+mountain valley assignments?
 
 1143
 00:56:08,570 --> 00:56:13,901
 PROFESSOR: Yes, 2 to the
-n-- no-- 2 to the n over 2.
+n-- no-- 2 to the n/2.
 
 1144
 00:56:13,901 --> 00:56:14,400
@@ -5269,8 +5269,8 @@ indeed feasible.
 
 1154
 00:56:31,720 --> 00:56:34,080
-What, from 2 to the n
-to 2 to the n over 2.
+From 2 to the n
+to 2 to the n/2.
 
 1155
 00:56:34,080 --> 00:56:37,078
@@ -5319,8 +5319,8 @@ the number valleys
 
 1165
 00:57:12,696 --> 00:57:16,930
-is plus or minus
-2, and n is even.
+is plus or minus 2,
+and n is even.
 
 1166
 00:57:16,930 --> 00:57:20,780
@@ -6401,7 +6401,7 @@ Something like that.
 
 1401
 01:08:54,084 --> 01:08:55,000
-I've got a sheet here.
+I'm gonna cheat here.
 
 1402
 01:08:55,000 --> 01:09:02,744
