@@ -67,11 +67,11 @@ methods I want to talk about.
 16
 00:01:44,750 --> 00:01:46,970
 One is tree method
-which is hit it pretty
+which has hit it pretty
 
 17
 00:01:46,970 --> 00:01:49,880
-big in the impractical
+big in the practical
 origami design.
 
 18
@@ -2465,7 +2465,7 @@ I have an n by n square.
 540
 00:29:26,730 --> 00:29:29,600
 You started with
-perimeter about four n
+perimeter about 4 n
 
 541
 00:29:29,600 --> 00:29:32,700
@@ -2475,17 +2475,17 @@ about n squared.
 542
 00:29:32,700 --> 00:29:34,980
 That's huge with
-respect to four n.
+respect to 4 n.
 
 543
 00:29:34,980 --> 00:29:41,816
-So this is much bigger than four
-n, for n sufficiently large.
+So this is much bigger than
+4 n, for n sufficiently large.
 
 544
 00:29:41,816 --> 00:29:44,259
-AUDIENCE: [INAUDIBLE]
-about the length flaps.
+AUDIENCE: Can you say something
+about the length of the flaps?
 
 545
 00:29:44,259 --> 00:29:46,800
@@ -2623,7 +2623,7 @@ come from on the piece of paper.
 575
 00:31:19,250 --> 00:31:22,230
 So in particular, you see
-something like a leaf h.
+something like a leaf H.
 
 576
 00:31:22,230 --> 00:31:25,910
@@ -2632,12 +2632,12 @@ one point on the paper.
 
 577
 00:31:25,910 --> 00:31:28,880
-This leaf d comes
+This leaf D comes
 from this point,
 
 578
 00:31:28,880 --> 00:31:30,530
-and g comes from that point.
+and G comes from that point.
 
 579
 00:31:30,530 --> 00:31:33,210
@@ -2664,7 +2664,7 @@ points ought to be.
 
 584
 00:31:42,646 --> 00:31:48,310
-s So there's this idea
+So there's this idea
 of an active path which
 
 585
@@ -2766,7 +2766,7 @@ All of the dash lines, I think.
 
 606
 00:33:05,860 --> 00:33:12,150
-So for example, d to h, that's
+So for example, D to H, that's
 a distance between two leaves.
 
 607
@@ -2790,13 +2790,13 @@ So this is tight.
 
 611
 00:33:19,410 --> 00:33:22,450
-I can't move h any closer
-to d or vice versa.
+I can't move H any closer
+to D or vice versa.
 
 612
 00:33:22,450 --> 00:33:25,710
-And also from h to
-a, a is actually
+And also from H to A.
+A is actually
 
 613
 00:33:25,710 --> 00:33:29,680
@@ -3287,11 +3287,11 @@ about active paths,
 719
 00:38:23,070 --> 00:38:26,630
 you look at two leaves like
-g d here, which corresponds
+G D here, which corresponds
 
 720
 00:38:26,630 --> 00:38:30,640
-to this path g d here,
+to this path G D here,
 because it's active,
 
 721
@@ -3317,7 +3317,7 @@ segment is that.
 725
 00:38:40,840 --> 00:38:44,290
 And so in particular, you know
-where c is on that segment.
+where C is on that segment.
 
 726
 00:38:44,290 --> 00:38:46,860
@@ -3327,7 +3327,7 @@ points in this diagram.
 727
 00:38:46,860 --> 00:38:51,845
 But you know that this point
-right here must fold to c.
+right here must fold to C.
 
 728
 00:38:51,845 --> 00:38:54,760
@@ -3352,12 +3352,12 @@ this quadrilateral,
 
 733
 00:39:04,090 --> 00:39:12,950
-it corresponds so g to c to d
-to c to h to c to b to a back
+it corresponds so G to C to D
+to C to H to C to B to A back
 
 734
 00:39:12,950 --> 00:39:15,720
-to b back to c.
+to B back to C.
 
 735
 00:39:15,720 --> 00:39:24,800
@@ -3476,17 +3476,17 @@ so I have a disk down
 
 762
 00:40:40,680 --> 00:40:41,790
-here corresponding to d.
+here corresponding to D.
 
 763
 00:40:41,790 --> 00:40:44,040
 I have a disk corresponding
-to h, a disk corresponding
+to H, a disk corresponding
 
 764
 00:40:44,040 --> 00:40:47,892
-to g, a river corresponding
-to the segment b c.
+to G, a river corresponding
+to the segment B C.
 
 765
 00:40:47,892 --> 00:40:49,350
@@ -3565,12 +3565,12 @@ you want to look, say,
 780
 00:41:24,600 --> 00:41:27,940
 at the distance
-between h and a here.
+between H and A here.
 
 781
 00:41:27,940 --> 00:41:30,640
-The distance between h and
-a should be length three.
+The distance between H and
+A should be length three.
 
 782
 00:41:30,640 --> 00:41:32,440
@@ -3589,7 +3589,7 @@ this river, followed
 
 785
 00:41:36,910 --> 00:41:39,160
-by the size of the a disk.
+by the size of the A disk.
 
 786
 00:41:39,160 --> 00:41:42,010
@@ -3616,7 +3616,7 @@ That's when things are active.
 791
 00:41:49,050 --> 00:41:53,440
 And you could draw straight
-across from a to h and never go
+across from A to H and never go
 
 792
 00:41:53,440 --> 00:41:55,550
@@ -3701,7 +3701,7 @@ So there's some leaf here.
 
 810
 00:43:40,630 --> 00:43:44,200
-We'll call them a, b, and c.
+We'll call them A, B, and C.
 
 811
 00:43:44,200 --> 00:43:49,170
@@ -3759,12 +3759,12 @@ vertex along this segment.
 823
 00:44:40,180 --> 00:44:44,420
 Remember this edge,
-b c corresponds
+B C, corresponds
 
 824
 00:44:44,420 --> 00:44:49,120
-to some path between b
-and c in the tree which
+to some path between B
+and C in the tree which
 
 825
 00:44:49,120 --> 00:44:51,634
@@ -3787,7 +3787,7 @@ some vertex then another vertex
 
 829
 00:44:58,850 --> 00:45:04,130
-then another vertex then c,
+then another vertex then C,
 except I did it backwards.
 
 830
@@ -3827,29 +3827,29 @@ those will all line up.
 837
 00:45:19,060 --> 00:45:22,230
 So if I have some vertex
-here-- let's call it d.
+here-- let's call it D.
 
 838
 00:45:22,230 --> 00:45:23,650
---d will be here.
+D will be here.
 
 839
 00:45:23,650 --> 00:45:25,400
-But d will also be here.
+But D will also be here.
 
 840
 00:45:25,400 --> 00:45:27,220
 Because if I follow
-the path from b to a,
+the path from B to A,
 
 841
 00:45:27,220 --> 00:45:30,080
-a is some other
-guy, maybe this one,
+A is some other guy,
+maybe this one,
 
 842
 00:45:30,080 --> 00:45:32,460
-I also have to go through d.
+I also have to go through D.
 
 843
 00:45:32,460 --> 00:45:34,964
@@ -4127,7 +4127,7 @@ on the problems set,
 
 903
 00:48:08,770 --> 00:48:10,990
-problem set one is
+Problem Set 1 is
 released, is to just make
 
 904
@@ -4302,7 +4302,7 @@ here are active paths.
 
 941
 00:49:34,805 --> 00:49:37,002
-You have g d h a.
+You have G D H A.
 
 942
 00:49:37,002 --> 00:49:38,460
@@ -4374,7 +4374,7 @@ at this first critical red
 956
 00:50:15,080 --> 00:50:20,390
 drawing is that the path
-from d to a becomes critical,
+from D to A becomes critical,
 
 957
 00:50:20,390 --> 00:50:22,360
@@ -4396,8 +4396,8 @@ triangulated, but it wasn't.
 
 961
 00:50:28,180 --> 00:50:31,570
-The distance from a to
-d in the piece of paper
+The distance from A to D
+in the piece of paper
 
 962
 00:50:31,570 --> 00:50:39,680
@@ -4439,7 +4439,7 @@ the universal molecule.
 970
 00:50:49,300 --> 00:50:53,180
 If you discover, oh,
-now a d is active,
+now A D is active,
 
 971
 00:50:53,180 --> 00:50:55,230
@@ -4648,7 +4648,7 @@ here, the-- and you
 1015
 00:52:46,230 --> 00:52:50,140
 can go to Robert Lang's webpage,
-landorigami.com and print this
+langorigami.com and print this
 
 1016
 00:52:50,140 --> 00:52:50,690
@@ -4710,7 +4710,7 @@ Here's a more complicated one.
 
 1029
 00:53:18,890 --> 00:53:22,510
-Scorpion varleg
+Scorpion varileg
 which you can also
 
 1030
@@ -4820,8 +4820,8 @@ Here's a shrimp.
 
 1053
 00:54:25,760 --> 00:54:28,940
-He's super complicated
-and super realistic.
+Super complicated,
+super realistic.
 
 1054
 00:54:28,940 --> 00:54:31,510
@@ -4894,7 +4894,7 @@ And you can just squash it back.
 1068
 00:55:16,040 --> 00:55:17,930
 And it's called a
-sync fold and make
+sink fold and make
 
 1069
 00:55:17,930 --> 00:55:22,680
@@ -4944,7 +4944,7 @@ assignment a little bit,
 
 1079
 00:55:52,900 --> 00:55:55,340
-and you sync everything
+and you sink everything
 on the inside
 
 1080
@@ -5131,11 +5131,11 @@ thing we can think about
 1120
 00:58:09,160 --> 00:58:12,830
 is what makes the
-corners of the cubes
+corners of the cubes,
 
 1121
 00:58:12,830 --> 00:58:15,410
-and how far away should they be.
+and how far away should they be?
 
 1122
 00:58:15,410 --> 00:58:18,150
@@ -5220,12 +5220,12 @@ not what I wanted.
 
 1140
 00:59:03,590 --> 00:59:08,960
-So we have x here, 2x here.
+So we have x here, 2 x here.
 
 1141
 00:59:08,960 --> 00:59:17,810
-So this distance
-is-- yeah, I see.
+So this distance is--
+yeah, I see.
 
 1142
 00:59:17,810 --> 00:59:23,459
@@ -5279,12 +5279,12 @@ to be wrapping around.
 1153
 00:59:58,480 --> 01:00:02,050
 Which is just going
-to be like 2x.
+to be like 2 x.
 
 1154
 01:00:02,050 --> 01:00:04,312
 Is that bigger or
-smaller than root 5x?
+smaller than root 5 x?
 
 1155
 01:00:04,312 --> 01:00:05,270
@@ -5351,7 +5351,7 @@ side of the cube,
 1170
 01:00:35,373 --> 01:00:38,280
 it will always be
-at least 2x away.
+at least 2 x away.
 
 1171
 01:00:38,280 --> 01:00:39,330
@@ -5363,8 +5363,8 @@ This is probably the diameter.
 
 1173
 01:00:40,950 --> 01:00:43,630
-It's bigger than 2x, but it
-will always be at least 2x away.
+It's bigger than 2 x, but it
+will always be at least 2 x away.
 
 1174
 01:00:43,630 --> 01:00:47,880
@@ -5397,7 +5397,7 @@ the center like this.
 1180
 01:00:59,310 --> 01:01:02,890
 And the antipodal points is
-2x away, or maybe it's bigger.
+2 x away, or maybe it's bigger.
 
 1181
 01:01:02,890 --> 01:01:08,560
@@ -5406,7 +5406,7 @@ length is greater than or equal
 
 1182
 01:01:08,560 --> 01:01:14,700
-to 2x because that's-- the
+to 2 x because that's-- the
 antipodal point has to be made
 
 1183
@@ -5426,12 +5426,12 @@ about the center of the square.
 1186
 01:01:20,373 --> 01:01:22,760
 Once that is at
-least 2x, then I know
+least 2 x, then I know
 
 1187
 01:01:22,760 --> 01:01:29,070
 that the side of the square
-is at least 2 root 2x.
+is at least 2 root-2 x.
 
 1188
 01:01:29,070 --> 01:01:29,570
@@ -5450,7 +5450,7 @@ And you work it out.
 
 1192
 01:01:41,380 --> 01:01:43,240
-And x is root 2 over 4.
+And x is root-2 over 4.
 
 1193
 01:01:43,240 --> 01:01:46,410
@@ -5560,11 +5560,11 @@ center of the paper,
 1215
 01:03:02,370 --> 01:03:06,900
 you have exactly one
-this distance 2 root
+this distance, 2 root-2 x,
 
 1216
 01:03:06,900 --> 01:03:10,090
-2x to the antipodal
+to the antipodal
 point which is
 
 1217
@@ -5582,7 +5582,7 @@ AUDIENCE: Sorry.
 1220
 01:03:13,296 --> 01:03:17,170
 Can you explain where the
-2x came from [INAUDIBLE]?
+2 x came from?
 
 1221
 01:03:17,170 --> 01:03:19,940
@@ -5601,7 +5601,7 @@ surface of the cube.
 1224
 01:03:23,910 --> 01:03:26,060
 Here, it should
-be clear it's 2x.
+be clear it's 2 x.
 
 1225
 01:03:26,060 --> 01:03:27,850
@@ -5609,11 +5609,11 @@ There's x right here.
 
 1226
 01:03:27,850 --> 01:03:29,790
-And there's 1/2x here.
+And there's half-x here.
 
 1227
 01:03:29,790 --> 01:03:32,300
-And there's 1/2x on the back.
+And there's half-x on the back.
 
 1228
 01:03:32,300 --> 01:03:34,360
@@ -5622,8 +5622,8 @@ another situation
 
 1229
 01:03:34,360 --> 01:03:37,835
-which is when it was at a
-corner that bigger than 2x.
+which is when it was at a corner;
+there it was bigger than 2 x.
 
 1230
 01:03:37,835 --> 01:03:39,710
@@ -5637,7 +5637,7 @@ in the middle,
 
 1232
 01:03:41,168 --> 01:03:44,420
-in between 2x and root 5x.
+in between 2 x and root-5 x.
 
 1233
 01:03:44,420 --> 01:03:46,330
@@ -5657,7 +5657,7 @@ also think about the edge case.
 1236
 01:03:52,800 --> 01:03:55,280
 But you check all of them,
-and they're at least 2x.
+and they're at least 2 x.
 
 1237
 01:03:55,280 --> 01:03:56,980
@@ -5670,7 +5670,7 @@ prove that formally.
 
 1239
 01:03:58,830 --> 01:04:03,320
-But claim is 2x is the smallest
+But claim is 2 x is the smallest
 antepodal pair you could get.
 
 1240
@@ -5720,7 +5720,7 @@ I take the antipode from there.
 1250
 01:04:21,260 --> 01:04:26,040
 I know that has to
-be at least 2x away.
+be at least 2 x away.
 
 1251
 01:04:26,040 --> 01:04:29,350
@@ -5749,7 +5749,7 @@ only get smaller.
 1256
 01:04:38,300 --> 01:04:41,110
 So if I have to make a
-2x distance from there,
+2 x distance from there,
 
 1257
 01:04:41,110 --> 01:04:43,270
@@ -6140,12 +6140,12 @@ really a lower bound.
 1338
 01:08:08,270 --> 01:08:12,390
 We never really knew that
-you needed 2n squared.
+you needed 2 n-squared.
 
 1339
 01:08:12,390 --> 01:08:14,940
 The four by four
-achieves 2n squared.
+achieves 2 n-squared.
 
 1340
 01:08:14,940 --> 01:08:18,220
@@ -6159,7 +6159,7 @@ year-- this is
 
 1342
 01:08:20,439 --> 01:08:24,859
-with Marty and [INAUDIBLE]
+with Marty and Goran Konjevod
 and Robert Lang--
 
 1343
@@ -6371,8 +6371,8 @@ Who knows?
 
 1388
 01:10:16,140 --> 01:10:18,910
-So big open problem is
-[INAUDIBLE] for anything.
+So big open problem is prove
+optimality for anything.
 
 1389
 01:10:18,910 --> 01:10:24,770
@@ -7948,7 +7948,7 @@ is again very tiny.
 1731
 01:26:02,230 --> 01:26:05,930
 And you fold what's called the
-[INAUDIBLE] with those points.
+Voronoi diagram of those points.
 
 1732
 01:26:05,930 --> 01:26:08,520
