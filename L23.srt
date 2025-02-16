@@ -642,8 +642,8 @@ to the resulting state.
 
 137
 00:09:45,480 --> 00:09:51,140
-We believe that physically
-it exists, so it works.
+We believe that it exists, and
+physically it exists, so it works.
 
 138
 00:09:51,140 --> 00:09:54,140
@@ -1108,12 +1108,12 @@ input of the model
 
 240
 00:17:12,350 --> 00:17:16,394
-that you can use, does it
-take [INAUDIBLE], the format?
+that you're going to use, does it
+take like Wavefront as the file?
 
 241
 00:17:16,394 --> 00:17:18,523
-AUDIENCE: It's polygons.
+ERIK: It's polygons.
 
 242
 00:17:18,523 --> 00:17:20,431
@@ -1299,8 +1299,8 @@ that you were moving around
 
 281
 00:20:10,042 --> 00:20:13,214
-where the edges of
-the [INAUDIBLE] model,
+where the edges of the
+boundary of the model,
 
 282
 00:20:13,214 --> 00:20:17,606
@@ -1367,7 +1367,7 @@ extra work for proving.
 296
 00:20:57,896 --> 00:20:59,520
 AUDIENCE: That it's
-always [INAUDIBLE].
+always solvable.
 
 297
 00:20:59,520 --> 00:21:02,400
@@ -1626,7 +1626,7 @@ by developability and flat
 
 353
 00:25:19,230 --> 00:25:27,220
-foldability This is a very
+foldability. This is a very
 direct way of implementing
 
 354
@@ -1708,7 +1708,7 @@ allows variation.
 
 371
 00:26:35,090 --> 00:26:39,110
-Smooth developer surface is only
+Smooth developable surface is only
 allowed to be in these forms,
 
 372
@@ -1735,7 +1735,7 @@ to define Gauss area
 
 377
 00:26:57,480 --> 00:27:08,310
-for a C2 version of surface
+for a C^2 version of surface
 by multiplying curvatures,
 
 378
@@ -1964,12 +1964,12 @@ and calculate it numerically.
 427
 00:30:38,630 --> 00:30:46,710
 So for each step, it's a given
-assumed transformation mold,
+assumed transformation mode,
 
 428
 00:30:46,710 --> 00:30:51,290
 and this gives you a
-valid transformation mold
+valid transformation mode
 
 429
 00:30:51,290 --> 00:30:55,015
@@ -1981,7 +1981,7 @@ inverse or pseudo inverse.
 
 431
 00:30:59,350 --> 00:31:02,920
-You can implement
+You can implement into
 software like this.
 
 432
@@ -2116,7 +2116,7 @@ pattern or Yoshimura pattern,
 460
 00:33:05,450 --> 00:33:11,980
 and this part is kept the
-same as Miura-Ori pattern.
+same as Miura-ori pattern.
 
 461
 00:33:11,980 --> 00:33:15,840
@@ -2142,7 +2142,7 @@ examples of Freeform Origami.
 466
 00:33:31,190 --> 00:33:35,240
 First one is starting
-from Miura-Ori.
+from Miura-ori.
 
 467
 00:33:35,240 --> 00:33:38,070
@@ -2164,7 +2164,7 @@ can see pictures from Bauhaus.
 471
 00:33:52,490 --> 00:33:55,670
 Anyway, this is
-called Miura-Ori,
+called Miura-ori,
 
 472
 00:33:55,670 --> 00:34:00,150
@@ -2199,7 +2199,7 @@ Melting Ice Cream.
 479
 00:34:29,929 --> 00:34:37,245
 The idea is that using a
-variation of Miura-Ori,
+variation of Miura-ori,
 
 480
 00:34:37,245 --> 00:34:47,219
@@ -2229,12 +2229,12 @@ This is another example.
 486
 00:35:05,820 --> 00:35:09,220
 Here, I wanted to start
-from regular Miura-Ori
+from regular Miura-ori
 
 487
 00:35:09,220 --> 00:35:16,240
 and then to transform into
-a more free form surface.
+a more freeform surface.
 
 488
 00:35:16,240 --> 00:35:19,410
@@ -2493,12 +2493,12 @@ paraboloidal shape,
 
 545
 00:39:31,160 --> 00:39:35,980
-but it's a subtle shape.
+but it's a saddle shape.
 
 546
 00:39:35,980 --> 00:39:39,430
 This is another way to make
-a [INAUDIBLE] in paper,
+a hypar in paper,
 
 547
 00:39:39,430 --> 00:39:41,210
@@ -2752,7 +2752,7 @@ much degrees of freedom.
 
 605
 00:44:01,530 --> 00:44:13,970
-If you simulate curve folding by
+If you simulate curved folding by
 very thin quadrilateral strips,
 
 606
@@ -2762,7 +2762,7 @@ so that the software
 
 607
 00:44:18,730 --> 00:44:24,510
-can work with curve folding.
+can work with curved folding.
 
 608
 00:44:24,510 --> 00:44:28,340
@@ -3136,7 +3136,7 @@ on the boundary minus 3.
 690
 00:51:14,830 --> 00:51:18,310
 So for example, in this
-[? hyper ?] triangular model,
+hypar triangular model,
 
 691
 00:51:18,310 --> 00:51:23,620
@@ -3263,7 +3263,7 @@ rigid origami structures.
 
 719
 00:53:30,040 --> 00:53:45,440
-This is quite obvious result.
+This is a quite obvious result.
 
 720
 00:53:45,440 --> 00:53:49,330
@@ -3296,7 +3296,7 @@ forms a one DOF structure.
 726
 00:54:13,830 --> 00:54:21,420
 Think about when you form a
-mesh with this, like Miura-Ori.
+mesh with this, like Miura-ori.
 
 727
 00:54:21,420 --> 00:54:31,200
@@ -3314,7 +3314,7 @@ angles here are defined.
 730
 00:54:37,430 --> 00:54:41,510
 If you have another
-degree for vertex,
+degree-four vertex,
 
 731
 00:54:41,510 --> 00:54:47,110
@@ -3362,7 +3362,7 @@ see from this figure,
 740
 00:55:22,480 --> 00:55:25,930
 there exist examples
-like Miura-Ori
+like Miura-ori
 
 741
 00:55:25,930 --> 00:55:29,210
@@ -3413,7 +3413,7 @@ generalize this to a freeform.
 
 751
 00:56:13,260 --> 00:56:16,010
-We start from Miura-Ori
+We start from Miura-ori
 and also start
 
 752
@@ -3441,7 +3441,7 @@ rigid, non-symmetric forms.
 
 757
 00:56:43,560 --> 00:56:45,790
-Miura-Ori is
+Miura-ori is
 something like that,
 
 758
@@ -3463,7 +3463,7 @@ foldable vertex, it's
 
 762
 00:57:06,050 --> 00:57:12,640
-a degree four vertex
+a degree-four vertex
 with flat foldability,
 
 763
@@ -3510,8 +3510,8 @@ continuous folding that works.
 
 772
 00:57:51,300 --> 00:57:55,830
-In this way, you can
-make sufficient condition
+In this way, you can make
+a sufficient condition
 
 773
 00:57:55,830 --> 00:58:01,950
@@ -3601,12 +3601,12 @@ a rigid folding motion.
 792
 00:59:32,180 --> 00:59:35,840
 You can apply to something
-like curve folding.
+like curved folding.
 
 793
 00:59:35,840 --> 00:59:38,700
 It's rigid foldable
-curve folding.
+curved folding.
 
 794
 00:59:38,700 --> 00:59:42,800
@@ -3615,7 +3615,7 @@ contradictory, but we
 
 795
 00:59:42,800 --> 00:59:47,260
-can rationalize curve folding
+can rationalize curved folding
 into quadrilateral mesh.
 
 796
@@ -3630,8 +3630,8 @@ thickness is here.
 
 798
 00:59:59,120 --> 01:00:05,660
-It's interesting that it's
-one degree of freedom motion
+It's interesting that it produces
+a one degree of freedom motion
 
 799
 01:00:05,660 --> 01:00:10,760
@@ -3656,8 +3656,8 @@ the same property
 
 804
 01:00:24,240 --> 01:00:30,700
-as the Miura-Ori vertex or flat
-foldable degree for vertex,
+as the Miura-ori vertex or flat
+foldable degree-four vertex,
 
 805
 01:00:30,700 --> 01:00:36,040
@@ -3742,7 +3742,7 @@ two flat folded states because
 822
 01:01:49,960 --> 01:01:56,690
 in this case, it's
-not totally developed,
+not totally developable,
 
 823
 01:01:56,690 --> 01:02:02,010
@@ -3836,7 +3836,7 @@ But there exists.
 842
 01:03:25,880 --> 01:03:34,720
 So the idea is to mirror reflect
-one part of Miura-Ori vertex.
+one part of Miura-ori vertex.
 
 843
 01:03:34,720 --> 01:03:40,700
@@ -3901,8 +3901,8 @@ kind of design variations.
 
 857
 01:04:32,680 --> 01:04:36,685
-This is using grasshopper
-on rhinoceros.
+This is using Grasshopper
+on Rhino (Rhinoceros).
 
 858
 01:04:36,685 --> 01:04:39,820
@@ -4021,12 +4021,12 @@ the conditions around a hole,
 
 885
 01:06:33,630 --> 01:06:39,490
-and actually, this is
-a difficult condition
+and actually, this is a
+more difficult condition
 
 886
 01:06:39,490 --> 01:06:45,260
-to be solved then
+to be solved than
 the disk version.
 
 887
@@ -4056,7 +4056,7 @@ something like this.
 
 892
 01:07:08,720 --> 01:07:12,580
-It's more free form.
+It's more freeform.
 
 893
 01:07:12,580 --> 01:07:16,860
@@ -4221,12 +4221,12 @@ which is very bad,
 
 930
 01:10:02,710 --> 01:10:07,580
-but there is asymmetric
+but there is a symmetric
 vertex that allows that.
 
 931
 01:10:07,580 --> 01:10:10,670
-So using asymmetry, you can
+So using symmetry, you can
 make something like that.
 
 932
@@ -4337,7 +4337,7 @@ a slideable hinge.
 955
 01:12:05,100 --> 01:12:09,190
 This is implemented by
-using grasshopper again.
+using Grasshopper again.
 
 956
 01:12:09,190 --> 01:12:14,170
@@ -4445,7 +4445,7 @@ that kind of problem,
 
 979
 01:13:56,740 --> 01:14:03,690
-we can use freeform origami to
+we can use Freeform Origami to
 design to fit the condition.
 
 980
@@ -4461,7 +4461,7 @@ and the sizes are different.
 982
 01:14:22,910 --> 01:14:27,630
 But still, you can connect
-it on freefrom origami,
+it on Freeform Origami,
 
 983
 01:14:27,630 --> 01:14:32,100
@@ -4512,12 +4512,13 @@ Thank you very much.
 
 994
 01:15:17,110 --> 01:15:27,180
-This was more hand craft thing.
+This was more of a
+handcraft thing.
 
 995
 01:15:27,180 --> 01:15:33,810
 I did this with
-Dukes there, and we
+Duks there, and we
 
 996
 01:15:33,810 --> 01:15:41,060
