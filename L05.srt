@@ -336,15 +336,15 @@ subset of those creases,
 
 74
 00:03:42,850 --> 00:03:51,020
-you can make any
-polycube of n cubes.
+you can make any polycube
 
 75
 00:03:51,020 --> 00:03:56,260
+of n cubes.
 
 76
 00:03:56,260 --> 00:03:57,660
-I'm sorry, order n cubes.
+Sorry, order n cubes.
 
 77
 00:03:57,660 --> 00:04:02,550
@@ -605,7 +605,7 @@ I could still do this folding.
 133
 00:06:43,450 --> 00:06:45,450
 Because this folding
-didn't touch The gray lines
+didn't touch. The gray lines
 
 134
 00:06:45,450 --> 00:06:46,360
@@ -1458,7 +1458,7 @@ it out, you can
 
 314
 00:15:39,470 --> 00:15:43,220
-see Aviv's [INAUDIBLE]
+see Aviv's M.Eng.
 thesis, which
 
 315
@@ -1937,7 +1937,7 @@ degree 3, degree 1, degree 2
 
 419
 00:21:00,750 --> 00:21:02,130
-turned.
+turn.
 
 420
 00:21:02,130 --> 00:21:05,710
@@ -2042,8 +2042,8 @@ here, copy, rotate, put it here.
 
 441
 00:21:57,650 --> 00:22:00,270
-And that would make a
-square root of turns.
+And that would make
+a square of turns.
 
 442
 00:22:00,270 --> 00:22:01,870
@@ -2310,7 +2310,8 @@ And you can go play with it.
 
 499
 00:24:14,000 --> 00:24:17,370
-It's [INAUDIBLE].
+It's
+erikdemaine.org/fonts/maze
 
 500
 00:24:17,370 --> 00:24:19,540
@@ -2542,7 +2543,7 @@ or what it really implies,
 
 550
 00:26:47,630 --> 00:27:00,740
-is if a problem is NP-hard, then
+is, if a problem is NP-hard, then
 there's no efficient algorithm.
 
 551
@@ -2552,7 +2553,7 @@ I wish we could just say that.
 552
 00:27:02,816 --> 00:27:13,740
 But there's a slight
-catch, unless P=NP.
+catch, unless P = NP.
 
 553
 00:27:13,740 --> 00:27:18,200
@@ -2602,12 +2603,12 @@ believes that,
 
 563
 00:27:40,920 --> 00:27:46,440
-unless you watch my April Foo;s
-video and search for P equals
+unless you watch my April Fool's
+video. (Search for P equals
 
 564
 00:27:46,440 --> 00:27:49,670
-NP in YouTube.
+NP on YouTube.)
 
 565
 00:27:49,670 --> 00:27:55,940
@@ -2734,7 +2735,7 @@ NP-hard problems.
 
 592
 00:29:09,650 --> 00:29:12,190
-Why did I write ness there?
+Why did I write "ness" there?
 
 593
 00:29:12,190 --> 00:29:16,590
@@ -2794,7 +2795,7 @@ seen before.
 
 605
 00:29:39,090 --> 00:29:40,800
-One is called partition.
+One is called Partition.
 
 606
 00:29:40,800 --> 00:29:44,600
@@ -2930,27 +2931,27 @@ some Boolean formula.
 637
 00:31:16,810 --> 00:31:20,050
 So it has a bunch
-variables, like x and y.
+variables, like x AND y.
 
 638
 00:31:20,050 --> 00:31:23,250
 
 639
 00:31:23,250 --> 00:31:24,410
-You can do and.
+You can do AND.
 
 640
 00:31:24,410 --> 00:31:27,160
-You can do not.
+You can do NOT.
 
 641
 00:31:27,160 --> 00:31:30,340
-And you can do or, let's say.
+And you can do OR, let's say.
 
 642
 00:31:30,340 --> 00:31:34,000
 That's all you need,
-x and not y or z.
+x AND NOT y OR z.
 
 643
 00:31:34,000 --> 00:31:37,820
@@ -3003,8 +3004,8 @@ prototypical hard problem,
 
 654
 00:32:18,120 --> 00:32:22,280
-NP-hard problem, is the very
-first one is proved NP-hard.
+NP-hard problem, it's the very
+first one to be proved NP-hard.
 
 655
 00:32:22,280 --> 00:32:24,150
@@ -3043,7 +3044,7 @@ are NP-hard also.
 663
 00:32:54,970 --> 00:32:57,920
 How do we show that,
-say a partition
+say Partition
 
 664
 00:32:57,920 --> 00:33:00,470
@@ -3051,8 +3052,8 @@ is easier than some problem?
 
 665
 00:33:00,470 --> 00:33:03,770
-Well, we just take a parti--
-we show that partition
+Well, we just take a Parti--
+we show that Partition
 
 666
 00:33:03,770 --> 00:33:05,597
@@ -3070,7 +3071,7 @@ Clearly it's easier.
 669
 00:33:07,930 --> 00:33:11,140
 So to show that, we take one
-of these partition problems,
+of these Partition problems,
 
 670
 00:33:11,140 --> 00:33:12,490
@@ -3093,7 +3094,7 @@ a yes answer if and only
 
 674
 00:33:20,290 --> 00:33:22,120
-if the partition problem
+if the Partition problem
 has a yes answer.
 
 675
@@ -3145,8 +3146,8 @@ So here's a problem.
 
 686
 00:33:57,600 --> 00:34:00,860
-I give you a single
-vertex hinge pattern.
+I give you a single-vertex
+hinge pattern.
 
 687
 00:34:00,860 --> 00:34:06,170
@@ -3231,7 +3232,7 @@ that this problem is
 
 705
 00:34:52,929 --> 00:34:54,570
-harder than partition.
+harder than Partition.
 
 706
 00:34:54,570 --> 00:34:57,930
@@ -3392,11 +3393,11 @@ And now I have a choice.
 741
 00:36:15,320 --> 00:36:18,980
 Do I go right or left by
-the next integer, theta 2.
+the next integer, theta_2.
 
 742
 00:36:18,980 --> 00:36:21,627
-There's theta 1, theta 2.
+There's theta_1, theta_2.
 
 743
 00:36:21,627 --> 00:36:22,710
@@ -3456,7 +3457,7 @@ the appropriate pluses
 755
 00:37:10,020 --> 00:37:12,050
 or minuses of
-theta i is equal 0.
+theta_i is equal 0.
 
 756
 00:37:12,050 --> 00:37:14,500
@@ -3493,7 +3494,7 @@ a partition.
 763
 00:37:33,000 --> 00:37:34,680
 And so you've
-converted partition
+converted Partition
 
 764
 00:37:34,680 --> 00:37:37,480
@@ -3516,7 +3517,7 @@ pretty much identical.
 
 768
 00:37:43,000 --> 00:37:46,690
-But partition becomes a
+But Partition becomes a
 special case with this problem.
 
 769
@@ -3671,7 +3672,7 @@ of orthogonal creases
 802
 00:39:07,310 --> 00:39:13,010
 in a rectangular paper, and
-maybe also with mountain valley
+maybe also with mountain-valley
 
 803
 00:39:13,010 --> 00:39:14,370
@@ -3811,7 +3812,7 @@ the map situation,
 
 832
 00:40:45,320 --> 00:40:52,390
-and we add 45 degree
+and we add 45-degree
 folds, creases, so I just
 
 833
@@ -3824,11 +3825,11 @@ It looks kind of crazy.
 
 835
 00:40:56,775 --> 00:40:58,890
-Got to do some sub division.
+Got to do some subdivision.
 
 836
 00:40:58,890 --> 00:41:00,230
-I just add 45 degree folds.
+I just add 45-degree folds.
 
 837
 00:41:00,230 --> 00:41:01,850
@@ -3901,7 +3902,7 @@ the proof here.
 852
 00:41:38,570 --> 00:41:42,360
 So again, we're going to
-reduce from partition.
+reduce from Partition.
 
 853
 00:41:42,360 --> 00:41:44,230
@@ -3927,8 +3928,8 @@ by these lengths.
 
 858
 00:41:52,740 --> 00:41:57,880
-So here's an, then
-a3, and a2, and a1.
+So here's a_n, then
+a_3, and a_2, and a_1.
 
 859
 00:41:57,880 --> 00:42:03,827
@@ -3952,7 +3953,7 @@ just add them all up.
 
 863
 00:42:13,620 --> 00:42:14,520
-I should get 2L.
+I should get 2 L.
 
 864
 00:42:14,520 --> 00:42:16,850
@@ -3962,7 +3963,7 @@ what the target sum is.
 865
 00:42:16,850 --> 00:42:19,740
 So I know ahead of time without
-solving the partition problem
+solving the Partition problem
 
 866
 00:42:19,740 --> 00:42:23,500
@@ -4207,7 +4208,7 @@ also at the middle.
 916
 00:44:40,200 --> 00:44:43,330
 And then I go up by L.
-And then I go down by 2L.
+And then I go down by 2 L.
 
 917
 00:44:43,330 --> 00:44:46,340
@@ -4217,7 +4218,7 @@ fit inside the frame.
 918
 00:44:46,340 --> 00:44:49,180
 But only if I stay in
-the middle will that 2L
+the middle will that 2 L
 
 919
 00:44:49,180 --> 00:44:50,956
@@ -4236,7 +4237,7 @@ collide with the frame
 922
 00:44:56,050 --> 00:44:59,060
 is if I can solve the
-partition problem.
+Partition problem.
 
 923
 00:44:59,060 --> 00:45:01,820
@@ -4246,7 +4247,7 @@ simple fold sequences
 924
 00:45:01,820 --> 00:45:04,890
 is actually way harder than
-partition in some sense.
+Partition in some sense.
 
 925
 00:45:04,890 --> 00:45:06,830
@@ -4261,7 +4262,7 @@ pattern you might want to fold.
 927
 00:45:09,790 --> 00:45:13,620
 And folding that is
-exactly partition.
+exactly Partition.
 
 928
 00:45:13,620 --> 00:45:16,070
@@ -4271,7 +4272,7 @@ foldability problem
 929
 00:45:16,070 --> 00:45:18,920
 is going to be NP-hard,
-because it includes partition
+because it includes Partition
 
 930
 00:45:18,920 --> 00:45:21,050
@@ -4477,7 +4478,7 @@ problem is strongly or weakly
 
 976
 00:48:03,620 --> 00:48:05,895
-hard, but at least weekly.
+hard, but at least weakly.
 
 977
 00:48:05,895 --> 00:48:21,770
@@ -4507,8 +4508,8 @@ folding thing is NP-hard.
 
 983
 00:48:53,106 --> 00:48:55,480
-So if I give you a flat foldable
-mountain valley pattern,
+So if I give you a flat-foldable
+mountain-valley pattern,
 
 984
 00:48:55,480 --> 00:48:58,760
@@ -4560,7 +4561,7 @@ This is what makes it NP-hard.
 994
 00:49:16,761 --> 00:49:19,010
 Because we know finding a
-mountain valley assignment--
+mountain-valley assignment--
 
 995
 00:49:19,010 --> 00:49:21,090
@@ -4608,7 +4609,7 @@ to do a reduction.
 1005
 00:49:55,580 --> 00:49:58,920
 And we have these two nice
-problems, partition and SAT.
+problems, Partition and SAT.
 
 1006
 00:49:58,920 --> 00:50:00,420
@@ -4687,7 +4688,7 @@ of proofs that use this one.
 
 1023
 00:50:45,820 --> 00:50:49,160
-But not all equal 3SAT is
+But not-all-equal 3SAT is
 actually fairly common.
 
 1024
@@ -4698,7 +4699,7 @@ a little more convenient.
 1025
 00:50:51,861 --> 00:50:54,360
 I think actually the original
-proof didn't use all positive.
+proof didn't use all-positive.
 
 1026
 00:50:54,360 --> 00:50:55,530
@@ -4800,13 +4801,13 @@ I've been watching too many ads.
 
 1049
 00:52:11,920 --> 00:52:16,900
-All right, so if not all equal
+All right, so if not-all-equal
 3SAT, that's this version.
 
 1050
 00:52:16,900 --> 00:52:18,430
 Actually, it's
-also all positive,
+also all-positive,
 
 1051
 00:52:18,430 --> 00:52:20,960
@@ -4880,8 +4881,8 @@ global flat foldability
 
 1067
 00:52:55,640 --> 00:52:59,310
-includes all positive
-not all will equal 3SAT
+includes all-positive
+not-all-equal 3SAT
 
 1068
 00:52:59,310 --> 00:53:00,810
@@ -4997,7 +4998,7 @@ all true or all false.
 1092
 00:54:26,070 --> 00:54:29,380
 And in this case, that will
-be a not all equal clause.
+be a not-all-equal clause.
 
 1093
 00:54:29,380 --> 00:54:31,510
@@ -5040,7 +5041,7 @@ that I connect together
 
 1101
 00:54:45,930 --> 00:54:47,910
-with a not all equal clause.
+with a not-all-equal clause.
 
 1102
 00:54:47,910 --> 00:54:51,980
@@ -5097,7 +5098,7 @@ more than n clauses.
 1113
 00:55:14,560 --> 00:55:16,240
 Each variable, like
-x1, might appear
+x_1, might appear
 
 1114
 00:55:16,240 --> 00:55:19,490
@@ -5106,7 +5107,7 @@ in 100 different triples.
 1115
 00:55:19,490 --> 00:55:22,051
 And so I actually
-need 100 copies of x1.
+need 100 copies of x_1.
 
 1116
 00:55:22,051 --> 00:55:23,550
@@ -5294,7 +5295,7 @@ OK, so that was the wire gadget.
 1155
 00:56:48,562 --> 00:56:50,270
 The next one is the
-not all equal gadget.
+not-all-equal gadget.
 
 1156
 00:56:50,270 --> 00:56:54,150
@@ -5341,7 +5342,7 @@ three wires coming together.
 1165
 00:57:11,395 --> 00:57:15,100
 I want this thing to fold flat
-if, and only if, the wires are
+if and only if the wires are
 
 1166
 00:57:15,100 --> 00:57:17,580
@@ -5415,7 +5416,7 @@ is the layer ordering.
 1181
 00:57:51,230 --> 00:57:52,690
 That depends on the
-mountain valley assignment.
+mountain-valley assignment.
 
 1182
 00:57:52,690 --> 00:57:55,170
@@ -5585,7 +5586,7 @@ which of the creases
 1217
 00:59:15,710 --> 00:59:17,965
 have to have the same
-mountain valley assignment
+mountain-valley assignment
 
 1218
 00:59:17,965 --> 00:59:19,710
@@ -5709,7 +5710,7 @@ So that's two gadgets.
 1244
 01:00:14,080 --> 01:00:17,020
 We got the wire, the
-not all equal clause.
+not-all-equal clause.
 
 1245
 01:00:17,020 --> 01:00:19,912
@@ -5919,12 +5920,12 @@ tons of negative copies.
 1288
 01:02:12,584 --> 01:02:14,541
 So it doesn't even matter
-if it's all positive.
+if it's all-positive.
 
 1289
 01:02:14,541 --> 01:02:16,000
 But if you take
-all positive ones.
+all-positive ones.
 
 1290
 01:02:16,000 --> 01:02:17,660
@@ -5938,7 +5939,7 @@ move around so that they
 
 1292
 01:02:20,930 --> 01:02:22,807
-hit those not all equal clauses.
+hit those not-all-equal clauses.
 
 1293
 01:02:22,807 --> 01:02:23,890
@@ -6098,12 +6099,12 @@ at that little yellow triangle,
 
 1326
 01:03:43,610 --> 01:03:45,240
-is a not all equal clause.
+is a not-all-equal clause.
 
 1327
 01:03:45,240 --> 01:03:49,370
-And is a not all equal
-clause between x3,
+And is a not-all-equal
+clause between x_3,
 
 1328
 01:03:49,370 --> 01:03:51,070
@@ -6137,7 +6138,7 @@ the way it's supposed to.
 
 1335
 01:04:02,950 --> 01:04:06,390
-Then I also take x1
+Then I also take x_1
 up the top, just get
 
 1336
@@ -6147,7 +6148,7 @@ off the top there.
 
 1337
 01:04:08,090 --> 01:04:10,299
-And x2, I take a copy here.
+And x_2, I take a copy here.
 
 1338
 01:04:10,299 --> 01:04:12,590
@@ -6175,8 +6176,8 @@ thing's going to fold flat,
 
 1343
 01:04:20,573 --> 01:04:23,000
-it must be that x1, x2,
-and x3 are not all equal.
+it must be that x_1, x_2,
+and x_3 are not all equal.
 
 1344
 01:04:23,000 --> 01:04:25,980
@@ -6186,7 +6187,7 @@ that, one for every triple.
 1345
 01:04:25,980 --> 01:04:30,880
 Remember, we're given as input
-one of these not all equal SAT
+one of these not-all-equal SAT
 
 1346
 01:04:30,880 --> 01:04:31,380
@@ -6501,7 +6502,7 @@ from this square paper?
 
 1416
 01:08:14,780 --> 01:08:18,060
-And I claim that as NP-hard.
+And I claim that is NP-hard.
 
 1417
 01:08:18,060 --> 01:08:21,080
@@ -6610,7 +6611,7 @@ It's the radii of the disk's.
 
 1441
 01:09:30,899 --> 01:09:34,000
-Three partition is the
+3-Partition is the
 problem you should know.
 
 1442
@@ -6619,7 +6620,7 @@ Partition is all right.
 
 1443
 01:09:35,680 --> 01:09:37,640
-The three partition
+The 3-Partition
 is like 50% better.
 
 1444
@@ -6627,17 +6628,16 @@ is like 50% better.
 
 1445
 01:09:41,200 --> 01:09:44,420
-Because partition is like you've
+Because Partition is like you've
 partitioned it to two parts.
 
 1446
 01:09:44,420 --> 01:09:46,080
-So it's like two partition.
+So it's like 2-Partition.
 
 1447
 01:09:46,080 --> 01:09:47,624
-Three partition,
-you partition into?
+3-Partition, you partition into?
 
 1448
 01:09:47,624 --> 01:09:51,280
@@ -6680,7 +6680,7 @@ So it's not so obvious.
 1457
 01:10:08,041 --> 01:10:09,915
 Maybe it should be called
-n over 3 partition.
+n over 3 Partition.
 
 1458
 01:10:09,915 --> 01:10:16,384
@@ -6703,12 +6703,12 @@ So n should be divisible by 3.
 
 1463
 01:10:26,497 --> 01:10:28,080
-So I'm going to
-partition it to n over
+So I'm going to partition
+it into n over 3
 
 1464
 01:10:28,080 --> 01:10:30,800
-3 triples of numbers
+triples of numbers
 of equal sum.
 
 1465
@@ -6737,7 +6737,7 @@ this problem is NP-hard.
 
 1471
 01:10:55,760 --> 01:10:58,600
-With partition, the numbers
+With Partition, the numbers
 had to be exponential and n
 
 1472
@@ -6771,7 +6771,7 @@ one and n, let's say.
 
 1478
 01:11:11,620 --> 01:11:14,190
-If I reduce from partition,
+If I reduce from Partition,
 I'd need some disks
 
 1479
@@ -6786,7 +6786,7 @@ exponential difference.
 1481
 01:11:19,454 --> 01:11:21,120
 I'm going to reduce
-from three partition
+from 3-Partition
 
 1482
 01:11:21,120 --> 01:11:22,580
@@ -6808,7 +6808,7 @@ this problem is NP-hard.
 1486
 01:11:31,360 --> 01:11:42,000
 That's my problem that
-I've got to start from.
+I'm gonna start from.
 
 1487
 01:11:42,000 --> 01:11:44,555
@@ -6827,7 +6827,7 @@ disk packing problem
 1490
 01:11:54,880 --> 01:11:58,220
 is going to solve this
-three partition problem.
+3-Partition problem.
 
 1491
 01:11:58,220 --> 01:11:59,230
@@ -6839,7 +6839,7 @@ And it's kind of crazy.
 1493
 01:12:03,100 --> 01:12:04,830
 I'll give you the
-high level picture.
+high-level picture.
 
 1494
 01:12:04,830 --> 01:12:15,527
@@ -7350,12 +7350,12 @@ this guy a little bit smaller.
 1605
 01:17:05,600 --> 01:17:11,245
 So I'm going to make
-this one ai bigger.
+this one a_i bigger.
 
 1606
 01:17:11,245 --> 01:17:13,420
 I'm going to make
-this one aj bigger.
+this one a_j bigger.
 
 1607
 01:17:13,420 --> 01:17:16,650
@@ -7363,7 +7363,7 @@ this one aj bigger.
 1608
 01:17:16,650 --> 01:17:20,194
 I'm going to make
-this one ak bigger.
+this one a_k bigger.
 
 1609
 01:17:20,194 --> 01:17:23,120
@@ -7484,11 +7484,11 @@ no slack.
 1634
 01:18:40,930 --> 01:18:43,840
 So the only way for these guys
-to pack, now I said this is ai,
+to pack, now I said this is a_i,
 
 1635
 01:18:43,840 --> 01:18:47,380
-aj, ak, in fact I'm just giving
+a_j, a_k, in fact I'm just giving
 you a heap, a bag of disks.
 
 1636
@@ -7568,13 +7568,13 @@ Question?
 
 1652
 01:19:21,165 --> 01:19:24,560
-AUDIENCE: So the fact that you
-have an increase in the ai, j,
+AUDIENCE: So is the fact that you
+have an increase in the a_i, j, k,
 
 1653
 01:19:24,560 --> 01:19:30,465
-k [INAUDIBLE] geometry work out
-with some tangents and stuff?
+summing to L, is a property of the geometry
+you can work out with some tangents and stuff?
 
 1654
 01:19:30,465 --> 01:19:31,590
@@ -7583,12 +7583,12 @@ PROFESSOR: Yeah, all right.
 1655
 01:19:31,590 --> 01:19:34,710
 So you raise a good point, which
-is I said this is ai bigger.
+is I said this is a_i bigger.
 
 1656
 01:19:34,710 --> 01:19:36,810
 I didn't really mean that
-the radius is ai bigger,
+the radius is a_i bigger,
 
 1657
 01:19:36,810 --> 01:19:40,340
@@ -7597,7 +7597,7 @@ close to that.
 
 1658
 01:19:40,340 --> 01:19:41,250
-ai is an integer.
+a_i is an integer.
 
 1659
 01:19:41,250 --> 01:19:43,820
@@ -7607,7 +7607,7 @@ bigger, it might be huge.
 1660
 01:19:43,820 --> 01:19:45,640
 But what I really
-mean is I take ai,
+mean is I take a_i,
 
 1661
 01:19:45,640 --> 01:19:49,080
@@ -7747,8 +7747,8 @@ NP-hardness of origami.
 
 1691
 01:20:56,540 --> 01:21:02,950
-So here's the no equal
-set clause gadget.
+So here's the not-all-equal
+clause gadget.
 
 1692
 01:21:02,950 --> 01:21:07,300
