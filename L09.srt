@@ -1133,7 +1133,7 @@ make our life easier.
 247
 00:12:55,180 --> 00:13:00,500
 So for example, I'd like to say
-no three points are co-linear.
+no three points are collinear.
 
 248
 00:13:00,500 --> 00:13:05,390
@@ -1180,8 +1180,8 @@ things like this, maybe no four
 
 257
 00:13:28,050 --> 00:13:34,500
-points con-cyclic, which
-means lies in a common circle.
+points concyclic, which means
+lies on a common circle.
 
 258
 00:13:34,500 --> 00:13:35,410
@@ -1458,7 +1458,7 @@ because in particular, we
 
 317
 00:16:02,150 --> 00:16:04,340
-have four points co-linear.
+have four points collinear.
 
 318
 00:16:04,340 --> 00:16:06,710
@@ -1731,7 +1731,7 @@ I wouldn't take this on faith.
 377
 00:19:50,430 --> 00:19:54,690
 For me to check this, I had
-to constructed in Cinderella,
+to construct it in Cinderella,
 
 378
 00:19:54,690 --> 00:19:55,940
@@ -1911,7 +1911,7 @@ engineering worlds,
 416
 00:21:15,650 --> 00:21:21,410
 it goes back to Cremona
-In the 17th, 18th century.
+in the 17th, 18th century.
 
 417
 00:21:21,410 --> 00:21:22,890
@@ -2191,7 +2191,7 @@ realization space, in fact--
 476
 00:24:22,160 --> 00:24:24,750
 is in two dimensions
-two times m.
+2 times m.
 
 477
 00:24:24,750 --> 00:24:27,590
@@ -2296,7 +2296,7 @@ rigid motions in d dimensions.
 
 500
 00:25:11,630 --> 00:25:14,250
-And here we start with dn.
+And here we start with d n.
 
 501
 00:25:14,250 --> 00:25:16,720
@@ -2310,12 +2310,12 @@ edges you should have,
 503
 00:25:19,060 --> 00:25:22,650
 because if I have
-exactly 2n minus 3 edges,
+exactly 2 n minus 3 edges,
 
 504
 00:25:22,650 --> 00:25:24,900
 I will have started with
-2n degrees of freedom.
+2 n degrees of freedom.
 
 505
 00:25:24,900 --> 00:25:27,730
@@ -2427,7 +2427,7 @@ So this gives us an idea.
 527
 00:26:21,500 --> 00:26:25,190
 And about how many people have
-heard of 2n minus 3 before
+heard of 2 n minus 3 before
 
 528
 00:26:25,190 --> 00:26:27,510
@@ -2554,7 +2554,7 @@ Oh, by the way.
 556
 00:28:25,400 --> 00:28:27,535
 Maybe the reason people
-haven't seen 2n minus three
+haven't seen 2 n minus three
 
 557
 00:28:27,535 --> 00:28:29,160
@@ -2563,12 +2563,12 @@ used to the 3D case.
 
 558
 00:28:29,160 --> 00:28:30,410
-There it's 2n minus 6.
+There it's 2 n minus 6.
 
 559
 00:28:30,410 --> 00:28:33,110
 How many people have
-seen 3n minus 6?
+seen 3 n minus 6?
 
 560
 00:28:33,110 --> 00:28:33,790
@@ -3357,8 +3357,8 @@ we need to prove.
 
 732
 00:36:11,000 --> 00:36:14,740
-We need to prove that if
-we build such a thing,
+We need to prove that,
+if we build such a thing,
 
 733
 00:36:14,740 --> 00:36:16,190
@@ -3459,7 +3459,7 @@ one do I start with?-- this way.
 
 755
 00:37:32,190 --> 00:37:35,730
-So I want to show that if
+So I want to show that, if
 the new graph is rigid,
 
 756
@@ -3851,7 +3851,7 @@ II, it would be false.
 
 839
 00:41:47,720 --> 00:41:49,610
-So life it's harder.
+So life is harder.
 
 840
 00:41:49,610 --> 00:41:52,250
@@ -3954,7 +3954,7 @@ of our big theorem.
 
 862
 00:42:58,102 --> 00:43:00,560
-We've proved that if you can
+We've proved that, if you can
 build something with these two
 
 863
@@ -4129,7 +4129,7 @@ of this theorem
 
 898
 00:45:09,060 --> 00:45:11,550
-that if your thing is
+that, if your thing is
 minimally generically rigid,
 
 899
@@ -4233,7 +4233,7 @@ four over there
 
 921
 00:46:10,090 --> 00:46:13,750
-says that if I have a vertex of
+says that, if I have a vertex of
 degree-3, I can get rid of it,
 
 922
@@ -4272,7 +4272,7 @@ the thing I just
 930
 00:46:44,610 --> 00:46:50,080
 erased that the number
-of edges is 2n minus 3.
+of edges is 2 n minus 3.
 
 931
 00:46:50,080 --> 00:46:51,860
@@ -4292,7 +4292,7 @@ of freedom analysis
 934
 00:46:56,720 --> 00:47:00,190
 to show the number edges
-must be 2n minus 3.
+must be 2 n minus 3.
 
 935
 00:47:00,190 --> 00:47:02,966
@@ -4368,11 +4368,11 @@ AUDIENCE: Two.
 952
 00:47:40,746 --> 00:47:44,029
 Every edge contributes
-two to the total Henneberg
+two to the total degrees
 
 953
 00:47:44,029 --> 00:47:45,440
-[INAUDIBLE].
+of the vertices.
 
 954
 00:47:45,440 --> 00:47:48,570
@@ -4425,11 +4425,11 @@ that's the size of that.
 964
 00:48:15,440 --> 00:48:17,110
 This is called the
-handshaking lemma.
+Handshaking Lemma.
 
 965
 00:48:17,110 --> 00:48:20,040
-It says if everyone in this
+It says, if everyone in this
 room shakes hands with everyone
 
 966
@@ -4496,7 +4496,7 @@ the handshaking lemma.
 979
 00:48:54,420 --> 00:48:59,660
 This is good news, because we
-know this number is 4n minus 6
+know this number is 4 n minus 6
 
 980
 00:48:59,660 --> 00:49:02,300
@@ -4540,7 +4540,7 @@ because in summation, you
 
 989
 00:49:25,000 --> 00:49:28,037
-get 4n minus a little bit.
+get 4 n minus a little bit.
 
 990
 00:49:28,037 --> 00:49:29,620
@@ -4593,7 +4593,7 @@ generically rigid.
 
 1000
 00:49:58,200 --> 00:50:01,320
-If I have a degree1
+If I have a degree-1
 vertex and some stuff,
 
 1001
@@ -4645,7 +4645,7 @@ put n greater than one here.
 
 1011
 00:50:25,090 --> 00:50:28,160
-So then you get a degree2
+So then you get a degree-2
 vertex or a degree-3 vertex.
 
 1012
@@ -4820,7 +4820,7 @@ generically rigid in 2D
 1048
 00:52:43,450 --> 00:52:53,344
 if and only if it
-has 2n minus 3 edges.
+has 2 n minus 3 edges.
 
 1049
 00:52:53,344 --> 00:52:55,260
@@ -4866,7 +4866,7 @@ then that induces
 
 1059
 00:53:22,860 --> 00:53:25,330
-at most 2k minus 3 edges.
+at most 2 k minus 3 edges.
 
 1060
 00:53:25,330 --> 00:53:28,571
@@ -4892,7 +4892,7 @@ possible edges.
 
 1065
 00:53:36,210 --> 00:53:38,720
-That means 2n minus 3.
+That means 2 n minus 3.
 
 1066
 00:53:38,720 --> 00:53:40,590
@@ -4935,7 +4935,7 @@ I don't want to have too many.
 1074
 00:54:02,800 --> 00:54:05,230
 I don't want to have more than
-what I should-- 2k minus 3
+what I should-- 2 k minus 3
 
 1075
 00:54:05,230 --> 00:54:07,110
@@ -4957,7 +4957,7 @@ in the graph--
 
 1079
 00:54:16,310 --> 00:54:18,740
-this has 2n minus 2 edges.
+this has 2 n minus 2 edges.
 
 1080
 00:54:18,740 --> 00:54:20,370
@@ -4965,7 +4965,7 @@ It's too many.
 
 1081
 00:54:20,370 --> 00:54:21,970
-Or 2k minus 2 edges.
+Or 2 k minus 2 edges.
 
 1082
 00:54:21,970 --> 00:54:23,370
@@ -4978,7 +4978,7 @@ graph and the bigger graph
 
 1084
 00:54:25,720 --> 00:54:28,300
-has 2n minus 3, and I
+has 2 n minus 3, and I
 wasted an edge here,
 
 1085
@@ -5041,11 +5041,11 @@ bears or something.
 1097
 00:54:54,540 --> 00:54:57,870
 So some generalized version
-of three little bears.
+of three little bears:
 
 1098
 00:54:57,870 --> 00:54:59,294
-K little bears.
+k little bears.
 
 1099
 00:54:59,294 --> 00:55:01,921
@@ -5139,13 +5139,13 @@ the forward direction,
 
 1119
 00:55:43,430 --> 00:55:45,860
-that if I have a minimally
+that, if I have a minimally
 generic thing-- i.e.
 
 1120
 00:55:45,860 --> 00:55:50,750
-It can be built this way--
-then it has 2n minus 3 edges.
+it can be built this way--
+then it has 2 n minus 3 edges.
 
 1121
 00:55:50,750 --> 00:55:52,930
@@ -5158,7 +5158,7 @@ that every subset of k vertices
 
 1123
 00:55:55,920 --> 00:56:00,460
-has at most 2k minus
+has at most 2 k minus
 3 edges among them.
 
 1124
@@ -5356,7 +5356,7 @@ So what do we know?
 1165
 00:57:52,340 --> 00:57:54,750
 We know that there
-are 2n minus 3 edges.
+are 2 n minus 3 edges.
 
 1166
 00:57:54,750 --> 00:57:56,750
@@ -5366,16 +5366,16 @@ a great argument
 1167
 00:57:56,750 --> 00:57:58,542
 for when the number of
-edges is 2n minus 3.
+edges is 2 n minus 3.
 
 1168
 00:57:58,542 --> 00:58:01,125
-I do the handshaking lemma, and
+I do the Handshaking Lemma, and
 I know that the sum of degrees
 
 1169
 00:58:01,125 --> 00:58:01,840
-is 4n minus 6.
+is 4 n minus 6.
 
 1170
 00:58:01,840 --> 00:58:04,290
@@ -5453,7 +5453,7 @@ All right.
 
 1188
 00:58:43,970 --> 00:58:46,010
-Number of edges is 2n minus 3.
+Number of edges is 2 n minus 3.
 
 1189
 00:58:46,010 --> 00:58:48,687
@@ -5472,7 +5472,7 @@ does this have?
 
 1192
 00:58:53,310 --> 00:58:54,230
-2n minus 3 still.
+2 n minus 3 still.
 
 1193
 00:58:54,230 --> 00:58:55,980
@@ -5481,7 +5481,7 @@ I didn't remove any.
 1194
 00:58:55,980 --> 00:58:59,090
 So I've got n minus 1 vertices,
-yet I have 2n minus 3 edges?
+yet I have 2 n minus 3 edges?
 
 1195
 00:58:59,090 --> 00:59:00,670
@@ -5504,7 +5504,7 @@ edges inside this blob--
 1199
 00:59:10,250 --> 00:59:13,470
 everything except that one
-vertex-- would be 2n minus 2,
+vertex-- would be 2 n minus 2,
 
 1200
 00:59:13,470 --> 00:59:15,510
@@ -5517,7 +5517,7 @@ most 2 times n minus 1 minus 3,
 
 1202
 00:59:21,540 --> 00:59:26,110
-which is 2n minus 4.
+which is 2 n minus 4.
 
 1203
 00:59:26,110 --> 00:59:28,960
@@ -5525,7 +5525,7 @@ Sorry, I did this wrong.
 
 1204
 00:59:28,960 --> 00:59:30,620
-2n minus 3.
+2 n minus 3.
 
 1205
 00:59:30,620 --> 00:59:31,510
@@ -5542,7 +5542,7 @@ I'll get it right eventually.
 1208
 00:59:35,950 --> 00:59:38,720
 So if I remove one edge from
-2n minus 3, I get 2n minus 4.
+2 n minus 3, I get 2 n minus 4.
 
 1209
 00:59:38,720 --> 00:59:41,090
@@ -5556,7 +5556,7 @@ But I'm supposed to have
 1211
 00:59:43,360 --> 00:59:47,390
 the number vertices over here--
-minus 3, which is 2n minus 5.
+minus 3, which is 2 n minus 5.
 
 1212
 00:59:47,390 --> 00:59:49,240
@@ -5587,7 +5587,7 @@ n minus 1 vertices.
 
 1218
 00:59:57,520 --> 00:59:59,150
-I have at most 2k minus 3.
+I have at most 2 k minus 3.
 
 1219
 00:59:59,150 --> 01:00:00,880
@@ -5601,14 +5601,14 @@ I can't have degree-0.
 1221
 01:00:02,880 --> 01:00:07,540
 Therefore, in fact, it's
-either degree2 or 3.
+either degree 2 or 3.
 
 1222
 01:00:07,540 --> 01:00:10,990
 
 1223
 01:00:10,990 --> 01:00:15,630
-If it's degree-2, I'm done.
+If it's degree 2, I'm done.
 
 1224
 01:00:15,630 --> 01:00:16,890
@@ -5616,7 +5616,7 @@ I'm happy.
 
 1225
 01:00:16,890 --> 01:00:23,285
-If it's degree--2, then I
+If it's degree 2, then I
 do an anti-Type I operation.
 
 1226
@@ -5629,7 +5629,7 @@ So that's this scenario.
 1228
 01:00:32,000 --> 01:00:34,570
 If I have any degree-2
-Vertex, I remove it.
+vertex, I remove it.
 
 1229
 01:00:34,570 --> 01:00:37,850
@@ -5663,7 +5663,7 @@ to still have this property.
 
 1236
 01:00:52,470 --> 01:00:54,760
-Does it have 2n minus 3
+Does it have 2 n minus 3
 edges, for the new value
 
 1237
@@ -5696,7 +5696,7 @@ every subset of the vertices
 1243
 01:01:06,030 --> 01:01:09,450
 over here has at most
-2k minus 3 edges.
+2 k minus 3 edges.
 
 1244
 01:01:09,450 --> 01:01:11,220
@@ -5958,7 +5958,7 @@ edges will be wrong.
 1302
 01:04:12,180 --> 01:04:14,980
 You always want to have
-2n minus 3 as you go down.
+2 n minus 3 as you go down.
 
 1303
 01:04:14,980 --> 01:04:17,060
@@ -6032,7 +6032,7 @@ of four vertices.
 1318
 01:04:45,860 --> 01:04:48,630
 It has more than
-2k minus 3 edges.
+2 k minus 3 edges.
 
 1319
 01:04:48,630 --> 01:04:50,370
@@ -6132,7 +6132,7 @@ you're adding an edge.
 1340
 01:05:45,640 --> 01:05:48,900
 That's in general a bad idea,
-because if it had exactly 2k
+because if it had exactly 2 k
 
 1341
 01:05:48,900 --> 01:05:51,400
@@ -6159,7 +6159,7 @@ was slack, where there
 
 1346
 01:06:00,440 --> 01:06:03,450
-were less than 2k minus 3 edges.
+were less than 2 k minus 3 edges.
 
 1347
 01:06:03,450 --> 01:06:07,870
@@ -6206,12 +6206,12 @@ sketch this for you.
 
 1356
 01:06:29,390 --> 01:06:33,670
-So let's say there are Si-- I
+So let's say there are S_i-- I
 have some subset of vertices
 
 1357
 01:06:33,670 --> 01:06:39,380
-Si-- and i is one,
+S_i-- and i is one,
 two, or three.
 
 1358
@@ -6226,21 +6226,21 @@ I didn't give these labels.
 
 1360
 01:06:48,400 --> 01:06:54,010
-This is V, V1, V2, V3.
+This is v, v_1, v_2, v_3.
 
 1361
 01:06:54,010 --> 01:06:57,690
-So it's going to
-contain Vi plus 1 and Vi
+So it's going to contain
+v_(i+1) and v_(i+2)--
 
 1362
 01:06:57,690 --> 01:07:04,530
-plus 2-- those are the
-other two vertices from i--
+those are the other
+two vertices from i--
 
 1363
 01:07:04,530 --> 01:07:09,440
-but not V. Not the vertex that
+but not v. Not the vertex that
 I added, because that turns out
 
 1364
@@ -6250,15 +6250,15 @@ not to matter.
 1365
 01:07:10,630 --> 01:07:17,670
 And suppose that it induces
-exactly 2k-- what's k here?
+exactly 2 k-- what's k here?
 
 1366
 01:07:17,670 --> 01:07:27,385
-Size of Si-- minus 3 edges.
+Size of S_i-- minus 3 edges.
 
 1367
 01:07:27,385 --> 01:07:29,130
-It has Si edges.
+It has S_i edges.
 
 1368
 01:07:29,130 --> 01:07:32,980
@@ -6290,7 +6290,7 @@ Fun fact.
 1374
 01:07:46,020 --> 01:07:51,325
 Let's look at all of the
-edges among S1 and S2.
+edges among S_1 and S_2.
 
 1375
 01:07:51,325 --> 01:07:53,450
@@ -6315,7 +6315,7 @@ inclusion-exclusion principle,
 1380
 01:08:07,830 --> 01:08:11,260
 which is I have these
-two sets S1 and S2.
+two sets S_1 and S_2.
 
 1381
 01:08:11,260 --> 01:08:13,700
@@ -6329,12 +6329,12 @@ in both of them together,
 1383
 01:08:18,479 --> 01:08:22,529
 that's kind of like counting all
-the edges in here-- all of Si--
+the edges in here-- all of S_i--
 
 1384
 01:08:22,529 --> 01:08:24,087
 and counting all
-the edges in S2--
+the edges in S_2--
 
 1385
 01:08:24,087 --> 01:08:25,920
@@ -6439,7 +6439,7 @@ get a contradiction.
 1408
 01:09:10,430 --> 01:09:17,500
 So I guess I really mean
-this-- that Si intersects S2.
+this-- that S_i intersects S_2.
 
 1409
 01:09:17,500 --> 01:09:19,890
@@ -6454,7 +6454,7 @@ it weren't, what
 1411
 01:09:22,350 --> 01:09:24,899
 do I know about the
-edges induced by S1?
+edges induced by S_1?
 
 1412
 01:09:24,899 --> 01:09:27,630
@@ -6486,11 +6486,11 @@ the Sis minus 3.
 1418
 01:09:40,670 --> 01:09:46,160
 So this will be exactly
-equal to 2 times S1 minus 3.
+equal to 2 times S_1 minus 3.
 
 1419
 01:09:46,160 --> 01:09:51,960
-It's 2 times S2 minus 3, and
+It's 2 times S_2 minus 3, and
 then the same thing there.
 
 1420
@@ -6550,7 +6550,7 @@ vertices, let's say.
 1432
 01:10:16,760 --> 01:10:19,740
 So it has at most
-2k minus 3 edges.
+2 k minus 3 edges.
 
 1433
 01:10:19,740 --> 01:10:25,287
@@ -6581,12 +6581,12 @@ collect them all together.
 
 1439
 01:10:35,730 --> 01:10:40,550
-We have S1, we have S2, and
+We have S_1, we have S_2, and
 the one that we just added
 
 1440
 01:10:40,550 --> 01:10:46,280
-was S1 intersect S2 minus 9.
+was S_1 intersect S_2 minus 9.
 
 1441
 01:10:46,280 --> 01:10:47,340
@@ -6614,7 +6614,7 @@ There's a minus here.
 
 1447
 01:11:00,520 --> 01:11:02,780
-There's 2k minus 3.
+There's 2 k minus 3.
 
 1448
 01:11:02,780 --> 01:11:05,840
@@ -6720,7 +6720,7 @@ a contradiction yet.
 1472
 01:11:53,240 --> 01:11:55,518
 We want it to be
-at most 2k minus 3
+at most 2 k minus 3
 
 1473
 01:11:55,518 --> 01:12:01,170
@@ -6748,12 +6748,12 @@ Let's look back at this picture.
 
 1479
 01:12:14,980 --> 01:12:20,790
-So if I take S1 union S2,
-S1 hits these two guys-- 2
+So if I take S_1 union S_2,
+S_1 hits these two guys-- 2
 
 1480
 01:12:20,790 --> 01:12:25,150
-and 3-- S2 hits these
+and 3-- S_2 hits these
 two guys-- 1 and 3.
 
 1481
@@ -6768,24 +6768,24 @@ to look like this.
 
 1483
 01:12:30,650 --> 01:12:36,555
-It's going to contain V1, V2,
-V3, but not V. Interesting.
+It's going to contain v_1, v_2,
+v_3, but not v. Interesting.
 
 1484
 01:12:36,555 --> 01:12:39,280
 
 1485
 01:12:39,280 --> 01:12:42,080
-I know that if I
-put V in, I still
+I know that, if I
+put v in, I still
 
 1486
 01:12:42,080 --> 01:12:44,220
-have at most 2k minus 3 edges.
+have at most 2 k minus 3 edges.
 
 1487
 01:12:44,220 --> 01:12:48,190
-If I remove V, I remove
+If I remove v, I remove
 one vertex and three edges.
 
 1488
@@ -6805,7 +6805,7 @@ I should remove only two edges.
 
 1491
 01:12:54,910 --> 01:12:57,680
-If I cut out V, I
+If I cut out v, I
 remove three edges.
 
 1492
@@ -6815,17 +6815,17 @@ set that includes
 
 1493
 01:12:59,760 --> 01:13:03,070
-V1, V2, V3 has to have slack.
+v_1, v_2, v_3 has to have slack.
 
 1494
 01:13:03,070 --> 01:13:08,280
-It can't have 2k minus 3 edges,
+It can't have 2 k minus 3 edges,
 because-- this should be OK.
 
 1495
 01:13:08,280 --> 01:13:11,350
 The bigger set should
-be at most 2k minus 3.
+be at most 2 k minus 3.
 
 1496
 01:13:11,350 --> 01:13:14,080
@@ -6844,12 +6844,12 @@ Two few edges is OK.
 1499
 01:13:17,890 --> 01:13:20,010
 It would be strictly
-less than 2k minus 3,
+less than 2 k minus 3,
 
 1500
 01:13:20,010 --> 01:13:22,482
 and here I'm claiming
-it's at least 2k minus 3.
+it's at least 2 k minus 3.
 
 1501
 01:13:22,482 --> 01:13:23,440
@@ -6894,8 +6894,8 @@ it can't really
 
 1510
 01:13:46,080 --> 01:13:52,260
-be zero, because S2
-and S2 both contain V3.
+be zero, because S_2
+and S_2 both contain v_3.
 
 1511
 01:13:52,260 --> 01:13:54,260
@@ -6921,7 +6921,7 @@ You can do all of them.
 1516
 01:14:03,740 --> 01:14:09,472
 This is going to equal exactly
-V1 and S1 intersect S3.
+v_1 and S_1 intersect S_3.
 
 1517
 01:14:09,472 --> 01:14:10,680
@@ -6929,7 +6929,7 @@ You can do this for any pair.
 
 1518
 01:14:10,680 --> 01:14:13,430
-So this is going to be V2.
+So this is going to be v_2.
 
 1519
 01:14:13,430 --> 01:14:15,540
@@ -6967,7 +6967,7 @@ size of all them, which
 
 1527
 01:14:44,860 --> 01:14:52,805
-is S1 plus S2 plus S3 minus 3.
+is S_1 plus S_2 plus S_3 minus 3.
 
 1528
 01:14:52,805 --> 01:14:55,860
@@ -7047,12 +7047,12 @@ to the sum of the parts.
 1545
 01:15:39,550 --> 01:15:43,940
 And this is going to be
-2 times number of S1s
+2 times number of S_1s
 
 1546
 01:15:43,940 --> 01:15:48,885
-plus number of S2s plus
-number of S3s minus 9.
+plus number of S_2s plus
+number of S_3s minus 9.
 
 1547
 01:15:48,885 --> 01:15:53,260
@@ -7087,8 +7087,8 @@ same argument we did here.
 
 1555
 01:16:10,440 --> 01:16:13,670
-If we include V1, V2, V3
-and we don't include V,
+If we include v_1, v_2, v_3
+and we don't include v,
 
 1556
 01:16:13,670 --> 01:16:15,450
@@ -7407,7 +7407,7 @@ Whatever.
 
 1626
 01:19:12,010 --> 01:19:15,360
-So this cost linear time.
+So this costs linear time.
 
 1627
 01:19:15,360 --> 01:19:17,820
@@ -7519,12 +7519,12 @@ through that axis.
 
 1652
 01:20:17,370 --> 01:20:20,580
-But it has 2n minus 6
+But it has 2 n minus 6
 edges, and every subset
 
 1653
 01:20:20,580 --> 01:20:22,480
-has at most 3n minus 6 edges.
+has at most 3 n minus 6 edges.
 
 1654
 01:20:22,480 --> 01:20:24,520
@@ -7718,7 +7718,7 @@ speaking, by Alexandrov,
 
 1696
 01:22:16,390 --> 01:22:23,810
-let's say, or Den--
+let's say, or Dehn--
 the early to mid 1900s.
 
 1697
@@ -7756,7 +7756,7 @@ this requires a big jump.
 
 1704
 01:22:42,720 --> 01:22:45,200
-And you can show that if you
+And you can show that, if you
 have a convex polyhedron,
 
 1705

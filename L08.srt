@@ -7,7 +7,7 @@ PROFESSOR: All right!
 
 3
 00:00:05,270 --> 00:00:07,670
-Welcome back to 6849.
+Welcome back to 6.849.
 
 4
 00:00:07,670 --> 00:00:11,400
@@ -204,7 +204,7 @@ haven't worried about this up
 
 46
 00:02:20,290 --> 00:02:22,120
-'till now is there's an
+till now is there's an
 equivalence between the two
 
 47
@@ -226,7 +226,7 @@ just means your piece
 
 51
 00:02:44,180 --> 00:02:48,625
-of paper some polygon,
+of paper is some polygon,
 but it has no holes in it.
 
 52
@@ -1840,7 +1840,7 @@ and just think about the graph.
 396
 00:19:08,420 --> 00:19:10,270
 We won't do that
-'till next lecture,
+till next lecture,
 
 397
 00:19:10,270 --> 00:19:14,890
@@ -2052,12 +2052,12 @@ that becomes a linkage.
 443
 00:22:01,600 --> 00:22:06,100
 And maybe I also specify this
-guy is at coordinates 0, 0;
+guy is at coordinates (0, 0);
 
 444
 00:22:06,100 --> 00:22:10,490
 and this guy is at
-coordinates 1, 0 that's
+coordinates (1, 0), that's
 
 445
 00:22:10,490 --> 00:22:12,177
@@ -2107,11 +2107,11 @@ I should draw in the plane.
 455
 00:22:31,030 --> 00:22:36,670
 Let's say-- so this is
-at 0, 0; this is at 0, 1;
+at (0, 0); this is at (0, 1);
 
 456
 00:22:36,670 --> 00:22:39,220
-this is 1, 1; 1, 0.
+this is (1, 1); (1, 0).
 
 457
 00:22:39,220 --> 00:22:41,879
@@ -2590,7 +2590,7 @@ for the first vertex,
 
 561
 00:27:55,530 --> 00:27:58,000
-coordinates for v1, so
+coordinates for v_1, so
 if we're in d dimensions,
 
 562
@@ -2605,7 +2605,7 @@ So you've got, x, y, whatever.
 564
 00:28:02,250 --> 00:28:05,700
 Then you could write down
-the coordinates for v2.
+the coordinates for v_2.
 
 565
 00:28:05,700 --> 00:28:07,200
@@ -3040,11 +3040,11 @@ What is this notation?
 660
 00:33:37,700 --> 00:33:42,580
 All I mean, it's just
-something like 3x cubed times
+something like 3 x cubed times
 
 661
 00:33:42,580 --> 00:33:52,130
-y minus 7y to the
+y minus 7 y to the
 fourth power equals 0.
 
 662
@@ -3075,8 +3075,8 @@ of freedom for a point.
 
 668
 00:34:03,360 --> 00:34:05,640
-It has an x-coordinate
-and a y-coordinate.
+It has an x coordinate
+and a y coordinate.
 
 669
 00:34:05,640 --> 00:34:07,670
@@ -3545,12 +3545,12 @@ be my magic vertex.
 
 770
 00:38:55,300 --> 00:38:57,270
-Let's call it x,y.
+Let's call it (x, y).
 
 771
 00:38:57,270 --> 00:38:59,830
 Say the point that
-it lives on is x,y.
+it lives on is (x, y).
 
 772
 00:38:59,830 --> 00:39:03,330
@@ -3754,7 +3754,7 @@ one point was pinned,
 815
 00:40:44,040 --> 00:40:47,560
 it could float around in
-a tw-dimensional space.
+a two-dimensional space.
 
 816
 00:40:47,560 --> 00:40:52,530
@@ -3764,7 +3764,7 @@ both free to some extent.
 817
 00:40:52,530 --> 00:40:54,710
 So instead of
-coordinatizing by x,y,
+coordinatizing by (x, y),
 
 818
 00:40:54,710 --> 00:40:56,770
@@ -3809,12 +3809,12 @@ smaller than sine,
 827
 00:41:16,500 --> 00:41:18,380
 and so cosine is
-the x-coordinate
+the x coordinate
 
 828
 00:41:18,380 --> 00:41:21,950
 and sine is the
-y-coordinate, if you
+y coordinate, if you
 
 829
 00:41:21,950 --> 00:41:24,170
@@ -3856,11 +3856,11 @@ for r/2 distance.
 837
 00:41:43,470 --> 00:41:48,820
 So I have r/2 times cosine alpha
-in the x-coordinate, r/2 sine
+in the x coordinate, r/2 sine
 
 838
 00:41:48,820 --> 00:41:49,945
-alpha in the y-coordinates.
+alpha in the y coordinates.
 
 839
 00:41:49,945 --> 00:41:51,920
@@ -4104,7 +4104,7 @@ cancel, and you end up
 891
 00:44:20,590 --> 00:44:24,890
 just being left with cosine a
-times cosine b with a module
+times cosine b, modulo
 
 892
 00:44:24,890 --> 00:44:27,020
@@ -4416,7 +4416,7 @@ of a thing is easy.
 
 958
 00:47:19,460 --> 00:47:21,900
-It's just the x-coordinate.
+It's just the x coordinate.
 
 959
 00:47:21,900 --> 00:47:28,400
@@ -4425,7 +4425,7 @@ going in direction theta,
 
 960
 00:47:28,400 --> 00:47:29,890
-then the x-coordinate
+then the x coordinate
 of this thing
 
 961
@@ -4440,8 +4440,8 @@ using all the time.
 
 963
 00:47:34,760 --> 00:47:36,760
-The y-coordinate is sine
-theta, but x-coordinate
+The y coordinate is sine
+theta, but x coordinate
 
 964
 00:47:36,760 --> 00:47:37,980
@@ -4455,7 +4455,7 @@ at an angle of twice alpha
 966
 00:47:40,510 --> 00:47:44,800
 plus beta, then we just
-project onto the x-axis.
+project onto the x axis.
 
 967
 00:47:44,800 --> 00:47:46,550
@@ -5033,7 +5033,7 @@ so I had to label the thing.
 
 1094
 00:53:26,190 --> 00:53:29,820
-We've got the x-axis,
+We've got the x axis,
 I like that part.
 
 1095
@@ -5043,12 +5043,12 @@ The idea is we have two inputs.
 1096
 00:53:32,110 --> 00:53:35,460
 Here's input one, defining
-one angle to the x-axis.
+one angle to the x axis.
 
 1097
 00:53:35,460 --> 00:53:38,080
 Here's input two, another
-angle to the x-axis,
+angle to the x axis,
 
 1098
 00:53:38,080 --> 00:53:39,491
@@ -5081,7 +5081,7 @@ one, and input two.
 1104
 00:53:56,040 --> 00:53:59,460
 Both of these are measured
-as angles to the x-axis.
+as angles to the x axis.
 
 1105
 00:53:59,460 --> 00:54:03,760
@@ -5282,7 +5282,7 @@ which is attached to the output
 1147
 00:56:09,260 --> 00:56:13,730
 thing, and the middle, and
-it's attached to the x-axis
+it's attached to the x axis
 
 1148
 00:56:13,730 --> 00:56:14,580
@@ -5478,7 +5478,7 @@ that's the one we care about.
 
 1190
 00:58:01,450 --> 00:58:05,589
-We've got the o in the bottom
+We've got the O in the bottom
 left, it's pinned to the table.
 
 1191
@@ -5521,7 +5521,7 @@ we want to measure
 
 1199
 00:58:26,470 --> 00:58:31,510
-the x-coordinate of the
+the x coordinate of the
 segment with that angle.
 
 1200
@@ -5584,7 +5584,7 @@ We need to add them together.
 1212
 00:59:07,320 --> 00:59:10,860
 We have a whole bunch of these
-things you saw on the maple,
+things you saw on the Maple,
 
 1213
 00:59:10,860 --> 00:59:12,620
@@ -5602,11 +5602,11 @@ some point, which we call 0.
 1216
 00:59:18,540 --> 00:59:22,350
 In fact, it will be the
-same as that o, let's say.
+same as that O, let's say.
 
 1217
 00:59:22,350 --> 00:59:23,776
-It should be the same as that o.
+It should be the same as that O.
 
 1218
 00:59:23,776 --> 00:59:26,150
@@ -5615,7 +5615,7 @@ to the center of the disk
 
 1219
 00:59:26,150 --> 00:59:30,770
-say, wherever 0 0 is.
+say, wherever (0, 0) is.
 
 1220
 00:59:30,770 --> 00:59:34,132
@@ -5658,7 +5658,7 @@ sum of all these things, which
 1228
 00:59:53,350 --> 00:59:56,270
 is the sum of all these
-things rewritten, equal to 0
+things rewritten, equal to 0.
 
 1229
 00:59:56,270 --> 00:59:59,140
@@ -5672,7 +5672,7 @@ How do we force it to be 0?
 1231
 01:00:00,340 --> 01:00:03,760
 Well the actual value is
-the x-coordinate here.
+the x coordinate here.
 
 1232
 01:00:03,760 --> 01:00:06,270
@@ -5906,7 +5906,7 @@ gadget, really two gadgets,
 1281
 01:02:25,530 --> 01:02:27,670
 the parallelogram and
-the contra-parallelogram.
+the contraparallelogram.
 
 1282
 01:02:27,670 --> 01:02:30,040
@@ -5965,7 +5965,7 @@ And it's a parallelogram.
 1293
 01:03:04,790 --> 01:03:07,450
 And we used a lot, the
-contra-parallelogram.
+contraparallelogram.
 
 1294
 01:03:07,450 --> 01:03:10,050
@@ -6032,7 +6032,7 @@ is the parallelogram.
 1307
 01:03:41,490 --> 01:03:43,823
 There's another track which
-is the contra-parallelogram.
+is the contraparallelogram.
 
 1308
 01:03:43,823 --> 01:03:45,560
@@ -6054,12 +6054,12 @@ not supposed to move that.
 1312
 01:03:55,700 --> 01:04:01,270
 Here I drew both of them, got
-the green contra-parallelogram.
+the green contraparallelogram.
 
 1313
 01:04:01,270 --> 01:04:05,630
 And there's the, sorry green,
-the blue contra-parallelogram.
+the blue contraparallelogram.
 
 1314
 01:04:05,630 --> 01:04:08,650
@@ -6121,7 +6121,7 @@ would look like this.
 1326
 01:04:41,920 --> 01:04:45,374
 So one of these tracks, say this
-one, is a contra-parallelogram.
+one, is a contraparallelogram.
 
 1327
 01:04:45,374 --> 01:04:46,540
@@ -6150,12 +6150,12 @@ parallelogram track.
 1332
 01:04:58,627 --> 01:05:00,210
 And he wants the
-contra-parallelograms
+contraparallelograms
 
 1333
 01:05:00,210 --> 01:05:03,450
 to stay on the
-contra-parallelograms track.
+contraparallelograms track.
 
 1334
 01:05:03,450 --> 01:05:05,550
@@ -6351,7 +6351,7 @@ triangle, a zero area triangle.
 
 1375
 01:06:53,620 --> 01:06:57,980
-And when you do that, I don;t
+And when you do that, I don't
 actually have a picture of it,
 
 1376
@@ -6390,7 +6390,7 @@ here, and then you
 1383
 01:07:17,560 --> 01:07:22,389
 tried to go off into the
-contra-parallelogram state,
+contraparallelogram state,
 
 1384
 01:07:22,389 --> 01:07:23,180
@@ -6457,7 +6457,7 @@ do the same thing
 
 1398
 01:07:51,570 --> 01:07:53,142
-for the contra-parallelogram.
+for the contraparallelogram.
 
 1399
 01:07:53,142 --> 01:07:55,350
@@ -6475,18 +6475,18 @@ pretty easy way to fix
 
 1402
 01:07:59,840 --> 01:08:04,820
-the contra-parallelogram, which
+the contraparallelogram, which
 is you add this pinpoint set up
 
 1403
 01:08:04,820 --> 01:08:07,180
-to be--- So these midpoints
+to be-- So these midpoints
 will all be aligned
 
 1404
 01:08:07,180 --> 01:08:09,450
 because it's a
-contra-parallelogram.
+contraparallelogram.
 
 1405
 01:08:09,450 --> 01:08:11,400
@@ -6511,7 +6511,7 @@ obvious but you can
 1409
 01:08:20,899 --> 01:08:23,660
 prove that as the
-contra-parallelogram moves,
+contraparallelogram moves,
 
 1410
 01:08:23,660 --> 01:08:26,898
@@ -6555,8 +6555,8 @@ not about those links.
 
 1419
 01:08:45,000 --> 01:08:48,479
-These guys have to be co-linear
-in the contra-parallelogram
+These guys have to be collinear
+in the contraparallelogram
 
 1420
 01:08:48,479 --> 01:08:51,300
@@ -6566,7 +6566,7 @@ in the parallelogram case,
 1421
 01:08:51,300 --> 01:08:54,140
 and this is essentially
-forcing that co-linearity.
+forcing that collinearity.
 
 1422
 01:08:54,140 --> 01:08:56,640
@@ -6580,7 +6580,7 @@ it's in the textbook.
 1424
 01:08:58,130 --> 01:09:01,560
 But this bracing will force it
-to say contra-parallelogram,
+to say contraparallelogram,
 
 1425
 01:09:01,560 --> 01:09:04,080
@@ -6667,7 +6667,7 @@ then you can approximate it
 1443
 01:10:24,330 --> 01:10:29,170
 by a polynomial of the form that
-we analyzed, this [INAUDIBLE]
+we analyzed, this phi
 
 1444
 01:10:29,170 --> 01:10:33,740
@@ -7046,7 +7046,7 @@ constructions, especially
 
 1526
 01:14:22,380 --> 01:14:24,610
-the contra-parallelogram,
+the contraparallelogram,
 need to have
 
 1527
@@ -7184,11 +7184,11 @@ this is you've, you
 1555
 01:15:28,931 --> 01:15:31,430
 know you've designed, you just
-design all these awesome tree
+design all these awesome
 
 1556
 01:15:31,430 --> 01:15:35,000
-maker diagrams for
+TreeMaker diagrams for
 your problem set.
 
 1557
