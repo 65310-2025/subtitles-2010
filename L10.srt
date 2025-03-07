@@ -138,7 +138,7 @@ analysis stuff-- calculus,
 31
 00:01:48,089 --> 00:01:50,130
 which you should all know,
-because is the General
+because it is a General
 
 32
 00:01:50,130 --> 00:01:52,840
@@ -528,7 +528,7 @@ something like this.
 
 116
 00:06:07,046 --> 00:06:08,170
-You take the x-coordinates.
+You take the x coordinates.
 
 117
 00:06:08,170 --> 00:06:09,294
@@ -536,7 +536,7 @@ You multiply them together.
 
 118
 00:06:09,294 --> 00:06:10,930
-You take the y-coordinates.
+You take the y coordinates.
 
 119
 00:06:10,930 --> 00:06:14,100
@@ -793,8 +793,8 @@ moving in that direction.
 
 174
 00:09:00,896 --> 00:09:10,910
-So this is d of v dot
-C of v, minus C of w.
+So this is d of v, dot
+C of v minus C of w.
 
 175
 00:09:10,910 --> 00:09:13,740
@@ -975,13 +975,13 @@ Question?
 
 214
 00:11:05,804 --> 00:11:11,282
-STUDENT: [INAUDIBLE]
-dot product [INAUDIBLE]
+STUDENT: Is there a reason you
+use dot product equal to 0?
 
 215
 00:11:11,282 --> 00:11:16,096
-at a left right turn is
-0, or that the terms are
+Doesn't that mean that
+the vectors are
 
 216
 00:11:16,096 --> 00:11:18,189
@@ -1265,12 +1265,12 @@ got d of v times this vector.
 
 278
 00:14:49,506 --> 00:14:50,880
-So there's a
-x-coordinate vector,
+So there's an
+x coordinate vector,
 
 279
 00:14:50,880 --> 00:14:52,921
-and the y-coordinate
+and the y coordinate
 vector, and in d dimensions,
 
 280
@@ -1280,11 +1280,11 @@ there will be d of them.
 281
 00:14:54,010 --> 00:14:56,520
 Here in two dimensions, I've got
-the x-coordinate of the vector,
+the x coordinate of the vector,
 
 282
 00:14:56,520 --> 00:14:57,978
-and the y-coordinate
+and the y coordinate
 of the vector.
 
 283
@@ -1451,11 +1451,11 @@ definition, but there's
 318
 00:16:59,560 --> 00:17:03,980
 a fun theorem called
-the rank nullity
+the Rank-Nullity
 
 319
 00:17:03,980 --> 00:17:07,319
-theorem from linear algebra.
+Theorem from linear algebra.
 
 320
 00:17:07,319 --> 00:17:18,250
@@ -2487,7 +2487,7 @@ Question?
 
 543
 00:29:18,590 --> 00:29:21,470
-STUDENT: Will [INAUDIBLE]
+STUDENT: Will rigidity matrices
 be square matricies?
 
 544
@@ -2549,8 +2549,8 @@ Glad you asked.
 
 556
 00:29:53,250 --> 00:29:54,625
-STUDENT: You can
-add [INAUDIBLE].
+STUDENT: You can add extra
+edges to make it square.
 
 557
 00:29:54,625 --> 00:29:57,099
@@ -2566,7 +2566,8 @@ and make it square, yeah.
 
 560
 00:29:59,956 --> 00:30:01,580
-STUDENT: [INAUDIBLE].
+STUDENT: If it's
+minimally...?
 
 561
 00:30:01,580 --> 00:30:03,690
@@ -3006,8 +3007,8 @@ I could stare at this for hours.
 
 656
 00:35:09,630 --> 00:35:12,440
-I think that's just
-the [? zoom ?].
+I think that's
+just a zoom.
 
 657
 00:35:12,440 --> 00:35:15,750
@@ -3337,7 +3338,7 @@ measuring-- it's a number,
 
 729
 00:38:59,360 --> 00:39:03,464
-and it's measuring the sign's
+and it's measuring the signed
 change in length of that edge.
 
 730
@@ -3487,7 +3488,8 @@ Cool, questions?
 
 761
 00:40:56,910 --> 00:40:58,910
-STUDENT: [INAUDIBLE]
+STUDENT: Could you go over
+what that inequality means?
 
 762
 00:40:58,910 --> 00:41:01,000
@@ -3506,7 +3508,7 @@ STUDENT: Right.
 765
 00:41:04,790 --> 00:41:09,280
 And saying that it's greater
-than or equal to 0 [INAUDIBLE].
+than or equal to 0 means...?
 
 766
 00:41:09,280 --> 00:41:11,350
@@ -4689,8 +4691,8 @@ result from this summer
 
 1024
 00:55:31,970 --> 00:55:35,230
-at [? OSMI ?] by Robert
-Lang and Alex Bateman.
+at OSME by Robert Lang
+and Alex Bateman.
 
 1025
 00:55:35,230 --> 00:55:38,760
@@ -4699,7 +4701,7 @@ origami tessellation, this fold
 
 1026
 00:55:38,760 --> 00:55:41,490
-by Jenny [? Ramsier ?],
+by Jenny Ramseyer,
 just the one
 
 1027
@@ -5056,12 +5058,12 @@ is going to be
 1103
 00:59:46,900 --> 00:59:55,770
 an assignment of
-z-coordinates to the vertices.
+z coordinates to the vertices.
 
 1104
 00:59:55,770 --> 01:00:00,830
 So it's going to be
-a z-coordinate z of v
+a z coordinate z of v
 
 1105
 01:00:00,830 --> 01:00:13,870
@@ -5109,7 +5111,7 @@ And so I want to lift.
 1115
 01:00:42,390 --> 01:00:43,880
 I want to assign
-some z-coordinate
+some z coordinate
 
 1116
 01:00:43,880 --> 01:00:47,160
@@ -5191,7 +5193,7 @@ you could not lift them at all.
 1133
 01:01:20,820 --> 01:01:22,930
 Set all the
-z-coordinates to zero.
+z coordinates to zero.
 
 1134
 01:01:22,930 --> 01:01:24,110
@@ -5586,8 +5588,8 @@ one of those diagonals
 
 1221
 01:06:31,300 --> 01:06:37,580
-and switch it to be in relation
-to each other [INAUDIBLE]?
+and switch it in relation to each
+other, and it misses the other two?
 
 1222
 01:06:37,580 --> 01:06:39,472
@@ -5771,7 +5773,7 @@ who made that tensegrity,
 
 1262
 01:08:46,149 --> 01:08:48,069
-[? Gunta ?] [? Rota ?] and me.
+Guenter Rote and me.
 
 1263
 01:08:48,069 --> 01:08:56,770
@@ -6557,7 +6559,7 @@ case, it will be 0,
 1434
 01:17:47,570 --> 01:17:50,840
 because the outside face sets
-all the z-coordinates to 0,
+all the z coordinates to 0,
 
 1435
 01:17:50,840 --> 01:17:53,410
@@ -6567,7 +6569,7 @@ have to be in that plane.
 1436
 01:17:53,410 --> 01:17:58,162
 So all the
-z-coordinates will be 0.
+z coordinates will be 0.
 
 1437
 01:17:58,162 --> 01:17:59,620
@@ -6738,7 +6740,7 @@ So let's look at the top.
 1475
 01:19:43,160 --> 01:19:44,870
 Look at the maximum
-z-coordinate.
+z coordinate.
 
 1476
 01:19:44,870 --> 01:19:48,497
@@ -6756,7 +6758,7 @@ case-- the easy case-- where
 1479
 01:19:54,190 --> 01:19:56,440
 you have, in the
-maximum z-coordinate,
+maximum z coordinate,
 
 1480
 01:19:56,440 --> 01:19:58,140
@@ -6789,7 +6791,7 @@ is maximum z minus epsilon--
 1486
 01:20:19,230 --> 01:20:22,440
 slightly below the
-maximum z-coordinate.
+maximum z coordinate.
 
 1487
 01:20:22,440 --> 01:20:27,050
@@ -6832,8 +6834,8 @@ three mountains incident
 
 1495
 01:20:49,210 --> 01:20:53,150
-to this maximum
-z-coordinate But mountains
+to this maximum z coordinate.
+But mountains
 
 1496
 01:20:53,150 --> 01:20:55,460
@@ -6889,7 +6891,7 @@ is, like, you have--
 1507
 01:21:26,770 --> 01:21:29,060
 in the maximum
-z-coordinate you might
+z coordinate you might
 
 1508
 01:21:29,060 --> 01:21:31,900
