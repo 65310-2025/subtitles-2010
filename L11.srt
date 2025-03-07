@@ -377,7 +377,7 @@ to mimic the proof that we saw.
 81
 00:04:59,200 --> 00:05:02,560
 I call that proof CDR, because
-it's Connelly-Demain-Rote.
+it's Connelly-Demaine-Rote.
 
 82
 00:05:02,560 --> 00:05:06,600
@@ -630,7 +630,7 @@ little v shape.
 135
 00:07:11,137 --> 00:07:13,095
 A second method is called
-pseudo-triangulation.
+pseudotriangulation.
 
 136
 00:07:13,095 --> 00:07:14,340
@@ -757,7 +757,7 @@ Rule Theorem was proved,
 162
 00:08:09,920 --> 00:08:13,362
 a lot of people were trying
-to find counter examples.
+to find counterexamples.
 
 163
 00:08:13,362 --> 00:08:14,070
@@ -1040,7 +1040,7 @@ to the next method which
 225
 00:11:06,476 --> 00:11:07,850
 is pointed
-pseudo-triangulations.
+pseudotriangulations.
 
 226
 00:11:07,850 --> 00:11:13,470
@@ -1067,7 +1067,7 @@ examples of what are
 231
 00:11:23,780 --> 00:11:26,470
 called pointed
-pseudo-triangulations
+pseudotriangulations
 
 232
 00:11:26,470 --> 00:11:28,330
@@ -1076,7 +1076,7 @@ for a given set of points.
 233
 00:11:28,330 --> 00:11:33,540
 So in general, a
-pseudo-triangle is a polygon
+pseudotriangle is a polygon
 
 234
 00:11:33,540 --> 00:11:36,480
@@ -1089,7 +1089,7 @@ convex vertices and that's it.
 
 236
 00:11:39,520 --> 00:11:44,170
-A pseudo-triangle, I allow
+A pseudotriangle, I allow
 a bunch of reflex vertices
 
 237
@@ -1111,7 +1111,7 @@ figure, all of the faces
 
 241
 00:11:54,930 --> 00:11:55,960
-are pseudo-triangles.
+are pseudotriangles.
 
 242
 00:11:55,960 --> 00:11:58,680
@@ -1121,7 +1121,7 @@ actually quadrilaterals.
 243
 00:11:58,680 --> 00:12:00,590
 But in particular,
-that's a pseudo-triangle.
+that's a pseudotriangle.
 
 244
 00:12:00,590 --> 00:12:04,110
@@ -1136,7 +1136,7 @@ quads or triangles.
 246
 00:12:06,630 --> 00:12:09,540
 And a pointed
-pseudo-triangulation
+pseudotriangulation
 
 247
 00:12:09,540 --> 00:12:14,130
@@ -1159,7 +1159,7 @@ that's bigger than 180 degrees.
 
 251
 00:12:25,815 --> 00:12:31,650
-So this was a pseudo-triangle,
+So this was a pseudotriangle,
 and this is pointed.
 
 252
@@ -1190,7 +1190,7 @@ They're always convex.
 258
 00:12:48,790 --> 00:12:50,740
 And pointed
-pseudo-triangulations
+pseudotriangulations
 
 259
 00:12:50,740 --> 00:12:55,350
@@ -1327,7 +1327,7 @@ I think that's it.
 288
 00:14:20,090 --> 00:14:22,034
 I think this is a
-pseudo-triangulation.
+pseudotriangulation.
 
 289
 00:14:22,034 --> 00:14:24,450
@@ -1347,7 +1347,7 @@ edges, keep it pointed.
 292
 00:14:28,770 --> 00:14:32,430
 And in the end all of the
-faces will be pseudo-triangles.
+faces will be pseudotriangles.
 
 293
 00:14:32,430 --> 00:14:33,847
@@ -1356,7 +1356,7 @@ So mission accomplished.
 294
 00:14:33,847 --> 00:14:35,430
 This is a pointed
-pseudo-triangulation
+pseudotriangulation
 
 295
 00:14:35,430 --> 00:14:39,660
@@ -1486,7 +1486,7 @@ all these edges.
 322
 00:15:53,362 --> 00:15:54,820
 Here's a nice
-pseudo-triangle here.
+pseudotriangle here.
 
 323
 00:15:54,820 --> 00:15:56,970
@@ -1529,7 +1529,7 @@ that those two blue edges
 331
 00:16:12,980 --> 00:16:15,030
 are the edges in the
-pseudo-triangulation.
+pseudotriangulation.
 
 332
 00:16:15,030 --> 00:16:17,074
@@ -1560,7 +1560,7 @@ That's pretty intuitive.
 338
 00:16:27,155 --> 00:16:29,030
 You preserve that it's
-a pseudo-triangulation
+a pseudotriangulation
 
 339
 00:16:29,030 --> 00:16:32,110
@@ -1588,7 +1588,7 @@ be a convex quadrilateral.
 344
 00:16:41,480 --> 00:16:42,896
 That's not a
-pseudo-triangulation,
+pseudotriangulation,
 
 345
 00:16:42,896 --> 00:16:43,765
@@ -1614,7 +1614,8 @@ a polynomial number of times.
 
 350
 00:16:49,020 --> 00:16:51,330
-AUDIENCE: [INAUDIBLE].
+AUDIENCE: How do
+you flip it?
 
 351
 00:16:51,330 --> 00:16:53,551
@@ -1623,8 +1624,8 @@ is how I flipped it.
 
 352
 00:16:53,551 --> 00:16:55,910
-AUDIENCE: Is it
-[INAUDIBLE] to a red?
+AUDIENCE: The blue
+becomes red?
 
 353
 00:16:55,910 --> 00:17:01,810
@@ -1741,7 +1742,7 @@ end up with that edge instead.
 377
 00:17:54,857 --> 00:17:56,440
 So now everything's
-a pseudo-triangle,
+a pseudotriangle,
 
 378
 00:17:56,440 --> 00:17:59,200
@@ -1806,7 +1807,7 @@ all of those edges.
 391
 00:18:27,470 --> 00:18:30,250
 So that is the
-pseudo-triangulation method
+pseudotriangulation method
 
 392
 00:18:30,250 --> 00:18:31,170
@@ -1913,7 +1914,7 @@ does this algorithm really need?
 415
 00:19:34,490 --> 00:19:36,545
 Can you prove a
-pseudo-polynomial bound?
+pseudopolynomial bound?
 
 416
 00:19:36,545 --> 00:19:38,380
@@ -1986,13 +1987,13 @@ steps is also small.
 
 432
 00:20:38,070 --> 00:20:40,750
-It has a pseudo-polynomial
+It has a pseudopolynomial
 number of steps.
 
 433
 00:20:40,750 --> 00:20:43,570
 Have I talked about
-pseudo-polynomial yet?
+pseudopolynomial yet?
 
 434
 00:20:43,570 --> 00:20:45,010
@@ -2106,7 +2107,7 @@ kind of complicated.
 
 458
 00:21:39,970 --> 00:21:42,590
-It's pseudo-triangulation.
+It's pseudotriangulation.
 
 459
 00:21:42,590 --> 00:21:44,340
@@ -2300,17 +2301,17 @@ C. No M in this equation.
 502
 00:23:53,730 --> 00:23:59,890
 We're going to sum over all
-edges Ew, and then sum over all
+edges v w, and then sum over all
 
 503
 00:23:59,890 --> 00:24:05,800
-vertices U different
-from V and W.
+vertices u different
+from v and w.
 
 504
 00:24:05,800 --> 00:24:11,100
 And we're going to take 1
-over the distance from U
+over the distance from u
 
 505
 00:24:11,100 --> 00:24:13,490
@@ -2860,7 +2861,7 @@ number of steps--
 624
 00:29:46,970 --> 00:29:52,630
 this is the part I'm most proud
-of here-- is pseudo-polynomial,
+of here-- is pseudopolynomial,
 
 625
 00:29:52,630 --> 00:29:57,720
@@ -2930,7 +2931,7 @@ careful on the analysis.
 639
 00:30:28,220 --> 00:30:30,386
 But once we got something
-that was pseudo-polynomial
+that was pseudopolynomial
 
 640
 00:30:30,386 --> 00:30:31,510
@@ -2968,7 +2969,7 @@ to be in the worst case.
 647
 00:30:44,140 --> 00:30:47,170
 But the worst case bound,
-hey, it's pseudo-polynomial.
+hey, it's pseudopolynomial.
 
 648
 00:30:47,170 --> 00:30:48,790
@@ -3072,7 +3073,7 @@ Good.
 
 669
 00:31:37,267 --> 00:31:39,100
-So that's pseudo-polynomial
+So that's pseudopolynomial
 number of steps.
 
 670
@@ -3271,7 +3272,7 @@ have a single vertex
 
 712
 00:33:27,100 --> 00:33:34,560
-origami-- say that's five
+origami-- say that's flat
 foldable, I don't know.
 
 713
@@ -3520,7 +3521,7 @@ lies along the equator.
 
 766
 00:36:24,540 --> 00:36:28,480
-If it's smaller than 2 pi it'll
+If it's smaller than 2 pi, it'll
 be like some smaller portion.
 
 767
@@ -4713,7 +4714,7 @@ most of the examples
 1025
 00:48:42,740 --> 00:48:44,870
 I drew these little
-scion circles to say,
+cyan circles to say,
 
 1026
 00:48:44,870 --> 00:48:47,200
@@ -5424,7 +5425,7 @@ there's some notion
 
 1178
 00:56:42,650 --> 00:56:47,140
-of sufficiently small such
+of "sufficiently small" such
 that if I take this example
 
 1179
@@ -6003,7 +6004,7 @@ I move 0 or more than 0?
 
 1303
 01:02:44,140 --> 01:02:47,330
-If I can move more than 0 I
+If I can move more than 0, I
 could move this guy more than 0
 
 1304
@@ -6186,8 +6187,8 @@ actually touching.
 
 1344
 01:05:13,062 --> 01:05:16,010
-AUDIENCE: This rule
-one [INAUDIBLE].
+AUDIENCE: There's
+a rule one...
 
 1345
 01:05:16,010 --> 01:05:18,977
@@ -6282,7 +6283,8 @@ Anymore?
 
 1365
 01:06:16,494 --> 01:06:17,410
-AUDIENCE: [INAUDIBLE].
+AUDIENCE: On the
+right side.
 
 1366
 01:06:17,410 --> 01:06:19,200
@@ -6492,7 +6494,7 @@ that argument would
 1411
 01:07:54,690 --> 01:08:00,220
 mean you wouldn't need
-one of the n's on--
+one of the ends on--
 
 1412
 01:08:00,220 --> 01:08:02,760
@@ -6694,7 +6696,8 @@ maximum distance divided
 
 1454
 01:09:48,140 --> 01:09:51,100
-by the smallest non 0 distance.
+by the smallest
+nonzero distance.
 
 1455
 01:09:51,100 --> 01:09:55,459

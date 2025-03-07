@@ -2689,7 +2689,7 @@ like this-- here's
 587
 00:31:45,040 --> 00:31:49,260
 a tensegrity built and
-given to me by Bob Connolly.
+given to me by Bob Connelly.
 
 588
 00:31:49,260 --> 00:31:52,070
@@ -4576,7 +4576,7 @@ are the same thing.
 1000
 00:54:19,800 --> 00:54:25,630
 This is sort of a special
-case, and Connolly
+case, and Connelly
 
 1001
 00:54:25,630 --> 00:54:30,130
@@ -5768,7 +5768,7 @@ my Ph.D. thesis,
 
 1261
 01:08:41,020 --> 01:08:46,149
-so paper in 2000 by Bob Connolly
+so paper in 2000 by Bob Connelly
 who made that tensegrity,
 
 1262
