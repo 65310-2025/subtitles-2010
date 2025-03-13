@@ -4679,8 +4679,8 @@ the ribosome is a cone.
 
 1000
 00:47:52,060 --> 00:47:54,180
-We call this the half
-angle of the cone.
+We call this the
+half-angle of the cone.
 
 1001
 00:47:54,180 --> 00:47:58,011
@@ -5785,8 +5785,8 @@ was.
 
 1242
 01:00:27,340 --> 01:00:28,960
-Was that the half
-angle or angle?
+Was that the
+half-angle or angle?
 
 1243
 01:00:28,960 --> 01:00:30,004
@@ -6669,8 +6669,8 @@ everything lies
 
 1434
 01:09:39,069 --> 01:09:43,330
-inside a cone of half
-angle alpha over two.
+inside a cone of half-angle
+alpha over two.
 
 1435
 01:09:43,330 --> 01:09:48,060
@@ -7136,8 +7136,8 @@ configuration-- is
 
 1538
 01:14:33,960 --> 01:14:38,440
-that I have this half
-angle of alpha over two,
+that I have this half-angle
+of alpha over two,
 
 1539
 01:14:38,440 --> 01:14:43,300
@@ -7248,8 +7248,8 @@ of the big cone.
 
 1562
 01:15:43,870 --> 01:15:46,350
-So that will be a half
-angle of alpha over two.
+So that will be a half-angle
+of alpha over two.
 
 1563
 01:15:46,350 --> 01:15:49,130
