@@ -6223,7 +6223,7 @@ came up with the term.
 1337
 01:05:02,860 --> 01:05:05,450
 Is called the
-momento method which
+Momento method, which
 
 1338
 01:05:05,450 --> 01:05:09,870
@@ -7263,7 +7263,7 @@ outside the big cone.
 
 1565
 01:15:52,640 --> 01:15:56,310
-So the rest is just momento.
+So the rest is just Momento.
 
 1566
 01:15:56,310 --> 01:15:58,920
