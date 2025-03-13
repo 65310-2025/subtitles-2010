@@ -28,8 +28,8 @@ there in this place
 
 7
 00:00:17,460 --> 00:00:20,700
-called the protein data
-bank, all freely available.
+called the Protein Data
+Bank, all freely available.
 
 8
 00:00:20,700 --> 00:00:23,234
@@ -439,7 +439,7 @@ relative to the other half.
 94
 00:04:04,990 --> 00:04:09,210
 These are called
-fixed angle linkages.
+fixed-angle linkages.
 
 95
 00:04:09,210 --> 00:04:11,630
@@ -482,7 +482,7 @@ backbone of a protein
 103
 00:04:34,030 --> 00:04:35,980
 is something like
-a fixed angle tree.
+a fixed-angle tree.
 
 104
 00:04:35,980 --> 00:04:38,980
@@ -542,16 +542,16 @@ occasionally a closed chain.
 
 117
 00:05:10,910 --> 00:05:13,710
-So we think a lot about fixed
-angle chain and sometimes about
+So we think a lot about fixed-angle
+chain and sometimes about
 
 118
 00:05:13,710 --> 00:05:15,420
-fixed angle trees.
+fixed-angle trees.
 
 119
 00:05:15,420 --> 00:05:18,810
-Now, fixed angle linkages
+Now, fixed-angle linkages
 are harder to think
 
 120
@@ -720,7 +720,7 @@ are not locked in some sense.
 
 156
 00:07:05,300 --> 00:07:08,010
-And flat state connectivity is
+And flat-state connectivity is
 about the same kind of thing,
 
 157
@@ -795,8 +795,8 @@ That's a little nontrivial.
 
 172
 00:07:45,830 --> 00:07:47,450
-But for fixed
-angle linkages, you
+But for fixed-angle
+linkages, you
 
 173
 00:07:47,450 --> 00:07:50,070
@@ -879,7 +879,7 @@ Question?
 191
 00:09:04,582 --> 00:09:07,052
 AUDIENCE: If you have a
-linkage or [INAUDIBLE]
+linkage or protein
 
 192
 00:09:07,052 --> 00:09:12,239
@@ -925,7 +925,7 @@ NP-hardness proofs.
 
 201
 00:09:34,540 --> 00:09:36,680
-[INAUDIBLE] the problems
+In fact the problems
 are NP-complete.
 
 202
@@ -1125,7 +1125,7 @@ in three dimensions,
 242
 00:11:25,440 --> 00:11:28,530
 I want to maximize-- I have
-a fixed angle chain in 3D,
+a fixed-angle chain in 3D,
 
 243
 00:11:28,530 --> 00:11:30,370
@@ -1145,7 +1145,7 @@ in polynomial time?
 
 247
 00:11:38,510 --> 00:11:52,210
-For 3D max span, so the non flat
+For 3D max span, so the non-flat
 version just for maximization,
 
 248
@@ -1524,7 +1524,7 @@ time with enough work.
 
 328
 00:15:47,900 --> 00:15:50,180
-For non orthogonal
+For non-orthogonal
 though, it's open
 
 329
@@ -1572,7 +1572,7 @@ state connectivity,
 
 339
 00:16:26,050 --> 00:16:32,240
-is does a fixed angle chain
+is does a fixed-angle chain
 have a flat state at all?
 
 340
@@ -1583,12 +1583,12 @@ the plane without crossing?
 341
 00:16:35,380 --> 00:16:39,980
 So we're restricted here to
-have no self intersections.
+have no self-intersections.
 
 342
 00:16:39,980 --> 00:16:46,680
 We want flat state,
-no self intersection.
+no self-intersection.
 
 343
 00:16:46,680 --> 00:16:50,312
@@ -1724,7 +1724,7 @@ of things you can do.
 371
 00:17:59,260 --> 00:18:01,390
 You try all of them,
-they self intersect.
+they self-intersect.
 
 372
 00:18:01,390 --> 00:18:03,480
@@ -1856,8 +1856,8 @@ about the configuration
 
 399
 00:19:24,370 --> 00:19:27,772
-space of these fixed
-angle chains, let's say.
+space of these fixed-angle
+chains, let's say.
 
 400
 00:19:27,772 --> 00:19:29,230
@@ -1962,7 +1962,7 @@ multiple components?
 422
 00:20:21,060 --> 00:20:23,285
 So in this case, we call
-it flat state disconnected.
+it flat-state disconnected.
 
 423
 00:20:23,285 --> 00:20:27,230
@@ -1970,7 +1970,7 @@ it flat state disconnected.
 424
 00:20:27,230 --> 00:20:32,030
 And if they're all like this,
-we call it flat state connected.
+we call it flat-state connected.
 
 425
 00:20:32,030 --> 00:20:34,920
@@ -1979,12 +1979,12 @@ know which chains, which
 
 426
 00:20:34,920 --> 00:20:38,550
-fixed angle trees, whatever,
-are flat state connected
+fixed-angle trees, whatever,
+are flat-state connected
 
 427
 00:20:38,550 --> 00:20:40,840
-versus flat state disconnected.
+versus flat-state disconnected.
 
 428
 00:20:40,840 --> 00:20:44,110
@@ -1993,7 +1993,7 @@ big open problem
 
 429
 00:20:44,110 --> 00:20:51,610
-here is every fixed angle
+here is every fixed-angle
 chain, open chain flat state
 
 430
@@ -2030,7 +2030,7 @@ like the staircase.
 
 437
 00:21:10,020 --> 00:21:13,940
-Those are flat state connected.
+Those are flat-state connected.
 
 438
 00:21:13,940 --> 00:21:16,710
@@ -2044,7 +2044,7 @@ or obtuse, then they're
 
 440
 00:21:21,750 --> 00:21:23,530
-flat state connected.
+flat-state connected.
 
 441
 00:21:23,530 --> 00:21:25,900
@@ -2098,7 +2098,7 @@ theoretical question
 451
 00:21:52,180 --> 00:21:55,470
 here is, are all open
-chains flat state connected
+chains flat-state connected
 
 452
 00:21:55,470 --> 00:21:57,090
@@ -2156,7 +2156,7 @@ you these examples.
 463
 00:22:28,820 --> 00:22:33,240
 This is what we call a partially
-rigid fixed angle tree.
+rigid fixed-angle tree.
 
 464
 00:22:33,240 --> 00:22:36,010
@@ -2219,7 +2219,7 @@ I would get this picture.
 476
 00:23:10,380 --> 00:23:14,070
 But the claim is, you cannot do
-that without self intersection.
+that without self-intersection.
 
 477
 00:23:14,070 --> 00:23:16,670
@@ -2278,11 +2278,11 @@ whether there's
 488
 00:23:44,322 --> 00:23:47,950
 a-- we also don't know
-whether all fixed angle
+whether all fixed-angle
 
 489
 00:23:47,950 --> 00:23:49,970
-trees are flat state connected.
+trees are flat-state connected.
 
 490
 00:23:49,970 --> 00:23:53,600
@@ -2542,11 +2542,11 @@ both of these guys
 543
 00:26:12,430 --> 00:26:17,850
 flip over-- so arm on
-the left, A3 flips over.
+the left, a_3 flips over.
 
 544
 00:26:17,850 --> 00:26:20,580
-A3 stays where it
+a_3 stays where it
 is but now the arm
 
 545
@@ -2556,8 +2556,8 @@ instead of the south side.
 
 546
 00:26:24,080 --> 00:26:29,990
-And the other guy, from B
-to B3, used to go like this
+And the other guy, from b
+to b_3, used to go like this
 
 547
 00:26:29,990 --> 00:26:31,300
@@ -2641,12 +2641,12 @@ chains, all the angles
 564
 00:27:10,800 --> 00:27:14,810
 are obtuse-- how they
-are flat state connected.
+are flat-state connected.
 
 565
 00:27:14,810 --> 00:27:17,410
 So in order to show it's
-flat state connected,
+flat-state connected,
 
 566
 00:27:17,410 --> 00:27:19,760
@@ -2746,7 +2746,7 @@ edge and you just
 
 586
 00:28:05,670 --> 00:28:12,626
-rotate it up to the red line A.
+rotate it up to the red line, a.
 And then you take the next edge
 
 587
@@ -2809,7 +2809,7 @@ this staircase-- sorry,
 599
 00:28:47,650 --> 00:28:52,150
 I guess originally I have
-from V3 to D up there.
+from v_3 to d up there.
 
 600
 00:28:52,150 --> 00:28:55,810
@@ -2823,7 +2823,7 @@ I'm spinning around this edge.
 602
 00:28:58,030 --> 00:29:01,290
 So now I have from
-B3 to #, and then I
+v_3 to e, and then I
 
 603
 00:29:01,290 --> 00:29:04,010
@@ -2896,11 +2896,11 @@ Let me get this right.
 
 618
 00:29:38,080 --> 00:29:39,940
-Yeah, sum z monotone state.
+Yeah, some z monotone state.
 
 619
 00:29:39,940 --> 00:29:43,050
-So it goes monotone and z,
+So it goes monotone in z,
 out of the plane, that's
 
 620
@@ -3073,7 +3073,7 @@ joints with proteins.
 
 657
 00:31:43,816 --> 00:31:44,940
-We have fixed angle joints.
+We have fixed-angle joints.
 
 658
 00:31:44,940 --> 00:31:48,060
@@ -3081,12 +3081,12 @@ We have fixed angle joints.
 659
 00:31:48,060 --> 00:31:52,170
 So the big open problem
-for fixed angle joints--
+for fixed-angle joints--
 
 660
 00:31:52,170 --> 00:32:05,160
 I guess we'll do this in parts--
-is there a locked 3D fixed
+is there a locked 3D fixed-
 
 661
 00:32:05,160 --> 00:32:24,100
@@ -3252,7 +3252,7 @@ and all that fancy stuff.
 
 696
 00:34:01,880 --> 00:34:04,300
-We used Ascii Art.
+We used ASCII art.
 
 697
 00:34:04,300 --> 00:34:06,550
@@ -3520,7 +3520,7 @@ equiangular seems
 754
 00:36:43,200 --> 00:36:45,870
 easy to lock with
-fixed angle chains.
+fixed-angle chains.
 
 755
 00:36:45,870 --> 00:36:50,770
@@ -3567,7 +3567,7 @@ all these properties.
 764
 00:37:17,020 --> 00:37:19,930
 Even if you looked
-at fixed angle trees,
+at fixed-angle trees,
 
 765
 00:37:19,930 --> 00:37:22,110
@@ -3604,7 +3604,7 @@ the conjecture is
 
 772
 00:37:36,510 --> 00:37:40,562
-obtuse fixed angle chains behave
+obtuse fixed-angle chains behave
 kind of like universal joints.
 
 773
@@ -3815,7 +3815,7 @@ reasons they might fold well.
 817
 00:39:35,690 --> 00:39:38,650
 We know, as far as
-fixed angle chains go,
+fixed-angle chains go,
 
 818
 00:39:38,650 --> 00:39:41,150
@@ -4174,8 +4174,8 @@ producible protein chains.
 
 893
 00:43:04,120 --> 00:43:09,090
-Protein chains just means fixed
-angle chains, open chains.
+Protein chains just means
+fixed-angle chains, open chains.
 
 894
 00:43:09,090 --> 00:43:13,180
@@ -4547,8 +4547,8 @@ this big obstacle.
 
 972
 00:46:32,400 --> 00:46:34,000
-AUDIENCE: [INAUDIBLE]
-makes sense
+AUDIENCE: It kind
+of explains
 
 973
 00:46:34,000 --> 00:46:37,210
@@ -4763,7 +4763,7 @@ totally free.
 1018
 00:48:43,777 --> 00:48:45,610
 This is like you can
-allow self intersection
+allow self-intersection
 
 1019
 00:48:45,610 --> 00:48:46,972
@@ -4777,7 +4777,7 @@ outside the cone,
 1021
 00:48:48,430 --> 00:48:50,070
 you're not allowed
-to self intersect
+to self-intersect
 
 1022
 00:48:50,070 --> 00:48:52,620
@@ -4822,7 +4822,7 @@ Just change the variable.
 1031
 00:49:40,160 --> 00:49:43,430
 So if you think of the ribosome
-as a cone with half angle beta,
+as a cone with half-angle beta,
 
 1032
 00:49:43,430 --> 00:49:45,110
@@ -5059,7 +5059,7 @@ full flexibility
 
 1083
 00:52:08,490 --> 00:52:15,260
-and you set alpha to two beta,
+and you set alpha to 2 beta,
 not the other way around.
 
 1084
@@ -5078,7 +5078,7 @@ because, in reality, the cone
 
 1087
 00:52:27,580 --> 00:52:29,360
-has a half angle of 90 degrees.
+has a half-angle of 90 degrees.
 
 1088
 00:52:29,360 --> 00:52:31,610
@@ -5141,7 +5141,7 @@ are not so sharp?
 
 1101
 00:53:04,740 --> 00:53:10,080
-I claim they're good
+I claim there are good
 algorithms for folding them.
 
 1102
@@ -5318,7 +5318,7 @@ which we'll worry about later.
 1140
 00:54:41,820 --> 00:54:45,430
 So in particular, these guys
-are flat state connected.
+are flat-state connected.
 
 1141
 00:54:45,430 --> 00:54:47,240
@@ -5327,7 +5327,7 @@ protein chains
 
 1142
 00:54:47,240 --> 00:54:48,524
-are flat state connected.
+are flat-state connected.
 
 1143
 00:54:48,524 --> 00:54:50,190
@@ -5337,7 +5337,7 @@ because we don't even
 1144
 00:54:50,190 --> 00:54:52,560
 know that all chains are
-flat state connected.
+flat-state connected.
 
 1145
 00:54:52,560 --> 00:54:55,230
@@ -5346,7 +5346,7 @@ that obtuse chains are
 
 1146
 00:54:55,230 --> 00:55:00,850
-flat state connected, so
+flat-state connected, so
 maybe it's not so surprising.
 
 1147
@@ -5435,7 +5435,7 @@ alpha you like-- and it
 
 1165
 00:56:00,800 --> 00:56:06,700
-will be the half angle of the
+will be the half-angle of the
 cone, so alpha equals beta--
 
 1166
@@ -5494,11 +5494,11 @@ it works in general.
 1178
 00:56:49,910 --> 00:56:54,490
 So in general, we have
-some chain, v1, v2-- sorry,
+some chain, v_1, v_2-- sorry,
 
 1179
 00:56:54,490 --> 00:56:58,060
-starting at v0, v1, v2.
+starting at v_0, v_1, v_2.
 
 1180
 00:56:58,060 --> 00:56:59,970
@@ -5521,7 +5521,7 @@ in sequence.
 1184
 00:57:07,740 --> 00:57:10,579
 So I'm going to start
-with v0 somewhere.
+with v_0 somewhere.
 
 1185
 00:57:10,579 --> 00:57:12,120
@@ -5535,11 +5535,11 @@ Say, the origin of space.
 1187
 00:57:15,370 --> 00:57:26,960
 And what I'm going to do is draw
-a cone whose apex is that v0.
+a cone whose apex is that v_0.
 
 1188
 00:57:26,960 --> 00:57:32,910
-And the half angle here is
+And the half-angle here is
 going to be alpha over two,
 
 1189
@@ -5565,7 +5565,7 @@ So there's this vertical line.
 
 1194
 00:57:45,230 --> 00:57:49,580
-And to pick v1, I'm just going
+And to pick v_1, I'm just going
 to use the right edge, which
 
 1195
@@ -5588,20 +5588,20 @@ cone, maximum x-coordinate.
 
 1199
 00:57:58,360 --> 00:57:59,920
-That's v1.
+That's v_1.
 
 1200
 00:57:59,920 --> 00:58:05,060
-Now, v1-- let me redraw
+Now, v_1-- let me redraw
 this picture a little lower.
 
 1201
 00:58:05,060 --> 00:58:10,140
-So there was v0, v1.
+So there was v_0, v_1.
 
 1202
 00:58:10,140 --> 00:58:12,280
-Now I want to draw v2, and
+Now I want to draw v_2, and
 I want to draw it above.
 
 1203
@@ -5614,7 +5614,7 @@ draw a vertical column
 
 1205
 00:58:20,460 --> 00:58:23,800
-whose half angle here
+whose half-angle here
 is alpha over two.
 
 1206
@@ -5622,7 +5622,7 @@ is alpha over two.
 
 1207
 00:58:26,770 --> 00:58:28,790
-I want to draw v2
+I want to draw v_2
 on the cone here.
 
 1208
@@ -5653,7 +5653,7 @@ a different height cone.
 1213
 00:58:42,470 --> 00:58:44,970
 I clip it to whatever
-the length v1, v2 is.
+the length v_1, v_2 is.
 
 1214
 00:58:44,970 --> 00:58:47,540
@@ -5663,7 +5663,7 @@ somewhere on this cone,
 1215
 00:58:47,540 --> 00:58:50,570
 but now I'm constrained to
-have the correct angle at v1.
+have the correct angle at v_1.
 
 1216
 00:58:50,570 --> 00:58:53,050
@@ -5687,11 +5687,11 @@ happens is that there's
 1220
 00:58:59,070 --> 00:59:09,080
 a cone which is-- whose
-axis is the edge v0, v1.
+axis is the edge v_0, v_1.
 
 1221
 00:59:09,080 --> 00:59:12,900
-So I extend v0 v1 out
+So I extend v_0 v_1 out
 here, which, in this case,
 
 1222
@@ -5718,12 +5718,12 @@ center axis of the cone
 1227
 00:59:32,050 --> 00:59:37,490
 would go right here, whatever
-the extension of v0, v1 was.
+the extension of v_0, v_1 was.
 
 1228
 00:59:37,490 --> 00:59:44,710
 And to have the right angle at
-v1, v2 must be on that cone.
+v_1, v_2 must be on that cone.
 
 1229
 00:59:44,710 --> 00:59:47,010
@@ -5737,7 +5737,7 @@ between those two cones.
 1231
 00:59:48,800 --> 00:59:51,740
 I could choose either
-one of them to be v2.
+one of them to be v_2.
 
 1232
 00:59:51,740 --> 00:59:55,800
@@ -5750,7 +5750,7 @@ which is this one.
 
 1234
 00:59:58,060 --> 01:00:00,192
-This is going to be v2.
+This is going to be v_2.
 
 1235
 01:00:00,192 --> 01:00:03,380
@@ -5762,13 +5762,13 @@ Now I repeat.
 
 1237
 01:00:05,590 --> 01:00:08,630
-So for v2, I'm going to
+So for v_2, I'm going to
 draw a vertical cone whose
 
 1238
 01:00:08,630 --> 01:00:12,440
-half angle-- here, the half
-angle is always alpha over two.
+half-angle-- here, the half-angle
+is always alpha over two.
 
 1239
 01:00:12,440 --> 01:00:14,430
@@ -5776,8 +5776,8 @@ Half angle is alpha over two.
 
 1240
 01:00:14,430 --> 01:00:25,570
-This cone had half angle,
-whatever the angle v0, v1, v2
+This cone had half-angle,
+whatever the angle v_0, v_1, v_2
 
 1241
 01:00:25,570 --> 01:00:27,340
@@ -5790,7 +5790,7 @@ angle or angle?
 
 1243
 01:00:28,960 --> 01:00:30,004
-The half angle.
+The half-angle.
 
 1244
 01:00:30,004 --> 01:00:30,920
@@ -5811,12 +5811,12 @@ intersection of those two cones,
 1248
 01:00:38,410 --> 01:00:41,250
 and that will give
-me where v3 is.
+me where v_3 is.
 
 1249
 01:00:41,250 --> 01:00:44,476
 So I do the same thing
-for v2, for v3, and so on.
+for v_2, for v_3, and so on.
 
 1250
 01:00:44,476 --> 01:00:46,100
@@ -5907,7 +5907,7 @@ configuration
 1269
 01:01:30,690 --> 01:01:37,050
 lies in an alpha over
-2 half angle cone.
+2 half-angle cone.
 
 1270
 01:01:37,050 --> 01:01:40,770
@@ -5947,17 +5947,17 @@ will lie inside that cone.
 1278
 01:01:57,590 --> 01:02:00,430
 And it's kind of
-obvious because v1--
+obvious because v_1--
 
 1279
 01:02:00,430 --> 01:02:07,120
-I chose v2 to lie in the
+I chose v_2 to lie in the
 same cone, just translated up
 
 1280
 01:02:07,120 --> 01:02:10,290
-to start at v1 instead
-of starting at v0.
+to start at v_1 instead
+of starting at v_0.
 
 1281
 01:02:10,290 --> 01:02:13,380
@@ -6005,12 +6005,12 @@ Here we have an angle.
 
 1291
 01:02:34,600 --> 01:02:36,540
-The half angle of
+The half-angle of
 the cone is whatever
 
 1292
 01:02:36,540 --> 01:02:39,180
-angle the angle is at v1.
+angle the angle is at v_1.
 
 1293
 01:02:39,180 --> 01:02:40,680
@@ -6027,7 +6027,7 @@ This should be the turn angle.
 1296
 01:02:48,240 --> 01:02:51,810
 That angle is how much
-you turn from v0, v1.
+you turn from v_0, v_1.
 
 1297
 01:02:51,810 --> 01:02:54,130
@@ -6054,7 +6054,7 @@ cone that we were always using.
 1302
 01:03:04,120 --> 01:03:08,140
 We always use a vertical cone,
-half angle alpha over two.
+half-angle alpha over two.
 
 1303
 01:03:08,140 --> 01:03:12,440
@@ -6063,7 +6063,7 @@ always keep these edges,
 
 1304
 01:03:12,440 --> 01:03:17,250
-like v0, v1, was on
+like v_0, v_1, was on
 the edge of the cone.
 
 1305
@@ -6079,7 +6079,7 @@ this vertical cone.
 1307
 01:03:21,970 --> 01:03:27,140
 So its angle-- in the most
-extreme case-- its half angle
+extreme case-- its half-angle
 
 1308
 01:03:27,140 --> 01:03:30,780
@@ -6152,7 +6152,7 @@ but we kind of
 1322
 01:04:03,740 --> 01:04:07,527
 compress it into something
-of half angle alpha over two.
+of half-angle alpha over two.
 
 1323
 01:04:07,527 --> 01:04:09,735
@@ -6161,7 +6161,7 @@ just changing the definition
 
 1324
 01:04:09,735 --> 01:04:10,954
-and calling it half angle.
+and calling it half-angle.
 
 1325
 01:04:10,954 --> 01:04:12,620
@@ -6550,7 +6550,7 @@ it to lie in this cone,
 
 1408
 01:08:31,410 --> 01:08:34,640
-with half angle alpha over two.
+with half-angle alpha over two.
 
 1409
 01:08:34,640 --> 01:08:38,300
@@ -6826,7 +6826,7 @@ This is getting messy.
 1469
 01:11:15,290 --> 01:11:20,450
 So if I extend this line,
-there's a cone of half angle
+there's a cone of half-angle
 
 1470
 01:11:20,450 --> 01:11:25,040
@@ -6863,7 +6863,7 @@ vertical cone whose
 
 1477
 01:11:46,440 --> 01:11:48,400
-half angle is alpha over two.
+half-angle is alpha over two.
 
 1478
 01:11:48,400 --> 01:11:50,810
@@ -7151,7 +7151,7 @@ within the ribosome,
 
 1541
 01:14:45,540 --> 01:14:49,070
-which is of half angle alpha.
+which is of half-angle alpha.
 
 1542
 01:14:49,070 --> 01:14:53,840
@@ -7243,7 +7243,7 @@ an angle of alpha because that
 
 1561
 01:15:41,880 --> 01:15:43,870
-was the half angle
+was the half-angle
 of the big cone.
 
 1562
@@ -7362,7 +7362,7 @@ state, we want
 1585
 01:16:49,610 --> 01:16:52,180
 to prove these things
-are flat state connected.
+are flat-state connected.
 
 1586
 01:16:52,180 --> 01:16:55,400
@@ -7508,7 +7508,7 @@ configurations can
 1616
 01:18:18,220 --> 01:18:20,890
 be canonicalized, then you
-know it's flat state connected
+know it's flat-state connected
 
 1617
 01:18:20,890 --> 01:18:23,510
@@ -7518,7 +7518,7 @@ things are flattenable and vice
 1618
 01:18:23,510 --> 01:18:27,400
 versa, by continuous motions
-without self intersection.
+without self-intersection.
 
 1619
 01:18:27,400 --> 01:18:29,310
