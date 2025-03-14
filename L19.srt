@@ -264,7 +264,7 @@ guys.
 57
 00:02:33,640 --> 00:02:40,240
 And actually, we'll
-call h the hydrophobic
+call H the hydrophobic
 
 58
 00:02:40,240 --> 00:02:41,483
@@ -280,8 +280,8 @@ because both of them
 
 61
 00:02:46,390 --> 00:02:49,840
-have h and p in the acronym,
-but p also apparently stands
+have H and P in the acronym,
+but P also apparently stands
 
 62
 00:02:49,840 --> 00:02:54,670
@@ -339,7 +339,7 @@ Yeah.
 74
 00:03:18,110 --> 00:03:23,170
 And different of these nodes
-could be marked h or p.
+could be marked H or P.
 
 75
 00:03:23,170 --> 00:03:26,780
@@ -349,7 +349,7 @@ two colors to denote that.
 76
 00:03:26,780 --> 00:03:32,580
 In this case, I made this guy
-h, this guy h, this guy h.
+H, this guy H, this guy H.
 
 77
 00:03:32,580 --> 00:03:37,000
@@ -847,7 +847,7 @@ is a 1/3 approximation.
 183
 00:08:42,260 --> 00:08:47,440
 This is by MIT Ph.D.
-student [INAUDIBLE],
+student Alantha Newman.
 
 184
 00:08:47,440 --> 00:08:51,990
@@ -1037,7 +1037,7 @@ bond with some other H,
 
 223
 00:10:52,800 --> 00:10:56,910
-well obviously, that h has
+well obviously, that H has
 different parity from this one.
 
 224
@@ -1934,7 +1934,7 @@ But any questions?
 415
 00:19:47,654 --> 00:19:52,127
 AUDIENCE: Is the exposed end
-considered the [INAUDIBLE]
+considered an appearance
 
 416
 00:19:52,127 --> 00:19:53,694
@@ -2203,7 +2203,7 @@ The theorem is these exist.
 
 473
 00:22:14,830 --> 00:22:18,690
-And the 2D squared
+And the 2D square
 grid, they exist
 
 474
@@ -2237,7 +2237,7 @@ a bunch of people.
 480
 00:22:53,180 --> 00:22:55,990
 Oswin Aicholzer, David
-Bremner, me, Hank Meijer,
+Bremner, me, Henk Meijer,
 
 481
 00:22:55,990 --> 00:22:58,690
@@ -2305,7 +2305,7 @@ And this works for any even n.
 495
 00:23:37,105 --> 00:23:42,770
 In general, it depends a little
-bit on your the n mod four, so
+bit on your the n mod 4, so
 
 496
 00:23:42,770 --> 00:23:44,625
@@ -2315,7 +2315,7 @@ two pictures here,
 497
 00:23:44,625 --> 00:23:48,830
 to check that it works for
-both congruences mod four.
+both congruences mod 4.
 
 498
 00:23:48,830 --> 00:23:50,490
@@ -2483,7 +2483,7 @@ at the end.
 532
 00:25:23,850 --> 00:25:27,990
 And if you check all of
-the red notes on this side
+the red nodes on this side
 
 533
 00:25:27,990 --> 00:25:30,726
@@ -2623,13 +2623,13 @@ chains, and it's almost unique.
 
 561
 00:26:44,430 --> 00:26:49,230
-In the double even case,
+In the doubly even case,
 like 16, it is unique.
 
 562
 00:26:49,230 --> 00:26:53,810
 In the only singlely even,
-so two mod four case,
+so 2 mod 4 case,
 
 563
 00:26:53,810 --> 00:26:58,500
@@ -2652,8 +2652,8 @@ we know how to do.
 
 567
 00:27:08,330 --> 00:27:12,660
-And there are
-these two-foldings,
+And there are these
+two foldings,
 
 568
 00:27:12,660 --> 00:27:14,690
@@ -3018,7 +3018,7 @@ if there's-- for example,
 644
 00:30:18,550 --> 00:30:20,856
 if there's a constant
-number of h nodes,
+number of H nodes,
 
 645
 00:30:20,856 --> 00:30:22,730
@@ -3259,7 +3259,7 @@ chain will be unlocked.
 696
 00:32:44,550 --> 00:32:49,030
 That's a known result by
-Cantrell and Johnson '96.
+Cantarella and Johnston '96.
 
 697
 00:32:49,030 --> 00:32:50,110
@@ -3281,7 +3281,7 @@ The answer turns out to be yes.
 701
 00:32:59,290 --> 00:33:01,780
 The original motivation
-for this proble,--
+for this problem--
 
 702
 00:33:01,780 --> 00:33:07,060
@@ -5036,7 +5036,7 @@ Same trick works.
 
 1084
 00:51:25,650 --> 00:51:28,662
-So 4 chains versus
+So 4 chain versus
 various 2 chains.
 
 1085
@@ -5463,7 +5463,7 @@ the endpoints by a big rope,
 1177
 00:55:29,050 --> 00:55:31,316
 and then you have
-an Trefoil knot,
+a trefoil knot,
 
 1178
 00:55:31,316 --> 00:55:33,440
@@ -5641,8 +5641,8 @@ pretty big sphere here
 
 1216
 00:57:37,630 --> 00:57:46,289
-of radius 15 r, an even
-bigger sphere of radius 20 r.
+of radius 15 R, an even
+bigger sphere of radius 20 R.
 
 1217
 00:57:46,289 --> 00:57:48,830
@@ -5664,7 +5664,7 @@ Here's what I want to say.
 1221
 00:57:57,430 --> 00:58:03,820
 I'm supposing the lengths of
-these edges is more than 20 r.
+these edges is more than 20 R.
 
 1222
 00:58:03,820 --> 00:58:07,930
@@ -5745,16 +5745,16 @@ ends of the purple guys,
 1238
 00:59:07,700 --> 00:59:11,919
 because they're outside the
-big ball, the 15 r ball--
+big ball, the 15 R ball--
 
 1239
 00:59:11,919 --> 00:59:13,460
 not sure I really
-need the 20 r ball,
+need the 20 R ball,
 
 1240
 00:59:13,460 --> 00:59:18,810
-but the 15 r ball is the key--
+but the 15 R ball is the key--
 topology you get is this.
 
 1241
@@ -5811,7 +5811,7 @@ bars stay inside the ball
 1252
 00:59:51,750 --> 00:59:55,420
 and the endpoint stay
-outside the ball, a 15 r,
+outside the ball, of 15 R,
 
 1253
 00:59:55,420 --> 00:59:56,449
@@ -5849,7 +5849,7 @@ in the middle vertices
 1260
 01:00:16,310 --> 01:00:20,830
 is going to go outside
-this 15 r radius ball,
+this 15 R radius ball,
 
 1261
 01:00:20,830 --> 01:00:25,020
@@ -5907,7 +5907,7 @@ of the endpoints of the bars
 1272
 01:00:52,560 --> 01:00:54,940
 goes inside this
-radius 15 r ball.
+radius 15 R ball.
 
 1273
 01:00:54,940 --> 01:00:57,780
@@ -5962,7 +5962,7 @@ the middle edges are all outside
 
 1284
 01:01:23,370 --> 01:01:25,990
-the ball of radius 15 r.
+the ball of radius 15 R.
 
 1285
 01:01:25,990 --> 01:01:29,220
@@ -6459,7 +6459,7 @@ configurations, configuration a
 1391
 01:05:56,880 --> 01:06:00,770
 and configuration
-b, and you want
+B, and you want
 
 1392
 01:06:00,770 --> 01:06:02,915
@@ -6468,7 +6468,7 @@ motion from configuration
 
 1393
 01:06:02,915 --> 01:06:06,120
-a to configuration b.
+A to configuration B.
 
 1394
 01:06:06,120 --> 01:06:16,300
@@ -6562,7 +6562,7 @@ when we're building
 1413
 01:07:00,880 --> 01:07:06,140
 the locked 11 chain
-with the lock 2 chain,
+with the locked 2 chain,
 
 1414
 01:07:06,140 --> 01:07:08,862
@@ -6713,12 +6713,12 @@ that's polynomially
 
 1445
 01:08:40,410 --> 01:08:41,700
-solvable or empty complete.
+solvable or NP-complete.
 
 1446
 01:08:41,700 --> 01:08:45,170
-It is about characterizing
-lock chains in some sense.
+This is about characterizing
+locked chains in some sense.
 
 1447
 01:08:45,170 --> 01:08:46,622
