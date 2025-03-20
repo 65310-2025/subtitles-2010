@@ -37,7 +37,7 @@ for the most part.
 
 9
 00:00:18,090 --> 00:00:19,870
-We did a little bit in 3-D.
+We did a little bit in 3D.
 
 10
 00:00:19,870 --> 00:00:23,274
@@ -364,7 +364,7 @@ so that glues in there.
 78
 00:03:17,720 --> 00:03:22,580
 Then you have a rigid triangle
-here, so that stays co-linear
+here, so that stays collinear
 
 79
 00:03:22,580 --> 00:03:24,095
@@ -620,8 +620,8 @@ these fun words
 
 135
 00:06:20,134 --> 00:06:21,940
-like slender on
-un-unfoldable which
+like slender, or
+ununfoldable, which
 
 136
 00:06:21,940 --> 00:06:23,190
@@ -629,13 +629,13 @@ is something we'll talk about.
 
 137
 00:06:23,190 --> 00:06:25,967
-And it's like what words
+And it's like, what words
 have you guys made up?
 
 138
 00:06:25,967 --> 00:06:28,050
 And one guy raised his
-hand an said, oh, Ethernet.
+hand and said, "oh, Ethernet".
 
 139
 00:06:28,050 --> 00:06:32,130
@@ -741,7 +741,7 @@ and I'm looking.
 162
 00:08:04,180 --> 00:08:08,390
 What is the distance
-to this end point?
+to this endpoint?
 
 163
 00:08:08,390 --> 00:08:11,630
@@ -777,7 +777,7 @@ old straight skeleton stuff.
 
 170
 00:08:31,450 --> 00:08:33,350
-And lo and behold,
+And 'lo and behold,
 you monatonically
 
 171
@@ -1714,7 +1714,7 @@ upper half or the bottom half.
 
 374
 00:17:32,250 --> 00:17:36,200
-You can take regular Kgons,
+You can take regular k-gons,
 circles, half circles,
 
 375
@@ -1784,7 +1784,7 @@ that-- as you might guess--
 390
 00:18:21,750 --> 00:18:23,333
 is using the Carpenter's
-Rule theorem.
+Rule Theorem.
 
 391
 00:18:23,333 --> 00:18:26,610
@@ -1799,7 +1799,7 @@ slender adornments
 393
 00:18:29,440 --> 00:18:32,210
 won't mess up the
-Carpenter's Rule of motion.
+Carpenter's Rule's motion.
 
 394
 00:18:32,210 --> 00:18:39,390
@@ -1837,7 +1837,7 @@ that's expansive.
 401
 00:18:51,640 --> 00:19:03,255
 And it turns out, as long as
-you have an expensive motion
+you have an expansive motion
 
 402
 00:19:03,255 --> 00:19:22,650
@@ -1874,7 +1874,7 @@ some slender chain, slenderly
 409
 00:19:43,120 --> 00:19:49,220
 adorned chain, say open chain,
-then via an expensive motion
+then via an expansive motion
 
 410
 00:19:49,220 --> 00:19:51,870
@@ -1898,7 +1898,7 @@ else straight, and then glue
 414
 00:19:58,010 --> 00:20:03,180
 those motions together, and you
-get your motion from a to b.
+get your motion from A to B.
 
 415
 00:20:03,180 --> 00:20:06,100
@@ -1957,7 +1957,7 @@ inward normal on both sides,
 427
 00:20:56,310 --> 00:20:59,640
 those inward normals
-are co-linear.
+are collinear.
 
 428
 00:20:59,640 --> 00:21:02,037
@@ -2569,7 +2569,7 @@ enough, but was
 558
 00:28:04,210 --> 00:28:08,886
 unsolved until 2002,
-someone recent.
+somewhat recent.
 
 559
 00:28:08,886 --> 00:28:11,360
@@ -2898,7 +2898,7 @@ motion-- because we
 628
 00:32:52,850 --> 00:32:56,030
 know there's a continuous
-expensive motion-- we can still
+expansive motion-- we can still
 
 629
 00:32:56,030 --> 00:33:00,230
@@ -4422,7 +4422,7 @@ and this is something
 965
 00:48:54,590 --> 00:49:01,494
 we'll prove later, this is
-theorem by Koshy, like 1800s.
+theorem by Cauchy, like 1800s.
 
 966
 00:49:01,494 --> 00:49:03,785
@@ -4459,7 +4459,7 @@ different cool topic, which
 
 973
 00:49:19,950 --> 00:49:22,000
-is hinge dissections.
+is hinged dissections.
 
 974
 00:49:22,000 --> 00:49:26,620
@@ -4576,7 +4576,7 @@ It's a fun, fun toy question.
 
 999
 00:50:37,422 --> 00:50:38,630
-All right, hinge dissections.
+All right, hinged dissections.
 
 1000
 00:50:38,630 --> 00:50:41,360
@@ -4604,12 +4604,12 @@ about them moving
 1005
 00:50:53,160 --> 00:50:54,720
 and when you can
-move from shape a
+move from shape A
 
 1006
 00:50:54,720 --> 00:50:57,600
-to shape b or configuration
-a to configuration b.
+to shape B or configuration
+A to configuration B.
 
 1007
 00:50:57,600 --> 00:51:01,450
@@ -4633,7 +4633,7 @@ get an equilateral triangle.
 1011
 00:51:07,980 --> 00:51:09,460
 So we call this a
-hinge dissection
+hinged dissection
 
 1012
 00:51:09,460 --> 00:51:12,520
@@ -4779,7 +4779,7 @@ way I've drawn them.
 
 1041
 00:52:35,800 --> 00:52:38,510
-But this is a hinge
+But this is a hinged
 dissection that
 
 1042
@@ -4943,7 +4943,7 @@ alphabet, there's
 
 1076
 00:55:23,920 --> 00:55:25,510
-one hinge dissection
+one hinged dissection
 that can fold
 
 1077
@@ -5778,7 +5778,7 @@ the green thing from B
 1256
 01:03:45,190 --> 01:03:46,990
 and reattaching it to
-B prime on the top.
+b prime on the top.
 
 1257
 01:03:46,990 --> 01:03:48,615
@@ -5788,11 +5788,11 @@ the orange thing down
 1258
 01:03:48,615 --> 01:03:51,920
 and reattached the green
-at B prime instead of B,
+at b prime instead of b,
 
 1259
 01:03:51,920 --> 01:03:56,780
-at the same vertex A.
+at the same vertex a.
 This is not everything
 
 1260
@@ -5823,7 +5823,7 @@ Watch.
 
 1266
 01:04:08,290 --> 01:04:11,750
-So this is dissection.
+So this is the dissection.
 
 1267
 01:04:11,750 --> 01:04:18,100
@@ -6243,7 +6243,7 @@ and here's little b.
 1354
 01:08:38,120 --> 01:08:41,196
 And what I can do is pick
-some other point, A prime.
+some other point, a prime.
 
 1355
 01:08:41,196 --> 01:08:42,529
@@ -6292,12 +6292,12 @@ like to do, suppose
 1365
 01:09:07,500 --> 01:09:10,660
 I have some other
-vertex here, B prime,
+vertex here, b prime,
 
 1366
 01:09:10,660 --> 01:09:14,025
-I'd really like to make B
-prime attach to A prime.
+I'd really like to make b
+prime attach to a prime.
 
 1367
 01:09:14,025 --> 01:09:17,529
@@ -6352,7 +6352,7 @@ this rooted subtree
 
 1378
 01:09:39,040 --> 01:09:41,630
-to attach at B prime
+to attach at b prime
 instead of B. It's exactly
 
 1379
@@ -6372,7 +6372,7 @@ vertex little b prime.
 1382
 01:09:52,310 --> 01:09:58,490
 And I have my blob A,
-where this is A prime
+where this is a prime
 
 1383
 01:09:58,490 --> 01:10:10,050
@@ -6392,7 +6392,7 @@ subtree b instead of attaching
 1386
 01:10:22,140 --> 01:10:27,450
 at little a to little b, it now
-attaches at A prime B prime.
+attaches at a prime b prime.
 
 1387
 01:10:27,450 --> 01:10:29,700
@@ -6483,7 +6483,8 @@ happens if you need
 
 1405
 01:11:08,636 --> 01:11:10,770
-to use the same [INAUDIBLE].
+to use the same edge
+multiple times?
 
 1406
 01:11:10,770 --> 01:11:13,750
@@ -7139,7 +7140,7 @@ Just more stuff.
 1544
 01:17:19,170 --> 01:17:21,955
 I see where they came
-from, up there at C3.
+from, up there at C_3.
 
 1545
 01:17:21,955 --> 01:17:23,550
@@ -7515,7 +7516,7 @@ all these powerful tools,
 
 1623
 01:20:45,070 --> 01:20:47,990
-we build up universal hinge
+we build up universal hinged
 dissections, basically
 
 1624
@@ -7555,7 +7556,7 @@ the volumes are the same,
 1631
 01:21:07,740 --> 01:21:09,690
 but something else
-called the [INAUDIBLE]
+called the Dehn invariant
 
 1632
 01:21:09,690 --> 01:21:13,550
@@ -7564,7 +7565,7 @@ don't want to get into.
 
 1633
 01:21:13,550 --> 01:21:14,800
-That's hinges and dissections.
+That's hinged dissections.
 
 1634
 01:21:14,800 --> 01:21:17,086

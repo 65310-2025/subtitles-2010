@@ -181,7 +181,7 @@ something, you
 39
 00:02:36,580 --> 00:02:39,590
 don't want to have
-visible seems.
+visible seams.
 
 40
 00:02:39,590 --> 00:02:41,350
