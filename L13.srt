@@ -2445,11 +2445,11 @@ are the dashed lines.
 531
 00:28:58,186 --> 00:29:00,310
 Now, if you're familiar
-with [? Vornar ?] diagrams,
+with Voronoi diagrams,
 
 532
 00:29:00,310 --> 00:29:05,200
-this is the [? Vornar ?]
+this is the Voronoi
 diagram of one point, x.
 
 533
@@ -2474,7 +2474,7 @@ that is the ridge tree.
 537
 00:29:19,040 --> 00:29:21,530
 That is the
-[? Vornar ?] diagram.
+Voronoi diagram.
 
 538
 00:29:21,530 --> 00:29:23,910
@@ -3172,7 +3172,7 @@ basically works at every spot.
 
 690
 00:36:54,466 --> 00:36:55,622
-[INAUDIBLE]?
+For polyhedra?
 
 691
 00:36:55,622 --> 00:36:57,080
@@ -3517,7 +3517,7 @@ is continuous blooming.
 766
 00:40:31,610 --> 00:40:34,310
 This is an idea posed by
-Connolly several years
+Connelly several years
 
 767
 00:40:34,310 --> 00:40:38,517
@@ -3774,7 +3774,7 @@ implicitly at least,
 821
 00:43:12,590 --> 00:43:19,945
 by this guy, Albrecht
-Durer, who was a cool guy.
+Duerer, who was a cool guy.
 
 822
 00:43:19,945 --> 00:43:21,740
@@ -3880,7 +3880,7 @@ of Compass and Ruler
 
 844
 00:44:08,216 --> 00:44:10,780
-Assembled by Albrecht Durer for
+Assembled by Albrecht Duerer for
 the Use of all Lovers of Art
 
 845
