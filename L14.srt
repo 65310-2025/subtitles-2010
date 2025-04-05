@@ -318,12 +318,12 @@ two dimensional sources in 3D,
 
 71
 00:04:19,410 --> 00:04:20,993
-but it could be D
-dimensional surfaces
+but it could be
+d-dimensional surfaces
 
 72
 00:04:20,993 --> 00:04:23,463
-in D plus 1 dimensions.
+in d+1 dimensions.
 
 73
 00:04:23,463 --> 00:04:26,240
@@ -639,7 +639,7 @@ of cut this open
 
 142
 00:08:32,419 --> 00:08:36,230
-and think about a disc instead
+and think about a disk instead
 of a sphere, topologically.
 
 143
@@ -649,7 +649,7 @@ And I can.
 144
 00:08:36,936 --> 00:08:38,970
 I mean this theorem's supposed
-to work for discs just as well.
+to work for disks just as well.
 
 145
 00:08:38,970 --> 00:08:40,610
@@ -760,8 +760,8 @@ given a polyhedron,
 
 168
 00:09:34,280 --> 00:09:36,770
-we're given a disc like
-this, a triangulated disc,
+we're given a disk like
+this, a triangulated disk,
 
 169
 00:09:36,770 --> 00:09:38,229
@@ -1944,7 +1944,7 @@ when you get a cycle.
 428
 00:21:18,550 --> 00:21:24,360
 It's when the original thing
-is not too colorable, I think.
+is not two-colorable, I think.
 
 429
 00:21:24,360 --> 00:21:28,460
@@ -2283,8 +2283,8 @@ a vertex unfolding.
 
 500
 00:24:37,780 --> 00:24:40,402
-AUDIENCE: If you triangulate
-that, [INAUDIBLE].
+AUDIENCE: If you triangulate that,
+it should have a vertex unfolding.
 
 501
 00:24:40,402 --> 00:24:41,860
@@ -2546,7 +2546,7 @@ drawn as rectangular loops,
 556
 00:27:32,320 --> 00:27:35,780
 but in general, all those
-wooden faces, the x and z-faces,
+wooden faces, the x- and z-faces,
 
 557
 00:27:35,780 --> 00:27:38,790
@@ -2686,7 +2686,7 @@ write down, a band
 
 586
 00:28:52,460 --> 00:29:09,140
-is a cycle of x and z-faces,
+is a cycle of x- and z-faces,
 and they are connected together
 
 587
@@ -2875,7 +2875,8 @@ we could do this,
 
 629
 00:31:09,560 --> 00:31:11,560
-we can get non-selfintersection.
+we can get
+non-self-intersection.
 
 630
 00:31:11,560 --> 00:31:14,550
@@ -3848,13 +3849,13 @@ making these, I guess,
 
 839
 00:39:46,976 --> 00:39:54,805
-gadgets [INAUDIBLE] voxel
+gadgets such that a voxel
 would attach just by a side.
 
 840
 00:39:54,805 --> 00:39:58,591
 You could imagine it attaching
-at a corner attaching
+at a corner, attaching
 
 841
 00:39:58,591 --> 00:40:01,050
@@ -4337,7 +4338,7 @@ Here is Manhattan Tower.
 946
 00:45:52,660 --> 00:45:58,570
 So it has a connected
-base on the x-y plane.
+base on the xy plane.
 
 947
 00:45:58,570 --> 00:46:04,280
@@ -4880,7 +4881,7 @@ that in the past.
 1066
 00:51:08,604 --> 00:51:15,425
 My conjecture's, in general,
-you need to omega n refinement.
+you need to Omega(n) refinement.
 
 1067
 00:51:15,425 --> 00:51:24,330
@@ -4907,7 +4908,7 @@ but we can't even
 
 1072
 00:51:36,380 --> 00:51:40,170
-prove that you need 2 buy 1
+prove that you need 2 by 1
 refinement in any example.
 
 1073
@@ -5425,7 +5426,7 @@ Sorry about the screeching.
 1186
 00:56:41,330 --> 00:56:44,690
 This is Cauchy's
-rigidity theorem.
+Rigidity Theorem.
 
 1187
 00:56:44,690 --> 00:56:49,380
@@ -5700,11 +5701,11 @@ later, by Steinitz.
 1245
 00:59:40,510 --> 00:59:44,380
 So sometimes it's called
-Cauchy-Steinitz rigidity
+Cauchy-Steinitz Rigidity
 
 1246
 00:59:44,380 --> 00:59:46,750
-theorem, although,
+Theorem, although,
 usually, Cauchy.
 
 1247
@@ -5735,8 +5736,8 @@ well, maybe, there's
 
 1253
 01:00:03,920 --> 01:00:09,010
-two polyhedra, p and
-p prime, and they're
+two polyhedra, P and
+P prime, and they're
 
 1254
 01:00:09,010 --> 01:00:11,530
@@ -5753,8 +5754,8 @@ at corresponding vertices,
 
 1257
 01:00:24,390 --> 01:00:30,260
-let's say a vertex v and p and
-a vertex v prime and p prime.
+let's say a vertex v of P and
+a vertex v prime of P prime.
 
 1258
 01:00:30,260 --> 01:00:34,670
@@ -5764,11 +5765,11 @@ combinatorial equivalence.
 1259
 01:00:34,670 --> 01:00:40,575
 And then, I want to
-slice the polyhedra, p
+slice the polyhedra, P
 
 1260
 01:00:40,575 --> 01:00:49,320
-and p prime, with
+and P prime, with
 an epsilon sphere,
 
 1261
@@ -5851,7 +5852,7 @@ They're great circular arcs.
 
 1278
 01:01:43,110 --> 01:01:44,490
-There on the sphere.
+They're on the sphere.
 
 1279
 01:01:44,490 --> 01:01:46,180
@@ -5885,7 +5886,7 @@ Right?
 
 1286
 01:02:01,130 --> 01:02:04,195
-One for p, one for p prime.
+One for P, one for P prime.
 
 1287
 01:02:04,195 --> 01:02:04,695
@@ -6008,7 +6009,7 @@ the angles might differ.
 
 1312
 01:03:05,144 --> 01:03:07,060
-If p and p prime are
+If P and P prime are
 supposed to be different,
 
 1313
@@ -6029,24 +6030,24 @@ of a spherical polygon.
 1316
 01:03:30,770 --> 01:03:36,130
 So I have n of these spherical
-polygons for p n of them
+polygons for P, n of them
 
 1317
 01:03:36,130 --> 01:03:37,400
-and p prime.
+for P prime.
 
 1318
 01:03:37,400 --> 01:03:39,390
-Let's look at them in p.
+Let's look at them in P.
 
 1319
 01:03:39,390 --> 01:03:47,280
 I'm going to label it plus if
-the angle there in p is bigger
+the angle there in P is bigger
 
 1320
 01:03:47,280 --> 01:03:50,386
-than the angle in p prime.
+than the angle in P prime.
 
 1321
 01:03:50,386 --> 01:03:52,510
@@ -6055,7 +6056,7 @@ between everything
 
 1322
 01:03:52,510 --> 01:03:54,270
-in p and everything and p prime.
+in P and everything and P prime.
 
 1323
 01:03:54,270 --> 01:04:00,464
@@ -6337,8 +6338,8 @@ that both the initial position
 
 1385
 01:06:59,150 --> 01:07:01,625
-in p and its target position
-in p prime are both convex.
+in P and its target position
+in P prime are both convex.
 
 1386
 01:07:01,625 --> 01:07:07,920
@@ -6394,11 +6395,11 @@ and zeroes, or all minuses
 1398
 01:07:42,300 --> 01:07:45,835
 and zeroes, the same is true
-just viewing p prime as p and p
+just viewing P prime as P and P
 
 1399
 01:07:45,835 --> 01:07:48,509
-as p prime.
+as P prime.
 
 1400
 01:07:48,509 --> 01:07:49,550
@@ -6945,13 +6946,13 @@ All right.
 
 1523
 01:12:49,410 --> 01:13:01,610
-If I have a face of 2
-k or 2 k plus 1 edges,
+If I have a face of 2 k
+or 2 k plus 1 edges,
 
 1524
 01:13:01,610 --> 01:13:08,000
-then it will have, at
-most, 2 k alternations.
+then it will have, at most,
+2 k alternations.
 
 1525
 01:13:08,000 --> 01:13:13,210
@@ -7040,7 +7041,7 @@ the number of triangles,
 
 1543
 01:14:03,230 --> 01:14:07,820
-f sub 3 is going to be the
+f_3 is going to be the
 number of faces of degree 3,
 
 1544
@@ -7225,7 +7226,7 @@ number faces is two.
 
 1586
 01:16:11,130 --> 01:16:15,994
-[? For ?] connected,
+For connected,
 planar graphs.
 
 1587
@@ -7438,8 +7439,8 @@ Oh, duh, I just skipped a step.
 
 1634
 01:18:55,190 --> 01:18:59,120
-F is the sum of f3 plus
-f4 plus f5 plus f6.
+F is the sum of f_3 plus
+f_4 plus f_5 plus f_6.
 
 1635
 01:18:59,120 --> 01:18:59,715
@@ -7505,8 +7506,8 @@ this is going to be like 2.
 
 1649
 01:19:35,730 --> 01:19:43,170
-So I get 2 f3 plus-- oh
-boy, 1 times-- 4 times f4
+So I get 2 f_3 plus-- oh
+boy, 1 times-- 4 times f_4
 
 1650
 01:19:43,170 --> 01:19:47,390
@@ -7515,11 +7516,11 @@ these numbers-- 6 times
 
 1651
 01:19:47,390 --> 01:19:50,490
-f5 plus-- what's the next one?
+f_5 plus-- what's the next one?
 
 1652
 01:19:50,490 --> 01:19:54,310
-4-- 8 times f6, and so on.
+4-- 8 times f_6, and so on.
 
 1653
 01:19:54,310 --> 01:20:03,970
@@ -7631,7 +7632,7 @@ edges.
 1677
 01:20:57,030 --> 01:20:58,820
 And that is Cauchy's
-rigidity theorem.
+Rigidity Theorem.
 
 1678
 01:20:58,820 --> 01:21:04,444
@@ -7710,7 +7711,7 @@ a convex polyhedron.
 1693
 01:21:34,860 --> 01:21:38,210
 If it made two, Cauchy's
-rigidity theorem
+Rigidity Theorem
 
 1694
 01:21:38,210 --> 01:21:39,830
