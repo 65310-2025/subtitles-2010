@@ -16,7 +16,8 @@ into polyhedra in a big way.
 
 5
 00:00:11,130 --> 00:00:14,190
-We got started last time.
+We kind of got
+started last time.
 
 6
 00:00:14,190 --> 00:00:15,890
@@ -70,7 +71,7 @@ We're given some polygon.
 18
 00:00:49,994 --> 00:00:52,160
 We're not told where to
-folder or how to glue it up,
+fold or how to glue it up,
 
 19
 00:00:52,160 --> 00:00:53,330
@@ -1237,7 +1238,7 @@ So this is basically the answer.
 275
 00:15:00,990 --> 00:15:03,650
 And from our perspective, it's
-like , yeah, yeah, polyhedral.
+like, yeah, yeah, polyhedral.
 
 276
 00:15:03,650 --> 00:15:04,594
@@ -1642,7 +1643,7 @@ it has a curvature close to 360.
 363
 00:19:11,620 --> 00:19:14,500
 It's going to be
-260 minus almost 0.
+360 minus almost 0.
 
 364
 00:19:14,500 --> 00:19:18,920
@@ -1788,7 +1789,7 @@ more than 180 degrees
 395
 00:20:46,560 --> 00:20:51,240
 of material glued at
-these two points So what?
+these two points. So what?
 
 396
 00:20:51,240 --> 00:20:55,080
@@ -2294,7 +2295,7 @@ for us algorithms
 503
 00:25:36,850 --> 00:25:39,640
 people is that it's
-non constructive.
+non-constructive.
 
 504
 00:25:39,640 --> 00:25:41,484
@@ -3009,12 +3010,12 @@ vertex up here-- call
 
 664
 00:32:58,940 --> 00:33:01,500
-it vi-- there's some distance.
+it v_i-- there's some distance.
 
 665
 00:33:01,500 --> 00:33:04,240
 This dashed line-- we're
-going to call that ri.
+going to call that r_i.
 
 666
 00:33:04,240 --> 00:33:06,350
@@ -3056,12 +3057,12 @@ worry about that directly.
 674
 00:33:19,861 --> 00:33:23,030
 We're going to think about
-these edge lengths, ri.
+these edge lengths, r_i.
 
 675
 00:33:23,030 --> 00:33:27,070
 Because if I knew
-all the ri lengths--
+all the r_i lengths--
 
 676
 00:33:27,070 --> 00:33:30,471
@@ -3095,7 +3096,7 @@ And I would get the answer.
 682
 00:33:38,550 --> 00:33:40,000
 So I really just
-need these ri's.
+need these r_i's.
 
 683
 00:33:40,000 --> 00:33:42,610
@@ -3107,7 +3108,7 @@ do is characterize,
 
 685
 00:33:44,160 --> 00:33:47,630
-when are the ri's valid?
+when are the r_i's valid?
 
 686
 00:33:47,630 --> 00:33:52,730
@@ -3139,7 +3140,7 @@ characterize when that's true.
 
 692
 00:34:10,060 --> 00:34:13,130
-It's some function on the ri
+It's some function on the r_i
 lengths and existing lengths.
 
 693
@@ -3213,7 +3214,7 @@ that share a face.
 708
 00:34:58,374 --> 00:34:59,790
 And if I knew what
-the ri's where,
+the r_i's where,
 
 709
 00:34:59,790 --> 00:35:01,520
@@ -3300,7 +3301,7 @@ This is also pretty easy to get.
 
 726
 00:35:48,360 --> 00:35:50,280
-You can set the ri
+You can set the r_i
 so that that's true.
 
 727
@@ -3379,7 +3380,7 @@ sum of the dihedral angles
 743
 00:36:42,350 --> 00:36:51,610
 around some edge from
-P to vi equals 360.
+P to v_i equals 360.
 
 744
 00:36:51,610 --> 00:36:53,770
@@ -3518,7 +3519,7 @@ start with that triangulation,
 
 774
 00:38:31,640 --> 00:38:34,520
-and you let all the ri's be
+and you let all the r_i's be
 really, really big, close
 
 775
@@ -3578,7 +3579,7 @@ a kind of curvature
 787
 00:39:14,220 --> 00:39:24,930
 around each edge, around that
-center line from p to vi.
+center line from p to v_i.
 
 788
 00:39:24,930 --> 00:39:28,190
@@ -3604,18 +3605,18 @@ So we have some starting point.
 
 793
 00:39:34,830 --> 00:39:39,750
-And it turns out the Ki
+And it turns out the K_i
 will be positive, I believe.
 
 794
 00:39:39,750 --> 00:39:51,675
-And we want to make Ki
+And we want to make K_i
 evolve with time, so that it
 
 795
 00:39:51,675 --> 00:39:54,670
 is 1 minus t, times
-the initial Ki.
+the initial K_i.
 
 796
 00:39:54,670 --> 00:39:57,250
@@ -3627,7 +3628,7 @@ So we start at times
 
 798
 00:39:59,500 --> 00:40:00,939
-where all the ri's are large.
+where all the r_i's are large.
 
 799
 00:40:00,939 --> 00:40:02,480
@@ -3746,7 +3747,7 @@ because all I can do is change
 
 824
 00:41:12,965 --> 00:41:13,647
-the ri's.
+the r_i's.
 
 825
 00:41:13,647 --> 00:41:14,980
@@ -3755,7 +3756,7 @@ That's the only thing I control.
 826
 00:41:14,980 --> 00:41:17,720
 The kappas are computed
-as a function of the ri's.
+as a function of the r_i's.
 
 827
 00:41:17,720 --> 00:41:20,740
@@ -3769,7 +3770,7 @@ to rewrite things.
 
 829
 00:41:26,800 --> 00:41:28,180
-You get to control the ri's.
+You get to control the r_i's.
 
 830
 00:41:28,180 --> 00:41:31,450
@@ -3790,7 +3791,7 @@ It's a matrix.
 834
 00:41:40,150 --> 00:41:43,100
 But really, it says,
-if I change ri,
+if I change r_i,
 
 835
 00:41:43,100 --> 00:41:44,730
@@ -3821,7 +3822,7 @@ I want to change
 
 841
 00:41:55,140 --> 00:41:57,850
-the ri's in order to
+the r_i's in order to
 affect the kappas.
 
 842
@@ -3847,7 +3848,7 @@ this relation is actually
 846
 00:42:13,020 --> 00:42:15,310
 feasible, that you can
-change the ri's in order
+change the r_i's in order
 
 847
 00:42:15,310 --> 00:42:17,690
@@ -3988,7 +3989,7 @@ Questions?
 876
 00:43:34,190 --> 00:43:42,139
 I want to move on to more
-fun topics, let's technical,
+fun topics, less technical,
 
 877
 00:43:42,139 --> 00:43:42,680
@@ -4314,7 +4315,7 @@ Because that has 180.
 
 950
 00:46:53,090 --> 00:46:55,300
-You can only blue
+You can only glue
 convex vertices
 
 951
@@ -7005,7 +7006,7 @@ then I have, at most,
 1551
 01:16:14,105 --> 01:16:16,460
 It acts just like a
-rolling belt Also,
+rolling belt. Also,
 
 1552
 01:16:16,460 --> 01:16:17,860
