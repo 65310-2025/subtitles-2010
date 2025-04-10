@@ -24,7 +24,7 @@ cool little problem, which
 6
 00:00:17,290 --> 00:00:19,980
 is about unfolding
-and re-folding.
+and refolding.
 
 7
 00:00:19,980 --> 00:00:25,156
@@ -110,7 +110,7 @@ So I start, say, with a cube.
 25
 00:01:19,790 --> 00:01:22,569
 And then I unfold it
-and then I re-fold it.
+and then I refold it.
 
 26
 00:01:22,569 --> 00:01:24,610
@@ -124,12 +124,12 @@ was about.
 28
 00:01:26,560 --> 00:01:28,643
 And then I unfold
-that and I re-fold it,
+that and I refold it,
 
 29
 00:01:28,643 --> 00:01:31,360
-and I unfold and I re-fold
-and I unfold and re-fold.
+and I unfold and I refold
+and I unfold and refold.
 
 30
 00:01:31,360 --> 00:01:34,020
@@ -147,7 +147,7 @@ polyhedral surface
 33
 00:01:38,030 --> 00:01:41,080
 to any other-- say, convex--
-by unfolding and re-folding?
+by unfolding and refolding?
 
 34
 00:01:41,080 --> 00:01:43,320
@@ -398,7 +398,7 @@ But they kept going.
 87
 00:04:11,540 --> 00:04:13,710
 Said all right, let's do
-all the platonic solids.
+all the Platonic solids.
 
 88
 00:04:13,710 --> 00:04:17,490
@@ -539,7 +539,7 @@ It's close to regular.
 117
 00:05:19,820 --> 00:05:22,400
 But again, open question,
-can any two platonic solids--
+can any two Platonic solids--
 
 118
 00:05:22,400 --> 00:05:25,600
@@ -1126,11 +1126,11 @@ out of sheet material.
 244
 00:10:50,900 --> 00:10:53,820
 You can make a common unfolding
-of 1 by 2 by 5 box and a 1
+of 1 by 2 by 5 box and a
 
 245
 00:10:53,820 --> 00:10:55,310
-by 1 by 8 box.
+1 by 1 by 8 box.
 
 246
 00:10:55,310 --> 00:10:59,250
@@ -1436,7 +1436,7 @@ went back and he
 
 315
 00:14:15,520 --> 00:14:18,510
-wrote a program to numerate
+wrote a program to enumerate
 all unfoldings of these things
 
 316
@@ -1572,7 +1572,7 @@ with each of the groups,
 
 344
 00:15:31,500 --> 00:15:33,670
-we numerated all
+we enumerated all
 these unfoldings.
 
 345
@@ -1586,7 +1586,7 @@ of the 1 by 1 by 5 tube.
 
 347
 00:15:42,820 --> 00:15:45,460
-But one trillions not that bad.
+But one trillion's not that bad.
 
 348
 00:15:45,460 --> 00:15:48,042
@@ -1688,7 +1688,7 @@ unfolding of those guys.
 369
 00:16:35,710 --> 00:16:37,522
 AUDIENCE: How many
-non-planar [INAUDIBLE]?
+non-planar are there?
 
 370
 00:16:37,522 --> 00:16:39,230
@@ -1773,7 +1773,7 @@ Yes, I trust myself.
 388
 00:17:16,339 --> 00:17:19,770
 So here is unfolding
-and re-folding
+and refolding
 
 389
 00:17:19,770 --> 00:17:21,359
@@ -1986,7 +1986,7 @@ it in that class.
 435
 00:19:27,370 --> 00:19:31,240
 One nice open question here
-is, if you go to large N,
+is, if you go to large n,
 
 436
 00:19:31,240 --> 00:19:35,100
@@ -2687,7 +2687,7 @@ case so it works out.
 588
 00:26:50,680 --> 00:26:55,080
 This is proved by a student
-of Alexandrov Pogorelov
+of Alexandrov, Pogorelov,
 
 589
 00:26:55,080 --> 00:26:59,360
@@ -3527,11 +3527,11 @@ to the advertisement,
 767
 00:35:31,810 --> 00:35:34,140
 is this thing called
-the Mozart Kugel.
+the Mozartkugel.
 
 768
 00:35:34,140 --> 00:35:37,730
-Now, Mozart Kugel-- how many
+Now, Mozartkugel-- how many
 people have eaten them before.
 
 769
@@ -3672,11 +3672,11 @@ But they fold-- Mirabell.
 801
 00:36:47,820 --> 00:36:52,237
 Mirabell makes the most
-Mozart Kugel in the world.
+Mozartkugel in the world.
 
 802
 00:36:52,237 --> 00:36:53,820
-Mozart Kugel is very
+Mozartkugel is very
 cool because it's
 
 803
@@ -3735,7 +3735,7 @@ but they are not the original.
 814
 00:37:24,820 --> 00:37:29,194
 They are called the
-echta which is--
+"echta" which is--
 
 815
 00:37:29,194 --> 00:37:29,990
@@ -3757,7 +3757,7 @@ are hard to come by.
 819
 00:37:37,380 --> 00:37:40,970
 These are brought to me by
-my student, [INAUDIBLE],
+my student, Duks Koschitz,
 
 820
 00:37:40,970 --> 00:37:42,040
@@ -3765,7 +3765,7 @@ some of you know.
 
 821
 00:37:42,040 --> 00:37:44,019
-Architecture.
+From architecture.
 
 822
 00:37:44,019 --> 00:37:45,560
@@ -3779,7 +3779,7 @@ It's kind of easy.
 824
 00:37:46,430 --> 00:37:49,500
 The original Salzburger
-Mozart Kugel.
+Mozartkugel.
 
 825
 00:37:49,500 --> 00:37:53,290
@@ -3870,13 +3870,13 @@ you getting hungry?
 
 845
 00:38:34,410 --> 00:38:36,380
-Now, Furst-- Furst
+Now, Fuerst-- Fuerst
 is the company
 
 846
 00:38:36,380 --> 00:38:41,411
-who made the first Mozart
-Kugel-- they use squares.
+who made the first
+Mozartkugel-- they use squares.
 
 847
 00:38:41,411 --> 00:38:42,910
@@ -3906,8 +3906,8 @@ All right.
 
 853
 00:39:00,500 --> 00:39:01,970
-So this is a Mozart
-Kugel problem.
+So this is a
+Mozartkugel problem.
 
 854
 00:39:01,970 --> 00:39:04,750
@@ -3972,8 +3972,8 @@ And what does Austria have?
 
 867
 00:39:38,850 --> 00:39:42,450
-Well, [SPEAKING GERMAN]
-Well, how about Mozart Kugel?
+Well, Sachertorte.
+Well, how about Mozartkugel?
 
 868
 00:39:42,450 --> 00:39:45,940
@@ -4305,7 +4305,7 @@ for piecewise smooth.
 937
 00:43:19,150 --> 00:43:22,570
 You take a contractive
-C2 immersion--
+C^2 immersion--
 
 938
 00:43:22,570 --> 00:43:25,200
@@ -4333,7 +4333,7 @@ Spheres are valid, for example.
 943
 00:43:34,950 --> 00:43:42,214
 Then any one of those
-things has a C0--
+things has a C^0--
 
 944
 00:43:42,214 --> 00:43:44,005
@@ -4443,7 +4443,7 @@ likes rectangles,
 
 967
 00:44:46,500 --> 00:44:49,090
-Furst likes squares.
+Fuerst likes squares.
 
 968
 00:44:49,090 --> 00:44:50,930
@@ -4499,7 +4499,7 @@ It's just sitting there.
 
 980
 00:45:13,710 --> 00:45:16,910
-Half a Mozart Kugel,
+Half a Mozartkugel,
 can't have that.
 
 981
@@ -4524,7 +4524,8 @@ AUDIENCE: I was wondering--
 
 986
 00:45:21,730 --> 00:45:24,290
-PROFESSOR: You can have any.
+PROFESSOR: You can't have any.
+[LAUGHTER]
 
 987
 00:45:24,290 --> 00:45:26,122
@@ -4543,8 +4544,8 @@ that because of contracting
 
 990
 00:45:32,145 --> 00:45:39,420
-you need more than 4 pi
-r surface area of paper
+you need more than 4 pi r
+surface area of paper
 
 991
 00:45:39,420 --> 00:45:44,090
@@ -4559,7 +4560,7 @@ know exactly how much
 993
 00:45:47,290 --> 00:45:49,541
 paper do you require due to
-the fact that [INAUDIBLE]?
+the contracting?
 
 994
 00:45:49,541 --> 00:45:50,581
@@ -4692,7 +4693,7 @@ kind of optimal wrapping
 1022
 00:46:57,270 --> 00:46:59,760
 will have at least
-one stretch path.
+one stretched path.
 
 1023
 00:46:59,760 --> 00:47:02,320
@@ -4701,7 +4702,7 @@ actually-- let me tell you
 
 1024
 00:47:02,320 --> 00:47:04,170
-what a stretch path is.
+what a stretched path is.
 
 1025
 00:47:04,170 --> 00:47:10,330
@@ -4743,7 +4744,7 @@ exactly the same length.
 1033
 00:47:37,827 --> 00:47:39,410
 So that's what we
-call a stretch path.
+call a stretched path.
 
 1034
 00:47:39,410 --> 00:47:41,110
@@ -4842,7 +4843,7 @@ this opposite south pole here.
 1054
 00:48:35,520 --> 00:48:39,630
 All of those lines you
-call stretch paths.
+call stretched paths.
 
 1055
 00:48:39,630 --> 00:48:41,710
@@ -5015,7 +5016,7 @@ think about this.
 1092
 00:50:17,620 --> 00:50:22,340
 In this case, we're making
-stretch paths all around
+stretched paths all around
 
 1093
 00:50:22,340 --> 00:50:24,645
@@ -5591,7 +5592,7 @@ That's our new goal.
 1218
 00:55:34,590 --> 00:55:37,320
 And that's why I like
-Furst better than Mirabell,
+Fuerst better than Mirabell,
 
 1219
 00:55:37,320 --> 00:55:39,010
@@ -5736,7 +5737,7 @@ Could be any number k.
 1252
 00:56:59,760 --> 00:57:06,570
 So I'm going to look at k
-stretch paths from north pole
+stretched paths from north pole
 
 1253
 00:57:06,570 --> 00:57:07,350
@@ -5783,7 +5784,7 @@ getting messy.
 1263
 00:57:31,660 --> 00:57:33,290
 These are going to
-be stretch paths.
+be stretched paths.
 
 1264
 00:57:33,290 --> 00:57:38,410
@@ -5828,7 +5829,7 @@ Now, I've drawn these paths.
 1273
 00:57:58,880 --> 00:58:03,620
 What if I grew from all of these
-finite stretch paths at once?
+finite stretched paths at once?
 
 1274
 00:58:03,620 --> 00:58:06,799
@@ -5870,7 +5871,7 @@ these stretched paths,
 1282
 00:58:28,170 --> 00:58:31,294
 and these are also stretched
-pads, and basically cutting
+paths, and basically cutting
 
 1283
 00:58:31,294 --> 00:58:32,210
@@ -6160,7 +6161,7 @@ is that triangle,
 1346
 01:01:20,590 --> 01:01:26,050
 is it better than the
-Mozart Kugel wrappings?
+Mozartkugel wrappings?
 
 1347
 01:01:26,050 --> 01:01:28,136
@@ -6447,7 +6448,7 @@ better by 0.1%.
 1409
 01:04:02,120 --> 01:04:05,280
 Now, I think-- millions
-of Mozart Kugel
+of Mozartkugel
 
 1410
 01:04:05,280 --> 01:04:06,930
@@ -6469,7 +6470,7 @@ the material wastage
 
 1414
 01:04:16,210 --> 01:04:20,330
-that Furst is committing
+that Fuerst is committing
 by using the square.
 
 1415
@@ -6612,7 +6613,7 @@ same shapes as before,
 1446
 01:05:59,320 --> 01:06:02,740
 so we still have stretched
-pads perpendicular like that.
+paths perpendicular like that.
 
 1447
 01:06:02,740 --> 01:06:04,450
@@ -6661,15 +6662,15 @@ old cartograms, cartographs--
 1457
 01:06:29,295 --> 01:06:33,700
 whatever you call them--
-unfoldings of the earth.
+unfoldings of the Earth.
 
 1458
 01:06:33,700 --> 01:06:34,910
-I thought I brought an earth.
+I thought I brought an Earth.
 
 1459
 01:06:34,910 --> 01:06:36,580
-Maybe we didn't bring the earth.
+Maybe we didn't bring the Earth.
 
 1460
 01:06:36,580 --> 01:06:39,849
@@ -6877,7 +6878,7 @@ rectangle, pi by 2pi.
 1506
 01:08:36,490 --> 01:08:40,540
 And we talked about
-the Furst wrapping
+the Fuerst wrapping
 
 1507
 01:08:40,540 --> 01:08:52,100
@@ -7160,7 +7161,8 @@ Slight problem.
 
 1570
 01:11:40,430 --> 01:11:41,747
-AUDIENCE: [INAUDIBLE].
+AUDIENCE: Don't you
+lose zero in the limit?
 
 1571
 01:11:41,747 --> 01:11:43,580
@@ -7255,7 +7257,7 @@ What's this one?
 
 1592
 01:12:24,440 --> 01:12:25,820
-There's the Furst wrapping.
+There's the Fuerst wrapping.
 
 1593
 01:12:25,820 --> 01:12:27,694
@@ -7451,7 +7453,7 @@ So they're way out here.
 
 1634
 01:14:08,380 --> 01:14:11,570
-Clearly Furst is better.
+Clearly Fuerst is better.
 
 1635
 01:14:11,570 --> 01:14:14,020
@@ -7466,7 +7468,7 @@ below that dashed line.
 1637
 01:14:18,040 --> 01:14:21,212
 And pretty good perimeter but
-not quite as good as Furst.
+not quite as good as Fuerst.
 
 1638
 01:14:21,212 --> 01:14:23,670
@@ -7584,7 +7586,7 @@ So a pretty neat question.
 
 1663
 01:15:24,910 --> 01:15:26,290
-And that is Mozart Kugel.
+And that is Mozartkugel.
 
 1664
 01:15:26,290 --> 01:15:29,130
@@ -7651,7 +7653,7 @@ they have Mirabell.
 
 1678
 01:15:54,880 --> 01:15:55,355
-AUDIENCE: [INAUDIBLE].
+AUDIENCE: Another one:
 
 1679
 01:15:55,355 --> 01:15:57,730
@@ -7752,7 +7754,7 @@ context of Cauchy's rigidity
 
 1700
 01:16:55,430 --> 01:16:58,420
-theorem for polyhedral.
+theorem for polyhedra.
 
 1701
 01:16:58,420 --> 01:17:00,130
@@ -7938,7 +7940,7 @@ this thing is also convex.
 
 1738
 01:19:04,570 --> 01:19:06,750
-So that's the Lemma.
+So that's the lemma.
 
 1739
 01:19:06,750 --> 01:19:09,382
@@ -7956,7 +7958,7 @@ are contractive.
 1742
 01:19:13,740 --> 01:19:15,573
 It's really easy once
-you have this Lemma.
+you have this lemma.
 
 1743
 01:19:15,573 --> 01:19:18,580
@@ -8414,7 +8416,7 @@ This is triangle inequality.
 1841
 01:24:08,050 --> 01:24:12,450
 And this was the contractiveness
-that we already prove.
+that we already proved.
 
 1842
 01:24:12,450 --> 01:24:13,750
@@ -8500,7 +8502,7 @@ the comb wrapping too.
 1859
 01:24:53,460 --> 01:24:55,370
 This is kind of neat
-with this little Lemma
+with this little lemma
 
 1860
 01:24:55,370 --> 01:24:58,870
